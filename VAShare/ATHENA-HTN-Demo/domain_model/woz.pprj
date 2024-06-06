@@ -1,0 +1,607 @@
+; Tue Oct 17 16:37:36 PDT 2000
+;
+;+ (version "1.5 beta")
+;+ (build "Build 561")
+
+([CLASS_WIDGET] of Widget
+	(height 420)
+	(name ":STANDARD-CLASS")
+	(property_list [woz_ProjectKB_00211])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 600)
+	(x 0)
+	(y 0))
+
+([CLSES_TAB] of Widget
+	(height 539)
+	(label "Classes")
+	(name "Classes")
+	(property_list [CLSES_TAB_PROPERTIES])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab")
+	(width 876)
+	(x 0)
+	(y 0))
+
+([CLSES_TAB_PROPERTIES] of Property_List
+	(name "classes tab properties")
+	(properties
+		[woz_ProjectKB_00022]
+		[woz_ProjectKB_00023]
+		[woz_ProjectKB_00363]
+		[woz_ProjectKB_00364]))
+
+([FACTORY_CLASS_NAME] of String
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([FORMS_TAB] of Widget
+	(height 353)
+	(label "Forms")
+	(name "Forms")
+	(property_list [FORMS_TAB_PROPERTIES])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab")
+	(width 452)
+	(x 0)
+	(y 0))
+
+([FORMS_TAB_PROPERTIES] of Property_List
+	(properties
+		[woz_ProjectKB_00026]
+		[woz_ProjectKB_00367]))
+
+([INSTANCES_TAB] of Widget
+	(height 373)
+	(label "Instances")
+	(name "Instances")
+	(property_list [INSTANCES_TAB_PROPERTIES])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab")
+	(width 479)
+	(x 0)
+	(y 0))
+
+([INSTANCES_TAB_PROPERTIES] of Property_List
+	(properties
+		[woz_ProjectKB_00027]
+		[woz_ProjectKB_00028]
+		[woz_ProjectKB_00368]
+		[woz_ProjectKB_00369]))
+
+([KB_INSTANCE_00001] of Property_List
+	(properties
+		[woz_ProjectKB_00452]
+		[woz_ProjectKB_00453]
+		[woz_ProjectKB_00454]
+		[woz_ProjectKB_00455]
+		[woz_ProjectKB_00456]
+		[woz_ProjectKB_00457]
+		[woz_ProjectKB_00458]
+		[woz_ProjectKB_00459]
+		[woz_ProjectKB_00460]
+		[woz_ProjectKB_00461]
+		[woz_ProjectKB_00462]
+		[woz_ProjectKB_00463]
+		[woz_ProjectKB_00464]
+		[woz_ProjectKB_00465]))
+
+([KB_INSTANCE_00013] of String
+	(name "classes_file_name")
+	(string_value "woz.pont"))
+
+([KB_INSTANCE_00014] of String
+	(name "instances_file_name")
+	(string_value "woz.pins"))
+
+([PROJECT] of Project
+	(browser_slot_names [KB_INSTANCE_00001])
+	(customized_instance_widgets
+		[SLOT_WIDGET]
+		[CLASS_WIDGET])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(next_frame_number 6)
+	(options [woz_ProjectKB_INSTANCE_00586])
+	(sources [SOURCES])
+	(tabs
+		[CLSES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[INSTANCES_TAB]
+		[woz_ProjectKB_00001]
+		[QUERIES_TAB]
+		[woz_ProjectKB_00220]
+		[woz_ProjectKB_00222]
+		[woz_ProjectKB_00224]
+		[woz_ProjectKB_00226]))
+
+([QUERIES_TAB] of Widget
+	(is_hidden FALSE)
+	(label "Queries")
+	(property_list [woz_ProjectKB_00258])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOT_WIDGET] of Widget
+	(name ":STANDARD-SLOT")
+	(property_list [woz_ProjectKB_00000])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SLOTS_TAB] of Widget
+	(height 322)
+	(is_hidden FALSE)
+	(label "Slots")
+	(name "Slots")
+	(property_list [SLOTS_TAB_PROPERTIES])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab")
+	(width 273)
+	(x 0)
+	(y 0))
+
+([SLOTS_TAB_PROPERTIES] of Property_List
+	(properties
+		[woz_ProjectKB_00024]
+		[woz_ProjectKB_00025]
+		[woz_ProjectKB_00365]
+		[woz_ProjectKB_00366]))
+
+([SOURCES] of Property_List
+	(name "knowledge base sources")
+	(properties
+		[FACTORY_CLASS_NAME]
+		[KB_INSTANCE_00013]
+		[KB_INSTANCE_00014]))
+
+([woz_ProjectKB_00000] of Property_List
+	(name "slow widget properties")
+	(properties
+		[woz_ProjectKB_00102]
+		[woz_ProjectKB_00202]
+		[woz_ProjectKB_00203]
+		[woz_ProjectKB_00204]
+		[woz_ProjectKB_00205]
+		[woz_ProjectKB_00206]
+		[woz_ProjectKB_00207]
+		[woz_ProjectKB_00208]
+		[woz_ProjectKB_00209]
+		[woz_ProjectKB_00210]
+		[woz_ProjectKB_00255]))
+
+([woz_ProjectKB_00001] of Widget
+	(is_hidden TRUE)
+	(widget_class_name "edu.stanford.smi.protegex.pal.tab.PalTab"))
+
+([woz_ProjectKB_00022] of Integer
+	(integer_value 264)
+	(name "main_splitter"))
+
+([woz_ProjectKB_00023] of Integer
+	(integer_value 400)
+	(name "clses_splitter"))
+
+([woz_ProjectKB_00024] of Integer
+	(integer_value 260)
+	(name "left_right_location"))
+
+([woz_ProjectKB_00025] of Integer
+	(integer_value 400)
+	(name "top_bottom_location"))
+
+([woz_ProjectKB_00026] of Integer
+	(integer_value 250)
+	(name "main_splitter"))
+
+([woz_ProjectKB_00027] of Integer
+	(integer_value 250)
+	(name "cls_splitter"))
+
+([woz_ProjectKB_00028] of Integer
+	(integer_value 250)
+	(name "instance_splitter"))
+
+([woz_ProjectKB_00102] of Widget
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([woz_ProjectKB_00202] of Widget
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 175))
+
+([woz_ProjectKB_00203] of Widget
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [woz_ProjectKB_00243])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([woz_ProjectKB_00204] of Widget
+	(height 150)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [woz_ProjectKB_00250])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 120))
+
+([woz_ProjectKB_00205] of Widget
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([woz_ProjectKB_00206] of Widget
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 210))
+
+([woz_ProjectKB_00207] of Widget
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 210))
+
+([woz_ProjectKB_00208] of Widget
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([woz_ProjectKB_00209] of Widget
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 210))
+
+([woz_ProjectKB_00210] of Widget
+	(height 150)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([woz_ProjectKB_00211] of Property_List
+	(name "class widget properties")
+	(properties
+		[woz_ProjectKB_00212]
+		[woz_ProjectKB_00213]
+		[woz_ProjectKB_00214]
+		[woz_ProjectKB_00215]
+		[woz_ProjectKB_00216]
+		[woz_ProjectKB_00217]
+		[woz_ProjectKB_00218]
+		[woz_ProjectKB_00219]
+		[woz_ProjectKB_00242]))
+
+([woz_ProjectKB_00212] of Widget
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [woz_ProjectKB_00228])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([woz_ProjectKB_00213] of Widget
+	(name ":DIRECT-INSTANCES"))
+
+([woz_ProjectKB_00214] of Widget
+	(name ":DIRECT-SUBCLASSES"))
+
+([woz_ProjectKB_00215] of Widget
+	(name ":DIRECT-SUPERCLASSES"))
+
+([woz_ProjectKB_00216] of Widget
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([woz_ProjectKB_00217] of Widget
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([woz_ProjectKB_00218] of Widget
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([woz_ProjectKB_00219] of Widget
+	(height 300)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [woz_ProjectKB_00235])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([woz_ProjectKB_00220] of Widget
+	(is_hidden TRUE)
+	(property_list [woz_ProjectKB_00221])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([woz_ProjectKB_00221] of Property_List)
+
+([woz_ProjectKB_00222] of Widget
+	(is_hidden TRUE)
+	(property_list [woz_ProjectKB_00223])
+	(widget_class_name "edu.stanford.smi.protegex.pal.tab.main.QueryTab"))
+
+([woz_ProjectKB_00223] of Property_List)
+
+([woz_ProjectKB_00224] of Widget
+	(is_hidden TRUE)
+	(property_list [woz_ProjectKB_00225])
+	(widget_class_name "edu.stanford.smi.protegex.pal.tab.main.PALTab"))
+
+([woz_ProjectKB_00225] of Property_List)
+
+([woz_ProjectKB_00226] of Widget
+	(is_hidden TRUE)
+	(property_list [woz_ProjectKB_00227])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([woz_ProjectKB_00227] of Property_List)
+
+([woz_ProjectKB_00228] of Property_List
+	(properties
+		[woz_ProjectKB_00229]
+		[woz_ProjectKB_00230]
+		[woz_ProjectKB_00231]
+		[woz_ProjectKB_00232]
+		[woz_ProjectKB_00233]
+		[woz_ProjectKB_00234]))
+
+([woz_ProjectKB_00229] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([woz_ProjectKB_00230] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([woz_ProjectKB_00231] of Boolean
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([woz_ProjectKB_00232] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([woz_ProjectKB_00233] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([woz_ProjectKB_00234] of Boolean
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([woz_ProjectKB_00235] of Property_List
+	(properties
+		[woz_ProjectKB_00236]
+		[woz_ProjectKB_00237]
+		[woz_ProjectKB_00238]
+		[woz_ProjectKB_00239]
+		[woz_ProjectKB_00240]
+		[woz_ProjectKB_00241]))
+
+([woz_ProjectKB_00236] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots"))
+
+([woz_ProjectKB_00237] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots at class"))
+
+([woz_ProjectKB_00238] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([woz_ProjectKB_00239] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove overrides from selected slots"))
+
+([woz_ProjectKB_00240] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([woz_ProjectKB_00241] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([woz_ProjectKB_00242] of Property_List
+	(name "layout properties"))
+
+([woz_ProjectKB_00243] of Property_List
+	(properties
+		[woz_ProjectKB_00244]
+		[woz_ProjectKB_00245]
+		[woz_ProjectKB_00246]
+		[woz_ProjectKB_00247]
+		[woz_ProjectKB_00248]
+		[woz_ProjectKB_00249]))
+
+([woz_ProjectKB_00244] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([woz_ProjectKB_00245] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([woz_ProjectKB_00246] of Boolean
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([woz_ProjectKB_00247] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([woz_ProjectKB_00248] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([woz_ProjectKB_00249] of Boolean
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([woz_ProjectKB_00250] of Property_List
+	(properties
+		[woz_ProjectKB_00251]
+		[woz_ProjectKB_00252]
+		[woz_ProjectKB_00253]
+		[woz_ProjectKB_00254]))
+
+([woz_ProjectKB_00251] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View the selected value"))
+
+([woz_ProjectKB_00252] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([woz_ProjectKB_00253] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([woz_ProjectKB_00254] of Boolean
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([woz_ProjectKB_00255] of Property_List
+	(name "layout properties"))
+
+([woz_ProjectKB_00258] of Property_List
+	(properties [woz_ProjectKB_00370]))
+
+([woz_ProjectKB_00363] of Integer
+	(integer_value 271)
+	(name "ClsesTab.left_right"))
+
+([woz_ProjectKB_00364] of Integer
+	(integer_value 374)
+	(name "ClsesTab.left.top_bottom"))
+
+([woz_ProjectKB_00365] of Integer
+	(integer_value 209)
+	(name "SlotsTab.left_right"))
+
+([woz_ProjectKB_00366] of Integer
+	(integer_value 182)
+	(name "SlotTab.left.top_bottom"))
+
+([woz_ProjectKB_00367] of Integer
+	(integer_value 183)
+	(name "FormsTab.left_right"))
+
+([woz_ProjectKB_00368] of Integer
+	(integer_value 197)
+	(name "InstancesTab.left_right"))
+
+([woz_ProjectKB_00369] of Integer
+	(integer_value 45)
+	(name "InstancesTab.right.left_right"))
+
+([woz_ProjectKB_00370] of String
+	(name "SearchTab_Query"))
+
+([woz_ProjectKB_00452] of String
+	(name ":STANDARD-SLOT")
+	(string_value ":NAME"))
+
+([woz_ProjectKB_00453] of String
+	(name "BackingStructure")
+	(string_value "label"))
+
+([woz_ProjectKB_00454] of String
+	(name "AgentModel")
+	(string_value "agentName"))
+
+([woz_ProjectKB_00455] of String
+	(name "ClaimStructure")
+	(string_value "label"))
+
+([woz_ProjectKB_00456] of String
+	(name "Argument")
+	(string_value "label"))
+
+([woz_ProjectKB_00457] of String
+	(name "DataStructure")
+	(string_value "label"))
+
+([woz_ProjectKB_00458] of String
+	(name "CommunicationModel")
+	(string_value "name"))
+
+([woz_ProjectKB_00459] of String
+	(name "QualifierStructure")
+	(string_value "label"))
+
+([woz_ProjectKB_00460] of String
+	(name "ActionObject")
+	(string_value "label"))
+
+([woz_ProjectKB_00461] of String
+	(name "RebuttalStructure")
+	(string_value "label"))
+
+([woz_ProjectKB_00462] of String
+	(name "WarrantStructure")
+	(string_value "label"))
+
+([woz_ProjectKB_00463] of String
+	(name "Parameter")
+	(string_value "label"))
+
+([woz_ProjectKB_00464] of String
+	(name "Service")
+	(string_value "label"))
+
+([woz_ProjectKB_00465] of String
+	(name ":STANDARD-CLASS")
+	(string_value ":NAME"))
+
+([woz_ProjectKB_INSTANCE_00586] of Options)

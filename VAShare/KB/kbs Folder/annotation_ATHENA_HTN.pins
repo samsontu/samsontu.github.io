@@ -1,0 +1,28 @@
+; Mon Feb 22 13:01:48 PST 2010
+; 
+;+ (version "3.4.3")
+;+ (build "Build 572")
+
+([Active] of  AnnotationStatus
+
+	(description "Active"))
+
+([Approved] of  ChangeStatus
+
+	(description "Approved"))
+
+([Inactive] of  AnnotationStatus
+
+	(description "Inactive"))
+
+([Proposed] of  ChangeStatus
+
+	(description "Proposed"))
+
+([Rejected] of  ChangeStatus
+
+	(description "Rejected"))
+
+([Under_review] of  Status
+
+	(description "Under review"))

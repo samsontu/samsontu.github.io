@@ -1,0 +1,342 @@
+<html><body>
+<h2>Case: Samson Test Patient</h2>
+55.0 year old 
+<p><b>Lab & Note Entry Values:</b> <table>
+<b><tr><td width="200">Lab</td><td width="200">Value</td><td width="200">Date</td></tr></b>
+<tr><td width="200">DB_Diastolic_BP</td><td width="200">95</td><td width="200">2009-2-25</td></tr>
+<tr><td width="200">Age</td><td width="200">55</td><td width="200">1970-1-1</td></tr>
+<tr><td width="200">HbA1C</td><td width="200">9</td><td width="200">2010-3-11</td></tr>
+<tr><td width="200">DB_Systolic_BP</td><td width="200">150</td><td width="200">2009-2-25</td></tr>
+<tr><td width="200">ZipCode</td><td width="200">94012.0</td><td width="200">1970-1-1</td></tr>
+<tr><td width="200">target_HBA1c</td><td width="200">8.0</td><td width="200">2010-3-11</td></tr>
+</table>
+<p><b>Medications:</b> lisinopril(0.0) 
+<p><b>Qualitative Data:</b> <table>
+<tr><td width="200"><b>Data Class</b></td><td width="200"><b>First/Last Dates Reported</b></td><td width="200"></td></tr>
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200">SSN</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-02-21</td>
+<td width="200">Diabetes_Mellitus</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-07-25</td>
+<td width="200">Hypertension</td></tr>
+</table><p>
+<h2 align="center">ATHENA Cardiovascular Guidelines</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Cardiovascular Guidelines: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>()</i>]
+</ul>
+<h2 align="center">ATHENA CKD Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA CKD Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Age(55.0/1970-1-1) && null)</i>]
+</ul>
+<b>Scenario choice:</b> DM and no Cr & urine assessment within a year, no CKD
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Need screening?</b><br>
+<ul>
+<li><b>Order Cr & microalbumin/Cr ratio <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of Cr AND microalbumin/creatinine within a year</i> evaluate to <b> true</b> because <i>null</i>)])
+Absence of serum creatinine and microalbumin/creatinine ratio within a year; please order both now.
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Eye Care</h2>
+<b>Patient classification:</b> <ul>
+</ul>
+<b>Scenario choice:</b> Eye exam over a year ago or no data
+<p><b>Action Choices</b>
+<ul>
+<li><b>Referral for eye exam over a year or no data</b><br>
+<ul>
+<li><b>Refer for eye exam within 3m <font color=FF0000>preferred</font></b>(strict rule-in condition<i> DM type 2 newly diagnosed or insulin or ocular risk or diabetes type 1 >= 3 years</i> evaluate to <b> true</b> because <i>null</i>)])
+Referral should be scheduled for 3 months from today (max)
+</ul>
+</ul>
+<h2 align="center">ATHENA Diabetes Mellitus: Foot Care</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Diabetes Mellitus: Foot Care: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> Not wound-followup DM patients
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Initial assessments</b><br>
+<ul>
+<li><b>Perform and document foot risk assessment (B) and visual inspection of feet <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+Perform and document visual inspection of patient's feet.
+<li><b>Assess if limb threatening condition present <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+</ul>
+<li><b>Evaluate </b><br>
+<ul>
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Glycemic Control</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA DM: Glycemic Control: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> Nonpharmacologic Therapy
+<p>
+<b>Goal:</b> HBA1C <= target(presence of target HBA1C)
+<p><b>Reached goal?</b> failed(HbA1C(9.0/2010-3-11; target:8.0))
+<p><b>Action Choices</b>
+<ul>
+<li><b>Nonpharmacologic therapy</b><br>
+<ul>
+</ul>
+<li><b>DM - No meds</b><br>
+<ul>
+<li><b>Is patient high risk? If yes, refer <font color=FF0000>preferred</font></b>(strict rule-in condition<i> true</i> evaluate to <b> true</i>)])
+
+null
+<li><b>Add metformin <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Goal not satisfied</i> evaluate to <b> true</b> because <i>Goal not satisfiedHbA1C(9.0/2010-3-11; target:8.0)</i>)])
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Biguanide
+<ul>
+<li>Withhold metformin in the presence of any condition associated with hipoxemia, dehydration or sepsis.
+<li>•	Efficacy ( HbA1c) a 1.0 - 2.0%
+•	The major blood glucose lowering effect is through decreasing hepatic glucose                           production with some decrease in peripheral insulin resistance 
+•	May restore ovulation in premenopausal anovulatory females.
+•	Monitor renal function prior to drug initiation and at least annually thereafter.
+•	Inexpensive when using generic.
+<li>Check B12 levels every 2 years when a patient is using Metformin.
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">ATHENA Lipid Management Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Lipid Management Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null && Age(55.0/1970-1-1))</i>]
+<li>CHD or CHD-Equivalent: [because <i> CHD Risk Equivalent </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> No drug, high CHD risk
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> unknown(LDL_Cholesterol(no value))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Primary_Recommendation</b>
+<ul>
+<li><b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>()
+<li><b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Management Choice</b><br>
+<ul>
+<li><b>Order lipid study <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of LDL data in last year</i> evaluate to <b> true</i>)])
+null
+<li><b>TLC initiation <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Criteria for initiation for TLC</i> evaluate to <b> true</b> because <i>null</i>)])
+<b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>
+<li><b>Presence of CHD, Initiate statin therapy <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Presence of CHD or CHD Equivalent</i> evaluate to <b> true</i>)])
+<b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Statin Metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+<li>Statin Not metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">ATHENA Heart Failure Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Heart Failure Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Not Stage D HF (refractory end stage HF)null)</i>]
+</ul>
+<b>Scenario choice:</b> Stage A HF
+<p>
+<b>Goal:</b> SBP < 140 and DBP < 80(presence of diabetes mellitus)
+<p><b>Reached goal?</b> failed(Treatment_Diastolic_BP/null(95))
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> unknown(LDL_Cholesterol(no value))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Class I</b>
+<ul>
+<li>In patients at high risk for developing HF, systolic and diastolic hypertension should be controlled in accordance with contemporary
+guidelines. (Level of Evidence: A)()
+<li>Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)()
+<li>Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)()
+<li>For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)()
+</ul>
+<li><b>Class III</b>
+<ul>
+<li>Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Stage A messages</b><br>
+<ul>
+<li><b>Hypertension control <font color=FF0000>preferred</font></b>(rule in criterion<i> BP not under control</i> evaluate to <b> true</b> because <i>BP not under controlTreatment_Diastolic_BP/null(95)</i>)])
+In patients at high risk for developing HF, systolic and diastolic hypertension should be controlled in accordance with contemporary
+guidelines. (Level of Evidence: A)
+<li><b>behavior control <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)
+<li><b>Periodic evaluation <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)
+<li><b>Blood sugar control <font color=FF0000>preferred</font></b>(rule in criterion<i> diabetes_mellitus</i> evaluate to <b> true</i>)])
+For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)
+<li><b>not use nutritional supplements <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)
+</ul>
+<li><b> </b><br>
+<ul>
+<li><b>stage A drug choices <font color=FF0000>preferred</font></b>(strict rule-in condition<i> DM or HTN or atherosclerotic vascular disease</i> evaluate to <b> true</b> because <i>null</i>)])
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>ARB
+<ul>
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>preference: preferred
+</ul>
+<li>Ace_Inhibitor
+<ul>
+<li>Already being used
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>Refer to specific ACE Inhibitor dose adjustments based on kidney function.
+<li>Need to find content
+<li>preference: ruled out
+</ul>
+</ul>
+<h2 align="center">VA/JNC-VII Hypertension Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>VA/JNC-VII Hypertension Guideline: unknown[because <i> Eligibility criteria </i> evaluate to <b>unknown</b><i>(eGFR(no value))</i>]
+<li>Risk Group C (presence of TOD/CCD or DM): [because <i> presence of TOD/CCD or DM </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> on one anti-hypertensive drug
+<p>
+<b>Goal:</b> SBP < 140 and DBP < 80(presence of diabetes mellitus)
+<p><b>Reached goal?</b> failed(Treatment_Diastolic_BP/null(95))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Recommendation</b>
+<ul>
+<li>It is true that 7.3 inches of rain fell yesterday, and the patient is taking the following drugs: lisinopril()
+<li>The clinical information from this system is advisory only and is intended to supplement the knowledge of health care professionals regarding the management of hypertension. It is not intended to replace sound clinical judgment or individualized patient care in delivery of healthcare services.
+  Although the ATHENA-HTN information is derived from research literature and is subject to review, we cannot guarantee its comprehensiveness or currency. Please note that medical information is dynamic due to ongoing research and clinical experience and is subject to interpretation. There is also the possibility of errors in the programming.  The user of this software assumes sole responsibility for any decisions made or actions taken based the information contained in this software, including but not limited to therapeutic suggestions.  ATHENA-HTN, the Department of Veterans Affairs and Stanford University shall have no liability to any person, or entity with regard to claims, loss, or damage caused, or alleged to be caused, directly or indirectly by the use of this software or the information contained within.  ATHENA-HTN is the property of Stanford's Office Technology Licensing (OTL) and Department of Veterans Affairs.  
+By accessing ATHENA-HTN, you agree use ATHENA-HTN only as a reference resource for research. You agree to abstain from using ATHENA-HTN to generate knowledge for treatment.()
+<li>There is an allergy or adverse drug reaction reported for a drug that is recommended below. Consult the Patient History for a listing of the reported event and use clinical judgment to determine whether to disgard the recommendation.()
+<li>Beta blockers may have transient adverse effects on lipids in some patients.  Consider repeating lipid profile after maximal dosage of drug has been reached if appropriate.()
+</ul>
+<li><b>Primary_Recommendation</b>
+<ul>
+<li>Consider INTENSIFYING drug treatment: BP ELEVATED based on most recent available BP; F/up 1month.()
+</ul>
+<li><b>Assumption</b>
+<ul>
+<li>We use the most recent creatinine in the patient's record. If there is no creatinine listed, our recommendations are based on the assumption creatinine is within normal limits.()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>on medication: things to check</b><br>
+<ul>
+<li><b>assumption  check presence of creatinine test result <font color=FF0000>preferred</font></b>(rule in criterion<i> absence of creatinine</i> evaluate to <b> true</i>)])
+We use the most recent creatinine in the patient's record. If there is no creatinine listed, our recommendations are based on the assumption creatinine is within normal limits.
+<li><b>adverse event warning <font color=FF0000>preferred</font></b>(rule in criterion<i> presence of current medication with adverse reaction</i> evaluate to <b> true</i>)])
+<li><b>test parameterized message <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+It is true that 7.3 inches of rain fell yesterday, and the patient is taking the following drugs: lisinopril
+<li><b>Disclaimer <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+The clinical information from this system is advisory only and is intended to supplement the knowledge of health care professionals regarding the management of hypertension. It is not intended to replace sound clinical judgment or individualized patient care in delivery of healthcare services.
+  Although the ATHENA-HTN information is derived from research literature and is subject to review, we cannot guarantee its comprehensiveness or currency. Please note that medical information is dynamic due to ongoing research and clinical experience and is subject to interpretation. There is also the possibility of errors in the programming.  The user of this software assumes sole responsibility for any decisions made or actions taken based the information contained in this software, including but not limited to therapeutic suggestions.  ATHENA-HTN, the Department of Veterans Affairs and Stanford University shall have no liability to any person, or entity with regard to claims, loss, or damage caused, or alleged to be caused, directly or indirectly by the use of this software or the information contained within.  ATHENA-HTN is the property of Stanford's Office Technology Licensing (OTL) and Department of Veterans Affairs.  
+By accessing ATHENA-HTN, you agree use ATHENA-HTN only as a reference resource for research. You agree to abstain from using ATHENA-HTN to generate knowledge for treatment.
+</ul>
+<li><b>one-drug-therapy-choices</b><br>
+<ul>
+<li><b>Blood pressure not adequately controlled; intensify drug treatment <font color=FF0000>preferred</font></b>(strict rule-in condition<i> BP not adequately controlled based on most recent BP</i> evaluate to <b> true</b> because <i>BP not adequately controlled based on most recent BPTreatment_Diastolic_BP/null(95)</i>)])
+Consider INTENSIFYING drug treatment: BP ELEVATED based on most recent available BP; F/up 1month.
+</ul>
+<li><b>step up choices</b><br>
+<ul>
+<li><b>evaluate new drug to prescribe <font color=FF0000>preferred</font></b>(strict rule-in condition<i> true</i> evaluate to <b> true</i>)])
+
+<li><b>Increasing dose <font color=FF0000>preferred</font></b>(strict rule-in condition<i> dose level not at maximum and if taking diuretics, not hypokalemia</i> evaluate to <b> true</b> because <i>null</i>)])
+
+</ul>
+<li><b>increase dose considerations</b><br>
+<ul>
+</ul>
+<li><b>addition considerations</b><br>
+<ul>
+<li><b>ADE Recommended Drug <font color=FF0000>preferred</font></b>(rule in criterion<i> ADE for Recommended Drug</i> evaluate to <b> true</i>)])
+There is an allergy or adverse drug reaction reported for a drug that is recommended below. Consult the Patient History for a listing of the reported event and use clinical judgment to determine whether to disgard the recommendation.
+<li><b>add BB and dislipidemia <font color=FF0000>preferred</font></b>(rule in criterion<i> Beta Blocker Add</i> evaluate to <b> true</i>)])
+Beta blockers may have transient adverse effects on lipids in some patients.  Consider repeating lipid profile after maximal dosage of drug has been reached if appropriate.
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Thiazide Diuretic 
+<ul>
+<li><font color=FF0000>Compelling indications:  Diabetes_Mellitus(Diabetes_Mellitus) </font>
+<li>preference: preferred
+</ul>
+<li>Cardioselective Beta Blocker 
+<ul>
+<li>Relative indications:  Diabetes_Mellitus(Diabetes_Mellitus) 
+<li>Beta blockers may diminish symptoms of and recovery from hypoglycemia and should be used with caution in patients who are prone to hypoglycemia.
+<li>Beta blockers may have transient adverse effects on lipids in some patients.  Consider repeating lipid profile after maximal dosage of drug has been reached if appropriate.
+<li>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.
+<li>preference: preferred
+</ul>
+<li>DHP Calcium Channel Blocker 
+<ul>
+<li>Relative indications:  Diabetes_Mellitus(Diabetes_Mellitus) 
+<li>preference: preferred
+</ul>
+<li>(non-DHP) Calcium Channel Blocker 
+<ul>
+<li>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.
+<li>preference: preferred
+</ul>
+<li>Potassium Sparing Diuretic 
+<ul>
+<li>preference: preferred
+<li>No comment
+</ul>
+<li>Alpha Blocker 
+<ul>
+<li>To decrease the likelihood of syncope or excessive hypotension treatment should usually be initiated with a dose of 1 or 2 mgs at bedtime. The dose should be increased in a stepwise fashion. Blood pressures should be measured to check for postural drop.
+<li>Compellingly indicated if the patient has symptomatic BPH.
+<li>preference: preferred
+</ul>
+<li>Angiotensin II Receptor Blocker 
+<ul>
+<li>Bad drug partner:  ACE_Inhibitors(lisinopril) 
+<li>Relative indications:  Diabetes_Mellitus(Diabetes_Mellitus) 
+<li>Check the patient's plasma creatinine and potassium concentrations when prescribing or increasing dose of  angiotensin II receptor blockers.
+<li>preference: ruled out
+</ul>
+<li>ACE Inhibitor 
+<ul>
+<li>Already being used
+<li><font color=FF0000>Compelling indications:  Diabetes_Mellitus(Diabetes_Mellitus) </font>
+<li>This is a test of the references feature.
+<li>preference: ruled out
+</ul>
+</ul>
+</body></html>

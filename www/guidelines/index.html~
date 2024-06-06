@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>Stanford Intermed Guidelines Page </title>
+</head>
+
+<body>
+
+<h1 align="center">Guideline Representation Page</h1>
+
+<p>Here, we provide a number of pointers to Intermed guideline-related works. <br>
+<br>
+</p>
+
+<hr>
+<b>
+
+<p>Guidelines and Protocols</b>&nbsp; 
+
+<ul>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/breastmass.html">Breast
+    Mass </a>by Max Borten, M.D., J.D.</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/est2190.html">Breast
+    Cancer RCT Protocol </a>from PDQ: Eastern Cooperative Oncology Group, Protocol EST 2190</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/flu-guideline.htm">Flu
+    Guideline </a>from the U.S. Public Health Service's Practices Advisory Committee</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/enceph.html">Encephalopathy
+    </a>by David A. Greenberg, M.D.</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/skinrash.html">Skin
+    Rash </a>by Vincent G. Pons, M.D.</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/Galact.html">Galactorrhea
+    </a>by Max Borten, M.D., J.D.</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/diarrhea.html">Acute
+    Diarrhea </a>by M. Brian Fennerty, M.D.</li>
+</ul>
+
+<hr>
+
+<p><br>
+<br>
+<b>Intermed Guideline Model:</b> (aka GLIF) 
+
+<ul>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/guidelineIDL.html">The
+    initial shared specification for guidelines: GLIF </a>(using IDL syntax)</li>
+  <li><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/guidelineIDL-proposed.html">The
+    proposed revision </a>sent out by Ed Pattison-Gordon, email message of 7/14/96</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/GLIF2.html">The
+    proposed GLIF-2 version </a>sent out by John Gennari, email message of 7/29/96</li>
+  <li><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/GLIF2Ed.html">The
+    final GLIF-2 specification </a>posted by Ed Pattison-Gordon, email of 7/31/96; formally
+    approved on 8/16/96.</li>
+  <li><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/Glif2.pont">A
+    Protege/Win readable version of GLIF-2 </a>(See the <a
+    HREF="http://smi-web.stanford.edu/projects/prot-nt/">Protege page </a>for more
+    information.)</li>
+</ul>
+
+<hr>
+
+<p><br>
+<br>
+<b>Stanford Guidelines Representation Work</b>&nbsp; (up to 1996)
+
+<ul>
+  <li> <a HREF="http://smi-web.stanford.edu/projects/eon/96scamc/tu96scamc.html">Samson's AMIA
+    Fall Conference paper.</a>&nbsp; </li>
+  <li><b>Max Borten's breast mass guideline represented in <a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF-idl.html">GLIF</a>:
+    </b><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/breastMass-glif.html">John
+    Gennari's interpretation</a> (ref: email of July 2)</li>
+  <li><b><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/BreastMass.glif">BreastMass.glif:
+    </a></b>The output of Samson's Protege-to-Glif translator, given
+    &quot;BreastMass.pins&quot; as input. This is John Gennari's version of the Breast Mass
+    Workup Guideline in <b>GLIF2</b>.</li>
+  <li><b><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/BreastMass.zip">BreastMass.zip:
+    </a></b>A Protege/Win ontology, KA-tool and instance file for the Max Borten Breast Mass
+    Workup guideline. You must have Protege/Win (version 1.1) installed to make much sense of
+    these files.</li>
+  <li><b><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/BreastTreatment.html">Breast
+    Cancer Treatment Protocol EST 2190 </a>in GLIF</b></li>
+  <li><b><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/bc-treatment-protocol.html">Breast
+    Cancer Treatment Protocol EST 2190 </a>in GLIF2</b> (see email of August 26)</li>
+  <li><b><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/BreastCancer.zip">BreastCancer.zip:
+    </a></b>Protege/Win file for Protocol EST 2190 and associated ontology and KA tool files.
+    Need Protege/Win (version 1.1) to use these files.</li>
+  <li><b><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/FLU.glif">Flu
+    Guideline</a></b>, encoded by Larry Fagan using Protege/Win 1.1.</li>
+  <li><b><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/flu.zip">flu.zip:
+    </a></b>Protege/Win file for the flu guideline and associated ontology and KA tool files.
+    Need Protege/Win (version 1.1) to use these files.</li>
+  <li><b><a
+    HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF2/tu-enceph.glif">Partial
+    Encoding of Encephalopathy Guideline</a></b>, encoded by Samson Tu using Protege/Win 1.1.</li>
+  <li><b><a HREF="http://smi-web.stanford.edu/projects/intermed-web/guidelines/ExecModel.html">Samson
+    Tu's proposed execution model for GLIF2</a></b></li>
+</ul>
+
+<hr>
+
+<p>Back to <a HREF="http://smi-web.stanford.edu/projects/intermed-web/p">Stanford Intermed
+Index page</a>&nbsp; </p>
+
+<address>
+  Last updated (Deleted broken links) on 6/22/99 by Samson Tu: <a
+  HREF="mailto:tu@smi.stanford.edu">tu@smi.stanford.edu</a>
+</address>
+</body>
+</html>

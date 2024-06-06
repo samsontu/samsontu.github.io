@@ -1,0 +1,7 @@
+2014.03.21 11:01:27.401 PDT INFO: *** SYSTEM START *** -- SystemUtilities.logSystemInfo()
+2014.03.21 11:01:27.404 PDT CONFIG: Protege 3.4.5 Build 585, JVM 1.6.0_45-b06, memory=518M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2014.03.21 11:01:27.527 PDT CONFIG: Loaded plugin edu.stanford.smi.eon.pca -- PluginUtilities.logClassLoaderInformation()
+2014.03.21 11:01:27.531 PDT CONFIG: Loaded plugin edu.stanford.smi.protegex.standard_extensions - Graph Widget, Table Widget -- PluginUtilities.logClassLoaderInformation()
+2014.03.21 11:01:27.593 PDT CONFIG: Loaded plugin gov.va.test.opioidtesttool -- PluginUtilities.logClassLoaderInformation()
+2014.03.21 11:01:27.595 PDT WARNING: Duplicate plugin: gov.va.test.opioidtesttool.TestingEnvironment -- PluginUtilities.checkPlugin()
+2014.03.21 11:01:35.213 PDT INFO: Load time for file:\C:\ATHENA_HF_Demo\kbs\ATHENA_HF.pprj = 4 sec (project) + 2 sec (ui) -- ProjectManager$3.run()

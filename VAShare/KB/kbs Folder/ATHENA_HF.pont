@@ -1,0 +1,41 @@
+; Mon Feb 22 13:32:49 PST 2010
+; 
+;+ (version "3.4.3")
+;+ (build "Build 572")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract))
+
+(defclass Heart+Failure+Stage
+	(is-a Patient_History_Class Defined+concept)
+	(role concrete))
+
+(defclass Stage+A+Heart+Failure
+	(is-a Heart+Failure+Stage)
+	(role concrete))
+
+(defclass Stage+B+Heart+Failure
+	(is-a Heart+Failure+Stage)
+	(role concrete))
+
+(defclass Stage+C+Heart+Failure
+	(is-a Heart+Failure+Stage)
+	(role concrete))
+
+(defclass Stage+D+Heart+Failure
+	(is-a Heart+Failure+Stage)
+	(role concrete))
+
+(defclass Prior_Myocardial_Infarction
+	(is-a Patient_History_Class)
+	(role concrete))
+
+(defclass Severe_LVH
+	(is-a Symptoms)
+	(role concrete))
+
+(defclass Ejection_Fraction
+	(is-a Patient_Observations)
+	(role concrete))

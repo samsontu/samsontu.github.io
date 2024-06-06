@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0318)http://www.evidence.org/lpBinCE/lpext.dll?f=templates&fn=search-login.htm&2.0GLOBAL=G_&G_DOCUMENT_TEMPLATE=document-frame.htm&G_HIT_TEMPLATE=hitlist-frame.htm&G_MAIN_FRAMESET=main-h.htm&G_MAIN_HIT_FRAMESET=main-hit-h.htm&G_HITLIST_TEMPLATE=hitlist.htm&G_TARGET_FRAME=doc&G_JAVATOC=false&ADV_QUERY=false&G_DOC_FRAME=doc -->
+<HTML><HEAD><TITLE>Untitled Document</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><!--<link rel="stylesheet" type="text/css" href="">--><LINK 
+href="CAXHRYK0_files/general.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript>var _js_ = 1.0</SCRIPT>
+
+<SCRIPT language=JavaScript1.1>_js_ = 1.1</SCRIPT>
+
+<SCRIPT language=JavaScript1.2>_js_ = 1.2</SCRIPT>
+
+<SCRIPT type=text/javascript>
+	function getScriptName()
+{
+	var path = location.pathname;
+	path = path.substring(0, path.indexOf('.') + 4);
+	return path;
+}
+
+
+
+function isOfficeDocument(docPathName)
+{
+	var bRet = false;
+	var szExtension;
+	if(docPathName.length > 4)
+	{
+		szExtension = docPathName.substring(docPathName.length - 3);
+
+		if(szExtension == "doc" || szExtension == "xls" || szExtension == "ppt")
+		{
+			bRet = true;
+		}
+	}
+	return bRet;
+}
+
+
+
+
+
+function doSynchronizeContents(contents_frame_name, contents_frame_url)
+{
+	var current_document = escape(getCookie("doc"));
+	
+
+	// whack any leading slash character
+	var index = current_document.indexOf("/");
+	if (index == 0)
+	{
+	 	current_document = current_document.substring(1);
+	}
+	
+	var contents_window = getFrameWindow(contents_frame_name);
+  
+	if (contents_window != null)
+	{
+		if (contents_window.document.JTOC == null)
+		{
+			contents_window.location = contents_frame_url + '&cp=' + current_document + '&c=100&sync=2';
+		}
+		else
+		{
+			if(contents_window.document.JTOC != null)
+			{
+				contents_window.document.JTOC.syncTOC(current_document);
+			}
+			else if(contents_frame_url != null)
+			{
+				contents_window.location = contents_frame_url;
+			}
+		}
+	}
+}
+
+
+
+//this is specifically a gloabl var
+var thesSearch = '';
+function SetThesSearch(checkswitch)
+{
+  thesSearch = checkswitch.value;
+  //alert(thesSearch);
+}
+
+function CreateQuery()
+{
+  //alert("query");
+  if (thesSearch != "")
+  {
+    //add the query
+    var thesStr = document.search.q.value;
+
+    //now add the connection string
+    var dbName = 'BMJSubAdmin';
+    var connectionStr = 'Provider=sqloledb;Data Source=io;Initial Catalog=BMJSubAdmin;User Id=thes;Password=viewer;';
+    var thesId = '37';
+    thesStr = '###' + thesSearch + "#" + dbName + '#' + connectionStr + '#' + thesId + ';;' + thesStr;
+    document.search.q.value = thesStr;
+  }
+  else
+  {
+  }  
+  
+  //alert(document.search.q.value);
+  return true;
+}
+
+
+function printTopic()
+{
+  var printUrl = '/pdf/' + this.window.parent.doc.purl;
+  //test
+  //printUrl = '/pdf/test.pdf';
+  //alert(printUrl);
+  if(printUrl == null)
+  {
+    printUrl = "";
+    printUrl = this.window.parent.doc.location.href;
+    //alert(printUrl);
+  }
+
+  printwin = window.open(printUrl,'printwin');
+  printwin.focus();
+  //printwin.print();
+
+}
+
+function GetoutMonth()
+{
+	var today = new Date();
+	var outmonth = today.getMonth();
+	var strMonth = "";
+	if(outmonth == 0)
+		strMonth = "January";
+	if(outmonth == 1)
+		strMonth = "February";
+	if(outmonth == 2)
+		strMonth = "March";
+	if(outmonth == 3)
+		strMonth = "April";
+	if(outmonth == 4)
+		strMonth = "May";
+	if(outmonth == 5)
+		strMonth = "June";
+	if(outmonth == 6)
+		strMonth = "July";
+	if(outmonth == 7)
+		strMonth = "August";
+	if(outmonth == 8)
+		strMonth = "September";
+	if(outmonth == 9)
+		strMonth = "October";
+	if(outmonth == 10)
+		strMonth = "November";
+	if(outmonth == 11)
+		strMonth = "December";
+	return strMonth; 
+
+}
+
+function GetOutYear()
+{
+	var today = new Date();
+	outyear = today.getFullYear();
+	return outyear; 
+
+}
+
+var loaded = true;
+  
+	
+	</SCRIPT>
+
+<SCRIPT language=JavaScript1.2 type=text/javascript>
+<!--
+
+// Dmitry Kirn
+var current_obj=0;
+var color_over = '#E7E7E7';
+var color_out = '#FFFFFF';
+var color_current = '#db57dc';
+var i_am_over;
+var first_time = true;
+var rootpath=""
+
+function over(what){
+i_am_over = what;
+	if(first_time){
+		what.bgColor = color_over;
+		return false;
+		}
+	if (what.id != current_obj.id)what.bgColor = color_over;
+return false;
+}
+function out(what){
+	if(first_time){
+		what.bgColor = color_out;
+		return false;
+		}
+	if (what.id != current_obj.id) what.bgColor = color_out;
+return false;
+}
+function set_current(oo){
+	//alert("Y. PAPA "+oo.id);
+	//alert(parent.doc.location.href);
+	if (document.layers)return false;
+	if (!first_time)current_obj.bgColor = color_out;
+	current_obj = oo;
+	first_time = false;
+	current_obj.bgColor = color_current;
+	return false;
+}
+
+function upDate(docloc,toploc)
+{
+  parent.doc.location.href = docloc;
+  parent.docnav.location.href = toploc;
+}
+  
+//-->
+</SCRIPT>
+
+<META content="MSHTML 5.50.4807.2300" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=5 src="CAXHRYK0_files/spacer.gif" width=6></TD>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width=190 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top align=middle>
+            <TABLE cellSpacing=0 cellPadding=0 width="85%" border=0>
+              <TBODY>
+              <TR>
+                <TD><!-- M E N U -->
+                  <TABLE borderColor=#db57dc cellSpacing=4 
+                  borderColorDark=#db57dc cellPadding=0 width="100%" 
+                  align=center borderColorLight=#db57dc border=1>
+                    <TBODY>
+                    <TR>
+                      <TD id=home onmouseover=over(this); onmouseout=out(this); 
+                      colSpan=2 onLoad="set_current(this);"><ILAYER 
+                        width="100%"><LAYER id=home onmouseover=over(this); 
+                        onmouseout=out(this); width="100%"><A class=menu id=6 
+                        onclick=set_current(i_am_over); 
+                        href="javascript:upDate('http://212.78.70.197/clinicalevidence.org/content_frame.asp','http://212.78.70.197/clinicalevidence.org/_frames/top_frame.asp?p=1')">&nbsp;home</A> 
+                        </LAYER></ILAYER></TD></TR>
+                    <TR>
+                      <TD id=resources onmouseover=over(this); 
+                      onmouseout=out(this); colSpan=2><ILAYER 
+                        width="100%"><LAYER id=resources onmouseover=over(this); 
+                        onmouseout=out(this); width="100%"><A class=menu id=1 
+                        onclick=set_current(i_am_over); 
+                        href="javascript:upDate('http://212.78.70.197/clinicalevidence.org/Resources/default.asp?p=2','http://212.78.70.197/clinicalevidence.org/_frames/top_frame.asp?p=2')">&nbsp;resources</A> 
+                        </LAYER></ILAYER></TD></TR>
+                    <TR>
+                      <TD id=update onmouseover=over(this); 
+                      onmouseout=out(this); colSpan=2><ILAYER 
+                        width="100%"><LAYER id=update onmouseover=over(this); 
+                        onmouseout=out(this); width="100%"><A class=menu id=2 
+                        onclick=set_current(i_am_over); 
+                        href="javascript:upDate('http://212.78.70.197/clinicalevidence.org/update/default.asp?p=3','http://212.78.70.197/clinicalevidence.org/_frames/top_frame.asp?p=3')">&nbsp;update</A> 
+                        </LAYER></ILAYER></TD></TR>
+                    <TR>
+                      <TD id=contribute onmouseover=over(this); 
+                      onmouseout=out(this); colSpan=2><ILAYER 
+                        width="100%"><LAYER id=contribute 
+                        onmouseover=over(this); onmouseout=out(this); 
+                        width="100%"><A class=menu id=3 
+                        onclick=set_current(i_am_over); 
+                        href="javascript:upDate('http://212.78.70.197/clinicalevidence.org/contribute/default.asp?p=4','http://212.78.70.197/clinicalevidence.org/_frames/top_frame.asp?p=4')">&nbsp;contribute</A> 
+                        </LAYER></ILAYER></TD></TR>
+                    <TR>
+                      <TD id=subscribe onmouseover=over(this); 
+                      onmouseout=out(this); colSpan=2><ILAYER 
+                        width="100%"><LAYER id=subscribe onmouseover=over(this); 
+                        onmouseout=out(this); width="100%"><A class=menu id=4 
+                        onclick=set_current(i_am_over); 
+                        href="javascript:upDate('http://212.78.70.197/clinicalevidence.org/access/default.asp?p=5','http://212.78.70.197/clinicalevidence.org/_frames/top_frame.asp?p=5')">&nbsp;subscribe</A> 
+                        </LAYER></ILAYER></TD></TR>
+                    <TR>
+                      <TD id=feedback onmouseover=over(this); 
+                      onmouseout=out(this); colSpan=2><ILAYER 
+                        width="100%"><LAYER id=feedback onmouseover=over(this); 
+                        onmouseout=out(this); width="100%"><A class=menu id=5 
+                        onclick=set_current(i_am_over); 
+                        href="javascript:upDate('http://212.78.70.197/clinicalevidence.org/contact/default.asp?p=6','http://212.78.70.197/clinicalevidence.org/_frames/top_frame.asp?p=6')">&nbsp;feedback 
+                        &amp; contacts</A> </LAYER></ILAYER></TD></TR>
+                    <TR vAlign=bottom>
+                      <TD class=borderless_td colSpan=2><FONT 
+                        style="FONT-SIZE: 7pt" face=Helvetica>&nbsp;search these 
+                        pages</FONT></TD></TR>
+                    <TR>
+                      <FORM name=Alsearch 
+                      action=http://212.78.70.197/clinicalevidence.org/search/default.asp?p=7 
+                      method=post target=doc>
+                      <TD class=borderless_td noWrap>
+                        <SCRIPT language=JavaScript>
+					<!-- media.sniff
+					bName = navigator.appName
+			
+					if (bName == "Netscape") 
+					{
+					document.write('<input type="text" name="search_txt" size="11">');
+					} 
+					else
+					{
+					document.write('<input type="text" name="search_txt" class="homeSearch">');
+					}			 
+					//-->
+					</SCRIPT>
+                      </TD>
+                      <TD class=borderless_td><INPUT type=image height=20 
+                        alt="Click to begin your search" width=22 
+                        src="CAXHRYK0_files/goarrowbox.gif" value=Submit 
+                        border=0 name=Submit> </TD></FORM></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR align=middle>
+                      <FORM name=search onsubmit=CreateQuery(); 
+                      action=/lpBinCE/lpext.dll method=post target=_top>
+                      <TD><IMG height=10 src="CAXHRYK0_files/spacer.gif" 
+                        width=1></TD></TR>
+                    <TR>
+                      <TD class=borderless_td align=middle bgColor=#db57dc 
+                      colSpan=2><FONT style="FONT-SIZE: 8pt" 
+face=helvetica><B>
+                        <SCRIPT>
+                    var outStr = "";
+                    var outMonth= "";
+                    var outYear = "";
+                    outMonth = GetoutMonth();
+                    outYear = GetOutYear(); //"2001";
+                    outStr = outMonth + " " + outYear;// + " ISSUE 5";
+                    document.write(outStr );
+                  </SCRIPT>
+                        </B></FONT></TD></TR>
+                    <TR>
+                      <TD class=borderless_td colSpan=2><FONT 
+                        style="FONT-SIZE: 7pt" face=Helvetica 
+                        color=#000000>&nbsp;&nbsp;search current 
+                    issue</FONT></TD></TR>
+                    <TR>
+                      <TD class=borderless_td><INPUT type=hidden size=0 
+                        value=hitlist name=f> <INPUT type=hidden size=0 
+                        value=main-hit-h.htm name=t> <INPUT type=hidden size=0 
+                        value=doc name=tf> <INPUT type=hidden size=0 
+                        value=document-frame.htm name=tt> <INPUT type=hidden 
+                        size=0 value=Simple name=x> <INPUT type=hidden size=0 
+                        name=d> <INPUT type=hidden size=0 value=redirect name=c> 
+                        <INPUT type=hidden size=0 value=Relevance-Weight name=s> 
+                        <INPUT type=hidden size=0 value=hitlist.htm name=ht> <!-- These determine the hit list arrangement: --><INPUT 
+                        type=hidden size=0 value=Title name=a> <INPUT 
+                        type=hidden size=0 value=Hit[,5] name=h1> <INPUT 
+                        type=hidden size=0 value=Title[,15] name=h2> <INPUT 
+                        type=hidden size=0 value=Title-Path[,80] name=h3>
+                        <SCRIPT language=JavaScript>
+					<!-- media.sniff
+					bName = navigator.appName
+			
+					if (bName == "Netscape") 
+					{
+					document.write('<input type="text" name="q" size="11">');
+					} 
+					else
+					{
+					document.write('<input type="text" name="q" class="homeSearch">');
+					}			 
+					//-->
+					</SCRIPT>
+                         <!-- <input type="text" name="q" class="homeSearch"> --></TD>
+                      <TD class=borderless_td><INPUT type=image height=20 
+                        alt="Click to begin your search" width=22 
+                        src="CAXHRYK0_files/goarrowbox.gif" value=Submit 
+                        border=0 name=Submit_> </TD></TR>
+                    <TR vAlign=center>
+                      <TD class=borderless_td colSpan=2><FONT 
+                        style="FONT-SIZE: 7pt" face=helvetica 
+                        color=#000000><INPUT onclick=SetThesSearch(this); 
+                        type=checkbox value="'RT','EQ','NT','RV3','UMLS'" 
+                        name=thes> expand with 
+                  thesaurus</FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></TABLE><APPLET 
+id=Applet1 name=JTOC codeBase=/lpApplets20 code=JTOC.class width="100%" 
+height=5000 archive="JTOC.jar"><PARAM NAME="Target" VALUE="doc"><PARAM NAME="ExtDll" VALUE="/lpBinCE/lpext.dll"><PARAM NAME="DocTemplate" VALUE="document-frame.htm"><PARAM NAME="SyncPath" VALUE="/BMJSPLITCE/cvd.html"><PARAM NAME="TextColor" VALUE="#000000"><PARAM NAME="LineColor" VALUE="#666666"><PARAM NAME="VisitedTextColor" VALUE="#006666"><PARAM NAME="BackgroundColor" VALUE="#FFFFFF"><PARAM NAME="MouseOverColor" VALUE="#0000cc"><PARAM NAME="SelectedBackColor" VALUE="#0000cc"><PARAM NAME="SelectedTextColor" VALUE="#cccccc"><PARAM NAME="ShowImages" VALUE="1"><PARAM NAME="LangLoadingNode" VALUE="Loading..."><PARAM NAME="LangMoreNode" VALUE="More..."><PARAM NAME="LangProcessingData" VALUE="Processing Data..."><PARAM NAME="LangErrorNoServerData" VALUE="No data returned from server."><PARAM NAME="LangLoadedNDocuments" VALUE="Loaded %i documents."><PARAM NAME="LangSynchronizingTOC" VALUE="Synchronizing the TOC..."><PARAM NAME="LangRequestingChildren" VALUE="Requesting children..."><PARAM NAME="LangAddingDocument" VALUE="Adding document %s"><PARAM NAME="LangErrorNoTitle" VALUE="Error - Child with no name or title,"><PARAM NAME="LangServerError" VALUE="Error returned from server."><PARAM NAME="id" VALUE="Applet1"><PARAM NAME="name" VALUE="JTOC"><PARAM NAME="codeBase" VALUE="http://www.evidence.org/lpApplets20"><PARAM NAME="code" VALUE="JTOC.class"><PARAM NAME="width" VALUE="100%"><PARAM NAME="height" VALUE="5000"><PARAM NAME="archive" VALUE="JTOC.jar"></APPLET> </BODY></HTML>

@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Advisories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<advisory>
+<subject_classification>
+<parameter>VA/JNC-VII Hypertension Guideline</parameter>
+<value>true</value>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</subject_classification>
+<subject_classification>
+<parameter>Risk Group C (presence of TOD/CCD or DM)</parameter>
+<value/>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</subject_classification>
+<evaluated_goal>
+<reason_for_goal>presence of diabetes mellitus</reason_for_goal>
+<goal>SBP &lt; 140 and DBP &lt; 80</goal>
+<achieved>achieved</achieved>
+<supporting_data>Treatment_Diastolic_BP(75) &amp;&amp; Treatment_Systolic_BP(132)</supporting_data>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</evaluated_goal>
+<scenario_choice>
+<name>on two or three anti-hypertensive drugs</name>
+<scenario_id>athena_hypertension_INSTANCE_00035</scenario_id>
+<description/>
+<preference>preferred</preference>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</scenario_choice>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>assumption no systolic or diastolic BP message</name>
+<message>We did not find a BP in the vitals signs section of the computer.  We are not at present able to use the BP recorded in the text of the progress note, so we are not able to determine whether the BP control is adequate or inadequate.  Please enter BP using the top part of the screen.</message>
+<message_type>Assumption</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>alpha blocker orthostasis</name>
+<message>This patient has an active prescription for an alpha adrenergic antagonist. We assume that you have checked the patient's standing blood pressure and that the patient does not have orthostasis (for example, SBP drop &gt;20 mmHg).</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>test parameterized message</name>
+<message>It is false that 7.3 inches of rain fell yesterday, and the patient is taking the following drugs: furosemide, Insulin, simvastatin, tamsulosin, terazosin, triamterene</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Medication dose above upper limit</name>
+<message>The dose of terazosin is above the upper limit for management of hypertension. Please check if prescription information is accurate.</message>
+<message_type>Primary_Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>ATHENA HTN Disclaimer</name>
+<message>The clinical information from this system is advisory only and is intended to supplement the knowledge of health care professionals regarding the management of hypertension. It is not intended to replace sound clinical judgment or individualized patient care in delivery of healthcare services.
+  Although the ATHENA-HTN information is derived from research literature and is subject to review, we cannot guarantee its comprehensiveness or currency. Please note that medical information is dynamic due to ongoing research and clinical experience and is subject to interpretation. There is also the possibility of errors in the programming.  The user of this software assumes sole responsibility for any decisions made or actions taken based the information contained in this software, including but not limited to therapeutic suggestions.  ATHENA-HTN, the Department of Veterans Affairs and Stanford University shall have no liability to any person, or entity with regard to claims, loss, or damage caused, or alleged to be caused, directly or indirectly by the use of this software or the information contained within.  ATHENA-HTN is the property of Stanford's Office Technology Licensing (OTL) and Department of Veterans Affairs.  
+By accessing ATHENA-HTN, you agree use ATHENA-HTN only as a reference resource for research. You agree to abstain from using ATHENA-HTN to generate knowledge for treatment.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>substitution message</name>
+<message>Based on most recent BP in the database, BP appears to be adequately controlled; however, ALTERNATIVE DRUGS may be preferred.</message>
+<message_type>Primary_Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>NO ADE recommended drug</name>
+<message>No adverse reactions are listed for the antihypertensive drug(s) we are recommending.  If the patient has had an adverse reaction, please enter it in a progress note entitled "Adverse Reactions/Allergy".</message>
+<message_type>Recommendation</message_type>
+</action>
+<evaluated_intervention>
+<activity>Non-Dihydropyridines</activity>
+<evaluations>
+<replaces_activity>
+<activity_to_delete>tamsulosin</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>(non-DHP) Calcium Channel Blocker </name>
+<activity>Non-Dihydropyridines</activity>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_contraindications>Heart_Block_2nd_Or_3rd_Degree</relative_contraindications>
+<relative_contraindications>Heart_Failure</relative_contraindications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart failure and ndhp</name>
+<message>Patient has heart failure which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart block and add ndhp</name>
+<message>Patient has heart block which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart block (2nd or 3rd degree)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+<replaces_activity>
+<activity_to_delete>Potassium-Sparing_Diuretics</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>(non-DHP) Calcium Channel Blocker </name>
+<activity>Non-Dihydropyridines</activity>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_contraindications>Heart_Block_2nd_Or_3rd_Degree</relative_contraindications>
+<relative_contraindications>Heart_Failure</relative_contraindications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart failure and ndhp</name>
+<message>Patient has heart failure which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart block and add ndhp</name>
+<message>Patient has heart block which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart block (2nd or 3rd degree)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>Potassium-Sparing_Diuretics</activity>
+<evaluations>
+<replace_by_activity>
+<activity_to_add>ACE_Inhibitors</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>ACE Inhibitor </name>
+<activity>ACE_Inhibitors</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure  (Secondary Prev) BP controlled</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<compelling_indications>DM (2ary prev)  BP controlled</compelling_indications>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<relative_contraindications>Presence of K sparing diuretics</relative_contraindications>
+<bad_drug_partner>Potassium-Sparing_Diuretics</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>ACE inhibitor and HF</name>
+<message>Use of ACE inhibitors in patients with heart failure and ejection fraction &lt;0.35 significantly reduces overall mortality and hospital admissions.  For patients with ejection fraction &gt;=0.35 ACE inhibitors may be beneficial but this is not established.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>add ACE(2ary prevention HF), dose adjustment </name>
+<message>When adding ACE inhibitor to this patient's therapeutic regime a dose adjustment of other anti-hypertensive drugs may be required.</message>
+<rule_in_criteria>HF and &gt;1 antihypertensive drug </rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>adding ace inhibitor, check Cr and K, [Cr&lt;=1.5(male) or Cr&lt;=1.3(female)] and K&lt;5.6</name>
+<message>Check the patient's creatinine and potassium concentrations when prescribing  ACE Inhibitors.</message>
+<rule_in_criteria>K&lt;5.6 and eGFR&lt;60</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add ACE/ARB &amp; CKD; alert creatinine rise</name>
+<message>A stable increase of serum creatinine as much as 35% above baseline after ACEI or ARB initiation may be tolerated, as long as hyperkalemia does not occur. ACEI or ARB should be discontinued, or other potentially reversible causes of kidney failure investigated if progressive and rapid rise of serum creatinine continues. Since CKD is associated with progressive rise in creatinine over years, ACEI or ARB should not be discontinued for this situation, since these medications are renoprotective.</message>
+<rule_in_criteria>Presence of CKD (lab or ICD9)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Alpha_blockers</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>true</prior_use>
+<preference>ruled out</preference>
+<name>Alpha Blocker </name>
+<activity>Alpha_blockers</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Alpha blocker and dose titration</name>
+<message>To decrease the likelihood of syncope or excessive hypotension treatment should usually be initiated with a dose of 1 or 2 mgs at bedtime. The dose should be increased in a stepwise fashion. Blood pressures should be measured to check for postural drop.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>compelling if symptomatic BPH</name>
+<message>Compellingly indicated if the patient has symptomatic BPH.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Beta-Blockers-Cardioselective</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>preferred</preference>
+<name>Cardioselective Beta Blocker </name>
+<activity>Beta-Blockers-Cardioselective</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure (second prev) BP cont</compelling_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Coronary_Artery_Disease</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add Beta blocker and DM</name>
+<message>Beta blockers may diminish symptoms of and recovery from hypoglycemia and should be used with caution in patients who are prone to hypoglycemia.</message>
+<rule_in_criteria>presence of diabetes mellitus</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>betablocker dyslipidemia warning message</name>
+<message>Beta blockers may have transient adverse effects on lipids in some patients.  Consider repeating lipid profile after maximal dosage of drug has been reached if appropriate.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Dihydropyridines</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>DHP Calcium Channel Blocker </name>
+<activity>Dihydropyridines</activity>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>DHP add and Angina</name>
+<message>Felodipine is not FDA-Approved for the indication of angina, but by VA guidelines it is the DHP calcium channel antagonist of choice.</message>
+<rule_in_criteria>presence of angina</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Non-Dihydropyridines</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>(non-DHP) Calcium Channel Blocker </name>
+<activity>Non-Dihydropyridines</activity>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_contraindications>Heart_Block_2nd_Or_3rd_Degree</relative_contraindications>
+<relative_contraindications>Heart_Failure</relative_contraindications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart failure and ndhp</name>
+<message>Patient has heart failure which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart block and add ndhp</name>
+<message>Patient has heart block which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart block (2nd or 3rd degree)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Thiazide_Diuretics</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>Thiazide Diuretic </name>
+<activity>Thiazide_Diuretics</activity>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<compelling_indications>taking &gt;= 2 anti hypertensive meds</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<bad_drug_partner>furosemide</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>HCTZ dosing message and creatinine&lt;=2.0</name>
+<message>HCTZ dose above 25 mg doesn't add to BP control for most patients and may lead to hypokalemia.</message>
+<rule_in_criteria>Creatinine&lt;=2.0</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Urinary incontinence and ADD HCTZ</name>
+<message>There is little information about the likelihood that introduction of low-dose thiazides will adversely affect bladder function.  Follow individual patient response to treatment.</message>
+<rule_in_criteria>presence of BPH or age&gt;65</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>Beta-Blockers-Cardioselective</activity>
+<evaluations>
+<replaces_activity>
+<activity_to_delete>tamsulosin</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>preferred</preference>
+<name>Cardioselective Beta Blocker </name>
+<activity>Beta-Blockers-Cardioselective</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure (second prev) BP cont</compelling_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Coronary_Artery_Disease</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add Beta blocker and DM</name>
+<message>Beta blockers may diminish symptoms of and recovery from hypoglycemia and should be used with caution in patients who are prone to hypoglycemia.</message>
+<rule_in_criteria>presence of diabetes mellitus</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>betablocker dyslipidemia warning message</name>
+<message>Beta blockers may have transient adverse effects on lipids in some patients.  Consider repeating lipid profile after maximal dosage of drug has been reached if appropriate.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+<replaces_activity>
+<activity_to_delete>Potassium-Sparing_Diuretics</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>preferred</preference>
+<name>Cardioselective Beta Blocker </name>
+<activity>Beta-Blockers-Cardioselective</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure (second prev) BP cont</compelling_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Coronary_Artery_Disease</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add Beta blocker and DM</name>
+<message>Beta blockers may diminish symptoms of and recovery from hypoglycemia and should be used with caution in patients who are prone to hypoglycemia.</message>
+<rule_in_criteria>presence of diabetes mellitus</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>betablocker dyslipidemia warning message</name>
+<message>Beta blockers may have transient adverse effects on lipids in some patients.  Consider repeating lipid profile after maximal dosage of drug has been reached if appropriate.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>tamsulosin</activity>
+<evaluations>
+<replace_by_activity>
+<activity_to_add>ACE_Inhibitors</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>ACE Inhibitor </name>
+<activity>ACE_Inhibitors</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure  (Secondary Prev) BP controlled</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<compelling_indications>DM (2ary prev)  BP controlled</compelling_indications>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<relative_contraindications>Presence of K sparing diuretics</relative_contraindications>
+<bad_drug_partner>Potassium-Sparing_Diuretics</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>ACE inhibitor and HF</name>
+<message>Use of ACE inhibitors in patients with heart failure and ejection fraction &lt;0.35 significantly reduces overall mortality and hospital admissions.  For patients with ejection fraction &gt;=0.35 ACE inhibitors may be beneficial but this is not established.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>add ACE(2ary prevention HF), dose adjustment </name>
+<message>When adding ACE inhibitor to this patient's therapeutic regime a dose adjustment of other anti-hypertensive drugs may be required.</message>
+<rule_in_criteria>HF and &gt;1 antihypertensive drug </rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>adding ace inhibitor, check Cr and K, [Cr&lt;=1.5(male) or Cr&lt;=1.3(female)] and K&lt;5.6</name>
+<message>Check the patient's creatinine and potassium concentrations when prescribing  ACE Inhibitors.</message>
+<rule_in_criteria>K&lt;5.6 and eGFR&lt;60</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add ACE/ARB &amp; CKD; alert creatinine rise</name>
+<message>A stable increase of serum creatinine as much as 35% above baseline after ACEI or ARB initiation may be tolerated, as long as hyperkalemia does not occur. ACEI or ARB should be discontinued, or other potentially reversible causes of kidney failure investigated if progressive and rapid rise of serum creatinine continues. Since CKD is associated with progressive rise in creatinine over years, ACEI or ARB should not be discontinued for this situation, since these medications are renoprotective.</message>
+<rule_in_criteria>Presence of CKD (lab or ICD9)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Alpha_blockers</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>true</prior_use>
+<preference>ruled out</preference>
+<name>Alpha Blocker </name>
+<activity>Alpha_blockers</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Alpha blocker and dose titration</name>
+<message>To decrease the likelihood of syncope or excessive hypotension treatment should usually be initiated with a dose of 1 or 2 mgs at bedtime. The dose should be increased in a stepwise fashion. Blood pressures should be measured to check for postural drop.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>compelling if symptomatic BPH</name>
+<message>Compellingly indicated if the patient has symptomatic BPH.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Beta-Blockers-Cardioselective</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>preferred</preference>
+<name>Cardioselective Beta Blocker </name>
+<activity>Beta-Blockers-Cardioselective</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure (second prev) BP cont</compelling_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Coronary_Artery_Disease</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add Beta blocker and DM</name>
+<message>Beta blockers may diminish symptoms of and recovery from hypoglycemia and should be used with caution in patients who are prone to hypoglycemia.</message>
+<rule_in_criteria>presence of diabetes mellitus</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>betablocker dyslipidemia warning message</name>
+<message>Beta blockers may have transient adverse effects on lipids in some patients.  Consider repeating lipid profile after maximal dosage of drug has been reached if appropriate.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Dihydropyridines</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>DHP Calcium Channel Blocker </name>
+<activity>Dihydropyridines</activity>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>DHP add and Angina</name>
+<message>Felodipine is not FDA-Approved for the indication of angina, but by VA guidelines it is the DHP calcium channel antagonist of choice.</message>
+<rule_in_criteria>presence of angina</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Non-Dihydropyridines</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>(non-DHP) Calcium Channel Blocker </name>
+<activity>Non-Dihydropyridines</activity>
+<relative_indications>Atrial_Fibrillation</relative_indications>
+<relative_indications>Angina</relative_indications>
+<relative_indications>CKD by eGFR or ICD9 codes</relative_indications>
+<relative_contraindications>Heart_Block_2nd_Or_3rd_Degree</relative_contraindications>
+<relative_contraindications>Heart_Failure</relative_contraindications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart failure and ndhp</name>
+<message>Patient has heart failure which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>heart block and add ndhp</name>
+<message>Patient has heart block which is a relative contraindication to diltiazem. Evaluate potential benefit versus harm of initiating diltiazem. Follow clinically.</message>
+<rule_in_criteria>presence of heart block (2nd or 3rd degree)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Atrial fibrillation and add NDHP orBB</name>
+<message>Management of  arrythmia is complex and may require consultation with specialist.</message>
+<rule_in_criteria>presence of atrial fibrillation</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>disclaimer about procedure reports delete</name>
+<message>Diagnoses from EKG reports are not extracted. If patient has an arrythmia that is not shown in patient summary, please update problem list.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+<replace_by_activity>
+<activity_to_add>Thiazide_Diuretics</activity_to_add>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>Thiazide Diuretic </name>
+<activity>Thiazide_Diuretics</activity>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<compelling_indications>taking &gt;= 2 anti hypertensive meds</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<bad_drug_partner>furosemide</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>HCTZ dosing message and creatinine&lt;=2.0</name>
+<message>HCTZ dose above 25 mg doesn't add to BP control for most patients and may lead to hypokalemia.</message>
+<rule_in_criteria>Creatinine&lt;=2.0</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Urinary incontinence and ADD HCTZ</name>
+<message>There is little information about the likelihood that introduction of low-dose thiazides will adversely affect bladder function.  Follow individual patient response to treatment.</message>
+<rule_in_criteria>presence of BPH or age&gt;65</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replace_by_activity>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>Alpha_blockers</activity>
+<evaluations>
+<replaces_activity>
+<activity_to_delete>tamsulosin</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>true</prior_use>
+<preference>ruled out</preference>
+<name>Alpha Blocker </name>
+<activity>Alpha_blockers</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Alpha blocker and dose titration</name>
+<message>To decrease the likelihood of syncope or excessive hypotension treatment should usually be initiated with a dose of 1 or 2 mgs at bedtime. The dose should be increased in a stepwise fashion. Blood pressures should be measured to check for postural drop.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>compelling if symptomatic BPH</name>
+<message>Compellingly indicated if the patient has symptomatic BPH.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+<replaces_activity>
+<activity_to_delete>Potassium-Sparing_Diuretics</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>true</prior_use>
+<preference>ruled out</preference>
+<name>Alpha Blocker </name>
+<activity>Alpha_blockers</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Alpha blocker and dose titration</name>
+<message>To decrease the likelihood of syncope or excessive hypotension treatment should usually be initiated with a dose of 1 or 2 mgs at bedtime. The dose should be increased in a stepwise fashion. Blood pressures should be measured to check for postural drop.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>compelling if symptomatic BPH</name>
+<message>Compellingly indicated if the patient has symptomatic BPH.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>ACE_Inhibitors</activity>
+<evaluations>
+<replaces_activity>
+<activity_to_delete>tamsulosin</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>ACE Inhibitor </name>
+<activity>ACE_Inhibitors</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure  (Secondary Prev) BP controlled</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<compelling_indications>DM (2ary prev)  BP controlled</compelling_indications>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<relative_contraindications>Presence of K sparing diuretics</relative_contraindications>
+<bad_drug_partner>Potassium-Sparing_Diuretics</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>ACE inhibitor and HF</name>
+<message>Use of ACE inhibitors in patients with heart failure and ejection fraction &lt;0.35 significantly reduces overall mortality and hospital admissions.  For patients with ejection fraction &gt;=0.35 ACE inhibitors may be beneficial but this is not established.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>add ACE(2ary prevention HF), dose adjustment </name>
+<message>When adding ACE inhibitor to this patient's therapeutic regime a dose adjustment of other anti-hypertensive drugs may be required.</message>
+<rule_in_criteria>HF and &gt;1 antihypertensive drug </rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>adding ace inhibitor, check Cr and K, [Cr&lt;=1.5(male) or Cr&lt;=1.3(female)] and K&lt;5.6</name>
+<message>Check the patient's creatinine and potassium concentrations when prescribing  ACE Inhibitors.</message>
+<rule_in_criteria>K&lt;5.6 and eGFR&lt;60</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add ACE/ARB &amp; CKD; alert creatinine rise</name>
+<message>A stable increase of serum creatinine as much as 35% above baseline after ACEI or ARB initiation may be tolerated, as long as hyperkalemia does not occur. ACEI or ARB should be discontinued, or other potentially reversible causes of kidney failure investigated if progressive and rapid rise of serum creatinine continues. Since CKD is associated with progressive rise in creatinine over years, ACEI or ARB should not be discontinued for this situation, since these medications are renoprotective.</message>
+<rule_in_criteria>Presence of CKD (lab or ICD9)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+<replaces_activity>
+<activity_to_delete>Potassium-Sparing_Diuretics</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>ACE Inhibitor </name>
+<activity>ACE_Inhibitors</activity>
+<compelling_indications>Heart_Failure</compelling_indications>
+<compelling_indications>Heart Failure  (Secondary Prev) BP controlled</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<compelling_indications>DM (2ary prev)  BP controlled</compelling_indications>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<relative_contraindications>Presence of K sparing diuretics</relative_contraindications>
+<bad_drug_partner>Potassium-Sparing_Diuretics</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>ACE inhibitor and HF</name>
+<message>Use of ACE inhibitors in patients with heart failure and ejection fraction &lt;0.35 significantly reduces overall mortality and hospital admissions.  For patients with ejection fraction &gt;=0.35 ACE inhibitors may be beneficial but this is not established.</message>
+<rule_in_criteria>presence of heart failure</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>add ACE(2ary prevention HF), dose adjustment </name>
+<message>When adding ACE inhibitor to this patient's therapeutic regime a dose adjustment of other anti-hypertensive drugs may be required.</message>
+<rule_in_criteria>HF and &gt;1 antihypertensive drug </rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>adding ace inhibitor, check Cr and K, [Cr&lt;=1.5(male) or Cr&lt;=1.3(female)] and K&lt;5.6</name>
+<message>Check the patient's creatinine and potassium concentrations when prescribing  ACE Inhibitors.</message>
+<rule_in_criteria>K&lt;5.6 and eGFR&lt;60</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add ACE/ARB &amp; CKD; alert creatinine rise</name>
+<message>A stable increase of serum creatinine as much as 35% above baseline after ACEI or ARB initiation may be tolerated, as long as hyperkalemia does not occur. ACEI or ARB should be discontinued, or other potentially reversible causes of kidney failure investigated if progressive and rapid rise of serum creatinine continues. Since CKD is associated with progressive rise in creatinine over years, ACEI or ARB should not be discontinued for this situation, since these medications are renoprotective.</message>
+<rule_in_criteria>Presence of CKD (lab or ICD9)</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>Dihydropyridines</activity>
+<evaluations>
+<replaces_activity>
+<activity_to_delete>tamsulosin</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>DHP Calcium Channel Blocker </name>
+<activity>Dihydropyridines</activity>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>DHP add and Angina</name>
+<message>Felodipine is not FDA-Approved for the indication of angina, but by VA guidelines it is the DHP calcium channel antagonist of choice.</message>
+<rule_in_criteria>presence of angina</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+<replaces_activity>
+<activity_to_delete>Potassium-Sparing_Diuretics</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>DHP Calcium Channel Blocker </name>
+<activity>Dihydropyridines</activity>
+<relative_indications>Angina</relative_indications>
+<relative_indications>Diabetes_Mellitus</relative_indications>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>DHP add and Angina</name>
+<message>Felodipine is not FDA-Approved for the indication of angina, but by VA guidelines it is the DHP calcium channel antagonist of choice.</message>
+<rule_in_criteria>presence of angina</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>Thiazide_Diuretics</activity>
+<evaluations>
+<replaces_activity>
+<activity_to_delete>tamsulosin</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>tamsulosin</name>
+<activity>tamsulosin</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>Thiazide Diuretic </name>
+<activity>Thiazide_Diuretics</activity>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<compelling_indications>taking &gt;= 2 anti hypertensive meds</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<bad_drug_partner>furosemide</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>HCTZ dosing message and creatinine&lt;=2.0</name>
+<message>HCTZ dose above 25 mg doesn't add to BP control for most patients and may lead to hypokalemia.</message>
+<rule_in_criteria>Creatinine&lt;=2.0</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Urinary incontinence and ADD HCTZ</name>
+<message>There is little information about the likelihood that introduction of low-dose thiazides will adversely affect bladder function.  Follow individual patient response to treatment.</message>
+<rule_in_criteria>presence of BPH or age&gt;65</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+<replaces_activity>
+<activity_to_delete>Potassium-Sparing_Diuretics</activity_to_delete>
+<replaced_activity_evaluation>
+<preference>neutral</preference>
+<name>triamterene</name>
+<activity>Potassium-Sparing_Diuretics</activity>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replaced_activity_evaluation>
+<replacing_activity_evaluation>
+<prior_use>false</prior_use>
+<preference>ruled out</preference>
+<name>Thiazide Diuretic </name>
+<activity>Thiazide_Diuretics</activity>
+<compelling_indications>CKD by eGFR or ICD9 codes</compelling_indications>
+<compelling_indications>taking &gt;= 2 anti hypertensive meds</compelling_indications>
+<compelling_indications>Diabetes_Mellitus</compelling_indications>
+<bad_drug_partner>furosemide</bad_drug_partner>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>HCTZ dosing message and creatinine&lt;=2.0</name>
+<message>HCTZ dose above 25 mg doesn't add to BP control for most patients and may lead to hypokalemia.</message>
+<rule_in_criteria>Creatinine&lt;=2.0</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Add HCTZ/BB diabetes, ACE compellingly indicated if proteinuria</name>
+<message>If patient has proteinuria or renal manifestations of diabetes therapy with ACE inhibitor is strongly recommended.</message>
+<rule_in_criteria>presence of diabetes and ACE not precribed</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Urinary incontinence and ADD HCTZ</name>
+<message>There is little information about the likelihood that introduction of low-dose thiazides will adversely affect bladder function.  Follow individual patient response to treatment.</message>
+<rule_in_criteria>presence of BPH or age&gt;65</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>VA/JNC-VII Hypertension Guideline</guideline_id>
+</replacing_activity_evaluation>
+</replaces_activity>
+</evaluations>
+</evaluated_intervention>
+</advisory>
+<case_id>1316243</case_id>
+</Advisories>

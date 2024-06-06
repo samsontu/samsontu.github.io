@@ -1,0 +1,341 @@
+<HTML>
+<HEAD>
+<TITLE>Breast Mass Workup guidleine in GLIF</TITLE>
+</HEAD>
+<BODY>
+<PRE>
+
+/*------------------------------------------------------------------02/Jul/96-*
+   Samson Tu's automated translation from John Gennari's Protege representation
+of the Breast Mass Workup guideline (by Max Borten). This uses a modification of
+the shared guideline specification, where steps can point to other steps, and 
+where actions are a sequence.
+/*------------------------------------------------------------------02/Jul/96-*/
+
+
+Guidelines instance_00001 
+{
+   guidelines = SEQUENCE 1 {(Guideline_Object instance_00002);};
+};
+
+
+Guideline_Object instance_00002 
+{
+   eligibility_criteria = SEQUENCE 1 {
+       Boolean_Criterion instance_00003 
+       {
+          type = k_two_valued;
+          spec = "patient.sex = female";
+       };};
+   steps = SEQUENCE 23 {(Guideline_Step instance_00005); (Guideline_Step instance_00006);
+                        (Guideline_Step instance_00012); (Guideline_Step instance_00013);
+                        (Guideline_Step instance_00014); (Guideline_Step instance_00015);
+                        (Guideline_Step instance_00016); (Guideline_Step instance_00020);
+                        (Guideline_Step instance_00022); (Guideline_Step instance_00023);};
+
+   authors = SEQUENCE 1 {
+       Person instance_00004 
+       {
+          name = "Max Borten, M.D., J.D.";
+       };};
+   intention = "Diagnose and assess breast mass";
+   name = "Breast mass workup";
+};
+
+
+Guideline_Step instance_00005 
+{
+   transitions = SEQUENCE 1 {(Guideline_Step instance_00006);};
+   actions = SEQUENCE 6 {(Action_Spec instance_00029); (Action_Spec instance_00030);
+                        (Action_Spec instance_00031); (Action_Spec instance_00032);
+                        (Action_Spec instance_00033); (Action_Spec instance_00034);};
+   name = "Patient history";
+};
+
+
+Guideline_Step instance_00006 
+{
+   transitions = SEQUENCE 5 {
+       Transition instance_00007 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00012);};
+          name = "no mass found and age > 30";
+       };
+       Transition instance_00009 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00013);};
+          name = "indeterminant mass";
+       };
+       Transition instance_00008 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00016);};
+          name = "solid mass";
+       };
+       Transition instance_00010 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00015);};
+          name = "cystic mass";
+       };
+       Transition instance_00011 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00014);};
+          name = "no mass found";
+       };};
+
+   actions = SEQUENCE 8 {(Action_Spec instance_00035); (Action_Spec instance_00036);
+                        (Action_Spec instance_00037); (Action_Spec instance_00038);
+                        (Action_Spec instance_00039); (Action_Spec instance_00040);
+                        (Action_Spec instance_00041); (Action_Spec instance_00042);};
+   name = "Patient physical exam";
+};
+
+
+Guideline_Step instance_00012 
+{
+   transitions = SEQUENCE 1 {};
+   actions = SEQUENCE 1 {(Action_Spec instance_00043);};
+   name = "Mammogram";
+};
+
+
+Guideline_Step instance_00013 
+{
+   transitions = SEQUENCE 2 {};
+   actions = SEQUENCE 1 {(Action_Spec instance_00045);};
+   name = "Ultrasound";
+};
+
+
+Guideline_Step instance_00014 
+{
+   name = "Reassure patient";
+};
+
+
+Guideline_Step instance_00015 
+{
+   transitions = SEQUENCE 3 {
+       Transition instance_00017 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00016);};
+          name = "no fluid";
+       };
+       Transition instance_00018 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00020);};
+          name = "clear fluid";
+       };
+       Transition instance_00019 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00022);};
+          name = "bloody fluid";
+       };};
+   actions = SEQUENCE 1 {(Action_Spec instance_00047);};
+   name = "aspirate cyst";
+};
+
+
+Guideline_Step instance_00016 
+{
+   name = "excisional biopsy";
+};
+
+
+Guideline_Step instance_00020 
+{
+   transitions = SEQUENCE 2 {
+       Transition instance_00021 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00016);};
+          name = "residual nodule";
+       };
+       Transition instance_00024 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00023);};
+          name = "no nodule";
+       };};
+   actions = SEQUENCE 1 {(Action_Spec instance_00049);};
+   name = "check for nodule";
+};
+
+
+Guideline_Step instance_00022 
+{
+   transitions = SEQUENCE 2 {
+       Transition instance_00025 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00016);};
+          name = "positive cytology";
+       };
+       Transition instance_00026 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00023);};
+          name = "negative cytology";
+       };};
+   actions = SEQUENCE 1 {(Action_Spec instance_00051);};
+   name = "cytology";
+};
+
+
+Guideline_Step instance_00023 
+{
+   transitions = SEQUENCE 1 {
+       Transition instance_00028 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00015);};
+          name = "cyst re-accumulated";
+       };};
+   name = "6 week re-evaluation";
+};
+
+
+
+
+Action_Spec instance_00029 
+{
+   name = "Fibrocystic disease";
+};
+
+
+Action_Spec instance_00030 
+{
+   name = "Nulliparity";
+};
+
+
+Action_Spec instance_00031 
+{
+   name = "Late first pregnancy";
+};
+
+
+Action_Spec instance_00032 
+{
+   name = "Nipple discharge";
+};
+
+
+Action_Spec instance_00033 
+{
+   name = "Breast pain";
+};
+
+
+Action_Spec instance_00034 
+{
+   name = "Breast self-examination program";
+};
+
+
+Action_Spec instance_00035 
+{
+   name = "Asymmetry";
+};
+
+
+Action_Spec instance_00036 
+{
+   name = "Nipple retraction";
+};
+
+
+Action_Spec instance_00037 
+{
+   name = "Nipple deviation";
+};
+
+
+Action_Spec instance_00038 
+{
+   name = "Induration";
+};
+
+
+Action_Spec instance_00039 
+{
+   name = "Edema";
+};
+
+
+Action_Spec instance_00040 
+{
+   name = "Fixation";
+};
+
+
+Action_Spec instance_00041 
+{
+   name = "Tumor bulging";
+};
+
+
+Action_Spec instance_00042 
+{
+   name = "Identify dominant mass";
+};
+
+
+Action_Spec instance_00043 
+{
+   name = "do mammogram";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00044 
+       {
+          name = "mammogram results";
+       };};
+};
+
+
+
+Action_Spec instance_00045 
+{
+   name = "do ultrasonography";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00046 
+       {
+          name = "Ultrasound report";
+       };};
+};
+
+
+Action_Spec instance_00047 
+{
+   name = "do cyst aspiration";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00048 
+       {
+          name = "Aspiration results";
+          possible_values = SEQUENCE 1 {"clear; no fluid; sanguinous fluid";};
+       };};
+};
+
+
+
+Action_Spec instance_00049 
+{
+   name = "check patient for residual nodule";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00050 
+       {
+          name = "residual nodule";
+          possible_values = SEQUENCE 1 {"True; False";};
+       };};
+};
+
+
+Action_Spec instance_00051 
+{
+   name = "do cytologic examination";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00052 
+       {
+          name = "cytology report";
+          possible_values = SEQUENCE 1 {"positive; negative";};
+       };};
+};
+
+</PRE>
+</BODY>
+</HTML>
+
+

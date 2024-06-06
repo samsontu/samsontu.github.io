@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:p15="http://ontology.neuinfo.org/NIF/Backend/nif_backend.owl#"
+    xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+    xmlns:p5="http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:assessment="http://www.autism.stanford.edu/assessment-result.owl#"
+    xmlns:p6="http://purl.org/obo/owl/"
+    xmlns:p14="http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBO-UBO.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns="http://www.autism.stanford.edu/autism_nif_bridge.owl#"
+    xmlns:p20="http://ontology.neuinfo.org/NIF/nif.owl#"
+    xmlns:autism="http://www.autism.stanford.edu/autism.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+    xmlns:p3="http://www.w3.org/2004/02/skos/core#"
+    xmlns:p4="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#"
+  xml:base="http://www.autism.stanford.edu/autism_nif_bridge.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/nif.owl"/>
+    <owl:imports rdf:resource="http://www.autism.stanford.edu/autism.owl"/>
+  </owl:Ontology>
+  <rdf:Description rdf:about="http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBI-proxy.owl#birnlex_11001">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#information_content_entity">
+        <owl:equivalentClass rdf:resource="http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBI-proxy.owl#birnlex_11001"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ValidInstant">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/span#TemporalInstant">
+        <owl:equivalentClass rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ValidInstant"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#occurrent">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/span#Occurrent">
+        <owl:equivalentClass rdf:resource="http://www.autism.stanford.edu/autism.owl#occurrent"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontology.neuinfo.org/NIF/DigitalEntities/NIF-Investigation.owl#birnlex_2387">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#Citation_record">
+        <owl:equivalentClass rdf:resource="http://ontology.neuinfo.org/NIF/DigitalEntities/NIF-Investigation.owl#birnlex_2387"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontology.neuinfo.org/NIF/Function/NIF-Function.owl#birnlex_1910">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#Behavioral_process">
+        <owl:equivalentClass rdf:resource="http://ontology.neuinfo.org/NIF/Function/NIF-Function.owl#birnlex_1910"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#realizable_entity">
+        <owl:equivalentClass rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#quality">
+        <owl:equivalentClass rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#qualitative">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0000068">
+        <owl:equivalentClass rdf:resource="http://www.autism.stanford.edu/autism.owl#qualitative"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#specifically_dependent_continuant">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant">
+        <owl:equivalentClass rdf:resource="http://www.autism.stanford.edu/autism.owl#specifically_dependent_continuant"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBO-UBO.owl#birnlex_2">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#Organism">
+        <owl:equivalentClass rdf:resource="http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBO-UBO.owl#birnlex_2"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ValidPeriod">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/span#TemporalInterval">
+        <owl:equivalentClass rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ValidPeriod"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Continuant">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#continuant">
+        <owl:equivalentClass rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.autism.stanford.edu/autism.owl#entity">
+    <owl:equivalentClass>
+      <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1#Entity">
+        <owl:equivalentClass rdf:resource="http://www.autism.stanford.edu/autism.owl#entity"/>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.1, Build 535)  http://protege.stanford.edu -->

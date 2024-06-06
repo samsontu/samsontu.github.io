@@ -1,0 +1,1133 @@
+; Fri Jul 10 17:03:25 PDT 2009
+; 
+;+ (version "3.4")
+;+ (build "Build 516")
+
+([ATHENA_DM_Eye_ProjectKB_Class13570] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13571])
+	(widget_class_name "gov.va.test.opioidtesttool.TestingEnvironment"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13571] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13572] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13573])
+	(widget_class_name "edu.stanford.smi.kawizard.KwizTabWidget"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13573] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13574] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13575])
+	(widget_class_name "edu.stanford.smi.kawizard.Kb2DocTabWidget"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13575] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13576] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_DM_Eye_ProjectKB_Class13594] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13599] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13600])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13600] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13603] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13604])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13604] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13607] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13608])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13608] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13611] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13612])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13612] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13613] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13614])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13614] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13615] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13616])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13616] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class13619] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13620])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class13620] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class23599] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class23600] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class23601] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "coding_system")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class23602])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 320))
+
+([ATHENA_DM_Eye_ProjectKB_Class23602] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class23603] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "code")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class23604])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 260))
+
+([ATHENA_DM_Eye_ProjectKB_Class23604] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class23605] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "PrettyName")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class23606])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 380))
+
+([ATHENA_DM_Eye_ProjectKB_Class23606] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class23607] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class23664] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23665] of  Map
+
+	(entries
+		[ATHENA_DM_Eye_ProjectKB_Class23666]
+		[ATHENA_DM_Eye_ProjectKB_Class23667]
+		[ATHENA_DM_Eye_ProjectKB_Class23668]
+		[ATHENA_DM_Eye_ProjectKB_Class23669]
+		[ATHENA_DM_Eye_ProjectKB_Class23670]
+		[ATHENA_DM_Eye_ProjectKB_Class23671]
+		[ATHENA_DM_Eye_ProjectKB_Class23672]
+		[ATHENA_DM_Eye_ProjectKB_Class23673]
+		[ATHENA_DM_Eye_ProjectKB_Class23674]
+		[ATHENA_DM_Eye_ProjectKB_Class23675]))
+
+([ATHENA_DM_Eye_ProjectKB_Class23666] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_100005")
+	(key_class "java.lang.String")
+	(value "370 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23667] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_40021")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23668] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_80031")
+	(key_class "java.lang.String")
+	(value "220 520 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23669] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_40028")
+	(key_class "java.lang.String")
+	(value "370 520 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23670] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_60000")
+	(key_class "java.lang.String")
+	(value "370 820 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23671] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_40026")
+	(key_class "java.lang.String")
+	(value "370 370 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23672] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_40015")
+	(key_class "java.lang.String")
+	(value "70 520 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23673] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_40018")
+	(key_class "java.lang.String")
+	(value "370 670 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23674] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_40013")
+	(key_class "java.lang.String")
+	(value "70 270 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23675] of  Map_Entry
+
+	(key "ATHENA_DM_Eye_Instance_80030")
+	(key_class "java.lang.String")
+	(value "220 270 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23676] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_DM_Eye_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_DM_Eye_ProjectKB_Class23665")
+	(value_class "java.util.Map"))
+
+([ATHENA_DM_Eye_ProjectKB_Class23677] of  Map_Entry
+
+	(key "chaoProject")
+	(key_class "java.lang.String")
+	(value "annotation_library.pprj")
+	(value_class "java.lang.String"))
+
+([ATHENA_DM_Eye_ProjectKB_Class3569] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class3570])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class3570] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class3571] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class3572])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class3572] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class3573] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class3574])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class3574] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class3579] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class3580])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class3580] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class3589] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class3590])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Class3590] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Class3593] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Class13594])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_13536] of  String
+
+	(name "KnowledgeTreeTab.TOP_LEVEL_INSTANCE")
+	(string_value "ATHENA_DM_Eye_Instance_0"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23538] of  Property_List
+
+	(properties
+		[ATHENA_DM_Eye_ProjectKB_Instance_23539]
+		[ATHENA_DM_Eye_ProjectKB_Instance_23540]
+		[ATHENA_DM_Eye_ProjectKB_Class13576]))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23539] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23540] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23541] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23542] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23543] of  Property_List
+
+	(properties
+		[ATHENA_DM_Eye_ProjectKB_Instance_23544]
+		[ATHENA_DM_Eye_ProjectKB_Instance_23545]))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23544] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23545] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23546] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23547] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23548] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23549] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23550] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23551] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23552] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23553] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23554] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23555] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23556] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23557] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_23558] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3472] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3473])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3473] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3488] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3489])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3489] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3494] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3495])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3495] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3496] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3497])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3497] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3502] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3503])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3503] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3504] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3505])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3505] of  Property_List
+
+	(properties [ATHENA_DM_Eye_ProjectKB_Instance_13536]))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3506] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3507])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3507] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3524] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_3525])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([ATHENA_DM_Eye_ProjectKB_Instance_3525] of  Property_List
+)
+
+([ATHENA_DM_Eye_ProjectKB_Instance_98] of  String
+
+	(name "SearchTab_Query"))
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties [ATHENA_DM_Eye_ProjectKB_Class23664]))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [KB_219212_Instance_33])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_219212_Instance_0] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_219212_Instance_1]
+		[KB_219212_Instance_2]
+		[KB_219212_Instance_3]
+		[KB_219212_Instance_4]
+		[KB_219212_Instance_5]
+		[KB_219212_Instance_6]
+		[KB_219212_Instance_7]
+		[KB_219212_Instance_8]
+		[KB_219212_Instance_9]
+		[KB_219212_Instance_10]))
+
+([KB_219212_Instance_1] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23538])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_219212_Instance_10] of  Property_List
+
+	(name "layout properties")
+	(properties [KB_219212_Instance_11]))
+
+([KB_219212_Instance_11] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))
+
+([KB_219212_Instance_12] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[KB_219212_Instance_13]
+		[KB_219212_Instance_14]
+		[KB_219212_Instance_15]
+		[KB_219212_Instance_16]
+		[KB_219212_Instance_17]
+		[KB_219212_Instance_18]
+		[KB_219212_Instance_19]
+		[KB_219212_Instance_20]
+		[KB_219212_Instance_21]
+		[KB_219212_Instance_22]
+		[KB_219212_Instance_23]
+		[KB_219212_Instance_24]
+		[KB_219212_Instance_25]
+		[KB_219212_Instance_26]
+		[KB_219212_Instance_27]
+		[KB_219212_Instance_28]
+		[ATHENA_DM_Eye_ProjectKB_Instance_23547]))
+
+([KB_219212_Instance_13] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23555])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_219212_Instance_14] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23556])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_219212_Instance_15] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([KB_219212_Instance_16] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_219212_Instance_17] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23548])
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([KB_219212_Instance_18] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23549])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_219212_Instance_19] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([KB_219212_Instance_2] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_219212_Instance_20] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([KB_219212_Instance_21] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23550])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([KB_219212_Instance_22] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23551])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_219212_Instance_23] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23552])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([KB_219212_Instance_24] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23553])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([KB_219212_Instance_25] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([KB_219212_Instance_26] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23554])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_219212_Instance_27] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23557])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([KB_219212_Instance_28] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23558])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_219212_Instance_29] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[KB_219212_Instance_30]
+		[KB_219212_Instance_31]
+		[KB_219212_Instance_32]))
+
+([KB_219212_Instance_3] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_219212_Instance_30] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_219212_Instance_31] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_219212_Instance_32] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_219212_Instance_33] of  Property_List
+
+	(properties
+		[KB_219212_Instance_34]
+		[KB_219212_Instance_35]
+		[KB_219212_Instance_36]
+		[KB_219212_Instance_37]))
+
+([KB_219212_Instance_34] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([KB_219212_Instance_35] of  Widget
+
+	(name ":CREATOR"))
+
+([KB_219212_Instance_36] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([KB_219212_Instance_37] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_219212_Instance_38] of  Property_List
+
+	(properties
+		[KB_219212_Instance_39]
+		[KB_219212_Instance_40]
+		[KB_219212_Instance_41]
+		[KB_219212_Instance_42]))
+
+([KB_219212_Instance_39] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([KB_219212_Instance_4] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_219212_Instance_40] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 275)
+	(y 180))
+
+([KB_219212_Instance_41] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 275)
+	(y 0))
+
+([KB_219212_Instance_42] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 275)
+	(x 0)
+	(y 60))
+
+([KB_219212_Instance_5] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23541])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_219212_Instance_6] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23542])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_219212_Instance_7] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23546])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_219212_Instance_8] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_219212_Instance_9] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [ATHENA_DM_Eye_ProjectKB_Instance_23543])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([KB_595461_Class3553] of  Map
+
+	(entries
+		[KB_595461_Class3555]
+		[KB_595461_Class3557]
+		[KB_595461_Class3559]
+		[KB_595461_Class3561]
+		[KB_595461_Class3562]
+		[KB_595461_Class3563]
+		[KB_595461_Class3564]
+		[KB_595461_Class3565]
+		[KB_595461_Class3567]
+		[KB_595461_Class3568]
+		[KB_595461_Class3569]
+		[KB_595461_Class3570])
+	(referenced_maps
+		[KB_595461_Class3560]
+		[KB_595461_Class3566]
+		[KB_595461_Class3554]
+		[KB_595461_Class3558]
+		[KB_595461_Class3556]))
+
+([KB_595461_Class3554] of  Map
+)
+
+([KB_595461_Class3555] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_595461_Class3554")
+	(value_class "java.util.Map"))
+
+([KB_595461_Class3556] of  Map
+)
+
+([KB_595461_Class3557] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_595461_Class3556")
+	(value_class "java.util.Map"))
+
+([KB_595461_Class3558] of  Map
+)
+
+([KB_595461_Class3559] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_595461_Class3558")
+	(value_class "java.util.Map"))
+
+([KB_595461_Class3560] of  Map
+)
+
+([KB_595461_Class3561] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_595461_Class3560")
+	(value_class "java.util.Map"))
+
+([KB_595461_Class3562] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_595461_Class3563] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.Boolean"))
+
+([KB_595461_Class3564] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_595461_Class3565] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_595461_Class3566] of  Map
+)
+
+([KB_595461_Class3567] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_595461_Class3566")
+	(value_class "java.util.Map"))
+
+
+([KB_595461_Class3569] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_595461_Class3570] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_944085_Instance_0] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([KB_944085_Instance_1] of  Map
+
+	(entries
+		[ATHENA_DM_Eye_ProjectKB_Class23676]
+		[ATHENA_DM_Eye_ProjectKB_Class23677])
+	(referenced_maps [ATHENA_DM_Eye_ProjectKB_Class23665]))
+
+([KB_944085_Instance_3] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon TRUE)
+	(display_hidden_classes TRUE)
+	(display_multi_parent_class_icon TRUE)
+	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([KB_944085_Instance_95] of  Property_List
+
+	(properties [ATHENA_DM_Eye_ProjectKB_Instance_98]))
+
+([KB_944085_Instance_96] of  String
+
+	(name "classes_file_name")
+	(string_value "ATHENA_DM_Eye.pont"))
+
+([KB_944085_Instance_97] of  String
+
+	(name "instances_file_name")
+	(string_value "ATHENA_DM_Eye.pins"))
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [KB_219212_Instance_38])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[STANDARD_CLASS_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
+		[PAL_FORM_WIDGET])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(included_projects
+		"library.pprj"
+		"eon2.pprj")
+	(java_packages
+		"edu.stanford.smi.eon.Dharma"
+		"edu.stanford.smi.eon.time"
+		"edu.stanford.smi.eon.criterion"
+		"edu.stanford.smi.eon.athenaextensions"
+		"edu.stanford.smi.eon.datahandler")
+	(journaling_enabled FALSE)
+	(next_frame_number 0)
+	(options [KB_944085_Instance_3])
+	(property_map [KB_944085_Instance_1])
+	(sources [SOURCES])
+	(tabs
+		[ATHENA_DM_Eye_ProjectKB_Instance_3472]
+		[CLSES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[INSTANCES_TAB]
+		[QUERIES_TAB]
+		[ATHENA_DM_Eye_ProjectKB_Instance_3504]
+		[ATHENA_DM_Eye_ProjectKB_Class13611]
+		[ATHENA_DM_Eye_ProjectKB_Class13599]
+		[ATHENA_DM_Eye_ProjectKB_Class13619]
+		[ATHENA_DM_Eye_ProjectKB_Class13615]
+		[ATHENA_DM_Eye_ProjectKB_Instance_3488]
+		[ATHENA_DM_Eye_ProjectKB_Instance_3506]
+		[ATHENA_DM_Eye_ProjectKB_Instance_3496]
+		[ATHENA_DM_Eye_ProjectKB_Class13574]
+		[ATHENA_DM_Eye_ProjectKB_Class13572]
+		[ATHENA_DM_Eye_ProjectKB_Class13607]
+		[ATHENA_DM_Eye_ProjectKB_Instance_3502]
+		[ATHENA_DM_Eye_ProjectKB_Instance_3524]
+		[ATHENA_DM_Eye_ProjectKB_Instance_3494]
+		[ATHENA_DM_Eye_ProjectKB_Class3573]
+		[ATHENA_DM_Eye_ProjectKB_Class13570]
+		[ATHENA_DM_Eye_ProjectKB_Class3579]
+		[ATHENA_DM_Eye_ProjectKB_Class13603]
+		[ATHENA_DM_Eye_ProjectKB_Class3589]
+		[ATHENA_DM_Eye_ProjectKB_Class3593]
+		[ATHENA_DM_Eye_ProjectKB_Class3569]
+		[ATHENA_DM_Eye_ProjectKB_Class3571]
+		[ATHENA_DM_Eye_ProjectKB_Class13613]))
+
+([QUERIES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [KB_944085_Instance_95])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_944085_Instance_0]
+		[KB_944085_Instance_96]
+		[KB_944085_Instance_97]))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [KB_219212_Instance_0])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [KB_219212_Instance_29])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [KB_219212_Instance_12])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))

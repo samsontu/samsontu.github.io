@@ -1,0 +1,140 @@
+function getFrameWindow(frame_name)
+{
+	var frame_window = null;
+
+	if(frame_name == "_self")
+	{
+		return window;
+	}
+	if (frame_name != null && frame_name.length > 0)
+	{
+		frame_window = parent.frames[frame_name]
+	}
+	else
+	{
+		frame_window = window;
+	}
+
+	return frame_window;
+}
+
+function getScriptName()
+{
+	var path = location.pathname;
+	path = path.substring(0, path.indexOf('.') + 4);
+	return path;
+}
+
+
+function getCookie(cookie_name) 
+{
+	var cookie = document.cookie;
+	var script_cookie_name = getScriptName() + "/" + cookie_name;
+	script_cookie_name = script_cookie_name.substring(1);
+	var index = cookie.indexOf(script_cookie_name + "=");
+	if (-1 == index) 
+	{
+		return "";
+	}
+
+	index = cookie.indexOf("=", index);
+	if (-1 == index)
+	{
+		return "";
+	}
+
+	var endstr = cookie.indexOf(";", index);
+	if (-1 == endstr) 
+	{
+		endstr = cookie.length;
+	}
+
+	var cookie_value = unescape(cookie.substring(index + 1, endstr));
+	if (cookie_value == null || cookie_value == "null" || cookie_value == "" || cookie_value.indexOf("undefined") >= 0 || cookie_value.lastIndexOf("=") == cookie_value.length - 1) 
+	{
+		cookie_value = "";
+	}
+	
+	return cookie_value;
+}
+
+function doSynchronizeContents(contents_frame_name, contents_frame_url)
+{
+  var current_document = escape(getCookie("doc"));
+  var tDoc = this.window.parent.doc.location.href;
+  //alert(tDoc);
+  var docidIndex = tDoc.indexOf("/BMJSPLITCE");
+  //alert(docidIndex);
+  if( docidIndex != 0)
+  {
+     tDoc = tDoc.substring(docidIndex,tDoc.length);
+     //alert(tDoc);
+     
+     docidIndex = tDoc.indexOf("?");
+     if(docidIndex != 0 )
+     {
+      tDoc = tDoc.substring(0,docidIndex);
+      //alert(tDoc);
+     }
+
+     current_document = tDoc;
+     current_document = escape(current_document);
+     //alert(current_document);
+  }
+	
+	
+	//var current_document = escape(document.parent.doc.location.href);
+	
+
+	// whack any leading slash character
+	var index = current_document.indexOf("/");
+	if (index == 0)
+	{
+	 	current_document = current_document.substring(1);
+	}
+	
+	var contents_window = getFrameWindow(contents_frame_name);
+  	
+	bName = navigator.appName
+	
+	if (contents_window != null)
+	{
+		if (contents_window.document.JTOC == null)
+		{
+			//alert("JTOC = null");
+			//alert(contents_frame_url + '&cp=' + current_document + '&c=100&sync=2');
+			contents_window.location = contents_frame_url + '&cp=' + current_document + '&c=100&sync=2';
+		}
+		else
+		{
+			//alert("JTOC not null");
+
+		  	//alert(current_document);
+			if(contents_window.document.JTOC != null)
+			{
+				contents_window.document.JTOC.syncTOC(current_document);
+			}
+			else if(contents_frame_url != null)
+			{
+				contents_window.location = contents_frame_url;
+			}
+		}
+	}
+	
+}
+//doSynchronizeContents('toc', '<!-- #TEMPLATES:search-login.htm -->&ADV_QUERY=false');
+//doSynchronizeContents('toc', '/lpBinCE/lpext.dll?f=templates&fn=search-login.htm&ADV_QUERY=false');
+//alert('calling');
+//this.window.parent.docnav.doSynchronizeContents('toc', '/lpBinCE/lpext.dll?f=templates&fn=search-login.htm&ADV_QUERY=false');
+//alert(this.window.parent.docnav.loaded );
+if ((this.window.parent.docnav.loaded == true) && (this.window.name='doc'))
+{
+	this.window.parent.docnav.doSynchronizeContents('toc', '<!-- #TEMPLATES:search-login.htm -->&ADV_QUERY=false');
+}
+
+if (parent.docnav.AbbeyTop != true)
+{
+  //alert('<!-- #TEMPLATES:top.htm -->&GLOBAL=G_&G_DOCUMENT_TEMPLATE=document-frame.htm');
+  parent.docnav.location.href='/lpBinCE/lpext.dll?f=templates&fn=top.htm&GLOBAL=G_&G_DOCUMENT_TEMPLATE=document-frame.htm';
+} 
+ 

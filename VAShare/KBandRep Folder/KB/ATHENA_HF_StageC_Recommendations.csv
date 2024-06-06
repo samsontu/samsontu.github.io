@@ -1,0 +1,214 @@
+Instance	description	recommendation_text	uses_concepts	Level_of_evidence	
+Diuretics and salt restriction are indicated in patients with
+current or prior symptoms of HF and reduced LVEF who have
+evidence of fluid retention (see Table 4). (Level of Evidence: C)		"Diuretics and salt restriction are indicated in patients with
+current or prior symptoms of HF and reduced LVEF who have
+evidence of fluid retention (see Table 4). (Level of Evidence: C)"	"Heart Failure Stage C%%%HF signs and symptoms%%%Left Ventricular Ejection fraction%%%fluid retention%%%diuretic"	C
+Angiotensin-converting enzyme inhibitors are recommended for
+all patients with current or prior symptoms of HF and reduced
+LVEF, unless contraindicated (see Table 3) (145–157). (Level
+of Evidence: A)		"Angiotensin-converting enzyme inhibitors are recommended for
+all patients with current or prior symptoms of HF and reduced
+LVEF, unless contraindicated (see Table 3) (145–157). (Level
+of Evidence: A)"	"HF signs and symptoms%%%Left Ventricular Ejection fraction%%%Heart Failure Stage C"	A
+Use of 1 of the 3 beta blockers proven to reduce mortality (i.e.,
+bisoprolol, carvedilol, and sustained release metoprolol succinate)
+is recommended for all stable patients with current or
+prior symptoms of HF and reduced LVEF, unless contraindicated
+(see Table 3) (158–176). (Level of Evidence: A)		"Use of 1 of the 3 beta blockers proven to reduce mortality (i.e.,
+bisoprolol, carvedilol, and sustained release metoprolol succinate)
+is recommended for all stable patients with current or
+prior symptoms of HF and reduced LVEF, unless contraindicated
+(see Table 3) (158–176). (Level of Evidence: A)"	"sustained release metoprolol succinate%%%carvedilol%%%Beta blocker%%%Heart Failure Stage C%%%HF signs and symptoms%%%Left Ventricular Ejection fraction%%%bisoprolol"	A
+Angiotensin II receptor blockers (see Table 3) are recommended
+in patients with current or prior symptoms of HF and
+reduced LVEF who are ACEI-intolerant (see text for information
+regarding patients with angioedema) (130,177–186). (Level of
+Evidence: A)		"Angiotensin II receptor blockers (see Table 3) are recommended
+in patients with current or prior symptoms of HF and
+reduced LVEF who are ACEI-intolerant (see text for information
+regarding patients with angioedema) (130,177–186). (Level of
+Evidence: A)"	"Heart Failure Stage C%%%ARB%%%HF signs and symptoms%%%Left Ventricular Ejection fraction"	A
+Drugs known to adversely affect the clinical status of patients
+with current or prior symptoms of HF and reduced LVEF should
+be avoided or withdrawn whenever possible (e.g., nonsteroidal
+anti-inflammatory drugs, most antiarrhythmic drugs, and most
+calcium channel blocking drugs; see text) (187–193). (Level of
+Evidence: B)		"Drugs known to adversely affect the clinical status of patients
+with current or prior symptoms of HF and reduced LVEF should
+be avoided or withdrawn whenever possible (e.g., nonsteroidal
+anti-inflammatory drugs, most antiarrhythmic drugs, and most
+calcium channel blocking drugs; see text) (187–193). (Level of
+Evidence: B)"	"Heart Failure Stage C%%%HF signs and symptoms%%%Left Ventricular Ejection fraction%%%calcium channel blocking drugs%%%nonsteroidal anti-inflammatory drugs%%%antiarrhythmic drugs"	B
+Exercise training is beneficial as an adjunctive approach to
+improve clinical status in ambulatory patients with current or
+prior symptoms of HF and reduced LVEF (193a–193d). (Level of
+Evidence: B)		"Exercise training is beneficial as an adjunctive approach to
+improve clinical status in ambulatory patients with current or
+prior symptoms of HF and reduced LVEF (193a–193d). (Level of
+Evidence: B)"	"Left Ventricular Ejection fraction%%%Heart Failure Stage C%%%HF signs and symptoms"	B
+An implantable cardioverter-defibrillator is recommended as
+secondary prevention to prolong survival in patients with current
+or prior symptoms of HF and reduced LVEF who have a
+history of cardiac arrest, ventricular fibrillation, or hemodynamically
+destabilizing ventricular tachycardia (194–196). (Level of
+Evidence: A)		"An implantable cardioverter-defibrillator is recommended as
+secondary prevention to prolong survival in patients with current
+or prior symptoms of HF and reduced LVEF who have a
+history of cardiac arrest, ventricular fibrillation, or hemodynamically
+destabilizing ventricular tachycardia (194–196). (Level of
+Evidence: A)"	"implantable cardioverter-defibrillator%%%Heart Failure Stage C%%%hemodynamically destabilizing ventricular tachycardia%%%ventricular fibrillation%%%HF signs and symptoms%%%Left Ventricular Ejection fraction%%%cardiac arrest"	A
+Implantable cardioverter-defibrillator therapy is recommended
+for primary prevention of sudden cardiac death to reduce total
+mortality in patients with non-ischemic dilated cardiomyopathy
+or ischemic heart disease at least 40 days post-MI, a LVEF less
+than or equal to 35%, and NYHA functional class II or III
+symptoms while receiving chronic optimal medical therapy, and
+who have reasonable expectation of survival with a good
+functional status for more than 1 year (144,196–202). (Level of
+Evidence: A)		"Implantable cardioverter-defibrillator therapy is recommended
+for primary prevention of sudden cardiac death to reduce total
+mortality in patients with non-ischemic dilated cardiomyopathy
+or ischemic heart disease at least 40 days post-MI, a LVEF less
+than or equal to 35%, and NYHA functional class II or III
+symptoms while receiving chronic optimal medical therapy, and
+who have reasonable expectation of survival with a good
+functional status for more than 1 year (144,196–202). (Level of
+Evidence: A)"	"ischemic heart disease%%%Heart Failure Stage C%%%Left Ventricular Ejection fraction%%%implantable cardioverter-defibrillator%%%NYHA functional class II%%%NYHA functional class III%%%nonischemic cardiomyopathy"	A
+Patients with LVEF of less than or equal to 35%, sinus rhythm,
+and NYHA functional class III ambulatory class IV symptoms
+despite recommended optimal medical therapy and who have
+cardiac dyssynchrony, which is currently defined as a QRS
+duration greater than or equal to 0.12 seconds, should receive
+cardiac resynchronization therapy, with or without an ICD,
+unless contraindicated (203–218). (Level of Evidence: A)		"Patients with LVEF of less than or equal to 35%, sinus rhythm,
+and NYHA functional class III ambulatory class IV symptoms
+despite recommended optimal medical therapy and who have
+cardiac dyssynchrony, which is currently defined as a QRS
+duration greater than or equal to 0.12 seconds, should receive
+cardiac resynchronization therapy, with or without an ICD,
+unless contraindicated (203–218). (Level of Evidence: A)"	"Left Ventricular Ejection fraction%%%NYHA functional class III ambulatory class IV symptoms%%%Heart Failure Stage C%%%cardiac dyssynchrony%%%sinus rhythm"	A
+Addition of an aldosterone antagonist is recommended in
+selected patients with moderately severe to severe symptoms
+of HF and reduced LVEF who can be carefully monitored for
+preserved renal function and normal potassium concentration.
+Creatinine should be 2.5 mg per dL or less in men or 2.0 mg per
+dL or less in women and potassium should be less than 5.0 mEq
+per liter. Under circumstances where monitoring for hyperkalemia
+or renal dysfunction is not anticipated to be feasible, the
+risks may outweigh the benefits of aldosterone antagonists
+(219–221). (Level of Evidence: B)		"Addition of an aldosterone antagonist is recommended in
+selected patients with moderately severe to severe symptoms
+of HF and reduced LVEF who can be carefully monitored for
+preserved renal function and normal potassium concentration.
+Creatinine should be 2.5 mg per dL or less in men or 2.0 mg per
+dL or less in women and potassium should be less than 5.0 mEq
+per liter. Under circumstances where monitoring for hyperkalemia
+or renal dysfunction is not anticipated to be feasible, the
+risks may outweigh the benefits of aldosterone antagonists
+(219–221). (Level of Evidence: B)"	"serum creatinine%%%serum potassium%%%renal function%%%aldosterone antagonist%%%Heart Failure Stage C%%%HF signs and symptoms%%%Left Ventricular Ejection fraction"	B
+The combination of hydralazine and nitrates is recommended to
+improve outcomes for patients self-described as African-
+Americans, with moderate-severe symptoms on optimal therapy
+with ACEIs, beta blockers, and diuretics (222,223). (Level of
+Evidence: B)		"The combination of hydralazine and nitrates is recommended to
+improve outcomes for patients self-described as African-
+Americans, with moderate-severe symptoms on optimal therapy
+with ACEIs, beta blockers, and diuretics (222,223). (Level of
+Evidence: B)"	"Heart Failure Stage C%%%nitrate%%%hydralazine%%%african american%%%ACE Inhibitor%%%Beta blocker%%%diuretic"	B
+It is reasonable to treat patients with atrial fibrillation and HF
+with a strategy to maintain sinus rhythm or with a strategy to
+control ventricular rate alone (224–228). (Level of Evidence: A)		"It is reasonable to treat patients with atrial fibrillation and HF
+with a strategy to maintain sinus rhythm or with a strategy to
+control ventricular rate alone (224–228). (Level of Evidence: A)"	"Heart failure%%%atrial fibrillation%%%Heart Failure Stage C%%%sinus rhythm%%%ventricular rate"	A
+Maximal exercise testing with or without measurement of respiratory
+gas exchange is reasonable to facilitate prescription of an
+appropriate exercise program for patients presenting with HF.
+(Level of Evidence: C)		"Maximal exercise testing with or without measurement of respiratory
+gas exchange is reasonable to facilitate prescription of an
+appropriate exercise program for patients presenting with HF.
+(Level of Evidence: C)"	"respiratory gas exchange%%%Heart Failure Stage C%%%Heart failure"	C
+Angiotensin II receptor blockers are reasonable to use as alternatives
+to ACEIs as first-line therapy for patients with mild to moderate HF and reduced LVEF, especially for patients already taking ARBs for other indications (130,177–185). (Level of
+Evidence: A)		"Angiotensin II receptor blockers are reasonable to use as alternatives
+to ACEIs as first-line therapy for patients with mild to moderate HF and reduced LVEF, especially for patients already taking ARBs for other indications (130,177–185). (Level of
+Evidence: A)"	"Heart Failure Stage C%%%ARB%%%Heart failure%%%Left Ventricular Ejection fraction%%%ACE Inhibitor"	A
+Digitalis can be beneficial in patients with current or prior
+symptoms of HF and reduced LVEF to decrease hospitalizations
+for HF (134,229–235). (Level of Evidence: B)		"Digitalis can be beneficial in patients with current or prior
+symptoms of HF and reduced LVEF to decrease hospitalizations
+for HF (134,229–235). (Level of Evidence: B)"	"Heart Failure Stage C%%%digitalis%%%Left Ventricular Ejection fraction%%%HF signs and symptoms"	B
+The addition of a combination of hydralazine and a nitrate is
+reasonable for patients with reduced LVEF who are already
+taking an ACEI and beta blocker for symptomatic HF and who
+have persistent symptoms (222,236). (Level of Evidence: B)		"The addition of a combination of hydralazine and a nitrate is
+reasonable for patients with reduced LVEF who are already
+taking an ACEI and beta blocker for symptomatic HF and who
+have persistent symptoms (222,236). (Level of Evidence: B)"	"Heart Failure Stage C%%%nitrate%%%hydralazine%%%Left Ventricular Ejection fraction%%%ACE Inhibitor%%%Beta blocker%%%HF signs and symptoms"	B
+For patients who have LVEF less than or equal to 35%, a QRS
+duration of greater than or equal to 0.12 seconds, and atrial
+fibrillation (AF), CRT with or without an ICD is reasonable for the
+treatment of NYHA functional class III or ambulatory class IV
+heart failure symptoms on optimal recommended medical therapy
+(2, 237). (Level of Evidence: B)		"For patients who have LVEF less than or equal to 35%, a QRS
+duration of greater than or equal to 0.12 seconds, and atrial
+fibrillation (AF), CRT with or without an ICD is reasonable for the
+treatment of NYHA functional class III or ambulatory class IV
+heart failure symptoms on optimal recommended medical therapy
+(2, 237). (Level of Evidence: B)"	"Heart Failure Stage C%%%QRS%%%Left Ventricular Ejection fraction%%%NYHA functional class III ambulatory class IV symptoms"	B
+For patients with LVEF of less than or equal to 35% with NYHA
+functional class III or ambulatory class IV symptoms who are
+receiving optimal recommended medical therapy and who have
+frequent dependence on ventricular pacing, CRT is reasonable
+(2). (Level of Evidence: C)		"For patients with LVEF of less than or equal to 35% with NYHA
+functional class III or ambulatory class IV symptoms who are
+receiving optimal recommended medical therapy and who have
+frequent dependence on ventricular pacing, CRT is reasonable
+(2). (Level of Evidence: C)"	"Heart Failure Stage C%%%CRT%%%Left Ventricular Ejection fraction%%%NYHA functional class III ambulatory class IV symptoms"	C
+A combination of hydralazine and a nitrate might be reasonable in
+patients with current or prior symptoms of HF and reduced LVEF
+who cannot be given an ACEI or ARB because of drug intolerance,
+hypotension, or renal insufficiency (222,238,239). (Level
+of Evidence: C)		"A combination of hydralazine and a nitrate might be reasonable in
+patients with current or prior symptoms of HF and reduced LVEF
+who cannot be given an ACEI or ARB because of drug intolerance,
+hypotension, or renal insufficiency (222,238,239). (Level
+of Evidence: C)"	"renal insufficiency%%%hypotension%%%Heart Failure Stage C%%%nitrate%%%ARB%%%hydralazine%%%Left Ventricular Ejection fraction%%%ACE Inhibitor%%%HF signs and symptoms"	C
+The addition of an ARB may be considered in persistently
+symptomatic patients with reduced LVEF who are already being
+treated with conventional therapy (130,177–185). (Level of
+Evidence: B)		"The addition of an ARB may be considered in persistently
+symptomatic patients with reduced LVEF who are already being
+treated with conventional therapy (130,177–185). (Level of
+Evidence: B)"	"Heart Failure Stage C%%%ARB%%%Left Ventricular Ejection fraction"	B
+Routine combined use of an ACEI, ARB, and aldosterone antagonist
+is not recommended for patients with current or prior
+symptoms of HF and reduced LVEF. (Level of Evidence: C)		"Routine combined use of an ACEI, ARB, and aldosterone antagonist
+is not recommended for patients with current or prior
+symptoms of HF and reduced LVEF. (Level of Evidence: C)"	"Heart Failure Stage C%%%ARB%%%Left Ventricular Ejection fraction%%%ACE Inhibitor%%%HF signs and symptoms%%%aldosterone antagonist"	C
+Calcium channel blocking drugs are not indicated as routine
+treatment for HF in patients with current or prior symptoms of HF
+and reduced LVEF (135,240–242). (Level of Evidence: A)		"Calcium channel blocking drugs are not indicated as routine
+treatment for HF in patients with current or prior symptoms of HF
+and reduced LVEF (135,240–242). (Level of Evidence: A)"	"Heart Failure Stage C%%%Left Ventricular Ejection fraction%%%HF signs and symptoms%%%calcium channel blocking drugs"	A
+Long-term use of an infusion of a positive inotropic drug may be
+harmful and is not recommended for patients with current or prior
+symptoms of HF and reduced LVEF, except as palliation for
+patients with end-stage disease who cannot be stabilized with
+standard medical treatment (see recommendations for Stage D).
+(Level of Evidence: C)		"Long-term use of an infusion of a positive inotropic drug may be
+harmful and is not recommended for patients with current or prior
+symptoms of HF and reduced LVEF, except as palliation for
+patients with end-stage disease who cannot be stabilized with
+standard medical treatment (see recommendations for Stage D).
+(Level of Evidence: C)"	"Heart Failure Stage C%%%Left Ventricular Ejection fraction%%%HF signs and symptoms"	C
+Use of nutritional supplements as treatment for HF is not
+indicated in patients with current or prior symptoms of HF and
+reduced LVEF. (Level of Evidence: C)		"Use of nutritional supplements as treatment for HF is not
+indicated in patients with current or prior symptoms of HF and
+reduced LVEF. (Level of Evidence: C)"	"Heart Failure Stage C%%%Left Ventricular Ejection fraction%%%HF signs and symptoms%%%nutritional supplements"	C
+Hormonal therapies other than to replete deficiencies are not
+recommended and may be harmful to patients with current or
+prior symptoms of HF and reduced LVEF. (Level of Evidence: C)		"Hormonal therapies other than to replete deficiencies are not
+recommended and may be harmful to patients with current or
+prior symptoms of HF and reduced LVEF. (Level of Evidence: C)"	"Heart Failure Stage C%%%hormonal therapy%%%Left Ventricular Ejection fraction%%%HF signs and symptoms"	C

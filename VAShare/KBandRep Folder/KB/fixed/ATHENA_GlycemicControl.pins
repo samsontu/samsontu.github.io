@@ -1,0 +1,3283 @@
+; Tue Sep 28 04:47:02 PDT 2010
+; 
+;+ (version "3.4.5")
+;+ (build "Build 585")
+
+([Age%3E80+yrs] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class30001])
+	(PrettyName "Age>80yrs"))
+
+([Age%3E%3D65+and+creatinine%3E%3D2] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class90032])
+	(PrettyName "Age>=65 and creatinine>=2"))
+
+([Allergy+to+Sulfonylureas] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Instance_50007]))
+
+([Aspirin] of  Medications_Metaclass
+)
+
+([ATHENA_GlycemicControl_Class0] of  Scenario
+
+	(consultation_template [ATHENA_GlycemicControl_Class80002])
+	(followed_by [ATHENA_GlycemicControl_Class5])
+	(label "Nonpharmacologic Therapy")
+	(new_encounter TRUE)
+	(precondition [ATHENA_GlycemicControl_Instance_120205]))
+
+([ATHENA_GlycemicControl_Class1] of  Scenario
+
+	(consultation_template [ATHENA_GlycemicControl_Class60011])
+	(followed_by [ATHENA_GlycemicControl_Class7])
+	(label "Monotherapy w/ oral agent")
+	(new_encounter TRUE)
+	(precondition [ATHENA_GlycemicControl_Instance_120203]))
+
+([ATHENA_GlycemicControl_Class10000] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Metformin 500mg lowdose")
+	(lower_limit 1000.0)
+	(upper_limit 2549.0))
+
+([ATHENA_GlycemicControl_Class100001] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "Glipizide contraindicated")
+	(%3APAL-RANGE "(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Medical_Conditions_Metaclass)\n(defrange ?derived_problem :FRAME Diagnostic_Term_Metaclass)\n(defrange ?drug_usage :FRAME Drug_Usage)")
+	(%3APAL-STATEMENT "(forall ?drug_usage\n        (=> (Drug_Class_Name ?drug_usage GLIPIZIDE)\n            (or (exists ?condition \n                        (and (patient_id ?condition $patient_id)\n                             (exists ?problem \n                                     (and (Absolute_Contraindications ?drug_usage ?problem)\n                                          (isa-classname (domain_term ?condition))\n                                          (or (= (coerce-to-class (domain_term ?condition)) ?problem )\n                                              (subclass-of (coerce-to-class (domain_term ?condition)) ?problem )) \n                                     ))))\n                (exists  ?derived_problem \n                         (and (Absolute_Contraindications ?drug_usage ?derived_problem)\n                              (is-derivable ?derived_problem))))\n        )\n)"))
+
+([ATHENA_GlycemicControl_Class100006] of  Action_Choice
+
+	(actions [KB_390055_Class2])
+	(label "Metformin contraindicated, add Glipizide")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Instance_90002])
+	(strict_rule_out_condition [ATHENA_GlycemicControl_Class110006]))
+
+([ATHENA_GlycemicControl_Class10001] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Metformin-500mg high dose")
+	(lower_limit 2550.1)
+	(upper_limit 2600.0))
+
+([ATHENA_GlycemicControl_Class110003] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "Metformin contraindicated")
+	(PAL_constraint [ATHENA_GlycemicControl_Class120008]))
+
+([ATHENA_GlycemicControl_Class110004] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class5])
+	(%3ATO [ATHENA_GlycemicControl_Class90036]))
+
+([ATHENA_GlycemicControl_Class110005] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class5])
+	(%3ATO [ATHENA_GlycemicControl_Class100006]))
+
+([ATHENA_GlycemicControl_Class110006] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class90000]
+		[ATHENA_GlycemicControl_Class120001]
+		[ATHENA_GlycemicControl_Class120323])
+	(label "metformin not contraindicated or glipizine contraindicated or Sulfonylurea 2nd gen being used")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class120001] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Class110003])
+	(label "Metformin NOT contraindicated")
+	(operator NOT))
+
+([ATHENA_GlycemicControl_Class120002] of  Action_Choice
+
+	(actions [ATHENA_GlycemicControl_Class120006])
+	(label "Add TZD, Metformin and Glipizide contraindicated")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Instance_130679])
+	(strict_rule_out_condition [ATHENA_GlycemicControl_Class120003]))
+
+([ATHENA_GlycemicControl_Class120003] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class120001]
+		[ATHENA_GlycemicControl_Class120004]
+		[ATHENA_GlycemicControl_Class120005]
+		[ATHENA_GlycemicControl_Class120324])
+	(label "TZD contraindicated OR Glipizide NOT contraindicated OR metformin NOT contraindicated OR TZD being used")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class120004] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Class90000])
+	(label "Glipizide NOT contraindicated")
+	(operator NOT))
+
+([ATHENA_GlycemicControl_Class120005] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "TZD contraindicated")
+	(PAL_constraint [ATHENA_GlycemicControl_Class120009]))
+
+([ATHENA_GlycemicControl_Class120006] of  Start_Activity
+
+	(activity [ATHENA_GlycemicControl_Instance_50026])
+	(label "Add TZD"))
+
+([ATHENA_GlycemicControl_Class120007] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class5])
+	(%3ATO [ATHENA_GlycemicControl_Class120002]))
+
+([ATHENA_GlycemicControl_Class120008] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "Metformin contraindicated")
+	(%3APAL-RANGE "(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Medical_Conditions_Metaclass)\n(defrange ?derived_problem :FRAME Diagnostic_Term_Metaclass)\n(defrange ?drug_usage :FRAME Drug_Usage)")
+	(%3APAL-STATEMENT "(forall ?drug_usage\n        (=> (Drug_Class_Name ?drug_usage BIGUANIDE)\n            (or (exists ?condition \n                        (and (patient_id ?condition $patient_id)\n                             (exists ?problem \n                                     (and (Absolute_Contraindications ?drug_usage ?problem)\n                                          (isa-classname (domain_term ?condition))\n                                          (or (= (coerce-to-class (domain_term ?condition)) ?problem )\n                                              (subclass-of (coerce-to-class (domain_term ?condition)) ?problem )) \n                                     ))))\n                (exists  ?derived_problem \n                         (and (Absolute_Contraindications ?drug_usage ?derived_problem)\n                              (is-derivable ?derived_problem))))\n        )\n)"))
+
+([ATHENA_GlycemicControl_Class120009] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "TZD contraindicated")
+	(%3APAL-RANGE "(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Medical_Conditions_Metaclass)\n(defrange ?derived_problem :FRAME Diagnostic_Term_Metaclass)\n(defrange ?drug_usage :FRAME Drug_Usage)")
+	(%3APAL-STATEMENT "(forall ?drug_usage\n        (=> (Drug_Class_Name ?drug_usage THIAZOLIDINEDIONES)\n            (or (exists ?condition \n                        (and (patient_id ?condition $patient_id)\n                             (exists ?problem \n                                     (and (Absolute_Contraindications ?drug_usage ?problem)\n                                          (isa-classname (domain_term ?condition))\n                                          (or (= (coerce-to-class (domain_term ?condition)) ?problem )\n                                              (subclass-of (coerce-to-class (domain_term ?condition)) ?problem )) \n                                     ))))\n                (exists  ?derived_problem \n                         (and (Absolute_Contraindications ?drug_usage ?derived_problem)\n                              (is-derivable ?derived_problem))))\n        )\n)"))
+
+([ATHENA_GlycemicControl_Class120319] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class8])
+	(%3ATO [ATHENA_GlycemicControl_Instance_50008]))
+
+([ATHENA_GlycemicControl_Class120320] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class90036])
+	(%3ATO [ATHENA_GlycemicControl_Class100006]))
+
+([ATHENA_GlycemicControl_Class120321] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class110003]
+		[ATHENA_GlycemicControl_Class120322])
+	(label "Metformin contraindicated or being used")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class120322] of  Presence_Criterion
+
+	(domain_term BIGUANIDE)
+	(entry_type Medication)
+	(label "Biguanide being used")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class120323] of  Presence_Criterion
+
+	(domain_term SULFONYLUREAS_2NDGEN)
+	(entry_type Medication)
+	(label "Sulfonylurea 2nd generation being used or contraindicated")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class120324] of  Presence_Criterion
+
+	(domain_term THIAZOLIDINEDIONES)
+	(entry_type Medication)
+	(label "TZD being used")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class120325] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Instance_130309])
+	(%3ATO [ATHENA_GlycemicControl_Class90036]))
+
+([ATHENA_GlycemicControl_Class120326] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Instance_130309])
+	(%3ATO [ATHENA_GlycemicControl_Class100006]))
+
+([ATHENA_GlycemicControl_Class120327] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Instance_130309])
+	(%3ATO [ATHENA_GlycemicControl_Class120002]))
+
+([ATHENA_GlycemicControl_Class120328] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class8])
+	(%3ATO [ATHENA_GlycemicControl_Class90036]))
+
+([ATHENA_GlycemicControl_Class120329] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class8])
+	(%3ATO [ATHENA_GlycemicControl_Class100006]))
+
+([ATHENA_GlycemicControl_Class120330] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class8])
+	(%3ATO [ATHENA_GlycemicControl_Class120002]))
+
+([ATHENA_GlycemicControl_Class130115] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_GlycemicControl_Class80003])
+	(%3ATO [ATHENA_GlycemicControl_Class80004]))
+
+([ATHENA_GlycemicControl_Class130196] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class9])
+	(%3ATO [ATHENA_GlycemicControl_Class120002]))
+
+([ATHENA_GlycemicControl_Class130197] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class9])
+	(%3ATO [ATHENA_GlycemicControl_Class120002]))
+
+([ATHENA_GlycemicControl_Class130198] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class9])
+	(%3ATO [ATHENA_GlycemicControl_Class100006]))
+
+([ATHENA_GlycemicControl_Class130199] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class9])
+	(%3ATO [ATHENA_GlycemicControl_Class90036]))
+
+([ATHENA_GlycemicControl_Class14] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class3])
+	(%3ATO [ATHENA_GlycemicControl_Class9]))
+
+([ATHENA_GlycemicControl_Class17] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class5])
+	(%3ATO [ATHENA_GlycemicControl_Class0]))
+
+([ATHENA_GlycemicControl_Class2] of  Scenario
+
+	(consultation_template [ATHENA_GlycemicControl_Class60011])
+	(followed_by [ATHENA_GlycemicControl_Class7])
+	(label "Combination therapy w/ oral agents")
+	(new_encounter TRUE)
+	(precondition [ATHENA_GlycemicControl_Instance_120201]))
+
+([ATHENA_GlycemicControl_Class20000] of  Evaluate_Increase_Activity_Intensity
+
+	(activities_to_modify [ATHENA_GlycemicControl_Class20002])
+	(activity_class "Medication")
+	(activity_spec Guideline_Drug)
+	(activity_spec_key [generic_drug])
+	(attribute "daily_dose")
+	(label "consider increasing dose of drugs"))
+
+([ATHENA_GlycemicControl_Class20001] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med $patient_id)\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition $patient_id)(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med $patient_id)\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem $patient_id)\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([ATHENA_GlycemicControl_Class20002] of  PAL_Query
+
+	(case_variable "$patient_id")
+	(key_slot [drug_name])
+	(label "query for drugs not a max dose")
+	(PAL_query [ATHENA_GlycemicControl_Class20003]))
+
+([ATHENA_GlycemicControl_Class20003] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(findall  ?med\n         (and \n              (patient_id ?med $patient_id)\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition $patient_id)(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med $patient_id)\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem $patient_id)\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([ATHENA_GlycemicControl_Class21] of  Action_Choice
+
+	(actions [KB_390055_Class3])
+	(label "Add insulin")
+	(strict_rule_in_condition [criterion_INSTANCE_00001])
+	(strict_rule_out_condition [KB_794798_Class0]))
+
+([ATHENA_GlycemicControl_Class22] of  Action_Choice
+
+	(actions [KB_390055_Class9])
+	(label "Substitute")
+	(strict_rule_in_condition [KB_987250_Class2]))
+
+([ATHENA_GlycemicControl_Class3] of  Scenario
+
+	(followed_by [ATHENA_GlycemicControl_Class9])
+	(label "Insulin therapy only")
+	(new_encounter TRUE)
+	(precondition [ATHENA_GlycemicControl_Instance_110113]))
+
+([ATHENA_GlycemicControl_Class30000] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Class40001])
+	(label "Monitor levels of B12 when using Metformin")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class30001] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "Age>80yrs")
+	(numeric_domain_term Age)
+	(operator %3E)
+	(value 80.0))
+
+([ATHENA_GlycemicControl_Class30002] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class30003]
+		[ATHENA_GlycemicControl_Class60009]
+		[ATHENA_GlycemicControl_Instance_120010]
+		[ATHENA_GlycemicControl_Class40001])
+	(label "add biguanide")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class30003] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "Add biguanide, alert hipoxemia, dehydration or sepsis")
+	(message "Withhold metformin in the presence of any condition associated with hipoxemia, dehydration or sepsis."))
+
+([ATHENA_GlycemicControl_Class39] of  Scenario
+
+	(followed_by [ATHENA_GlycemicControl_Class42])
+	(label "No target  or no HbA1C")
+	(new_encounter TRUE)
+	(precondition [ATHENA_GlycemicControl_Instance_110074]))
+
+([ATHENA_GlycemicControl_Class4] of  Scenario
+
+	(consultation_template [ATHENA_GlycemicControl_Class60011])
+	(followed_by [ATHENA_GlycemicControl_Class8])
+	(label "Combination oral agents/insulin therapy")
+	(new_encounter TRUE)
+	(precondition [ATHENA_GlycemicControl_Instance_120202]))
+
+([ATHENA_GlycemicControl_Class40] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class42])
+	(%3ATO [ATHENA_GlycemicControl_Instance_10030]))
+
+([ATHENA_GlycemicControl_Class40000] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Class50002])
+	(label "Check B12 level every 24 mos if on metformin"))
+
+([ATHENA_GlycemicControl_Class40001] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "Metformin and B12")
+	(message "Check B12 levels every 2 years when a patient is using Metformin.")
+	(message_type Recommendation))
+
+([ATHENA_GlycemicControl_Class41] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class42])
+	(%3ATO [ATHENA_GlycemicControl_Instance_10018]))
+
+([ATHENA_GlycemicControl_Class42] of  Choice_Step
+
+	(branches
+		[ATHENA_GlycemicControl_Instance_10030]
+		[ATHENA_GlycemicControl_Instance_10018])
+	(label "Lack target or lack HbA1C"))
+
+([ATHENA_GlycemicControl_Class43] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class39])
+	(%3ATO [ATHENA_GlycemicControl_Class42]))
+
+([ATHENA_GlycemicControl_Class5] of  Choice_Step
+
+	(branches
+		[ATHENA_GlycemicControl_Instance_50008]
+		[ATHENA_GlycemicControl_Instance_70010]
+		[ATHENA_GlycemicControl_Class90036]
+		[ATHENA_GlycemicControl_Class100006]
+		[ATHENA_GlycemicControl_Class120002])
+	(label "DM - No meds"))
+
+([ATHENA_GlycemicControl_Class50000] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class60001]
+		[ATHENA_GlycemicControl_Class60002])
+	(label "add chlorpropamide")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class50001] of  Parameterized_Message
+)
+
+([ATHENA_GlycemicControl_Class50002] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "On Metformin check serum B12 level")
+	(message "It is recommended that patients on Metformin have a serum B12 checked at least every 12 months")
+	(message_type Recommendation)
+	(references [ATHENA_GlycemicControl_Class80009])
+	(rule_in_condition [ATHENA_GlycemicControl_Class80011]))
+
+([ATHENA_GlycemicControl_Class50003] of  Presence_Criterion
+
+	(domain_term BIGUANIDE)
+	(entry_type Medication)
+	(label "On biguanide for >1year")
+	(mood Authorized)
+	(period [ATHENA_GlycemicControl_Class80010])
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class60000] of  Drug_Usage
+
+	(Absolute_Contraindications
+		CCS-11.7
+		Allergy+to+Sulfonylureas)
+	(collateral_actions [ATHENA_GlycemicControl_Instance_140143])
+	(Drug_Class_Name GLIPIZIDE)
+	(Drug_Partners_To_Avoid
+		GLYBURIDE
+		GLIMEPIRIDE)
+	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80004])
+	(label "GLIPIZIDE")
+	(Relative_Contraindications
+		hypoglycemia
+		Weight+gain)
+	(Relative_Indications DM-Type2)
+	(Side_Effects
+		hypoglycemia
+		Weight+gain
+		Allergy+to+Sulfonylureas))
+
+([ATHENA_GlycemicControl_Class60001] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "add chlorpropamide elderly")
+	(message "100mg/day-125mg/day for elderly patients.")
+	(rule_in_condition [KB_308520_Class8]))
+
+([ATHENA_GlycemicControl_Class60002] of  Conditional_On_Screen_Message
+
+	(label "add chlorpropamide middle aged")
+	(message "250mg/day in the mild-to-moderately severe, middle aged, stable patient")
+	(rule_in_condition [ATHENA_GlycemicControl_Class60003]))
+
+([ATHENA_GlycemicControl_Class60003] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "Age<65")
+	(numeric_domain_term Age)
+	(operator %3C)
+	(value 65.0))
+
+([ATHENA_GlycemicControl_Class60004] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class60005]
+		[ATHENA_GlycemicControl_Class60006])
+	(label "add tolazamide")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class60005] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "add tolazamide age>=65")
+	(message "100mg/day for elderly patients")
+	(rule_in_condition [KB_308520_Class8]))
+
+([ATHENA_GlycemicControl_Class60006] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "add tolazamide age<65")
+	(message "100mg/day-250mg/day in the mild-to-moderately severe patient")
+	(rule_in_condition [ATHENA_GlycemicControl_Class60003]))
+
+([ATHENA_GlycemicControl_Class60007] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Instance_140150])
+	(label "add tolbutamide")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class60008] of  Collateral_Action
+)
+
+([ATHENA_GlycemicControl_Class60009] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "add biguanide age >80")
+	(message "For patients 80 years and over only add biguanides if they have normal creatinine clearance, and the dose should not be escalated to the maximum in elderly patients due to increased susceptibility to lactic acidosis.")
+	(rule_in_condition [ATHENA_GlycemicControl_Class30001]))
+
+([ATHENA_GlycemicControl_Class60010] of  Presence_Criterion
+
+	(domain_term BIGUANIDE)
+	(entry_type Medication)
+	(label "presence of biguanide")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class60011] of  Consultation_Guideline
+
+	(first_step [KB_707783_Class4])
+	(label "oral agent")
+	(steps
+		[KB_707783_Class4]
+		[ATHENA_GlycemicControl_Class70209]
+		[ATHENA_GlycemicControl_Class80004]
+		[ATHENA_GlycemicControl_Class80014]
+		[ATHENA_GlycemicControl_Class80015])
+	(transitions
+		[ATHENA_GlycemicControl_Class70210]
+		[ATHENA_GlycemicControl_Class80008]
+		[ATHENA_GlycemicControl_Class80017]))
+
+([ATHENA_GlycemicControl_Class60012] of  Consultation_Branch_Step
+
+	(branches [KB_707783_Class4])
+	(label "Monotherapy with oral agent")
+	(selection_method all_of))
+
+([ATHENA_GlycemicControl_Class60013] of  Consultation_Action_Step
+
+	(actions [KB_308520_Class6])
+	(label "biguanide contrast warning"))
+
+([ATHENA_GlycemicControl_Class7] of  Choice_Step
+
+	(branches
+		[ATHENA_GlycemicControl_Instance_50008]
+		[ATHENA_GlycemicControl_Class22]
+		[ATHENA_GlycemicControl_Instance_70010]
+		[ATHENA_GlycemicControl_Instance_130311])
+	(label "DM - Oral Agent(s)"))
+
+([ATHENA_GlycemicControl_Class70000] of  Drug_Usage
+
+	(Absolute_Contraindications
+		Allergy+to+Sulfonylureas
+		CCS-11.7
+		Age%3E%3D65+and+creatinine%3E%3D2)
+	(collateral_actions [ATHENA_GlycemicControl_Instance_140143])
+	(Drug_Class_Name GLYBURIDE)
+	(Drug_Partners_To_Avoid
+		GLIPIZIDE
+		GLIMEPIRIDE
+		SULFONYLUREAS)
+	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80005])
+	(label "GLYBURIDE")
+	(Relative_Contraindications
+		Weight+gain
+		hypoglycemia)
+	(Side_Effects
+		hypoglycemia
+		Weight+gain
+		Allergy+to+Sulfonylureas))
+
+([ATHENA_GlycemicControl_Class70001] of  Guideline_Drug
+
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug SULFONYLUREAS_2NDGEN)
+	(label "Glipizide XL"))
+
+([ATHENA_GlycemicControl_Class70209] of  Consultation_Action_Step
+
+	(actions [ATHENA_GlycemicControl_Class50002])
+	(label "Metformin check serum B12")
+	(rule_in [ATHENA_GlycemicControl_Class60010]))
+
+([ATHENA_GlycemicControl_Class70210] of  Consultation_Selection
+
+	(%3AFROM [KB_707783_Class4])
+	(%3ATO [ATHENA_GlycemicControl_Class70209]))
+
+([ATHENA_GlycemicControl_Class8] of  Choice_Step
+
+	(branches
+		[ATHENA_GlycemicControl_Instance_70010]
+		[ATHENA_GlycemicControl_Instance_130784]
+		[ATHENA_GlycemicControl_Instance_50008]
+		[ATHENA_GlycemicControl_Class90036]
+		[ATHENA_GlycemicControl_Class100006]
+		[ATHENA_GlycemicControl_Class120002])
+	(label "DM - Oral agents and insulin"))
+
+([ATHENA_GlycemicControl_Class80000] of  Start_Activity
+
+	(activity [ATHENA_GlycemicControl_Instance_50004])
+	(label "Start Metformin"))
+
+([ATHENA_GlycemicControl_Class80001] of  Presence_Criterion
+
+	(domain_term Oral_Hypoglycemic_Agent)
+	(entry_type Medication)
+	(label "Absence of hypoglycemic agent recommendation")
+	(mood Recommend_Add)
+	(presence FALSE))
+
+([ATHENA_GlycemicControl_Class80002] of  Consultation_Guideline
+
+	(first_step [ATHENA_GlycemicControl_Class80003])
+	(label "Nonpharmacologic therapy")
+	(steps
+		[ATHENA_GlycemicControl_Class80003]
+		[ATHENA_GlycemicControl_Class80004])
+	(transitions
+		[ATHENA_GlycemicControl_Class90199]
+		[ATHENA_GlycemicControl_Class130115]))
+
+([ATHENA_GlycemicControl_Class80003] of  Consultation_Branch_Step
+
+	(branches [ATHENA_GlycemicControl_Class80004])
+	(label "Nonpharmacologic therapy")
+	(selection_method all_of))
+
+([ATHENA_GlycemicControl_Class80004] of  Consultation_Action_Step
+
+	(actions [ATHENA_GlycemicControl_Class80007])
+	(label "Start aspirin")
+	(rule_in [criterion_INSTANCE_00001])
+	(rule_out [ATHENA_GlycemicControl_Class80006]))
+
+([ATHENA_GlycemicControl_Class80006] of  Presence_Criterion
+
+	(domain_term Aspirin)
+	(entry_type Medication)
+	(label "Presence of aspirin")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class80007] of  On_Screen_Message
+
+	(label "Start Aspirin")
+	(message "Consider aspirin therapy to reduce the risk of cardiovascular fatal events.")
+	(message_type Primary_Recommendation))
+
+([ATHENA_GlycemicControl_Class80008] of  Consultation_Selection
+
+	(%3AFROM [KB_707783_Class4])
+	(%3ATO [ATHENA_GlycemicControl_Class80004]))
+
+([ATHENA_GlycemicControl_Class80009] of  Supporting_Material
+
+	(abstract "Kristin To Pharmacist VAPAHCS")
+	(label "Kristin To Pharmacist VAPAHCS 9/2009")
+	(role evidence))
+
+([ATHENA_GlycemicControl_Class80010] of  Relative_Time_Interval_Definite
+
+	(how_many "1")
+	(label "> 1 year")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit year))
+
+([ATHENA_GlycemicControl_Class80011] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class60010]
+		[ATHENA_GlycemicControl_Class80013])
+	(label "On metformin and B12 test > 1 year old")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class80013] of  Presence_Criterion
+
+	(domain_term B+12)
+	(entry_type Numeric_Entry)
+	(label "presence B12 > 1year")
+	(period [ATHENA_GlycemicControl_Class80010])
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class80014] of  Consultation_Action_Step
+)
+
+([ATHENA_GlycemicControl_Class80015] of  Consultation_Action_Step
+
+	(actions [ATHENA_GlycemicControl_Class80019])
+	(label "Add ACE message")
+	(rule_in [ATHENA_GlycemicControl_Class80018]))
+
+([ATHENA_GlycemicControl_Class80017] of  Consultation_Selection
+
+	(%3AFROM [KB_707783_Class4])
+	(%3ATO [ATHENA_GlycemicControl_Class80015]))
+
+([ATHENA_GlycemicControl_Class80018] of  Presence_Criterion
+
+	(domain_term ACE_Inhibitors)
+	(entry_type Medication)
+	(label "Absence of ACE Inhibitor")
+	(mood Authorized)
+	(presence FALSE))
+
+([ATHENA_GlycemicControl_Class80019] of  On_Screen_Message
+
+	(label "Add ACE despite kidney function")
+	(message "Many DM practitioners add ACE inhibitors to patient’s regimen regardless of kidney function.")
+	(references [ATHENA_GlycemicControl_Class80009]))
+
+([ATHENA_GlycemicControl_Class80023] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "eGFR <30")
+	(numeric_domain_term eGFR)
+	(operator %3C)
+	(value 30.0))
+
+([ATHENA_GlycemicControl_Class80024] of  Drug_Contraindication_Relation
+
+	(contraindication CCS-7.2.11)
+	(Drug THIAZOLIDINEDIONES)
+	(supporting_materials [ATHENA_GlycemicControl_Class80025]))
+
+([ATHENA_GlycemicControl_Class80025] of  Supporting_Material
+
+	(abstract "ADA 2009 guidelines")
+	(label "ADA 2009 guidelines")
+	(URL "http://care.diabetesjournals.org/content/32/Supplement_1/S3.full.pdf+html"))
+
+([ATHENA_GlycemicControl_Class80026] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "age >=65")
+	(numeric_domain_term Age)
+	(operator %3E%3D)
+	(value 65.0))
+
+([ATHENA_GlycemicControl_Class80027] of  Supporting_Material
+
+	(abstract "•	July 9/2009:  On September 4, 2007, VA MedSAFE sent out information about the increased risk of severe hypoglycemia with glyburide, especially in patients with renal insufficiency or decreased renal function due to age. Each VISN received a list of patients aged 65 years and older with an active prescription for glyburide and a serum creatinine ≥ 2 mg/dl so that appropriate intervention, such as a switch to glipizide, could be taken")
+	(label "PBM age>=65y gliburide")
+	(URL "•	http://www.fda.gov/Drugs/DrugSafety/PostmarketDrugSafetyInformationforPatientsandProviders/ucm143406.htm"))
+
+([ATHENA_GlycemicControl_Class9] of  Choice_Step
+
+	(branches
+		[ATHENA_GlycemicControl_Instance_50008]
+		[ATHENA_GlycemicControl_Class120002]
+		[ATHENA_GlycemicControl_Class100006]
+		[ATHENA_GlycemicControl_Class90036])
+	(label "DM -  Insulin only"))
+
+([ATHENA_GlycemicControl_Class90000] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "Glipizide contraindicated")
+	(PAL_constraint [ATHENA_GlycemicControl_Class100001]))
+
+([ATHENA_GlycemicControl_Class90003] of  Start_Activity
+
+	(activity [ATHENA_GlycemicControl_Class70000])
+	(description "Add Glyburide")
+	(label "Add Glyburide"))
+
+([ATHENA_GlycemicControl_Class90005] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class90006]
+		[ATHENA_GlycemicControl_Class90008])
+	(label "Glyburide not contrainidcated and not a bad drug partner")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class90006] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "Glyburide contraindicated")
+	(PAL_constraint [ATHENA_GlycemicControl_Class90007]))
+
+([ATHENA_GlycemicControl_Class90007] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "Glyburide contraindicated")
+	(%3APAL-STATEMENT "(forall ?drug_usage\n        (=> (Drug_Class_Name ?drug_usage GLYBURIDE)\n            (or  (exists ?condition \n                              (and (patient_id ?condition $patient_id)\n                                   (exists ?problem \n                                           (and (Absolute_Contraindications ?drug_usage ?problem)\n                                                (isa-classname (domain_term ?condition))\n                                                (or (= (coerce-to-class (domain_term ?condition)) ?problem )\n                                                    (subclass-of (coerce-to-class (domain_term ?condition)) ?problem )) \n                                           ))))\n                 (exists  ?derived_problem \n                               (and (Absolute_Contraindications ?drug_usage ?derived_problem)\n                                    (is-derivable ?derived_problem))))\n            )\n)"))
+
+([ATHENA_GlycemicControl_Class90008] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "Glyburide not bad drug partner")
+	(PAL_constraint [ATHENA_GlycemicControl_Class90009]))
+
+([ATHENA_GlycemicControl_Class90009] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "No bad drug partner Glyburide")
+	(%3APAL-RANGE "(defrange ?med :FRAME Medication)\n(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?drug_class :FRAME Medications_Metaclass)\n(defrange ?drug :FRAME Medications_Metaclass)")
+	(%3APAL-STATEMENT "(forall ?drug_usage \n        (=> (Drug_Class_Name ?drug_usage (coerce-to-class \"GLYBURIDE\"))\n            (not (exists ?med \n                         (or (exists ?drug_class \n                                     (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                          (equal-or-subclass-of (coerce-to-class (drug_name ?med)) ?drug_class)))\n                             (exists ?drug \n                                     (and (Drug_Partners_To_Avoid ?drug_usage ?drug)\n                          \n                                          (equal-or-subclass-of (coerce-to-class (drug_name ?med)) ?drug)))))\n            )\n        ))"))
+
+([ATHENA_GlycemicControl_Class90010] of  Action_Choice
+)
+
+([ATHENA_GlycemicControl_Class90011] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class90010])
+	(%3ATO [ATHENA_GlycemicControl_Class39]))
+
+([ATHENA_GlycemicControl_Class90019] of  Presence_Criterion
+
+	(domain_term BIGUANIDE)
+	(entry_type Medication)
+	(label "Using metformin")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class90020] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class90021]
+		[ATHENA_GlycemicControl_Class90024])
+	(label "No contraindications nor bad drug partner to biguanide")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class90021] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "contraindications to Biguanide")
+	(PAL_constraint [ATHENA_GlycemicControl_Class90023]))
+
+([ATHENA_GlycemicControl_Class90023] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "contraindications to Biguanide")
+	(%3APAL-RANGE "(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Medical_Conditions_Metaclass)\n(defrange ?derived_problem :FRAME Diagnostic_Term_Metaclass)\n(defrange ?drug_usage :FRAME Drug_Usage)")
+	(%3APAL-STATEMENT "(forall ?drug_usage\n        (=> (Drug_Class_Name ?drug_usage BIGUANIDE)\n            (or  (exists ?condition \n                              (and (patient_id ?condition $patient_id)\n                                   (exists ?problem \n                                           (and (Absolute_Contraindications ?drug_usage ?problem)\n                                                (isa-classname (domain_term ?condition))\n                                                (or (= (coerce-to-class (domain_term ?condition)) ?problem )\n                                                    (subclass-of (coerce-to-class (domain_term ?condition)) ?problem )) \n                                           ))))\n                 (exists  ?derived_problem \n                               (and (Absolute_Contraindications ?drug_usage ?derived_problem)\n                                    (is-derivable ?derived_problem))))\n            )\n)"))
+
+([ATHENA_GlycemicControl_Class90024] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "No bad drug partner Biguanide")
+	(PAL_constraint [ATHENA_GlycemicControl_Class90025]))
+
+([ATHENA_GlycemicControl_Class90025] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "Biguanide no bad drug partner")
+	(%3APAL-RANGE "(defrange ?med :FRAME Medication)\n(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?drug_class :FRAME Medications_Metaclass)\n(defrange ?drug :FRAME Medications_Metaclass)")
+	(%3APAL-STATEMENT "(forall ?drug_usage \n        (=> (Drug_Class_Name ?drug_usage (coerce-to-class \"GLYBURIDE\"))\n            (not (exists ?med \n                         (or (exists ?drug_class \n                                     (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                          (equal-or-subclass-of (coerce-to-class (drug_name ?med)) ?drug_class)))\n                             (exists ?drug \n                                     (and (Drug_Partners_To_Avoid ?drug_usage ?drug)\n                          \n                                          (equal-or-subclass-of (coerce-to-class (drug_name ?med)) ?drug)))))\n            )\n        ))"))
+
+([ATHENA_GlycemicControl_Class90030] of  Presence_Criterion
+
+	(domain_term SULFONYLUREAS)
+	(entry_type Medication)
+	(label "absence of sulfonylurea")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class90032] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class80026]
+		[ATHENA_GlycemicControl_Class90033])
+	(label "Age>=65 and creatinine>=2")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class90033] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "creatinine>=2")
+	(numeric_domain_term Creatinine)
+	(operator %3E%3D)
+	(value 2.0))
+
+([ATHENA_GlycemicControl_Class90036] of  Action_Choice
+
+	(actions [ATHENA_GlycemicControl_Class80000])
+	(followed_by [ATHENA_GlycemicControl_Class100006])
+	(label "Add metformin")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Instance_130679])
+	(strict_rule_out_condition [ATHENA_GlycemicControl_Class120321]))
+
+([ATHENA_GlycemicControl_Class90042] of  Goal_Criterion
+
+	(guideline_entity [ATHENA_GlycemicControl_Class90043]))
+
+([ATHENA_GlycemicControl_Class90043] of  Management_Guideline
+)
+
+([ATHENA_GlycemicControl_Class90045] of  Supporting_Material
+
+	(abstract "Table Evaluate HBA1C target")
+	(label "Table Evaluate HBA1C target")
+	(role evidence)
+	(URL "\\\\vhapalathenaot\\Diabetes_Grant\\domain_model\\Evaluate_HBA1Ctarget.jpg"))
+
+([ATHENA_GlycemicControl_Class90046] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class90047]
+		[ATHENA_GlycemicControl_Class90048])
+	(label "Reasons to not use TZDs")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class90047] of  On_Screen_Message
+
+	(label "Reasons to not use TZDs")
+	(message "Thiazolidinediones are less effective in lowering HbA1C, have a higher cost, and are non formulary."))
+
+([ATHENA_GlycemicControl_Class90048] of  On_Screen_Message
+
+	(label "Warning about liver enzymes check in 1st year")
+	(message "Check liver enzymes every 2-3 months during first year of thiazolidinedione therapy to evaluate for potential hepatitis."))
+
+([ATHENA_GlycemicControl_Class90049] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Class90050])
+	(label "Collateral actions - add insulin")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class90050] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "Cons of starting insulin")
+	(message "Staring insulin therapy requires closer monitoring by patient and clinician, has a higher risk of hypoglycemic events and requires injections."))
+
+([ATHENA_GlycemicControl_Class90051] of  Drug_Usage
+
+	(Absolute_Contraindications
+		CCS-9.8.2.1
+		cirrhosis)
+	(collateral_actions [ATHENA_GlycemicControl_Class90056])
+	(Drug_Class_Name ALPHA-GLUCOSIDASE_INHIBITORS)
+	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80007])
+	(label "ALPHA-GLUCOSIDASE INHIBITORS")
+	(Relative_Contraindications Serum+creatinine+%3E%3D2))
+
+([ATHENA_GlycemicControl_Class90053] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class90054]
+		[ATHENA_GlycemicControl_Class90055])
+	(label "Presence of cirrhosis")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class90054] of  Presence_Criterion
+
+	(domain_term cirrhosis)
+	(label "presence of cirrhosis (not HCUP)")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class90055] of  Presence_Criterion
+
+	(domain_term CCS-9.8.2.1)
+	(label "presence of cirrhosis without mention of alcohol (HCUP)")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Class90056] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Class90057])
+	(label "alpha-glucosidase inhibitors rec ADD")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Class90057] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "liver enzyme check")
+	(message "Monitor serum levels of AST/ALT every 3 months during first year of therapy, specially if dose >50mg TID."))
+
+([ATHENA_GlycemicControl_Class90131] of  Structured_Query
+
+	(entry_type Note_Entry)
+	(label "Sex = Male")
+	(where_restriction
+		[ATHENA_GlycemicControl_Class90132]
+		[ATHENA_GlycemicControl_Class90134]))
+
+([ATHENA_GlycemicControl_Class90132] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "attribute is Sex")
+	(operator eq)
+	(value_expression [ATHENA_GlycemicControl_Class90133]))
+
+([ATHENA_GlycemicControl_Class90133] of  Qualitative_Constant
+
+	(value "Sex"))
+
+([ATHENA_GlycemicControl_Class90134] of  Comparison_Filter
+
+	(attribute [value])
+	(label "value is Male")
+	(operator eq)
+	(value_expression [ATHENA_CKD_Instance_70006]))
+
+([ATHENA_GlycemicControl_Class90199] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class80003])
+	(%3ATO [ATHENA_GlycemicControl_Class80004]))
+
+([ATHENA_GlycemicControl_Instance_0] of  Management_Guideline
+
+	(authors "Mary Goldstein")
+	(clinical_algorithm [ATHENA_GlycemicControl_Instance_1])
+	(eligibility_criteria [ATHENA_DM_Eye_Instance_40003])
+	(goal [KB_273522_Class0])
+	(label "ATHENA DM: Glycemic Control")
+	(patient_characterization
+		[BMI%3E25]
+		[BMI%3E%3D29]
+		[Creatinine+%3E+1.5+and+Male])
+	(title "ATHENA DM: Glycemic Control")
+	(version "1.0"))
+
+([ATHENA_GlycemicControl_Instance_1] of  Management_Diagram
+
+	(label "Glycemic Control")
+	(steps
+		[ATHENA_GlycemicControl_Instance_10018]
+		[ATHENA_GlycemicControl_Instance_10030]
+		[ATHENA_GlycemicControl_Class0]
+		[ATHENA_GlycemicControl_Class1]
+		[ATHENA_GlycemicControl_Class2]
+		[ATHENA_GlycemicControl_Class3]
+		[ATHENA_GlycemicControl_Class4]
+		[ATHENA_GlycemicControl_Class5]
+		[ATHENA_GlycemicControl_Class7]
+		[ATHENA_GlycemicControl_Class8]
+		[ATHENA_GlycemicControl_Class9]
+		[ATHENA_GlycemicControl_Class21]
+		[ATHENA_GlycemicControl_Class22]
+		[ATHENA_GlycemicControl_Class39]
+		[ATHENA_GlycemicControl_Class42]
+		[ATHENA_GlycemicControl_Instance_50008]
+		[ATHENA_GlycemicControl_Instance_70010]
+		[ATHENA_GlycemicControl_Instance_130309]
+		[ATHENA_GlycemicControl_Instance_130311]
+		[ATHENA_GlycemicControl_Instance_130784]
+		[ATHENA_GlycemicControl_Class90036]
+		[ATHENA_GlycemicControl_Class100006]
+		[ATHENA_GlycemicControl_Class120002])
+	(transitions
+		[ATHENA_GlycemicControl_Class14]
+		[ATHENA_GlycemicControl_Class40]
+		[ATHENA_GlycemicControl_Class41]
+		[ATHENA_GlycemicControl_Class43]
+		[ATHENA_GlycemicControl_Instance_50018]
+		[ATHENA_GlycemicControl_Instance_50020]
+		[ATHENA_GlycemicControl_Instance_50022]
+		[ATHENA_GlycemicControl_Instance_70022]
+		[ATHENA_GlycemicControl_Instance_70023]
+		[ATHENA_GlycemicControl_Instance_70026]
+		[ATHENA_GlycemicControl_Instance_70027]
+		[ATHENA_GlycemicControl_Instance_70029]
+		[KB_794798_Class4]
+		[KB_794798_Class5]
+		[KB_794798_Class6]
+		[ATHENA_GlycemicControl_Instance_130312]
+		[ATHENA_GlycemicControl_Instance_130315]
+		[ATHENA_GlycemicControl_Instance_130316]
+		[ATHENA_GlycemicControl_Instance_130785]
+		[ATHENA_GlycemicControl_Instance_120088]
+		[ATHENA_GlycemicControl_Class110004]
+		[ATHENA_GlycemicControl_Class110005]
+		[ATHENA_GlycemicControl_Class120007]
+		[ATHENA_GlycemicControl_Class120319]
+		[ATHENA_GlycemicControl_Class120320]
+		[ATHENA_GlycemicControl_Class120325]
+		[ATHENA_GlycemicControl_Class120326]
+		[ATHENA_GlycemicControl_Class120327]
+		[ATHENA_GlycemicControl_Class120328]
+		[ATHENA_GlycemicControl_Class120329]
+		[ATHENA_GlycemicControl_Class120330]
+		[ATHENA_GlycemicControl_Class130196]
+		[ATHENA_GlycemicControl_Class130197]
+		[ATHENA_GlycemicControl_Class130198]
+		[ATHENA_GlycemicControl_Class130199]))
+
+([ATHENA_GlycemicControl_Instance_10000] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Sex)
+	(entry_type Note_Entry)
+	(label "Being Female")
+	(operator eq)
+	(value [Female]))
+
+([ATHENA_GlycemicControl_Instance_100000] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Lower dose Miglitol")
+	(lower_limit 75.0)
+	(upper_limit 300.0))
+
+([ATHENA_GlycemicControl_Instance_100001] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Tolazamide - high dose")
+	(lower_limit 750.1)
+	(upper_limit 1000.0))
+
+([ATHENA_GlycemicControl_Instance_100002] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Tolbutamide")
+	(lower_limit 1000.0)
+	(upper_limit 2000.0))
+
+([ATHENA_GlycemicControl_Instance_100003] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Tolbutamide - high")
+	(lower_limit 2000.1)
+	(upper_limit 3000.0))
+
+([ATHENA_GlycemicControl_Instance_100004] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Acetohexamide-low")
+	(lower_limit 250.0)
+	(upper_limit 1000.0))
+
+([ATHENA_GlycemicControl_Instance_100005] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "acetohexamide")
+	(lower_limit 1000.1)
+	(upper_limit 1500.0))
+
+([ATHENA_GlycemicControl_Instance_100006] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Glipizide - low")
+	(lower_limit 2.5)
+	(upper_limit 39.0))
+
+([ATHENA_GlycemicControl_Instance_100007] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Glipizide - high")
+	(lower_limit 40.0)
+	(upper_limit 40.2))
+
+([ATHENA_GlycemicControl_Instance_100008] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Glyburide-low dose")
+	(lower_limit 1.25)
+	(upper_limit 20.0))
+
+([ATHENA_GlycemicControl_Instance_100009] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Glyburide-high dose")
+	(lower_limit 20.1)
+	(upper_limit 20.2))
+
+([ATHENA_GlycemicControl_Instance_10001] of  Presence_Criterion
+
+	(domain_term HbA1C)
+	(entry_type Note_Entry)
+	(label "Presence of HbA1c in past 3 months")
+	(period [ATHENA_GlycemicControl_Instance_10003])
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_100010] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Glimepiride-low dose")
+	(lower_limit 1.0)
+	(upper_limit 8.0))
+
+([ATHENA_GlycemicControl_Instance_100011] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Glimepiride-high dose")
+	(lower_limit 8.1)
+	(upper_limit 8.2))
+
+([ATHENA_GlycemicControl_Instance_100012] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Acrabose-low dose")
+	(lower_limit 75.0)
+	(upper_limit 150.0))
+
+([ATHENA_GlycemicControl_Instance_100013] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Acrabose-high dose")
+	(lower_limit 150.1)
+	(upper_limit 150.2))
+
+([ATHENA_GlycemicControl_Instance_10002] of  Presence_Criterion
+
+	(domain_term HbA1C)
+	(entry_type Numeric_Entry)
+	(label "Presence of HbA1c in past year")
+	(period [ATHENA_DM_Eye_Instance_30019])
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_10003] of  Relative_Time_Interval_Definite
+
+	(how_many "3")
+	(label "3 months before today")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit month))
+
+([ATHENA_GlycemicControl_Instance_100038] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain term is HbA1C")
+	(operator eq)
+	(value_expression [ATHENA_GlycemicControl_Instance_100039]))
+
+([ATHENA_GlycemicControl_Instance_100039] of  Qualitative_Constant
+
+	(value "HbA1c"))
+
+([ATHENA_GlycemicControl_Instance_10004] of  Numeric_Term_Criterion
+
+	(entry_type Note_Entry)
+	(label "HbA1C <= 7%")
+	(numeric_domain_term HbA1C)
+	(operator %3C%3D)
+	(unit "%")
+	(value 7.0))
+
+([ATHENA_GlycemicControl_Instance_10005] of  Numeric_Term_Criterion
+
+	(entry_type Note_Entry)
+	(label "HbA1C > 9%")
+	(numeric_domain_term HbA1C)
+	(operator %3C%3D)
+	(unit "%")
+	(value 9.0))
+
+([ATHENA_GlycemicControl_Instance_10006] of  Numeric_Term_Criterion
+
+	(entry_type Note_Entry)
+	(label "HbA1C <= 9%")
+	(numeric_domain_term HbA1C)
+	(operator %3C%3D)
+	(unit "%")
+	(value 9.0))
+
+([ATHENA_GlycemicControl_Instance_10007] of  Numeric_Term_Criterion
+
+	(entry_type Note_Entry)
+	(label "HbA1C <= 8%")
+	(numeric_domain_term HbA1C)
+	(operator %3C%3D)
+	(unit "%")
+	(value 8.0))
+
+([ATHENA_GlycemicControl_Instance_100070] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "Taking >1 oral agents")
+	(mood Authorized)
+	(numeric_domain_term Oral_Hypoglycemic_Agent)
+	(operator %3E)
+	(value 1.0))
+
+([ATHENA_GlycemicControl_Instance_10012] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Instance_10006])
+	(label "NOT HbA1C <= 9%")
+	(operator NOT))
+
+([ATHENA_GlycemicControl_Instance_10013] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Instance_10007])
+	(label "NOT HbA1C <= 8%")
+	(operator NOT))
+
+([ATHENA_GlycemicControl_Instance_10014] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Instance_10004])
+	(label "NOT HbA1C <= 7%")
+	(operator NOT))
+
+([ATHENA_GlycemicControl_Instance_10016] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_10014]
+		[ATHENA_GlycemicControl_Instance_10007])
+	(label "7 <= HbA1C <=8")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_10017] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_10013]
+		[ATHENA_GlycemicControl_Instance_10006])
+	(label "8 <= HbA1C <=9")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_10018] of  Action_Choice
+
+	(actions [ATHENA_GlycemicControl_Instance_50000])
+	(label "Order HbA1C")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Instance_10021]))
+
+([ATHENA_GlycemicControl_Instance_10019] of  Presence_Criterion
+
+	(domain_term HbA1C)
+	(entry_type Numeric_Entry)
+	(label "Absence of HbA1C lab value")
+	(presence FALSE))
+
+([ATHENA_GlycemicControl_Instance_10020] of  Presence_Criterion
+
+	(domain_term HbA1C)
+	(entry_type Note_Entry)
+	(label "Absence of HbA1C lab value in past year")
+	(period [ATHENA_DM_Eye_Instance_30019])
+	(presence FALSE))
+
+([ATHENA_GlycemicControl_Instance_10021] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_10019]
+		[ATHENA_GlycemicControl_Instance_10020]
+		[ATHENA_GlycemicControl_Instance_20000])
+	(label "No HbA1C ever or in past year")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Instance_10022] of  Schedule
+
+	(description "Order HbA1C lab")
+	(label "Order HbA1C lab")
+	(when [ATHENA_DM_Eye_Instance_100018])
+	(who_with primary+care+provider))
+
+([ATHENA_GlycemicControl_Instance_10027] of  Quantitative_Data
+
+	(sensitive FALSE))
+
+([ATHENA_GlycemicControl_Instance_10028] of  Data_Entry_Template
+
+	(data_to_collect
+		[ATHENA_GlycemicControl_Instance_50030]
+		[ATHENA_GlycemicControl_Instance_50031]
+		[ATHENA_GlycemicControl_Instance_50032]
+		[ATHENA_GlycemicControl_Instance_50033]
+		[ATHENA_GlycemicControl_Instance_50034]
+		[ATHENA_GlycemicControl_Instance_60012])
+	(label "Evaluate for high risk"))
+
+([ATHENA_GlycemicControl_Instance_10029] of  Qualitative_Data
+
+	(allowed_terms
+		"7%"
+		"8%"
+		"9%")
+	(choice_type one_of)
+	(description "Determine the recommended target based on the patient's absolute risk for developing microvascular complications.")
+	(domain_term target_HBA1c)
+	(label "clinician enter goal for HbA1C")
+	(prompt "Enter goal for HbA1C (7, 8, or 9%):")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_10030] of  Action_Choice
+
+	(actions [ATHENA_GlycemicControl_Instance_50012])
+	(label "Determine goal")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Instance_10032]))
+
+([ATHENA_GlycemicControl_Instance_10032] of  Presence_Criterion
+
+	(domain_term target_HBA1c)
+	(entry_type Numeric_Entry)
+	(label "Absence Target HBA1c")
+	(presence FALSE))
+
+([ATHENA_GlycemicControl_Instance_10034] of  Goal_Criterion
+
+	(guideline_entity [ATHENA_GlycemicControl_Instance_0])
+	(label "Goal satisfied"))
+
+([ATHENA_GlycemicControl_Instance_10036] of  Goal
+
+	(conditional_goals [ATHENA_GlycemicControl_Instance_10037]))
+
+([ATHENA_GlycemicControl_Instance_10037] of  Conditional_Goal
+
+	(label "Determine target"))
+
+([ATHENA_GlycemicControl_Instance_110000] of  Presence_Criterion
+
+	(domain_term CCS-7.2.11.1)
+	(entry_type Note_Entry)
+	(label "Congestive heart failure")
+	(period [ATHENA_DM_Eye_Instance_30013])
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_110001] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "High dose - Miglitol")
+	(lower_limit 300.1)
+	(upper_limit 300.2))
+
+([ATHENA_GlycemicControl_Instance_110002] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Metformin ER 500mg lowdose")
+	(lower_limit 500.0)
+	(upper_limit 2000.0))
+
+([ATHENA_GlycemicControl_Instance_110003] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Metformin ER 500mg highdose")
+	(lower_limit 2000.1)
+	(upper_limit 2500.0))
+
+([ATHENA_GlycemicControl_Instance_110004] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Rosiglitazone - lowdose")
+	(lower_limit 4.0)
+	(upper_limit 7.9))
+
+([ATHENA_GlycemicControl_Instance_110005] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "Rosiglitazone")
+	(lower_limit 8.0)
+	(upper_limit 8.2))
+
+([ATHENA_GlycemicControl_Instance_110006] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "PIOGLITAZONE-highdose")
+	(lower_limit 45.0)
+	(upper_limit 50.0))
+
+([ATHENA_GlycemicControl_Instance_110007] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "PIOGLITAZONE-lowdose")
+	(lower_limit 15.0)
+	(upper_limit 44.0))
+
+([ATHENA_GlycemicControl_Instance_110008] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "REPAGLINIDE-low dose")
+	(lower_limit 1.5)
+	(upper_limit 16.0))
+
+([ATHENA_GlycemicControl_Instance_110009] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "REPAGLINIDE high dose")
+	(lower_limit 16.1)
+	(upper_limit 16.2))
+
+([ATHENA_GlycemicControl_Instance_110010] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "NATEGLINIDE-low dose")
+	(lower_limit 180.0)
+	(upper_limit 360.0))
+
+([ATHENA_GlycemicControl_Instance_110011] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "NATEGLINIDE-high dose")
+	(lower_limit 360.1)
+	(upper_limit 360.2))
+
+([ATHENA_GlycemicControl_Instance_110012] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "SITAGLIPTIN-low dose")
+	(lower_limit 25.0)
+	(upper_limit 100.0))
+
+([ATHENA_GlycemicControl_Instance_110013] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "SITAGLIPTIN-high dose")
+	(lower_limit 100.1)
+	(upper_limit 100.2))
+
+([ATHENA_GlycemicControl_Instance_110014] of  Collateral_Action
+)
+
+([ATHENA_GlycemicControl_Instance_110074] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_10019]
+		[ATHENA_GlycemicControl_Instance_10032])
+	(label "absence of HbA1C or its target")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Instance_110113] of  N_ary_Criterion
+
+	(criteria
+		[KB_362799_Class0]
+		[ATHENA_GlycemicControl_Instance_110114])
+	(label "insulin therapy only and presence of HbA1C and its target")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_110114] of  N_ary_Criterion
+
+	(criteria
+		[KB_273522_Class1]
+		[ATHENA_GlycemicControl_Instance_10002])
+	(label "presence of HbA1C and its target")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_120001] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Instance_120002])
+	(label "Increase dose: Monitor creatinine level closely if age > 80")
+	(mood Recommend_Increase))
+
+([ATHENA_GlycemicControl_Instance_120002] of  Conditional_On_Screen_Message
+
+	(label "Monitor creatinine level closely if age > 80")
+	(message "Monitor creatinine level closely if age > 80 and the dose should not be escalated to the maximum in elderly patients due to increased susceptibility to lactic acidosis.")
+	(message_type Recommendation)
+	(rule_in_condition [ATHENA_GlycemicControl_Instance_120003]))
+
+([ATHENA_GlycemicControl_Instance_120003] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(assume_if_no_value no_assumption)
+	(entry_type Note_Entry)
+	(label "Age > 80")
+	(numeric_domain_term Age)
+	(operator %3E%3D)
+	(value 80.0))
+
+([ATHENA_GlycemicControl_Instance_120005] of  Presence_Criterion
+
+	(domain_term Liver_Disease)
+	(entry_type Note_Entry)
+	(label "Liver disease")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_120008] of  Collateral_Action
+
+	(actions [KB_308520_Class6])
+	(label "Monitor creatinine if undergoing intravascular iodinated radiocontrast studies")
+	(mood Authorized))
+
+([ATHENA_GlycemicControl_Instance_120009] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Instance_120010])
+	(label "rec add biguanide info in Guideline")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Instance_120010] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "Biguanide info general")
+	(message "•	Efficacy ( HbA1c) a 1.0 - 2.0%\n•	The major blood glucose lowering effect is through decreasing hepatic glucose                           production with some decrease in peripheral insulin resistance \n•	May restore ovulation in premenopausal anovulatory females.\n•	Monitor renal function prior to drug initiation and at least annually thereafter.\n•	Inexpensive when using generic.")
+	(rule_in_condition [criterion_INSTANCE_00001]))
+
+([ATHENA_GlycemicControl_Instance_120088] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class8])
+	(%3ATO [ATHENA_GlycemicControl_Instance_130784]))
+
+([ATHENA_GlycemicControl_Instance_120108] of  Consultation_Action_Step
+
+	(actions [ATHENA_GlycemicControl_Instance_120110])
+	(label "test"))
+
+([ATHENA_GlycemicControl_Instance_120109] of  Consultation_Selection
+
+	(%3AFROM [KB_707783_Class4])
+	(%3ATO [ATHENA_GlycemicControl_Instance_120108]))
+
+([ATHENA_GlycemicControl_Instance_120110] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "test")
+	(message "test"))
+
+([ATHENA_GlycemicControl_Instance_120201] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_100070]
+		[ATHENA_GlycemicControl_Instance_110114])
+	(label ">1 oral agents & presence of HbA1C & its target")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_120202] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_110114]
+		[KB_362799_Class1]
+		[KB_308520_Class3])
+	(label "oral agent & insulin, presence of HbA1C & its target")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_120203] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_110114]
+		[ATHENA_GlycemicControl_Instance_120204]
+		[ATHENA_DM_Eye_Instance_80028])
+	(label "1 oral agent & presence of HbA1C & target")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_120204] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "1 oral agent")
+	(numeric_domain_term Oral_Hypoglycemic_Agent)
+	(operator %3D)
+	(value 1.0))
+
+([ATHENA_GlycemicControl_Instance_120205] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_110114]
+		[KB_308520_Class16])
+	(label "Absence of pharmacologic treatment & presence of HbA1C and target")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_130131] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med $patient_id)\n             (exists ?med_class\n                     (and (equal-or-subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 $patient_id)\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem $patient_id)\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([ATHENA_GlycemicControl_Instance_130227] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_GlycemicControl_Instance_130230] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_GlycemicControl_Instance_130309] of  Choice_Step
+
+	(branches
+		[ATHENA_GlycemicControl_Class21]
+		[ATHENA_GlycemicControl_Instance_130784]
+		[ATHENA_GlycemicControl_Class90036]
+		[ATHENA_GlycemicControl_Class100006]
+		[ATHENA_GlycemicControl_Class120002])
+	(label "Intensify choices"))
+
+([ATHENA_GlycemicControl_Instance_130311] of  Action_Choice
+
+	(followed_by [ATHENA_GlycemicControl_Instance_130309])
+	(label "Intensify drug treatment")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Instance_130679]))
+
+([ATHENA_GlycemicControl_Instance_130312] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class7])
+	(%3ATO [ATHENA_GlycemicControl_Instance_130311]))
+
+([ATHENA_GlycemicControl_Instance_130315] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Instance_130311])
+	(%3ATO [ATHENA_GlycemicControl_Instance_130309]))
+
+([ATHENA_GlycemicControl_Instance_130316] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Instance_130309])
+	(%3ATO [ATHENA_GlycemicControl_Class21]))
+
+([ATHENA_GlycemicControl_Instance_130578] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_GlycemicControl_Instance_130581] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_GlycemicControl_Instance_130679] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Instance_10034])
+	(label "Goal not satisfied")
+	(operator NOT))
+
+([ATHENA_GlycemicControl_Instance_130773] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_GlycemicControl_Instance_130776] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_GlycemicControl_Instance_130784] of  Action_Choice
+
+	(actions [ATHENA_GlycemicControl_Class20000])
+	(label "Increase dose")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Instance_130786]))
+
+([ATHENA_GlycemicControl_Instance_130785] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Instance_130309])
+	(%3ATO [ATHENA_GlycemicControl_Instance_130784]))
+
+([ATHENA_GlycemicControl_Instance_130786] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "there exists non-contraindicated meds not at max level")
+	(PAL_constraint [ATHENA_GlycemicControl_Class20001]))
+
+([ATHENA_GlycemicControl_Instance_130789] of  Step_Up_Activity
+)
+
+([ATHENA_GlycemicControl_Instance_130838] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_GlycemicControl_Instance_130841] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_GlycemicControl_Instance_140143] of  Collateral_Action
+
+	(actions [ATHENA_GlycemicControl_Instance_140144])
+	(label "Sulfonylurea general info")
+	(mood Recommend_Add))
+
+([ATHENA_GlycemicControl_Instance_140144] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "Sulfonylurea general info when prescribing")
+	(message "•	Efficacy ( HbA1c) a = 1.0 - 2.0 %\n•	1st generation sulfonylureas are no longer commonly used.\n•	No difference in long term efficacy or failure rate has been demonstrated among the sulfonylureas.\n•	The preferred agents have shorter half-lives and inactive metabolites.\n•	1st generation sulfonylureas are 100% renally eliminated. Chlorpropamide and tolazamide have active metabolites.\n•	Glipizide, glyburide, and glimepiride are renally eliminated by 80 - 85%, 50%, and 60% respectively. All but glipizide have active metabolites.\n•	Inexpensive")
+	(message_type Recommendation)
+	(rule_in_condition [criterion_INSTANCE_00001]))
+
+([ATHENA_GlycemicControl_Instance_140145] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add chlorpropamide")
+	(message "100mg/day-125mg/day for elderly patients; 250mg/day in the mild-to-moderately severe, middle aged, stable patient")
+	(message_type Recommendation))
+
+([ATHENA_GlycemicControl_Instance_140146] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add piolgitazone")
+	(message "15 - 45mg administered once daily.\n\nMay be given without regard to meals\nDosage adjustment is not required for renal insufficiency; however, there is insufficient data to recommend use in endstage renal disease.\nSlow onset of action."))
+
+([ATHENA_GlycemicControl_Instance_140147] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add Repaglinide")
+	(message "Starting dose is 0.5mg in patients with HbA1c <8%. If the HbA1c is >8%, a dose of 1 or 2mg may be initiated. Maximum dose is 4mg per meal."))
+
+([ATHENA_GlycemicControl_Instance_140148] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add Tolazamide")
+	(message "1000 mg given once daily or divided into 2 doses."))
+
+([ATHENA_GlycemicControl_Instance_140149] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add micronized gliburide")
+	(message "0.75 - 12mg given once daily or divided into 2 doses; doses >6mg when divided, may provide a better response\n\nIf the response to a single daily dose does not achieve treatment goals, dividing the dose may be effective.\nIn general, the hypoglycemic effects of glyburide and glipizide tend to plateau at 10mg and 20mg, respectively."))
+
+([ATHENA_GlycemicControl_Instance_140150] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add Tolbutamide")
+	(message "250-2000mg divided into 2-3 doses."))
+
+([ATHENA_GlycemicControl_Instance_140151] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add gliburide")
+	(message "1.25 - 20mg given once daily or divided into 2 doses"))
+
+([ATHENA_GlycemicControl_Instance_140152] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add Glimepiride")
+	(message "1-4 mg once daily"))
+
+([ATHENA_GlycemicControl_Instance_140153] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add glipizide")
+	(message "2.5 - 40 mg given once daily or divided into 2 doses taken 30 minutes before a meal.  Doses > 15 mgs should be divided into 2 doses."))
+
+([ATHENA_GlycemicControl_Instance_140154] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add acarbose")
+	(message "For acarbose or miglitol begin with 25 mg TID or initiate gradually:\n25 mg QD x 1-2 weeks followed by \n25 mg BID for 1-2 weeks followed by\n25 mg TID. Once a 25mg TID dosing regimen is reached, further increases may be made at a 4-8 week interval.\n\nThe usual maintenance dose is 50 mg TID. Maximum dose for acarbose is 100mg TID (50 mg TID if weight <60 kg) and 100mg tid for miglitol.\n\nDose is to be taken with the first bite of each main meal.\n\nIf the patient misses or adds a meal, they should omit or add the dose."))
+
+([ATHENA_GlycemicControl_Instance_140155] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add rosiglitazone")
+	(message "4 - 8mg/day, given once daily or divided into 2 doses.\n\nMay be given without regard to meals\nDosage adjustment is not required for renal insufficiency; however, there is insufficient data to recommend use in endstage renal disease.\nSlow onset of action."))
+
+([ATHENA_GlycemicControl_Instance_140156] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add miglitol")
+	(message "For acarbose or miglitol begin with 25 mg TID or initiate gradually:\n25 mg QD x 1-2 weeks followed by \n25 mg BID for 1-2 weeks followed by\n25 mg TID. Once a 25mg TID dosing regimen is reached, further increases may be made at a 4-8 week interval.\n\nThe usual maintenance dose is 50 mg TID. Maximum dose for acarbose is 100mg TID (50 mg TID if weight <60 kg) and 100mg tid for miglitol.\n\nDose is to be taken with the first bite of each main meal.\n\nIf the patient misses or adds a meal, they should omit or add the dose."))
+
+([ATHENA_GlycemicControl_Instance_140157] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add nateglinide")
+	(message "120mg before each meal.\n\nTake 1 - 30 minutes before a meal.\nIf the patient misses or adds a meal, they should omit or add the dose"))
+
+([ATHENA_GlycemicControl_Instance_140158] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add metformin")
+	(message "Starting dosage is either 500mg BID or 850mg q am:\n\nIf on 500mg BID, dosage increase may be made by 500mg increments weekly up to 1000mg BID\n\nIf on 850mg q am, dosage increase of 850mg may be made every other week (given as 850mg BID)\n\nThe usual maintenance dose is 850 mg BID with meals.\n\nMaximum dose: 2550 mg/day (850mg TID); the dose response curve usually plateaus after 2000mg/day.\n\nTake with food to avoid possible GI symptoms"))
+
+([ATHENA_GlycemicControl_Instance_140159] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add repaglinide")
+	(message "Starting dose is 0.5mg in patients with HbA1c <8%. If the HbA1c is >8%, a dose of 1 or 2mg may be initiated. Maximum dose is 4mg per meal."))
+
+([ATHENA_GlycemicControl_Instance_140160] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add Repaglinide")
+	(message "Starting dose is 0.5mg in patients with HbA1c <8%. If the HbA1c is >8%, a dose of 1 or 2mg may be initiated. Maximum dose is 4mg per meal."))
+
+([ATHENA_GlycemicControl_Instance_20000] of  Query_Result_Criterion
+
+	(label "Any HBA1c above target in past year")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Instance_20001]))
+
+([ATHENA_GlycemicControl_Instance_20001] of  Structured_Query
+
+	(entry_type Numeric_Entry)
+	(label "Any HBA1c above target in past year")
+	(where_restriction
+		[ATHENA_GlycemicControl_Instance_20002]
+		[ATHENA_GlycemicControl_Instance_100038]))
+
+([ATHENA_GlycemicControl_Instance_20002] of  Comparison_Filter
+
+	(attribute [value])
+	(label "value > HbA1C target")
+	(operator %3E)
+	(value_expression [KB_794798_Class1]))
+
+([ATHENA_GlycemicControl_Instance_20003] of  Query_Result_Criterion
+
+	(label "2 HbA1c measurements in past 6/7m < Target")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_20004] of  Consultation_Guideline
+
+	(label "No target goal")
+	(steps [ATHENA_GlycemicControl_Instance_20005]))
+
+([ATHENA_GlycemicControl_Instance_20005] of  Consultation_Branch_Step
+
+	(branches [ATHENA_GlycemicControl_Instance_20006])
+	(label "Determine target")
+	(selection_method some_of))
+
+([ATHENA_GlycemicControl_Instance_20006] of  Consultation_Action_Step
+
+	(label "request confirmation of presumptive target goal"))
+
+([ATHENA_GlycemicControl_Instance_20007] of  Goal_Criterion
+)
+
+([ATHENA_GlycemicControl_Instance_20008] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_20010]
+		[ATHENA_DM_Eye_Instance_100022])
+	(label "High risk per glycemic control module")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Instance_20009] of  N_ary_Criterion
+)
+
+([ATHENA_GlycemicControl_Instance_20010] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "HbA1c >=9.5%")
+	(numeric_domain_term HbA1C)
+	(operator %3E%3D)
+	(unit "%")
+	(value 9.5))
+
+([ATHENA_GlycemicControl_Instance_20011] of  Query_Result_Criterion
+
+	(label "Sex = Male")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class90131]))
+
+([ATHENA_GlycemicControl_Instance_30000] of  Procedure
+
+	(defered FALSE))
+
+([ATHENA_GlycemicControl_Instance_30001] of  Variable
+
+	(derivation_expression [ATHENA_GlycemicControl_Instance_30002])
+	(label "Suggested HbA1C target")
+	(string_name "? SuggestedHbA1CTarget"))
+
+([ATHENA_GlycemicControl_Instance_30002] of  Conditional_Expressions
+
+	(conditional_expression_list [ATHENA_GlycemicControl_Instance_30004])
+	(label "Suggested HbA1C target"))
+
+([ATHENA_GlycemicControl_Instance_30004] of  Conditional_Expression
+
+	(precondition [ATHENA_GlycemicControl_Instance_40001])
+	(value [ATHENA_GlycemicControl_Instance_40000]))
+
+([ATHENA_GlycemicControl_Instance_40000] of  Structured_Query
+)
+
+([ATHENA_GlycemicControl_Instance_40001] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_30020])
+	(label "Target HBA1c 7%")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Instance_50000] of  Order_TestProcedure
+
+	(label "HbA1c")
+	(test_or_procedure HbA1C)
+	(when [ATHENA_DM_Eye_Instance_100018]))
+
+([ATHENA_GlycemicControl_Instance_50002] of  Drug_Usage
+
+	(Absolute_Contraindications
+		Allergy+to+Sulfonylureas
+		CCS-11.7)
+	(collateral_actions [ATHENA_GlycemicControl_Instance_140143])
+	(Drug_Class_Name SULFONYLUREAS_1STGEN)
+	(label "Sulfonylureas 1st generation")
+	(Relative_Contraindications
+		hypoglycemia
+		Weight+gain)
+	(Side_Effects
+		hypoglycemia
+		Weight+gain
+		Allergy+to+Sulfonylureas))
+
+([ATHENA_GlycemicControl_Instance_50003] of  Presence_Criterion
+
+	(domain_term Oral_Hypoglycemic_Agent)
+	(entry_type Medication)
+	(label "Absence oral hypoglycemic agent")
+	(presence FALSE))
+
+([ATHENA_GlycemicControl_Instance_50004] of  Drug_Usage
+
+	(Absolute_Contraindications
+		Creatinine+%3E+1.4+and+Female
+		Creatinine+%3E+1.5+and+Male
+		eGFR+%3C+30
+		Liver_Disease)
+	(collateral_actions
+		[ATHENA_GlycemicControl_Instance_120001]
+		[ATHENA_GlycemicControl_Class30002])
+	(Compelling_Indications
+		BMIGT25
+		DM-Type2)
+	(Drug_Class_Name BIGUANIDE)
+	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80009])
+	(label "Biguanide")
+	(Relative_Contraindications
+		Age%3E80+yrs
+		CCS-5.11
+		CHF+requiring+pharmacologic+management
+		Chronic+metabolic+acidosis))
+
+([ATHENA_GlycemicControl_Instance_50005] of  Evaluate_Start_Activity
+
+	(alternatives
+		[ATHENA_GlycemicControl_Instance_50004]
+		[ATHENA_GlycemicControl_Class60000]
+		[ATHENA_GlycemicControl_Class70000])
+	(label "Initiate biguanide or sulfonylureas"))
+
+([ATHENA_GlycemicControl_Instance_50007] of  Presence_Criterion
+
+	(domain_term SULFONYLUREAS)
+	(entry_type Adverse_Reaction)
+	(label "Allergy to Sulfonylureas")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_50008] of  Action_Choice
+
+	(actions
+		[ATHENA_GlycemicControl_Instance_10028]
+		[ATHENA_GlycemicControl_Instance_60000])
+	(label "Is patient high risk? If yes, refer")
+	(strict_rule_in_condition [criterion_INSTANCE_00001]))
+
+([ATHENA_GlycemicControl_Instance_50011] of  Data_Entry_Template
+)
+
+([ATHENA_GlycemicControl_Instance_50012] of  Quantitative_Data
+
+	(domain_term target_HBA1c)
+	(label "Clinician enter target HbA1c")
+	(possible_values
+		[ATHENA_GlycemicControl_Instance_50014]
+		[ATHENA_GlycemicControl_Instance_50015]
+		[ATHENA_GlycemicControl_Instance_50016])
+	(prompt "What is the target HbA1c for this patient?")
+	(references [ATHENA_GlycemicControl_Class90045])
+	(rule_in_condition [ATHENA_GlycemicControl_Instance_10032])
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_50013] of  Numeric_Constant
+
+	(value 7.0))
+
+([ATHENA_GlycemicControl_Instance_50014] of  Physical_Quantity
+
+	(unit "%")
+	(value "7"))
+
+([ATHENA_GlycemicControl_Instance_50015] of  Physical_Quantity
+
+	(unit "%")
+	(value "8"))
+
+([ATHENA_GlycemicControl_Instance_50016] of  Physical_Quantity
+
+	(unit "%")
+	(value "9"))
+
+([ATHENA_GlycemicControl_Instance_50018] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class9])
+	(%3ATO [ATHENA_GlycemicControl_Instance_50008]))
+
+([ATHENA_GlycemicControl_Instance_50020] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class7])
+	(%3ATO [ATHENA_GlycemicControl_Instance_50008]))
+
+([ATHENA_GlycemicControl_Instance_50022] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class5])
+	(%3ATO [ATHENA_GlycemicControl_Instance_50008]))
+
+([ATHENA_GlycemicControl_Instance_50023] of  Qualitative_Data
+
+	(label "High risk determination")
+	(sensitive FALSE))
+
+([ATHENA_GlycemicControl_Instance_50024] of  Qualitative_Data
+
+	(label "Recurrent incapacitating episodes of hypoglycemia")
+	(prompt "Have recurrent episodes of incapacitating hypoglycemia")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_50026] of  Drug_Usage
+
+	(Absolute_Contraindications
+		CCS-7.2.11
+		CCS-7.2.11.1)
+	(collateral_actions
+		[KB_308520_Class4]
+		[KB_308520_Class13]
+		[ATHENA_GlycemicControl_Class90046])
+	(Drug_Class_Name THIAZOLIDINEDIONES)
+	(Drug_Partners_To_Avoid Insulin)
+	(formulary_preferred_drug_in_class
+		[ATHENA_GlycemicControl_Instance_80011]
+		[ATHENA_GlycemicControl_Instance_80012])
+	(label "THIAZOLIDINEDIONES")
+	(references [ATHENA_GlycemicControl_Class80024])
+	(Relative_Contraindications
+		Weight+gain
+		Edema)
+	(Side_Effects
+		Edema
+		Weight+gain))
+
+([ATHENA_GlycemicControl_Instance_50027] of  Drug_Usage
+
+	(Drug_Class_Name MEGLITINIDES)
+	(label "MEGLITINIDES")
+	(Relative_Contraindications CCS-10.1.3))
+
+([ATHENA_GlycemicControl_Instance_50028] of  Drug_Usage
+
+	(Drug_Class_Name DIPEPTIDYL_PEPTIDASE-4_INHIBITOR)
+	(label "DIPEPTIDYL_PEPTIDASE-4_INHIBITOR"))
+
+([ATHENA_GlycemicControl_Instance_50029] of  Boolean_Data
+
+	(sensitive FALSE))
+
+([ATHENA_GlycemicControl_Instance_50030] of  Boolean_Data
+
+	(label "Recurrent incapacitating episodes of hypoglycemia")
+	(prompt "Does patient have recurrent incapacitating episodes of hypoglycemia?")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_50031] of  Boolean_Data
+
+	(domain_term recurrent+episodes+of+incapacitating+hyperglycemia)
+	(label "Recurrent incapacitating episodes of hyperglycemia")
+	(prompt "Does patient have recurrent incapacitating episodes of hyperglycemia?")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_50032] of  Boolean_Data
+
+	(label "History of severe hypoglycemia reactions")
+	(prompt "Does patient have a history of severe hypoglycemic reactions (including coma, seizures, or frequent need for emergency resuscitation)?")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_50033] of  Boolean_Data
+
+	(label "poor recognition of hypoglycemia")
+	(prompt "Does patient have poor recognition of hypoglycemia?")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_50034] of  Boolean_Data
+
+	(label "psychosocial problems (including alcohol or substance abuse) that complicate management")
+	(prompt "Does patient have psychosocial problems (including alcohol or substance abuse) that complicate management")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_60000] of  Referral
+
+	(label "Refer to subspecialty consultation")
+	(rule_in_condition [ATHENA_GlycemicControl_Instance_60001])
+	(when [ATHENA_DM_Eye_Instance_100018]))
+
+([ATHENA_GlycemicControl_Instance_60001] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_60002]
+		[ATHENA_GlycemicControl_Instance_60003]
+		[ATHENA_GlycemicControl_Instance_60004]
+		[ATHENA_GlycemicControl_Instance_60005]
+		[ATHENA_GlycemicControl_Instance_60006]
+		[ATHENA_GlycemicControl_Instance_60007]
+		[ATHENA_GlycemicControl_Instance_60008]
+		[ATHENA_GlycemicControl_Instance_60009]
+		[ATHENA_GlycemicControl_Instance_60010]
+		[ATHENA_DM_Eye_Instance_100022])
+	(label "Criteria for High Risk")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Instance_60002] of  Presence_Criterion
+
+	(domain_term history+of+severe+hypoglycemic+reactions)
+	(entry_type Note_Entry)
+	(label "history of severe hypoglycemic reactions")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_60003] of  Presence_Criterion
+
+	(domain_term recurrent+episodes+of+incapacitating+hypoglycemia)
+	(entry_type Note_Entry)
+	(label "recurrent episodes of incapacitating hypoglycemia")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_60004] of  Presence_Criterion
+
+	(domain_term poor+recognition+of+hypoglycemia)
+	(entry_type Note_Entry)
+	(label "poor recognition of hypoglycemia")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_60005] of  Presence_Criterion
+
+	(domain_term recurrent+episodes+of+incapacitating+hyperglycemia)
+	(entry_type Note_Entry)
+	(label "recurrent episodes of incapacitating hyperglycemia")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_60006] of  Presence_Criterion
+
+	(domain_term psychosocial+problems+that+complicate+management)
+	(entry_type Note_Entry)
+	(label "psychosocial problems that complicate management")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_60007] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "HbA1c>=9.5%")
+	(numeric_domain_term HbA1C)
+	(operator %3E%3D)
+	(unit "%")
+	(value 9.5))
+
+([ATHENA_GlycemicControl_Instance_60008] of  Presence_Criterion
+
+	(domain_term CCS-10.1.3)
+	(entry_type Note_Entry)
+	(label "Chronic renal failure")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_60009] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "egfr<60????")
+	(numeric_domain_term eGFR)
+	(operator %3C)
+	(value 60.0))
+
+([ATHENA_GlycemicControl_Instance_60010] of  Presence_Criterion
+
+	(domain_term CCS-6.7.2)
+	(entry_type Note_Entry)
+	(label "retinopathy-- check with experts")
+	(presence TRUE))
+
+([ATHENA_GlycemicControl_Instance_60012] of  Boolean_Data
+
+	(domain_term new-onset+insulin-requiring+DM)
+	(label "new-onset insulin-requiring DM")
+	(prompt "Does patient have new-onset insulin-requiring DM?")
+	(sensitive TRUE))
+
+([ATHENA_GlycemicControl_Instance_60014] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "BMI>25")
+	(numeric_domain_term BMI)
+	(operator %3E)
+	(value 25.0))
+
+([ATHENA_GlycemicControl_Instance_60016] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "BMI>=29")
+	(numeric_domain_term BMI)
+	(operator %3E%3D)
+	(value 29.0))
+
+([ATHENA_GlycemicControl_Instance_60017] of  Guideline_View
+
+	(drug_usages
+		[ATHENA_GlycemicControl_Instance_50004]
+		[ATHENA_GlycemicControl_Instance_50028]
+		[ATHENA_GlycemicControl_Instance_50027]
+		[ATHENA_GlycemicControl_Instance_50002]
+		[ATHENA_GlycemicControl_Instance_50026])
+	(guideline [ATHENA_GlycemicControl_Instance_0]))
+
+([ATHENA_GlycemicControl_Instance_70000] of  Guideline_View
+
+	(drug_usages
+		[ATHENA_GlycemicControl_Instance_50004]
+		[ATHENA_GlycemicControl_Instance_50028]
+		[ATHENA_GlycemicControl_Instance_50027]
+		[ATHENA_GlycemicControl_Instance_50002]
+		[ATHENA_GlycemicControl_Instance_50026]
+		[KB_390055_Class4]
+		[ATHENA_GlycemicControl_Class60000]
+		[ATHENA_GlycemicControl_Class70000]
+		[ATHENA_GlycemicControl_Class90051])
+	(guideline [ATHENA_GlycemicControl_Instance_0])
+	(guideline_drugs
+		[ATHENA_GlycemicControl_Instance_80000]
+		[ATHENA_GlycemicControl_Instance_80001]
+		[ATHENA_GlycemicControl_Instance_80002]
+		[ATHENA_GlycemicControl_Instance_80003]
+		[ATHENA_GlycemicControl_Instance_80004]
+		[ATHENA_GlycemicControl_Instance_80005]
+		[ATHENA_GlycemicControl_Instance_80006]
+		[ATHENA_GlycemicControl_Instance_80007]
+		[ATHENA_GlycemicControl_Instance_80008]
+		[ATHENA_GlycemicControl_Instance_80009]
+		[ATHENA_GlycemicControl_Instance_80010]
+		[ATHENA_GlycemicControl_Instance_80011]
+		[ATHENA_GlycemicControl_Instance_80012]
+		[ATHENA_GlycemicControl_Instance_80013]
+		[ATHENA_GlycemicControl_Instance_80014]
+		[ATHENA_GlycemicControl_Instance_80015]
+		[ATHENA_GlycemicControl_Instance_80016]
+		[ATHENA_GlycemicControl_Class70001]))
+
+([ATHENA_GlycemicControl_Instance_70001] of  N_ary_Criterion
+
+	(criteria
+		[library_Instance_10002]
+		[ATHENA_GlycemicControl_Instance_70002])
+	(label "25<BMI<29")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Instance_70002] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "BMI<29")
+	(numeric_domain_term BMI)
+	(operator %3C)
+	(value 29.0))
+
+([ATHENA_GlycemicControl_Instance_70010] of  Action_Choice
+
+	(actions [ATHENA_GlycemicControl_Instance_90005])
+	(label "HbA1C controlled")
+	(strict_rule_in_condition [KB_794798_Class0]))
+
+([ATHENA_GlycemicControl_Instance_70022] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class4])
+	(%3ATO [ATHENA_GlycemicControl_Class8]))
+
+([ATHENA_GlycemicControl_Instance_70023] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class2])
+	(%3ATO [ATHENA_GlycemicControl_Class7]))
+
+([ATHENA_GlycemicControl_Instance_70026] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class1])
+	(%3ATO [ATHENA_GlycemicControl_Class7]))
+
+([ATHENA_GlycemicControl_Instance_70027] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class0])
+	(%3ATO [ATHENA_GlycemicControl_Class5]))
+
+([ATHENA_GlycemicControl_Instance_70029] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class7])
+	(%3ATO [ATHENA_GlycemicControl_Class22]))
+
+([ATHENA_GlycemicControl_Instance_70031] of  Evaluate_Start_Activity
+
+	(alternatives [KB_390055_Class4])
+	(label "Evaluate Start Insulin"))
+
+([ATHENA_GlycemicControl_Instance_70033] of  Procedure
+
+	(defered FALSE))
+
+([ATHENA_GlycemicControl_Instance_80000] of  Guideline_Drug
+
+	(collateral_actions [ATHENA_GlycemicControl_Class50000])
+	(dose_level_ranges
+		[KB_308520_Class18]
+		[KB_308520_Class19])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug CHLORPROPAMIDE)
+	(label "CHLORPROPAMIDE")
+	(max_recommended_dose_level High_Dose%28high%2Flow%29)
+	(starting_dose 100.0))
+
+([ATHENA_GlycemicControl_Instance_80001] of  Guideline_Drug
+
+	(collateral_actions [ATHENA_GlycemicControl_Class60004])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_90000]
+		[ATHENA_GlycemicControl_Instance_100001])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug TOLAZAMIDE)
+	(label "TOLAZAMIDE")
+	(starting_dose 100.0))
+
+([ATHENA_GlycemicControl_Instance_80002] of  Guideline_Drug
+
+	(collateral_actions [ATHENA_GlycemicControl_Class60007])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_100002]
+		[ATHENA_GlycemicControl_Instance_100003])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug TOLBUTAMIDE)
+	(label "TOLBUTAMIDE")
+	(starting_dose 1000.0))
+
+([ATHENA_GlycemicControl_Instance_80003] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_100004]
+		[ATHENA_GlycemicControl_Instance_100005])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug ACETOHEXAMIDE)
+	(label "ACETOHEXAMIDE")
+	(starting_dose 250.0))
+
+([ATHENA_GlycemicControl_Instance_80004] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_100006]
+		[ATHENA_GlycemicControl_Instance_100007])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug GLIPIZIDE)
+	(label "GLIPIZIDE")
+	(starting_dose 2.5))
+
+([ATHENA_GlycemicControl_Instance_80005] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_100008]
+		[ATHENA_GlycemicControl_Instance_100009])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug GLYBURIDE)
+	(label "GLYBURIDE")
+	(references [ATHENA_GlycemicControl_Class80027])
+	(rule_out [ATHENA_GlycemicControl_Class80026])
+	(starting_dose 1.25))
+
+([ATHENA_GlycemicControl_Instance_80006] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_100010]
+		[ATHENA_GlycemicControl_Instance_100011])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug GLIMEPIRIDE)
+	(label "GLIMEPIRIDE")
+	(starting_dose 1.0))
+
+([ATHENA_GlycemicControl_Instance_80007] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_100012]
+		[ATHENA_GlycemicControl_Instance_100013])
+	(drug_usage [ATHENA_GlycemicControl_Class90051])
+	(generic_drug ACARBOSE)
+	(label "ACARBOSE")
+	(rule_out [ATHENA_GlycemicControl_Class90053])
+	(starting_dose 75.0))
+
+([ATHENA_GlycemicControl_Instance_80008] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_100000]
+		[ATHENA_GlycemicControl_Instance_110001])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
+	(generic_drug MIGLITOL)
+	(label "MIGLITOL")
+	(starting_dose 25.0))
+
+([ATHENA_GlycemicControl_Instance_80009] of  Guideline_Drug
+
+	(collateral_actions
+		[KB_390055_Class0]
+		[ATHENA_GlycemicControl_Class40000])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Class10000]
+		[ATHENA_GlycemicControl_Class10001])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50004])
+	(generic_drug METFORMIN)
+	(label "METFORMIN")
+	(max_recommended_dose_level High_Dose%28high%2Flow%29)
+	(starting_dose 1000.0))
+
+([ATHENA_GlycemicControl_Instance_80010] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_110002]
+		[ATHENA_GlycemicControl_Instance_110003])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50004])
+	(generic_drug METFORMIN_ER)
+	(label "METFORMIN_ER"))
+
+([ATHENA_GlycemicControl_Instance_80011] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_110004]
+		[ATHENA_GlycemicControl_Instance_110005])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50026])
+	(generic_drug ROSIGLITAZONE)
+	(label "ROSIGLITAZONE")
+	(starting_dose 4.0))
+
+([ATHENA_GlycemicControl_Instance_80012] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_110007]
+		[ATHENA_GlycemicControl_Instance_110006])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50026])
+	(generic_drug PIOGLITAZONE)
+	(label "PIOGLITAZONE")
+	(starting_dose 15.0))
+
+([ATHENA_GlycemicControl_Instance_80013] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50026])
+	(generic_drug TROGLITAZONE)
+	(label "TROGLITAZONE"))
+
+([ATHENA_GlycemicControl_Instance_80014] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_110008]
+		[ATHENA_GlycemicControl_Instance_110009])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50027])
+	(generic_drug REPAGLINIDE)
+	(label "REPAGLINIDE")
+	(rule_out [ATHENA_GlycemicControl_Instance_60008])
+	(starting_dose 1.5))
+
+([ATHENA_GlycemicControl_Instance_80015] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_110010]
+		[ATHENA_GlycemicControl_Instance_110011])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50027])
+	(generic_drug NATEGLINIDE)
+	(label "NATEGLINIDE")
+	(starting_dose 360.0))
+
+([ATHENA_GlycemicControl_Instance_80016] of  Guideline_Drug
+
+	(collateral_actions [KB_390055_Class0])
+	(dose_level_ranges
+		[ATHENA_GlycemicControl_Instance_110012]
+		[ATHENA_GlycemicControl_Instance_110013])
+	(drug_usage [ATHENA_GlycemicControl_Instance_50028])
+	(generic_drug SITAGLIPTIN)
+	(label "SITAGLIPTIN"))
+
+([ATHENA_GlycemicControl_Instance_90000] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Tolazamide (low dose)")
+	(lower_limit 100.0)
+	(upper_limit 750.0))
+
+([ATHENA_GlycemicControl_Instance_90001] of  Query_Result_Criterion
+
+	(label "HbA1c measurment < Target HbA1c")
+	(presence FALSE)
+	(query [ATHENA_GlycemicControl_Instance_20001]))
+
+([ATHENA_GlycemicControl_Instance_90002] of  General_Comparison_Criterion
+
+	(domain_term HbA1C)
+	(entry_type Numeric_Entry)
+	(label "HbA1C > Target_HbA1c")
+	(operator %3E)
+	(value [KB_794798_Class1]))
+
+([ATHENA_GlycemicControl_Instance_90005] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "Continue therapy- HbA1c under control")
+	(message "Latest HbA1c under control.  Continue therapy and periodically reevaluate appropriateness of target."))
+
+([B+12] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "B 12 test"))
+
+([BMI%3E25] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Instance_70001])
+	(PrettyName "Overweight (25<BMI<29)"))
+
+([BMI%3E25%3F%3F%3F] of  Diagnostic_Term_Metaclass
+)
+
+([BMI%3E%3D29] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Instance_60016])
+	(PrettyName "Morbidly overweight (BMI>=29)"))
+
+([CHF+requiring+pharmacologic+management] of  Diagnostic_Term_Metaclass
+)
+
+([Chronic+metabolic+acidosis] of  Diagnostic_Term_Metaclass
+)
+
+([Creatinine+%3E+1.4+and+Female] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [KB_799906_Class5]))
+
+([Creatinine+%3E+1.5+and+Male] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [KB_799906_Class6]))
+
+([Edema] of  Canonical_Terms_Metaclass
+)
+
+([eGFR+%3C+30] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class80023])
+	(PrettyName "eGFR <30"))
+
+([Hypersensitivity+to+Chlorpropamide] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Hypersensitivity to Chlorpropamide"))
+
+([KB_261203_Class0] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_261203_Class10] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 7)
+	(system_time 2454663)
+	(year_CE 2008))
+
+([KB_261203_Class12] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_261203_Class15] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_261203_Class19] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_261203_Class2] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 7)
+	(system_time 2454663)
+	(year_CE 2008))
+
+([KB_261203_Class25] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 10)
+	(system_time 2454755)
+	(year_CE 2008))
+
+([KB_261203_Class26] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_261203_Class25])
+	(time_unit year))
+
+([KB_261203_Class27] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454390)
+	(year_CE 2007))
+
+([KB_261203_Class36] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_261203_Class4] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_261203_Class49] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_261203_Class52] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_261203_Class55] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 6)
+	(system_time 2454619)
+	(year_CE 2008))
+
+([KB_261203_Class56] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_261203_Class57] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 7)
+	(system_time 2454663)
+	(year_CE 2008))
+
+([KB_261203_Class58] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_261203_Class59] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_261203_Class6] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 6)
+	(system_time 2454619)
+	(year_CE 2008))
+
+([KB_261203_Class8] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_273522_Class0] of  Conditional_Goal
+
+	(criterion_to_achieve [KB_794798_Class0])
+	(label "Presence of target HBA1C and HBA1C < target")
+	(selection_criterion [KB_273522_Class1]))
+
+([KB_273522_Class1] of  Presence_Criterion
+
+	(domain_term target_HBA1c)
+	(entry_type Numeric_Entry)
+	(label "presence of target HBA1C")
+	(presence TRUE))
+
+([KB_308520_Class0] of  Evaluate_Start_Activity
+)
+
+([KB_308520_Class1] of  Evaluate_Start_Activity
+
+	(alternatives
+		[ATHENA_GlycemicControl_Instance_50004]
+		[ATHENA_GlycemicControl_Instance_50026]
+		[ATHENA_GlycemicControl_Class60000]
+		[ATHENA_GlycemicControl_Class70000])
+	(label "Evaluate start hypoglycemic agent"))
+
+([KB_308520_Class11] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_10000]
+		[KB_707783_Class6]
+		[KB_308520_Class9])
+	(label "Female between 18 and 50 years")
+	(operator AND))
+
+([KB_308520_Class13] of  Collateral_Action
+
+	(actions [KB_308520_Class14])
+	(label "Thiazolidinediones may restore ovulation")
+	(mood Authorized))
+
+([KB_308520_Class14] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "Thiazolidinedions and ovulation warning message")
+	(message "Thiazolidinediones may restore ovulation in premenopausal anovulatory females.")
+	(message_type Recommendation)
+	(rule_in_condition [KB_308520_Class11]))
+
+([KB_308520_Class16] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_80028]
+		[ATHENA_GlycemicControl_Instance_50003])
+	(label "Absence of pharmacologic treatment (insulin or oral hyoglycemic agents)")
+	(operator AND))
+
+([KB_308520_Class17] of  N_ary_Criterion
+)
+
+([KB_308520_Class18] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Low_dose_Chlorpropamide")
+	(lower_limit 100.0)
+	(upper_limit 500.0))
+
+([KB_308520_Class19] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(label "High_dose_Chlorpropamide")
+	(lower_limit 501.0)
+	(upper_limit 750.0))
+
+([KB_308520_Class2] of  Evaluate_Start_Activity
+
+	(alternatives [ATHENA_GlycemicControl_Instance_50004])
+	(label "Evaluate start Biguanide"))
+
+([KB_308520_Class3] of  Presence_Criterion
+
+	(domain_term Oral_Hypoglycemic_Agent)
+	(entry_type Medication)
+	(label "Presence of hypoglycemic agent")
+	(mood Authorized)
+	(presence TRUE))
+
+([KB_308520_Class4] of  Collateral_Action
+
+	(actions
+		[KB_308520_Class5]
+		[KB_308520_Class6])
+	(label "Thialolidinediones warning about liver lab value")
+	(mood Authorized))
+
+([KB_308520_Class5] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "Thiazolidinediones warning about liver lab values")
+	(message "Liver function tests and bilirubin should be tested every 2 months for 1 year, then periodically therafter.  If ALT is >3x u.l.n., recheck another level as soon as possible.  If ALT remains >3x the upper limit, discontinue use.")
+	(message_type Recommendation))
+
+([KB_308520_Class6] of  Conditional_On_Screen_Message
+
+	(display_location Summary)
+	(label "Warning for intravascular iodinated radiocontrast studies")
+	(message "Temporarily discontinue metformin use at the time of or prior to intravascular iodinated radiocontrast studies and withhold for 48 hours after the procedure. Reinstitute only after renal function has been reevaluated and found to be normal.")
+	(message_type Recommendation)
+	(rule_in_condition [ATHENA_GlycemicControl_Class60010]))
+
+([KB_308520_Class8] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "Age>=65")
+	(numeric_domain_term Age)
+	(operator %3E%3D)
+	(value 65.0))
+
+([KB_308520_Class9] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "Age>=18")
+	(numeric_domain_term Age)
+	(operator %3E%3D)
+	(value 18.0))
+
+([KB_362799_Class0] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_50003]
+		[KB_362799_Class1])
+	(label "insulin therapy only")
+	(operator AND))
+
+([KB_362799_Class1] of  Presence_Criterion
+
+	(domain_term Insulin)
+	(entry_type Medication)
+	(label "presence of insulin")
+	(presence TRUE))
+
+([KB_390055_Class0] of  Collateral_Action
+
+	(actions
+		[KB_390055_Class1]
+		[ATHENA_GlycemicControl_Instance_140154]
+		[ATHENA_GlycemicControl_Instance_140145]
+		[ATHENA_GlycemicControl_Instance_140151]
+		[ATHENA_GlycemicControl_Instance_140152]
+		[ATHENA_GlycemicControl_Instance_140153]
+		[ATHENA_GlycemicControl_Instance_140158]
+		[KB_390055_Class1]
+		[ATHENA_GlycemicControl_Instance_140149]
+		[ATHENA_GlycemicControl_Instance_140156]
+		[ATHENA_GlycemicControl_Instance_140157]
+		[ATHENA_GlycemicControl_Instance_140146]
+		[ATHENA_GlycemicControl_Instance_140147]
+		[ATHENA_GlycemicControl_Instance_140160]
+		[ATHENA_GlycemicControl_Instance_140159]
+		[ATHENA_GlycemicControl_Instance_140155]
+		[ATHENA_GlycemicControl_Instance_140148]
+		[ATHENA_GlycemicControl_Instance_140150])
+	(label "Dose rec")
+	(mood Recommend_Add))
+
+([KB_390055_Class1] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "dose - rec add metformin ER")
+	(message "Begin with 500mg daily with the evening meal. Dose may be increased by 500mg per week to a maximum of 2000mg once daily. If glycemic control is not achieved, consider dividing into 2 doses."))
+
+([KB_390055_Class2] of  Start_Activity
+
+	(activity [ATHENA_GlycemicControl_Class60000])
+	(description "Add Glipizide")
+	(label "Add Glipizide"))
+
+([KB_390055_Class3] of  Evaluate_Start_Activity
+
+	(alternatives [KB_390055_Class4])
+	(label "Evaluate start insulin"))
+
+([KB_390055_Class4] of  Drug_Usage
+
+	(collateral_actions [ATHENA_GlycemicControl_Class90049])
+	(Compelling_Indications Diabetes_Mellitus)
+	(Drug_Class_Name Insulin)
+	(Drug_Partners_To_Avoid SULFONYLUREAS)
+	(label "Insulin"))
+
+([KB_390055_Class9] of  Evaluate_Substitution_Activity
+
+	(activity_class "Medication")
+	(activity_spec Drug_Usage)
+	(activity_spec_key [Drug_Class_Name])
+	(activity_to_stop [KB_891039_Class0])
+	(alternatives
+		[ATHENA_GlycemicControl_Instance_50004]
+		[ATHENA_GlycemicControl_Instance_50028]
+		[ATHENA_GlycemicControl_Instance_50027]
+		[ATHENA_GlycemicControl_Instance_50002]
+		[ATHENA_GlycemicControl_Instance_50026]
+		[ATHENA_GlycemicControl_Class60000]
+		[ATHENA_GlycemicControl_Class70000])
+	(label "Evaluate substitution hypoglycemic agent"))
+
+([KB_707783_Class0] of  Numeric_PAL_Query
+)
+
+([KB_707783_Class2] of  Evaluate_Stop_Activity
+)
+
+([KB_707783_Class3] of  Consultation_Guideline
+
+	(first_step [KB_707783_Class4])
+	(label "On meds")
+	(steps
+		[KB_707783_Class4]
+		[ATHENA_GlycemicControl_Instance_120108])
+	(transitions [ATHENA_GlycemicControl_Instance_120109]))
+
+([KB_707783_Class4] of  Consultation_Branch_Step
+
+	(branches
+		[ATHENA_GlycemicControl_Class70209]
+		[ATHENA_GlycemicControl_Class80004]
+		[ATHENA_GlycemicControl_Class80015])
+	(label "On meds")
+	(selection_method some_of))
+
+([KB_707783_Class5] of  Consultation_Action_Step
+
+	(actions [KB_707783_Class7])
+	(label "Elderly -hypoglycemia risk")
+	(rule_in [KB_707783_Class6]))
+
+([KB_707783_Class6] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "Age<50")
+	(numeric_domain_term Age)
+	(operator %3C)
+	(value 50.0))
+
+([KB_707783_Class7] of  On_Screen_Message
+
+	(display_location Summary)
+	(label "Elderly on meds hypoglycemia risk")
+	(message "Elderly patients are at a higher risk for drug-associated hypoglycemia, due to altered metabolism and excretion rates, impaired symptom recognition, and potentially attenuated counter-regulatory responses. Instruct patient and family  to recognize signs and symptoms of hypoglycemia and its management."))
+
+([KB_742258_Class0] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 2)
+	(system_time 2453791)
+	(year_CE 2006))
+
+([KB_742258_Class18] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_742258_Class2] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_742258_Class4] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_742258_Class6] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_788741_Class24] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_788741_Class26] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_788741_Class28] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_788741_Class31] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_788741_Class43] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_794798_Class0] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term HbA1C)
+	(entry_type Numeric_Entry)
+	(label "HBA1C <= target")
+	(operator %3C%3D)
+	(value [KB_794798_Class1]))
+
+([KB_794798_Class1] of  Structured_Query
+
+	(aggregation_operator most_recent)
+	(attribute [value])
+	(entry_type Numeric_Entry)
+	(label "value of HbA1C target")
+	(where_restriction [KB_794798_Class2]))
+
+([KB_794798_Class2] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain_term is target_HbA1C")
+	(operator eq)
+	(value_expression [KB_794798_Class3]))
+
+([KB_794798_Class3] of  Qualitative_Constant
+
+	(value "target_HBA1c"))
+
+([KB_794798_Class4] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class5])
+	(%3ATO [ATHENA_GlycemicControl_Instance_70010]))
+
+([KB_794798_Class5] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class7])
+	(%3ATO [ATHENA_GlycemicControl_Instance_70010]))
+
+([KB_794798_Class6] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class8])
+	(%3ATO [ATHENA_GlycemicControl_Instance_70010]))
+
+([KB_799906_Class2] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "Creatinine > 1.5")
+	(numeric_domain_term Creatinine)
+	(operator %3E%3D)
+	(unit "mg/dl")
+	(value 1.5))
+
+([KB_799906_Class3] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "Creatinine > 1.4")
+	(numeric_domain_term Creatinine)
+	(operator %3E%3D)
+	(unit "mg/dl")
+	(value 1.4))
+
+([KB_799906_Class4] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Sex)
+	(entry_type Note_Entry)
+	(label "Being Male")
+	(operator eq)
+	(value [Male]))
+
+([KB_799906_Class5] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_10000]
+		[KB_799906_Class3])
+	(label "Creatinine > 1.4 and Female")
+	(operator AND))
+
+([KB_799906_Class6] of  N_ary_Criterion
+
+	(criteria
+		[KB_799906_Class2]
+		[KB_799906_Class4])
+	(label "Creatinine > 1.5 and Male")
+	(operator AND))
+
+([KB_891039_Class0] of  PAL_Query
+
+	(case_variable "$patient_id")
+	(key_slot [drug_name])
+	(label "query for contraindicated drugs")
+	(PAL_query [KB_891039_Class1]))
+
+([KB_891039_Class1] of  PAL-QUERY
+
+	(%3APAL-NAME "query for contraindicated drugs")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication) \n(defrange ?problem :FRAME Note_Entry) \n(defrange ?med_class :FRAME Drug_Usage) \n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications) \n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(findall ?current_med        \n         (and (or (not (own-slot-not-null mood ?current_med ))               \n                  (mood ?current_med Authorized))             \n              (patient_id ?current_med $patient_id)            \n              (exists ?med_class                    \n	(and (equal-or-subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))                         \n	         (or (exists ?contraindication                                      (and  (Absolute_Contraindications ?med_class ?contraindication)                                           (exists ?problem                                                    (and (patient_id ?problem $patient_id)                                                        (is-class (domain_term ?problem) )                                                        (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))                                                                               ?contraindication)))))                             (exists ?derived_contraindication                                                                 (and (Absolute_Contraindications ?med_class ?derived_contraindication)(is-derivable ?derived_contraindication))))                    ))))"))
+
+([KB_954632_Class176] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_954632_Class178] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_954632_Class180] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_954632_Class183] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_954632_Class185] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_954632_Class187] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_954632_Class189] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_954632_Class192] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_954632_Class196] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_954632_Class202] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_954632_Class203] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_954632_Class202])
+	(time_unit year))
+
+([KB_954632_Class204] of  Definite_Time_Point
+
+	(day 18)
+	(month_name 10)
+	(system_time 2454392)
+	(year_CE 2007))
+
+([KB_954632_Class224] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_954632_Class225] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_954632_Class226] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_954632_Class227] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_987250_Class0] of  Evaluate_Substitution_Activity
+)
+
+([KB_987250_Class2] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "Presence of contraindication")
+	(PAL_constraint [ATHENA_GlycemicControl_Instance_130131]))
+
+([new-onset+insulin-requiring+DM] of  Medical_Conditions_Metaclass
+)
+
+([Serum+creatinine+%3E%3D2] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class90033])
+	(PrettyName "Serum creatinine >=2mg/dl"))
+
+([Weight+gain] of  Canonical_Terms_Metaclass
+)

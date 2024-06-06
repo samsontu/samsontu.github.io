@@ -1,0 +1,67 @@
+ATHENA-HTN Demo Version                   2007/08/01
+
+Installation 
+
+       1. Make sure that your C: drive has at least 50 megabytes of free space
+
+       2. Unzip ATHENADEMO.zip to the C: drive. You should 
+          have a "C:\ATHENADEMO" directory.
+
+Running ATHENA
+       1. Double click (or run from a command line) ATHENADEMO\bin\athena.bat 
+          If the system complains that certain drive is not available, 
+          just click "Continue".
+       2. Make sure that you are in the 'HTN Advisory' tab. Select a patient 
+          case on the 'Patient List' and click the 'Compute Advisory' button.
+       3. See the 'Training Manual ATHENA-HTN.doc' for more details
+
+
+Difference between the Demo version and production version
+       1. Instead of a pop-up window showing the ATHENA advisory, the window 
+          is embeded in Protege graphical user interface as a tab. 
+       2. No BP-vs-medication history graph is shown
+       3. Computed co-morbidities are included in the 'Related Comorbidities' 
+          data summery 
+       4. A user can modifiy the knowledge base in Protege and recompute 
+          advisories to see the effect of the modifications.
+Tips
+       1. Monitor the (black) Java console window for any exception being
+          thrown. You may have to restart the demo occasionally.
+       2. You can add or change the data values in the 'Enter a New BP' 
+          part of the Advisory tab of the 'Hypertension Guideline' or 
+          the 'Summary Sheet' tab of the Patient' Information pane and 
+          get an updated advisory.
+
+Additional ATHENA-HTN documentation is available in the ATHENADEMO/doc directory. 
+
+Disclaimer
+
+The clinical information from this system is advisory only and is
+intended to supplement the knowledge of health care professionals
+regarding the management of hypertension. It is not intended to
+replace sound clinical judgment or individualized patient care in
+delivery of healthcare services.
+
+Although the ATHENA-HTN information is derived from research
+literature and is subject to review, we cannot guarantee its
+comprehensiveness or currency. Please note that medical information is
+dynamic due to ongoing research and clinical experience and is subject
+to interpretation. There is also the possibility of errors in the
+programming.
+
+The user of this software assumes sole responsibility for any
+decisions made or actions taken based the information contained in
+this software, including but not limited to therapeutic suggestions.
+
+ATHENA-HTN, the Department of Veterans Affairs and Stanford University
+shall have no liability to any person, or entity with regard to
+claims, loss, or damage caused, or alleged to be caused, directly or
+indirectly by the use of this software or the information contained
+within.
+
+ATHENA-HTN is the property of Stanford’s Office Technology Licensing
+(OTL) and Department of Veterans Affairs.
+
+By running ATHENA-HTN, you agree to use ATHENA-HTN only as a reference
+resource for research. You agree to abstain from using ATHENA-HTN to
+generate knowledge for treatment.

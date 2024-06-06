@@ -1,0 +1,71 @@
+2015.06.29 21:51:35.218 PDT INFO: *** SYSTEM START ***
+2015.06.29 21:51:39.549 PDT WARNING: Errors at adding tab gov.va.test.opioidtesttool.TestingEnvironment -- java.lang.NoClassDefFoundError: com/toedter/calendar/JDateChooser
+	at gov.va.test.opioidtesttool.degui.DEPanel.<init>(DEPanel.java:79)
+	at gov.va.test.opioidtesttool.degui.MainEntryPanel.<init>(MainEntryPanel.java:54)
+	at gov.va.test.opioidtesttool.TestingPanel.createEntryPanel(TestingPanel.java:99)
+	at gov.va.test.opioidtesttool.TestingPanel.<init>(TestingPanel.java:69)
+	at gov.va.test.opioidtesttool.TestingEnvironment.initialize(TestingEnvironment.java:52)
+	at edu.stanford.smi.protege.widget.WidgetUtilities.createTabWidget(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectView.addTab(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectView.createTabbedPane(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectView.<init>(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectManager.displayCurrentProject(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectManager.displayCurrentProject(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectManager.loadProject(Unknown Source)
+	at edu.stanford.smi.protege.Application.init(Unknown Source)
+	at edu.stanford.smi.protege.Application.realmain(Unknown Source)
+	at edu.stanford.smi.protege.Application$3.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.toedter.calendar.JDateChooser
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 15 more
+
+2015.06.29 21:51:40.099 PDT INFO: Load time for file:\C:\Users\tu\OpioidTestEnvironment\kbs\OpioidGuideline.pprj = 2 sec (project) + 1 sec (ui) -- ProjectManager$3.run()
+2015.06.29 21:55:02.162 PDT INFO: *** SYSTEM START ***
+2015.06.29 21:55:06.231 PDT WARNING: Errors at adding tab gov.va.test.opioidtesttool.TestingEnvironment -- java.lang.NoClassDefFoundError: com/toedter/calendar/JDateChooser
+	at gov.va.test.opioidtesttool.degui.DEPanel.<init>(DEPanel.java:79)
+	at gov.va.test.opioidtesttool.degui.MainEntryPanel.<init>(MainEntryPanel.java:54)
+	at gov.va.test.opioidtesttool.TestingPanel.createEntryPanel(TestingPanel.java:99)
+	at gov.va.test.opioidtesttool.TestingPanel.<init>(TestingPanel.java:69)
+	at gov.va.test.opioidtesttool.TestingEnvironment.initialize(TestingEnvironment.java:52)
+	at edu.stanford.smi.protege.widget.WidgetUtilities.createTabWidget(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectView.addTab(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectView.createTabbedPane(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectView.<init>(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectManager.displayCurrentProject(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectManager.displayCurrentProject(Unknown Source)
+	at edu.stanford.smi.protege.ui.ProjectManager.loadProject(Unknown Source)
+	at edu.stanford.smi.protege.Application.init(Unknown Source)
+	at edu.stanford.smi.protege.Application.realmain(Unknown Source)
+	at edu.stanford.smi.protege.Application$3.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.toedter.calendar.JDateChooser
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 15 more
+
+2015.06.29 21:55:06.792 PDT INFO: Load time for file:\C:\Users\tu\OpioidTestEnvironment\kbs\OpioidGuideline.pprj = 2 sec (project) + 1 sec (ui) -- ProjectManager$3.run()
+2015.06.29 21:57:41.794 PDT INFO: *** SYSTEM START ***
+2015.06.29 21:57:46.886 PDT INFO: Load time for file:\C:\Users\tu\OpioidTestEnvironment\kbs\OpioidGuideline.pprj = 2 sec (project) + 1 sec (ui) -- ProjectManager$3.run()
+2015.06.29 23:11:31.421 PDT INFO: *** SYSTEM START ***
+2015.06.29 23:11:37.682 PDT INFO: *** SYSTEM START ***
+2015.06.29 23:11:42.976 PDT INFO: Load time for file:\C:\Users\tu\OpioidTestEnvironment\kbs\OpioidGuideline.pprj = 2 sec (project) + 2 sec (ui) -- ProjectManager$3.run()
+2015.06.30 02:24:30.117 PDT INFO: *** SYSTEM START ***
+2015.06.30 02:24:35.536 PDT INFO: Load time for file:\C:\Users\tu\OpioidTestEnvironment\kbs\OpioidGuideline.pprj = 2 sec (project) + 2 sec (ui) -- ProjectManager$3.run()
+2015.06.30 09:02:20.572 PDT INFO: *** SYSTEM START ***
+2015.06.30 09:02:26.372 PDT INFO: Load time for file:\C:\OpioidTestEnvironment\kbs\OpioidGuideline.pprj = 2 sec (project) + 2 sec (ui) -- ProjectManager$3.run()
+2017.03.08 22:47:47.050 PST INFO: *** SYSTEM START ***
+2017.03.08 22:47:53.734 PST INFO: Load time for file:\C:\Users\tu\Dropbox\OpioidTestEnvironment\kbs\OpioidGuideline.pprj = 3 sec (project) + 2 sec (ui) -- ProjectManager$3.run()
+2017.03.08 23:00:04.119 PST INFO: *** SYSTEM START ***
+2017.03.08 23:00:10.126 PST INFO: Load time for file:\C:\Users\tu\Dropbox\OpioidTestEnvironment\kbs\ATHENA_GlycemicControl.pprj = 3 sec (project) + 1 sec (ui) -- ProjectManager$3.run()
+2017.03.08 23:05:07.169 PST INFO: *** SYSTEM START ***
+2017.03.08 23:05:13.279 PST INFO: Load time for file:\C:\Users\tu\Dropbox\ATHENATestEnvironment\kbs\ATHENA_GlycemicControl.pprj = 3 sec (project) + 2 sec (ui) -- ProjectManager$3.run()

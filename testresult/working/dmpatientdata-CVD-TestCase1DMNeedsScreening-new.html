@@ -1,0 +1,235 @@
+<html><body>
+<h2>Case: Test Case1: DM Needs Screening</h2>
+57.0 year old 
+<p><b>Lab & Note Entry Values:</b> <table>
+<b><tr><td width="200">Lab</td><td width="200">Value</td><td width="200">Date</td></tr></b>
+<tr><td width="200">Age</td><td width="200">57</td><td width="200">1970-1-1</td></tr>
+</table>
+<p><b>Medications:</b> 
+<p><b>Qualitative Data:</b> <table>
+<tr><td width="200"><b>Data Class</b></td><td width="200"><b>First/Last Dates Reported</b></td><td width="200"></td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-07-24</td>
+<td width="200">Diabetes_Mellitus</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2010-06-21</td>
+<td width="200">PVD</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2006-02-24</td>
+<td width="200">Hypertension</td></tr>
+</table><p>
+<h2 align="center">ATHENA Cardiovascular Guidelines</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Cardiovascular Guidelines: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>()</i>]
+</ul>
+<h2 align="center">ATHENA CKD Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA CKD Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Age(57.0/1970-1-1) && null)</i>]
+</ul>
+<b>Scenario choice:</b> DM and no Cr & urine assessment within a year, no CKD
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Need screening?</b><br>
+<ul>
+<li><b>Order Cr & microalbumin/Cr ratio <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of Cr AND microalbumin/creatinine within a year</i> evaluate to <b> true</b> because <i>null</i>)])
+Absence of serum creatinine and microalbumin/creatinine ratio within a year; please order both now.
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Eye Care</h2>
+<b>Patient classification:</b> <ul>
+</ul>
+<b>Scenario choice:</b> Eye exam over a year ago or no data
+<p><b>Action Choices</b>
+<ul>
+<li><b>Referral for eye exam over a year or no data</b><br>
+<ul>
+<li><b>Refer for eye exam within 3m <font color=FF0000>preferred</font></b>(strict rule-in condition<i> DM type 2 newly diagnosed or insulin or ocular risk or diabetes type 1 >= 3 years</i> evaluate to <b> true</b> because <i>null</i>)])
+Referral should be scheduled for 3 months from today (max)
+</ul>
+</ul>
+<h2 align="center">ATHENA Diabetes Mellitus: Foot Care</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Diabetes Mellitus: Foot Care: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> Not wound-followup DM patients
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Initial assessments</b><br>
+<ul>
+<li><b>Perform and document foot risk assessment (B) and visual inspection of feet <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+Perform and document visual inspection of patient's feet.
+<li><b>Assess if limb threatening condition present <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+</ul>
+<li><b>Evaluate </b><br>
+<ul>
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Glycemic Control</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA DM: Glycemic Control: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> No target  or no HbA1C
+<p><b>Action Choices</b>
+<ul>
+<li><b>Lack target or lack HbA1C</b><br>
+<ul>
+<li><b>Determine goal <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence Target HBA1c</i> evaluate to <b> true</i>)])
+
+<li><b>Order HbA1C <font color=FF0000>preferred</font></b>(strict rule-in condition<i> No HbA1C ever or in past year</i> evaluate to <b> true</b> because <i>null</i>)])
+null
+</ul>
+</ul>
+<h2 align="center">ATHENA Lipid Management Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Lipid Management Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null && Age(57.0/1970-1-1))</i>]
+<li>CHD or CHD-Equivalent: [because <i> CHD Risk Equivalent </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> No drug, high CHD risk
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> unknown(LDL_Cholesterol(no value))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Primary_Recommendation</b>
+<ul>
+<li><b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>()
+<li><b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Management Choice</b><br>
+<ul>
+<li><b>Order lipid study <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of LDL data in last year</i> evaluate to <b> true</i>)])
+null
+<li><b>TLC initiation <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Criteria for initiation for TLC</i> evaluate to <b> true</b> because <i>null</i>)])
+<b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>
+<li><b>Presence of CHD, Initiate statin therapy <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Presence of CHD or CHD Equivalent</i> evaluate to <b> true</i>)])
+<b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Statin Metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+<li>Statin Not metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">ATHENA Heart Failure Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Heart Failure Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Not Stage D HF (refractory end stage HF)null)</i>]
+</ul>
+<b>Scenario choice:</b> Stage A HF
+<p>
+<b>Goal:</b> SBP < 140 and DBP < 80(presence of diabetes mellitus)
+<p><b>Reached goal?</b> unknown(Treatment_Diastolic_BP(no value) && Treatment_Systolic_BP(no value))
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> unknown(LDL_Cholesterol(no value))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Class I</b>
+<ul>
+<li>Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)()
+<li>Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)()
+<li>For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)()
+</ul>
+<li><b>Class III</b>
+<ul>
+<li>Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Stage A messages</b><br>
+<ul>
+<li><b>behavior control <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)
+<li><b>Periodic evaluation <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)
+<li><b>Blood sugar control <font color=FF0000>preferred</font></b>(rule in criterion<i> diabetes_mellitus</i> evaluate to <b> true</i>)])
+For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)
+<li><b>not use nutritional supplements <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)
+</ul>
+<li><b> </b><br>
+<ul>
+<li><b>stage A drug choices <font color=FF0000>preferred</font></b>(strict rule-in condition<i> DM or HTN or atherosclerotic vascular disease</i> evaluate to <b> true</b> because <i>null</i>)])
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Ace_Inhibitor
+<ul>
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>Refer to specific ACE Inhibitor dose adjustments based on kidney function.
+<li>Need to find content
+<li>preference: preferred
+</ul>
+<li>ARB
+<ul>
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">VA/JNC-VII Hypertension Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>VA/JNC-VII Hypertension Guideline: unknown[because <i> Eligibility criteria </i> evaluate to <b>unknown</b><i>(eGFR(no value))</i>]
+<li>Risk Group C (presence of TOD/CCD or DM): [because <i> presence of TOD/CCD or DM </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> not on drug therapy
+<p>
+<b>Goal:</b> SBP < 140 and DBP < 80(presence of diabetes mellitus)
+<p><b>Reached goal?</b> unknown(Treatment_Diastolic_BP(no value) && Treatment_Systolic_BP(no value))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Recommendation</b>
+<ul>
+<li>The clinical information from this system is advisory only and is intended to supplement the knowledge of health care professionals regarding the management of hypertension. It is not intended to replace sound clinical judgment or individualized patient care in delivery of healthcare services.
+  Although the ATHENA-HTN information is derived from research literature and is subject to review, we cannot guarantee its comprehensiveness or currency. Please note that medical information is dynamic due to ongoing research and clinical experience and is subject to interpretation. There is also the possibility of errors in the programming.  The user of this software assumes sole responsibility for any decisions made or actions taken based the information contained in this software, including but not limited to therapeutic suggestions.  ATHENA-HTN, the Department of Veterans Affairs and Stanford University shall have no liability to any person, or entity with regard to claims, loss, or damage caused, or alleged to be caused, directly or indirectly by the use of this software or the information contained within.  ATHENA-HTN is the property of Stanford's Office Technology Licensing (OTL) and Department of Veterans Affairs.  
+By accessing ATHENA-HTN, you agree use ATHENA-HTN only as a reference resource for research. You agree to abstain from using ATHENA-HTN to generate knowledge for treatment.()
+</ul>
+<li><b>Assumption</b>
+<ul>
+<li>We use the most recent creatinine in the patient's record. If there is no creatinine listed, our recommendations are based on the assumption creatinine is within normal limits.()
+<li>We did not find a BP in the vitals signs section of the computer.  We are not at present able to use the BP recorded in the text of the progress note, so we are not able to determine whether the BP control is adequate or inadequate.  Please enter BP using the top part of the screen.()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>not on antihypertensive medication consultation actions</b><br>
+<ul>
+<li><b>assumption  check presence of creatinine test result <font color=FF0000>preferred</font></b>(rule in criterion<i> absence of creatinine</i> evaluate to <b> true</i>)])
+We use the most recent creatinine in the patient's record. If there is no creatinine listed, our recommendations are based on the assumption creatinine is within normal limits.
+<li><b>assumption  check presence of BP <font color=FF0000>preferred</font></b>(rule in criterion<i> diastolic BP or systolic BP absent</i> evaluate to <b> true</b> because <i>null</i>)])
+We did not find a BP in the vitals signs section of the computer.  We are not at present able to use the BP recorded in the text of the progress note, so we are not able to determine whether the BP control is adequate or inadequate.  Please enter BP using the top part of the screen.
+<li><b>Disclaimer <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+The clinical information from this system is advisory only and is intended to supplement the knowledge of health care professionals regarding the management of hypertension. It is not intended to replace sound clinical judgment or individualized patient care in delivery of healthcare services.
+  Although the ATHENA-HTN information is derived from research literature and is subject to review, we cannot guarantee its comprehensiveness or currency. Please note that medical information is dynamic due to ongoing research and clinical experience and is subject to interpretation. There is also the possibility of errors in the programming.  The user of this software assumes sole responsibility for any decisions made or actions taken based the information contained in this software, including but not limited to therapeutic suggestions.  ATHENA-HTN, the Department of Veterans Affairs and Stanford University shall have no liability to any person, or entity with regard to claims, loss, or damage caused, or alleged to be caused, directly or indirectly by the use of this software or the information contained within.  ATHENA-HTN is the property of Stanford's Office Technology Licensing (OTL) and Department of Veterans Affairs.  
+By accessing ATHENA-HTN, you agree use ATHENA-HTN only as a reference resource for research. You agree to abstain from using ATHENA-HTN to generate knowledge for treatment.
+</ul>
+<li><b>no-drug-therapy-choices</b><br>
+<ul>
+</ul>
+</ul>
+</body></html>

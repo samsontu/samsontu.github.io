@@ -1,0 +1,73 @@
+; Thu Oct 21 09:36:33 PDT 2010
+; 
+;+ (version "3.4.5")
+;+ (build "Build 585")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract))
+
+(defclass Cardiovascular_Diseases
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Renal_Disease
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Chronic_Kidney_Disease
+	(is-a Renal_Disease)
+	(role abstract))
+
+(defclass 585
+	(is-a Chronic_Kidney_Disease)
+	(role abstract))
+
+(defclass End-Stage_Renal_Disease
+	(is-a Renal_Disease)
+	(role abstract))
+
+(defclass 585.6
+	(is-a End-Stage_Renal_Disease)
+	(role abstract))
+
+(defclass Defined_Condition
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Had+a+kidney+transplant
+	(is-a Defined_Condition)
+	(role abstract))
+
+(defclass Two+abnormal+Cr+or+Microalbumin%2FCreatinine+Ratio+3+months+apart
+	(is-a Defined_Condition)
+	(role concrete))
+
+(defclass High+Risk+Group
+	(is-a Defined_Condition)
+	(role abstract))
+
+(defclass Age%3E65%3F
+	(is-a Defined_Condition)
+	(role abstract))
+
+(defclass Systolic_Blood_Pressure
+	(is-a Vital_Signs)
+	(role abstract))
+
+(defclass Diastolic_Blood_Pressure
+	(is-a Vital_Signs)
+	(role abstract))
+
+(defclass Microalbumin%2FCreatinine+Ratio
+	(is-a Laboratory_Tests)
+	(role abstract))
+
+(defclass ScreeningCandidate
+	(is-a Diagnostic_Procedures_Class)
+	(role abstract))
+
+(defclass Kidney_Transplant
+	(is-a Therapeutic_Procedure)
+	(role abstract))

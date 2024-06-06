@@ -1,0 +1,580 @@
+; Mon Feb 22 13:34:14 PST 2010
+; 
+;+ (version "3.4.3")
+;+ (build "Build 572")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot Label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Chronic_Liver_Disease
+	(is-a Liver_Disease)
+	(role concrete))
+
+(defclass 571.4
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 571.41
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 571.49
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 571.5
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 571.8
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 571.9
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 70.23
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 70.22
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 70.32
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 70.44
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass 70.54
+	(is-a Chronic_Liver_Disease)
+	(role concrete))
+
+(defclass Active+Liver+Disease
+	(is-a Liver_Disease)
+	(role concrete))
+
+(defclass 413.0
+	(is-a Angina)
+	(role concrete))
+
+(defclass 413.1
+	(is-a Angina)
+	(role concrete))
+
+(defclass 413.9
+	(is-a Angina)
+	(role concrete))
+
+(defclass 410.0
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.00
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.01
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.02
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.1
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.10
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.11
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.12
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.2
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.20
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.21
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.22
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.3
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.30
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.31
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.32
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.4
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.40
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.41
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.42
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.5
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.50
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.51
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.52
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.6
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.60
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.61
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.62
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.7
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.70
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.71
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.72
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.8
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.80
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.81
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.82
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.9
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.90
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.91
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 410.92
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 411.0
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 412
+	(is-a Myocardial_Infarction)
+	(role concrete))
+
+(defclass 411.1
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 411.8
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 411.81
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 411.89
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 412.
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.0
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.00
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.01
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.02
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.03
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.04
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.05
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.11
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.8
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass 414.9
+	(is-a Coronary_Artery_Disease)
+	(role concrete))
+
+(defclass Hypertension_Code
+	(is-a Hypertension_Inclusive)
+	(role concrete))
+
+(defclass Ischemic_Heart_Disease
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Abdominal_Aortic_Aneurysm
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Hyperlipidemia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Peripheral+Arterial+Disease
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Carotid+Artery+Disease
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Dysbeta-lipoproteinemia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Hyperuricemia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Peptic_Ulcer
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass tobacco+use
+	(is-a Risk_Factor Medical_Conditions_Class)
+	(role concrete))
+
+(defclass 305.1
+	(is-a tobacco+use)
+	(role concrete))
+
+(defclass 305.10
+	(is-a tobacco+use)
+	(role concrete))
+
+(defclass 305.11
+	(is-a tobacco+use)
+	(role concrete))
+
+(defclass 305.12
+	(is-a tobacco+use)
+	(role concrete))
+
+(defclass 305.13
+	(is-a tobacco+use)
+	(role concrete))
+
+(defclass Age%3E45+and+male
+	(is-a Risk_Factor)
+	(role concrete))
+
+(defclass Age%3E55+and+female
+	(is-a Risk_Factor)
+	(role concrete))
+
+(defclass Family_History_of_Premature_CHD
+	(is-a Risk_Factor)
+	(role concrete))
+
+(defclass Alkaline_Phosphatase
+	(is-a Blood_Chemistry)
+	(role concrete))
+
+(defclass Electrolytes
+	(is-a Blood_Chemistry)
+	(role concrete))
+
+(defclass Liver_function_tests
+	(is-a Blood_Chemistry)
+	(role concrete))
+
+(defclass Renal_panel
+	(is-a Blood_Chemistry)
+	(role concrete))
+
+(defclass HGB
+	(is-a Hematology)
+	(role concrete))
+
+(defclass DLCO
+	(is-a Pulmonary_Function_Studies)
+	(role concrete))
+
+(defclass Microbiology_tests
+	(is-a Laboratory_Tests)
+	(role abstract))
+
+(defclass Not_Subject_Of_Decision_Support
+	(is-a Patient_Observations)
+	(role abstract))
+
+(defclass 10-Year_CHD_Risk
+	(is-a Patient_Observations)
+	(role concrete))
+
+(defclass Risk_Group
+	(is-a Diagnostic_Class)
+	(role concrete)
+	(single-slot Label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ICD-9-Code
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass CHD_Or_CHDEquivalent
+	(is-a Risk_Group)
+	(role concrete))
+
+(defclass 2%2B_Risk_Factors
+	(is-a Risk_Group)
+	(role concrete))
+
+(defclass 0-1_Risk_Factor
+	(is-a Risk_Group)
+	(role concrete))
+
+(defclass 10+year+CHD+risk%3E20%25
+	(is-a Risk_Group)
+	(role concrete))
+
+(defclass 10+year+CHD+risk+10-20%25
+	(is-a Risk_Group)
+	(role concrete))
+
+(defclass 10+year+CHD+risk%3C10%25
+	(is-a Risk_Group)
+	(role concrete))
+
+(defclass Defined+Condition
+	(is-a Diagnostic_Class)
+	(role concrete))
+
+(defclass LDL_not_within_guideline_goal
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass Adverse_Reaction_To_Statin
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass Usage+of+drugs+relative+contraindication+to+statins
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass TG%3E400mg%2FdL
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass 400mg%2FdL%3ETG%3E200mg%2FdL
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass HDL+%3C40+mg%2FdL
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass LDL_Lowering_Drug
+	(is-a Medications_Class)
+	(role abstract))
+
+(defclass Statin
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass lovastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass pravastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass simvastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass fluvastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass atorvastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass cerivastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass Bile_Acid_Sequestrant
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass cholestyramine
+	(is-a Bile_Acid_Sequestrant)
+	(role concrete))
+
+(defclass colestipol
+	(is-a Bile_Acid_Sequestrant)
+	(role concrete))
+
+(defclass colesevelam
+	(is-a Bile_Acid_Sequestrant)
+	(role concrete))
+
+(defclass Nicotinic_Acid
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass immediate_release_crystalline_nicotinic_acid
+	(is-a Nicotinic_Acid)
+	(role concrete))
+
+(defclass extended_release_nicotinic_acid
+	(is-a Nicotinic_Acid)
+	(role concrete))
+
+(defclass sustained_release_nicotinic_acid
+	(is-a Nicotinic_Acid)
+	(role concrete))
+
+(defclass Fibric_Acid
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass gemfibrozil
+	(is-a Fibric_Acid)
+	(role concrete))
+
+(defclass fenofibrate
+	(is-a Fibric_Acid)
+	(role concrete))
+
+(defclass clofibrate
+	(is-a Fibric_Acid)
+	(role concrete))
+
+(defclass Macrolide_Antibiotics
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Antifungal_Agents
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Cytochrome_P-450_Inhibitor
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Fibrates
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Niacin
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Cyclosporine
+	(is-a Medications_Class)
+	(role concrete))

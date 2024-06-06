@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.0b2 (WinNT; I) [Netscape]">
+   <TITLE>EON Predicate Language</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+EON Predicate Language&nbsp;</H1></CENTER>
+Created: 2/12/96 by Samson Tu adapted from Amar Das's TLSQL language&nbsp;
+<BR>
+<BR>&nbsp;Last revised: 4/7/97&nbsp;
+<HR>
+<BR>
+<BR>This is preliminary specification of a predicate language to be used to
+model expressions that may or may not refer to temporal data. Several variants
+languages may be defined, depending on assumption we want to make about
+implicit references. For example, we may want to define a variant language
+that allows the notion of &quot;current time&quot;, i.e., have a predefined
+symbol representing the current time against which comparisons or computations
+can be done.&nbsp;
+<BR>
+<BR>This specification language assumes an object data model, where objects
+have <I>attributes</I>, attributes have <I>values</I>, and individual objects
+instances are organized into <I>classes</I>. Translation to a relational
+model is immediate if we assume classes map into tables and attributes
+into columns, and assume that attribute are single valued. However, here
+the single value assumption doesn't always hold.&nbsp;
+<BR>
+<BR>This specification is still incomplete. In particular, it does not allow
+use of functions or other common airthmetic and string operations. Also,
+I haven't decided exactly how to deal with the &quot;kind-of&quot; comparison
+that is common in object language, but not supported by relational language
+.&nbsp;
+<BR>
+<BR><A HREF="BNFInstructions.html">Documentation
+on the BNF Syntax</A>&nbsp;
+
+<H2>
+BNFSTART</H2>
+&lt;grain_retr&gt;:&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GRAIN &lt;grain_unit&gt; &lt;retrieval_expr&gt;*&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | GRAIN &lt;grain_unit&gt;&nbsp;
+&lt;bool_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | GRAIN &lt;grain_unit&gt; (AND|OR)
+&lt;bool_expr&gt; &lt;bool_expr&gt; ~ &lt;bool_expr&gt;*&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+;&nbsp;
+<BR>
+<BR>&lt;grain_unit&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DAY | HOUR | MINUTE | SECOND | WEEK | MONTH&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;bool_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '(' ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[CONTEXT &lt;context&gt; (',' &lt;context&gt;)*] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[NOT] EXISTS [&lt;range_expr&gt;] [CONCATENATED] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;select_item&gt; (',' &lt;select_item&gt;)* ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IN &lt;classname&gt; (',' &lt;classname&gt;)* ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[&lt;when_expr&gt;] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[WHERE &lt;boolean_term&gt; (OR &lt;boolean_term&gt;)*] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[GROUP BY &lt;group_item&gt; (',' &lt;group_item&gt;)*] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+;&nbsp;
+<BR>
+<BR>&lt;retrieval_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CONTEXT &lt;context&gt; (',' &lt;context&gt;)* ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+SELECT [&lt;range_expr&gt;] [CONCATENATED]~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;select_item&gt; (',' &lt;select_item&gt;)* ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[INTO {STRING}] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FROM &lt;classname&gt; (',' &lt;classname&gt;)* ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[&lt;when_expr&gt;] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[WHERE &lt;boolean_term&gt; (OR &lt;boolean_term&gt;)*] ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[GROUP BY &lt;group_item&gt; (',' &lt;group_item&gt;)*]&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;classname&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{CLASSNAME}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+;&nbsp;
+<BR>
+<BR>&lt;context&gt;:&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{STRING} | STAR&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+;&nbsp;&nbsp;
+<BR>
+<BR>&lt;range_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FIRST&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | SECOND&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | THIRD&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | LAST&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | INT_CONST {INTEGER}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | '(' INT_CONST {INTEGER} TO INT_CONST
+{INTEGER} ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;select_list&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STAR&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;select_item&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;select_list&gt; ',' &lt;select_item&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;select_item&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+STAR&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;aggr_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;attr_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;funct_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;datetime_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;aggr_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{STRING} EQUAL_OP &lt;arithmetic-op&gt; '(' [DISTINCT] {STRING} ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING}
+EQUAL_OP &lt;arithmetic-op&gt; '(' [DISTINCT] {SLOTNAME} ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>&nbsp;
+<BR>&lt;arithmetic-op&gt;: SUM | AVG | COUNT | MAX | MIN&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+;&nbsp;
+<BR>
+<BR>&lt;attr_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {STRING} EQUAL_OP {STRING}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING}
+EQUAL_OP {SLOTNAME}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING} EQUAL_OP &lt;funct_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING} EQUAL_OP &lt;datetime_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;funct_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (DATENAME|DATEPART) '('
+{STRING} ',' &lt;datetime_expr&gt; ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | DURATION '(' &lt;datetime_expr&gt;
+(',' &lt;datetime_expr&gt;)* ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;value_token&gt; MATH_OP &lt;value_token&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;value_token&gt; STAR &lt;value_token&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;datetime_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEMPATTR&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | DATE_CONST [TIME_CONST]&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | GETDATE '(' ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | ADDGRANULE '(' INT_CONST ',' &lt;datetime_expr&gt;
+')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>
+<BR>&lt;from_list&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {STRING}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING} ',' {STRING}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;when_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHEN &lt;temp_comp_term&gt; (OR &lt;temp_comp_term&gt;)*&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | WHEN {STRING} [NOT] CONCURRENT_WITH
+{STRING}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;temp_comp_term&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;temp_pred&gt; (AND &lt;temp_pred&gt;)*&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;temp_pred&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;datetime_expr&gt;
+&lt;timepoint_op&gt; &lt;datetime_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;interval_expr&gt; &lt;interval_op&gt;
+&lt;interval_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;datetime_expr&gt; &lt;mixed_op&gt;
+&lt;interval_expr&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | DURATION '(' &lt;datetime_expr&gt;
+(',' &lt;datetime_expr&gt;)* ')' ~&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(COMP_OP|EQUAL_OP) INT_CONST&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | '(' &lt;temp_comp_term&gt; (OR &lt;temp_comp_term&gt;)*
+')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;timepoint_op&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AT&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | BEFORE&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | AFTER&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | ADJACENT_TO&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;interval_op&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BEFORE&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | UNTIL&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | LEADS&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | STARTS&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | EQUALS&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | DURING&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | FINISHES&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | OVERLAPS&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | SPANS&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | LAGS&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;interval_expr&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '[' &lt;datetime_expr&gt;
+',' &lt;datetime_expr&gt; ']'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;mixed_op&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BEFORE&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | DURING&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | AFTER&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;boolean_term&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;boolean_factor&gt; (AND &lt;boolean_factor&gt;)*&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;boolean_factor&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[NOT] &lt;predicate&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [NOT] '('
+&lt;boolean_term&gt; (OR &lt;boolean_term&gt;)* ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;predicate&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value_token&gt; COMP_OP
+&lt;value_token&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;value_token&gt; EQUAL_OP &lt;value_token&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;value_token&gt; [NOT] BETWEEN
+&lt;value_token&gt; AND &lt;value_token&gt;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;value_token&gt; [NOT] DBIN '('
+&lt;value_token&gt; (',' &lt;value_token&gt;)*')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;value_token&gt; [NOT] LIKE WILDCARD&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &lt;value_token&gt; IS [NOT] DBNULL&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;value_token&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {SLOTNAME}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | WILDCARD&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {INTEGER}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {REAL}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>
+<BR>&lt;group_item&gt; :&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{SLOTNAME}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | {STRING}&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | (DATENAME|DATEPART) '(' {STRING}
+',' &lt;datetime_expr&gt; ')'&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;
+<BR>BNFEND&nbsp;
+<BR>&nbsp;
+<BR>
+<HR><A HREF="../index.html">Return
+to EON home page&nbsp;</A>&nbsp;
+
+<ADDRESS>
+This file was last updated on 4/7/97 by Samson Tu <A HREF="mailto:tu@smi.stanford.edu">tu@smi.stanford.edu</A>&nbsp;</ADDRESS>
+<BR>
+
+</BODY>
+</HTML>

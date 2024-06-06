@@ -1,0 +1,23 @@
+# Find all drugs that do not have a rdfs:label
+
+SELECT ?drug ?label 
+WHERE { ?drug rdfs:subClassOf :Drug .
+      OPTIONAL { ?drug rdfs:label ?label }
+      FILTER ( !bound(?label))
+      }
+# Find all drugs that may_treat or may_prevent Myocardial infarction
+
+SELECT DISTINCT ?drug
+WHERE {{  ?drug rdfs:subClassOf ?r .
+                 ?r owl:onProperty do:may_treat .
+                 ?r owl:someValuesFrom  do:C0027051 }
+        UNION {?drug rdfs:subClassOf ?r1 .
+                 ?r1 owl:onProperty do:may_prevent .
+                 ?r1 owl:someValuesFrom  do:C0027051 }}
+
+SELECT DISTINCT ?drug WHERE {{  ?drug rdfs:subClassOf ?r .                  ?r owl:onProperty do:may_treat .                  ?r owl:someValuesFrom  do:C0027051 }         UNION {?drug rdfs:subClassOf ?r1 .                  ?r1 owl:onProperty do:may_prevent .                  ?r1 owl:someValuesFrom  do:C0027051 }}  
+
+result = kb.executeSPARQLQuery(" ")
+
+
+Find 

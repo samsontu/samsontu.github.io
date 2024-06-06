@@ -1,0 +1,293 @@
+; Wed Dec 02 20:24:51 PST 2009
+; 
+;+ (version "3.4.2")
+;+ (build "Build 555")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract))
+
+(defclass 640.00
+	(is-a Pregnancy)
+	(role abstract))
+
+(defclass 641.00
+	(is-a Pregnancy)
+	(role abstract))
+
+(defclass 250.01
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.03
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.11
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.13
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.21
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.23
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.31
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.33
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.51
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.53
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.61
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.63
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.71
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.73
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.81
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.83
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.91
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass 250.93
+	(is-a Diabetes-Mellitus-Type1)
+	(role concrete))
+
+(defclass Diabetes-Mellitus-Type2
+	(is-a Diabetes_Mellitus)
+	(role abstract))
+
+(defclass 250.00
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.02
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.10
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.12
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.20
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.22
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.30
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.32
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.50
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.52
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.60
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.62
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.70
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.72
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.80
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.82
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.90
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass 250.92
+	(is-a Diabetes-Mellitus-Type2)
+	(role concrete))
+
+(defclass Diabetes+with+renal+manifestations
+	(is-a Diabetes_Mellitus)
+	(role abstract))
+
+(defclass 250.4
+	(is-a Diabetes+with+renal+manifestations)
+	(role concrete))
+
+(defclass 250.40
+	(is-a Diabetes+with+renal+manifestations)
+	(role concrete))
+
+(defclass 250.41
+	(is-a Diabetes+with+renal+manifestations)
+	(role concrete))
+
+(defclass 250.42
+	(is-a Diabetes+with+renal+manifestations)
+	(role concrete))
+
+(defclass 250.43
+	(is-a Diabetes+with+renal+manifestations)
+	(role concrete))
+
+(defclass 357.2
+	(is-a Diabetes_Mellitus)
+	(role abstract))
+
+(defclass 362.0
+	(is-a Diabetes_Mellitus)
+	(role abstract))
+
+(defclass 362.01
+	(is-a Diabetes_Mellitus)
+	(role abstract))
+
+(defclass 362.02
+	(is-a Diabetes_Mellitus)
+	(role abstract))
+
+(defclass 366.41
+	(is-a Diabetes_Mellitus)
+	(role concrete))
+
+(defclass Endocrine_Diseases
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Cardiovascular_Diseases
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Hypertension
+	(is-a Cardiovascular_Diseases)
+	(role abstract))
+
+(defclass 401.1
+	(is-a Hypertension)
+	(role concrete))
+
+(defclass 401.9
+	(is-a Hypertension)
+	(role concrete))
+
+(defclass Renal_Disease
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Chronic_Kidney_Disease
+	(is-a Renal_Disease)
+	(role abstract))
+
+(defclass 585
+	(is-a Chronic_Kidney_Disease)
+	(role abstract))
+
+(defclass End-Stage_Renal_Disease
+	(is-a Renal_Disease)
+	(role abstract))
+
+(defclass 585.6
+	(is-a End-Stage_Renal_Disease)
+	(role abstract))
+
+(defclass Defined_Condition
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Had+a+kidney+transplant
+	(is-a Defined_Condition)
+	(role abstract))
+
+(defclass Two+abnormal+Cr+or+Microalbumin%2FCreatinine+Ratio+3+months+apart
+	(is-a Defined_Condition)
+	(role concrete))
+
+(defclass High+Risk+Group
+	(is-a Defined_Condition)
+	(role abstract))
+
+(defclass Age%3E65%3F
+	(is-a Defined_Condition)
+	(role abstract))
+
+(defclass Obstetric%26Gynecological_Diseases
+	(is-a Medical_Conditions_Class)
+	(role abstract))
+
+(defclass Systolic_Blood_Pressure
+	(is-a Vital_Signs)
+	(role abstract))
+
+(defclass Diastolic_Blood_Pressure
+	(is-a Vital_Signs)
+	(role abstract))
+
+(defclass Microalbumin%2FCreatinine+Ratio
+	(is-a Laboratory_Tests)
+	(role abstract))
+
+(defclass ScreeningCandidate
+	(is-a Diagnostic_Procedures_Class)
+	(role abstract))
+
+(defclass Kidney_Transplant
+	(is-a Therapeutic_Procedure)
+	(role abstract))

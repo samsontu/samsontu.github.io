@@ -1,0 +1,181 @@
+id: 0-3.0.r3/0
+type: dir
+count: 0
+cpath: /doc
+copyroot: 0 /
+
+PLAIN
+K 15
+ATHENA-HTN.pins
+V 21
+file 1h-1.0.r1/867762
+K 15
+ATHENA-HTN.pont
+V 21
+file 1x-1.0.r1/869259
+K 15
+ATHENA-HTN.pprj
+V 21
+file 1r-1.0.r1/868695
+K 15
+ATHENA_CKD.pins
+V 21
+file 11-1.0.r2/462179
+K 15
+ATHENA_CKD.pont
+V 21
+file 1p-1.0.r2/463649
+K 15
+ATHENA_CKD.pprj
+V 21
+file 19-1.0.r2/462804
+K 14
+ATHENA_DM.pins
+V 20
+file x-1.0.r2/461973
+K 14
+ATHENA_DM.pont
+V 21
+file 1j-1.0.r2/463445
+K 14
+ATHENA_DM.pprj
+V 21
+file 13-1.0.r2/462595
+K 18
+ATHENA_DM_Eye.pins
+V 21
+file 15-1.0.r1/866613
+K 18
+ATHENA_DM_Eye.pont
+V 21
+file 1t-1.0.r1/868885
+K 18
+ATHENA_DM_Eye.pprj
+V 21
+file 1d-1.0.r1/867384
+K 19
+ATHENA_DM_Foot.pins
+V 20
+file 0-1.0.r2/460066
+K 19
+ATHENA_DM_Foot.pont
+V 20
+file 9-1.0.r2/460697
+K 19
+ATHENA_DM_Foot.pprj
+V 20
+file 5-1.0.r2/460488
+K 27
+ATHENA_GlycemicControl.pins
+V 20
+file p-1.0.r2/461535
+K 27
+ATHENA_GlycemicControl.pont
+V 21
+file 1b-1.0.r2/463226
+K 27
+ATHENA_GlycemicControl.pprj
+V 20
+file t-1.0.r2/461754
+K 17
+ATHENA_Lipid.pins
+V 20
+file z-1.0.r2/462387
+K 17
+ATHENA_Lipid.pont
+V 21
+file 1n-1.0.r2/463855
+K 17
+ATHENA_Lipid.pprj
+V 21
+file 17-1.0.r2/463014
+K 23
+annotation_library.pprj
+V 20
+file h-1.0.r2/461320
+K 22
+annotation_library.rdf
+V 21
+file 21-1.0.r2/464065
+K 23
+annotation_library.rdfs
+V 20
+file b-1.0.r1/863771
+K 15
+athena_all.pins
+V 20
+file d-1.0.r2/460903
+K 15
+athena_all.pont
+V 20
+file f-1.0.r2/461111
+K 24
+athena_hypertension.pprj
+V 20
+file 3-1.0.r2/460272
+K 11
+common.pins
+V 21
+file 1l-1.0.r1/868136
+K 11
+common.pont
+V 21
+file 1z-1.0.r1/869449
+K 11
+common.pprj
+V 21
+file 1v-1.0.r1/869073
+K 3
+doc
+V 14
+dir 0-3.0.r3/0
+K 9
+eon2.pins
+V 21
+file 23-1.0.r1/869832
+K 9
+eon2.pont
+V 20
+file 7-1.0.r1/863405
+K 9
+eon2.pprj
+V 21
+file 25-1.0.r1/870014
+K 12
+library.pins
+V 20
+file j-1.0.r1/864536
+K 12
+library.pont
+V 20
+file n-1.0.r1/864906
+K 12
+library.pprj
+V 20
+file l-1.0.r1/864721
+K 16
+metaproject.pins
+V 20
+file r-1.0.r1/865289
+K 16
+metaproject.pont
+V 21
+file 1f-1.0.r1/867575
+K 16
+metaproject.pprj
+V 20
+file v-1.0.r1/865673
+END
+ENDREP
+id: 0.0.r3/2013
+type: dir
+pred: 0.0.r2/466209
+count: 3
+text: 3 61 1939 1939 f33e535a12a5d5258cfabc5b5837d67a
+cpath: /
+copyroot: 0 /
+
+_0.0.t2-2 add-dir false false /doc
+
+
+2013 2146

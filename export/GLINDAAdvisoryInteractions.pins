@@ -1,0 +1,51 @@
+; Mon Oct 05 15:04:05 PDT 2015
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Jess+engine] of  %3AJESS-ENGINE
+)
+
+([KB_255969_Class11] of  Goal_State
+
+	(label "achieved"))
+
+([KB_255969_Class23] of  Preference
+
+	(label "preferred"))
+
+([KB_255969_Class25] of  Preference
+
+	(label "neutral"))
+
+([KB_255969_Class28] of  Preference
+
+	(label "ruled out"))
+
+([KB_255969_Class3] of  Goal_State
+
+	(label "failed"))
+
+([KB_255969_Class5] of  Goal_State
+
+	(label "none"))
+
+([KB_255969_Class7] of  Goal_State
+
+	(label "unknown"))
+
+([KB_314842_Class0] of  Truth_Value
+
+	(label "false"))
+
+([KB_314842_Class1] of  Truth_Value
+
+	(label "unknown"))
+
+([KB_314842_Class2] of  Truth_Value
+
+	(label "true"))
+
+([Maximum_Number_Drug_Constraint] of  Maximum_Number_Intervention_Metaclass
+
+	(maximum_number_intervention 6))

@@ -1,0 +1,4055 @@
+; Thu Jan 06 14:24:10 PST 2011
+; 
+;+ (version "3.4.2")
+;+ (build "Build 562")
+
+([ANNOTATED_INSTANCE_WIDGET] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([ANNOTATION_TEXT_WIDGET] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(property_list [ATHENA_HF_ProjectKB_Class23792])
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_HF_ProjectKB_Class13561] of  String
+
+	(name "KnowledgeTreeTab.TOP_LEVEL_INSTANCE")
+	(string_value "ATHENA_HF_Class70043"))
+
+([ATHENA_HF_ProjectKB_Class1465] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1466])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([ATHENA_HF_ProjectKB_Class1466] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1467] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_HF_ProjectKB_Class1468])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([ATHENA_HF_ProjectKB_Class1468] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1469] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1470])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([ATHENA_HF_ProjectKB_Class1470] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1473] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1474])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([ATHENA_HF_ProjectKB_Class1474] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1477] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1478])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([ATHENA_HF_ProjectKB_Class1478] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1479] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1480])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([ATHENA_HF_ProjectKB_Class1480] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1481] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1482])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([ATHENA_HF_ProjectKB_Class1482] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1485] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1486])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([ATHENA_HF_ProjectKB_Class1486] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1487] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1488])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([ATHENA_HF_ProjectKB_Class1488] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1489] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_HF_ProjectKB_Class1490])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([ATHENA_HF_ProjectKB_Class1490] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1493] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1494])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([ATHENA_HF_ProjectKB_Class1494] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1495] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_HF_ProjectKB_Class1496])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([ATHENA_HF_ProjectKB_Class1496] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1497] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1498])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([ATHENA_HF_ProjectKB_Class1498] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1499] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1500])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([ATHENA_HF_ProjectKB_Class1500] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1501] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1502])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([ATHENA_HF_ProjectKB_Class1502] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1503] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_HF_ProjectKB_Class1504])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([ATHENA_HF_ProjectKB_Class1504] of  Property_List
+
+	(properties [ATHENA_HF_ProjectKB_Class13561]))
+
+([ATHENA_HF_ProjectKB_Class1505] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1506])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([ATHENA_HF_ProjectKB_Class1506] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1507] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1508])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([ATHENA_HF_ProjectKB_Class1508] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1509] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1510])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([ATHENA_HF_ProjectKB_Class1510] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1515] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1516])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([ATHENA_HF_ProjectKB_Class1516] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1519] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1520])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([ATHENA_HF_ProjectKB_Class1520] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1521] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1522])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
+
+([ATHENA_HF_ProjectKB_Class1522] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1523] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1524])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([ATHENA_HF_ProjectKB_Class1524] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1525] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1526])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([ATHENA_HF_ProjectKB_Class1526] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class1529] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class1530])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([ATHENA_HF_ProjectKB_Class1530] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class15347] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_HF_ProjectKB_Class15348] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class15349] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class15350] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class15351] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class15616] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15617] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15618] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15619] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15620] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15621] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15680] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "data_source")
+	(property_list [ATHENA_HF_ProjectKB_Class15681])
+	(widget_class_name "edu.stanford.smi.protege.widget.SymbolListWidget")
+	(width 200)
+	(x 0)
+	(y 360))
+
+([ATHENA_HF_ProjectKB_Class15681] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class15682] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15810] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class15869] of  String
+
+	(name "Ordinal-Valued_AtomicTest_Metaclass")
+	(string_value "%3ANAME"))
+
+([ATHENA_HF_ProjectKB_Class15870] of  String
+
+	(name "Comparison_Criterion")
+	(string_value "label"))
+
+([ATHENA_HF_ProjectKB_Class15871] of  String
+
+	(name "Criterion")
+	(string_value "label"))
+
+([ATHENA_HF_ProjectKB_Class15872] of  String
+
+	(name "Diagnostic_Term_Metaclass")
+	(string_value "%3ANAME"))
+
+([ATHENA_HF_ProjectKB_Class15873] of  String
+
+	(name "Medications_Metaclass")
+	(string_value "%3ANAME"))
+
+([ATHENA_HF_ProjectKB_Class15874] of  String
+
+	(name "Medical_Conditions_Metaclass")
+	(string_value "%3ANAME"))
+
+([ATHENA_HF_ProjectKB_Class15875] of  String
+
+	(name "Derived_Parameter_Metaclass")
+	(string_value "%3ANAME"))
+
+([ATHENA_HF_ProjectKB_Class15876] of  String
+
+	(name "Interval-Valued_AtomicTest_Metaclass")
+	(string_value "%3ANAME"))
+
+([ATHENA_HF_ProjectKB_Class15877] of  String
+
+	(name "Canonical_Terms_Metaclass")
+	(string_value "%3ANAME"))
+
+([ATHENA_HF_ProjectKB_Class15878] of  Map_Entry
+
+	(key "chaoProject")
+	(key_class "java.lang.String")
+	(value "annotation_ATHENA_HF.pprj")
+	(value_class "java.lang.String"))
+
+([ATHENA_HF_ProjectKB_Class15879] of  Map
+
+	(entries
+		[ATHENA_HF_ProjectKB_Class15880]
+		[ATHENA_HF_ProjectKB_Class15881]
+		[ATHENA_HF_ProjectKB_Class15882]
+		[ATHENA_HF_ProjectKB_Class15883]
+		[ATHENA_HF_ProjectKB_Class15884]
+		[ATHENA_HF_ProjectKB_Class15885]
+		[ATHENA_HF_ProjectKB_Class15886]
+		[ATHENA_HF_ProjectKB_Class15887]
+		[ATHENA_HF_ProjectKB_Class15888]
+		[ATHENA_HF_ProjectKB_Class15889]
+		[ATHENA_HF_ProjectKB_Class15890]
+		[ATHENA_HF_ProjectKB_Class15891]
+		[ATHENA_HF_ProjectKB_Class15892]
+		[ATHENA_HF_ProjectKB_Class15893]
+		[ATHENA_HF_ProjectKB_Class15894]))
+
+([ATHENA_HF_ProjectKB_Class15880] of  Map_Entry
+
+	(key "ATHENA_HF_Class50076")
+	(key_class "java.lang.String")
+	(value "168 289 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15881] of  Map_Entry
+
+	(key "ATHENA_HF_Class110390")
+	(key_class "java.lang.String")
+	(value "358 42 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15882] of  Map_Entry
+
+	(key "ATHENA_HF_Class50075")
+	(key_class "java.lang.String")
+	(value "33 82 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15883] of  Map_Entry
+
+	(key "ATHENA_HF_Class50079")
+	(key_class "java.lang.String")
+	(value "160 160 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15884] of  Map_Entry
+
+	(key "ATHENA_HF_Class70012")
+	(key_class "java.lang.String")
+	(value "48 264 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15885] of  Map_Entry
+
+	(key "ATHENA_HF_Class70011")
+	(key_class "java.lang.String")
+	(value "396 152 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15886] of  Map_Entry
+
+	(key "ATHENA_HF_Class70010")
+	(key_class "java.lang.String")
+	(value "335 230 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15887] of  Map_Entry
+
+	(key "ATHENA_HF_Class50003")
+	(key_class "java.lang.String")
+	(value "362 412 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15888] of  Map_Entry
+
+	(key "ATHENA_HF_Class50002")
+	(key_class "java.lang.String")
+	(value "240 505 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15889] of  Map_Entry
+
+	(key "ATHENA_HF_Class60006")
+	(key_class "java.lang.String")
+	(value "470 310 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15890] of  Map_Entry
+
+	(key "ATHENA_HF_Class60007")
+	(key_class "java.lang.String")
+	(value "505 79 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15891] of  Map_Entry
+
+	(key "ATHENA_HF_Class70009")
+	(key_class "java.lang.String")
+	(value "285 347 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15892] of  Map_Entry
+
+	(key "ATHENA_HF_Class50084")
+	(key_class "java.lang.String")
+	(value "260 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15893] of  Map_Entry
+
+	(key "ATHENA_HF_Class70008")
+	(key_class "java.lang.String")
+	(value "146 423 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15894] of  Map_Entry
+
+	(key "ATHENA_HF_Class110384")
+	(key_class "java.lang.String")
+	(value "126 19 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15895] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HF_Class50074.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HF_ProjectKB_Class15879")
+	(value_class "java.util.Map"))
+
+([ATHENA_HF_ProjectKB_Class15896] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.Boolean"))
+
+([ATHENA_HF_ProjectKB_Class15897] of  Map
+)
+
+([ATHENA_HF_ProjectKB_Class15898] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "ATHENA_HF_ProjectKB_Class15897")
+	(value_class "java.util.Map"))
+
+([ATHENA_HF_ProjectKB_Class15899] of  Map
+
+	(entries
+		[ATHENA_HF_ProjectKB_Class15900]
+		[ATHENA_HF_ProjectKB_Class15901]
+		[ATHENA_HF_ProjectKB_Class15902]
+		[ATHENA_HF_ProjectKB_Class15903]
+		[ATHENA_HF_ProjectKB_Class15904]
+		[ATHENA_HF_ProjectKB_Class15905]
+		[ATHENA_HF_ProjectKB_Class15906]
+		[ATHENA_HF_ProjectKB_Class15907]
+		[ATHENA_HF_ProjectKB_Class15908]
+		[ATHENA_HF_ProjectKB_Class15909]
+		[ATHENA_HF_ProjectKB_Class15910]))
+
+([ATHENA_HF_ProjectKB_Class15900] of  Map_Entry
+
+	(key "ATHENA_HF_Class50001")
+	(key_class "java.lang.String")
+	(value "-20 20 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15901] of  Map_Entry
+
+	(key "ATHENA_HF_Class70012")
+	(key_class "java.lang.String")
+	(value "36 384 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15902] of  Map_Entry
+
+	(key "ATHENA_HF_Class70011")
+	(key_class "java.lang.String")
+	(value "201 312 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15903] of  Map_Entry
+
+	(key "ATHENA_HF_Class70010")
+	(key_class "java.lang.String")
+	(value "333 222 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15904] of  Map_Entry
+
+	(key "ATHENA_HF_Class50003")
+	(key_class "java.lang.String")
+	(value "48 144 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15905] of  Map_Entry
+
+	(key "ATHENA_HF_Class50002")
+	(key_class "java.lang.String")
+	(value "120 0 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15906] of  Map_Entry
+
+	(key "ATHENA_HF_Class60006")
+	(key_class "java.lang.String")
+	(value "208 95 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15907] of  Map_Entry
+
+	(key "ATHENA_HF_Class60007")
+	(key_class "java.lang.String")
+	(value "161 234 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15908] of  Map_Entry
+
+	(key "ATHENA_HF_Class70009")
+	(key_class "java.lang.String")
+	(value "274 39 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15909] of  Map_Entry
+
+	(key "ATHENA_HF_Class70008")
+	(key_class "java.lang.String")
+	(value "-5 257 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15910] of  Map_Entry
+
+	(key "ATHENA_HF_Class110411")
+	(key_class "java.lang.String")
+	(value "426 140 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15911] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HF_Class50000.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HF_ProjectKB_Class15899")
+	(value_class "java.util.Map"))
+
+([ATHENA_HF_ProjectKB_Class15912] of  Map
+
+	(entries
+		[ATHENA_HF_ProjectKB_Class15913]
+		[ATHENA_HF_ProjectKB_Class15914]
+		[ATHENA_HF_ProjectKB_Class15915]
+		[ATHENA_HF_ProjectKB_Class15916]
+		[ATHENA_HF_ProjectKB_Class15917]
+		[ATHENA_HF_ProjectKB_Class15918]
+		[ATHENA_HF_ProjectKB_Class15919]
+		[ATHENA_HF_ProjectKB_Class15920]
+		[ATHENA_HF_ProjectKB_Class15921]
+		[ATHENA_HF_ProjectKB_Class15922]
+		[ATHENA_HF_ProjectKB_Class15923]
+		[ATHENA_HF_ProjectKB_Class15924]
+		[ATHENA_HF_ProjectKB_Class15925]))
+
+([ATHENA_HF_ProjectKB_Class15913] of  Map_Entry
+
+	(key "ATHENA_HF_Class50087")
+	(key_class "java.lang.String")
+	(value "100 240 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15914] of  Map_Entry
+
+	(key "ATHENA_HF_Class2")
+	(key_class "java.lang.String")
+	(value "22 17 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15915] of  Map_Entry
+
+	(key "ATHENA_HF_Class10003")
+	(key_class "java.lang.String")
+	(value "20 120 63 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15916] of  Map_Entry
+
+	(key "ATHENA_HF_Class50089")
+	(key_class "java.lang.String")
+	(value "320 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15917] of  Map_Entry
+
+	(key "ATHENA_HF_Class10004")
+	(key_class "java.lang.String")
+	(value "0 240 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15918] of  Map_Entry
+
+	(key "ATHENA_HF_Class10005")
+	(key_class "java.lang.String")
+	(value "0 420 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15919] of  Map_Entry
+
+	(key "ATHENA_HF_Class50097")
+	(key_class "java.lang.String")
+	(value "220 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15920] of  Map_Entry
+
+	(key "ATHENA_HF_Class30017")
+	(key_class "java.lang.String")
+	(value "280 20 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15921] of  Map_Entry
+
+	(key "ATHENA_HF_Class30009")
+	(key_class "java.lang.String")
+	(value "120 120 104 85")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15922] of  Map_Entry
+
+	(key "ATHENA_HF_Class60066")
+	(key_class "java.lang.String")
+	(value "120 420 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15923] of  Map_Entry
+
+	(key "ATHENA_HF_Class60069")
+	(key_class "java.lang.String")
+	(value "280 420 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15924] of  Map_Entry
+
+	(key "ATHENA_HF_Class60068")
+	(key_class "java.lang.String")
+	(value "140 20 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15925] of  Map_Entry
+
+	(key "ATHENA_HF_Class50009")
+	(key_class "java.lang.String")
+	(value "280 120 84 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HF_ProjectKB_Class15926] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HF_Class1.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HF_ProjectKB_Class15912")
+	(value_class "java.util.Map"))
+
+([ATHENA_HF_ProjectKB_Class23791] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_HF_ProjectKB_Class23792] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class23793] of  String
+
+	(name "tooltip_text"))
+
+([ATHENA_HF_ProjectKB_Class23794] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Insert:At:Current:Selection"))
+
+([ATHENA_HF_ProjectKB_Class23795] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Select:New:Insertions"))
+
+([ATHENA_HF_ProjectKB_Class23796] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Create:Form:For:New:Instances"))
+
+([ATHENA_HF_ProjectKB_Class23797] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Subwidget:Selection:Enabled"))
+
+([ATHENA_HF_ProjectKB_Class23798] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Summary:Panel"))
+
+([ATHENA_HF_ProjectKB_Class23799] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Number:Of:Subordinates"))
+
+([ATHENA_HF_ProjectKB_Class23800] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Subordinate:Browser:Keys"))
+
+([ATHENA_HF_ProjectKB_Class23801] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Use:Separators:Between:Subwidgets"))
+
+([ATHENA_HF_ProjectKB_Class23802] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Comtain:In:Vertical:Direction"))
+
+([ATHENA_HF_ProjectKB_Class23803] of  Integer
+
+	(integer_value 10)
+	(name ":Size:Of:Space:Between:Subwidgets"))
+
+([ATHENA_HF_ProjectKB_Class23804] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([ATHENA_HF_ProjectKB_Class23805] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([ATHENA_HF_ProjectKB_Class23806] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([ATHENA_HF_ProjectKB_Class23807] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([ATHENA_HF_ProjectKB_Class23808] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([ATHENA_HF_ProjectKB_Class23809] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Delete:Instance:Button"))
+
+([ATHENA_HF_ProjectKB_Class23810] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Prototype:Button"))
+
+([ATHENA_HF_ProjectKB_Class23811] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Move:Instance:Buttons"))
+
+([ATHENA_HF_ProjectKB_Class23812] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([ATHENA_HF_ProjectKB_Class23813] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([ATHENA_HF_ProjectKB_Class23814] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([ATHENA_HF_ProjectKB_Class23815] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([ATHENA_HF_ProjectKB_Class23816] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([ATHENA_HF_ProjectKB_Class23817] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([ATHENA_HF_ProjectKB_Class23818] of  String
+
+	(name ":Move:Instance:Buttons:Tooltip")
+	(string_value "Move the selected instance"))
+
+([ATHENA_HF_ProjectKB_Class23819] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([ATHENA_HF_ProjectKB_Class23820] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([ATHENA_HF_ProjectKB_Class3737] of  Widget
+
+	(is_hidden FALSE)
+	(name "Numeric_Term_Criterion")
+	(property_list [ATHENA_HF_ProjectKB_Class3740])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_HF_ProjectKB_Class3740] of  Property_List
+
+	(properties
+		[ATHENA_HF_ProjectKB_Class3741]
+		[ATHENA_HF_ProjectKB_Class3742]
+		[ATHENA_HF_ProjectKB_Class3744]
+		[ATHENA_HF_ProjectKB_Class3746]
+		[ATHENA_HF_ProjectKB_Class3748]
+		[ATHENA_HF_ProjectKB_Class3750]
+		[ATHENA_HF_ProjectKB_Class3752]
+		[ATHENA_HF_ProjectKB_Class3754]
+		[ATHENA_HF_ProjectKB_Class3756]
+		[ATHENA_HF_ProjectKB_Class3760]
+		[ATHENA_HF_ProjectKB_Class3762]
+		[ATHENA_HF_ProjectKB_Class3764]))
+
+([ATHENA_HF_ProjectKB_Class3741] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_HF_ProjectKB_Class3742] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ATHENA_HF_ProjectKB_Class3743])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_HF_ProjectKB_Class3743] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3744] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [ATHENA_HF_ProjectKB_Class3745])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([ATHENA_HF_ProjectKB_Class3745] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3746] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "default_value")
+	(property_list [ATHENA_HF_ProjectKB_Class3747])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 0)
+	(y 120))
+
+([ATHENA_HF_ProjectKB_Class3747] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3748] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "operator")
+	(property_list [ATHENA_HF_ProjectKB_Class3749])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 200)
+	(y 60))
+
+([ATHENA_HF_ProjectKB_Class3749] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3750] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [ATHENA_HF_ProjectKB_Class3751])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([ATHENA_HF_ProjectKB_Class3751] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3752] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "assume_if_no_value")
+	(property_list [ATHENA_HF_ProjectKB_Class3753])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 100)
+	(y 180))
+
+([ATHENA_HF_ProjectKB_Class3753] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3754] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "unit")
+	(property_list [ATHENA_HF_ProjectKB_Class3755])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 400)
+	(y 60))
+
+([ATHENA_HF_ProjectKB_Class3755] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3756] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "valid_window")
+	(property_list [ATHENA_HF_ProjectKB_Class3757])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 400)
+	(y 120))
+
+([ATHENA_HF_ProjectKB_Class3757] of  Property_List
+
+	(properties
+		[ATHENA_HF_ProjectKB_Class3758]
+		[ATHENA_HF_ProjectKB_Class3759]))
+
+([ATHENA_HF_ProjectKB_Class3758] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_HF_ProjectKB_Class3759] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_HF_ProjectKB_Class3760] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ATHENA_HF_ProjectKB_Class3761])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 300)
+	(y 60))
+
+([ATHENA_HF_ProjectKB_Class3761] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3762] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "aggregation_operator")
+	(property_list [ATHENA_HF_ProjectKB_Class3763])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 180))
+
+([ATHENA_HF_ProjectKB_Class3763] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class3764] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "numeric_domain_term")
+	(property_list [ATHENA_HF_ProjectKB_Class3765])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ATHENA_HF_ProjectKB_Class3765] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class5347] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_HF_ProjectKB_Class5348])
+	(widget_class_name "gov.va.test.opioidtesttool.TestingEnvironment"))
+
+([ATHENA_HF_ProjectKB_Class5348] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class5349] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_HF_ProjectKB_Class5350])
+	(widget_class_name "org.protege.owl.mm.ssm.ui.SpreadSheetMasterTab"))
+
+([ATHENA_HF_ProjectKB_Class5350] of  Property_List
+)
+
+([ATHENA_HF_ProjectKB_Class99] of  String
+
+	(name "SearchTab_Query"))
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[ATHENA_HF_ProjectKB_Class15869]
+		[ATHENA_HF_ProjectKB_Class15870]
+		[ATHENA_HF_ProjectKB_Class15871]
+		[ATHENA_HF_ProjectKB_Class15872]
+		[ATHENA_HF_ProjectKB_Class15873]
+		[ATHENA_HF_ProjectKB_Class15874]
+		[ATHENA_HF_ProjectKB_Class15875]
+		[ATHENA_HF_ProjectKB_Class15876]
+		[ATHENA_HF_ProjectKB_Class15877]))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([CREATION_TIMESTAMP_WIDGET] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([CREATOR_WIDGET] of  Widget
+
+	(name ":CREATOR"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [INSTANCE_ANNOTATION_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCE_ANNOTATION_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[ANNOTATED_INSTANCE_WIDGET]
+		[CREATOR_WIDGET]
+		[CREATION_TIMESTAMP_WIDGET]
+		[ANNOTATION_TEXT_WIDGET]
+		[ATHENA_HF_ProjectKB_Class23791]))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_134436_Class7560] of  Widget
+
+	(height 805)
+	(is_hidden FALSE)
+	(name "Management_Guideline")
+	(property_list [KB_134436_Class7561])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 750)
+	(x 0)
+	(y 0))
+
+([KB_134436_Class7561] of  Property_List
+
+	(properties
+		[KB_134436_Class7562]
+		[KB_134436_Class7564]
+		[KB_134436_Class7569]
+		[KB_134436_Class7598]
+		[KB_134436_Class7600]
+		[KB_134436_Class7611]
+		[KB_134436_Class7614]
+		[KB_134436_Class7616]
+		[KB_134436_Class7627]
+		[KB_134436_Class7629]
+		[KB_134436_Class7631]
+		[KB_134436_Class7635]))
+
+([KB_134436_Class7562] of  Widget
+
+	(height 120)
+	(name "title")
+	(property_list [KB_134436_Class7563])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([KB_134436_Class7563] of  Property_List
+)
+
+([KB_134436_Class7564] of  Widget
+
+	(height 120)
+	(name "authors")
+	(property_list [KB_134436_Class7565])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 230)
+	(x 250)
+	(y 60))
+
+([KB_134436_Class7565] of  Property_List
+
+	(properties
+		[KB_134436_Class7566]
+		[KB_134436_Class7567]
+		[KB_134436_Class7568]))
+
+([KB_134436_Class7566] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Edit the selected strings"))
+
+([KB_134436_Class7567] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new string"))
+
+([KB_134436_Class7568] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_134436_Class7569] of  Widget
+
+	(height 60)
+	(name "clinical_algorithm")
+	(property_list [KB_134436_Class7570])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 250))
+
+([KB_134436_Class7570] of  Property_List
+
+	(properties
+		[KB_134436_Class7571]
+		[KB_134436_Class7572]
+		[KB_134436_Class7573]
+		[KB_134436_Class7574]
+		[KB_134436_Class7575]
+		[KB_134436_Class7576]
+		[KB_134436_Class7577]
+		[KB_134436_Class7578]
+		[KB_134436_Class7579]
+		[KB_134436_Class7580]
+		[KB_134436_Class7581]
+		[KB_134436_Class7582]
+		[KB_134436_Class7583]
+		[KB_134436_Class7584]
+		[KB_134436_Class7585]
+		[KB_134436_Class7586]
+		[KB_134436_Class7587]
+		[KB_134436_Class7588]
+		[KB_134436_Class7589]
+		[KB_134436_Class7590]
+		[KB_134436_Class7591]
+		[KB_134436_Class7592]
+		[KB_134436_Class7593]
+		[KB_134436_Class7594]
+		[KB_134436_Class7595]
+		[KB_134436_Class7596]
+		[KB_134436_Class7597]))
+
+([KB_134436_Class7571] of  String
+
+	(name "Followed_By")
+	(string_value "Color=Red\\=0\\&Green\\=0\\&Blue\\=255&Shape=0&StartingArrow=0&EndingArrow=1"))
+
+([KB_134436_Class7572] of  String
+
+	(name "Selection")
+	(string_value "Color=Red\\=0\\&Green\\=0\\&Blue\\=51&Shape=1&StartingArrow=0&EndingArrow=1"))
+
+([KB_134436_Class7573] of  String
+
+	(name "Branch_Step")
+	(string_value "Color=Red\\=204\\&Green\\=204\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&selection_method\\=F\\&followed_by\\=F\\&Name\\=F\\&start_constraint\\=F"))
+
+([KB_134436_Class7574] of  String
+
+	(name "Consultation_Action_Step")
+	(string_value "Color=Red\\=0\\&Green\\=0\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&Name\\=F\\&rule_in\\=F\\&rule_out\\=F\\&action\\=F\\&next_step\\=F"))
+
+([KB_134436_Class7575] of  String
+
+	(name "Synchronization_Step")
+	(string_value "Color=Red\\=255\\&Green\\=204\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&followed_by\\=F\\&Name\\=F\\&continuation_condition\\=F\\&branch_point\\=F\\&continuation\\=F"))
+
+([KB_134436_Class7576] of  String
+
+	(name "Extended_Action_Choice")
+	(string_value "Color=Red\\=255\\&Green\\=204\\&Blue\\=204&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&strict_rule_in_condition\\=F\\&steps\\=F\\&followed_by\\=F\\&Name\\=F\\&default_preference\\=F\\&rule_out_condition\\=F\\&strict_rule_out_condition\\=F\\&rule_in_condition\\=F"))
+
+([KB_134436_Class7577] of  String
+
+	(name "Elementary_Action_Step")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&followed_by\\=F\\&Name\\=F\\&previous_steps\\=F\\&start_constraint\\=F\\&action\\=F"))
+
+([KB_134436_Class7578] of  String
+
+	(name "Scenario")
+	(string_value "Color=Red\\=153\\&Green\\=255\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&precondition\\=F\\&consultation_template\\=F\\&followed_by\\=F\\&Name\\=F\\&new_encounter\\=F\\&exception_handlers\\=F"))
+
+([KB_134436_Class7579] of  String
+
+	(name "Condition_Step")
+	(string_value "Color=Red\\=153\\&Green\\=255\\&Blue\\=153&Shape=1&VisibleSlots=references\\=T\\&otherwise\\=F\\&intention\\=F\\&Name\\=F\\&condition\\=F\\&destination\\=F"))
+
+([KB_134436_Class7580] of  String
+
+	(name "Subguideline_Choice")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=1&VisibleSlots=references\\=T\\&subguideline\\=F\\&intention\\=F\\&strict_rule_in_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&default_preference\\=F\\&rule_out_condition\\=F\\&strict_rule_out_condition\\=F\\&rule_in_condition\\=F"))
+
+([KB_134436_Class7581] of  String
+
+	(name "Consultation_Branch_Step")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=1&VisibleSlots=branches\\=T\\&references\\=F\\&intention\\=F\\&selection_method\\=F\\&Name\\=F\\&order_constraint\\=F"))
+
+([KB_134436_Class7582] of  String
+
+	(name "Extended_Action_Step")
+	(string_value "Color=Red\\=255\\&Green\\=255\\&Blue\\=102&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&steps\\=F\\&followed_by\\=F\\&Name\\=F\\&previous_steps\\=F\\&start_constraint\\=F"))
+
+([KB_134436_Class7583] of  String
+
+	(name "Choice_Step")
+	(string_value "Color=Red\\=255\\&Green\\=153\\&Blue\\=153&Shape=1&VisibleSlots=branches\\=T\\&references\\=F\\&intention\\=F\\&Name\\=F\\&previous_scenarios\\=F"))
+
+([KB_134436_Class7584] of  String
+
+	(name "Action_Choice")
+	(string_value "Color=Red\\=255\\&Green\\=102\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&strict_rule_in_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&default_preference\\=F\\&rule_out_condition\\=F\\&strict_rule_out_condition\\=F\\&actions\\=F\\&rule_in_condition\\=F"))
+
+([KB_134436_Class7585] of  String
+
+	(name "Iteration_Step")
+	(string_value "Color=Red\\=255\\&Green\\=204\\&Blue\\=204&Shape=0&VisibleSlots=allowed_offset\\=T\\&interval\\=F\\&intention\\=F\\&abort_condition\\=F\\&previous_steps\\=F\\&references\\=F\\&scenario\\=F\\&duration\\=F\\&followed_by\\=F\\&at_time\\=F\\&Name\\=F\\&action\\=F\\&start_constraint\\=F"))
+
+([KB_134436_Class7586] of  String
+
+	(name "Repeat_Subguideline_Step")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=0&VisibleSlots=frequency\\=T\\&intention\\=F\\&subguideline\\=F\\&abort_condition\\=F\\&previous_steps\\=F\\&references\\=F\\&scenario\\=F\\&continue_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&start_constraint\\=F"))
+
+([KB_134436_Class7587] of  String
+
+	(name "Repeat_Actions_Step")
+	(string_value "Color=Red\\=153\\&Green\\=255\\&Blue\\=255&Shape=0&VisibleSlots=frequency\\=T\\&intention\\=F\\&abort_condition\\=F\\&previous_steps\\=F\\&references\\=F\\&scenario\\=F\\&continue_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&action\\=F\\&start_constraint\\=F"))
+
+([KB_134436_Class7588] of  String
+
+	(name "Subguideline_Step")
+	(string_value "Color=Red\\=204\\&Green\\=204\\&Blue\\=255&Shape=0&VisibleSlots=intention\\=T\\&subguideline\\=F\\&previous_steps\\=F\\&references\\=F\\&followed_by\\=F\\&Name\\=F\\&start_constraint\\=F"))
+
+([KB_134436_Class7589] of  Property_List
+
+	(name "Management_Diagram"))
+
+([KB_134436_Class7590] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_134436_Class7591] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_134436_Class7592] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_134436_Class7593] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_134436_Class7594] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_134436_Class7595] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_134436_Class7596] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_134436_Class7597] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_134436_Class7598] of  Widget
+
+	(height 60)
+	(name "version")
+	(property_list [KB_134436_Class7599])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([KB_134436_Class7599] of  Property_List
+)
+
+([KB_134436_Class7600] of  Widget
+
+	(height 130)
+	(name "eligibility_criteria")
+	(property_list [KB_134436_Class7601])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 230)
+	(x 250)
+	(y 180))
+
+([KB_134436_Class7601] of  Property_List
+
+	(properties
+		[KB_134436_Class7602]
+		[KB_134436_Class7603]
+		[KB_134436_Class7604]
+		[KB_134436_Class7605]
+		[KB_134436_Class7606]
+		[KB_134436_Class7607]
+		[KB_134436_Class7608]
+		[KB_134436_Class7609]
+		[KB_134436_Class7610]))
+
+([KB_134436_Class7602] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_134436_Class7603] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_134436_Class7604] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_134436_Class7605] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_134436_Class7606] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_134436_Class7607] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_134436_Class7608] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_134436_Class7609] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_134436_Class7610] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_134436_Class7611] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_134436_Class7612]
+		[KB_134436_Class7613]))
+
+([KB_134436_Class7612] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_134436_Class7613] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([KB_134436_Class7614] of  Widget
+
+	(height 60)
+	(label "Identifier")
+	(name "label")
+	(property_list [KB_134436_Class7615])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_134436_Class7615] of  Property_List
+)
+
+([KB_134436_Class7616] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "goal")
+	(property_list [KB_134436_Class7617])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 310))
+
+([KB_134436_Class7617] of  Property_List
+
+	(properties
+		[KB_134436_Class7618]
+		[KB_134436_Class7619]
+		[KB_134436_Class7620]
+		[KB_134436_Class7621]
+		[KB_134436_Class7622]
+		[KB_134436_Class7623]
+		[KB_134436_Class7624]
+		[KB_134436_Class7625]
+		[KB_134436_Class7626]))
+
+([KB_134436_Class7618] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_134436_Class7619] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_134436_Class7620] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_134436_Class7621] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_134436_Class7622] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_134436_Class7623] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_134436_Class7624] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_134436_Class7625] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_134436_Class7626] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_134436_Class7627] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_134436_Class7628])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_134436_Class7628] of  Property_List
+)
+
+([KB_134436_Class7629] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "assume_if_no_goal_value")
+	(property_list [KB_134436_Class7630])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_134436_Class7630] of  Property_List
+)
+
+([KB_134436_Class7631] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "patient_characterization")
+	(property_list [KB_134436_Class7632])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 230)
+	(x 250)
+	(y 310))
+
+([KB_134436_Class7632] of  Property_List
+
+	(properties
+		[KB_134436_Class7633]
+		[KB_134436_Class7634]))
+
+([KB_134436_Class7633] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_134436_Class7634] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_134436_Class7635] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "subguidelines")
+	(property_list [KB_134436_Class7636])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 430))
+
+([KB_134436_Class7636] of  Property_List
+
+	(properties
+		[KB_134436_Class7637]
+		[KB_134436_Class7638]))
+
+([KB_134436_Class7637] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_134436_Class7638] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_492667_Class0] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([KB_492667_Class1] of  Map
+
+	(entries
+		[ATHENA_HF_ProjectKB_Class15878]
+		[ATHENA_HF_ProjectKB_Class15895]
+		[ATHENA_HF_ProjectKB_Class15896]
+		[ATHENA_HF_ProjectKB_Class15898]
+		[ATHENA_HF_ProjectKB_Class15911]
+		[ATHENA_HF_ProjectKB_Class15926])
+	(referenced_maps
+		[ATHENA_HF_ProjectKB_Class15912]
+		[ATHENA_HF_ProjectKB_Class15899]
+		[ATHENA_HF_ProjectKB_Class15879]
+		[ATHENA_HF_ProjectKB_Class15897]))
+
+([KB_492667_Class75] of  Property_List
+
+	(properties
+		[KB_492667_Class76]
+		[KB_492667_Class77]))
+
+([KB_492667_Class76] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_492667_Class77] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_492667_Class78] of  Property_List
+)
+
+([KB_492667_Class79] of  Property_List
+)
+
+([KB_492667_Class80] of  Property_List
+
+	(properties
+		[KB_492667_Class81]
+		[KB_492667_Class82]))
+
+([KB_492667_Class81] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([KB_492667_Class82] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([KB_492667_Class83] of  Property_List
+)
+
+([KB_492667_Class84] of  Property_List
+
+	(name "layout properties"))
+
+([KB_492667_Class85] of  Property_List
+)
+
+([KB_492667_Class86] of  Property_List
+)
+
+([KB_492667_Class87] of  Property_List
+)
+
+([KB_492667_Class88] of  Property_List
+)
+
+([KB_492667_Class89] of  Property_List
+)
+
+([KB_492667_Class90] of  Property_List
+)
+
+([KB_492667_Class91] of  Property_List
+)
+
+([KB_492667_Class92] of  Property_List
+)
+
+([KB_492667_Class93] of  Property_List
+)
+
+([KB_492667_Class94] of  Property_List
+)
+
+([KB_492667_Class95] of  Property_List
+)
+
+([KB_492667_Class96] of  Property_List
+
+	(properties [ATHENA_HF_ProjectKB_Class99]))
+
+([KB_492667_Class97] of  String
+
+	(name "classes_file_name")
+	(string_value "ATHENA_HF.pont"))
+
+([KB_492667_Class98] of  String
+
+	(name "instances_file_name")
+	(string_value "ATHENA_HF.pins"))
+
+([KB_873323_Class2804] of  Widget
+
+	(is_hidden FALSE)
+	(name "Guideline_View")
+	(property_list [KB_873323_Class2805])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_873323_Class2805] of  Property_List
+
+	(properties
+		[KB_873323_Class2806]
+		[KB_873323_Class2809]
+		[KB_873323_Class2813]
+		[KB_873323_Class2817]))
+
+([KB_873323_Class2806] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_873323_Class2807]
+		[KB_873323_Class2808]))
+
+([KB_873323_Class2807] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_873323_Class2808] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([KB_873323_Class2809] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "guideline_drugs")
+	(property_list [KB_873323_Class2810])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 270)
+	(x 250)
+	(y 430))
+
+([KB_873323_Class2810] of  Property_List
+
+	(properties
+		[KB_873323_Class2811]
+		[KB_873323_Class2812]))
+
+([KB_873323_Class2811] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_873323_Class2812] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_873323_Class2813] of  Widget
+
+	(height 420)
+	(is_hidden FALSE)
+	(label "Guideline")
+	(name "guideline")
+	(property_list [KB_873323_Class2814])
+	(widget_class_name "edu.stanford.smi.protegex.widget.contains.ContainsWidget")
+	(width 520)
+	(x 0)
+	(y 0))
+
+([KB_873323_Class2814] of  Property_List
+
+	(properties
+		[ATHENA_HF_ProjectKB_Class23793]
+		[ATHENA_HF_ProjectKB_Class23794]
+		[ATHENA_HF_ProjectKB_Class23795]
+		[ATHENA_HF_ProjectKB_Class23796]
+		[ATHENA_HF_ProjectKB_Class23797]
+		[ATHENA_HF_ProjectKB_Class23798]
+		[ATHENA_HF_ProjectKB_Class23799]
+		[ATHENA_HF_ProjectKB_Class23800]
+		[ATHENA_HF_ProjectKB_Class23801]
+		[ATHENA_HF_ProjectKB_Class23802]
+		[ATHENA_HF_ProjectKB_Class23803]
+		[ATHENA_HF_ProjectKB_Class23804]
+		[ATHENA_HF_ProjectKB_Class23805]
+		[ATHENA_HF_ProjectKB_Class23806]
+		[ATHENA_HF_ProjectKB_Class23807]
+		[ATHENA_HF_ProjectKB_Class23808]
+		[ATHENA_HF_ProjectKB_Class23809]
+		[ATHENA_HF_ProjectKB_Class23810]
+		[ATHENA_HF_ProjectKB_Class23811]
+		[ATHENA_HF_ProjectKB_Class23812]
+		[ATHENA_HF_ProjectKB_Class23813]
+		[ATHENA_HF_ProjectKB_Class23814]
+		[ATHENA_HF_ProjectKB_Class23815]
+		[ATHENA_HF_ProjectKB_Class23816]
+		[ATHENA_HF_ProjectKB_Class23817]
+		[ATHENA_HF_ProjectKB_Class23818]
+		[ATHENA_HF_ProjectKB_Class23819]
+		[ATHENA_HF_ProjectKB_Class23820]))
+
+([KB_873323_Class2817] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "drug_usages")
+	(property_list [KB_873323_Class2818])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 430))
+
+([KB_873323_Class2818] of  Property_List
+
+	(properties
+		[KB_873323_Class2819]
+		[KB_873323_Class2820]))
+
+([KB_873323_Class2819] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_873323_Class2820] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_879577_Class5140] of  Map
+
+	(entries
+		[KB_879577_Class5144]
+		[KB_879577_Class5145]
+		[KB_879577_Class5146]
+		[KB_879577_Class5147]
+		[KB_879577_Class5149]
+		[KB_879577_Class5155]
+		[KB_879577_Class5156]
+		[KB_879577_Class5157]
+		[KB_879577_Class5187]
+		[KB_879577_Class5189]
+		[KB_879577_Class5198]
+		[KB_879577_Class5200]
+		[KB_879577_Class5202]
+		[KB_879577_Class5236]
+		[KB_879577_Class5240]
+		[KB_879577_Class5242]
+		[KB_879577_Class5246]
+		[KB_879577_Class5247]
+		[KB_879577_Class5248]
+		[KB_879577_Class5249]
+		[KB_879577_Class5265]
+		[KB_879577_Class5271]
+		[KB_879577_Class5275]
+		[KB_879577_Class5357]
+		[KB_879577_Class5358])
+	(referenced_maps
+		[KB_879577_Class5201]
+		[KB_879577_Class5203]
+		[KB_879577_Class5188]
+		[KB_879577_Class5199]
+		[KB_879577_Class5353]
+		[KB_879577_Class5319]
+		[KB_879577_Class5158]
+		[KB_879577_Class5283]
+		[KB_879577_Class5178]
+		[KB_879577_Class5272]
+		[KB_879577_Class5237]
+		[KB_879577_Class5243]
+		[KB_879577_Class5148]
+		[KB_879577_Class5250]
+		[KB_879577_Class5241]
+		[KB_879577_Class5276]
+		[KB_879577_Class5266]
+		[KB_879577_Class5150]
+		[KB_879577_Class5278]
+		[KB_879577_Class5190]
+		[KB_879577_Class5141]))
+
+([KB_879577_Class5141] of  Map
+
+	(entries
+		[KB_879577_Class5142]
+		[KB_879577_Class5143]))
+
+([KB_879577_Class5142] of  Map_Entry
+
+	(key "athena_hypertension_372678")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5143] of  Map_Entry
+
+	(key "athena_hypertension_371795")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5144] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_371794.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5141")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5145] of  Map_Entry
+
+	(key "chaoProject")
+	(key_class "java.lang.String")
+	(value "annotation_library.pprj")
+	(value_class "java.lang.String"))
+
+([KB_879577_Class5146] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_879577_Class5147] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_879577_Class5148] of  Map
+)
+
+([KB_879577_Class5149] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5148")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5150] of  Map
+
+	(entries
+		[KB_879577_Class5151]
+		[KB_879577_Class5152]
+		[KB_879577_Class5153]
+		[KB_879577_Class5154]))
+
+([KB_879577_Class5151] of  Map_Entry
+
+	(key "athena_hypertension_150133")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5152] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00385")
+	(key_class "java.lang.String")
+	(value "220 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5153] of  Map_Entry
+
+	(key "athena_hypertension_132287")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5154] of  Map_Entry
+
+	(key "athena_hypertension_100859")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5155] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_runtime_INSTANCE_00384.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5150")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5156] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.Boolean"))
+
+([KB_879577_Class5157] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_879577_Class5158] of  Map
+
+	(entries
+		[KB_879577_Class5159]
+		[KB_879577_Class5160]
+		[KB_879577_Class5161]
+		[KB_879577_Class5162]
+		[KB_879577_Class5163]
+		[KB_879577_Class5164]
+		[KB_879577_Class5165]
+		[KB_879577_Class5166]
+		[KB_879577_Class5167]
+		[KB_879577_Class5168]
+		[KB_879577_Class5169]
+		[KB_879577_Class5170]
+		[KB_879577_Class5171]
+		[KB_879577_Class5172]
+		[KB_879577_Class5173]
+		[KB_879577_Class5174]
+		[KB_879577_Class5175]
+		[KB_879577_Class5176]
+		[KB_879577_Class5177]
+		[KB_879577_Class5180]
+		[KB_879577_Class5181]
+		[KB_879577_Class5182]
+		[KB_879577_Class5183]
+		[KB_879577_Class5184]
+		[KB_879577_Class5185]
+		[KB_879577_Class5186]))
+
+([KB_879577_Class5159] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40034")
+	(key_class "java.lang.String")
+	(value "300 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5160] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40051")
+	(key_class "java.lang.String")
+	(value "360 480 57 64")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5161] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40053")
+	(key_class "java.lang.String")
+	(value "200 500 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5162] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40057")
+	(key_class "java.lang.String")
+	(value "180 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5163] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30019")
+	(key_class "java.lang.String")
+	(value "180 620 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5164] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40003")
+	(key_class "java.lang.String")
+	(value "340 580 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5165] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_10001")
+	(key_class "java.lang.String")
+	(value "480 260 80 81")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5166] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40005")
+	(key_class "java.lang.String")
+	(value "40 840 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5167] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_10000")
+	(key_class "java.lang.String")
+	(value "40 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5168] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40006")
+	(key_class "java.lang.String")
+	(value "220 820 75 74")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5169] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40007")
+	(key_class "java.lang.String")
+	(value "440 720 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5170] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40008")
+	(key_class "java.lang.String")
+	(value "520 620 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5171] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40009")
+	(key_class "java.lang.String")
+	(value "540 740 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5172] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40060")
+	(key_class "java.lang.String")
+	(value "440 380 85 74")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5173] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40020")
+	(key_class "java.lang.String")
+	(value "360 920 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5174] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30014")
+	(key_class "java.lang.String")
+	(value "20 620 93 76")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5175] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30012")
+	(key_class "java.lang.String")
+	(value "400 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5176] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40045")
+	(key_class "java.lang.String")
+	(value "40 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5177] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40046")
+	(key_class "java.lang.String")
+	(value "40 480 60 58")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5178] of  Map
+
+	(entries [KB_879577_Class5179]))
+
+([KB_879577_Class5179] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "146,653")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([KB_879577_Class5180] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30057")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5178")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5181] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30026")
+	(key_class "java.lang.String")
+	(value "340 720 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5182] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_170010")
+	(key_class "java.lang.String")
+	(value "740 800 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5183] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_70076")
+	(key_class "java.lang.String")
+	(value "500 120 60 61")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5184] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_20001")
+	(key_class "java.lang.String")
+	(value "160 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5185] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40017")
+	(key_class "java.lang.String")
+	(value "660 880 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5186] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40014")
+	(key_class "java.lang.String")
+	(value "640 660 91 83")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5187] of  Map_Entry
+
+	(key "InstanceGraphWidget.NCEPATPIII_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5158")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5188] of  Map
+)
+
+([KB_879577_Class5189] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5188")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5190] of  Map
+
+	(entries
+		[KB_879577_Class5191]
+		[KB_879577_Class5192]
+		[KB_879577_Class5193]
+		[KB_879577_Class5194]
+		[KB_879577_Class5195]
+		[KB_879577_Class5196]
+		[KB_879577_Class5197]))
+
+([KB_879577_Class5191] of  Map_Entry
+
+	(key "athena_hypertension_376366")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5192] of  Map_Entry
+
+	(key "athena_hypertension_09854")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5193] of  Map_Entry
+
+	(key "athena_hypertension_192994")
+	(key_class "java.lang.String")
+	(value "519 88 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5194] of  Map_Entry
+
+	(key "athena_hypertension_132302")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5195] of  Map_Entry
+
+	(key "athena_hypertension_394085")
+	(key_class "java.lang.String")
+	(value "57 71 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5196] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00436")
+	(key_class "java.lang.String")
+	(value "270 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5197] of  Map_Entry
+
+	(key "athena_hypertension_150112")
+	(key_class "java.lang.String")
+	(value "520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5198] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_runtime_INSTANCE_00429.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5190")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5199] of  Map
+)
+
+([KB_879577_Class5200] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5199")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5201] of  Map
+)
+
+([KB_879577_Class5202] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5201")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5203] of  Map
+
+	(entries
+		[KB_879577_Class5204]
+		[KB_879577_Class5205]
+		[KB_879577_Class5206]
+		[KB_879577_Class5207]
+		[KB_879577_Class5208]
+		[KB_879577_Class5209]
+		[KB_879577_Class5210]
+		[KB_879577_Class5211]
+		[KB_879577_Class5212]
+		[KB_879577_Class5213]
+		[KB_879577_Class5214]
+		[KB_879577_Class5215]
+		[KB_879577_Class5216]
+		[KB_879577_Class5217]
+		[KB_879577_Class5218]
+		[KB_879577_Class5219]
+		[KB_879577_Class5220]
+		[KB_879577_Class5221]
+		[KB_879577_Class5222]
+		[KB_879577_Class5223]
+		[KB_879577_Class5224]
+		[KB_879577_Class5225]
+		[KB_879577_Class5226]
+		[KB_879577_Class5227]
+		[KB_879577_Class5228]
+		[KB_879577_Class5229]
+		[KB_879577_Class5230]
+		[KB_879577_Class5231]
+		[KB_879577_Class5232]
+		[KB_879577_Class5233]
+		[KB_879577_Class5234]
+		[KB_879577_Class5235]))
+
+([KB_879577_Class5204] of  Map_Entry
+
+	(key "athena_hypertension_00116")
+	(key_class "java.lang.String")
+	(value "1720 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5205] of  Map_Entry
+
+	(key "athena_hypertension_00530")
+	(key_class "java.lang.String")
+	(value "2170 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5206] of  Map_Entry
+
+	(key "athena_hypertension_04874")
+	(key_class "java.lang.String")
+	(value "3370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5207] of  Map_Entry
+
+	(key "athena_runtime_14962")
+	(key_class "java.lang.String")
+	(value "2920 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5208] of  Map_Entry
+
+	(key "athena_hypertension_272144")
+	(key_class "java.lang.String")
+	(value "3970 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5209] of  Map_Entry
+
+	(key "athena_hypertension_00615")
+	(key_class "java.lang.String")
+	(value "2470 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5210] of  Map_Entry
+
+	(key "athena_hypertension_272149")
+	(key_class "java.lang.String")
+	(value "4120 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5211] of  Map_Entry
+
+	(key "athena_hypertension_00057")
+	(key_class "java.lang.String")
+	(value "1270 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5212] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00085")
+	(key_class "java.lang.String")
+	(value "820 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5213] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00080")
+	(key_class "java.lang.String")
+	(value "670 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5214] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00026")
+	(key_class "java.lang.String")
+	(value "520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5215] of  Map_Entry
+
+	(key "athena_hypertension_00017")
+	(key_class "java.lang.String")
+	(value "1870 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5216] of  Map_Entry
+
+	(key "athena_hypertension_00070")
+	(key_class "java.lang.String")
+	(value "1120 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5217] of  Map_Entry
+
+	(key "athena_hypertension_113051")
+	(key_class "java.lang.String")
+	(value "3670 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5218] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00031")
+	(key_class "java.lang.String")
+	(value "2320 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5219] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00032")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5220] of  Map_Entry
+
+	(key "athena_hypertension_00245")
+	(key_class "java.lang.String")
+	(value "2020 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5221] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00304")
+	(key_class "java.lang.String")
+	(value "970 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5222] of  Map_Entry
+
+	(key "athena_hypertension_00102")
+	(key_class "java.lang.String")
+	(value "1570 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5223] of  Map_Entry
+
+	(key "athena_hypertension_445157")
+	(key_class "java.lang.String")
+	(value "4270 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5224] of  Map_Entry
+
+	(key "athena_hypertension_00642")
+	(key_class "java.lang.String")
+	(value "2770 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5225] of  Map_Entry
+
+	(key "athena_hypertension_508899")
+	(key_class "java.lang.String")
+	(value "4570 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5226] of  Map_Entry
+
+	(key "athena_hypertension_101791")
+	(key_class "java.lang.String")
+	(value "3520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5227] of  Map_Entry
+
+	(key "athena_hypertension_00603")
+	(key_class "java.lang.String")
+	(value "2320 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5228] of  Map_Entry
+
+	(key "athena_hypertension_00627")
+	(key_class "java.lang.String")
+	(value "2620 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5229] of  Map_Entry
+
+	(key "athena_hypertension_00067")
+	(key_class "java.lang.String")
+	(value "1420 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5230] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00029")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5231] of  Map_Entry
+
+	(key "athena_hypertension_501010")
+	(key_class "java.lang.String")
+	(value "4420 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5232] of  Map_Entry
+
+	(key "athena_hypertension_04864")
+	(key_class "java.lang.String")
+	(value "3220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5233] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00068")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5234] of  Map_Entry
+
+	(key "athena_hypertension_119576")
+	(key_class "java.lang.String")
+	(value "3820 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5235] of  Map_Entry
+
+	(key "athena_hypertension_04822")
+	(key_class "java.lang.String")
+	(value "3070 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5236] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_INSTANCE_00030.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5203")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5237] of  Map
+
+	(entries
+		[KB_879577_Class5238]
+		[KB_879577_Class5239]))
+
+([KB_879577_Class5238] of  Map_Entry
+
+	(key "athena_hypertension_360316")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "85 14 160 90")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5239] of  Map_Entry
+
+	(key "athena_hypertension_510167")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "349 246 213 137")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5240] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5237")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5241] of  Map
+)
+
+([KB_879577_Class5242] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5241")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5243] of  Map
+
+	(entries
+		[KB_879577_Class5244]
+		[KB_879577_Class5245]))
+
+([KB_879577_Class5244] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_90011")
+	(key_class "java.lang.String")
+	(value "140 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5245] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_90012")
+	(key_class "java.lang.String")
+	(value "0 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5246] of  Map_Entry
+
+	(key "InstanceGraphWidget.NCEPATPIII_Instance_90009.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5243")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5247] of  Map_Entry
+
+	(key "collab.hide.archived")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([KB_879577_Class5248] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_879577_Class5249] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_879577_Class5250] of  Map
+
+	(entries
+		[KB_879577_Class5251]
+		[KB_879577_Class5252]
+		[KB_879577_Class5253]
+		[KB_879577_Class5254]
+		[KB_879577_Class5255]
+		[KB_879577_Class5256]
+		[KB_879577_Class5257]
+		[KB_879577_Class5258]
+		[KB_879577_Class5259]
+		[KB_879577_Class5260]
+		[KB_879577_Class5261]
+		[KB_879577_Class5262]
+		[KB_879577_Class5263]
+		[KB_879577_Class5264]))
+
+([KB_879577_Class5251] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00304")
+	(key_class "java.lang.String")
+	(value "1120 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5252] of  Map_Entry
+
+	(key "athena_hypertension_00234")
+	(key_class "java.lang.String")
+	(value "1420 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5253] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00003")
+	(key_class "java.lang.String")
+	(value "520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5254] of  Map_Entry
+
+	(key "athena_hypertension_101772")
+	(key_class "java.lang.String")
+	(value "1720 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5255] of  Map_Entry
+
+	(key "athena_hypertension_00182")
+	(key_class "java.lang.String")
+	(value "1270 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5256] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00029")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5257] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00013")
+	(key_class "java.lang.String")
+	(value "670 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5258] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00025")
+	(key_class "java.lang.String")
+	(value "820 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5259] of  Map_Entry
+
+	(key "athena_hypertension_04853")
+	(key_class "java.lang.String")
+	(value "1570 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5260] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00068")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5261] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00055")
+	(key_class "java.lang.String")
+	(value "970 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5262] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00010")
+	(key_class "java.lang.String")
+	(value "970 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5263] of  Map_Entry
+
+	(key "athena_hypertension_508270")
+	(key_class "java.lang.String")
+	(value "1870 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5264] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00032")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5265] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_INSTANCE_00037.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5250")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5266] of  Map
+
+	(entries
+		[KB_879577_Class5267]
+		[KB_879577_Class5268]
+		[KB_879577_Class5269]
+		[KB_879577_Class5270]))
+
+([KB_879577_Class5267] of  Map_Entry
+
+	(key "athena_hypertension_320750")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5268] of  Map_Entry
+
+	(key "athena_hypertension_303339")
+	(key_class "java.lang.String")
+	(value "77 249 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5269] of  Map_Entry
+
+	(key "athena_hypertension_301086")
+	(key_class "java.lang.String")
+	(value "198 21 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5270] of  Map_Entry
+
+	(key "athena_hypertension_178160")
+	(key_class "java.lang.String")
+	(value "254 162 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5271] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_320679.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5266")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5272] of  Map
+
+	(entries
+		[KB_879577_Class5273]
+		[KB_879577_Class5274]))
+
+([KB_879577_Class5273] of  Map_Entry
+
+	(key "athena_runtime_15093")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5274] of  Map_Entry
+
+	(key "athena_runtime_00088")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5275] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_runtime_00087.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5272")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5276] of  Map
+
+	(entries
+		[KB_879577_Class5277]
+		[KB_879577_Class5280]
+		[KB_879577_Class5281]
+		[KB_879577_Class5282]
+		[KB_879577_Class5285]
+		[KB_879577_Class5286]
+		[KB_879577_Class5287]
+		[KB_879577_Class5288]
+		[KB_879577_Class5289]
+		[KB_879577_Class5290]
+		[KB_879577_Class5291]
+		[KB_879577_Class5292]
+		[KB_879577_Class5293]
+		[KB_879577_Class5294]
+		[KB_879577_Class5295]
+		[KB_879577_Class5296]
+		[KB_879577_Class5297]
+		[KB_879577_Class5298]
+		[KB_879577_Class5299]
+		[KB_879577_Class5300]
+		[KB_879577_Class5301]
+		[KB_879577_Class5302]
+		[KB_879577_Class5303]
+		[KB_879577_Class5304]
+		[KB_879577_Class5305]
+		[KB_879577_Class5306]
+		[KB_879577_Class5307]
+		[KB_879577_Class5308]
+		[KB_879577_Class5309]
+		[KB_879577_Class5310]
+		[KB_879577_Class5311]
+		[KB_879577_Class5312]
+		[KB_879577_Class5313]
+		[KB_879577_Class5314]
+		[KB_879577_Class5315]
+		[KB_879577_Class5316]
+		[KB_879577_Class5317]
+		[KB_879577_Class5318]
+		[KB_879577_Class5321]
+		[KB_879577_Class5322]
+		[KB_879577_Class5323]
+		[KB_879577_Class5324]
+		[KB_879577_Class5325]
+		[KB_879577_Class5326]
+		[KB_879577_Class5327]
+		[KB_879577_Class5328]
+		[KB_879577_Class5329]
+		[KB_879577_Class5330]
+		[KB_879577_Class5331]
+		[KB_879577_Class5332]
+		[KB_879577_Class5333]
+		[KB_879577_Class5334]
+		[KB_879577_Class5335]
+		[KB_879577_Class5336]
+		[KB_879577_Class5337]
+		[KB_879577_Class5338]
+		[KB_879577_Class5339]
+		[KB_879577_Class5340]
+		[KB_879577_Class5341]
+		[KB_879577_Class5342]
+		[KB_879577_Class5343]
+		[KB_879577_Class5344]
+		[KB_879577_Class5345]
+		[KB_879577_Class5346]
+		[KB_879577_Class5347]
+		[KB_879577_Class5348]
+		[KB_879577_Class5349]
+		[KB_879577_Class5350]
+		[KB_879577_Class5351]
+		[KB_879577_Class5352]
+		[KB_879577_Class5355]
+		[KB_879577_Class5356]))
+
+([KB_879577_Class5277] of  Map_Entry
+
+	(key "athena_hypertension_14131")
+	(key_class "java.lang.String")
+	(value "1027 1192 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5278] of  Map
+
+	(entries [KB_879577_Class5279]))
+
+([KB_879577_Class5279] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "827,1072")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([KB_879577_Class5280] of  Map_Entry
+
+	(key "athena_hypertension_128637")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5278")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5281] of  Map_Entry
+
+	(key "athena_edit_138526")
+	(key_class "java.lang.String")
+	(value "1106 553 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5282] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00560")
+	(key_class "java.lang.String")
+	(value "508 1445 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5283] of  Map
+
+	(entries [KB_879577_Class5284]))
+
+([KB_879577_Class5284] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "663,1672")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([KB_879577_Class5285] of  Map_Entry
+
+	(key "athena_hypertension_185453")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5283")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5286] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91036")
+	(key_class "java.lang.String")
+	(value "555 381 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5287] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91033")
+	(key_class "java.lang.String")
+	(value "317 1786 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5288] of  Map_Entry
+
+	(key "athena_edit_138521")
+	(key_class "java.lang.String")
+	(value "1141 957 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5289] of  Map_Entry
+
+	(key "athena_runtime_00067")
+	(key_class "java.lang.String")
+	(value "1160 1906 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5290] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91030")
+	(key_class "java.lang.String")
+	(value "455 2216 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5291] of  Map_Entry
+
+	(key "athena_hypertension_162724")
+	(key_class "java.lang.String")
+	(value "403 748 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5292] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00334")
+	(key_class "java.lang.String")
+	(value "747 939 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5293] of  Map_Entry
+
+	(key "ATHENAINSTANCE_90991")
+	(key_class "java.lang.String")
+	(value "239 2173 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5294] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00035")
+	(key_class "java.lang.String")
+	(value "17 1652 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5295] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00143")
+	(key_class "java.lang.String")
+	(value "624 2115 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5296] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00036")
+	(key_class "java.lang.String")
+	(value "24 1394 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5297] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00182")
+	(key_class "java.lang.String")
+	(value "693 348 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5298] of  Map_Entry
+
+	(key "ATHENAINSTANCE_90996")
+	(key_class "java.lang.String")
+	(value "369 2294 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5299] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00001")
+	(key_class "java.lang.String")
+	(value "287 1985 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5300] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00002")
+	(key_class "java.lang.String")
+	(value "507 1734 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5301] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00003")
+	(key_class "java.lang.String")
+	(value "350 1886 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5302] of  Map_Entry
+
+	(key "athena_hypertension_133269")
+	(key_class "java.lang.String")
+	(value "874 1940 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5303] of  Map_Entry
+
+	(key "athena_hypertension_153033")
+	(key_class "java.lang.String")
+	(value "452 1356 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5304] of  Map_Entry
+
+	(key "athena_edit_138638")
+	(key_class "java.lang.String")
+	(value "871 1081 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5305] of  Map_Entry
+
+	(key "athena_hypertension_162779")
+	(key_class "java.lang.String")
+	(value "480 1040 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5306] of  Map_Entry
+
+	(key "athena_hypertension_508465")
+	(key_class "java.lang.String")
+	(value "494 562 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5307] of  Map_Entry
+
+	(key "athena_runtime_84853")
+	(key_class "java.lang.String")
+	(value "759 2307 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5308] of  Map_Entry
+
+	(key "athena_hypertension_508490")
+	(key_class "java.lang.String")
+	(value "1072 1470 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5309] of  Map_Entry
+
+	(key "athena_hypertension_508495")
+	(key_class "java.lang.String")
+	(value "1023 1615 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5310] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00133")
+	(key_class "java.lang.String")
+	(value "555 231 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5311] of  Map_Entry
+
+	(key "athena_runtime_00012")
+	(key_class "java.lang.String")
+	(value "159 1216 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5312] of  Map_Entry
+
+	(key "athena_hypertension_250217")
+	(key_class "java.lang.String")
+	(value "763 112 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5313] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00218")
+	(key_class "java.lang.String")
+	(value "730 230 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5314] of  Map_Entry
+
+	(key "athena_hypertension_179920")
+	(key_class "java.lang.String")
+	(value "935 2299 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5315] of  Map_Entry
+
+	(key "athena_hypertension_508500")
+	(key_class "java.lang.String")
+	(value "1045 1782 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5316] of  Map_Entry
+
+	(key "ATHENAINSTANCE_00018")
+	(key_class "java.lang.String")
+	(value "139 1647 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5317] of  Map_Entry
+
+	(key "athena_hypertension_508505")
+	(key_class "java.lang.String")
+	(value "1170 1574 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5318] of  Map_Entry
+
+	(key "ATHENAINSTANCE_00019")
+	(key_class "java.lang.String")
+	(value "212 1384 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5319] of  Map
+
+	(entries [KB_879577_Class5320]))
+
+([KB_879577_Class5320] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "808,1086")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([KB_879577_Class5321] of  Map_Entry
+
+	(key "athena_hypertension_133279")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5319")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5322] of  Map_Entry
+
+	(key "athena_hypertension_374500")
+	(key_class "java.lang.String")
+	(value "390 119 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5323] of  Map_Entry
+
+	(key "athena_hypertension_183878")
+	(key_class "java.lang.String")
+	(value "948 1847 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5324] of  Map_Entry
+
+	(key "athena_hypertension_162784")
+	(key_class "java.lang.String")
+	(value "474 1216 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5325] of  Map_Entry
+
+	(key "athena_hypertension_43290")
+	(key_class "java.lang.String")
+	(value "445 23 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5326] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91012")
+	(key_class "java.lang.String")
+	(value "228 434 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5327] of  Map_Entry
+
+	(key "athena_edit_138540")
+	(key_class "java.lang.String")
+	(value "1027 1042 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5328] of  Map_Entry
+
+	(key "athena_hypertension_133284")
+	(key_class "java.lang.String")
+	(value "487 653 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5329] of  Map_Entry
+
+	(key "athena_hypertension_508470")
+	(key_class "java.lang.String")
+	(value "914 1466 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5330] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91010")
+	(key_class "java.lang.String")
+	(value "426 353 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5331] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91011")
+	(key_class "java.lang.String")
+	(value "194 1127 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5332] of  Map_Entry
+
+	(key "athena_hypertension_185443")
+	(key_class "java.lang.String")
+	(value "467 1615 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5333] of  Map_Entry
+
+	(key "athena_hypertension_133289")
+	(key_class "java.lang.String")
+	(value "893 2096 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5334] of  Map_Entry
+
+	(key "athena_hypertension_14110")
+	(key_class "java.lang.String")
+	(value "1196 1152 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5335] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00350")
+	(key_class "java.lang.String")
+	(value "918 925 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5336] of  Map_Entry
+
+	(key "athena_hypertension_128621")
+	(key_class "java.lang.String")
+	(value "761 1870 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5337] of  Map_Entry
+
+	(key "athena_hypertension_180808")
+	(key_class "java.lang.String")
+	(value "1177 1042 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5338] of  Map_Entry
+
+	(key "athena_edit_138516")
+	(key_class "java.lang.String")
+	(value "1141 807 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5339] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00228")
+	(key_class "java.lang.String")
+	(value "821 2109 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5340] of  Map_Entry
+
+	(key "athena_hypertension_162751")
+	(key_class "java.lang.String")
+	(value "449 964 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5341] of  Map_Entry
+
+	(key "athena_edit_138511")
+	(key_class "java.lang.String")
+	(value "1135 687 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5342] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00329")
+	(key_class "java.lang.String")
+	(value "1291 807 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5343] of  Map_Entry
+
+	(key "athena_hypertension_508485")
+	(key_class "java.lang.String")
+	(value "1129 1351 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5344] of  Map_Entry
+
+	(key "athena_hypertension_44688")
+	(key_class "java.lang.String")
+	(value "272 19 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5345] of  Map_Entry
+
+	(key "athena_hypertension_371786")
+	(key_class "java.lang.String")
+	(value "102 126 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5346] of  Map_Entry
+
+	(key "athena_hypertension_43284")
+	(key_class "java.lang.String")
+	(value "98 18 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5347] of  Map_Entry
+
+	(key "ATHENAINSTANCE_00021")
+	(key_class "java.lang.String")
+	(value "434 234 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5348] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91004")
+	(key_class "java.lang.String")
+	(value "85 420 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5349] of  Map_Entry
+
+	(key "athena_hypertension_495098")
+	(key_class "java.lang.String")
+	(value "346 612 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5350] of  Map_Entry
+
+	(key "ATHENAINSTANCE_90984")
+	(key_class "java.lang.String")
+	(value "27 2143 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5351] of  Map_Entry
+
+	(key "athena_hypertension_374490")
+	(key_class "java.lang.String")
+	(value "252 126 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5352] of  Map_Entry
+
+	(key "athena_hypertension_523311")
+	(key_class "java.lang.String")
+	(value "679 574 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5353] of  Map
+
+	(entries [KB_879577_Class5354]))
+
+([KB_879577_Class5354] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "827,1049")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([KB_879577_Class5355] of  Map_Entry
+
+	(key "athena_hypertension_523316")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5353")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5356] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00223")
+	(key_class "java.lang.String")
+	(value "895 2188 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([KB_879577_Class5357] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENAINSTANCE_90982.steps")
+	(key_class "java.lang.String")
+	(value "KB_879577_Class5276")
+	(value_class "java.util.Map"))
+
+([KB_879577_Class5358] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([LAYOUT_PROPERTIES] of  Property_List
+
+	(name "layout properties")
+	(properties [VERTICAL_STRETCHER]))
+
+([option_instance] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon FALSE)
+	(display_hidden_classes TRUE)
+	(display_multi_parent_class_icon FALSE)
+	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([PAL_DESCRIPTION_WIDGET] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(property_list [ATHENA_HF_ProjectKB_Class15349])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 275)
+	(y 0))
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [PAL_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PAL_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(property_list [ATHENA_HF_ProjectKB_Class15348])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([PAL_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[PAL_NAME_WIDGET]
+		[PAL_RANGE_WIDGET]
+		[PAL_DESCRIPTION_WIDGET]
+		[PAL_STATEMENT_WIDGET]
+		[ATHENA_HF_ProjectKB_Class15347]))
+
+([PAL_RANGE_WIDGET] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(property_list [ATHENA_HF_ProjectKB_Class15350])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 275)
+	(y 180))
+
+([PAL_STATEMENT_WIDGET] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(property_list [ATHENA_HF_ProjectKB_Class15351])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 275)
+	(x 0)
+	(y 60))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[PAL_FORM_WIDGET]
+		[KB_134436_Class7560]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[ATHENA_HF_ProjectKB_Class3737]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[KB_873323_Class2804])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(included_projects
+		"library.pprj"
+		"eon2.pprj"
+		"ATHENA_HTN.pprj"
+		"ATHENA_Lipid.pprj")
+	(java_packages
+		"edu.stanford.smi.eon.Dharma"
+		"edu.stanford.smi.eon.time"
+		"edu.stanford.smi.eon.criterion"
+		"edu.stanford.smi.eon.athenaextensions"
+		"edu.stanford.smi.eon.datahandler")
+	(journaling_enabled FALSE)
+	(next_frame_number 0)
+	(options [option_instance])
+	(property_map [KB_492667_Class1])
+	(sources [SOURCES])
+	(tabs
+		[ATHENA_HF_ProjectKB_Class1503]
+		[CLSES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[INSTANCES_TAB]
+		[QUERIES_TAB]
+		[ATHENA_HF_ProjectKB_Class1489]
+		[ATHENA_HF_ProjectKB_Class1495]
+		[ATHENA_HF_ProjectKB_Class1467]
+		[ATHENA_HF_ProjectKB_Class1521]
+		[ATHENA_HF_ProjectKB_Class1479]
+		[ATHENA_HF_ProjectKB_Class1507]
+		[ATHENA_HF_ProjectKB_Class1469]
+		[ATHENA_HF_ProjectKB_Class1487]
+		[ATHENA_HF_ProjectKB_Class1505]
+		[ATHENA_HF_ProjectKB_Class1509]
+		[ATHENA_HF_ProjectKB_Class1465]
+		[ATHENA_HF_ProjectKB_Class1481]
+		[ATHENA_HF_ProjectKB_Class1501]
+		[ATHENA_HF_ProjectKB_Class1523]
+		[ATHENA_HF_ProjectKB_Class1493]
+		[ATHENA_HF_ProjectKB_Class1499]
+		[ATHENA_HF_ProjectKB_Class1473]
+		[ATHENA_HF_ProjectKB_Class5347]
+		[ATHENA_HF_ProjectKB_Class1529]
+		[ATHENA_HF_ProjectKB_Class1525]
+		[ATHENA_HF_ProjectKB_Class1519]
+		[ATHENA_HF_ProjectKB_Class1515]
+		[ATHENA_HF_ProjectKB_Class1477]
+		[ATHENA_HF_ProjectKB_Class1497]
+		[ATHENA_HF_ProjectKB_Class5349]
+		[ATHENA_HF_ProjectKB_Class1485]))
+
+([QUERIES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [KB_492667_Class96])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_492667_Class0]
+		[KB_492667_Class97]
+		[KB_492667_Class98]))
+
+([STANDARD_CLASS_CONSTRAINTS_WIDGET] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_492667_Class75])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_CLASS_DIRECT_INSTANCES_WIDGET] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([STANDARD_CLASS_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_CLASS_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [KB_492667_Class78])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [STANDARD_CLASS_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_CLASS_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [KB_492667_Class79])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_CLASS_ROLE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [KB_492667_Class83])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_492667_Class80])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([STANDARD_CLASS_WIDGETS] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[STANDARD_CLASS_CONSTRAINTS_WIDGET]
+		[STANDARD_CLASS_DIRECT_INSTANCES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET]
+		[STANDARD_CLASS_DOCUMENTATION_WIDGET]
+		[STANDARD_CLASS_NAME_WIDGET]
+		[STANDARD_CLASS_ROLE_WIDGET]
+		[STANDARD_CLASS_DIRECT_TYPE_WIDGET]
+		[STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET]
+		[LAYOUT_PROPERTIES]))
+
+([STANDARD_FACET_ASSOCIATED_SLOT_WIDGET] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_FACET_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [STANDARD_FACET_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_FACET_WIDGETS] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[STANDARD_FACET_NAME_WIDGET]
+		[STANDARD_FACET_DOCUMENTATION_WIDGET]
+		[STANDARD_FACET_ASSOCIATED_SLOT_WIDGET]))
+
+([STANDARD_SLOT_ASSOCIATED_FACET_WIDGET] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([STANDARD_SLOT_CONSTRAINTS_WIDGET] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([STANDARD_SLOT_DEFAULT_VALUE_WIDGET] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [KB_492667_Class87])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([STANDARD_SLOT_DIRECT_DOMAIN_WIDGET] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(property_list [KB_492667_Class85])
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([STANDARD_SLOT_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_SLOT_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [KB_492667_Class88])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [STANDARD_SLOT_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_INVERSE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [KB_492667_Class94])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [KB_492667_Class93])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([STANDARD_SLOT_MAXIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [KB_492667_Class89])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [KB_492667_Class92])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([STANDARD_SLOT_MINIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [KB_492667_Class90])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([STANDARD_SLOT_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [KB_492667_Class91])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_SLOT_SUBSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([STANDARD_SLOT_SUPERSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([STANDARD_SLOT_TYPE_WIDGET] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [KB_492667_Class95])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_SLOT_VALUES_WIDGET] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [KB_492667_Class86])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_SLOT_WIDGETS] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_CONSTRAINTS_WIDGET]
+		[STANDARD_SLOT_DIRECT_TYPE_WIDGET]
+		[STANDARD_SLOT_DIRECT_DOMAIN_WIDGET]
+		[STANDARD_SLOT_VALUES_WIDGET]
+		[STANDARD_SLOT_SUPERSLOTS_WIDGET]
+		[STANDARD_SLOT_SUBSLOTS_WIDGET]
+		[STANDARD_SLOT_DEFAULT_VALUE_WIDGET]
+		[STANDARD_SLOT_DOCUMENTATION_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_MINIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_ASSOCIATED_FACET_WIDGET]
+		[STANDARD_SLOT_NAME_WIDGET]
+		[STANDARD_SLOT_INVERSE_WIDGET]
+		[STANDARD_SLOT_TYPE_WIDGET]
+		[KB_492667_Class84]))
+
+([VERTICAL_STRETCHER] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))

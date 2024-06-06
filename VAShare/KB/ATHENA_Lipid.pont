@@ -1,0 +1,344 @@
+; Mon Sep 05 12:55:46 PDT 2011
+; 
+;+ (version "3.4.4")
+;+ (build "Build 581")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot Label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-ENGINE
+	(is-a %3ASYSTEM-CLASS)
+	(role concrete)
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFINITION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFGLOBAL
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFTEMPLATE
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFFACTS
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMESSAGE-HANDLER
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMETHOD
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3ARULE
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-RULE
+	(is-a %3AJESS-DEFINITION %3ARULE)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AFUNCTION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-FUNCTION
+	(is-a %3AFUNCTION %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Chronic_Liver_Disease
+	(is-a Liver_Disease)
+	(role concrete))
+
+(defclass Active+Liver+Disease
+	(is-a Liver_Disease)
+	(role concrete))
+
+(defclass Hypertension_Code
+	(is-a Hypertension_Inclusive)
+	(role concrete))
+
+(defclass Ischemic_Heart_Disease
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Abdominal_Aortic_Aneurysm
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Hyperlipidemia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Peripheral+Arterial+Disease
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Carotid+Artery+Disease
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Dysbeta-lipoproteinemia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Hyperuricemia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Peptic_Ulcer
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass tobacco+use
+	(is-a Risk_Factor Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Age%3E45+and+male
+	(is-a Risk_Factor)
+	(role concrete))
+
+(defclass Age%3E55+and+female
+	(is-a Risk_Factor)
+	(role concrete))
+
+(defclass Family_History_of_Premature_CHD
+	(is-a Risk_Factor)
+	(role concrete))
+
+(defclass 10-Year_CHD_Risk
+	(is-a Patient_Observations)
+	(role concrete))
+
+(defclass CHD_Risk_Group
+	(is-a Diagnostic_Class)
+	(role concrete)
+	(single-slot Label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ICD-9-Code
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass CHD_Or_CHDEquivalent
+	(is-a CHD_Risk_Group)
+	(role concrete))
+
+(defclass 2%2B_Risk_Factors
+	(is-a CHD_Risk_Group)
+	(role concrete))
+
+(defclass 0-1_Risk_Factor
+	(is-a CHD_Risk_Group)
+	(role concrete))
+
+(defclass 10+year+CHD+risk%3E20%25
+	(is-a CHD_Risk_Group)
+	(role concrete))
+
+(defclass 10+year+CHD+risk+10-20%25
+	(is-a CHD_Risk_Group)
+	(role concrete))
+
+(defclass 10+year+CHD+risk%3C10%25
+	(is-a CHD_Risk_Group)
+	(role concrete))
+
+(defclass Defined+Condition
+	(is-a Diagnostic_Class)
+	(role concrete))
+
+(defclass LDL_not_within_guideline_goal
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass Adverse_Reaction_To_Statin
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass Usage+of+drugs+relative+contraindication+to+statins
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass TG%3E400mg%2FdL
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass 400mg%2FdL%3ETG%3E200mg%2FdL
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass HDL+%3C40+mg%2FdL
+	(is-a Defined+Condition)
+	(role concrete))
+
+(defclass LDL_Lowering_Drug
+	(is-a Medications_Class)
+	(role abstract))
+
+(defclass Statin
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass lovastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass pravastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass simvastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass fluvastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass atorvastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass cerivastatin
+	(is-a Statin)
+	(role concrete))
+
+(defclass Bile_Acid_Sequestrant
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass cholestyramine
+	(is-a Bile_Acid_Sequestrant)
+	(role concrete))
+
+(defclass colestipol
+	(is-a Bile_Acid_Sequestrant)
+	(role concrete))
+
+(defclass colesevelam
+	(is-a Bile_Acid_Sequestrant)
+	(role concrete))
+
+(defclass Nicotinic_Acid
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass immediate_release_crystalline_nicotinic_acid
+	(is-a Nicotinic_Acid)
+	(role concrete))
+
+(defclass extended_release_nicotinic_acid
+	(is-a Nicotinic_Acid)
+	(role concrete))
+
+(defclass sustained_release_nicotinic_acid
+	(is-a Nicotinic_Acid)
+	(role concrete))
+
+(defclass Fibric_Acid
+	(is-a LDL_Lowering_Drug)
+	(role concrete))
+
+(defclass gemfibrozil
+	(is-a Fibric_Acid)
+	(role concrete))
+
+(defclass fenofibrate
+	(is-a Fibric_Acid)
+	(role concrete))
+
+(defclass clofibrate
+	(is-a Fibric_Acid)
+	(role concrete))
+
+(defclass Macrolide_Antibiotics
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Antifungal_Agents
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Cytochrome_P-450_Inhibitor
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Fibrates
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Niacin
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass Cyclosporine
+	(is-a Medications_Class)
+	(role concrete))

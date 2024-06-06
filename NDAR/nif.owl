@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:p3="http://ontology.neuinfo.org/NIF/Backend/nif_backend.owl#"
+    xmlns:birn_annot="http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#"
+    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:p1="http://purl.org/obo/owl/"
+    xmlns:p2="http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBO-UBO.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns="http://ontology.neuinfo.org/NIF/nif.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:core="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:obo_annot="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#"
+  xml:base="http://ontology.neuinfo.org/NIF/nif.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Chemical.owl"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stephen Larson (slarson@ncmir.ucsd.edu)</dc:contributor>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/Backend/nif_backend.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/biological_process.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The NIF Project Team</dc:creator>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/DigitalEntities/NIF-Resource.owl"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fahim Imam (fimam@ncmir.ucsd.edu)</dc:contributor>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Cell.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/Function/NIF-Function.owl"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Giorgio Ascoli (ascoli@gmu.edu)</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dan Gardner (dan@aplysia.med.cornell.edu)</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gordon Shepherd (gordon.shepherd@yale.edu)</dc:contributor>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NIF</dc:title>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/SAO-CORE_properties.owl"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Maryann Martone (maryann@ncmir.ucsd.edu)</dc:contributor>
+    <dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Neuroscience Informatics Framework Lexicon</dc:subject>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bill Bug (William.Bug@drexelmed.edu)</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sarah Maynard (smaynard@ncmir.ucsd.edu)</dc:contributor>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >en</protege:defaultLanguage>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Organism.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Molecule.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/DigitalEntities/NIF-Investigation.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/sequence.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.3 - July 5, 2009</owl:versionInfo>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Unclassified.owl"/>
+    <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Subcellular.owl"/>
+    <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Neuroscience Informatics Framework (NIF) knowledge resource including the lexicon used to index all data repositories and literature corpi indexed in NIF.</core:definition>
+  </owl:Ontology>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.1, Build 535)  http://protege.stanford.edu -->

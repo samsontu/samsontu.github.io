@@ -1,0 +1,306 @@
+; Thu Oct 31 12:39:37 PDT 2013
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Absolute_Contraindications] of  Slot_With_Pretty_Name
+
+	(PrettyName "absolute contraindications")
+	(weight -10))
+
+([Compelling_Indications] of  Slot_With_Pretty_Name
+
+	(PrettyName "strong indications")
+	(weight 10))
+
+([Complication_Factor] of  Slot_With_Pretty_Name
+
+	(PrettyName "complication conditions"))
+
+([Dharma2_00000] of  %3ASTANDARD-FACET
+)
+
+([Dharma2_00001] of  %3ASTANDARD-FACET
+)
+
+([Dharma_11861] of  %3ASTANDARD-FACET
+
+	(%3AASSOCIATED-SLOT [weight]))
+
+([Dharma_11862] of  %3ASTANDARD-FACET
+)
+
+([Dharma_11863] of  %3ASTANDARD-FACET
+)
+
+([Dharma_11864] of  %3ASTANDARD-FACET
+
+	(%3AASSOCIATED-SLOT [PrettyName]))
+
+([Drug_Class_Name] of  Slot_With_Pretty_Name
+
+	(PrettyName "drug class name"))
+
+([Drug_Partners] of  Slot_With_Pretty_Name
+
+	(PrettyName "drug partners")
+	(weight 1))
+
+([Drug_Partners_To_Avoid] of  Slot_With_Pretty_Name
+
+	(PrettyName "drug partners to avoid")
+	(weight -1))
+
+([eon-guideline2_107819] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "subclasses of Medical Condition Class are all instances of Medical_Conditions_Metaclass")
+	(%3APAL-RANGE "(defrange ?subclass :FRAME :STANDARD-CLASS)")
+	(%3APAL-STATEMENT "(forall ?subclass\n        (=> (subclass-of (coerce-to-class ?subclass) (coerce-to-class \"Medical_Conditions_Class\"))\n            (instance-of ?subclass (coerce-to-class \"Medical_Conditions_Metaclass\")))\n)\n"))
+
+([eon2_Class0] of  Version
+
+	(version "Version 2.25")
+	(version_note "1. Added subguidelines slot to Management Guideline."))
+
+([eon2_Class10000] of  Version
+
+	(version "versin 2.26")
+	(version_note "modified slots in messages. Deleted Guideline_Task and Procedure."))
+
+([eon2_Class30000] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Numeric_Entry)
+	(numeric_domain_term Patient_Demographics)
+	(operator %3C%3D)
+	(value 2.0))
+
+([eon2_Instance_0] of  Version
+
+	(version "version 2.02")
+	(version_note "Changed slot-not-null PAL constraints to facet cardinality constraints."))
+
+([eon2_Instance_1] of  Version
+
+	(version "version 2.10")
+	(version_note "- Added \"direction\" slot in Modify_Activity\n- Deleted Ordinal-Valued_AtomicTest_Metaclass in \"library\" project."))
+
+([eon2_Instance_10000] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "Only Action_Choice instances follow Choice_Step")
+	(%3APAL-RANGE "(defrange ?connector :FRAME Followed_By)\n(defrange ?choice :FRAME Choice_Step)\n(defrange ?node :FRAME Management_Algorithm_Entity)")
+	(%3APAL-STATEMENT "(forall ?choice\n        (forall ?node \n                (=> (exists ?connector\n                            (and (:FROM ?connector ?choice)(:TO ?connector ?node )))\n                    (instance-of ?node (coerce-to-class \"Action_Choice\"))))\n)"))
+
+([eon2_Instance_100000] of  Version
+
+	(version "version 2.17")
+	(version_note "Added Variable as an allowed class of patient_characterization slot in Management_Guideline"))
+
+([eon2_Instance_10002] of  Version
+
+	(version "version 2.14")
+	(version_note "1. Added display_location and main_message slots to Message class (a Opioid KB request, used by the Opioid GUI)\n2. Deleted Numeric_PAL_Criterion class\n3. Added Expression_Compariosn_Criterion\n4. Deleted the \"slot\" slot in Numeric_PAL_Query, replace it with \"key_slot\""))
+
+([eon2_Instance_10005] of  Version
+
+	(version "version 2.08")
+	(version_note "- Added Goal class (subclass of Goal_Entity)\n- Added SelectedGoal_Criterion (reference to an instance of Goal). Checks to see if the referenced goal is satisfied."))
+
+([eon2_Instance_110000] of  Version
+
+	(version "versuib 2.18")
+	(version_note "1. Added Date_Expression class\n2. Merged all included projects"))
+
+([eon2_Instance_120000] of  Version
+
+	(version "version 2.19")
+	(version_note "1. partitioned out \"common\" project\n2. added PAL query as allowed anchor for Relative_Time_Interval class."))
+
+([eon2_Instance_140000] of  Version
+
+	(version "version 2.20")
+	(version_note "1. added rule_in_condition to Referral and Schedule\n2. added when to Referral\n3. Changed who_with in Schedule to have type Class"))
+
+([eon2_Instance_150000] of  Version
+
+	(version "version 2.21")
+	(version_note "1. Added rule_in_condition to Collect_Patient_Data\n2. Added Structured_Query class, which allows you to specify a query of the form:\n   select aggregate_operator attribute from entry_type where where_restriction\n  e.g., select most_recent daily_dose from Medication where drug_name eq \"lisinopril\"\n3. Added Query_Result_Criterion, which evaluates a query and returns True or False depending on whether the query returns anything."))
+
+([eon2_Instance_160000] of  Version
+
+	(version "version 2.22")
+	(version_note "1. Added Monitor_Message. Monitor message is applicable if rule_in_condition holds. If it's applicable, a reminder is triggered, possibly in the future, at \"valid time\" if precondition evaluates to TRUE at that time.\n2. Added where and encounter_type slots to Encounter class\n3. Added instances of Monitor_Message, Structured_Query and Query_Result_Criterion to demonstrate the use of monitoring future event"))
+
+([eon2_Instance_160001] of  Structured_Query
+
+	(entry_type Encounter)
+	(label "Find any encounter of encounter type X in clinic Y within 2 years")
+	(where_restriction
+		[eon2_Instance_160002]
+		[eon2_Instance_170000]
+		[eon2_Instance_170001]))
+
+([eon2_Instance_160002] of  Comparison_Filter
+
+	(attribute [encounter_type])
+	(label "Encounter type neq X")
+	(operator neq)
+	(value_expression [Encounter_Type]))
+
+([eon2_Instance_170000] of  Comparison_Filter
+
+	(attribute [where])
+	(label "Where = clinic Y")
+	(operator eq)
+	(value_expression [Clinic]))
+
+([eon2_Instance_170001] of  Comparison_Filter
+
+	(attribute [when])
+	(label "when > today - 2years")
+	(operator %3C)
+	(value_expression [common_Instance_4]))
+
+([eon2_Instance_170002] of  Query_Result_Criterion
+
+	(label "Absence of encounter of encounter type X in clinic Y within 2 years")
+	(presence FALSE)
+	(query [eon2_Instance_160001]))
+
+([eon2_Instance_170003] of  Monitor_Message
+
+	(display_location Summary)
+	(label "Warn if no encounter of type X in clinic Y within 2 years")
+	(message "Warn if no encounter of type X in clinic Y within 2 years")
+	(message_type Recommendation)
+	(precondition [eon2_Instance_170002])
+	(valid_time [eon2_Instance_170004]))
+
+([eon2_Instance_170004] of  Relative_Time_Point
+
+	(days_from_current_time 60)
+	(label "60 days from today"))
+
+([eon2_Instance_180000] of  Version
+
+	(version "version 2.23")
+	(version_note "1. Added Order_TestProcedure that allows you to specify \"test_or_procedure\" (e.g., HbA1C) at \"when\" (e.g. today)\n2. Fixed the display of Conditional_Expression\n3. Added possible_values to Quantitative_Data subclass of Data_Entry so that you can add 7%, 8%, 9% as PhysicalQuantity instances with value such as 7 and unit  %."))
+
+([eon2_Instance_190000] of  Version
+
+	(version "Version 2.24")
+	(version_note "- Changed the allowed parents of the domain_term of Data_Entry subclasses so that any Medical domain concept can be entered."))
+
+([eon2_Instance_2] of  Version
+
+	(version "version 2.05")
+	(version_note "- Added the slot \"filter\" for backward compatibilty with EON Presence_Query code"))
+
+([eon2_Instance_20000] of  Version
+
+	(version "version 2.03")
+	(version_note "1. Hide Action_Step\n2. Deleted SLOT-QUERIES from  Abstract_Time_Point\n3. Made Time_Entity abstract\n4. Deleted Off_Guideline class (it is already in the library.pprj)\n5. Guideline_Model class: a. Made primary=true the default and made label a required slot\n6. Made first_step in Consultaiton_Guideline a required slot\n7. Case_Step: made branches and expression required\n8. Choice Step: made branches required\n9. Consultation Branch Step: made branches required\n10: Drug_Usage: reverted to slot names of ATHENA Hypertension\n11: Action_Specification: added \"references\" slot\n12. Deleted \"Goal\" class\n13. Deleted Substition-Pair, Evaluate_Choice and its subclasses (never used)"))
+
+([eon2_Instance_30000] of  Version
+
+	(version "version 2.04")
+	(version_note "- Added Conditional_Expressions class\n- Added Parameterized_String class"))
+
+([eon2_Instance_4] of  Version
+
+	(version "version 2.01")
+	(version_note "Differences between this version and the one in ATHENADSS\n1. Removed the duplicate modeling in Drug_Usage and Drug_Info. slots in Drug_Usage now take instances of Drug_Relations as values\n2. Use Graph widget instead of Diagram widget"))
+
+([eon2_Instance_40000] of  Version
+
+	(version "version 2.06")
+	(version_note "- Added entry type to Numeric_Term_Criterion\n- Deleted \"greyed_out\" from default slot of Action Choice"))
+
+([eon2_Instance_5] of  Version
+
+	(version "version 2.07")
+	(version_note "- Added Interval data vallue\n- Added PAL_Query as allowed class in activity slot (so we can query for activity to modify)\n- Restored Supporting_Materials as allowed class of Drug_Usage's references slot\n- Added abstract Message class as superclass of On_Screen_Message and Parameterized_Message. Parameterized_Message allows use of variables in message string."))
+
+([eon2_Instance_50000] of  Version
+
+	(version "version 2.09")
+	(version_note "- Changed value type of Set_Expression to \"any\" (so that we can insert string PAL query result)"))
+
+([eon2_Instance_60000] of  Version
+
+	(version "version 2.11")
+	(version_note "Changed \"Complicating Factor\" slot to be class-valued, allowed parent Diagnostic Class."))
+
+([eon2_Instance_70000] of  Version
+
+	(version "version 2.12")
+	(version_note "- Added integer-valued priority slot to the Message class"))
+
+([eon2_Instance_70001] of  Version
+
+	(version "version 2.13")
+	(version_note "Changed valuetype of patient_characteristics slot to instance wtih allowed class Diagnostic_Term_Metaclass"))
+
+([eon2_Instance_80000] of  Version
+
+	(version "version 2.15")
+	(version_note "1. Added Temporal_Criterion back to the expressions project"))
+
+([eon2_Instance_90000] of  Version
+
+	(version "version 2.16")
+	(version_note "Added description slot to scenario for documentation purpose"))
+
+([Guideline_Model_Entity] of  Versioned_Metaclass
+
+	(versions
+		[eon2_Instance_6]
+		[eon2_Instance_4]
+		[eon2_Instance_0]
+		[eon2_Instance_20000]
+		[eon2_Instance_30000]
+		[eon2_Instance_2]
+		[eon2_Instance_40000]
+		[eon2_Instance_5]
+		[eon2_Instance_10005]
+		[eon2_Instance_50000]
+		[eon2_Instance_1]
+		[eon2_Instance_60000]
+		[eon2_Instance_70000]
+		[eon2_Instance_70001]
+		[eon2_Instance_10002]
+		[eon2_Instance_80000]
+		[eon2_Instance_90000]
+		[eon2_Instance_100000]
+		[eon2_Instance_110000]
+		[eon2_Instance_120000]
+		[eon2_Instance_140000]
+		[eon2_Instance_150000]
+		[eon2_Instance_160000]
+		[eon2_Instance_180000]
+		[eon2_Instance_190000]
+		[eon2_Class0]
+		[eon2_Class10000]))
+
+([OpioidGuideline_Instance_380003] of  Parameterized_String
+
+	(value "The patient last had X on ?lastdate. The next one is due on ?duedate"))
+
+([Relative_Contraindications] of  Slot_With_Pretty_Name
+
+	(PrettyName "relative contraindications")
+	(weight -1))
+
+([Relative_Indications] of  Slot_With_Pretty_Name
+
+	(PrettyName "relative indications")
+	(weight 1))
+
+([Session_Date] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Session Date"))
+
+([Side_Effects] of  Slot_With_Pretty_Name
+
+	(PrettyName "side effects")
+	(weight -1))

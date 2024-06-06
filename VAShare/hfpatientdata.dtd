@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<!ELEMENT patientdata (patient)>
+	<!ELEMENT patient (meds, dx, clinicalSigns, adr, labs, demographics, cpt)>
+		<!ELEMENT meds (item)>
+			<!ELEMENT item (field1, field2, start, end)>
+				<!ELEMENT field1 (#PCDATA)>
+				<!ELEMENT field2 (#PCDATA)>
+				<!ELEMENT start (#PCDATA)>
+				<!ELEMENT end (#PCDATA)>
+		<!ELEMENT dx (item)>
+		<!ELEMENT clinicalSigns (item)>
+		<!ELEMENT adr (item)>
+		<!ELEMENT labs (item)>
+		<!ELEMENT demographics (item)>
+		<!ELEMENT cpt (item)>
+
+<!ATTLIST patient	name CDATA #REQUIRED>

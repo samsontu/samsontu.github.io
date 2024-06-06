@@ -1,0 +1,281 @@
+<patientdata>
+<patient name="1145630">
+<meds>
+<item>
+	<field1 label="Drug">atorvastatin</field1>
+	<field2 label="Daily Dose">40</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">carvedilol</field1>
+	<field2 label="Daily Dose">50</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">digoxin</field1>
+	<field2 label="Daily Dose">0.125</field2>
+	<start>Mon Feb 09 00:00:00 PST 1970</start>
+</item>
+<item>
+	<field1 label="Drug">enalapril</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">fenofibrate</field1>
+	<field2 label="Daily Dose">200</field2>
+	<start>Wed Feb 24 00:00:00 PST 1971</start>
+</item>
+<item>
+	<field1 label="Drug">furosemide</field1>
+	<field2 label="Daily Dose">10</field2>
+	<start>Sun Jan 09 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">glyburide</field1>
+	<field2 label="Daily Dose">10</field2>
+	<start>Mon Feb 09 00:00:00 PST 1970</start>
+</item>
+<item>
+	<field1 label="Drug">hydralazine</field1>
+	<field2 label="Daily Dose">30</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">15</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.04</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">30</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.04</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">nitrate</field1>
+	<field2 label="Daily Dose">30</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Drug">spironolactone</field1>
+	<field2 label="Daily Dose">25</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Cardiomegaly</field1>
+	<start>Mon Jan 10 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Dx">Coronary_Artery_Disease</field1>
+	<start>Mon Jan 10 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Dx">Disorders Lipid Metabolism</field1>
+	<start>Fri Aug 06 00:00:00 PDT 1971</start>
+</item>
+<item>
+	<field1 label="Dx">DM-Type2</field1>
+	<start>Sat Jan 08 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Tue Jan 11 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Dx">Hyperlipidemia</field1>
+	<start>Fri Aug 06 00:00:00 PDT 1971</start>
+</item>
+<item>
+	<field1 label="Dx">PVD</field1>
+	<start>Fri Aug 06 00:00:00 PDT 1971</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">68</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">66</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">71</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">133</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">191.8</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+</clinicalSigns>
+<adr>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">3.7</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">89</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">4875</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">64</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">8.8</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">99</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">97</field2>
+	<start>Wed Jan 05 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">3.1</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">eGFR</field1>
+	<field2 label="Value">43</field2>
+	<start>Mon Aug 31 00:00:00 PDT 1970</start>
+</item>
+<item>
+	<field1 label="Lab">Glycosylated_Hemoglobin</field1>
+	<field2 label="Value">9.5</field2>
+	<start>Wed Jan 05 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">HbA1C</field1>
+	<field2 label="Value">9.5</field2>
+	<start>Wed Jan 05 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">34.9</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">21</field2>
+	<start>Wed Jan 05 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">11.5</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">55</field2>
+	<start>Wed Jan 05 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">157</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">4.6</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">29</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">38</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">135</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">target_HBA1c</field1>
+	<field2 label="Value">7.0</field2>
+	<start>Sat Jan 08 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.6</field2>
+	<start>Tue Jan 04 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">97</field2>
+	<start>Wed Jan 05 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">106</field2>
+	<start>Wed Jan 05 00:00:00 PST 1972</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">5.1</field2>
+	<start>Wed Jan 12 00:00:00 PST 1972</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">72</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Male</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

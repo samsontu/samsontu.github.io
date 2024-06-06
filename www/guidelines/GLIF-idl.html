@@ -1,0 +1,232 @@
+<html><head><TITLE>Intermed Guideline Model </TITLE>
+</head>
+<body>
+<center><h1> Intermed Guideline Model </h1></center>
+<pre>
+/*------------------------------------------------------------------14/Jun/96-*
+/*
+/* InterMed Guideline Representation Specification
+/*
+/* Version Approved: May 30, 1996
+/*
+/*--------------------------------------------------------------------------*/
+
+/****************************************************************************/
+/* FORWARDS */
+
+interface Guideline_Step;
+interface Guideline_Object;
+interface Supplemental_Material;
+interface Criterion;
+interface Action_Spec;
+interface Transition;
+
+/****************************************************************************/
+/* TYPES */
+
+typedef enum t_logic_type {k_two_valued, k_three_valued};
+typedef sequence &ltSupplemental_Material&gt t_supplement_list;
+
+
+/****************************************************************************/
+/* CLASSES */
+
+/*------------------------
+* Top-level classes
+*------------------------*/
+
+interface Guideline_Model
+{
+};
+
+/*------------------------
+* Guideline
+*------------------------*/
+
+interface Guideline_Object:Guideline_Model
+{
+   attribute string name;
+   attribute sequence &ltstring&gt authors;
+
+   /* a formal characterization of the guideline */
+   /* -- format has yet to be decided */
+   /* -- perhaps a combination of {Evaluation, Management, Treatment} with */
+   /*    a specific problem, e.g., Evaluation of Breast Mass */
+   attribute string intention;
+
+   /* an unordered list of criteria that all must be true of a patient */
+   /* before applying this guideline */
+   attribute Criterion eligibility_criteria;
+
+   /* an unordered list of all Step objects used to represent the guideline */
+   attribute sequence &ltGuideline_Step&gt steps;
+
+   /* the first Step object in the guideline */
+   /* -- if the eligibility criteria are true, start here */
+   attribute Guideline_Step first_step;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Guideline_Step
+*------------------------*/
+
+interface Guideline_Step:Guideline_Model
+{
+   attribute string name;
+   attribute string patient_problem;
+   attribute Criterion pre_condition;
+   attribute string intention;
+   attribute sequence &ltPatient_Data&gt patient_data;
+
+   /* specification of the action, if any, to be performed in this step */
+   attribute Action_Spec action;
+
+   /* unordered list of possible next steps, including transition criteria */
+   /* that specify the conditions when a step can be taken */
+  	/*   - when there is more than one transition, it is assumed that all */
+   /*     transitions will be evaluated */
+   attribute sequence &ltTransition&gt transitions;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Transition
+*------------------------*/
+
+interface Transition:Guideline_Model
+{
+   attribute string name;
+
+   /* the criteria that must be true in order to go to the Steps listed here */
+   attribute Criterion condition;
+
+   /* indicates, when there is more than one link in a transition, which */
+   /* step should be next
+   /*   - "selection_method" should really be an enumerated type, not an */
+   /*     arbitrary string. Possible values are: */
+   /*        "one_of", "any_of", "all_of"
+   /*     If there is only one link in the transition, then selection_method */
+   /*     should be empty. If there is more than one link in the transition, */
+   /*     the condition slot applies to all of those links. */
+   /*     -- JHG 4/25/96 */
+   attribute string selection_method;
+
+   /* an unordered list of the next steps */
+   attribute sequence &ltGuideline_Step&gt link;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Action Specification
+*------------------------*/
+
+interface Action_Spec:Guideline_Model
+{
+   attribute string name;
+
+   /* the patient data for which the action is to be performed */
+   /* if this data is already available (and meets temporal_constraint), */
+   /* the action does not need to be performed */
+   attribute sequence &ltPatient_Data&gt patient_data;
+
+   /* the action specification */
+   /*   - specification format has not yet been determined */
+   attribute string description;
+
+   /* optional specification of the action at a finer level of granularity */
+   attribute Guideline_Object guideline;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Patient Data
+*------------------------*/
+
+interface Patient_Data:Guideline_Model
+{
+   /* formal identification of patient data item */
+   /*   - patient data model has not yet been determined */
+   attribute string name;
+
+   /* what is the data type of the data item */
+   attribute string type;
+
+   /* the possible values for this data item */
+   attribute sequence &ltstring&gt possible_values;
+
+   /* how recent the data item has to be in order to be useful */
+   attribute string temporal_constraint;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Classes for logical Criteria
+*------------------------*/
+
+interface Criterion:Guideline_Model
+{
+   /* the logic is typed by the number of possible values it can evaluate to */
+   attribute t_logic_type type;
+
+   attribute t_supplement_list didactics;
+};
+
+
+interface Boolean_Criterion:Criterion
+{
+   /* formal specification of criterion logic */
+   /*   - specification language has not yet been determined */
+   attribute string spec;
+}
+
+
+interface K_Of_N_Criteria: Criterion
+{
+   /* the K criteria that must be true */
+   attribute int number_to_select;
+
+   /* the set of N criteria  */
+   attribute sequence &ltCriterion&gt criteria;
+}
+
+
+/*------------------------
+* Classes for Supporting Materials
+*------------------------*/
+
+interface Supplemental_Material:Guideline_Model
+{
+   attribute string label;
+
+   /* extensible MIME standard for type of material */
+   attribute string MIME_type;
+
+   attribute string material;
+};
+
+
+interface WWW_Material:Supplemental_Material
+{
+   /* URL is in inherited attribute "material" */
+};
+</pre>
+
+<hr>
+<ADDRESS>
+Last updated on 6/17/96 by Ed Pattison-Gordon 
+</ADDRESS>
+</BODY>
+</HTML>
+
+

@@ -1,0 +1,2523 @@
+; Wed Dec 02 20:25:30 PST 2009
+; 
+;+ (version "3.4.2")
+;+ (build "Build 555")
+
+([0-1_Risk_Factor] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_160070])
+	(PrettyName "0-1 Risk Factor"))
+
+([10+year+CHD+risk+10-20%25] of  Diagnostic_Term_Metaclass
+)
+
+([10+year+CHD+risk%3C10%25] of  Diagnostic_Term_Metaclass
+)
+
+([10+year+CHD+risk%3E20%25] of  Diagnostic_Term_Metaclass
+)
+
+([10-Year_CHD_Risk] of  Canonical_Terms_Metaclass
+
+	(PrettyName "10 Year CHD Risk"))
+
+([2%2B_Risk_Factors] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_30039])
+	(PrettyName "2+ Risk Factors"))
+
+([305.1] of  Medical_Conditions_Metaclass
+)
+
+([305.10] of  Medical_Conditions_Metaclass
+)
+
+([305.11] of  Medical_Conditions_Metaclass
+)
+
+([305.12] of  Medical_Conditions_Metaclass
+)
+
+([305.13] of  Medical_Conditions_Metaclass
+)
+
+([400mg%2FdL%3ETG%3E200mg%2FdL] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_190025]))
+
+([410.0] of  Medical_Conditions_Metaclass
+)
+
+([410.00] of  Medical_Conditions_Metaclass
+)
+
+([410.01] of  Medical_Conditions_Metaclass
+)
+
+([410.02] of  Medical_Conditions_Metaclass
+)
+
+([410.1] of  Medical_Conditions_Metaclass
+)
+
+([410.10] of  Medical_Conditions_Metaclass
+)
+
+([410.11] of  Medical_Conditions_Metaclass
+)
+
+([410.12] of  Medical_Conditions_Metaclass
+)
+
+([410.2] of  Medical_Conditions_Metaclass
+)
+
+([410.20] of  Medical_Conditions_Metaclass
+)
+
+([410.21] of  Medical_Conditions_Metaclass
+)
+
+([410.22] of  Medical_Conditions_Metaclass
+)
+
+([410.3] of  Medical_Conditions_Metaclass
+)
+
+([410.30] of  Medical_Conditions_Metaclass
+)
+
+([410.31] of  Medical_Conditions_Metaclass
+)
+
+([410.32] of  Medical_Conditions_Metaclass
+)
+
+([410.4] of  Medical_Conditions_Metaclass
+)
+
+([410.40] of  Medical_Conditions_Metaclass
+)
+
+([410.41] of  Medical_Conditions_Metaclass
+)
+
+([410.42] of  Medical_Conditions_Metaclass
+)
+
+([410.5] of  Medical_Conditions_Metaclass
+)
+
+([410.50] of  Medical_Conditions_Metaclass
+)
+
+([410.51] of  Medical_Conditions_Metaclass
+)
+
+([410.52] of  Medical_Conditions_Metaclass
+)
+
+([410.6] of  Medical_Conditions_Metaclass
+)
+
+([410.60] of  Medical_Conditions_Metaclass
+)
+
+([410.61] of  Medical_Conditions_Metaclass
+)
+
+([410.62] of  Medical_Conditions_Metaclass
+)
+
+([410.7] of  Medical_Conditions_Metaclass
+)
+
+([410.70] of  Medical_Conditions_Metaclass
+)
+
+([410.71] of  Medical_Conditions_Metaclass
+)
+
+([410.72] of  Medical_Conditions_Metaclass
+)
+
+([410.8] of  Medical_Conditions_Metaclass
+)
+
+([410.80] of  Medical_Conditions_Metaclass
+)
+
+([410.81] of  Medical_Conditions_Metaclass
+)
+
+([410.82] of  Medical_Conditions_Metaclass
+)
+
+([410.9] of  Medical_Conditions_Metaclass
+)
+
+([410.90] of  Medical_Conditions_Metaclass
+)
+
+([410.91] of  Medical_Conditions_Metaclass
+)
+
+([410.92] of  Medical_Conditions_Metaclass
+)
+
+([411.0] of  Medical_Conditions_Metaclass
+)
+
+([411.1] of  Medical_Conditions_Metaclass
+)
+
+([411.8] of  Medical_Conditions_Metaclass
+)
+
+([411.81] of  Medical_Conditions_Metaclass
+)
+
+([411.89] of  Medical_Conditions_Metaclass
+)
+
+([412] of  Medical_Conditions_Metaclass
+)
+
+([412.] of  Medical_Conditions_Metaclass
+)
+
+([413.0] of  Medical_Conditions_Metaclass
+)
+
+([413.1] of  Medical_Conditions_Metaclass
+)
+
+([413.9] of  Medical_Conditions_Metaclass
+)
+
+([414.0] of  Medical_Conditions_Metaclass
+)
+
+([414.00] of  Medical_Conditions_Metaclass
+)
+
+([414.01] of  Medical_Conditions_Metaclass
+)
+
+([414.02] of  Medical_Conditions_Metaclass
+)
+
+([414.03] of  Medical_Conditions_Metaclass
+)
+
+([414.04] of  Medical_Conditions_Metaclass
+)
+
+([414.05] of  Medical_Conditions_Metaclass
+)
+
+([414.11] of  Medical_Conditions_Metaclass
+)
+
+([414.8] of  Medical_Conditions_Metaclass
+)
+
+([414.9] of  Medical_Conditions_Metaclass
+)
+
+([571.4] of  Medical_Conditions_Metaclass
+)
+
+([571.41] of  Medical_Conditions_Metaclass
+)
+
+([571.49] of  Medical_Conditions_Metaclass
+)
+
+([571.5] of  Medical_Conditions_Metaclass
+)
+
+([571.8] of  Medical_Conditions_Metaclass
+)
+
+([571.9] of  Medical_Conditions_Metaclass
+)
+
+([70.22] of  Medical_Conditions_Metaclass
+)
+
+([70.23] of  Medical_Conditions_Metaclass
+)
+
+([70.32] of  Medical_Conditions_Metaclass
+)
+
+([70.44] of  Medical_Conditions_Metaclass
+)
+
+([70.54] of  Medical_Conditions_Metaclass
+)
+
+([Abdominal_Aortic_Aneurysm] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Abdominal Aortic Aneurysm"))
+
+([Active+Liver+Disease] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [ATP3Demo_Instance_2]))
+
+([Adverse_Reaction_To_Statin] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_190183])
+	(PrettyName "Adverse Reaction To Statin"))
+
+([Age%3E45+and+male] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_70001]))
+
+([Age%3E55+and+female] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_170264]))
+
+([Alkaline_Phosphatase] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "Alkaline Phosphatase"))
+
+([Angina] of  Medical_Conditions_Metaclass
+)
+
+([Antifungal_Agents] of  Medications_Metaclass
+
+	(PrettyName "Antifungal Agents"))
+
+([atorvastatin] of  Medications_Metaclass
+)
+
+([ATP3Demo_Instance_10014] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_10016] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_10064] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_10066] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_10111] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_10113] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_10159] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_10161] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_10208] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_10210] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_10257] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_10259] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_2] of  N_ary_Criterion
+
+	(criteria
+		[ATP3Demo_Instance_3]
+		[ATP3Demo_Instance_4])
+	(label "AST > 40 or AST < 40")
+	(operator OR))
+
+([ATP3Demo_Instance_20016] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_20018] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_20068] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_20070] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_20122] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_20229] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_20266] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_20304] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_20306] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_20333] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_30026])
+	(%3ATO [NCEPATPIII_Instance_40007]))
+
+([ATP3Demo_Instance_20351] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATP3Demo_Instance_20353] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATP3Demo_Instance_3] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "AST > 40")
+	(numeric_domain_term SGOT)
+	(operator %3E)
+	(value 40.0))
+
+([ATP3Demo_Instance_4] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "ALT > 40")
+	(numeric_domain_term SGPT)
+	(operator %3E)
+	(value 40.0))
+
+([Bile_Acid_Sequestrant] of  Medications_Metaclass
+)
+
+([Carotid+Artery+Disease] of  Medical_Conditions_Metaclass
+)
+
+([cerivastatin] of  Medications_Metaclass
+)
+
+([CHD_Or_CHDEquivalent] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_30007])
+	(PrettyName "CHD or CHD-Equivalent"))
+
+([cholestyramine] of  Medications_Metaclass
+)
+
+([Chronic_Liver_Disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Chronic Liver disease"))
+
+([clofibrate] of  Medications_Metaclass
+)
+
+([colesevelam] of  Medications_Metaclass
+)
+
+([colestipol] of  Medications_Metaclass
+)
+
+([Coronary_Artery_Disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Coronary Artery Disease"))
+
+([Cyclosporine] of  Canonical_Terms_Metaclass
+)
+
+([Cytochrome_P-450_Inhibitor] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Cytochrome P-450 Inhibitor"))
+
+([Defined+Condition] of  Diagnostic_Term_Metaclass
+)
+
+([Dharma_11866_temp] of  %3ASTANDARD-FACET
+
+	(%3AASSOCIATED-SLOT [PrettyName]))
+
+([Dysbeta-lipoproteinemia] of  Medical_Conditions_Metaclass
+)
+
+([Electrolytes] of  Canonical_Terms_Metaclass
+)
+
+([extended_release_nicotinic_acid] of  Medications_Metaclass
+)
+
+([Family_History_of_Premature_CHD] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Family history of premature CHD (CHD in male first degree relative <55 years; CHD in female first degree relative <65 years)"))
+
+([fenofibrate] of  Medications_Metaclass
+)
+
+([Fibrates] of  Medications_Metaclass
+)
+
+([Fibric_Acid] of  Medications_Metaclass
+)
+
+([fluvastatin] of  Medications_Metaclass
+)
+
+([gemfibrozil] of  Medications_Metaclass
+)
+
+([Gout] of  Medical_Conditions_Metaclass
+)
+
+([HDL+%3C40+mg%2FdL] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_170268]))
+
+([Hyperlipidemia] of  Medical_Conditions_Metaclass
+)
+
+([Hypertension_Code] of  Medical_Conditions_Metaclass
+)
+
+([Hyperuricemia] of  Medical_Conditions_Metaclass
+)
+
+([immediate_release_crystalline_nicotinic_acid] of  Medications_Metaclass
+)
+
+([Ischemic_Heart_Disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Ischemic Heart Disease"))
+
+([LDL_Lowering_Drug] of  Canonical_Terms_Metaclass
+
+	(PrettyName "LDL Lowering Drug"))
+
+([LDL_not_within_guideline_goal] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_40037])
+	(PrettyName "LDL not within guideline goal"))
+
+([Liver_Disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Liver Disease"))
+
+([Liver_function_tests] of  Canonical_Terms_Metaclass
+)
+
+([lovastatin] of  Medications_Metaclass
+)
+
+([Macrolide_Antibiotics] of  Medications_Metaclass
+
+	(PrettyName "Macrolide Antibiotics"))
+
+([Microbiology_tests] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Microbiology tests"))
+
+([Myocardial_Infarction] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Myocardial Infarction"))
+
+([Myocardial_Infarction_w_systolic_dysfcn] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Myocardial Infarction w/systolic dysfcn"))
+
+([NCEPATPIII_Instance_0] of  Management_Diagram
+
+	(label "Lipid management algorithm")
+	(steps
+		[NCEPATPIII_Instance_10000]
+		[NCEPATPIII_Instance_10001]
+		[NCEPATPIII_Instance_20001]
+		[NCEPATPIII_Instance_30012]
+		[NCEPATPIII_Instance_30014]
+		[NCEPATPIII_Instance_30019]
+		[NCEPATPIII_Instance_30026]
+		[NCEPATPIII_Instance_40003]
+		[NCEPATPIII_Instance_40005]
+		[NCEPATPIII_Instance_40006]
+		[NCEPATPIII_Instance_40007]
+		[NCEPATPIII_Instance_40008]
+		[NCEPATPIII_Instance_40009]
+		[NCEPATPIII_Instance_40014]
+		[NCEPATPIII_Instance_40017]
+		[NCEPATPIII_Instance_40020]
+		[NCEPATPIII_Instance_40034]
+		[NCEPATPIII_Instance_40045]
+		[NCEPATPIII_Instance_40046]
+		[NCEPATPIII_Instance_40051]
+		[NCEPATPIII_Instance_40053]
+		[NCEPATPIII_Instance_40057]
+		[NCEPATPIII_Instance_40060]
+		[NCEPATPIII_Instance_70076]
+		[NCEPATPIII_Instance_170010])
+	(transitions
+		[NCEPATPIII_Instance_20002]
+		[NCEPATPIII_Instance_20003]
+		[NCEPATPIII_Instance_30013]
+		[NCEPATPIII_Instance_30032]
+		[NCEPATPIII_Instance_30033]
+		[NCEPATPIII_Instance_30034]
+		[NCEPATPIII_Instance_30035]
+		[NCEPATPIII_Instance_30057]
+		[NCEPATPIII_Instance_30059]
+		[NCEPATPIII_Instance_40004]
+		[NCEPATPIII_Instance_40010]
+		[NCEPATPIII_Instance_40011]
+		[NCEPATPIII_Instance_40015]
+		[NCEPATPIII_Instance_40016]
+		[NCEPATPIII_Instance_40018]
+		[NCEPATPIII_Instance_40021]
+		[NCEPATPIII_Instance_40039]
+		[NCEPATPIII_Instance_40054]
+		[NCEPATPIII_Instance_40055]
+		[NCEPATPIII_Instance_40056]
+		[NCEPATPIII_Instance_40058]
+		[NCEPATPIII_Instance_40059]
+		[NCEPATPIII_Instance_40061]
+		[NCEPATPIII_Instance_50006]
+		[NCEPATPIII_Instance_50012]
+		[NCEPATPIII_Instance_60000]
+		[NCEPATPIII_Instance_70077]
+		[NCEPATPIII_Instance_70016]
+		[NCEPATPIII_Instance_70017]
+		[NCEPATPIII_Instance_100007]
+		[NCEPATPIII_Instance_100008]
+		[NCEPATPIII_Instance_190011]
+		[NCEPATPIII_Instance_190012]
+		[NCEPATPIII_Instance_200014]
+		[NCEPATPIII_Instance_200015]
+		[NCEPATPIII_Instance_200016]
+		[NCEPATPIII_Instance_200017]
+		[ATP3Demo_Instance_20333]))
+
+([NCEPATPIII_Instance_1] of  Drug_Usage
+
+	(Absolute_Contraindications
+		Chronic_Liver_Disease
+		Adverse_Reaction_To_Statin)
+	(Compelling_Indications LDL_not_within_guideline_goal)
+	(Drug_Class_Name Statin)
+	(label "Statin")
+	(Relative_Contraindications Usage+of+drugs+relative+contraindication+to+statins))
+
+([NCEPATPIII_Instance_10000] of  Scenario
+
+	(followed_by [NCEPATPIII_Instance_20001])
+	(label "No drug, high CHD risk")
+	(new_encounter TRUE)
+	(precondition [NCEPATPIII_Instance_50010]))
+
+([NCEPATPIII_Instance_100000] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Note_Entry)
+	(label "no risk factor")
+	(numeric_domain_term Risk_Factor)
+	(operator %3D)
+	(value 0.0))
+
+([NCEPATPIII_Instance_100001] of  On_Screen_Message
+
+	(description "TLC message")
+	(label "Start TLC")
+	(message "<b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>")
+	(message_type Primary_Recommendation))
+
+([NCEPATPIII_Instance_100004] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_70078]
+		[NCEPATPIII_Instance_100005]
+		[NCEPATPIII_Instance_100006])
+	(label "Criteria for initiation for TLC")
+	(operator OR))
+
+([NCEPATPIII_Instance_100005] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30039]
+		[NCEPATPIII_Instance_30004]
+		[NCEPATPIII_Instance_110005]
+		[NCEPATPIII_Instance_30002]
+		[NCEPATPIII_Instance_160070])
+	(label "2+Risk Factors and 130 <= LDL<160")
+	(operator AND))
+
+([NCEPATPIII_Instance_100006] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30003]
+		[NCEPATPIII_Instance_30043]
+		[NCEPATPIII_Instance_30001])
+	(label "CHD or CHD Equivalent and 100 <= LDL<130")
+	(operator AND))
+
+([NCEPATPIII_Instance_100007] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40057])
+	(%3ATO [NCEPATPIII_Instance_70076]))
+
+([NCEPATPIII_Instance_100008] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_20001])
+	(%3ATO [NCEPATPIII_Instance_70076]))
+
+([NCEPATPIII_Instance_100009] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_10001] of  Action_Choice
+
+	(actions
+		[NCEPATPIII_Instance_20004]
+		[NCEPATPIII_Instance_100075])
+	(label "LDL>=130, Initiate Drug Therapy")
+	(strict_rule_in_condition [NCEPATPIII_Instance_30042]))
+
+([NCEPATPIII_Instance_100013] of  Consultation_Selection
+
+	(%3AFROM [NCEPATPIII_Instance_90012])
+	(%3ATO [NCEPATPIII_Instance_90011]))
+
+([NCEPATPIII_Instance_10002] of  Supporting_Material
+
+	(label "NCEPATPIII Report")
+	(role evidence)
+	(URL "http://www.nhlbi.nih.gov/guidelines/cholesterol/atp3_rpt.htm"))
+
+([NCEPATPIII_Instance_100058] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_100074] of  Drug_Usage
+
+	(Absolute_Contraindications Chronic_Liver_Disease)
+	(Drug_Class_Name Nicotinic_Acid)
+	(label "Nicotinic Acid")
+	(Relative_Contraindications
+		Diabetes_Mellitus
+		Gout
+		Peptic_Ulcer
+		Hyperuricemia)
+	(Relative_Indications LDL_not_within_guideline_goal))
+
+([NCEPATPIII_Instance_100075] of  Evaluate_Start_Activity
+
+	(alternatives
+		[NCEPATPIII_Instance_1]
+		[NCEPATPIII_Instance_100074]
+		[NCEPATPIII_Instance_160010]
+		[NCEPATPIII_Instance_160009])
+	(label "evaluate starting lipid-lowering drugs"))
+
+([NCEPATPIII_Instance_100089] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_100117] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_100145] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_100170] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_100195] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_102] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_110000] of  Relative_Time_Interval_Definite
+
+	(how_many "5")
+	(label "within last 5 years")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit year))
+
+([NCEPATPIII_Instance_110001] of  Guideline_Drug
+
+	(dose_level_ranges
+		[NCEPATPIII_Instance_140001]
+		[NCEPATPIII_Instance_140002])
+	(drug_usage [NCEPATPIII_Instance_1])
+	(generic_drug simvastatin)
+	(label "Simvastatin")
+	(max_recommended_dose_level High_Dose%28high%2Flow%29)
+	(starting_dose 40.0))
+
+([NCEPATPIII_Instance_110002] of  Conditional_Expressions
+
+	(conditional_expression_list
+		[NCEPATPIII_Instance_90000]
+		[NCEPATPIII_Instance_120001])
+	(label "net number of risk factor"))
+
+([NCEPATPIII_Instance_110003] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_110004]
+		[NCEPATPIII_Instance_130005]
+		[NCEPATPIII_Instance_130006])
+	(label "on anti-hypertensive med or BP>140/90")
+	(operator OR))
+
+([NCEPATPIII_Instance_110004] of  Presence_Criterion
+
+	(entry_type Medication)
+	(label "presence of antihypertensive drug")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_110005] of  Presence_Criterion
+
+	(domain_term 10+year+CHD+risk%3C10%25)
+	(entry_type Note_Entry)
+	(label "presence of CHD risk <10%")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_110009] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_110028] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_110048] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_110069] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_110091] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_110114] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120000] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(lower_limit 21.0)
+	(upper_limit 40.0))
+
+([NCEPATPIII_Instance_120001] of  Conditional_Expression
+
+	(label "if HDL <= 60 mg/dL do not subtract 1 from number of risk factors")
+	(precondition [NCEPATPIII_Instance_120005])
+	(value [NCEPATPIII_Instance_120006]))
+
+([NCEPATPIII_Instance_120002] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_120003]
+		[NCEPATPIII_Instance_120004])
+	(label "HDL > 60 mg/dL and  # of risk factors > 0")
+	(operator AND))
+
+([NCEPATPIII_Instance_120003] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "HDL>60mg/dL")
+	(numeric_domain_term HDL_Cholesterol)
+	(operator %3E)
+	(unit "mg/dL")
+	(value 60.0))
+
+([NCEPATPIII_Instance_120004] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Note_Entry)
+	(label "# of risk factors > 0")
+	(numeric_domain_term Risk_Factor)
+	(operator %3E)
+	(value 0.0))
+
+([NCEPATPIII_Instance_120005] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_100000]
+		[NCEPATPIII_Instance_130001])
+	(label "no risk factor or HDL<60 mg/dL")
+	(operator OR))
+
+([NCEPATPIII_Instance_120006] of  Numeric_Term_Query
+
+	(aggregation_operator count)
+	(entry_type Note_Entry)
+	(numeric_domain_term "Risk_Factor"))
+
+([NCEPATPIII_Instance_120009] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120028] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120049] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120067] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120088] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120108] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120128] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120155] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120183] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120201] of  Presence_Criterion
+
+	(domain_term Total_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Absence of Cholesterol Lab Data")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_120213] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_120243] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_130001] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "hdl < 60 mg/dL")
+	(numeric_domain_term HDL_Cholesterol)
+	(operator %3C%3D)
+	(unit "mg/dL")
+	(value 60.0))
+
+([NCEPATPIII_Instance_130003] of  Binary_Expression
+
+	(first_argument [NCEPATPIII_Instance_120006])
+	(label "# of risk factors - 1")
+	(operator -)
+	(second_argument [NCEPATPIII_Instance_130004]))
+
+([NCEPATPIII_Instance_130004] of  Numeric_Constant
+
+	(value 1.0))
+
+([NCEPATPIII_Instance_130005] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "DBP>90mmHG")
+	(numeric_domain_term Diastolic_BP)
+	(operator %3E)
+	(unit "mmHG")
+	(value 90.0))
+
+([NCEPATPIII_Instance_130006] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "SBP>140mmHG")
+	(numeric_domain_term Systolic_BP)
+	(operator %3E)
+	(unit "mmHG")
+	(value 140.0))
+
+([NCEPATPIII_Instance_130008] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Note_Entry)
+	(label "# risk factors <= 1")
+	(numeric_domain_term Risk_Factor)
+	(operator %3C%3D)
+	(value 1.0))
+
+([NCEPATPIII_Instance_130009] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_130029] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_130050] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_130072] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_130097] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_130124] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_130142] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140001] of  Range_Mapping_Entry
+
+	(abstract_value High_Dose%28high%2Flow%29)
+	(lower_limit 41.0)
+	(upper_limit 80.0))
+
+([NCEPATPIII_Instance_140002] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(lower_limit 40.0)
+	(upper_limit 40.0))
+
+([NCEPATPIII_Instance_140003] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "There exists non-contraindicated drug that is not at maximum dose")
+	(PAL_constraint [NCEPATPIII_Instance_140004]))
+
+([NCEPATPIII_Instance_140004] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists non-contraindicated drug that is not at maximum dose")
+	(%3APAL-RANGE "(defrange ?med :FRAME Medication)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?drug_usage :FRAME Drug_Usage)\n\n(defrange ?condition :FRAME Note_Entry)\n\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n\n")
+	(%3APAL-STATEMENT "(exists ?med \n        (and \n             (patient_id ?med $patient_id)\n             (or (not (own-slot-not-null mood ?med ))\n                 (mood ?med Authorized)) \n             (exists ?guidelineDrug\n                     (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                          (exists ?rangeMapping \n                                  (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                       (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                        \n                                       (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                     			      )\n             (not (exists ?drug_usage \n                          (and (subclass-of (coerce-to-class (drug_name ?med))\n                                            (Drug_Class_Name ?drug_usage))\n                               (or (exists ?contraindication \n                                           (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                (exists ?condition \n                                                        (and (patient_id ?med $patient_id)(is-class (domain_term ?condition))\n                                                             (or  (subclass-of (coerce-to-class (domain_term ?condition))\n                                                                               ?contraindication)\n                                                                  (= (coerce-to-class (domain_term ?condition))\n                                                                     ?contraindication)\n                                                             )))))\n                                   (exists  ?derived_contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                 (is-derivable ?derived_contraindication))))))))\n)\n\n"))
+
+([NCEPATPIII_Instance_140005] of  Evaluate_Increase_Activity_Intensity
+
+	(activities_to_modify [NCEPATPIII_Instance_140006])
+	(activity_class "Medication")
+	(activity_spec Guideline_Drug)
+	(activity_spec_key [generic_drug])
+	(attribute "drug_daily_dose")
+	(label "consider increasing dose"))
+
+([NCEPATPIII_Instance_140006] of  PAL_Query
+
+	(case_variable "$patiend_id")
+	(key_slot [drug_name])
+	(label "non-contraindicated drugs not at max dose")
+	(PAL_query [NCEPATPIII_Instance_140007]))
+
+([NCEPATPIII_Instance_140007] of  PAL-QUERY
+
+	(%3APAL-NAME "find non-contraindicated medications whose dose can be increased")
+	(%3APAL-RANGE "(defrange ?med :FRAME Medication)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?drug_usage :FRAME Drug_Usage)\n\n(defrange ?condition :FRAME Note_Entry)\n\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(findall ?med \n         (and \n              (patient_id ?med $patient_id)\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping \n                                   (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                        (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                        \n                                        (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?med $patient_id)(is-class (domain_term ?condition))\n                                                              (or  (subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                ?contraindication)\n                                                                   (= (coerce-to-class (domain_term ?condition))\n                                                                      ?contraindication)\n                                                              )))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)\n"))
+
+([NCEPATPIII_Instance_140009] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140029] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140050] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140074] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140100] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140118] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140136] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_140162] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_150031] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_150051] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_150075] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_150093] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_150122] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_150150] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_150178] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160009] of  Drug_Usage
+
+	(Drug_Class_Name Fibric_Acid)
+	(label "Fibric Acid"))
+
+([NCEPATPIII_Instance_160010] of  Drug_Usage
+
+	(Absolute_Contraindications
+		Dysbeta-lipoproteinemia
+		TG%3E400mg%2FdL)
+	(Drug_Class_Name Bile_Acid_Sequestrant)
+	(label "Bile Acid Sequestrant")
+	(Relative_Contraindications 400mg%2FdL%3ETG%3E200mg%2FdL)
+	(Relative_Indications LDL_not_within_guideline_goal))
+
+([NCEPATPIII_Instance_160011] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160035] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160058] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160070] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_60002]
+		[NCEPATPIII_Instance_160071])
+	(label "Absence of CHD/CHD Equivalent and 0-1 Risk Factors")
+	(operator AND))
+
+([NCEPATPIII_Instance_160071] of  Presence_Criterion
+
+	(domain_term CHD_Or_CHDEquivalent)
+	(entry_type Note_Entry)
+	(label "Absence of CHD/CHD equivalent")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_160072] of  Presence_Criterion
+
+	(domain_term Abdominal_Aortic_Aneurysm)
+	(entry_type Note_Entry)
+	(label "Presence of Abdominal Aortic Aneurism")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_160075] of  Presence_Criterion
+
+	(domain_term Peripheral+Arterial+Disease)
+	(entry_type Note_Entry)
+	(label "Presence of Peripheral Artery Disease")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_160076] of  Presence_Criterion
+
+	(domain_term Carotid+Artery+Disease)
+	(entry_type Note_Entry)
+	(label "Presence of Carotid Artery Disease")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_160088] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160112] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160136] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160161] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160191] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160222] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160253] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160281] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_160309] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170010] of  Choice_Step
+
+	(branches [NCEPATPIII_Instance_40017])
+	(label "consider alternatives"))
+
+([NCEPATPIII_Instance_170011] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170034] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170058] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170083] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170114] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170146] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170181] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170214] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170245] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_170263] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Sex)
+	(entry_type Patient)
+	(label "Sex = Male")
+	(operator eq)
+	(value [Male]))
+
+([NCEPATPIII_Instance_170264] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_80027]
+		[NCEPATPIII_Instance_80026])
+	(label "Age >55 and female")
+	(operator AND))
+
+([NCEPATPIII_Instance_170268] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "Low HDL <40 mg/dL")
+	(numeric_domain_term HDL_Cholesterol)
+	(operator %3C)
+	(unit "mg/dL")
+	(value 40.0))
+
+([NCEPATPIII_Instance_180011] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(lower_limit 20.0)
+	(upper_limit 20.0))
+
+([NCEPATPIII_Instance_180013] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_190019]
+		[NCEPATPIII_Instance_190018]
+		[NCEPATPIII_Instance_190020]
+		[NCEPATPIII_Instance_190014])
+	(label "Usage of drugs relative contraindication to statins")
+	(operator OR))
+
+([NCEPATPIII_Instance_180014] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180019] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_180021] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180050] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180075] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180102] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180131] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180158] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180185] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180214] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_180243] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190011] of  Case_Selection
+
+	(value [criterion_INSTANCE_00001])
+	(%3AFROM [NCEPATPIII_Instance_40014])
+	(%3ATO [NCEPATPIII_Instance_170010]))
+
+([NCEPATPIII_Instance_190012] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_170010])
+	(%3ATO [NCEPATPIII_Instance_40017]))
+
+([NCEPATPIII_Instance_190014] of  Presence_Criterion
+
+	(domain_term Cyclosporine)
+	(entry_type Medication)
+	(label "presence of Cyclosporine")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_190018] of  Presence_Criterion
+
+	(domain_term Cytochrome_P-450_Inhibitor)
+	(entry_type Medication)
+	(label "presence of cytochrome P-450 inhibitor")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_190019] of  Presence_Criterion
+
+	(domain_term Antifungal_Agents)
+	(entry_type Medication)
+	(label "presence of antifungal agents")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_190020] of  Presence_Criterion
+
+	(domain_term Macrolide_Antibiotics)
+	(entry_type Medication)
+	(label "presence of Macrolide Antibiotics")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_190025] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_190026]
+		[NCEPATPIII_Instance_90002])
+	(label "400mg/dL>TG>200mg/dL")
+	(operator AND))
+
+([NCEPATPIII_Instance_190026] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "TG<400mg/dL")
+	(numeric_domain_term Triglycerides)
+	(operator %3C)
+	(unit "mg/dL")
+	(value 400.0))
+
+([NCEPATPIII_Instance_190044] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190074] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190105] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190135] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190167] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190183] of  Presence_Criterion
+
+	(domain_term Statin)
+	(entry_type Adverse_Reaction)
+	(label "Presence of Adverse Reaction to Statin")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_190200] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190231] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190264] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190298] of  Qualitative_Constant
+
+	(value "Female"))
+
+([NCEPATPIII_Instance_190316] of  Drug_Usage
+)
+
+([NCEPATPIII_Instance_2] of  Guideline_View
+
+	(drug_usages
+		[NCEPATPIII_Instance_1]
+		[NCEPATPIII_Instance_160010]
+		[NCEPATPIII_Instance_100074])
+	(guideline [NCEPATPIII_Instance_3])
+	(guideline_drugs
+		[NCEPATPIII_Instance_80000]
+		[NCEPATPIII_Instance_110001]))
+
+([NCEPATPIII_Instance_20000] of  Presence_Criterion
+
+	(domain_term LDL_Lowering_Drug)
+	(entry_type Medication)
+	(label "Absence of LDL lowering drug")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_20001] of  Choice_Step
+
+	(branches
+		[NCEPATPIII_Instance_10001]
+		[NCEPATPIII_Instance_30012]
+		[NCEPATPIII_Instance_70076]
+		[NCEPATPIII_Instance_40034])
+	(label "Management Choice"))
+
+([NCEPATPIII_Instance_200014] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_20001])
+	(%3ATO [NCEPATPIII_Instance_40034]))
+
+([NCEPATPIII_Instance_200015] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_20001])
+	(%3ATO [NCEPATPIII_Instance_40034]))
+
+([NCEPATPIII_Instance_200016] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40057])
+	(%3ATO [NCEPATPIII_Instance_40034]))
+
+([NCEPATPIII_Instance_200017] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40053])
+	(%3ATO [NCEPATPIII_Instance_40034]))
+
+([NCEPATPIII_Instance_20002] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_10000])
+	(%3ATO [NCEPATPIII_Instance_20001]))
+
+([NCEPATPIII_Instance_20003] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_20001])
+	(%3ATO [NCEPATPIII_Instance_10001]))
+
+([NCEPATPIII_Instance_20004] of  On_Screen_Message
+
+	(label "Initiate drug therapy")
+	(message "<b><font color=red>Initiate lipid lowering drug therapy and therapeutic lifestyle changes</font>")
+	(message_type Primary_Recommendation))
+
+([NCEPATPIII_Instance_3] of  Management_Guideline
+
+	(clinical_algorithm [NCEPATPIII_Instance_0])
+	(eligibility_criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(goal
+		[NCEPATPIII_Instance_40031]
+		[NCEPATPIII_Instance_40032]
+		[NCEPATPIII_Instance_40033])
+	(label "ATHENA Lipid Management Guideline")
+	(patient_characterization
+		[CHD_Or_CHDEquivalent]
+		[2%2B_Risk_Factors]
+		[0-1_Risk_Factor])
+	(title "Knowledge base for implementation of NCEP ATP III drug therapy"))
+
+([NCEPATPIII_Instance_30000] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL< 100 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3C)
+	(unit "mg/dL")
+	(value 100.0))
+
+([NCEPATPIII_Instance_30001] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL< 130 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3C)
+	(unit "mg/dL")
+	(value 130.0))
+
+([NCEPATPIII_Instance_30002] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL< 160 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3C)
+	(unit "mg/dL")
+	(value 160.0))
+
+([NCEPATPIII_Instance_30003] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL>= 100 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3E%3D)
+	(unit "mg/dL")
+	(value 100.0))
+
+([NCEPATPIII_Instance_30004] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL>= 130 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3E%3D)
+	(unit "mg/dL")
+	(value 130.0))
+
+([NCEPATPIII_Instance_30005] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL>= 160 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3E%3D)
+	(unit "mg/dL")
+	(value 160.0))
+
+([NCEPATPIII_Instance_30007] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30009]
+		[NCEPATPIII_Instance_60001]
+		[NCEPATPIII_Instance_30044]
+		[NCEPATPIII_Instance_160072]
+		[NCEPATPIII_Instance_160075]
+		[NCEPATPIII_Instance_160076])
+	(label "CHD Risk Equivalent")
+	(operator OR))
+
+([NCEPATPIII_Instance_30008] of  Presence_Criterion
+
+	(domain_term 0-1_Risk_Factor)
+	(entry_type Note_Entry)
+	(label "Presence of 0-1 risk factors")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_30009] of  Presence_Criterion
+
+	(domain_term Diabetes_Mellitus)
+	(entry_type Note_Entry)
+	(label "Presence of diabetes")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_30010] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "10-year CHD risk >= 10%")
+	(numeric_domain_term 10-Year_CHD_Risk)
+	(operator %3E%3D)
+	(unit "%")
+	(value 10.0))
+
+([NCEPATPIII_Instance_30012] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_40063])
+	(label "LDL within goal, continue TLC")
+	(strict_rule_in_condition [NCEPATPIII_Instance_40036]))
+
+([NCEPATPIII_Instance_30013] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_20001])
+	(%3ATO [NCEPATPIII_Instance_30012]))
+
+([NCEPATPIII_Instance_30014] of  Scenario
+
+	(followed_by [NCEPATPIII_Instance_30019])
+	(label "Drug Therapy (1 drug)")
+	(new_encounter TRUE)
+	(precondition [NCEPATPIII_Instance_70018]))
+
+([NCEPATPIII_Instance_30019] of  Choice_Step
+
+	(branches
+		[NCEPATPIII_Instance_40003]
+		[NCEPATPIII_Instance_30026])
+	(label "1-drug therapy choice"))
+
+([NCEPATPIII_Instance_30026] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_50007])
+	(followed_by [NCEPATPIII_Instance_40007])
+	(label "Intensify")
+	(strict_rule_in_condition [NCEPATPIII_Instance_40037]))
+
+([NCEPATPIII_Instance_30032] of  Followed_By
+)
+
+([NCEPATPIII_Instance_30033] of  Followed_By
+)
+
+([NCEPATPIII_Instance_30034] of  Followed_By
+)
+
+([NCEPATPIII_Instance_30035] of  Followed_By
+)
+
+([NCEPATPIII_Instance_30039] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Note_Entry)
+	(label "2+ Risk Factors")
+	(numeric_domain_term Risk_Factor)
+	(operator %3E%3D)
+	(value 2.0))
+
+([NCEPATPIII_Instance_30040] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Note_Entry)
+	(label "1 Risk Factor")
+	(numeric_domain_term Risk_Factor)
+	(operator %3D)
+	(value 1.0))
+
+([NCEPATPIII_Instance_30042] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30043]
+		[NCEPATPIII_Instance_30004])
+	(label "(CHD or CHD equivalent) and LDL>=130")
+	(operator AND))
+
+([NCEPATPIII_Instance_30043] of  Presence_Criterion
+
+	(domain_term CHD_Or_CHDEquivalent)
+	(entry_type Note_Entry)
+	(label "Presence of CHD or CHD Equivalent")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_30044] of  Presence_Criterion
+
+	(domain_term Ischemic_Heart_Disease)
+	(entry_type Note_Entry)
+	(label "Presence of CHD")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_30045] of  Presence_Criterion
+
+	(domain_term 2%2B_Risk_Factors)
+	(entry_type Note_Entry)
+	(label "Presence of 2+ risk factors")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_30046] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30054]
+		[NCEPATPIII_Instance_130008])
+	(label "0-1 risk factors  and LDL>=190")
+	(operator AND))
+
+([NCEPATPIII_Instance_30047] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30043]
+		[NCEPATPIII_Instance_30004])
+	(label "CHD or equivalent and LDL>=130")
+	(operator AND))
+
+([NCEPATPIII_Instance_30048] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "10-year CHD risk < 10%")
+	(numeric_domain_term 10-Year_CHD_Risk)
+	(operator %3C)
+	(unit "%")
+	(value 10.0))
+
+([NCEPATPIII_Instance_30049] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "10-year CHD risk < 20%")
+	(numeric_domain_term 10-Year_CHD_Risk)
+	(operator %3C)
+	(unit "%")
+	(value 20.0))
+
+([NCEPATPIII_Instance_30050] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "10-year CHD risk >= 20%")
+	(numeric_domain_term 10-Year_CHD_Risk)
+	(operator %3E%3D)
+	(unit "%")
+	(value 20.0))
+
+([NCEPATPIII_Instance_30051] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30049]
+		[NCEPATPIII_Instance_30010])
+	(label "10 year risk 10-20%")
+	(operator AND))
+
+([NCEPATPIII_Instance_30052] of  N_ary_Criterion
+
+	(criteria [NCEPATPIII_Instance_30004])
+	(label "2+ risk factors,  LDL>=130")
+	(operator AND))
+
+([NCEPATPIII_Instance_30053] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30045]
+		[NCEPATPIII_Instance_30048]
+		[NCEPATPIII_Instance_30005])
+	(label "2+ risk factors, 10-yera risk < 10%  and LDL>=160")
+	(operator AND))
+
+([NCEPATPIII_Instance_30054] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL >= 190 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3E%3D)
+	(unit "mg/dL")
+	(value 190.0))
+
+([NCEPATPIII_Instance_30057] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_30014])
+	(%3ATO [NCEPATPIII_Instance_30019]))
+
+([NCEPATPIII_Instance_30059] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_30019])
+	(%3ATO [NCEPATPIII_Instance_30026]))
+
+([NCEPATPIII_Instance_32] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_40000] of  On_Screen_Message
+
+	(label "Order lipid panel")
+	(message "Order lipid panel"))
+
+([NCEPATPIII_Instance_40002] of  Relative_Time_Interval_Definite
+
+	(how_many "6")
+	(label "Within 6 weeks of today")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit week))
+
+([NCEPATPIII_Instance_40003] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_40063])
+	(label "Continue current therapies and monitor")
+	(strict_rule_in_condition [NCEPATPIII_Instance_40036]))
+
+([NCEPATPIII_Instance_40004] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_30019])
+	(%3ATO [NCEPATPIII_Instance_40003]))
+
+([NCEPATPIII_Instance_40005] of  Scenario
+
+	(followed_by [NCEPATPIII_Instance_40006])
+	(label "Drug therapy (2+ drugs)")
+	(new_encounter TRUE)
+	(precondition [NCEPATPIII_Instance_70019]))
+
+([NCEPATPIII_Instance_40006] of  Choice_Step
+
+	(branches
+		[NCEPATPIII_Instance_40020]
+		[NCEPATPIII_Instance_40017]
+		[NCEPATPIII_Instance_30026])
+	(label "2+ drug therapy choice"))
+
+([NCEPATPIII_Instance_40007] of  Choice_Step
+
+	(branches
+		[NCEPATPIII_Instance_40009]
+		[NCEPATPIII_Instance_40008])
+	(label "Intensify choices"))
+
+([NCEPATPIII_Instance_40008] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_140005])
+	(followed_by [NCEPATPIII_Instance_40014])
+	(label "Increase dose")
+	(strict_rule_in_condition [NCEPATPIII_Instance_140003]))
+
+([NCEPATPIII_Instance_40009] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_100075])
+	(followed_by [NCEPATPIII_Instance_40014])
+	(label "Add drug")
+	(strict_rule_in_condition [criterion_INSTANCE_00001]))
+
+([NCEPATPIII_Instance_40010] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40007])
+	(%3ATO [NCEPATPIII_Instance_40008]))
+
+([NCEPATPIII_Instance_40011] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40007])
+	(%3ATO [NCEPATPIII_Instance_40009]))
+
+([NCEPATPIII_Instance_40014] of  Case_Step
+
+	(branches [NCEPATPIII_Instance_40017])
+	(expression [NCEPATPIIInew_Instance_200021])
+	(label "No recommended drug to add and cannot increase dose"))
+
+([NCEPATPIII_Instance_40015] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40009])
+	(%3ATO [NCEPATPIII_Instance_40014]))
+
+([NCEPATPIII_Instance_40016] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40005])
+	(%3ATO [NCEPATPIII_Instance_40006]))
+
+([NCEPATPIII_Instance_40017] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_50008])
+	(label "Refer to lipid specialist")
+	(strict_rule_in_condition [criterion_INSTANCE_00001]))
+
+([NCEPATPIII_Instance_40018] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40006])
+	(%3ATO [NCEPATPIII_Instance_40017]))
+
+([NCEPATPIII_Instance_40020] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_40063])
+	(label "Continue current therapy & monitor")
+	(strict_rule_in_condition [NCEPATPIII_Instance_40036]))
+
+([NCEPATPIII_Instance_40021] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40006])
+	(%3ATO [NCEPATPIII_Instance_40020]))
+
+([NCEPATPIII_Instance_40031] of  Conditional_Goal
+
+	(criterion_to_achieve [NCEPATPIII_Instance_30000])
+	(label "LDL goal: CHD or equivalent")
+	(selection_criterion [NCEPATPIII_Instance_30007]))
+
+([NCEPATPIII_Instance_40032] of  Conditional_Goal
+
+	(criterion_to_achieve [NCEPATPIII_Instance_30001])
+	(label "LDL goal: 2+ risk factors")
+	(selection_criterion [NCEPATPIII_Instance_30039]))
+
+([NCEPATPIII_Instance_40033] of  Conditional_Goal
+
+	(criterion_to_achieve [NCEPATPIII_Instance_30002])
+	(label "LDL goal: 0-1 risk factor")
+	(selection_criterion [NCEPATPIII_Instance_60002]))
+
+([NCEPATPIII_Instance_40034] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_40000])
+	(label "Order lipid study")
+	(strict_rule_in_condition [NCEPATPIII_Instance_40038]))
+
+([NCEPATPIII_Instance_40036] of  Goal_Criterion
+
+	(guideline_entity [NCEPATPIII_Instance_3])
+	(label "Within guideline goal"))
+
+([NCEPATPIII_Instance_40037] of  N_ary_Criterion
+
+	(criteria [NCEPATPIII_Instance_40036])
+	(label "Not within guideline goal")
+	(operator NOT))
+
+([NCEPATPIII_Instance_40038] of  Presence_Criterion
+
+	(domain_term LDL_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Absence of LDL measurement")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_40039] of  Followed_By
+
+	(%3ATO [NCEPATPIII_Instance_40020]))
+
+([NCEPATPIII_Instance_40045] of  Scenario
+
+	(followed_by [NCEPATPIII_Instance_40057])
+	(label "No drug, 2+ risk factors")
+	(new_encounter TRUE)
+	(precondition [NCEPATPIII_Instance_50001]))
+
+([NCEPATPIII_Instance_40046] of  Scenario
+
+	(followed_by [NCEPATPIII_Instance_40053])
+	(label "No drug, 0-1 risk factors")
+	(new_encounter TRUE)
+	(precondition [NCEPATPIII_Instance_50004]))
+
+([NCEPATPIII_Instance_40051] of  Action_Choice
+
+	(actions
+		[NCEPATPIII_Instance_20004]
+		[NCEPATPIII_Instance_100075])
+	(label "0-1 risk factors, Initiate drug therapy")
+	(strict_rule_in_condition [NCEPATPIII_Instance_30046]))
+
+([NCEPATPIII_Instance_40053] of  Choice_Step
+
+	(branches
+		[NCEPATPIII_Instance_40051]
+		[NCEPATPIII_Instance_30012]
+		[NCEPATPIII_Instance_40034]
+		[NCEPATPIII_Instance_70076])
+	(label "0-1 risk factor choices"))
+
+([NCEPATPIII_Instance_40054] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40046])
+	(%3ATO [NCEPATPIII_Instance_40053]))
+
+([NCEPATPIII_Instance_40055] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40053])
+	(%3ATO [NCEPATPIII_Instance_40051]))
+
+([NCEPATPIII_Instance_40056] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40053])
+	(%3ATO [NCEPATPIII_Instance_30012]))
+
+([NCEPATPIII_Instance_40057] of  Choice_Step
+
+	(branches
+		[NCEPATPIII_Instance_30012]
+		[NCEPATPIII_Instance_40060]
+		[NCEPATPIII_Instance_40034]
+		[NCEPATPIII_Instance_70076])
+	(label "2+ risk factors choices"))
+
+([NCEPATPIII_Instance_40058] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40045])
+	(%3ATO [NCEPATPIII_Instance_40057]))
+
+([NCEPATPIII_Instance_40059] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40057])
+	(%3ATO [NCEPATPIII_Instance_30012]))
+
+([NCEPATPIII_Instance_40060] of  Action_Choice
+
+	(actions
+		[NCEPATPIII_Instance_20004]
+		[NCEPATPIII_Instance_100075])
+	(label "2+ risk factors, initiate drug therapy")
+	(strict_rule_in_condition [NCEPATPIII_Instance_30005]))
+
+([NCEPATPIII_Instance_40061] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40057])
+	(%3ATO [NCEPATPIII_Instance_40060]))
+
+([NCEPATPIII_Instance_40062] of  N_ary_Criterion
+
+	(criteria [NCEPATPIII_Instance_30052])
+	(label "2+ risk factors, initiate drug therapy criteria")
+	(operator OR))
+
+([NCEPATPIII_Instance_40063] of  On_Screen_Message
+
+	(label "LDL within goal")
+	(message "<b><font color=red>LDL within goal. Great job.</font>"))
+
+([NCEPATPIII_Instance_40064] of  On_Screen_Message
+
+	(label "CHD or equivalent, LDL<=130, not within goal")
+	(message "CHD or equivalent, LDL<=130, not within goal"))
+
+([NCEPATPIII_Instance_50000] of  Presence_Criterion
+
+	(domain_term Total_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Absence of Total Cholesterol lab")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_50001] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30039]
+		[NCEPATPIII_Instance_20000]
+		[NCEPATPIII_Instance_160071])
+	(label "No drug, 2+ risk factors")
+	(operator AND))
+
+([NCEPATPIII_Instance_50002] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "2+ LDL-lowering drug")
+	(mood Authorized)
+	(numeric_domain_term LDL_Lowering_Drug)
+	(operator %3E%3D)
+	(value 2.0))
+
+([NCEPATPIII_Instance_50003] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "1 LDL-lowering drug")
+	(mood Authorized)
+	(numeric_domain_term LDL_Lowering_Drug)
+	(operator %3D)
+	(value 1.0))
+
+([NCEPATPIII_Instance_50004] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_60002]
+		[NCEPATPIII_Instance_20000]
+		[NCEPATPIII_Instance_160071])
+	(label "No drug, 0-1 risk factors")
+	(operator AND))
+
+([NCEPATPIII_Instance_50006] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_30026])
+	(%3ATO [NCEPATPIII_Instance_40007]))
+
+([NCEPATPIII_Instance_50007] of  On_Screen_Message
+
+	(label "Intensify drug therapy")
+	(message "<b><font color=red>Intensify drug therapy</font>"))
+
+([NCEPATPIII_Instance_50008] of  Referral
+
+	(label "Refer to lipid specialist"))
+
+([NCEPATPIII_Instance_50009] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_40037]
+		[NCEPATPIII_Instance_30001]
+		[NCEPATPIII_Instance_30043])
+	(label "CHD or equivalent, LDL<=130, not within goal")
+	(operator AND))
+
+([NCEPATPIII_Instance_50010] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_20000]
+		[NCEPATPIII_Instance_30043])
+	(label "no drug, high CHD risk")
+	(operator AND))
+
+([NCEPATPIII_Instance_50012] of  Followed_By
+
+	(%3ATO [NCEPATPIII_Instance_40034]))
+
+([NCEPATPIII_Instance_57] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_60000] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40006])
+	(%3ATO [NCEPATPIII_Instance_30026]))
+
+([NCEPATPIII_Instance_60001] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "10 year CHD risk > 20%")
+	(numeric_domain_term 10-Year_CHD_Risk)
+	(operator %3E)
+	(unit "%")
+	(value 20.0))
+
+([NCEPATPIII_Instance_60002] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_30040]
+		[NCEPATPIII_Instance_60003])
+	(label "0-1 risk factors")
+	(operator OR))
+
+([NCEPATPIII_Instance_60003] of  Presence_Criterion
+
+	(domain_term Risk_Factor)
+	(entry_type Note_Entry)
+	(label "Absence of risk factor")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_67] of  Conditional_On_Screen_Message
+
+	(description "message to get complete lipid profile")
+	(label "message to get complete lipid profile")
+	(message "<b><Font color=red>One or more lab values missing.  Please order new lipid profile with all 4 tests:Total Cholesterol, HDL, LDL and Triglycerides. </font><br>")
+	(message_type Recommendation)
+	(rule_in_condition [NCEPATPIII_Instance_90008]))
+
+([NCEPATPIII_Instance_70000] of  Presence_Criterion
+
+	(domain_term Triglycerides)
+	(entry_type Numeric_Entry)
+	(label "Presence of Triglycerides data lab")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_70001] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_70002]
+		[NCEPATPIII_Instance_170263])
+	(label "Age >45 and male")
+	(operator AND))
+
+([NCEPATPIII_Instance_70002] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "Age>45")
+	(numeric_domain_term Age)
+	(operator %3E)
+	(value 45.0))
+
+([NCEPATPIII_Instance_70016] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_30026])
+	(%3ATO [NCEPATPIII_Instance_40007]))
+
+([NCEPATPIII_Instance_70017] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_30026])
+	(%3ATO [NCEPATPIII_Instance_40007]))
+
+([NCEPATPIII_Instance_70018] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_50003]
+		[NCEPATPIII_Instance_50000])
+	(label "1 LDL drug; has LDL data")
+	(operator AND))
+
+([NCEPATPIII_Instance_70019] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_50000]
+		[NCEPATPIII_Instance_50002])
+	(label "2+ LDL drug; has LDL data")
+	(operator AND))
+
+([NCEPATPIII_Instance_70076] of  Action_Choice
+
+	(actions [NCEPATPIII_Instance_100001])
+	(label "TLC initiation")
+	(strict_rule_in_condition [NCEPATPIII_Instance_100004]))
+
+([NCEPATPIII_Instance_70077] of  Followed_By
+
+	(%3AFROM [NCEPATPIII_Instance_40053])
+	(%3ATO [NCEPATPIII_Instance_70076]))
+
+([NCEPATPIII_Instance_70078] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_60002]
+		[NCEPATPIII_Instance_30005]
+		[NCEPATPIII_Instance_70079]
+		[NCEPATPIII_Instance_160070])
+	(label "0-1 risk factor, 160<=LDL LDL<190")
+	(operator AND))
+
+([NCEPATPIII_Instance_70079] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "LDL < 190 mg/dL")
+	(numeric_domain_term LDL_Cholesterol)
+	(operator %3C)
+	(unit "mg/dL")
+	(value 190.0))
+
+([NCEPATPIII_Instance_79] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_80000] of  Guideline_Drug
+
+	(dose_level_ranges
+		[NCEPATPIII_Instance_180011]
+		[NCEPATPIII_Instance_120000])
+	(drug_usage [NCEPATPIII_Instance_1])
+	(generic_drug lovastatin)
+	(label "Lovastatin")
+	(max_recommended_dose_level High_Dose%28high%2Flow%29)
+	(starting_dose 40.0))
+
+([NCEPATPIII_Instance_80001] of  Presence_Criterion
+
+	(domain_term HDL_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Absence of HDL data lab")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_80002] of  Presence_Criterion
+
+	(domain_term LDL_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Absence of LDL data lab")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_80003] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_70000]
+		[NCEPATPIII_Instance_80004]
+		[NCEPATPIII_Instance_80005]
+		[NCEPATPIII_Instance_80006])
+	(label "Lipid Profile presence")
+	(operator AND))
+
+([NCEPATPIII_Instance_80004] of  Presence_Criterion
+
+	(domain_term HDL_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Presence of HDL data lab")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_80005] of  Presence_Criterion
+
+	(domain_term LDL_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Presence of LDL data lab")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_80006] of  Presence_Criterion
+
+	(domain_term Total_Cholesterol)
+	(entry_type Numeric_Entry)
+	(label "Presence of Total Cholesterol lab")
+	(presence TRUE))
+
+([NCEPATPIII_Instance_80007] of  Presence_Criterion
+
+	(domain_term Triglycerides)
+	(entry_type Numeric_Entry)
+	(label "Absence of Triglycerides data lab")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_80008] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_80020] of  Presence_Criterion
+
+	(domain_term Pregnancy)
+	(entry_type Note_Entry)
+	(label "Absence of Pregnancy")
+	(presence FALSE))
+
+([NCEPATPIII_Instance_80022] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "HDL<40")
+	(numeric_domain_term HDL_Cholesterol)
+	(operator %3C)
+	(value 40.0))
+
+([NCEPATPIII_Instance_80025] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_80026]
+		[NCEPATPIII_Instance_80027])
+	(label "Male Age>45")
+	(operator AND))
+
+([NCEPATPIII_Instance_80026] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "Age>55")
+	(numeric_domain_term Age)
+	(operator %3E)
+	(value 55.0))
+
+([NCEPATPIII_Instance_80027] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Sex)
+	(entry_type Patient)
+	(label "Sex = Female")
+	(operator eq)
+	(value [Female]))
+
+([NCEPATPIII_Instance_90000] of  Conditional_Expression
+
+	(label "if HDL > 60 mg/dL subtract 1 from number of risk factors")
+	(precondition [NCEPATPIII_Instance_120002])
+	(value [NCEPATPIII_Instance_130003]))
+
+([NCEPATPIII_Instance_90001] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "TG > 400 mg/dL")
+	(numeric_domain_term Triglycerides)
+	(operator %3E)
+	(unit "mg/dL")
+	(value 400.0))
+
+([NCEPATPIII_Instance_90002] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "TG > 200 mg/dL")
+	(numeric_domain_term Triglycerides)
+	(operator %3E)
+	(unit "mg/dL")
+	(value 200.0))
+
+([NCEPATPIII_Instance_90008] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_80001]
+		[NCEPATPIII_Instance_80002]
+		[NCEPATPIII_Instance_80007]
+		[NCEPATPIII_Instance_120201])
+	(label "Lipid Profile incomplete")
+	(operator OR))
+
+([NCEPATPIII_Instance_90011] of  Consultation_Action_Step
+
+	(actions [NCEPATPIII_Instance_67])
+	(label "Check for complete lipid profile")
+	(rule_in [NCEPATPIII_Instance_90008]))
+
+([NCEPATPIII_Instance_90012] of  Consultation_Branch_Step
+
+	(branches [NCEPATPIII_Instance_90011])
+	(label "Initial Consultation guideline")
+	(selection_method all_of))
+
+([NCEPATPIII_Instance_90013] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_90035] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_90051] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_90072] of  Qualitative_Constant
+
+	(value "Male"))
+
+([NCEPATPIII_Instance_90073] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "Age >= 20")
+	(numeric_domain_term Age)
+	(operator %3E%3D)
+	(value 20.0))
+
+([NCEPATPIIInew_Instance_200021] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIIInew_Instance_200022]
+		[NCEPATPIIInew_Instance_200023]
+		[NCEPATPIII_Instance_50003])
+	(label "no recommended drugs to add and current drugs at maximum")
+	(operator AND))
+
+([NCEPATPIIInew_Instance_200022] of  Presence_Criterion
+
+	(domain_term LDL_Lowering_Drug)
+	(entry_type Medication)
+	(label "No recommended lipid lowing drug to add")
+	(mood Recommend_Add)
+	(presence FALSE))
+
+([NCEPATPIIInew_Instance_200023] of  N_ary_Criterion
+
+	(criteria [NCEPATPIII_Instance_140003])
+	(label "no drug whose dose can be increased")
+	(operator NOT))
+
+([Niacin] of  Medications_Metaclass
+)
+
+([Nicotinic_Acid] of  Medications_Metaclass
+)
+
+([Not_Subject_Of_Decision_Support] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Not Subject Of Decision Support"))
+
+([Peptic_Ulcer] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Peptic Ulcer"))
+
+([Peripheral+Arterial+Disease] of  Medical_Conditions_Metaclass
+)
+
+([pravastatin] of  Medications_Metaclass
+)
+
+([Renal_panel] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Renal panel"))
+
+([Risk_Group] of  Diagnostic_Term_Metaclass
+
+	(PrettyName "Risk Group"))
+
+([simvastatin] of  Medications_Metaclass
+)
+
+([Statin] of  Medications_Metaclass
+)
+
+([sustained_release_nicotinic_acid] of  Medications_Metaclass
+)
+
+([TG%3E400mg%2FdL] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_90001]))
+
+([tobacco+use] of  Medical_Conditions_Metaclass
+)
+
+([Usage+of+drugs+relative+contraindication+to+statins] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [NCEPATPIII_Instance_180013])
+	(PrettyName "Usage of drugs that are relative contraindication to statins"))

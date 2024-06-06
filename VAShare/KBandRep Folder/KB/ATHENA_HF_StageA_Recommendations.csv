@@ -1,0 +1,75 @@
+Instance	description	recommendation_text	uses_concepts	Level_of_evidence	
+In patients at high risk for developing HF, systolic and diastolic
+hypertension should be controlled in accordance with contemporary
+guidelines. (Level of Evidence: A)		"In patients at high risk for developing HF, systolic and diastolic
+hypertension should be controlled in accordance with contemporary
+guidelines. (Level of Evidence: A)"	"hypertension%%%Heart Failure Stage A%%%at risk for developing HF%%%contemporary guidelines"	A
+In patients at high risk for developing HF, lipid disorders should
+be treated in accordance with contemporary guidelines. (Level of
+Evidence: A)		"In patients at high risk for developing HF, lipid disorders should
+be treated in accordance with contemporary guidelines. (Level of
+Evidence: A)"	"Heart Failure Stage A%%%lipid disorder%%%at risk for developing HF%%%contemporary guidelines"	A
+For patients with diabetes mellitus (who are all at high risk for
+developing HF), blood sugar should be controlled in accordance
+with contemporary guidelines. (Level of Evidence: C)		"For patients with diabetes mellitus (who are all at high risk for
+developing HF), blood sugar should be controlled in accordance
+with contemporary guidelines. (Level of Evidence: C)"	"Heart Failure Stage A%%%contemporary guidelines%%%glycemic control%%%diabetes mellitus"	C
+Patients at high risk for developing HF should be counseled to
+avoid behaviors that may increase the risk of HF (e.g., smoking,
+excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)		"Patients at high risk for developing HF should be counseled to
+avoid behaviors that may increase the risk of HF (e.g., smoking,
+excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)"	"Heart Failure Stage A%%%at risk for developing HF%%%excessive alcohol consumption%%%illicit drug use%%%smoking"	C
+Ventricular rate should be controlled or sinus rhythm restored in
+patients with supraventricular tachyarrhythmias who are at high
+risk for developing HF. (Level of Evidence: B)		"Ventricular rate should be controlled or sinus rhythm restored in
+patients with supraventricular tachyarrhythmias who are at high
+risk for developing HF. (Level of Evidence: B)"	"Heart Failure Stage A%%%at risk for developing HF%%%sinus rhythm%%%supraventricular tachyarrhythmias%%%ventricular rate"	B
+Thyroid disorders should be treated in accordance with contemporary
+guidelines in patients at high risk for developing HF. (Level
+of Evidence: C)		"Thyroid disorders should be treated in accordance with contemporary
+guidelines in patients at high risk for developing HF. (Level
+of Evidence: C)"	"at risk for developing HF%%%thyroid disorders%%%Heart Failure Stage A%%%contemporary guidelines"	C
+Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)		"Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)"	"HF signs and symptoms%%%Heart Failure Stage A%%%at risk for developing HF"	C
+In patients at high risk for developing HF who have known
+atherosclerotic vascular disease, healthcare providers should
+follow current guidelines for secondary prevention. (Level of
+Evidence: C)		"In patients at high risk for developing HF who have known
+atherosclerotic vascular disease, healthcare providers should
+follow current guidelines for secondary prevention. (Level of
+Evidence: C)"	"secondary prevention of atherosclerotic vascular disease%%%Heart Failure Stage A%%%atherosclerotic vascular disease%%%contemporary guidelines"	C
+Healthcare providers should perform a noninvasive evaluation of
+LV function (i.e., LVEF) in patients with a strong family history of
+cardiomyopathy or in those receiving cardiotoxic interventions.
+(Level of Evidence: C)		"Healthcare providers should perform a noninvasive evaluation of
+LV function (i.e., LVEF) in patients with a strong family history of
+cardiomyopathy or in those receiving cardiotoxic interventions.
+(Level of Evidence: C)"	"cardiotoxic interventions%%%Left Ventricular Ejection fraction%%%family history of cardiomyopathy%%%Heart Failure Stage A"	
+Angiotensin converting enzyme inhibitors can be useful to prevent
+HF in patients at high risk for developing HF who have a
+history of atherosclerotic vascular disease, diabetes mellitus, or
+hypertension with associated cardiovascular risk factors. (Level
+of Evidence: A)		"Angiotensin converting enzyme inhibitors can be useful to prevent
+HF in patients at high risk for developing HF who have a
+history of atherosclerotic vascular disease, diabetes mellitus, or
+hypertension with associated cardiovascular risk factors. (Level
+of Evidence: A)"	"ACE Inhibitor%%%Heart Failure Stage A%%%atherosclerotic vascular disease%%%hypertension%%%at risk for developing HF%%%diabetes mellitus"	A
+Angiotensin II receptor blockers can be useful to prevent HF in
+patients at high risk for developing HF who have a history of
+atherosclerotic vascular disease, diabetes mellitus, or hypertension with associated cardiovascular risk factors. (Level of Evidence:
+C)		"Angiotensin II receptor blockers can be useful to prevent HF in
+patients at high risk for developing HF who have a history of
+atherosclerotic vascular disease, diabetes mellitus, or hypertension with associated cardiovascular risk factors. (Level of Evidence:
+C)"	"ARB%%%Heart Failure Stage A%%%atherosclerotic vascular disease%%%hypertension%%%at risk for developing HF%%%diabetes mellitus"	C
+Routine use of nutritional supplements solely to prevent the
+development of structural heart disease should not be recommended
+for patients at high risk for developing HF. (Level of
+Evidence: C)		"Routine use of nutritional supplements solely to prevent the
+development of structural heart disease should not be recommended
+for patients at high risk for developing HF. (Level of
+Evidence: C)"	"Heart Failure Stage A%%%structural heart disease%%%nutritional supplements%%%at risk for developing HF"	C

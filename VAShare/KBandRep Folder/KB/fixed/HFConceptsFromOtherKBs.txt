@@ -1,0 +1,92 @@
+
+
+Not cls 583.81
+Not cls 581.81
+Not cls Heart block without pacemaker
+Not cls Primary_Recommendation
+Not cls Treatment_Diastolic_BP
+Not cls Home_Diastolic_BP
+Not cls CKD by eGFR or ICD9 codes
+Not cls Treatment_Systolic_BP
+Not cls Home_Systolic_BP
+Not cls Unspecified Heart Block and no pacemaker
+Not cls Sinoatrial node dysfunction and no pacemaker
+Not cls On Amiodarone
+Not cls 1st degree heart block without 2nd/3rd degree or unspecified HB
+Not cls MI (secondary prevention) BP controlled
+Not cls Heart Failure (second prev) BP cont
+Not cls MI (BP not controlled)
+Not cls Renal_insufficiency_w_creat>=2.1
+Not cls ACE I adverse reaction
+Not cls K>5.5 and on ACE
+Not cls Presence of angioedema
+Not cls K>5.5 and absence ACE
+Not cls Presence of K sparing diuretics
+Not cls Proteinuria equals 1  or higher
+Not cls Heart Failure  (Secondary Prev) BP controlled
+Not cls DM (2ary prev)  BP controlled
+Not cls BPH, on one antihypertensive, no alpha blocker
+Not cls Sodium_Very_Low(<=130) most recent
+Not cls Using HCTZ, K<=3.0 most recent
+Not cls K<3.5 (most recent) NOT ON HCTZ
+Not cls On Lithium
+Not cls lithium
+Not cls Sodium-Low
+Not cls Potassium-Low ever in the past
+Not cls Elevated Uric Acid
+Not cls BPH and alpha blocker monotherapy
+Not cls Using HCTZ; 3.0.<K<3.5
+Not cls Allergy to sulfonamide-derived drugs
+Not cls Sulfonamides
+Not cls Sodium=<125 ever
+Not cls DM
+Not cls No med and K>=3.5
+Not cls taking >= 2 anti hypertensive meds
+Not cls K>5.5 and ARB
+Not cls Diabetes & Cough as ADR to ACE, no angioedema
+Not cls MI & Cough as ADR to ACE, no angioedema
+Not cls Heart failure & Cough as ADR to ACE, no angioedema
+Not cls Stroke & Cough as ADR to ACE, no angioedema
+Not cls Non_Tolerance
+Not cls No_Drug_Change
+Not cls Different_Drug_Change
+Not cls Missing_Diagnosis
+Not cls MI_and_BPH
+Not cls MI_with_high_BP
+Not cls Chronic_Liver_Disease
+Not cls Adverse_Reaction_To_Statin
+Not cls Statin
+Not cls Usage of drugs relative contraindication to statins
+Not cls Antifungal_Agents
+Not cls Cytochrome_P-450_Inhibitor
+Not cls Macrolide_Antibiotics
+Not cls Cyclosporine
+Not cls LDL_not_within_guideline_goal
+Not cls LDL_Lowering_Drug
+Not cls CHD_Or_CHDEquivalent
+Not cls 10-Year_CHD_Risk
+Not cls Ischemic_Heart_Disease
+Not cls Abdominal_Aortic_Aneurysm
+Not cls Peripheral Arterial Disease
+Not cls Carotid Artery Disease
+Not cls Peptic_Ulcer
+Not cls Hyperuricemia
+Not cls Nicotinic_Acid
+Not cls Dysbeta-lipoproteinemia
+Not cls TG>400mg/dL
+Not cls 400mg/dL>TG>200mg/dL
+Not cls Bile_Acid_Sequestrant
+Not cls Fibric_Acid
+not in lib Risk_Factor
+Not cls 10 year CHD risk<10%
+Not cls simvastatin
+Not cls lovastatin
+Not cls DB_Diastolic_BP
+Not cls DB_Systolic_BP
+Not cls Assumption
+Not cls Risk_Group_B
+Not cls Target_Organ_Damage_Clinical_Cardiovascular_Disease
+Not cls Dyslipidemia Lab criteria
+Not cls Risk_Group_C
+Not cls Isolated_Systolic_Hypertension
+Not cls Hypertensive_Without_Comorbidities_That_Indicate_Non_Diuretics

@@ -1,0 +1,116 @@
+<html><body><h2>Case: 1305836053484</h2>
+<patient name=1164023>
+92.0 year old White_Non-Hispanic Male
+<p><b>Lab & Note Entry Values:</b> <table>
+<b><tr><td width="200">Lab</td><td width="200">Value</td><td width="200">Date</td></tr></b>
+<tr><td width="200">Age</td><td width="200">92</td><td width="200">1970-1-1</td></tr>
+<tr><td width="200">Calcium</td><td width="200">9</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Alkaline_phosphatase</td><td width="200">84</td><td width="200">1991-12-9</td></tr>
+<tr><td width="200">LDL_Cholesterol</td><td width="200">66</td><td width="200">1991-3-23</td></tr>
+<tr><td width="200">Chloride</td><td width="200">102.0</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">HDL_Cholesterol</td><td width="200">38</td><td width="200">1991-3-23</td></tr>
+<tr><td width="200">Diastolic_BP</td><td width="200">91</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">BNP</td><td width="200">5892.0</td><td width="200">1992-2-20</td></tr>
+<tr><td width="200">Weight</td><td width="200">174</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Triglycerides</td><td width="200">27</td><td width="200">1991-3-23</td></tr>
+<tr><td width="200">SGOT</td><td width="200">25</td><td width="200">1991-12-9</td></tr>
+<tr><td width="200">Total_Cholesterol</td><td width="200">107</td><td width="200">1991-3-23</td></tr>
+<tr><td width="200">Systolic_BP</td><td width="200">130</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Total_Bilirubin</td><td width="200">2</td><td width="200">1991-12-9</td></tr>
+<tr><td width="200">Height</td><td width="200">71</td><td width="200">1991-3-22</td></tr>
+<tr><td width="200">Potassium</td><td width="200">5</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Cholesterol</td><td width="200">107</td><td width="200">1991-3-23</td></tr>
+<tr><td width="200">BUN</td><td width="200">50</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">HCT</td><td width="200">28</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">HGB</td><td width="200">9</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Sodium</td><td width="200">138</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Albumen</td><td width="200">3</td><td width="200">1991-12-9</td></tr>
+<tr><td width="200">Creatinine</td><td width="200">1.8</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Pulse</td><td width="200">87</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">PLT</td><td width="200">117</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">WBC</td><td width="200">5</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">eGFR</td><td width="200">38</td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">SGPT</td><td width="200">33</td><td width="200">1991-12-9</td></tr>
+<tr><td width="200">Sex</td><td width="200">Male</td><td width="200"></td></tr>
+<tr><td width="200">Race</td><td width="200">White_Non-Hispanic</td><td width="200"></td></tr>
+<tr><td width="200">cardiac arrest</td><td width="200"></td><td width="200">1991-3-22</td></tr>
+<tr><td width="200">Atrial_Fibrillation</td><td width="200"></td><td width="200">1992-5-15</td></tr>
+<tr><td width="200">Coronary_Artery_Disease</td><td width="200"></td><td width="200">1992-2-20</td></tr>
+<tr><td width="200">Cardiomegaly</td><td width="200"></td><td width="200">1991-3-29</td></tr>
+<tr><td width="200">Hypertension</td><td width="200"></td><td width="200">1991-1-20</td></tr>
+<tr><td width="200">Myocardial_Infarction</td><td width="200"></td><td width="200">1991-3-22</td></tr>
+<tr><td width="200">Heart_Failure</td><td width="200"></td><td width="200">1992-4-18</td></tr>
+<tr><td width="200">Pacemaker</td><td width="200"></td><td width="200">1991-3-26</td></tr>
+<tr><td width="200">Sinoatrial node dysfunction</td><td width="200"></td><td width="200">1991-12-9</td></tr>
+</table>
+<p><b>Medications:</b> aspirin(81.0) spironolactone(25.0) torsemide(10.0) atorvastatin(20.0) lisinopril(5.0) digoxin(0.125) carvedilol(10.0) furosemide(10.0) Insulin(0.04) 
+<p><b>Problems:</b> <table>
+<tr><td width="200"><b>Problem Class</b></td><td width="200"><b>First/Last Dates Reported</b></td><td width="200"></td></tr>
+<tr><td width="200">Sinoatrial node dysfunction</td>
+<td width="200">1991-12-09</td>
+<td width="200"> Sinoatrial node dysfunction()</td></tr>
+<tr><td width="200">CCS-7.2</td>
+<td width="200">1991-03-22</td>
+<td width="200"> Myocardial_Infarction()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1992-04-18</td>
+<td width="200"> Heart_Failure()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1991-03-29</td>
+<td width="200"> Cardiomegaly()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1991-12-09</td>
+<td width="200"> Sinoatrial node dysfunction()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1992-02-20</td>
+<td width="200"> Coronary_Artery_Disease()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1992-05-15</td>
+<td width="200"> Atrial_Fibrillation()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1991-03-22</td>
+<td width="200"> cardiac arrest()</td></tr>
+<tr><td width="200">Hypertension_Inclusive</td>
+<td width="200">1991-01-20</td>
+<td width="200"> Hypertension()</td></tr>
+<tr><td width="200">Pacemaker</td>
+<td width="200">1991-03-26</td>
+<td width="200"> Pacemaker()</td></tr>
+<tr><td width="200">Two abnormal Cr or Microalbumin/Creatinine Ratio 3 months apart</td>
+<td width="200"></td>
+<td width="200"> Two abnormal Cr or Microalbumin/Creatinine Ratio 3 months apart[2 abnormal eGFR more than 3 months apart.]()</td></tr>
+<tr><td width="200">High Risk Group</td>
+<td width="200"></td>
+<td width="200"> High Risk Group[Presence of hypertension]()</td></tr>
+<tr><td width="200">Age>65?</td>
+<td width="200"></td>
+<td width="200"> Age>65?[Age(92.0/1970-1-1)]()</td></tr>
+<tr><td width="200"> <b>Others</b></td>
+<td width="200"></td>
+<td width="200"> Race()
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200"> Sex()
+</table><p>
+<p><b>Allergies and Adverse Reactions:</b> <ul>
+<li>Substance: lovastatin Reaction: 
+<li>Substance: lovastatin Reaction: 
+ </ul>
+</patient>
+<h1 align="center">ATHENA CKD Guideline</h1>
+<b>Patient classification:</b> <ul>
+<li>ATHENA CKD Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Age(92.0/1970-1-1) && Absence of end-stage renal disease && Absence of kidney transplant && Presence of hypertension)</i>]
+</ul>
+<b>Scenario choice:</b> HTN, no DM, treatment group
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Decision support?</b><br>
+<ul>
+<li><b>Achieve/maintain BP 130/80 <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of BP or BP >= 130/80</i> evaluate to <b> true</b> because <i>Absence of SBP</i>)])
+It is important to achieve/maintain blood pressure goal
+<li><b>Add CKD <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of CKD</i> evaluate to <b> true</b> because <i>Absence of CKD</i>)])
+Please add chronic kidney disease to the patient's problem list.
+</ul>
+</ul>
+</body></html>

@@ -1,0 +1,119 @@
+<HTML>
+  <HEAD>
+     <TITLE>Form for Submitting Data Used in Protocol Screening TRIALS</TITLE>
+  </HEAD>
+  <body>
+    <center><h2>Form for Submitting Data Used in Protocol Screening </h2></center>
+Warning: This form and the underlying program is being updated constantly. Do not be surprised by unexpected behavior.
+<hr>
+Please enter all known values asked below.  If you do not know the value of a specific field, leave it empty.
+<p>
+<FORM METHOD="POST" ACTION="http://smi-web.stanford.edu/cgi-bin/yentaform.pl">
+<table border>
+<caption> Basic Data
+<tr><th>HIV positive</th><th>AIDS asymptomatic</th><th>AIDS</th><th>CD4</th>
+<tr><td><INPUT TYPE="radio" NAME="HIV_positive" VALUE="no"> No<br>
+        <INPUT TYPE="radio" NAME="HIV_positive" VALUE="yes" CHECKED > Yes</td>
+        <td><INPUT TYPE="radio" NAME="AIDS_asymptomatic" VALUE="no"> No<br>
+        <INPUT TYPE="radio" NAME="AIDS_asymptomatic" VALUE="yes"> Yes</td>
+       <td><INPUT TYPE="radio" NAME="AIDS" VALUE="no"> No<br>
+        <INPUT TYPE="radio" NAME="AIDS" VALUE="yes"> Yes</td>
+        <td><INPUT NAME="CD4" SIZE=5 MAXLENGTH=7> (Most recent value, <BR>within 6 months)</td></tr>
+<tr><th>Gender</th><th>Age</th><th>Weight (lb)</th><th>Karnofsky score</th></tr>
+<tr>
+<td><INPUT TYPE="radio" NAME="sex" VALUE="M"> Male<br>
+    <INPUT TYPE="radio" NAME="sex" VALUE="F"> Female</td>
+<td><INPUT NAME="age" SIZE=5 MAXLENGTH=7></td>
+<td><INPUT NAME="Weight" SIZE=5 MAXLENGTH=7></td>
+<td><INPUT NAME="Karnofsky_score" SIZE=5 MAXLENGTH=7></td>
+</tr>
+</table>
+<p>
+Current HIV Related Diagnosis: Select all that apply <BR>
+<SELECT NAME="patient_problems" MULTIPLE SIZE=10>
+<OPTION VALUE="AIDS_dementia_complex"> AIDS dementia complex
+<OPTION VALUE="AIDS_wasting"> AIDS wasting
+<OPTION VALUE="CMV"> CMV
+<OPTION VALUE="CNS_toxoplasmosis"> CNS toxoplasmosis
+<OPTION VALUE="Cryptococcal_meningitis"> Cryptococcal meningitis
+<OPTION VALUE="Cryptosporidiosis"> Cryptosporidiosis
+<OPTION VALUE="Lymphadenopathy"> Lymphadenopathy
+<OPTION VALUE="MAC"> MAC
+<OPTION VALUE="MAI"> MAI
+<OPTION VALUE="Night_sweats"> Night sweats
+<OPTION VALUE="PCP"> PCP
+<OPTION VALUE="Thrush"> Thrush
+<OPTION VALUE="Tuberculosis"> Tuberculosis
+</SELECT>
+<p>
+
+Prior History of HIV Related Diagnosis: Select all that apply <BR>
+<SELECT NAME="problem_history" MULTIPLE SIZE=10>
+<OPTION VALUE="AIDS_dementia_complex"> AIDS dementia complex
+<OPTION VALUE="AIDS_wasting"> AIDS wasting
+<OPTION VALUE="CMV"> CMV
+<OPTION VALUE="CNS_toxoplasmosis"> CNS toxoplasmosis
+<OPTION VALUE="Cryptococcal_meningitis"> Cryptococcal meningitis
+<OPTION VALUE="Cryptosporidiosis"> Cryptosporidiosis
+<OPTION VALUE="Lymphadenopathy"> Lymphadenopathy
+<OPTION VALUE="MAC"> MAC
+<OPTION VALUE="MAI"> MAI
+<OPTION VALUE="Night_sweats"> Night sweats
+<OPTION VALUE="PCP"> PCP
+<OPTION VALUE="Thrush"> Thrush
+<OPTION VALUE="Tuberculosis"> Tuberculosis
+</SELECT>
+<p>
+
+Current Medications: Select all that apply <BR>
+<SELECT NAME="current_meds" MULTIPLE SIZE=10>
+<OPTION VALUE="azithromycin"> azithromycin
+<OPTION VALUE="zalcitabine"> zalcitabine
+<OPTION VALUE="didanosine"> didanosine
+<OPTION VALUE="stavudine"> stavudine
+<OPTION VALUE="zidovudine"> zidovudine
+<OPTION VALUE="ganciclovir"> ganciclovir
+<OPTION VALUE="foscarnet"> foscarnet
+<OPTION VALUE="TIBO"> TIBO
+<OPTION VALUE="MK-639"> MK-639
+<OPTION VALUE="delavirdine"> delavirdine
+<OPTION VALUE="lamivudine"> lamivudine
+</SELECT>
+<p>
+<table border>
+<caption> Current Laboratory Results
+<tr><th>Platelet count (/uL)</th><th>Absolute Neutrophil (/uL)</th><th> Hemoglobin (g/dL)</th><th>Creatinine (mg/dL)</th>
+<tr><td><INPUT NAME="Platelet_count" SIZE=7 MAXLENGTH=7> </td>
+       <td><INPUT NAME="Neutrophil_count" SIZE=7 MAXLENGTH=7> </td>
+     <td><INPUT NAME="Hemoglobin" SIZE=7 MAXLENGTH=7> </td>
+      <td><INPUT NAME="Creatinine" SIZE=7 MAXLENGTH=7> </td></tr>
+<tr><th> Bilirubin(mg/dL) </th><th>ALT (IU/L)</th><th>AST (IU/L)</th><th>Alkaline phosphatase (IU/L)</th></tr>
+<tr><td><INPUT NAME="Bilirubin" SIZE=7 MAXLENGTH=7> </td>
+       <td><INPUT NAME="ALT" SIZE=7 MAXLENGTH=7> </td>
+     <td><INPUT NAME="AST" SIZE=7 MAXLENGTH=7> </td>
+      <td><INPUT NAME="Alkaline_phosphatase" SIZE=7 MAXLENGTH=7> </td></tr>
+</tr>
+</table>
+<p>
+Protocols to check: Select all that apply <BR>
+<SELECT NAME="protocol" MULTIPLE>
+<OPTION VALUE="ACTG177"> ACTG 177: Prohpylaxis against mycobacterium tuberculosis
+<OPTION VALUE="ACTG193A"> ACTG 193A: Nucleoside treatment for advanced AIDS treatment
+<OPTION VALUE="ACTG244"> ACTG 244: AZT, DDI, Nevirapine study in asymptomatic patients with mutation at codon 215 of HIV virus
+<OPTION VALUE="ACTG268"> ACTG 268: Gradual initiation of Septra as PCP prophylaxis
+<OPTION VALUE="CCTG553"> CCTG 553: Treatment of extraneural cryptococcosis
+<OPTION VALUE="CCTG549"> CCTG 549: Ethambutol study for MAC patients
+<OPTION VALUE="CCTG559"> CCTG 559: HPMPC for CMV Viremia
+</SELECT>
+<p>
+
+
+   <INPUT TYPE="submit" VALUE="Check Eligibility">
+   <INPUT TYPE="reset" VALUE="Clear Values">
+</FORM>
+<hr>
+</body>
+<ADDRESS>
+     Last update on October 18, 1995 by tu@smi.stanford.edu.
+</ADDRESS>
+</HTML>

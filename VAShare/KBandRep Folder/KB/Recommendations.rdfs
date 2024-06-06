@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://protege.stanford.edu/system#'>
+	 <!ENTITY kb 'http://protege.stanford.edu/kb#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:a="&a;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<rdfs:Class rdf:about="&kb;AnnotatableThing"
+	 a:role="abstract"
+	 rdfs:label="AnnotatableThing">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Annotation"
+	 a:role="abstract"
+	 rdfs:label="Annotation">
+	<rdfs:subClassOf rdf:resource="&kb;AnnotatableThing"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Concept"
+	 rdfs:label="Concept">
+	<rdfs:subClassOf rdf:resource="&kb;Annotation"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Guideline_or_Lit_Reference"
+	 rdfs:label="Guideline_or_Lit_Reference">
+	<rdfs:subClassOf rdf:resource="&kb;Annotation"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;ID"
+	 a:maxCardinality="1"
+	 rdfs:comment="Numeric id"
+	 rdfs:label="ID">
+	<rdfs:domain rdf:resource="&kb;Guideline_or_Lit_Reference"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Module_Reference"
+	 rdfs:label="Module_Reference">
+	<rdfs:subClassOf rdf:resource="&kb;Annotation"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;RecID"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="RecID">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Recommendation"
+	 rdfs:label="Recommendation">
+	<rdfs:subClassOf rdf:resource="&kb;Annotation"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;annotates"
+	 rdfs:label="annotates">
+	<rdfs:range rdf:resource="&kb;AnnotatableThing"/>
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+	<a:inverseProperty rdf:resource="&kb;associatedAnnotations"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;associatedAnnotations"
+	 rdfs:label="associatedAnnotations">
+	<rdfs:domain rdf:resource="&kb;AnnotatableThing"/>
+	<rdfs:range rdf:resource="&kb;Annotation"/>
+	<a:inverseProperty rdf:resource="&kb;annotates"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;author"
+	 a:maxCardinality="1"
+	 rdfs:label="author">
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;authors"
+	 rdfs:label="authors">
+	<rdfs:domain rdf:resource="&kb;Guideline_or_Lit_Reference"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;body"
+	 a:maxCardinality="1"
+	 rdfs:label="body">
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;concept"
+	 a:maxCardinality="1"
+	 rdfs:label="concept">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;conceptID"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="conceptID">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;context"
+	 rdfs:label="context">
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;created"
+	 a:maxCardinality="1"
+	 rdfs:label="created">
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+	<rdfs:range rdf:resource="&rdfs;Resource"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;date"
+	 a:maxCardinality="1"
+	 rdfs:label="date">
+	<rdfs:domain rdf:resource="&kb;Guideline_or_Lit_Reference"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;definition"
+	 a:maxCardinality="1"
+	 a:minCardinality="1"
+	 rdfs:label="definition">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;expert_concept_definition"
+	 a:maxCardinality="1"
+	 rdfs:label="expert_concept_definition">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;expert_defining"
+	 a:maxCardinality="1"
+	 rdfs:label="expert_defining">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;expert_definition"
+	 a:maxCardinality="1"
+	 rdfs:label="expert_definition">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;guideline_definition"
+	 a:maxCardinality="1"
+	 rdfs:label="guideline_definition">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;guideline_reference"
+	 a:maxCardinality="1"
+	 rdfs:label="guideline_reference">
+	<rdfs:range rdf:resource="&kb;Guideline_or_Lit_Reference"/>
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;in_library"
+	 a:maxCardinality="1"
+	 a:range="boolean"
+	 rdfs:label="in_library">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;is_used_in"
+	 rdfs:label="is_used_in">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&kb;Recommendation"/>
+	<a:inverseProperty rdf:resource="&kb;uses_concepts"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;modified"
+	 a:maxCardinality="1"
+	 rdfs:label="modified">
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+	<rdfs:range rdf:resource="&rdfs;Resource"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;module"
+	 a:maxCardinality="1"
+	 rdfs:label="module">
+	<rdfs:range rdf:resource="&kb;Module_Reference"/>
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;moduleID"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="moduleID">
+	<rdfs:domain rdf:resource="&kb;Module_Reference"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;module_name"
+	 a:maxCardinality="1"
+	 rdfs:label="module_name">
+	<rdfs:domain rdf:resource="&kb;Module_Reference"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;needs_research"
+	 a:maxCardinality="1"
+	 a:range="boolean"
+	 rdfs:label="needs_research">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;overall_quality"
+	 a:allowedValues="none"
+	 a:maxCardinality="1"
+	 a:range="symbol"
+	 rdfs:label="overall_quality">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+	<a:allowedValues>Fair</a:allowedValues>
+	<a:allowedValues>Good</a:allowedValues>
+	<a:allowedValues>Poor</a:allowedValues>
+	<a:allowedValues>na</a:allowedValues>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;page"
+	 a:maxCardinality="1"
+	 rdfs:label="page">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;patient_data"
+	 a:maxCardinality="1"
+	 rdfs:label="patient_data">
+	<rdfs:domain rdf:resource="&kb;Concept"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;publication_details"
+	 a:maxCardinality="1"
+	 rdfs:label="publication_details">
+	<rdfs:domain rdf:resource="&kb;Guideline_or_Lit_Reference"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;quality_of_evidence"
+	 a:maxCardinality="1"
+	 rdfs:label="quality_of_evidence">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;recommendation_text"
+	 a:maxCardinality="1"
+	 rdfs:label="recommendation_text">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;related"
+	 a:maxCardinality="1"
+	 rdfs:label="related">
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;subject"
+	 a:maxCardinality="1"
+	 rdfs:label="subject">
+	<rdfs:domain rdf:resource="&kb;Annotation"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;title"
+	 a:maxCardinality="1"
+	 rdfs:label="title">
+	<rdfs:domain rdf:resource="&kb;Guideline_or_Lit_Reference"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;uses_concepts"
+	 rdfs:label="uses_concepts">
+	<rdfs:domain rdf:resource="&kb;Recommendation"/>
+	<a:inverseProperty rdf:resource="&kb;is_used_in"/>
+	<rdfs:range rdf:resource="&rdfs;Resource"/>
+</rdf:Property>
+</rdf:RDF>

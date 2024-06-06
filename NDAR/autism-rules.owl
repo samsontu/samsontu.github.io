@@ -1,0 +1,1304 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:autism-ext="http://purl.org/autism-ontology/1.0/autism-extension.owl#"
+    xmlns:temporal="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#"
+    xmlns:assessment-result="http://purl.org/autism-ontology/1.0/assessment-result.owl#"
+    xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlx="http://swrl.stanford.edu/ontologies/built-ins/3.3/swrlx.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://purl.org/autism-ontology/1.0/autism-rules.owl#"
+    xmlns:autism-core="http://purl.org/autism-ontology/1.0/autism-core.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:autism-pheno-rules="http://purl.org/autism-ontology/1.0/autism-phenologue-rules.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+  xml:base="http://purl.org/autism-ontology/1.0/autism-rules.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl"/>
+    <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl"/>
+    <owl:imports rdf:resource="http://purl.org/autism-ontology/1.0/autism-phenologue-rules.owl#"/>
+    <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/swrlx.owl"/>
+    <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
+  </owl:Ontology>
+  <swrl:Variable rdf:ID="ssf3"/>
+  <swrl:Imp rdf:ID="EncodeSavant_positive">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument1>
+              <swrl:Variable rdf:ID="a"/>
+            </swrl:argument1>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_SS"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</swrl:argument2>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument2>
+                  <swrl:Variable rdf:ID="subjectID"/>
+                </swrl:argument2>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument1 rdf:resource="#a"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument1>
+                          <swrl:Variable rdf:ID="phenorecord"/>
+                        </swrl:argument1>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000072"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Variable rdf:ID="rsma5"/>
+  <swrl:Imp rdf:ID="EncodeDelayed_phrases">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000033"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                  </swrl:AtomList>
+                </rdf:rest>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_phrases"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</swrl:argument2>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Variable rdf:ID="ssf1"/>
+  <swrl:Imp rdf:ID="EncodeHigh_insistence_on_sameness">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</swrl:argument2>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_IS"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:argument1 rdf:resource="#a"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000043"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="encodeNoWord">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000060"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_words"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >0</swrl:argument2>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeHigh_repetitive_sensory_motion">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_RSMA"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</swrl:argument2>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000044"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeLow_repetitive_sensory_motion">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >0</swrl:argument2>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_RSMA"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000056"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeDelayed_word">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000034"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:argument1 rdf:resource="#a"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_words"/>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</swrl:argument2>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeMedium_insistence_on_sameness">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</swrl:argument2>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_IS"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000057"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument1 rdf:resource="#a"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeNot_delayed_word">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</swrl:argument2>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_words"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000063"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Variable rdf:ID="sum"/>
+  <swrl:Imp rdf:ID="EncodeMedium_repetitive_sensory_motion">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_RSMA"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</swrl:argument2>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000058"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeNot_delayed_phrases">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</swrl:argument2>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_phrases"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000062"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                  </swrl:AtomList>
+                </rdf:rest>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="SQWRLQuery">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1>
+              <swrl:Variable rdf:ID="adi"/>
+            </swrl:argument1>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#adi"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument2>
+                  <swrl:Variable rdf:ID="subjectid"/>
+                </swrl:argument2>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest>
+                          <swrl:AtomList>
+                            <rdf:first>
+                              <swrl:DatavaluedPropertyAtom>
+                                <swrl:argument2>
+                                  <swrl:Variable rdf:ID="insistSameness"/>
+                                </swrl:argument2>
+                                <swrl:argument1 rdf:resource="#adi"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_IS"/>
+                              </swrl:DatavaluedPropertyAtom>
+                            </rdf:first>
+                            <rdf:rest>
+                              <swrl:AtomList>
+                                <rdf:first>
+                                  <swrl:DatavaluedPropertyAtom>
+                                    <swrl:argument2>
+                                      <swrl:Variable rdf:ID="interviewerAge"/>
+                                    </swrl:argument2>
+                                    <swrl:argument1 rdf:resource="#adi"/>
+                                    <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#ADI_2003_interview_date"/>
+                                  </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                  <swrl:AtomList>
+                                    <rdf:first>
+                                      <swrl:DatavaluedPropertyAtom>
+                                        <swrl:argument1 rdf:resource="#adi"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#ADI_2003_cbacs_atotal"/>
+                                        <swrl:argument2>
+                                          <swrl:Variable rdf:ID="adi_social"/>
+                                        </swrl:argument2>
+                                      </swrl:DatavaluedPropertyAtom>
+                                    </rdf:first>
+                                    <rdf:rest>
+                                      <swrl:AtomList>
+                                        <rdf:first>
+                                          <swrl:DatavaluedPropertyAtom>
+                                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#ADI_2003_cbacs_bnvtotal"/>
+                                            <swrl:argument2>
+                                              <swrl:Variable rdf:ID="adi_nonverbcomm"/>
+                                            </swrl:argument2>
+                                            <swrl:argument1 rdf:resource="#adi"/>
+                                          </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                          <swrl:AtomList>
+                                            <rdf:rest>
+                                              <swrl:AtomList>
+                                                <rdf:rest>
+                                                  <swrl:AtomList>
+                                                    <rdf:rest>
+                                                      <swrl:AtomList>
+                                                        <rdf:first>
+                                                          <swrl:DatavaluedPropertyAtom>
+                                                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                                                            <swrl:argument1>
+                                                              <swrl:Variable rdf:ID="ados"/>
+                                                            </swrl:argument1>
+                                                            <swrl:argument2 rdf:resource="#subjectid"/>
+                                                          </swrl:DatavaluedPropertyAtom>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                          <swrl:AtomList>
+                                                            <rdf:first>
+                                                              <swrl:DatavaluedPropertyAtom>
+    <swrl:argument2>
+      <swrl:Variable rdf:ID="ados_social"/>
+    </swrl:argument2>
+    <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/CA_ADOS1-2001.owl#Ados1_2001_scoresumm_btotal"/>
+    <swrl:argument1 rdf:resource="#ados"/>                    </swrl:DatavaluedPropertyAtom>
+                                                            </rdf:first>
+                                                            <rdf:rest>
+                                                              <swrl:AtomList>
+    <rdf:rest>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument2>
+                  <swrl:Variable rdf:ID="ados_rrsb"/>
+                </swrl:argument2>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/CA_ADOS1-2001.owl#Ados1_2001_scoresumm_dtotal"/>
+                <swrl:argument1 rdf:resource="#ados"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/CA_ADOS1-2001.owl#Ados1_2001_scoresumm_ctotal"/>
+            <swrl:argument1 rdf:resource="#ados"/>
+            <swrl:argument2>
+              <swrl:Variable rdf:ID="ados_play"/>
+            </swrl:argument2>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </rdf:rest>
+    <rdf:first>
+      <swrl:DatavaluedPropertyAtom>
+        <swrl:argument2>
+          <swrl:Variable rdf:ID="ados_comm"/>
+        </swrl:argument2>
+        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/CA_ADOS1-2001.owl#Ados1_2001_scoresumm_atotal"/>
+        <swrl:argument1 rdf:resource="#ados"/>
+      </swrl:DatavaluedPropertyAtom>
+    </rdf:first>                                              </swrl:AtomList>
+                                                            </rdf:rest>
+                                                          </swrl:AtomList>
+                                                        </rdf:rest>
+                                                      </swrl:AtomList>
+                                                    </rdf:rest>
+                                                    <rdf:first>
+                                                      <swrl:ClassAtom>
+                                                        <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/CA_ADOS1-2001.owl#AUTISMC000004"/>
+                                                        <swrl:argument1 rdf:resource="#ados"/>
+                                                      </swrl:ClassAtom>
+                                                    </rdf:first>
+                                                  </swrl:AtomList>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                  <swrl:DatavaluedPropertyAtom>
+                                                    <swrl:argument2>
+                                                      <swrl:Variable rdf:ID="adi_rrsb"/>
+                                                    </swrl:argument2>
+                                                    <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#ADI_2003_cbacs_ctotal"/>
+                                                    <swrl:argument1 rdf:resource="#adi"/>
+                                                  </swrl:DatavaluedPropertyAtom>
+                                                </rdf:first>
+                                              </swrl:AtomList>
+                                            </rdf:rest>
+                                            <rdf:first>
+                                              <swrl:DatavaluedPropertyAtom>
+                                                <swrl:argument1 rdf:resource="#adi"/>
+                                                <swrl:argument2>
+                                                  <swrl:Variable rdf:ID="adi_verbalcomm"/>
+                                                </swrl:argument2>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#ADI_2003_cbacs_bvtotal"/>
+                                              </swrl:DatavaluedPropertyAtom>
+                                            </rdf:first>
+                                          </swrl:AtomList>
+                                        </rdf:rest>
+                                      </swrl:AtomList>
+                                    </rdf:rest>
+                                  </swrl:AtomList>
+                                </rdf:rest>
+                              </swrl:AtomList>
+                            </rdf:rest>
+                          </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                          <swrl:DatavaluedPropertyAtom>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_RSMA"/>
+                            <swrl:argument1 rdf:resource="#adi"/>
+                            <swrl:argument2>
+                              <swrl:Variable rdf:ID="rsma"/>
+                            </swrl:argument2>
+                          </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2>
+                          <swrl:Variable rdf:ID="phraseAge"/>
+                        </swrl:argument2>
+                        <swrl:argument1 rdf:resource="#adi"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_phrases"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:DatavaluedPropertyAtom>
+                    <swrl:argument2>
+                      <swrl:Variable rdf:ID="wordAge"/>
+                    </swrl:argument2>
+                    <swrl:argument1 rdf:resource="#adi"/>
+                    <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_words"/>
+                  </swrl:DatavaluedPropertyAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:BuiltinAtom>
+            <swrl:arguments>
+              <rdf:List>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:resource="#wordAge"/>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:rest>
+                          <rdf:List>
+                            <rdf:first rdf:resource="#rsma"/>
+                            <rdf:rest>
+                              <rdf:List>
+                                <rdf:first rdf:resource="#insistSameness"/>
+                                <rdf:rest>
+                                  <rdf:List>
+                                    <rdf:rest>
+                                      <rdf:List>
+                                        <rdf:first rdf:resource="#adi_social"/>
+                                        <rdf:rest>
+                                          <rdf:List>
+                                            <rdf:first rdf:resource="#adi_nonverbcomm"/>
+                                            <rdf:rest>
+                                              <rdf:List>
+                                                <rdf:rest>
+                                                  <rdf:List>
+                                                    <rdf:first rdf:resource="#adi_rrsb"/>
+                                                    <rdf:rest>
+                                                      <rdf:List>
+                                                        <rdf:rest>
+                                                          <rdf:List>
+                                                            <rdf:first rdf:resource="#ados_comm"/>
+                                                            <rdf:rest>
+                                                              <rdf:List>
+    <rdf:first rdf:resource="#ados_play"/>
+    <rdf:rest>
+      <rdf:List>
+        <rdf:first rdf:resource="#ados_rrsb"/>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:List>
+    </rdf:rest>                                               </rdf:List>
+                                                            </rdf:rest>
+                                                          </rdf:List>
+                                                        </rdf:rest>
+                                                        <rdf:first rdf:resource="#ados_social"/>
+                                                      </rdf:List>
+                                                    </rdf:rest>
+                                                  </rdf:List>
+                                                </rdf:rest>
+                                                <rdf:first rdf:resource="#adi_verbalcomm"/>
+                                              </rdf:List>
+                                            </rdf:rest>
+                                          </rdf:List>
+                                        </rdf:rest>
+                                      </rdf:List>
+                                    </rdf:rest>
+                                    <rdf:first rdf:resource="#interviewerAge"/>
+                                  </rdf:List>
+                                </rdf:rest>
+                              </rdf:List>
+                            </rdf:rest>
+                          </rdf:List>
+                        </rdf:rest>
+                        <rdf:first rdf:resource="#phraseAge"/>
+                      </rdf:List>
+                    </rdf:rest>
+                  </rdf:List>
+                </rdf:rest>
+                <rdf:first rdf:resource="#subjectid"/>
+              </rdf:List>
+            </swrl:arguments>
+            <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+          </swrl:BuiltinAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeNo_phrases">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000059"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >0</swrl:argument2>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_age_phrases"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeLow_insistence_on_sameness">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_IS"/>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >0</swrl:argument2>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#a"/>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000055"/>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#a"/>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="EncodeSavant_negative">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#AUTISMC000000"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:first>
+                      <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:resource="#subjectID"/>
+                        <swrl:argument1 rdf:resource="#phenorecord"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subjectId"/>
+                      </swrl:DatavaluedPropertyAtom>
+                    </rdf:first>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:argument1 rdf:resource="#phenorecord"/>
+                            <swrl:argument2 rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000071"/>
+                            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#subject_has_quality_or_disposition"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:ClassAtom>
+                    <swrl:classPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100000"/>
+                    <swrl:argument1 rdf:resource="#phenorecord"/>
+                  </swrl:ClassAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/ca_adi-2003.owl#SubjectKey"/>
+                <swrl:argument2 rdf:resource="#subjectID"/>
+                <swrl:argument1 rdf:resource="#a"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:DatavaluedPropertyAtom>
+            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >0</swrl:argument2>
+            <swrl:propertyPredicate rdf:resource="http://purl.org/autism-ontology/1.0/autism-core.owl#has_SS"/>
+            <swrl:argument1 rdf:resource="#a"/>
+          </swrl:DatavaluedPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.2, Build 562)  http://protege.stanford.edu -->

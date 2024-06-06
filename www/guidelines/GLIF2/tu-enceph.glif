@@ -1,0 +1,304 @@
+Partial Encoding of Encephalopathy Guideline
+By Samson Tu
+August 2, 1996
+
+
+Guidelines instance_00001 
+{
+   guidelines = SEQUENCE 1 {(Guideline instance_00008);};
+};
+
+
+Guideline instance_00008 
+{
+   steps = SEQUENCE 24 {(Composite_Step instance_00009);(Action_Step instance_00014);(Action_Step instance_00016);(Action_Step instance_00017);(Branch_Step instance_00018);(Synchronization_Step instance_00019);(Action_Step instance_00020);(Action_Step instance_00021);(Condition_Step instance_00022);(Condition_Step instance_00023);(Action_Step instance_00026);(Condition_Step instance_00028);(Condition_Step instance_00029);(Action_Step instance_00032);(Action_Step instance_00034);(Condition_Step instance_00036);(Condition_Step instance_00037);(Condition_Step instance_00038);(Action_Step instance_00039);(Action_Step instance_00040);(Action_Step instance_00044);(Action_Step instance_00045);(Action_Step instance_00046);(Branch_Step instance_00047);};
+   name_ = "Encephalophathy";
+   version = "David Greenberg MD ";
+};
+
+
+Composite_Step instance_00009 
+{
+   number_of_iteration = "1";
+   steps = SEQUENCE 3 {(Action_Step instance_00010);(Action_Step instance_00048);(Action_Step instance_00049);};
+   next_step = (Branch_Step instance_00018);
+   name_ = "blood tests";
+};
+
+
+Action_Step instance_00010 
+{
+   action = (Assessment_Protocol instance_00011);
+   name_ = "glucose";
+};
+
+
+Assessment_Protocol instance_00011 
+{
+   goal = 
+       Boolean_Criterion instance_00013 
+       {
+          boolean_condition = "(hypoglycemia hyperrosmolar nonketotic hyperglycemia)";
+       };
+   description = "lab test to be ordered";
+   name_ = "glucose";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00012 
+       {
+          name_ = "glucose";
+          type = required;
+       };};
+};
+
+
+Action_Step instance_00014 
+{
+   preference = required;
+   action = (Drug_Prescription instance_00015);
+   next_steps = SEQUENCE 1 {(Synchronization_Step instance_00019);};
+   name_ = "administer dextrose";
+};
+
+
+Drug_Prescription instance_00015 
+{
+   drug_administration = "IV";
+   drug_name = "dextrose";
+   standard_dose = "50% 50 mg";
+   name_ = "administer dextrose";
+};
+
+
+Action_Step instance_00016 
+{
+   next_steps = SEQUENCE 1 {(Synchronization_Step instance_00019);};
+   name_ = "thiamine";
+};
+
+
+Action_Step instance_00017 
+{
+   next_steps = SEQUENCE 1 {(Synchronization_Step instance_00019);};
+   name_ = "naloxone";
+};
+
+
+Branch_Step instance_00018 
+{
+   next_steps = SEQUENCE 3 {(Action_Step instance_00014);(Action_Step instance_00016);(Action_Step instance_00017);};
+   name_ = "administer drugs";
+};
+
+
+Synchronization_Step instance_00019 
+{
+   continuation = wait_for_all;
+   next_steps = SEQUENCE 1 {(Action_Step instance_00020);};
+   name_ = "finish drug administration";
+};
+
+
+Action_Step instance_00020 
+{
+   next_steps = SEQUENCE 1 {(Action_Step instance_00021);};
+   name_ = "review history and results of drug administration";
+};
+
+
+Action_Step instance_00021 
+{
+   next_steps = SEQUENCE 2 {(Condition_Step instance_00022);(Condition_Step instance_00023);};
+   name_ = "do physical exam";
+};
+
+
+Condition_Step instance_00022 
+{
+   condition = 
+       Boolean_Criterion instance_00024 
+       {
+          boolean_condition = "pupils  = 'reactive' and examination = 'symmetrical' and head_trauma = 'absent'";
+          current_time_variable = "pupils  = 'reactive' and examination = 'symmetrical' and head_trauma = 'absent'";
+       };
+   name_ = "physical exam OK";
+};
+
+
+Condition_Step instance_00023 
+{
+   next_step = (Action_Step instance_00026);
+   condition = 
+       Boolean_Criterion instance_00025 
+       {
+          boolean_condition = "pupils = 'poorly reacitve' or pupils = 'unreactive' or examination = 'asymmetrical' or 'head_trauma' = 'present'";
+          current_time_variable = "pupils = 'poorly reacitve' or pupils = 'unreactive' or examination = 'asymmetrical' or 'head_trauma' = 'present'";
+       };
+   name_ = "physical exam abnormal";
+};
+
+
+Action_Step instance_00026 
+{
+   preference = required;
+   action = (Assessment_Protocol instance_00027);
+   next_steps = SEQUENCE 2 {(Condition_Step instance_00028);(Condition_Step instance_00029);};
+   name_ = "do CT-brain scan";
+};
+
+
+Assessment_Protocol instance_00027 
+{
+   name_ = "CT-brain scan";
+};
+
+
+Condition_Step instance_00028 
+{
+   next_step = (Action_Step instance_00032);
+   condition = 
+       Boolean_Criterion instance_00030 
+       {
+          boolean_condition = "hemorrhage = 'present'";
+          current_time_variable = "hemorrhage = 'present'";
+       };
+   name_ = "Hemorrhage";
+};
+
+
+Condition_Step instance_00029 
+{
+   next_step = (Action_Step instance_00034);
+   condition = 
+       Boolean_Criterion instance_00031 
+       {
+          boolean_condition = "CT-brain-scan-result = 'normal'";
+          current_time_variable = "CT-brain-scan-result = 'normal'";
+       };
+   name_ = "CT-brain-scan normal";
+};
+
+
+
+Action_Step instance_00032 
+{
+   action = (Intervention_Protocol instance_00033);
+   name_ = "Neurology consultation";
+};
+
+
+Intervention_Protocol instance_00033 
+{
+   name_ = "Neurology consultation";
+};
+
+
+Action_Step instance_00034 
+{
+   preference = required;
+   action = (Intervention_Protocol instance_00035);
+   next_steps = SEQUENCE 3 {(Condition_Step instance_00036);(Condition_Step instance_00037);(Condition_Step instance_00038);};
+   name_ = "Lumbar puncture";
+};
+
+
+Intervention_Protocol instance_00035 
+{
+   name_ = "Lumbar puncture";
+};
+
+
+Condition_Step instance_00036 
+{
+   next_step = (Action_Step instance_00039);
+   name_ = "aspirate = 'cloudy_WBC_pleocytosis'";
+};
+
+
+Condition_Step instance_00037 
+{
+   next_step = (Branch_Step instance_00047);
+   name_ = "aspirate = 'bloody'";
+};
+
+
+Condition_Step instance_00038 
+{
+   next_step = (Action_Step instance_00046);
+   name_ = "aspirate = 'normal'";
+};
+
+
+Action_Step instance_00039 
+{
+   action = (Assessment_Protocol instance_00041);
+   next_steps = SEQUENCE 1 {(Action_Step instance_00040);};
+   name_ = "culture and check drug sensitivity";
+};
+
+
+Action_Step instance_00040 
+{
+   action = (Drug_Prescription instance_00043);
+   name_ = "give antibiotics";
+};
+
+
+Assessment_Protocol instance_00041 
+{
+   goal = 
+       Boolean_Criterion instance_00042 
+       {
+          boolean_condition = "identify organism causing encephalopathy and check patient's sensitivity to drugs";
+          current_time_variable = "identify organism check patient's sensitivity to drugs";
+       };
+   description = "Culture for organism and check patient's sensitivity to antibiotics";
+   name_ = "culture and check sensitivity";
+};
+
+
+
+
+Drug_Prescription instance_00043 
+{
+   drug_administration = "IV";
+   name_ = "give antibiotics";
+};
+
+
+Action_Step instance_00044 
+{
+   name_ = "CTbrain scan";
+};
+
+
+Action_Step instance_00045 
+{
+   name_ = "Neurology consultation";
+};
+
+
+Action_Step instance_00046 
+{
+   name_ = "Consider metabolic cause";
+};
+
+
+Branch_Step instance_00047 
+{
+   selection_method = all_of;
+   next_steps = SEQUENCE 2 {(Action_Step instance_00044);(Action_Step instance_00045);};
+   name_ = "do";
+};
+
+
+Action_Step instance_00048 
+{
+   name_ = "CBC";
+};
+
+
+Action_Step instance_00049 
+{
+   name_ = "PT";
+};
+

@@ -1,0 +1,6798 @@
+; Mon Feb 22 13:35:41 PST 2010
+; 
+;+ (version "3.4.3")
+;+ (build "Build 572")
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Class2868]
+		[OpioidGuideline_ProjectKB_Class2869]
+		[OpioidGuideline_ProjectKB_Class2870]
+		[OpioidGuideline_ProjectKB_Class2871]
+		[OpioidGuideline_ProjectKB_Class2872]
+		[OpioidGuideline_ProjectKB_Class2873]
+		[OpioidGuideline_ProjectKB_Class2874]
+		[OpioidGuideline_ProjectKB_Class2875]
+		[OpioidGuideline_ProjectKB_Class2876]
+		[OpioidGuideline_ProjectKB_Class2877]
+		[OpioidGuideline_ProjectKB_Class2878]
+		[OpioidGuideline_ProjectKB_Class2879]
+		[OpioidGuideline_ProjectKB_Class2880]
+		[OpioidGuideline_ProjectKB_Class2881]
+		[OpioidGuideline_ProjectKB_Class2882]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12469] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-ENGINE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12476])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12476] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12477]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12478]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12480]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12477] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12478] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Startup file name")
+	(name ":STARTUP-FILE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12479])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12479] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12480] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Startup expression")
+	(name ":STARTUP-EXPRESSION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12481])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12481] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12482] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-RULE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12493])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12493] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12494]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12499]
+		[OpioidGuideline_ProjectKB_Instance_2474]
+		[OpioidGuideline_ProjectKB_Instance_2476]
+		[OpioidGuideline_ProjectKB_Instance_2478]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12494] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12499] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12500])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12500] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12503] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-FUNCTION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12514])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12514] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12515]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12516]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12518]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12520]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12522]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12515] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12516] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12517])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12517] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12518] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12519])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12519] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12520] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12521])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12521] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12522] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12523])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12523] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12524] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFGLOBAL")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12533])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12533] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12534]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12535]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12537]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12539]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12534] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12535] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12536])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12536] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12537] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12538])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12538] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12539] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12540])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12540] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12541] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFTEMPLATE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12552])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12552] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12553]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12554]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12556]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12558]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12560]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12553] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12554] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12555])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12555] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12556] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12557])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12557] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12558] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12559])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12559] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12560] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12561])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12561] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12562] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFFACTS")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12573])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12573] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12574]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12575]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12577]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12579]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12581]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12574] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12575] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12576])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12576] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12577] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12578])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12578] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12579] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12580])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12580] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12581] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12582])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12582] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12583] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFMESSAGE-HANDLER")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12594])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12594] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12595]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12596]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12598]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12600]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12602]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12595] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12596] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12597])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12597] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12598] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12599])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12599] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12600] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12601])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12601] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12602] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12603])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12603] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12604] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFMETHOD")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12615])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12615] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12616]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12617]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12619]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12621]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12623]))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12616] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12617] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12618])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12618] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12619] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12620])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12620] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12621] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12622])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12622] of  Property_List
+)
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12623] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [ChronicPainOpioid10-12-05_ProjectKB_Instance_12624])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-12-05_ProjectKB_Instance_12624] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_12448] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_12449])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_12449] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_12450]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_12451]
+		[OpioidGuideline_ProjectKB_Instance_12526]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_12450] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_12451] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2448] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2449])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2449] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2450]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2451]
+		[OpioidGuideline_ProjectKB_Instance_12565]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2450] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2451] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2535] of  Widget
+
+	(is_hidden FALSE)
+	(name "General_Comparison_Criterion")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2538])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2538] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2539]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2540]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2542]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2544]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2546]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2548]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2550]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2554]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2556]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2558]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2562]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2539] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2540] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2541])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2541] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2542] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "default_value")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2543])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2543] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2544] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "aggregation_operator")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2545])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2545] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2546] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2547])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2547] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2548] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "operator")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2549])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 200)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2549] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2550] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "valid_window")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2551])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2551] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2552]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2553]
+		[OpioidGuideline_ProjectKB_Instance_12505]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2552] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2553] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2554] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "domain_term")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2555])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2555] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2556] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2557])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2557] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2558] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2559])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 300)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2559] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2560]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2561]
+		[OpioidGuideline_ProjectKB_Instance_12506]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2560] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2561] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2562] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "assume_if_no_value")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2563])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 100)
+	(y 120))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2563] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2679] of  Property_List
+
+	(properties [ChronicPainOpioid10-26-05_ProjectKB_Instance_2680]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2680] of  String
+
+	(name "tooltip_text"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2737] of  Widget
+
+	(is_hidden FALSE)
+	(name "Numeric_Term_Criterion")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2740])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2740] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2741]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2742]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2744]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2746]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2748]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2750]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2752]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2756]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2758]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2760]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2762]
+		[OpioidGuideline_ProjectKB_Instance_13400]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2741] of  Property_List
+
+	(name "layout properties"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2742] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2743])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2743] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2744] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "default_value")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2745])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2745] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2746] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "unit")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2747])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2747] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2748] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "aggregation_operator")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2749])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 120))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2749] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2750] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "operator")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2751])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 200)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2751] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2752] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "valid_window")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2753])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2753] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2754]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2755]
+		[OpioidGuideline_ProjectKB_Instance_22556]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2754] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2755] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2756] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "numeric_domain_term")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2757])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2757] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2758] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2759])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2759] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2760] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2761])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 180)
+	(x 300)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2761] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2762] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "assume_if_no_value")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2763])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 100)
+	(y 120))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2763] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2786] of  Property_List
+
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2787]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2788]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2789]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2790]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2791]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2787] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2850])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 620)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2788] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2851])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 360)
+	(x 0)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2789] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2852])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 270)
+	(x 360)
+	(y 60))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2790] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2853])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 630)
+	(x 0)
+	(y 240))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2791] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2792]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2793]))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2792] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2793] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":PAL-STATEMENT"))
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2850] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2851] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2852] of  Property_List
+)
+
+([ChronicPainOpioid10-26-05_ProjectKB_Instance_2853] of  Property_List
+)
+
+([ChronicPainOpioid_ProjectKB_Instance_1954] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_1955])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([ChronicPainOpioid_ProjectKB_Instance_1955] of  Property_List
+)
+
+([ChronicPainOpioid_ProjectKB_Instance_1972] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_1973])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([ChronicPainOpioid_ProjectKB_Instance_1973] of  Property_List
+
+	(properties [ChronicPainOpioid_ProjectKB_Instance_2034]))
+
+([ChronicPainOpioid_ProjectKB_Instance_1999] of  Widget
+
+	(is_hidden FALSE)
+	(name "Guideline_View")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2000])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2000] of  Property_List
+
+	(properties
+		[ChronicPainOpioid_ProjectKB_Instance_2001]
+		[ChronicPainOpioid_ProjectKB_Instance_2002]
+		[ChronicPainOpioid_ProjectKB_Instance_2300]
+		[ChronicPainOpioid_ProjectKB_Instance_2310]
+		[ChronicPainOpioid_ProjectKB_Instance_2473]
+		[OpioidGuideline_ProjectKB_Class2860]))
+
+([ChronicPainOpioid_ProjectKB_Instance_2001] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ChronicPainOpioid_ProjectKB_Instance_2521]
+		[ChronicPainOpioid_ProjectKB_Instance_2522]))
+
+([ChronicPainOpioid_ProjectKB_Instance_2002] of  Widget
+
+	(height 500)
+	(is_hidden FALSE)
+	(label "Guideline")
+	(name "guideline")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2003])
+	(widget_class_name "edu.stanford.smi.protegex.widget.contains.ContainsWidget")
+	(width 620)
+	(x 0)
+	(y 0))
+
+([ChronicPainOpioid_ProjectKB_Instance_2003] of  Property_List
+
+	(properties
+		[ChronicPainOpioid_ProjectKB_Instance_2006]
+		[ChronicPainOpioid_ProjectKB_Instance_2007]
+		[ChronicPainOpioid_ProjectKB_Instance_2008]
+		[ChronicPainOpioid_ProjectKB_Instance_2009]
+		[ChronicPainOpioid_ProjectKB_Instance_2010]
+		[ChronicPainOpioid_ProjectKB_Instance_2011]
+		[ChronicPainOpioid_ProjectKB_Instance_2012]
+		[ChronicPainOpioid_ProjectKB_Instance_2013]
+		[ChronicPainOpioid_ProjectKB_Instance_2014]
+		[ChronicPainOpioid_ProjectKB_Instance_2015]
+		[ChronicPainOpioid_ProjectKB_Instance_2016]
+		[ChronicPainOpioid_ProjectKB_Instance_2017]
+		[ChronicPainOpioid_ProjectKB_Instance_2018]
+		[ChronicPainOpioid_ProjectKB_Instance_2019]
+		[ChronicPainOpioid_ProjectKB_Instance_2020]
+		[ChronicPainOpioid_ProjectKB_Instance_2021]
+		[ChronicPainOpioid_ProjectKB_Instance_2022]
+		[ChronicPainOpioid_ProjectKB_Instance_2023]
+		[ChronicPainOpioid_ProjectKB_Instance_2024]
+		[ChronicPainOpioid_ProjectKB_Instance_2025]
+		[ChronicPainOpioid_ProjectKB_Instance_2026]
+		[ChronicPainOpioid_ProjectKB_Instance_2027]
+		[ChronicPainOpioid_ProjectKB_Instance_2028]
+		[ChronicPainOpioid_ProjectKB_Instance_2029]
+		[ChronicPainOpioid_ProjectKB_Instance_2030]
+		[ChronicPainOpioid_ProjectKB_Instance_2031]
+		[ChronicPainOpioid_ProjectKB_Instance_2032]
+		[ChronicPainOpioid_ProjectKB_Instance_2033]))
+
+([ChronicPainOpioid_ProjectKB_Instance_2006] of  String
+
+	(name "tooltip_text"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2007] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Insert:At:Current:Selection"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2008] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Select:New:Insertions"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2009] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Create:Form:For:New:Instances"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2010] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Subwidget:Selection:Enabled"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2011] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Summary:Panel"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2012] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Number:Of:Subordinates"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2013] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Subordinate:Browser:Keys"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2014] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Use:Separators:Between:Subwidgets"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2015] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Comtain:In:Vertical:Direction"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2016] of  Integer
+
+	(integer_value 10)
+	(name ":Size:Of:Space:Between:Subwidgets"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2017] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2018] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2019] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2020] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2021] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2022] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Delete:Instance:Button"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2023] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Prototype:Button"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2024] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Move:Instance:Buttons"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2025] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2026] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2027] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2028] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2029] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2030] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2031] of  String
+
+	(name ":Move:Instance:Buttons:Tooltip")
+	(string_value "Move the selected instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2032] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2033] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2034] of  String
+
+	(name "KATool.TOP_LEVEL_INSTANCE")
+	(string_value "ChronicPainOpioid_Instance_1"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2038] of  Property_List
+)
+
+([ChronicPainOpioid_ProjectKB_Instance_2041] of  Map
+
+	(entries
+		[OpioidGuideline_ProjectKB_Class2895]
+		[OpioidGuideline_ProjectKB_Class2897]
+		[OpioidGuideline_ProjectKB_Class2898]
+		[OpioidGuideline_ProjectKB_Class2900]
+		[OpioidGuideline_ProjectKB_Class2918]
+		[OpioidGuideline_ProjectKB_Class2922]
+		[OpioidGuideline_ProjectKB_Class2962]
+		[OpioidGuideline_ProjectKB_Class2967]
+		[OpioidGuideline_ProjectKB_Class2969]
+		[OpioidGuideline_ProjectKB_Class2970])
+	(referenced_maps
+		[OpioidGuideline_ProjectKB_Class2883]
+		[OpioidGuideline_ProjectKB_Class2899]
+		[OpioidGuideline_ProjectKB_Class2963]
+		[OpioidGuideline_ProjectKB_Class2896]
+		[OpioidGuideline_ProjectKB_Class2923]
+		[OpioidGuideline_ProjectKB_Class2919]
+		[OpioidGuideline_ProjectKB_Class2901]
+		[OpioidGuideline_ProjectKB_Class2968]))
+
+([ChronicPainOpioid_ProjectKB_Instance_2044] of  String
+
+	(name "tooltip_text"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2045] of  String
+
+	(name "Management_Diagram_gridStyle")
+	(string_value "Dots"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2046] of  String
+
+	(name "Management_Diagram_snapOnMove")
+	(string_value "Afterwards"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2047] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Management_Diagram_wrapping"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2300] of  Widget
+
+	(height 160)
+	(is_hidden FALSE)
+	(name "drug_classes")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2301])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 310)
+	(x 0)
+	(y 500))
+
+([ChronicPainOpioid_ProjectKB_Instance_2301] of  Property_List
+
+	(properties
+		[ChronicPainOpioid_ProjectKB_Instance_2302]
+		[ChronicPainOpioid_ProjectKB_Instance_2303]
+		[OpioidGuideline_ProjectKB_Instance_12559]))
+
+([ChronicPainOpioid_ProjectKB_Instance_2302] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid_ProjectKB_Instance_2303] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2310] of  Widget
+
+	(height 160)
+	(is_hidden FALSE)
+	(name "guideline_drugs")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2311])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 310)
+	(x 310)
+	(y 500))
+
+([ChronicPainOpioid_ProjectKB_Instance_2311] of  Property_List
+
+	(properties
+		[ChronicPainOpioid_ProjectKB_Instance_2312]
+		[ChronicPainOpioid_ProjectKB_Instance_2313]
+		[OpioidGuideline_ProjectKB_Instance_12560]))
+
+([ChronicPainOpioid_ProjectKB_Instance_2312] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid_ProjectKB_Instance_2313] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2473] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "versions")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2474])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 660))
+
+([ChronicPainOpioid_ProjectKB_Instance_2474] of  Property_List
+
+	(properties
+		[ChronicPainOpioid_ProjectKB_Instance_2475]
+		[ChronicPainOpioid_ProjectKB_Instance_2476]
+		[OpioidGuideline_ProjectKB_Instance_12561]))
+
+([ChronicPainOpioid_ProjectKB_Instance_2475] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ChronicPainOpioid_ProjectKB_Instance_2476] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2495] of  Property_List
+)
+
+([ChronicPainOpioid_ProjectKB_Instance_2496] of  Property_List
+)
+
+([ChronicPainOpioid_ProjectKB_Instance_2497] of  Property_List
+)
+
+([ChronicPainOpioid_ProjectKB_Instance_2521] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ChronicPainOpioid_ProjectKB_Instance_2522] of  String
+
+	(name "vertical_stretcher")
+	(string_value "guideline"))
+
+([ChronicPainOpioid_ProjectKB_Instance_72] of  String
+
+	(name "SearchTab_Query")
+	(string_value "Query Name: messages\nMatch All:true\nLength: 1\nOn_Screen_Message	message	contains	Other:a	1	\n\nQuery Name: Checklist\nMatch All:true\nLength: 1\nConditional_On_Screen_Message	message_type	contains	Cls:Checklist	1	\n\n"))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [KB_153407_Instance_33])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_119214_Instance_1821] of  Widget
+
+	(height 840)
+	(is_hidden FALSE)
+	(name "Drug_Usage")
+	(property_list [KB_119214_Instance_1822])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 1034)
+	(x 0)
+	(y -305))
+
+([KB_119214_Instance_1822] of  Property_List
+
+	(properties
+		[KB_119214_Instance_1823]
+		[KB_119214_Instance_1825]
+		[KB_119214_Instance_1829]
+		[KB_119214_Instance_1831]
+		[KB_119214_Instance_1833]
+		[KB_119214_Instance_1837]
+		[KB_119214_Instance_1839]
+		[KB_119214_Instance_1840]
+		[KB_119214_Instance_1842]
+		[KB_119214_Instance_1844]
+		[KB_119214_Instance_1848]
+		[KB_119214_Instance_1854]
+		[KB_119214_Instance_1856]
+		[KB_119214_Instance_1858]
+		[KB_119214_Instance_1860]
+		[OpioidGuideline_ProjectKB_Instance_12130]))
+
+([KB_119214_Instance_1823] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "duration_constraint")
+	(property_list [KB_119214_Instance_1824])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_119214_Instance_1824] of  Property_List
+)
+
+([KB_119214_Instance_1825] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "formulary_preferred_drug_in_class")
+	(property_list [KB_119214_Instance_1826])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KB_119214_Instance_1826] of  Property_List
+
+	(properties
+		[KB_119214_Instance_1827]
+		[KB_119214_Instance_1828]
+		[OpioidGuideline_ProjectKB_Instance_22281]))
+
+([KB_119214_Instance_1827] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_119214_Instance_1828] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_119214_Instance_1829] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "components")
+	(property_list [KB_119214_Instance_1830])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_119214_Instance_1830] of  Property_List
+)
+
+([KB_119214_Instance_1831] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_119214_Instance_1832])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_119214_Instance_1832] of  Property_List
+)
+
+([KB_119214_Instance_1833] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "collateral_actions")
+	(property_list [KB_119214_Instance_1834])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 210)
+	(y 120))
+
+([KB_119214_Instance_1834] of  Property_List
+
+	(properties
+		[KB_119214_Instance_1835]
+		[KB_119214_Instance_1836]
+		[OpioidGuideline_ProjectKB_Instance_22282]))
+
+([KB_119214_Instance_1835] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_119214_Instance_1836] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_119214_Instance_1837] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Drug_Class_Name")
+	(property_list [KB_119214_Instance_1838])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_119214_Instance_1838] of  Property_List
+)
+
+([KB_119214_Instance_1839] of  Property_List
+
+	(name "layout properties"))
+
+([KB_119214_Instance_1840] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Relative_Indications")
+	(property_list [KB_119214_Instance_1841])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 360))
+
+([KB_119214_Instance_1841] of  Property_List
+)
+
+([KB_119214_Instance_1842] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Compelling_Indications")
+	(property_list [KB_119214_Instance_1843])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 240))
+
+([KB_119214_Instance_1843] of  Property_List
+)
+
+([KB_119214_Instance_1844] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_119214_Instance_1845])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 210)
+	(y 600))
+
+([KB_119214_Instance_1845] of  Property_List
+
+	(properties
+		[KB_119214_Instance_1846]
+		[KB_119214_Instance_1847]
+		[OpioidGuideline_ProjectKB_Instance_22283]))
+
+([KB_119214_Instance_1846] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_119214_Instance_1847] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_119214_Instance_1848] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Side_Effects")
+	(property_list [KB_119214_Instance_1849])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 0))
+
+([KB_119214_Instance_1849] of  Property_List
+)
+
+([KB_119214_Instance_1854] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Absolute_Contraindications")
+	(property_list [KB_119214_Instance_1855])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([KB_119214_Instance_1855] of  Property_List
+)
+
+([KB_119214_Instance_1856] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Drug_Partners_To_Avoid")
+	(property_list [KB_119214_Instance_1857])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 480))
+
+([KB_119214_Instance_1857] of  Property_List
+)
+
+([KB_119214_Instance_1858] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Drug_Partners")
+	(property_list [KB_119214_Instance_1859])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 480))
+
+([KB_119214_Instance_1859] of  Property_List
+)
+
+([KB_119214_Instance_1860] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Relative_Contraindications")
+	(property_list [KB_119214_Instance_1861])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 360))
+
+([KB_119214_Instance_1861] of  Property_List
+)
+
+([KB_121564_Class2840] of  Map
+
+	(entries
+		[KB_121564_Class2842]
+		[KB_121564_Class2843]
+		[KB_121564_Class2845]
+		[KB_121564_Class2847]
+		[KB_121564_Class2849]
+		[KB_121564_Class2851])
+	(referenced_maps
+		[KB_121564_Class2850]
+		[KB_121564_Class2841]
+		[KB_121564_Class2848]
+		[KB_121564_Class2846]
+		[KB_121564_Class2844]))
+
+([KB_121564_Class2841] of  Map
+)
+
+([KB_121564_Class2842] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_121564_Class2841")
+	(value_class "java.util.Map"))
+
+([KB_121564_Class2843] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_121564_Class2844] of  Map
+)
+
+([KB_121564_Class2845] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_121564_Class2844")
+	(value_class "java.util.Map"))
+
+([KB_121564_Class2846] of  Map
+)
+
+([KB_121564_Class2847] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_121564_Class2846")
+	(value_class "java.util.Map"))
+
+([KB_121564_Class2848] of  Map
+)
+
+([KB_121564_Class2849] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_121564_Class2848")
+	(value_class "java.util.Map"))
+
+([KB_121564_Class2850] of  Map
+)
+
+([KB_121564_Class2851] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_121564_Class2850")
+	(value_class "java.util.Map"))
+
+([KB_153407_Instance_0] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_153407_Instance_1]
+		[KB_153407_Instance_2]
+		[KB_153407_Instance_3]
+		[KB_153407_Instance_4]
+		[KB_153407_Instance_5]
+		[KB_153407_Instance_6]
+		[KB_153407_Instance_7]
+		[KB_153407_Instance_8]
+		[KB_153407_Instance_9]
+		[KB_153407_Instance_10]))
+
+([KB_153407_Instance_1] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12121])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_153407_Instance_10] of  Property_List
+
+	(name "layout properties")
+	(properties [KB_153407_Instance_11]))
+
+([KB_153407_Instance_11] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))
+
+([KB_153407_Instance_12] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[KB_153407_Instance_13]
+		[KB_153407_Instance_14]
+		[KB_153407_Instance_15]
+		[KB_153407_Instance_16]
+		[KB_153407_Instance_17]
+		[KB_153407_Instance_18]
+		[KB_153407_Instance_19]
+		[KB_153407_Instance_20]
+		[KB_153407_Instance_21]
+		[KB_153407_Instance_22]
+		[KB_153407_Instance_23]
+		[KB_153407_Instance_24]
+		[KB_153407_Instance_25]
+		[KB_153407_Instance_26]
+		[KB_153407_Instance_27]
+		[KB_153407_Instance_28]))
+
+([KB_153407_Instance_13] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_153407_Instance_14] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_153407_Instance_15] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([KB_153407_Instance_16] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_153407_Instance_17] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([KB_153407_Instance_18] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_153407_Instance_19] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([KB_153407_Instance_2] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_153407_Instance_20] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([KB_153407_Instance_21] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([KB_153407_Instance_22] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_153407_Instance_23] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([KB_153407_Instance_24] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([KB_153407_Instance_25] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([KB_153407_Instance_26] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_153407_Instance_27] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([KB_153407_Instance_28] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_153407_Instance_29] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[KB_153407_Instance_30]
+		[KB_153407_Instance_31]
+		[KB_153407_Instance_32]))
+
+([KB_153407_Instance_3] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_153407_Instance_30] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_153407_Instance_31] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_153407_Instance_32] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_153407_Instance_33] of  Property_List
+
+	(properties
+		[KB_153407_Instance_34]
+		[KB_153407_Instance_35]
+		[KB_153407_Instance_36]
+		[KB_153407_Instance_37]))
+
+([KB_153407_Instance_34] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([KB_153407_Instance_35] of  Widget
+
+	(name ":CREATOR"))
+
+([KB_153407_Instance_36] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([KB_153407_Instance_37] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_153407_Instance_38] of  Property_List
+
+	(properties
+		[KB_153407_Instance_39]
+		[KB_153407_Instance_40]
+		[KB_153407_Instance_41]
+		[KB_153407_Instance_42]
+		[OpioidGuideline_ProjectKB_Instance_53052]))
+
+([KB_153407_Instance_39] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(property_list [OpioidGuideline_ProjectKB_Instance_53053])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([KB_153407_Instance_4] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_153407_Instance_40] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 275)
+	(y 180))
+
+([KB_153407_Instance_41] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(property_list [OpioidGuideline_ProjectKB_Instance_53054])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 275)
+	(y 0))
+
+([KB_153407_Instance_42] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 275)
+	(x 0)
+	(y 60))
+
+([KB_153407_Instance_5] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12124])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_153407_Instance_6] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12125])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_153407_Instance_7] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12129])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_153407_Instance_8] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_153407_Instance_9] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12126])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([KB_220518_Instance_0] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([KB_220518_Instance_1] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon TRUE)
+	(display_hidden_classes TRUE)
+	(display_multi_parent_class_icon TRUE)
+	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([KB_220518_Instance_69] of  Property_List
+
+	(properties [ChronicPainOpioid_ProjectKB_Instance_72]))
+
+([KB_220518_Instance_70] of  String
+
+	(name "classes_file_name")
+	(string_value "OpioidGuideline.pont"))
+
+([KB_220518_Instance_71] of  String
+
+	(name "instances_file_name")
+	(string_value "OpioidGuideline.pins"))
+
+([KB_268245_Instance_2332] of  Widget
+
+	(height 574)
+	(is_hidden FALSE)
+	(name "Presence_Criterion")
+	(property_list [KB_268245_Instance_2333])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 806)
+	(x 0)
+	(y 0))
+
+([KB_268245_Instance_2333] of  Property_List
+
+	(properties
+		[KB_268245_Instance_2334]
+		[KB_268245_Instance_2335]
+		[KB_268245_Instance_2346]
+		[KB_268245_Instance_2351]
+		[KB_268245_Instance_2356]
+		[KB_268245_Instance_2361]
+		[KB_268245_Instance_2363]))
+
+([KB_268245_Instance_2334] of  Property_List
+
+	(name "layout properties"))
+
+([KB_268245_Instance_2335] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "period")
+	(property_list [KB_268245_Instance_2336])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 240)
+	(y 120))
+
+([KB_268245_Instance_2336] of  Property_List
+
+	(properties
+		[KB_268245_Instance_2337]
+		[KB_268245_Instance_2338]
+		[KB_268245_Instance_2339]
+		[KB_268245_Instance_2340]
+		[KB_268245_Instance_2341]
+		[KB_268245_Instance_2342]
+		[KB_268245_Instance_2343]
+		[KB_268245_Instance_2344]
+		[KB_268245_Instance_2345]
+		[OpioidGuideline_ProjectKB_Instance_12514]))
+
+([KB_268245_Instance_2337] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_268245_Instance_2338] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_268245_Instance_2339] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_268245_Instance_2340] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_268245_Instance_2341] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_268245_Instance_2342] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_268245_Instance_2343] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_268245_Instance_2344] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_268245_Instance_2345] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_268245_Instance_2346] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [KB_268245_Instance_2347])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 240)
+	(y 60))
+
+([KB_268245_Instance_2347] of  Property_List
+
+	(properties
+		[KB_268245_Instance_2348]
+		[KB_268245_Instance_2349]
+		[KB_268245_Instance_2350]))
+
+([KB_268245_Instance_2348] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([KB_268245_Instance_2349] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_268245_Instance_2350] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_268245_Instance_2351] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "domain_term")
+	(property_list [KB_268245_Instance_2352])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 240)
+	(x 0)
+	(y 120))
+
+([KB_268245_Instance_2352] of  Property_List
+
+	(properties
+		[KB_268245_Instance_2353]
+		[KB_268245_Instance_2354]
+		[KB_268245_Instance_2355]))
+
+([KB_268245_Instance_2353] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([KB_268245_Instance_2354] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_268245_Instance_2355] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_268245_Instance_2356] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [KB_268245_Instance_2357])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 240)
+	(y 0))
+
+([KB_268245_Instance_2357] of  Property_List
+
+	(properties
+		[KB_268245_Instance_2358]
+		[KB_268245_Instance_2359]
+		[KB_268245_Instance_2360]))
+
+([KB_268245_Instance_2358] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([KB_268245_Instance_2359] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_268245_Instance_2360] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_268245_Instance_2361] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "presence")
+	(property_list [KB_268245_Instance_2362])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 60))
+
+([KB_268245_Instance_2362] of  Property_List
+)
+
+([KB_268245_Instance_2363] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_268245_Instance_2364])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 240)
+	(x 0)
+	(y 0))
+
+([KB_268245_Instance_2364] of  Property_List
+)
+
+([KB_342471_Instance_1438] of  Widget
+
+	(height 757)
+	(is_hidden FALSE)
+	(name "Consultation_Guideline")
+	(property_list [KB_342471_Instance_1439])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 699)
+	(x 0)
+	(y 0))
+
+([KB_342471_Instance_1439] of  Property_List
+
+	(properties
+		[KB_342471_Instance_1440]
+		[KB_342471_Instance_1443]
+		[KB_342471_Instance_1454]
+		[KB_342471_Instance_1455]
+		[KB_342471_Instance_1457]
+		[KB_342471_Instance_1502]
+		[KB_342471_Instance_1504]))
+
+([KB_342471_Instance_1440] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_342471_Instance_1441]
+		[KB_342471_Instance_1442]))
+
+([KB_342471_Instance_1441] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_342471_Instance_1442] of  String
+
+	(name "vertical_stretcher")
+	(string_value "steps"))
+
+([KB_342471_Instance_1443] of  Widget
+
+	(height 60)
+	(name "first_step")
+	(property_list [KB_342471_Instance_1444])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([KB_342471_Instance_1444] of  Property_List
+
+	(properties
+		[KB_342471_Instance_1445]
+		[KB_342471_Instance_1446]
+		[KB_342471_Instance_1447]
+		[KB_342471_Instance_1448]
+		[KB_342471_Instance_1449]
+		[KB_342471_Instance_1450]
+		[KB_342471_Instance_1451]
+		[KB_342471_Instance_1452]
+		[KB_342471_Instance_1453]
+		[OpioidGuideline_ProjectKB_Instance_32318]))
+
+([KB_342471_Instance_1445] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_342471_Instance_1446] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_342471_Instance_1447] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_342471_Instance_1448] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_342471_Instance_1449] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_342471_Instance_1450] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_342471_Instance_1451] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_342471_Instance_1452] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_342471_Instance_1453] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_342471_Instance_1454] of  Widget
+
+	(height 60)
+	(label "Label")
+	(name "label")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2679])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_342471_Instance_1455] of  Widget
+
+	(height 0)
+	(name "primary")
+	(property_list [KB_342471_Instance_1456])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_342471_Instance_1456] of  Property_List
+)
+
+([KB_342471_Instance_1457] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(label "Steps")
+	(name "steps")
+	(property_list [KB_342471_Instance_1458])
+	(widget_class_name "edu.stanford.smi.protegex.widget.graph.GraphWidget")
+	(width 500)
+	(x 0)
+	(y 120))
+
+([KB_342471_Instance_1458] of  Property_List
+
+	(properties
+		[KB_342471_Instance_1459]
+		[KB_342471_Instance_1460]
+		[KB_342471_Instance_1461]
+		[KB_342471_Instance_1462]
+		[KB_342471_Instance_1463]
+		[KB_342471_Instance_1464]
+		[KB_342471_Instance_1465]
+		[KB_342471_Instance_1466]
+		[KB_342471_Instance_1467]
+		[KB_342471_Instance_1468]
+		[KB_342471_Instance_1469]
+		[KB_342471_Instance_1470]
+		[KB_342471_Instance_1471]
+		[KB_342471_Instance_1472]
+		[KB_342471_Instance_1473]
+		[KB_342471_Instance_1474]
+		[KB_342471_Instance_1475]
+		[KB_342471_Instance_1476]
+		[KB_342471_Instance_1477]
+		[KB_342471_Instance_1478]
+		[KB_342471_Instance_1479]
+		[KB_342471_Instance_1480]
+		[KB_342471_Instance_1481]
+		[KB_342471_Instance_1482]
+		[KB_342471_Instance_1483]
+		[KB_342471_Instance_1484]
+		[KB_342471_Instance_1485]
+		[KB_342471_Instance_1486]
+		[KB_342471_Instance_1487]
+		[KB_342471_Instance_1488]
+		[KB_342471_Instance_1489]
+		[KB_342471_Instance_1490]
+		[KB_342471_Instance_1491]
+		[KB_342471_Instance_1492]
+		[KB_342471_Instance_1493]
+		[KB_342471_Instance_1494]
+		[KB_342471_Instance_1495]
+		[KB_342471_Instance_1496]
+		[KB_342471_Instance_1497]
+		[KB_342471_Instance_1498]
+		[KB_342471_Instance_1499]
+		[KB_342471_Instance_1500]
+		[KB_342471_Instance_1501]))
+
+([KB_342471_Instance_1459] of  String
+
+	(name "Consultation_Action_Step_shape")
+	(string_value "Rectangle"))
+
+([KB_342471_Instance_1460] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Action_Step_shapeColorRed"))
+
+([KB_342471_Instance_1461] of  Integer
+
+	(integer_value 255)
+	(name "Consultation_Action_Step_shapeColorGreen"))
+
+([KB_342471_Instance_1462] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Action_Step_shapeColorBlue"))
+
+([KB_342471_Instance_1463] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Action_Step_textColorRed"))
+
+([KB_342471_Instance_1464] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Action_Step_textColorGreen"))
+
+([KB_342471_Instance_1465] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Action_Step_textColorBlue"))
+
+([KB_342471_Instance_1466] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Consultation_Action_Step_bold"))
+
+([KB_342471_Instance_1467] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Consultation_Action_Step_italic"))
+
+([KB_342471_Instance_1468] of  String
+
+	(name "Consultation_Action_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_342471_Instance_1469] of  String
+
+	(name "Consultation_Action_Step_lineType")
+	(string_value "Solid"))
+
+([KB_342471_Instance_1470] of  String
+
+	(name "Consultation_Action_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_342471_Instance_1471] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Consultation_Action_Step_displayText"))
+
+([KB_342471_Instance_1472] of  String
+
+	(name "Consultation_Branch_Step_shape")
+	(string_value "Ellipse"))
+
+([KB_342471_Instance_1473] of  Integer
+
+	(integer_value 70)
+	(name "Consultation_Branch_Step_shapeColorRed"))
+
+([KB_342471_Instance_1474] of  Integer
+
+	(integer_value 130)
+	(name "Consultation_Branch_Step_shapeColorGreen"))
+
+([KB_342471_Instance_1475] of  Integer
+
+	(integer_value 180)
+	(name "Consultation_Branch_Step_shapeColorBlue"))
+
+([KB_342471_Instance_1476] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Branch_Step_textColorRed"))
+
+([KB_342471_Instance_1477] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Branch_Step_textColorGreen"))
+
+([KB_342471_Instance_1478] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Branch_Step_textColorBlue"))
+
+([KB_342471_Instance_1479] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Consultation_Branch_Step_bold"))
+
+([KB_342471_Instance_1480] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Consultation_Branch_Step_italic"))
+
+([KB_342471_Instance_1481] of  String
+
+	(name "Consultation_Branch_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_342471_Instance_1482] of  String
+
+	(name "Consultation_Branch_Step_lineType")
+	(string_value "Solid"))
+
+([KB_342471_Instance_1483] of  String
+
+	(name "Consultation_Branch_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_342471_Instance_1484] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Consultation_Branch_Step_displayText"))
+
+([KB_342471_Instance_1485] of  String
+
+	(name "Consultation_Guideline_gridStyle")
+	(string_value "Dots"))
+
+([KB_342471_Instance_1486] of  String
+
+	(name "Consultation_Guideline_snapOnMove")
+	(string_value "Afterwards"))
+
+([KB_342471_Instance_1487] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Consultation_Guideline_wrapping"))
+
+([KB_342471_Instance_1488] of  Integer
+
+	(integer_value 255)
+	(name "Consultation_Selection_lineColorRed"))
+
+([KB_342471_Instance_1489] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Selection_lineColorGreen"))
+
+([KB_342471_Instance_1490] of  Integer
+
+	(integer_value 0)
+	(name "Consultation_Selection_lineColorBlue"))
+
+([KB_342471_Instance_1491] of  String
+
+	(name "Consultation_Selection_lineType")
+	(string_value "Solid"))
+
+([KB_342471_Instance_1492] of  String
+
+	(name "Consultation_Selection_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_342471_Instance_1493] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Consultation_Selection_displayText"))
+
+([KB_342471_Instance_1494] of  Integer
+
+	(integer_value 0)
+	(name "Followed_By_lineColorRed"))
+
+([KB_342471_Instance_1495] of  Integer
+
+	(integer_value 0)
+	(name "Followed_By_lineColorGreen"))
+
+([KB_342471_Instance_1496] of  Integer
+
+	(integer_value 0)
+	(name "Followed_By_lineColorBlue"))
+
+([KB_342471_Instance_1497] of  String
+
+	(name "Followed_By_lineType")
+	(string_value "Solid"))
+
+([KB_342471_Instance_1498] of  String
+
+	(name "Followed_By_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_342471_Instance_1499] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Followed_By_displayText"))
+
+([KB_342471_Instance_1500] of  String
+
+	(name "slotForRelations")
+	(string_value "transitions"))
+
+([KB_342471_Instance_1501] of  String
+
+	(name "tooltip_text"))
+
+([KB_342471_Instance_1502] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "transitions")
+	(property_list [KB_342471_Instance_1503])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_342471_Instance_1503] of  Property_List
+)
+
+([KB_342471_Instance_1504] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_342471_Instance_1505])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 240)
+	(x 260)
+	(y 0))
+
+([KB_342471_Instance_1505] of  Property_List
+
+	(properties
+		[KB_342471_Instance_1506]
+		[KB_342471_Instance_1507]
+		[OpioidGuideline_ProjectKB_Instance_32319]))
+
+([KB_342471_Instance_1506] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_342471_Instance_1507] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_342471_Instance_2486] of  Widget
+
+	(height 773)
+	(is_hidden FALSE)
+	(name "PAL-QUERY")
+	(property_list [ChronicPainOpioid10-26-05_ProjectKB_Instance_2786])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 953)
+	(x 0)
+	(y 0))
+
+([KB_358305_Instance_1570] of  Widget
+
+	(height 760)
+	(is_hidden FALSE)
+	(name "Management_Diagram")
+	(property_list [KB_358305_Instance_1571])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 688)
+	(x 0)
+	(y -171))
+
+([KB_358305_Instance_1571] of  Property_List
+
+	(properties
+		[KB_358305_Instance_1572]
+		[KB_358305_Instance_1575]
+		[KB_358305_Instance_1586]
+		[KB_358305_Instance_1587]
+		[KB_358305_Instance_1598]
+		[KB_358305_Instance_1749]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_12448]))
+
+([KB_358305_Instance_1572] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_358305_Instance_1573]
+		[KB_358305_Instance_1574]))
+
+([KB_358305_Instance_1573] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "steps"))
+
+([KB_358305_Instance_1574] of  String
+
+	(name "vertical_stretcher")
+	(string_value "steps"))
+
+([KB_358305_Instance_1575] of  Widget
+
+	(height 0)
+	(name "completion_criteria")
+	(property_list [KB_358305_Instance_1576])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_358305_Instance_1576] of  Property_List
+)
+
+([KB_358305_Instance_1586] of  Widget
+
+	(height 60)
+	(name "label")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2038])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_358305_Instance_1587] of  Widget
+
+	(height 0)
+	(name "first_step")
+	(property_list [KB_358305_Instance_1588])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_358305_Instance_1588] of  Property_List
+)
+
+([KB_358305_Instance_1598] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(label "Steps")
+	(name "steps")
+	(property_list [KB_358305_Instance_1599])
+	(widget_class_name "edu.stanford.smi.protegex.widget.graph.GraphWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([KB_358305_Instance_1599] of  Property_List
+
+	(properties
+		[KB_358305_Instance_1600]
+		[KB_358305_Instance_1601]
+		[KB_358305_Instance_1602]
+		[KB_358305_Instance_1603]
+		[KB_358305_Instance_1604]
+		[KB_358305_Instance_1605]
+		[KB_358305_Instance_1606]
+		[KB_358305_Instance_1607]
+		[KB_358305_Instance_1608]
+		[KB_358305_Instance_1609]
+		[KB_358305_Instance_1610]
+		[KB_358305_Instance_1611]
+		[KB_358305_Instance_1612]
+		[KB_358305_Instance_1613]
+		[KB_358305_Instance_1614]
+		[KB_358305_Instance_1615]
+		[KB_358305_Instance_1616]
+		[KB_358305_Instance_1617]
+		[KB_358305_Instance_1618]
+		[KB_358305_Instance_1619]
+		[KB_358305_Instance_1620]
+		[KB_358305_Instance_1621]
+		[KB_358305_Instance_1622]
+		[KB_358305_Instance_1623]
+		[KB_358305_Instance_1624]
+		[KB_358305_Instance_1625]
+		[KB_358305_Instance_1626]
+		[KB_358305_Instance_1627]
+		[KB_358305_Instance_1628]
+		[KB_358305_Instance_1629]
+		[KB_358305_Instance_1630]
+		[KB_358305_Instance_1631]
+		[KB_358305_Instance_1632]
+		[KB_358305_Instance_1633]
+		[KB_358305_Instance_1634]
+		[KB_358305_Instance_1635]
+		[KB_358305_Instance_1636]
+		[KB_358305_Instance_1637]
+		[KB_358305_Instance_1638]
+		[KB_358305_Instance_1639]
+		[KB_358305_Instance_1640]
+		[KB_358305_Instance_1641]
+		[KB_358305_Instance_1642]
+		[KB_358305_Instance_1643]
+		[KB_358305_Instance_1644]
+		[KB_358305_Instance_1645]
+		[KB_358305_Instance_1646]
+		[KB_358305_Instance_1647]
+		[KB_358305_Instance_1648]
+		[KB_358305_Instance_1649]
+		[KB_358305_Instance_1650]
+		[KB_358305_Instance_1651]
+		[KB_358305_Instance_1652]
+		[KB_358305_Instance_1653]
+		[KB_358305_Instance_1654]
+		[KB_358305_Instance_1655]
+		[KB_358305_Instance_1656]
+		[KB_358305_Instance_1657]
+		[KB_358305_Instance_1658]
+		[KB_358305_Instance_1659]
+		[KB_358305_Instance_1660]
+		[KB_358305_Instance_1661]
+		[KB_358305_Instance_1662]
+		[KB_358305_Instance_1663]
+		[KB_358305_Instance_1664]
+		[KB_358305_Instance_1665]
+		[KB_358305_Instance_1666]
+		[KB_358305_Instance_1667]
+		[KB_358305_Instance_1668]
+		[KB_358305_Instance_1669]
+		[KB_358305_Instance_1670]
+		[KB_358305_Instance_1671]
+		[KB_358305_Instance_1672]
+		[KB_358305_Instance_1673]
+		[KB_358305_Instance_1674]
+		[KB_358305_Instance_1675]
+		[KB_358305_Instance_1676]
+		[KB_358305_Instance_1677]
+		[KB_358305_Instance_1678]
+		[KB_358305_Instance_1679]
+		[KB_358305_Instance_1680]
+		[KB_358305_Instance_1681]
+		[KB_358305_Instance_1682]
+		[KB_358305_Instance_1683]
+		[KB_358305_Instance_1684]
+		[KB_358305_Instance_1685]
+		[KB_358305_Instance_1686]
+		[KB_358305_Instance_1687]
+		[KB_358305_Instance_1688]
+		[KB_358305_Instance_1689]
+		[KB_358305_Instance_1690]
+		[KB_358305_Instance_1691]
+		[KB_358305_Instance_1692]
+		[KB_358305_Instance_1693]
+		[KB_358305_Instance_1694]
+		[KB_358305_Instance_1695]
+		[KB_358305_Instance_1696]
+		[KB_358305_Instance_1697]
+		[KB_358305_Instance_1698]
+		[KB_358305_Instance_1699]
+		[KB_358305_Instance_1700]
+		[KB_358305_Instance_1701]
+		[KB_358305_Instance_1702]
+		[KB_358305_Instance_1703]
+		[KB_358305_Instance_1704]
+		[KB_358305_Instance_1705]
+		[KB_358305_Instance_1706]
+		[KB_358305_Instance_1707]
+		[KB_358305_Instance_1708]
+		[KB_358305_Instance_1709]
+		[KB_358305_Instance_1710]
+		[KB_358305_Instance_1711]
+		[KB_358305_Instance_1712]
+		[KB_358305_Instance_1713]
+		[KB_358305_Instance_1714]
+		[KB_358305_Instance_1715]
+		[KB_358305_Instance_1716]
+		[KB_358305_Instance_1717]
+		[KB_358305_Instance_1718]
+		[KB_358305_Instance_1719]
+		[KB_358305_Instance_1720]
+		[KB_358305_Instance_1721]
+		[KB_358305_Instance_1722]
+		[KB_358305_Instance_1723]
+		[KB_358305_Instance_1724]
+		[KB_358305_Instance_1725]
+		[KB_358305_Instance_1726]
+		[KB_358305_Instance_1727]
+		[KB_358305_Instance_1728]
+		[KB_358305_Instance_1729]
+		[KB_358305_Instance_1730]
+		[KB_358305_Instance_1731]
+		[KB_358305_Instance_1732]
+		[KB_358305_Instance_1733]
+		[KB_358305_Instance_1734]
+		[KB_358305_Instance_1735]
+		[KB_358305_Instance_1736]
+		[KB_358305_Instance_1737]
+		[KB_358305_Instance_1738]
+		[ChronicPainOpioid_ProjectKB_Instance_2044]
+		[ChronicPainOpioid_ProjectKB_Instance_2045]
+		[ChronicPainOpioid_ProjectKB_Instance_2046]
+		[ChronicPainOpioid_ProjectKB_Instance_2047]))
+
+([KB_358305_Instance_1600] of  String
+
+	(name "Action_Choice_shape")
+	(string_value "Rectangle"))
+
+([KB_358305_Instance_1601] of  Integer
+
+	(integer_value 0)
+	(name "Action_Choice_shapeColorRed"))
+
+([KB_358305_Instance_1602] of  Integer
+
+	(integer_value 255)
+	(name "Action_Choice_shapeColorGreen"))
+
+([KB_358305_Instance_1603] of  Integer
+
+	(integer_value 0)
+	(name "Action_Choice_shapeColorBlue"))
+
+([KB_358305_Instance_1604] of  Integer
+
+	(integer_value 0)
+	(name "Action_Choice_textColorRed"))
+
+([KB_358305_Instance_1605] of  Integer
+
+	(integer_value 0)
+	(name "Action_Choice_textColorGreen"))
+
+([KB_358305_Instance_1606] of  Integer
+
+	(integer_value 0)
+	(name "Action_Choice_textColorBlue"))
+
+([KB_358305_Instance_1607] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Action_Choice_bold"))
+
+([KB_358305_Instance_1608] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Action_Choice_italic"))
+
+([KB_358305_Instance_1609] of  String
+
+	(name "Action_Choice_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1610] of  String
+
+	(name "Action_Choice_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1611] of  String
+
+	(name "Action_Choice_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1612] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Action_Choice_displayText"))
+
+([KB_358305_Instance_1613] of  String
+
+	(name "Action_Step_shape")
+	(string_value "Rectangle"))
+
+([KB_358305_Instance_1614] of  Integer
+
+	(integer_value 0)
+	(name "Action_Step_shapeColorRed"))
+
+([KB_358305_Instance_1615] of  Integer
+
+	(integer_value 255)
+	(name "Action_Step_shapeColorGreen"))
+
+([KB_358305_Instance_1616] of  Integer
+
+	(integer_value 0)
+	(name "Action_Step_shapeColorBlue"))
+
+([KB_358305_Instance_1617] of  Integer
+
+	(integer_value 0)
+	(name "Action_Step_textColorRed"))
+
+([KB_358305_Instance_1618] of  Integer
+
+	(integer_value 0)
+	(name "Action_Step_textColorGreen"))
+
+([KB_358305_Instance_1619] of  Integer
+
+	(integer_value 0)
+	(name "Action_Step_textColorBlue"))
+
+([KB_358305_Instance_1620] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Action_Step_bold"))
+
+([KB_358305_Instance_1621] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Action_Step_italic"))
+
+([KB_358305_Instance_1622] of  String
+
+	(name "Action_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1623] of  String
+
+	(name "Action_Step_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1624] of  String
+
+	(name "Action_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1625] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Action_Step_displayText"))
+
+([KB_358305_Instance_1626] of  String
+
+	(name "Branch_Step_shape")
+	(string_value "Inverted Triangle"))
+
+([KB_358305_Instance_1627] of  Integer
+
+	(integer_value 192)
+	(name "Branch_Step_shapeColorRed"))
+
+([KB_358305_Instance_1628] of  Integer
+
+	(integer_value 192)
+	(name "Branch_Step_shapeColorGreen"))
+
+([KB_358305_Instance_1629] of  Integer
+
+	(integer_value 192)
+	(name "Branch_Step_shapeColorBlue"))
+
+([KB_358305_Instance_1630] of  Integer
+
+	(integer_value 0)
+	(name "Branch_Step_textColorRed"))
+
+([KB_358305_Instance_1631] of  Integer
+
+	(integer_value 0)
+	(name "Branch_Step_textColorGreen"))
+
+([KB_358305_Instance_1632] of  Integer
+
+	(integer_value 0)
+	(name "Branch_Step_textColorBlue"))
+
+([KB_358305_Instance_1633] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Branch_Step_bold"))
+
+([KB_358305_Instance_1634] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Branch_Step_italic"))
+
+([KB_358305_Instance_1635] of  String
+
+	(name "Branch_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1636] of  String
+
+	(name "Branch_Step_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1637] of  String
+
+	(name "Branch_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1638] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Branch_Step_displayText"))
+
+([KB_358305_Instance_1639] of  String
+
+	(name "Case_Step_shape")
+	(string_value "Hexagon"))
+
+([KB_358305_Instance_1640] of  Integer
+
+	(integer_value 255)
+	(name "Case_Step_shapeColorRed"))
+
+([KB_358305_Instance_1641] of  Integer
+
+	(integer_value 200)
+	(name "Case_Step_shapeColorGreen"))
+
+([KB_358305_Instance_1642] of  Integer
+
+	(integer_value 0)
+	(name "Case_Step_shapeColorBlue"))
+
+([KB_358305_Instance_1643] of  Integer
+
+	(integer_value 0)
+	(name "Case_Step_textColorRed"))
+
+([KB_358305_Instance_1644] of  Integer
+
+	(integer_value 0)
+	(name "Case_Step_textColorGreen"))
+
+([KB_358305_Instance_1645] of  Integer
+
+	(integer_value 0)
+	(name "Case_Step_textColorBlue"))
+
+([KB_358305_Instance_1646] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Case_Step_bold"))
+
+([KB_358305_Instance_1647] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Case_Step_italic"))
+
+([KB_358305_Instance_1648] of  String
+
+	(name "Case_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1649] of  String
+
+	(name "Case_Step_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1650] of  String
+
+	(name "Case_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1651] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Case_Step_displayText"))
+
+([KB_358305_Instance_1652] of  String
+
+	(name "Choice_Step_shape")
+	(string_value "Hexagon"))
+
+([KB_358305_Instance_1653] of  Integer
+
+	(integer_value 255)
+	(name "Choice_Step_shapeColorRed"))
+
+([KB_358305_Instance_1654] of  Integer
+
+	(integer_value 255)
+	(name "Choice_Step_shapeColorGreen"))
+
+([KB_358305_Instance_1655] of  Integer
+
+	(integer_value 0)
+	(name "Choice_Step_shapeColorBlue"))
+
+([KB_358305_Instance_1656] of  Integer
+
+	(integer_value 0)
+	(name "Choice_Step_textColorRed"))
+
+([KB_358305_Instance_1657] of  Integer
+
+	(integer_value 0)
+	(name "Choice_Step_textColorGreen"))
+
+([KB_358305_Instance_1658] of  Integer
+
+	(integer_value 0)
+	(name "Choice_Step_textColorBlue"))
+
+([KB_358305_Instance_1659] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Choice_Step_bold"))
+
+([KB_358305_Instance_1660] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Choice_Step_italic"))
+
+([KB_358305_Instance_1661] of  String
+
+	(name "Choice_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1662] of  String
+
+	(name "Choice_Step_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1663] of  String
+
+	(name "Choice_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1664] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Choice_Step_displayText"))
+
+([KB_358305_Instance_1665] of  String
+
+	(name "Evaluate_Choice_Step_shape")
+	(string_value "Rectangle"))
+
+([KB_358305_Instance_1666] of  Integer
+
+	(integer_value 0)
+	(name "Evaluate_Choice_Step_shapeColorRed"))
+
+([KB_358305_Instance_1667] of  Integer
+
+	(integer_value 255)
+	(name "Evaluate_Choice_Step_shapeColorGreen"))
+
+([KB_358305_Instance_1668] of  Integer
+
+	(integer_value 255)
+	(name "Evaluate_Choice_Step_shapeColorBlue"))
+
+([KB_358305_Instance_1669] of  Integer
+
+	(integer_value 0)
+	(name "Evaluate_Choice_Step_textColorRed"))
+
+([KB_358305_Instance_1670] of  Integer
+
+	(integer_value 0)
+	(name "Evaluate_Choice_Step_textColorGreen"))
+
+([KB_358305_Instance_1671] of  Integer
+
+	(integer_value 0)
+	(name "Evaluate_Choice_Step_textColorBlue"))
+
+([KB_358305_Instance_1672] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Evaluate_Choice_Step_bold"))
+
+([KB_358305_Instance_1673] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Evaluate_Choice_Step_italic"))
+
+([KB_358305_Instance_1674] of  String
+
+	(name "Evaluate_Choice_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1675] of  String
+
+	(name "Evaluate_Choice_Step_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1676] of  String
+
+	(name "Evaluate_Choice_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1677] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Evaluate_Choice_Step_displayText"))
+
+([KB_358305_Instance_1678] of  String
+
+	(name "Scenario_shape")
+	(string_value "Ellipse"))
+
+([KB_358305_Instance_1679] of  Integer
+
+	(integer_value 255)
+	(name "Scenario_shapeColorRed"))
+
+([KB_358305_Instance_1680] of  Integer
+
+	(integer_value 175)
+	(name "Scenario_shapeColorGreen"))
+
+([KB_358305_Instance_1681] of  Integer
+
+	(integer_value 175)
+	(name "Scenario_shapeColorBlue"))
+
+([KB_358305_Instance_1682] of  Integer
+
+	(integer_value 0)
+	(name "Scenario_textColorRed"))
+
+([KB_358305_Instance_1683] of  Integer
+
+	(integer_value 0)
+	(name "Scenario_textColorGreen"))
+
+([KB_358305_Instance_1684] of  Integer
+
+	(integer_value 0)
+	(name "Scenario_textColorBlue"))
+
+([KB_358305_Instance_1685] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Scenario_bold"))
+
+([KB_358305_Instance_1686] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Scenario_italic"))
+
+([KB_358305_Instance_1687] of  String
+
+	(name "Scenario_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1688] of  String
+
+	(name "Scenario_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1689] of  String
+
+	(name "Scenario_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1690] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Scenario_displayText"))
+
+([KB_358305_Instance_1691] of  String
+
+	(name "Subguideline_Step_shape")
+	(string_value "Rectangle"))
+
+([KB_358305_Instance_1692] of  Integer
+
+	(integer_value 0)
+	(name "Subguideline_Step_shapeColorRed"))
+
+([KB_358305_Instance_1693] of  Integer
+
+	(integer_value 0)
+	(name "Subguideline_Step_shapeColorGreen"))
+
+([KB_358305_Instance_1694] of  Integer
+
+	(integer_value 255)
+	(name "Subguideline_Step_shapeColorBlue"))
+
+([KB_358305_Instance_1695] of  Integer
+
+	(integer_value 0)
+	(name "Subguideline_Step_textColorRed"))
+
+([KB_358305_Instance_1696] of  Integer
+
+	(integer_value 0)
+	(name "Subguideline_Step_textColorGreen"))
+
+([KB_358305_Instance_1697] of  Integer
+
+	(integer_value 0)
+	(name "Subguideline_Step_textColorBlue"))
+
+([KB_358305_Instance_1698] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Subguideline_Step_bold"))
+
+([KB_358305_Instance_1699] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Subguideline_Step_italic"))
+
+([KB_358305_Instance_1700] of  String
+
+	(name "Subguideline_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1701] of  String
+
+	(name "Subguideline_Step_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1702] of  String
+
+	(name "Subguideline_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1703] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Subguideline_Step_displayText"))
+
+([KB_358305_Instance_1704] of  String
+
+	(name "Synchronization_Step_shape")
+	(string_value "Triangle"))
+
+([KB_358305_Instance_1705] of  Integer
+
+	(integer_value 192)
+	(name "Synchronization_Step_shapeColorRed"))
+
+([KB_358305_Instance_1706] of  Integer
+
+	(integer_value 192)
+	(name "Synchronization_Step_shapeColorGreen"))
+
+([KB_358305_Instance_1707] of  Integer
+
+	(integer_value 192)
+	(name "Synchronization_Step_shapeColorBlue"))
+
+([KB_358305_Instance_1708] of  Integer
+
+	(integer_value 0)
+	(name "Synchronization_Step_textColorRed"))
+
+([KB_358305_Instance_1709] of  Integer
+
+	(integer_value 0)
+	(name "Synchronization_Step_textColorGreen"))
+
+([KB_358305_Instance_1710] of  Integer
+
+	(integer_value 0)
+	(name "Synchronization_Step_textColorBlue"))
+
+([KB_358305_Instance_1711] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Synchronization_Step_bold"))
+
+([KB_358305_Instance_1712] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Synchronization_Step_italic"))
+
+([KB_358305_Instance_1713] of  String
+
+	(name "Synchronization_Step_connectorSlot")
+	(string_value "< none >"))
+
+([KB_358305_Instance_1714] of  String
+
+	(name "Synchronization_Step_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1715] of  String
+
+	(name "Synchronization_Step_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1716] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Synchronization_Step_displayText"))
+
+([KB_358305_Instance_1717] of  String
+
+	(name "Recommendation_Set_gridStyle")
+	(string_value "Dots"))
+
+([KB_358305_Instance_1718] of  String
+
+	(name "Recommendation_Set_snapOnMove")
+	(string_value "Afterwards"))
+
+([KB_358305_Instance_1719] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Recommendation_Set_wrapping"))
+
+([KB_358305_Instance_1720] of  Integer
+
+	(integer_value 255)
+	(name "Selection_lineColorRed"))
+
+([KB_358305_Instance_1721] of  Integer
+
+	(integer_value 0)
+	(name "Selection_lineColorGreen"))
+
+([KB_358305_Instance_1722] of  Integer
+
+	(integer_value 255)
+	(name "Selection_lineColorBlue"))
+
+([KB_358305_Instance_1723] of  String
+
+	(name "Selection_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1724] of  String
+
+	(name "Selection_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1725] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Selection_displayText"))
+
+([KB_358305_Instance_1726] of  Integer
+
+	(integer_value 0)
+	(name "Case_Selection_lineColorRed"))
+
+([KB_358305_Instance_1727] of  Integer
+
+	(integer_value 0)
+	(name "Case_Selection_lineColorGreen"))
+
+([KB_358305_Instance_1728] of  Integer
+
+	(integer_value 255)
+	(name "Case_Selection_lineColorBlue"))
+
+([KB_358305_Instance_1729] of  String
+
+	(name "Case_Selection_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1730] of  String
+
+	(name "Case_Selection_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1731] of  Boolean
+
+	(boolean_value TRUE)
+	(name "Case_Selection_displayText"))
+
+([KB_358305_Instance_1732] of  Integer
+
+	(integer_value 0)
+	(name "Followed_By_lineColorRed"))
+
+([KB_358305_Instance_1733] of  Integer
+
+	(integer_value 0)
+	(name "Followed_By_lineColorGreen"))
+
+([KB_358305_Instance_1734] of  Integer
+
+	(integer_value 0)
+	(name "Followed_By_lineColorBlue"))
+
+([KB_358305_Instance_1735] of  String
+
+	(name "Followed_By_lineType")
+	(string_value "Solid"))
+
+([KB_358305_Instance_1736] of  String
+
+	(name "Followed_By_arrowheadType")
+	(string_value "Arrowhead"))
+
+([KB_358305_Instance_1737] of  Boolean
+
+	(boolean_value FALSE)
+	(name "Followed_By_displayText"))
+
+([KB_358305_Instance_1738] of  String
+
+	(name "slotForRelations")
+	(string_value "transitions"))
+
+([KB_358305_Instance_1749] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "transitions")
+	(property_list [KB_358305_Instance_1750])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_358305_Instance_1750] of  Property_List
+)
+
+([KB_523565_Instance_1392] of  Widget
+
+	(height 805)
+	(is_hidden FALSE)
+	(name "Management_Guideline")
+	(property_list [KB_523565_Instance_1393])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 750)
+	(x 0)
+	(y 0))
+
+([KB_523565_Instance_1393] of  Property_List
+
+	(properties
+		[KB_523565_Instance_1394]
+		[KB_523565_Instance_1395]
+		[KB_523565_Instance_1400]
+		[KB_523565_Instance_1430]
+		[KB_523565_Instance_1441]
+		[KB_523565_Instance_1451]
+		[KB_523565_Instance_1454]
+		[KB_523565_Instance_1455]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2448]
+		[OpioidGuideline_ProjectKB_Instance_2547]
+		[OpioidGuideline_ProjectKB_Instance_2704]
+		[OpioidGuideline_ProjectKB_Class2864]))
+
+([KB_523565_Instance_1394] of  Widget
+
+	(height 120)
+	(name "title")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2495])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([KB_523565_Instance_1395] of  Widget
+
+	(height 120)
+	(name "authors")
+	(property_list [KB_523565_Instance_1396])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 250)
+	(x 250)
+	(y 60))
+
+([KB_523565_Instance_1396] of  Property_List
+
+	(properties
+		[KB_523565_Instance_1397]
+		[KB_523565_Instance_1398]
+		[KB_523565_Instance_1399]))
+
+([KB_523565_Instance_1397] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Edit the selected strings"))
+
+([KB_523565_Instance_1398] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new string"))
+
+([KB_523565_Instance_1399] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_523565_Instance_1400] of  Widget
+
+	(height 60)
+	(name "clinical_algorithm")
+	(property_list [KB_523565_Instance_1401])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 250))
+
+([KB_523565_Instance_1401] of  Property_List
+
+	(properties
+		[KB_523565_Instance_1402]
+		[KB_523565_Instance_1403]
+		[KB_523565_Instance_1404]
+		[KB_523565_Instance_1405]
+		[KB_523565_Instance_1406]
+		[KB_523565_Instance_1407]
+		[KB_523565_Instance_1408]
+		[KB_523565_Instance_1409]
+		[KB_523565_Instance_1410]
+		[KB_523565_Instance_1411]
+		[KB_523565_Instance_1412]
+		[KB_523565_Instance_1413]
+		[KB_523565_Instance_1414]
+		[KB_523565_Instance_1415]
+		[KB_523565_Instance_1416]
+		[KB_523565_Instance_1417]
+		[KB_523565_Instance_1418]
+		[KB_523565_Instance_1419]
+		[KB_523565_Instance_1420]
+		[KB_523565_Instance_1421]
+		[KB_523565_Instance_1422]
+		[KB_523565_Instance_1423]
+		[KB_523565_Instance_1424]
+		[KB_523565_Instance_1425]
+		[KB_523565_Instance_1426]
+		[KB_523565_Instance_1427]
+		[OpioidGuideline_ProjectKB_Instance_12562]))
+
+([KB_523565_Instance_1402] of  String
+
+	(name "Followed_By")
+	(string_value "Color=Red\\=0\\&Green\\=0\\&Blue\\=255&Shape=0&StartingArrow=0&EndingArrow=1"))
+
+([KB_523565_Instance_1403] of  String
+
+	(name "Selection")
+	(string_value "Color=Red\\=0\\&Green\\=0\\&Blue\\=51&Shape=1&StartingArrow=0&EndingArrow=1"))
+
+([KB_523565_Instance_1404] of  String
+
+	(name "Branch_Step")
+	(string_value "Color=Red\\=204\\&Green\\=204\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&selection_method\\=F\\&followed_by\\=F\\&Name\\=F\\&start_constraint\\=F"))
+
+([KB_523565_Instance_1405] of  String
+
+	(name "Consultation_Action_Step")
+	(string_value "Color=Red\\=0\\&Green\\=0\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&Name\\=F\\&rule_in\\=F\\&rule_out\\=F\\&action\\=F\\&next_step\\=F"))
+
+([KB_523565_Instance_1406] of  String
+
+	(name "Synchronization_Step")
+	(string_value "Color=Red\\=255\\&Green\\=204\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&followed_by\\=F\\&Name\\=F\\&continuation_condition\\=F\\&branch_point\\=F\\&continuation\\=F"))
+
+([KB_523565_Instance_1407] of  String
+
+	(name "Extended_Action_Choice")
+	(string_value "Color=Red\\=255\\&Green\\=204\\&Blue\\=204&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&strict_rule_in_condition\\=F\\&steps\\=F\\&followed_by\\=F\\&Name\\=F\\&default_preference\\=F\\&rule_out_condition\\=F\\&strict_rule_out_condition\\=F\\&rule_in_condition\\=F"))
+
+([KB_523565_Instance_1408] of  String
+
+	(name "Elementary_Action_Step")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&followed_by\\=F\\&Name\\=F\\&previous_steps\\=F\\&start_constraint\\=F\\&action\\=F"))
+
+([KB_523565_Instance_1409] of  String
+
+	(name "Scenario")
+	(string_value "Color=Red\\=153\\&Green\\=255\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&precondition\\=F\\&consultation_template\\=F\\&followed_by\\=F\\&Name\\=F\\&new_encounter\\=F\\&exception_handlers\\=F"))
+
+([KB_523565_Instance_1410] of  String
+
+	(name "Condition_Step")
+	(string_value "Color=Red\\=153\\&Green\\=255\\&Blue\\=153&Shape=1&VisibleSlots=references\\=T\\&otherwise\\=F\\&intention\\=F\\&Name\\=F\\&condition\\=F\\&destination\\=F"))
+
+([KB_523565_Instance_1411] of  String
+
+	(name "Subguideline_Choice")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=1&VisibleSlots=references\\=T\\&subguideline\\=F\\&intention\\=F\\&strict_rule_in_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&default_preference\\=F\\&rule_out_condition\\=F\\&strict_rule_out_condition\\=F\\&rule_in_condition\\=F"))
+
+([KB_523565_Instance_1412] of  String
+
+	(name "Consultation_Branch_Step")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=1&VisibleSlots=branches\\=T\\&references\\=F\\&intention\\=F\\&selection_method\\=F\\&Name\\=F\\&order_constraint\\=F"))
+
+([KB_523565_Instance_1413] of  String
+
+	(name "Extended_Action_Step")
+	(string_value "Color=Red\\=255\\&Green\\=255\\&Blue\\=102&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&steps\\=F\\&followed_by\\=F\\&Name\\=F\\&previous_steps\\=F\\&start_constraint\\=F"))
+
+([KB_523565_Instance_1414] of  String
+
+	(name "Choice_Step")
+	(string_value "Color=Red\\=255\\&Green\\=153\\&Blue\\=153&Shape=1&VisibleSlots=branches\\=T\\&references\\=F\\&intention\\=F\\&Name\\=F\\&previous_scenarios\\=F"))
+
+([KB_523565_Instance_1415] of  String
+
+	(name "Action_Choice")
+	(string_value "Color=Red\\=255\\&Green\\=102\\&Blue\\=255&Shape=1&VisibleSlots=references\\=T\\&intention\\=F\\&strict_rule_in_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&default_preference\\=F\\&rule_out_condition\\=F\\&strict_rule_out_condition\\=F\\&actions\\=F\\&rule_in_condition\\=F"))
+
+([KB_523565_Instance_1416] of  String
+
+	(name "Iteration_Step")
+	(string_value "Color=Red\\=255\\&Green\\=204\\&Blue\\=204&Shape=0&VisibleSlots=allowed_offset\\=T\\&interval\\=F\\&intention\\=F\\&abort_condition\\=F\\&previous_steps\\=F\\&references\\=F\\&scenario\\=F\\&duration\\=F\\&followed_by\\=F\\&at_time\\=F\\&Name\\=F\\&action\\=F\\&start_constraint\\=F"))
+
+([KB_523565_Instance_1417] of  String
+
+	(name "Repeat_Subguideline_Step")
+	(string_value "Color=Red\\=204\\&Green\\=255\\&Blue\\=204&Shape=0&VisibleSlots=frequency\\=T\\&intention\\=F\\&subguideline\\=F\\&abort_condition\\=F\\&previous_steps\\=F\\&references\\=F\\&scenario\\=F\\&continue_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&start_constraint\\=F"))
+
+([KB_523565_Instance_1418] of  String
+
+	(name "Repeat_Actions_Step")
+	(string_value "Color=Red\\=153\\&Green\\=255\\&Blue\\=255&Shape=0&VisibleSlots=frequency\\=T\\&intention\\=F\\&abort_condition\\=F\\&previous_steps\\=F\\&references\\=F\\&scenario\\=F\\&continue_condition\\=F\\&followed_by\\=F\\&Name\\=F\\&action\\=F\\&start_constraint\\=F"))
+
+([KB_523565_Instance_1419] of  String
+
+	(name "Subguideline_Step")
+	(string_value "Color=Red\\=204\\&Green\\=204\\&Blue\\=255&Shape=0&VisibleSlots=intention\\=T\\&subguideline\\=F\\&previous_steps\\=F\\&references\\=F\\&followed_by\\=F\\&Name\\=F\\&start_constraint\\=F"))
+
+([KB_523565_Instance_1420] of  Property_List
+
+	(name "Management_Diagram"))
+
+([KB_523565_Instance_1421] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_523565_Instance_1422] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_523565_Instance_1423] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_523565_Instance_1424] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_523565_Instance_1425] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_523565_Instance_1426] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_523565_Instance_1427] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_523565_Instance_1428] of  Widget
+
+	(height 0)
+	(name "primary")
+	(property_list [KB_523565_Instance_1429])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_523565_Instance_1429] of  Property_List
+)
+
+([KB_523565_Instance_1430] of  Widget
+
+	(height 60)
+	(name "version")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2496])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([KB_523565_Instance_1441] of  Widget
+
+	(height 130)
+	(name "eligibility_criteria")
+	(property_list [KB_523565_Instance_1442])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 180))
+
+([KB_523565_Instance_1442] of  Property_List
+
+	(properties
+		[KB_523565_Instance_1443]
+		[KB_523565_Instance_1444]
+		[KB_523565_Instance_1445]
+		[KB_523565_Instance_1446]
+		[KB_523565_Instance_1447]
+		[KB_523565_Instance_1448]
+		[KB_523565_Instance_1449]
+		[KB_523565_Instance_1450]
+		[OpioidGuideline_ProjectKB_Instance_12563]))
+
+([KB_523565_Instance_1443] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_523565_Instance_1444] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_523565_Instance_1445] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_523565_Instance_1446] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_523565_Instance_1447] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_523565_Instance_1448] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_523565_Instance_1449] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_523565_Instance_1450] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_523565_Instance_1451] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_523565_Instance_1452]
+		[KB_523565_Instance_1453]))
+
+([KB_523565_Instance_1452] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_523565_Instance_1453] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([KB_523565_Instance_1454] of  Widget
+
+	(height 60)
+	(label "Identifier")
+	(name "label")
+	(property_list [ChronicPainOpioid_ProjectKB_Instance_2497])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_523565_Instance_1455] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "goal")
+	(property_list [KB_523565_Instance_1456])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 310))
+
+([KB_523565_Instance_1456] of  Property_List
+
+	(properties
+		[KB_523565_Instance_1457]
+		[KB_523565_Instance_1458]
+		[KB_523565_Instance_1459]
+		[KB_523565_Instance_1460]
+		[KB_523565_Instance_1461]
+		[KB_523565_Instance_1462]
+		[KB_523565_Instance_1463]
+		[KB_523565_Instance_1464]
+		[OpioidGuideline_ProjectKB_Instance_12564]))
+
+([KB_523565_Instance_1457] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_523565_Instance_1458] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_523565_Instance_1459] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_523565_Instance_1460] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_523565_Instance_1461] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_523565_Instance_1462] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_523565_Instance_1463] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_523565_Instance_1464] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_675663_Instance_1410] of  Widget
+
+	(is_hidden FALSE)
+	(name "Interval-Valued_AtomicTest_Metaclass")
+	(property_list [KB_675663_Instance_1411])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_675663_Instance_1411] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_675663_Instance_1412]
+		[KB_675663_Instance_1413]
+		[KB_675663_Instance_1414]
+		[KB_675663_Instance_1415]
+		[KB_675663_Instance_1427]
+		[KB_675663_Instance_1428]
+		[KB_675663_Instance_1429]
+		[KB_675663_Instance_1430]
+		[KB_675663_Instance_1441]
+		[KB_675663_Instance_1448]
+		[KB_675663_Instance_1451]
+		[KB_675663_Instance_1455]
+		[KB_675663_Instance_1459]
+		[KB_675663_Instance_1461]
+		[OpioidGuideline_ProjectKB_Instance_23429]
+		[OpioidGuideline_ProjectKB_Instance_23431]
+		[OpioidGuideline_ProjectKB_Instance_23433]))
+
+([KB_675663_Instance_1412] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [OpioidGuideline_ProjectKB_Instance_23435])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_675663_Instance_1413] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [OpioidGuideline_ProjectKB_Instance_23436])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_675663_Instance_1414] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [OpioidGuideline_ProjectKB_Instance_23437])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_675663_Instance_1415] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_675663_Instance_1416])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_675663_Instance_1416] of  Property_List
+
+	(properties
+		[KB_675663_Instance_1417]
+		[KB_675663_Instance_1418]
+		[KB_675663_Instance_1419]
+		[KB_675663_Instance_1420]
+		[KB_675663_Instance_1421]
+		[KB_675663_Instance_1422]
+		[KB_675663_Instance_1423]
+		[KB_675663_Instance_1424]
+		[KB_675663_Instance_1425]
+		[KB_675663_Instance_1426]))
+
+([KB_675663_Instance_1417] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_675663_Instance_1418] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_675663_Instance_1419] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_675663_Instance_1420] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_675663_Instance_1421] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_675663_Instance_1422] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_675663_Instance_1423] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_675663_Instance_1424] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_675663_Instance_1425] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_675663_Instance_1426] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_675663_Instance_1427] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_675663_Instance_1428] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_675663_Instance_1429] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_675663_Instance_1430] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_675663_Instance_1431])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([KB_675663_Instance_1431] of  Property_List
+
+	(properties
+		[KB_675663_Instance_1432]
+		[KB_675663_Instance_1433]
+		[KB_675663_Instance_1434]
+		[KB_675663_Instance_1435]
+		[KB_675663_Instance_1436]
+		[KB_675663_Instance_1437]
+		[KB_675663_Instance_1438]
+		[KB_675663_Instance_1439]
+		[KB_675663_Instance_1440]))
+
+([KB_675663_Instance_1432] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots"))
+
+([KB_675663_Instance_1433] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots at class"))
+
+([KB_675663_Instance_1434] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_675663_Instance_1435] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove overrides from selected slots"))
+
+([KB_675663_Instance_1436] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_675663_Instance_1437] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_675663_Instance_1438] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create slot and attach to class"))
+
+([KB_675663_Instance_1439] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([KB_675663_Instance_1440] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([KB_675663_Instance_1441] of  Property_List
+
+	(name "layout properties"))
+
+([KB_675663_Instance_1448] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-TYPE"))
+
+([KB_675663_Instance_1451] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "UpperLimitOfNormal")
+	(property_list [KB_675663_Instance_1452])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 330))
+
+([KB_675663_Instance_1452] of  Property_List
+
+	(properties
+		[KB_675663_Instance_1453]
+		[KB_675663_Instance_1454]))
+
+([KB_675663_Instance_1453] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_675663_Instance_1454] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_675663_Instance_1455] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "LowerLimitOfNormal")
+	(property_list [KB_675663_Instance_1456])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 390))
+
+([KB_675663_Instance_1456] of  Property_List
+
+	(properties
+		[KB_675663_Instance_1457]
+		[KB_675663_Instance_1458]))
+
+([KB_675663_Instance_1457] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_675663_Instance_1458] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_675663_Instance_1459] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Units")
+	(property_list [KB_675663_Instance_1460])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 450))
+
+([KB_675663_Instance_1460] of  Property_List
+)
+
+([KB_675663_Instance_1461] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Precision")
+	(property_list [KB_675663_Instance_1462])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 0)
+	(y 270))
+
+([KB_675663_Instance_1462] of  Property_List
+)
+
+([KB_875399_Instance_1146] of  Widget
+
+	(is_hidden FALSE)
+	(name "Action_Choice")
+	(property_list [KB_875399_Instance_1147])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_875399_Instance_1147] of  Property_List
+
+	(properties
+		[KB_875399_Instance_1148]
+		[KB_875399_Instance_1149]
+		[KB_875399_Instance_1153]
+		[KB_875399_Instance_1155]
+		[KB_875399_Instance_1157]
+		[KB_875399_Instance_1161]
+		[KB_875399_Instance_1163]
+		[KB_875399_Instance_1165]
+		[KB_875399_Instance_1167]
+		[KB_875399_Instance_1171]
+		[KB_875399_Instance_1175]))
+
+([KB_875399_Instance_1148] of  Property_List
+
+	(name "layout properties"))
+
+([KB_875399_Instance_1149] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "strict_rule_out_condition")
+	(property_list [KB_875399_Instance_1150])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 200)
+	(y 60))
+
+([KB_875399_Instance_1150] of  Property_List
+
+	(properties
+		[KB_875399_Instance_1151]
+		[KB_875399_Instance_1152]
+		[OpioidGuideline_ProjectKB_Instance_22134]))
+
+([KB_875399_Instance_1151] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_875399_Instance_1152] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_875399_Instance_1153] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "rule_out_condition")
+	(property_list [KB_875399_Instance_1154])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_875399_Instance_1154] of  Property_List
+)
+
+([KB_875399_Instance_1155] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_875399_Instance_1156])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_875399_Instance_1156] of  Property_List
+)
+
+([KB_875399_Instance_1157] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "strict_rule_in_condition")
+	(property_list [KB_875399_Instance_1158])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_875399_Instance_1158] of  Property_List
+
+	(properties
+		[KB_875399_Instance_1159]
+		[KB_875399_Instance_1160]
+		[OpioidGuideline_ProjectKB_Instance_22135]))
+
+([KB_875399_Instance_1159] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_875399_Instance_1160] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_875399_Instance_1161] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "rule_in_condition")
+	(property_list [KB_875399_Instance_1162])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_875399_Instance_1162] of  Property_List
+)
+
+([KB_875399_Instance_1163] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "start_constraint")
+	(property_list [KB_875399_Instance_1164])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_875399_Instance_1164] of  Property_List
+)
+
+([KB_875399_Instance_1165] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "default_preference")
+	(property_list [KB_875399_Instance_1166])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 60))
+
+([KB_875399_Instance_1166] of  Property_List
+)
+
+([KB_875399_Instance_1167] of  Widget
+
+	(height 430)
+	(is_hidden FALSE)
+	(name "actions")
+	(property_list [KB_875399_Instance_1168])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 370)
+	(x 200)
+	(y 120))
+
+([KB_875399_Instance_1168] of  Property_List
+
+	(properties
+		[KB_875399_Instance_1169]
+		[KB_875399_Instance_1170]
+		[OpioidGuideline_ProjectKB_Instance_22136]))
+
+([KB_875399_Instance_1169] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_875399_Instance_1170] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_875399_Instance_1171] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "followed_by")
+	(property_list [KB_875399_Instance_1172])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KB_875399_Instance_1172] of  Property_List
+
+	(properties
+		[KB_875399_Instance_1173]
+		[KB_875399_Instance_1174]
+		[OpioidGuideline_ProjectKB_Instance_22137]))
+
+([KB_875399_Instance_1173] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_875399_Instance_1174] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_875399_Instance_1175] of  Widget
+
+	(height 70)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_875399_Instance_1176])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([KB_875399_Instance_1176] of  Property_List
+
+	(properties
+		[KB_875399_Instance_1177]
+		[KB_875399_Instance_1178]
+		[OpioidGuideline_ProjectKB_Instance_22138]))
+
+([KB_875399_Instance_1177] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_875399_Instance_1178] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([OpioidGuideline_ProjectKB_Class2852] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Class2853])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+
+([OpioidGuideline_ProjectKB_Class2853] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Class2854] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Class2855])
+	(widget_class_name "org.protege.owl.mm.ssm.ui.MappingMasterTab"))
+
+([OpioidGuideline_ProjectKB_Class2855] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Class2856] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Class2857])
+	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
+
+([OpioidGuideline_ProjectKB_Class2857] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Class2858] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Class2859])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+
+([OpioidGuideline_ProjectKB_Class2859] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Class2860] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "drug_usages")
+	(property_list [OpioidGuideline_ProjectKB_Class2861])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 780))
+
+([OpioidGuideline_ProjectKB_Class2861] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Class2862]
+		[OpioidGuideline_ProjectKB_Class2863]))
+
+([OpioidGuideline_ProjectKB_Class2862] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Class2863] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([OpioidGuideline_ProjectKB_Class2864] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "subguidelines")
+	(property_list [OpioidGuideline_ProjectKB_Class2865])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 430))
+
+([OpioidGuideline_ProjectKB_Class2865] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Class2866]
+		[OpioidGuideline_ProjectKB_Class2867]))
+
+([OpioidGuideline_ProjectKB_Class2866] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Class2867] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([OpioidGuideline_ProjectKB_Class2868] of  String
+
+	(name ":FUNCTION")
+	(string_value "%3ADEFINITION-NAME"))
+
+([OpioidGuideline_ProjectKB_Class2869] of  String
+
+	(name "Diagnostic_Term_Metaclass")
+	(string_value "%3ANAME"))
+
+([OpioidGuideline_ProjectKB_Class2870] of  String
+
+	(name "PAL-QUERY")
+	(string_value "%3APAL-NAME"))
+
+([OpioidGuideline_ProjectKB_Class2871] of  String
+
+	(name "Lab_Dictionary_Translation")
+	(string_value "Source_String_in_DB"))
+
+([OpioidGuideline_ProjectKB_Class2872] of  String
+
+	(name "Drug_Usage")
+	(string_value "label"))
+
+([OpioidGuideline_ProjectKB_Class2873] of  String
+
+	(name "Medications_Metaclass")
+	(string_value "%3ANAME"))
+
+([OpioidGuideline_ProjectKB_Class2874] of  String
+
+	(name "Medical_Conditions_Metaclass")
+	(string_value "%3ANAME"))
+
+([OpioidGuideline_ProjectKB_Class2875] of  String
+
+	(name "Set_Expression")
+	(string_value "label"))
+
+([OpioidGuideline_ProjectKB_Class2876] of  String
+
+	(name "PrecautionPrioritySetting")
+	(string_value "precaution{%3A}precaution_priority"))
+
+([OpioidGuideline_ProjectKB_Class2877] of  String
+
+	(name "Canonical_Terms_Metaclass")
+	(string_value "PrettyName"))
+
+([OpioidGuideline_ProjectKB_Class2878] of  String
+
+	(name ":JESS-DEFINITION")
+	(string_value "%3ADEFINITION-NAME"))
+
+([OpioidGuideline_ProjectKB_Class2879] of  String
+
+	(name "Patient_History_Translation")
+	(string_value "Source_String_in_DB"))
+
+([OpioidGuideline_ProjectKB_Class2880] of  String
+
+	(name "On_Screen_Message")
+	(string_value "label{%3A}display_location{+%28}main_message{%29}"))
+
+([OpioidGuideline_ProjectKB_Class2881] of  String
+
+	(name ":RULE")
+	(string_value "%3ADEFINITION-NAME"))
+
+([OpioidGuideline_ProjectKB_Class2882] of  String
+
+	(name "Supporting_Material")
+	(string_value "label"))
+
+([OpioidGuideline_ProjectKB_Class2883] of  Map
+
+	(entries
+		[OpioidGuideline_ProjectKB_Class2884]
+		[OpioidGuideline_ProjectKB_Class2885]
+		[OpioidGuideline_ProjectKB_Class2886]
+		[OpioidGuideline_ProjectKB_Class2887]
+		[OpioidGuideline_ProjectKB_Class2888]
+		[OpioidGuideline_ProjectKB_Class2889]
+		[OpioidGuideline_ProjectKB_Class2890]
+		[OpioidGuideline_ProjectKB_Class2891]
+		[OpioidGuideline_ProjectKB_Class2892]
+		[OpioidGuideline_ProjectKB_Class2893]
+		[OpioidGuideline_ProjectKB_Class2894]))
+
+([OpioidGuideline_ProjectKB_Class2884] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_60131")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2885] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_20464")
+	(key_class "java.lang.String")
+	(value "1280 200 118 57")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2886] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_110008")
+	(key_class "java.lang.String")
+	(value "800 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2887] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_60070")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2888] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_90002")
+	(key_class "java.lang.String")
+	(value "1120 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2889] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_120369")
+	(key_class "java.lang.String")
+	(value "670 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2890] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_250000")
+	(key_class "java.lang.String")
+	(value "970 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2891] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_70000")
+	(key_class "java.lang.String")
+	(value "520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2892] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_60073")
+	(key_class "java.lang.String")
+	(value "356 222 89 56")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2893] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_120373")
+	(key_class "java.lang.String")
+	(value "820 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2894] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_70227")
+	(key_class "java.lang.String")
+	(value "670 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2895] of  Map_Entry
+
+	(key "InstanceGraphWidget.OpioidGuideline_Instance_70373.steps")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2883")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2896] of  Map
+)
+
+([OpioidGuideline_ProjectKB_Class2897] of  Map_Entry
+
+	(key "InstanceGraphWidget.OpioidGuideline_Instance_310358.steps")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2896")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2898] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([OpioidGuideline_ProjectKB_Class2899] of  Map
+)
+
+([OpioidGuideline_ProjectKB_Class2900] of  Map_Entry
+
+	(key "InstanceGraphWidget.ChronicPainOpioid_Instance_3.steps")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2899")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2901] of  Map
+
+	(entries
+		[OpioidGuideline_ProjectKB_Class2902]
+		[OpioidGuideline_ProjectKB_Class2903]
+		[OpioidGuideline_ProjectKB_Class2904]
+		[OpioidGuideline_ProjectKB_Class2905]
+		[OpioidGuideline_ProjectKB_Class2906]
+		[OpioidGuideline_ProjectKB_Class2907]
+		[OpioidGuideline_ProjectKB_Class2908]
+		[OpioidGuideline_ProjectKB_Class2909]
+		[OpioidGuideline_ProjectKB_Class2910]
+		[OpioidGuideline_ProjectKB_Class2911]
+		[OpioidGuideline_ProjectKB_Class2912]
+		[OpioidGuideline_ProjectKB_Class2913]
+		[OpioidGuideline_ProjectKB_Class2914]
+		[OpioidGuideline_ProjectKB_Class2915]
+		[OpioidGuideline_ProjectKB_Class2916]
+		[OpioidGuideline_ProjectKB_Class2917]))
+
+([OpioidGuideline_ProjectKB_Class2902] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_100003")
+	(key_class "java.lang.String")
+	(value "346 206 109 88")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2903] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_80257")
+	(key_class "java.lang.String")
+	(value "720 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2904] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_80259")
+	(key_class "java.lang.String")
+	(value "570 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2905] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_90000")
+	(key_class "java.lang.String")
+	(value "93 208 115 85")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2906] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_70214")
+	(key_class "java.lang.String")
+	(value "1220 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2907] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_400526")
+	(key_class "java.lang.String")
+	(value "1605 214 90 72")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2908] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_910005")
+	(key_class "java.lang.String")
+	(value "2070 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2909] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_110000")
+	(key_class "java.lang.String")
+	(value "10 10 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2910] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_1090001")
+	(key_class "java.lang.String")
+	(value "2220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2911] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_220000")
+	(key_class "java.lang.String")
+	(value "1470 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2912] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_160000")
+	(key_class "java.lang.String")
+	(value "1320 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2913] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_120094")
+	(key_class "java.lang.String")
+	(value "1170 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2914] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_120093")
+	(key_class "java.lang.String")
+	(value "1020 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2915] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_130006")
+	(key_class "java.lang.String")
+	(value "1770 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2916] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_120095")
+	(key_class "java.lang.String")
+	(value "870 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2917] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_40013")
+	(key_class "java.lang.String")
+	(value "2360 140 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2918] of  Map_Entry
+
+	(key "InstanceGraphWidget.OpioidGuideline_Instance_30012.steps")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2901")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2919] of  Map
+
+	(entries
+		[OpioidGuideline_ProjectKB_Class2920]
+		[OpioidGuideline_ProjectKB_Class2921]))
+
+([OpioidGuideline_ProjectKB_Class2920] of  Map_Entry
+
+	(key "ChronicPainOpioid10-26-05_Instance_10018")
+	(key_class "java.lang.String")
+	(value "0 0 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2921] of  Map_Entry
+
+	(key "ChronicPainOpioid10-26-05_Instance_10019")
+	(key_class "java.lang.String")
+	(value "120 0 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2922] of  Map_Entry
+
+	(key "InstanceGraphWidget.ChronicPainOpioid10-26-05_Instance_10017.steps")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2919")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2923] of  Map
+
+	(entries
+		[OpioidGuideline_ProjectKB_Class2924]
+		[OpioidGuideline_ProjectKB_Class2925]
+		[OpioidGuideline_ProjectKB_Class2926]
+		[OpioidGuideline_ProjectKB_Class2927]
+		[OpioidGuideline_ProjectKB_Class2928]
+		[OpioidGuideline_ProjectKB_Class2929]
+		[OpioidGuideline_ProjectKB_Class2930]
+		[OpioidGuideline_ProjectKB_Class2931]
+		[OpioidGuideline_ProjectKB_Class2932]
+		[OpioidGuideline_ProjectKB_Class2933]
+		[OpioidGuideline_ProjectKB_Class2934]
+		[OpioidGuideline_ProjectKB_Class2935]
+		[OpioidGuideline_ProjectKB_Class2936]
+		[OpioidGuideline_ProjectKB_Class2937]
+		[OpioidGuideline_ProjectKB_Class2938]
+		[OpioidGuideline_ProjectKB_Class2939]
+		[OpioidGuideline_ProjectKB_Class2940]
+		[OpioidGuideline_ProjectKB_Class2941]
+		[OpioidGuideline_ProjectKB_Class2942]
+		[OpioidGuideline_ProjectKB_Class2943]
+		[OpioidGuideline_ProjectKB_Class2944]
+		[OpioidGuideline_ProjectKB_Class2945]
+		[OpioidGuideline_ProjectKB_Class2946]
+		[OpioidGuideline_ProjectKB_Class2947]
+		[OpioidGuideline_ProjectKB_Class2948]
+		[OpioidGuideline_ProjectKB_Class2949]
+		[OpioidGuideline_ProjectKB_Class2950]
+		[OpioidGuideline_ProjectKB_Class2951]
+		[OpioidGuideline_ProjectKB_Class2952]
+		[OpioidGuideline_ProjectKB_Class2953]
+		[OpioidGuideline_ProjectKB_Class2954]
+		[OpioidGuideline_ProjectKB_Class2955]
+		[OpioidGuideline_ProjectKB_Class2956]
+		[OpioidGuideline_ProjectKB_Class2957]
+		[OpioidGuideline_ProjectKB_Class2958]
+		[OpioidGuideline_ProjectKB_Class2959]
+		[OpioidGuideline_ProjectKB_Class2960]
+		[OpioidGuideline_ProjectKB_Class2961]))
+
+([OpioidGuideline_ProjectKB_Class2924] of  Map_Entry
+
+	(key "ChronicPainOpioid10-26-05_Instance_10029")
+	(key_class "java.lang.String")
+	(value "320 220 103 92")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2925] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_350013")
+	(key_class "java.lang.String")
+	(value "300 1160 103 112")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2926] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_350014")
+	(key_class "java.lang.String")
+	(value "460 1180 97 103")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2927] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_380348")
+	(key_class "java.lang.String")
+	(value "520 80 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2928] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_380347")
+	(key_class "java.lang.String")
+	(value "360 80 91 64")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2929] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_350011")
+	(key_class "java.lang.String")
+	(value "160 1180 89 92")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2930] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_270006")
+	(key_class "java.lang.String")
+	(value "640 460 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2931] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_270004")
+	(key_class "java.lang.String")
+	(value "700 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2932] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_240000")
+	(key_class "java.lang.String")
+	(value "580 280 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2933] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_270003")
+	(key_class "java.lang.String")
+	(value "660 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2934] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_270002")
+	(key_class "java.lang.String")
+	(value "580 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2935] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_280000")
+	(key_class "java.lang.String")
+	(value "600 -40 86 88")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2936] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_541526")
+	(key_class "java.lang.String")
+	(value "1140 400 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2937] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_350009")
+	(key_class "java.lang.String")
+	(value "620 1000 79 92")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2938] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_370116")
+	(key_class "java.lang.String")
+	(value "220 420 82 77")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2939] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_380353")
+	(key_class "java.lang.String")
+	(value "260 20 94 76")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2940] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_430000")
+	(key_class "java.lang.String")
+	(value "480 380 82 85")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2941] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_350007")
+	(key_class "java.lang.String")
+	(value "20 962 77 81")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2942] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_1030000")
+	(key_class "java.lang.String")
+	(value "140 320 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2943] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_370112")
+	(key_class "java.lang.String")
+	(value "340 420 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2944] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_350002")
+	(key_class "java.lang.String")
+	(value "240 820 152 105")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2945] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_70130")
+	(key_class "java.lang.String")
+	(value "240 280 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2946] of  Map_Entry
+
+	(key "ChronicPainOpioid10-26-05_Instance_20000")
+	(key_class "java.lang.String")
+	(value "0 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2947] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_40099")
+	(key_class "java.lang.String")
+	(value "160 0 92 81")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2948] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_541518")
+	(key_class "java.lang.String")
+	(value "840 260 60 103")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2949] of  Map_Entry
+
+	(key "ChronicPainOpioid10-26-05_Instance_20001")
+	(key_class "java.lang.String")
+	(value "-20 380 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2950] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_300000")
+	(key_class "java.lang.String")
+	(value "580 620 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2951] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_541523")
+	(key_class "java.lang.String")
+	(value "1220 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2952] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_541524")
+	(key_class "java.lang.String")
+	(value "1280 260 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2953] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_541525")
+	(key_class "java.lang.String")
+	(value "1220 320 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2954] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_330000")
+	(key_class "java.lang.String")
+	(value "142 660 97 87")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2955] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_541521")
+	(key_class "java.lang.String")
+	(value "1040 280 60 77")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2956] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_310003")
+	(key_class "java.lang.String")
+	(value "900 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2957] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_61")
+	(key_class "java.lang.String")
+	(value "180 240 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2958] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_310007")
+	(key_class "java.lang.String")
+	(value "1020 160 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2959] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_310006")
+	(key_class "java.lang.String")
+	(value "1000 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2960] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_310005")
+	(key_class "java.lang.String")
+	(value "880 0 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2961] of  Map_Entry
+
+	(key "OpioidGuideline_Instance_30047")
+	(key_class "java.lang.String")
+	(value "120 440 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2962] of  Map_Entry
+
+	(key "InstanceGraphWidget.ChronicPainOpioid9-23-05_Instance_3.steps")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2923")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2963] of  Map
+
+	(entries
+		[OpioidGuideline_ProjectKB_Class2964]
+		[OpioidGuideline_ProjectKB_Class2965]
+		[OpioidGuideline_ProjectKB_Class2966]))
+
+([OpioidGuideline_ProjectKB_Class2964] of  Map_Entry
+
+	(key "ChronicPainOpioid9-23-05_Instance_10002")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "34 25 205 127")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2965] of  Map_Entry
+
+	(key "ChronicPainOpioid9-23-05_Instance_10003")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "50 50 205 127")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2966] of  Map_Entry
+
+	(key "ChronicPainOpioid9-23-05_Instance_10007")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "-78 601 205 127")
+	(value_class "java.awt.Rectangle"))
+
+([OpioidGuideline_ProjectKB_Class2967] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2963")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2968] of  Map
+)
+
+([OpioidGuideline_ProjectKB_Class2969] of  Map_Entry
+
+	(key "InstanceGraphWidget.OpioidGuideline_Instance_910001.steps")
+	(key_class "java.lang.String")
+	(value "OpioidGuideline_ProjectKB_Class2968")
+	(value_class "java.util.Map"))
+
+([OpioidGuideline_ProjectKB_Class2970] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([OpioidGuideline_ProjectKB_Instance_12115] of  Widget
+
+	(is_hidden FALSE)
+	(name "PrecautionPriorityTable")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12116])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([OpioidGuideline_ProjectKB_Instance_12116] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_12117]
+		[OpioidGuideline_ProjectKB_Instance_12118]))
+
+([OpioidGuideline_ProjectKB_Instance_12117] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_32175]
+		[OpioidGuideline_ProjectKB_Instance_32176]))
+
+([OpioidGuideline_ProjectKB_Instance_12118] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Precaution Priorities")
+	(name "precaution_priorities")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12119])
+	(widget_class_name "edu.stanford.smi.protegex.widget.instancetable.InstanceTableWidget")
+	(width 430)
+	(x 0)
+	(y 0))
+
+([OpioidGuideline_ProjectKB_Instance_12119] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_22122]
+		[OpioidGuideline_ProjectKB_Instance_22124]
+		[OpioidGuideline_ProjectKB_Instance_22125]
+		[OpioidGuideline_ProjectKB_Instance_22126]
+		[OpioidGuideline_ProjectKB_Instance_22128]
+		[OpioidGuideline_ProjectKB_Instance_22129]
+		[OpioidGuideline_ProjectKB_Instance_32130]
+		[OpioidGuideline_ProjectKB_Instance_32132]
+		[OpioidGuideline_ProjectKB_Instance_32135]
+		[OpioidGuideline_ProjectKB_Instance_32136]
+		[OpioidGuideline_ProjectKB_Instance_32137]
+		[OpioidGuideline_ProjectKB_Instance_32138]
+		[OpioidGuideline_ProjectKB_Instance_32139]
+		[OpioidGuideline_ProjectKB_Instance_32140]
+		[OpioidGuideline_ProjectKB_Instance_32141]
+		[OpioidGuideline_ProjectKB_Instance_32142]
+		[OpioidGuideline_ProjectKB_Instance_32143]
+		[OpioidGuideline_ProjectKB_Instance_32144]
+		[OpioidGuideline_ProjectKB_Instance_32145]
+		[OpioidGuideline_ProjectKB_Instance_32146]
+		[OpioidGuideline_ProjectKB_Instance_32147]
+		[OpioidGuideline_ProjectKB_Instance_32148]
+		[OpioidGuideline_ProjectKB_Instance_32149]
+		[OpioidGuideline_ProjectKB_Instance_32150]
+		[OpioidGuideline_ProjectKB_Instance_32151]
+		[OpioidGuideline_ProjectKB_Instance_32152]
+		[OpioidGuideline_ProjectKB_Instance_32153]
+		[OpioidGuideline_ProjectKB_Instance_32154]
+		[OpioidGuideline_ProjectKB_Instance_32155]
+		[OpioidGuideline_ProjectKB_Instance_32156]
+		[OpioidGuideline_ProjectKB_Instance_32157]
+		[OpioidGuideline_ProjectKB_Instance_32158]
+		[OpioidGuideline_ProjectKB_Instance_32159]
+		[OpioidGuideline_ProjectKB_Instance_32170]
+		[OpioidGuideline_ProjectKB_Instance_32173]
+		[OpioidGuideline_ProjectKB_Instance_32174]))
+
+([OpioidGuideline_ProjectKB_Instance_12121] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_12122]
+		[OpioidGuideline_ProjectKB_Instance_12123]))
+
+([OpioidGuideline_ProjectKB_Instance_12122] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12123] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([OpioidGuideline_ProjectKB_Instance_12124] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_12125] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_12126] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_12127]
+		[OpioidGuideline_ProjectKB_Instance_12128]))
+
+([OpioidGuideline_ProjectKB_Instance_12127] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([OpioidGuideline_ProjectKB_Instance_12128] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([OpioidGuideline_ProjectKB_Instance_12129] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_12130] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Complication_Factor")
+	(property_list [OpioidGuideline_ProjectKB_Instance_12131])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 600))
+
+([OpioidGuideline_ProjectKB_Instance_12131] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_12505] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12506] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12514] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12526] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12559] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12560] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12561] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12562] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12563] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12564] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12565] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_12567] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_13400] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [OpioidGuideline_ProjectKB_Instance_13401])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([OpioidGuideline_ProjectKB_Instance_13401] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_1976] of  Integer
+
+	(integer_value 623)
+	(name "QUERY_TAB_DIVIDER_LOCATION"))
+
+([OpioidGuideline_ProjectKB_Instance_1977] of  Integer
+
+	(integer_value 277)
+	(name "QUERY_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([OpioidGuideline_ProjectKB_Instance_1978] of  Integer
+
+	(integer_value 277)
+	(name "QUERY_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([OpioidGuideline_ProjectKB_Instance_2085] of  Integer
+
+	(integer_value 572)
+	(name "PAL_TAB_DIVIDER_LOCATION"))
+
+([OpioidGuideline_ProjectKB_Instance_2086] of  Integer
+
+	(integer_value 441)
+	(name "CONSTRAINT_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([OpioidGuideline_ProjectKB_Instance_2087] of  Integer
+
+	(integer_value 441)
+	(name "CONSTRAINT_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([OpioidGuideline_ProjectKB_Instance_2121] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2122])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2122] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2123] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2124])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2124] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2125] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2126])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2126] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2127] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2128])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([OpioidGuideline_ProjectKB_Instance_2128] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2129] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2130])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2130] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2131] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2132])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2132] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2133] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2134])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2134] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2135] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2136])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2136] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2137] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2138])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2138] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2139] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2140])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2140] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2141] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2142])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2142] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2143] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2144])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2144] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2145] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2146])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2146] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2147] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2148])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2148] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2149] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2150])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2150] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2151] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2152])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2152] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2153] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2154])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2154] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2155] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2156])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2156] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2157] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2158])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2158] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2159] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2160])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2160] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2161] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2162])
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2162] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2163] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2164])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2164] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2165] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2166])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2166] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2167] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2168])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2168] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2169] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2170])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2170] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2171] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2172])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2172] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2173] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2174])
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2174] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2175] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2176])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2176] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_22122] of  String
+
+	(name "tooltip_text"))
+
+([OpioidGuideline_ProjectKB_Instance_22124] of  String
+
+	(name ":COLUMN:NAME:DESCRIPTORprecaution")
+	(string_value "precaution"))
+
+([OpioidGuideline_ProjectKB_Instance_22125] of  Integer
+
+	(integer_value -16777216)
+	(name ":COLOR:RGB:DESCRIPTORprecaution"))
+
+([OpioidGuideline_ProjectKB_Instance_22126] of  Integer
+
+	(integer_value 20)
+	(name ":PREFERRED:SIZE:DESCRIPTORprecaution"))
+
+([OpioidGuideline_ProjectKB_Instance_22128] of  String
+
+	(name ":COLUMN:NAME:DESCRIPTORprecaution_priority")
+	(string_value "precaution_priority"))
+
+([OpioidGuideline_ProjectKB_Instance_22129] of  Integer
+
+	(integer_value -16777216)
+	(name ":COLOR:RGB:DESCRIPTORprecaution_priority"))
+
+([OpioidGuideline_ProjectKB_Instance_22134] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22135] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22136] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22137] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22138] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22281] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22282] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22283] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_22556] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_23429] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "PrettyName")
+	(property_list [OpioidGuideline_ProjectKB_Instance_23430])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 630))
+
+([OpioidGuideline_ProjectKB_Instance_23430] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_23431] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "code")
+	(property_list [OpioidGuideline_ProjectKB_Instance_23432])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 510))
+
+([OpioidGuideline_ProjectKB_Instance_23432] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_23433] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "coding_system")
+	(property_list [OpioidGuideline_ProjectKB_Instance_23434])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 570))
+
+([OpioidGuideline_ProjectKB_Instance_23434] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_23435] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_23436] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_23437] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2474] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name ":DEFINITION-NAME")
+	(property_list [OpioidGuideline_ProjectKB_Instance_2475])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 470))
+
+([OpioidGuideline_ProjectKB_Instance_2475] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2476] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [OpioidGuideline_ProjectKB_Instance_2477])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 0)
+	(y 530))
+
+([OpioidGuideline_ProjectKB_Instance_2477] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2478] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name ":DEFINITION")
+	(property_list [OpioidGuideline_ProjectKB_Instance_2479])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 410))
+
+([OpioidGuideline_ProjectKB_Instance_2479] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2516] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2517])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2517] of  Property_List
+
+	(properties [OpioidGuideline_ProjectKB_Instance_2526]))
+
+([OpioidGuideline_ProjectKB_Instance_2518] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2519])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2519] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2520] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2521])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2521] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_1976]
+		[OpioidGuideline_ProjectKB_Instance_1977]
+		[OpioidGuideline_ProjectKB_Instance_1978]))
+
+([OpioidGuideline_ProjectKB_Instance_2522] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2523])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2523] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2524] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [OpioidGuideline_ProjectKB_Instance_2525])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([OpioidGuideline_ProjectKB_Instance_2525] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_2085]
+		[OpioidGuideline_ProjectKB_Instance_2086]
+		[OpioidGuideline_ProjectKB_Instance_2087]))
+
+([OpioidGuideline_ProjectKB_Instance_2526] of  String
+
+	(name "KnowledgeTreeTab.TOP_LEVEL_INSTANCE")
+	(string_value "ChronicPainOpioid_Instance_1"))
+
+([OpioidGuideline_ProjectKB_Instance_2547] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "assume_if_no_goal_value")
+	(property_list [OpioidGuideline_ProjectKB_Instance_2548])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([OpioidGuideline_ProjectKB_Instance_2548] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2659] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "goals")
+	(property_list [OpioidGuideline_ProjectKB_Instance_2660])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([OpioidGuideline_ProjectKB_Instance_2660] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_2704] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "patient_characterization")
+	(property_list [OpioidGuideline_ProjectKB_Instance_2705])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 310))
+
+([OpioidGuideline_ProjectKB_Instance_2705] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_2706]
+		[OpioidGuideline_ProjectKB_Instance_2707]
+		[OpioidGuideline_ProjectKB_Instance_12567]))
+
+([OpioidGuideline_ProjectKB_Instance_2706] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([OpioidGuideline_ProjectKB_Instance_2707] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32130] of  Integer
+
+	(integer_value 20)
+	(name ":PREFERRED:SIZE:DESCRIPTORprecaution_priority"))
+
+([OpioidGuideline_ProjectKB_Instance_32132] of  Integer
+
+	(integer_value 2)
+	(name ":Number:Of:Visible:Slots"))
+
+([OpioidGuideline_ProjectKB_Instance_32135] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Automatically:Select:Insertions"))
+
+([OpioidGuideline_ProjectKB_Instance_32136] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Create:Form:For:New:Instances"))
+
+([OpioidGuideline_ProjectKB_Instance_32137] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HighLight:Selected:Row"))
+
+([OpioidGuideline_ProjectKB_Instance_32138] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Edit:In:Place"))
+
+([OpioidGuideline_ProjectKB_Instance_32139] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Use:Dialog:To:Select:Instances"))
+
+([OpioidGuideline_ProjectKB_Instance_32140] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Use:Dialog:To:Select:Classes"))
+
+([OpioidGuideline_ProjectKB_Instance_32141] of  String
+
+	(name ":Dialog:Title:For:Selecting:Instances")
+	(string_value "Select an instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32142] of  String
+
+	(name ":Dialog:Title:For:Selecting:Classes")
+	(string_value "Select a class"))
+
+([OpioidGuideline_ProjectKB_Instance_32143] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([OpioidGuideline_ProjectKB_Instance_32144] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([OpioidGuideline_ProjectKB_Instance_32145] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([OpioidGuideline_ProjectKB_Instance_32146] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([OpioidGuideline_ProjectKB_Instance_32147] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([OpioidGuideline_ProjectKB_Instance_32148] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Delete:Instance:Button"))
+
+([OpioidGuideline_ProjectKB_Instance_32149] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Prototype:Button"))
+
+([OpioidGuideline_ProjectKB_Instance_32150] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Move:Instance:Buttons"))
+
+([OpioidGuideline_ProjectKB_Instance_32151] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32152] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32153] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32154] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([OpioidGuideline_ProjectKB_Instance_32155] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([OpioidGuideline_ProjectKB_Instance_32156] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32157] of  String
+
+	(name ":Move:Instance:Buttons:Tooltip")
+	(string_value "Move the selected instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32158] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32159] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([OpioidGuideline_ProjectKB_Instance_32170] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_32171]
+		[OpioidGuideline_ProjectKB_Instance_32172]))
+
+([OpioidGuideline_ProjectKB_Instance_32171] of  String
+
+	(name "precaution")
+	(string_value "precaution"))
+
+([OpioidGuideline_ProjectKB_Instance_32172] of  String
+
+	(name "precaution_priority")
+	(string_value "precaution_priority"))
+
+([OpioidGuideline_ProjectKB_Instance_32173] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "precaution"))
+
+([OpioidGuideline_ProjectKB_Instance_32174] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "precaution_priority"))
+
+([OpioidGuideline_ProjectKB_Instance_32175] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([OpioidGuideline_ProjectKB_Instance_32176] of  String
+
+	(name "vertical_stretcher")
+	(string_value "precaution_priorities"))
+
+([OpioidGuideline_ProjectKB_Instance_32318] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_32319] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_42205] of  Widget
+
+	(is_hidden FALSE)
+	(name "PrecautionPrioritySetting")
+	(property_list [OpioidGuideline_ProjectKB_Instance_42206])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([OpioidGuideline_ProjectKB_Instance_42206] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_42207]
+		[OpioidGuideline_ProjectKB_Instance_42208]
+		[OpioidGuideline_ProjectKB_Instance_42212]))
+
+([OpioidGuideline_ProjectKB_Instance_42207] of  Property_List
+
+	(name "layout properties"))
+
+([OpioidGuideline_ProjectKB_Instance_42208] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "precaution")
+	(property_list [OpioidGuideline_ProjectKB_Instance_42209])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([OpioidGuideline_ProjectKB_Instance_42209] of  Property_List
+
+	(properties
+		[OpioidGuideline_ProjectKB_Instance_42210]
+		[OpioidGuideline_ProjectKB_Instance_42211]))
+
+([OpioidGuideline_ProjectKB_Instance_42210] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([OpioidGuideline_ProjectKB_Instance_42211] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([OpioidGuideline_ProjectKB_Instance_42212] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "precaution_priority")
+	(property_list [OpioidGuideline_ProjectKB_Instance_42213])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([OpioidGuideline_ProjectKB_Instance_42213] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_53052] of  Property_List
+
+	(name "layout properties"))
+
+([OpioidGuideline_ProjectKB_Instance_53053] of  Property_List
+)
+
+([OpioidGuideline_ProjectKB_Instance_53054] of  Property_List
+)
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [KB_153407_Instance_38])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[PAL_FORM_WIDGET]
+		[KB_523565_Instance_1392]
+		[KB_342471_Instance_2486]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12583]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12524]
+		[KB_342471_Instance_1438]
+		[STANDARD_FACET_FORM_WIDGET]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12482]
+		[KB_875399_Instance_1146]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[KB_119214_Instance_1821]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12503]
+		[KB_358305_Instance_1570]
+		[OpioidGuideline_ProjectKB_Instance_12115]
+		[KB_268245_Instance_2332]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2535]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12469]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12562]
+		[ChronicPainOpioid10-26-05_ProjectKB_Instance_2737]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12604]
+		[OpioidGuideline_ProjectKB_Instance_42205]
+		[KB_675663_Instance_1410]
+		[ChronicPainOpioid10-12-05_ProjectKB_Instance_12541]
+		[ChronicPainOpioid_ProjectKB_Instance_1999])
+	(default_cls_metaclass "KB")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(included_projects "eon2.pprj")
+	(java_packages
+		"edu.stanford.smi.eon.Dharma"
+		"edu.stanford.smi.eon.time"
+		"edu.stanford.smi.eon.criterion"
+		"edu.stanford.smi.eon.athenaextensions"
+		"edu.stanford.smi.eon.datahandler")
+	(journaling_enabled FALSE)
+	(next_frame_number 0)
+	(options [KB_220518_Instance_1])
+	(property_map [ChronicPainOpioid_ProjectKB_Instance_2041])
+	(sources [SOURCES])
+	(tabs
+		[ChronicPainOpioid_ProjectKB_Instance_1972]
+		[ChronicPainOpioid_ProjectKB_Instance_1954]
+		[CLSES_TAB]
+		[INSTANCES_TAB]
+		[FORMS_TAB]
+		[QUERIES_TAB]
+		[OpioidGuideline_ProjectKB_Instance_2518]
+		[OpioidGuideline_ProjectKB_Instance_2516]
+		[OpioidGuideline_ProjectKB_Instance_2524]
+		[OpioidGuideline_ProjectKB_Instance_2520]
+		[OpioidGuideline_ProjectKB_Instance_2141]
+		[OpioidGuideline_ProjectKB_Instance_2127]
+		[OpioidGuideline_ProjectKB_Instance_2165]
+		[OpioidGuideline_ProjectKB_Instance_2143]
+		[OpioidGuideline_ProjectKB_Instance_2133]
+		[OpioidGuideline_ProjectKB_Instance_2151]
+		[OpioidGuideline_ProjectKB_Instance_2157]
+		[OpioidGuideline_ProjectKB_Instance_2161]
+		[OpioidGuideline_ProjectKB_Instance_2155]
+		[OpioidGuideline_ProjectKB_Instance_2153]
+		[OpioidGuideline_ProjectKB_Instance_2123]
+		[OpioidGuideline_ProjectKB_Instance_2173]
+		[OpioidGuideline_ProjectKB_Instance_2135]
+		[OpioidGuideline_ProjectKB_Instance_2522]
+		[OpioidGuideline_ProjectKB_Instance_2149]
+		[OpioidGuideline_ProjectKB_Instance_2125]
+		[SLOTS_TAB]
+		[OpioidGuideline_ProjectKB_Instance_2121]
+		[OpioidGuideline_ProjectKB_Instance_2169]
+		[OpioidGuideline_ProjectKB_Instance_2171]
+		[OpioidGuideline_ProjectKB_Instance_2145]
+		[OpioidGuideline_ProjectKB_Instance_2167]
+		[OpioidGuideline_ProjectKB_Instance_2137]
+		[OpioidGuideline_ProjectKB_Instance_2163]
+		[OpioidGuideline_ProjectKB_Instance_2159]
+		[OpioidGuideline_ProjectKB_Instance_2131]
+		[OpioidGuideline_ProjectKB_Instance_2147]
+		[OpioidGuideline_ProjectKB_Instance_2175]
+		[OpioidGuideline_ProjectKB_Instance_2139]
+		[OpioidGuideline_ProjectKB_Instance_2129]))
+
+([QUERIES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [KB_220518_Instance_69])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden TRUE)
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_220518_Instance_0]
+		[KB_220518_Instance_70]
+		[KB_220518_Instance_71]))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [KB_153407_Instance_0])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [KB_153407_Instance_29])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [KB_153407_Instance_12])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))

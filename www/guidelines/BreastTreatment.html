@@ -1,0 +1,270 @@
+<html>
+
+<head>
+<title>BREAST-CANCER TREATMENT PROTOCOL</title>
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+</head>
+
+<body>
+
+<h1>Partial Specification of Breast-Cancer Protocol EST 2190 </h1>
+
+<p>Created: 7/2/96 by Samson Tu (translated from the CLIPS output of Protege/Win
+LayoutInterpreteer) </p>
+
+<p>Last revised: 7/2/96 </p>
+
+<hr>
+
+<pre>
+
+Guidelines instance_00001 
+{
+   guidelines = SEQUENCE 1 {(Guideline_Object instance_00002);};
+};
+
+
+Guideline_Object instance_00002 
+{
+   eligibility_criteria = SEQUENCE 7 {
+       Boolean_Criterion instance_00037 
+       {
+          type = k_three_valued;
+          spec = &quot;disease.name = 'breast_epithelial_carcinoma'&quot;;
+       };
+       Boolean_Criterion instance_00038 
+       {
+          type = k_two_valued;
+          spec = &quot;disease.number_of_involved_node &gt;= 10&quot;;
+       };
+       Boolean_Criterion instance_00039 
+       {
+          type = k_three_valued;
+          spec = &quot;patient.sex  = 'female'&quot;;
+       };
+       Boolean_Criterion instance_00040 
+       {
+          type = k_two_valued;
+          spec = &quot;lab_result.testname = 'biochemical receptor assays for estrogen and progesterone' or lab_result.testname = 'immunocytochemical receptor assays for estrogen and progesterone'&quot;;
+       };
+       Boolean_Criterion instance_00198 
+       {
+          type = k_two_valued;
+          spec = &quot;(procedure. name = 'radical mastectomy' or procedure.name = 'modified radical mastectomy' or procedure.name = 'breast-sparing mastectormy') and 
+procedure. name = 'axillary dissection'&quot;;
+       };
+       Boolean_Criterion instance_00199 
+       {
+          type = k_two_valued;
+          spec = &quot;lab_result.name = 'WBC' and lab_result.value  &gt;= 4000&quot;;
+       };
+       Boolean_Criterion instance_00200 
+       {
+          type = k_two_valued;
+          spec = &quot;lab_result.name = 'Platelet_count' and lab_result.value &gt;= 100000&quot;;
+       };};
+   steps = SEQUENCE 11 {(Guideline_Step instance_00003);(Guideline_Step instance_00017);(Guideline_Step instance_00021);(Guideline_Step instance_00022);(Guideline_Step instance_00206);};
+   authors = SEQUENCE 6 {
+       Person instance_00081 
+       {
+          name = &quot;Martin S. Tallman, M.D.&quot;;
+       };
+       Person instance_00082 
+       {
+          name = &quot;Niculae Ciobanu, M.D.&quot;;
+       };
+       Person instance_00083 
+       {
+          name = &quot;Elisabeth Paietta, Ph.D.&quot;;
+       };
+       Person instance_00084 
+       {
+          name = &quot;Peter A. Cassileth, M.D.&quot;;
+       };
+       Person instance_00085 
+       {
+          name = &quot;John Kennedy, M.D., M.R.C.P.I.&quot;;
+       };
+       Person instance_00086 
+       {
+          name = &quot;John Fetting, M.D.&quot;;
+       };};
+   first_step = (Guideline_Step instance_00003);
+   intention = &quot;To compare the sites an drates of recurrence, disease-free survival and overall survivalwith adjuvant chemotherapy (CAF)  with autologous marrow infusion and/or peripheral blood stem cell infusion in patients with breast cancer with 10 or more positive lymph nodes&quot;;
+   name = &quot;EST 2190&quot;;
+};
+
+
+Guideline_Step instance_00003 
+{
+   transitions = SEQUENCE 1 {(Guideline_Step instance_00017);};
+   action = (Action_Spec instance_00013);
+   name = &quot;stratify&quot;;
+};
+
+
+Action_Spec instance_00013 
+{
+   name = &quot;stratify&quot;;
+   action_type = &quot;Data Collection&quot;;
+   patient_data = SEQUENCE 3 {
+       Patient_Data instance_00014 
+       {
+          name = &quot;Age&quot;;
+       };
+       Patient_Data instance_00015 
+       {
+          name = &quot;ER Status&quot;;
+          possible_values = SEQUENCE 2 {&quot;positive&quot;; &quot;negative&quot;;};
+       };
+       Patient_Data instance_00016 
+       {
+          name = &quot;Menopausal Status&quot;;
+          possible_values = SEQUENCE 2 {&quot;Premenopausal&quot;; &quot;Postmenopausal&quot;;};
+       };};
+};
+
+
+
+
+
+
+
+
+Guideline_Step instance_00017 
+{
+   transitions = SEQUENCE 1 {(Guideline_Step instance_00206);};
+   action = (Action_Spec instance_00018);
+   name = &quot;randomize&quot;;
+};
+
+
+Action_Spec instance_00018 
+{
+   name = &quot;randomize&quot;;
+   action_type = &quot;Data Collection&quot;;
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00019 
+       {
+          type = &quot;required&quot;;
+          name = &quot;arm_assignment&quot;;
+          possible_values = SEQUENCE 2 {&quot;A&quot;; &quot;B&quot;;};
+       };};
+};
+
+
+
+
+
+
+Guideline_Step instance_00021 
+{
+   name = &quot;Arm A&quot;;
+   subguideline = (Guideline_Object instance_00041);
+};
+
+
+Guideline_Step instance_00022 
+{
+   name = &quot;Arm B&quot;;
+   subguideline = (Guideline_Object instance_00106);
+};
+
+
+
+Guideline_Object instance_00041 
+{
+   steps = SEQUENCE 5 {(Guideline_Step instance_00062);(Guideline_Step instance_00063);(Guideline_Step instance_00064);(Guideline_Step instance_00070);};
+   eligibility_criteria = SEQUENCE 1 {
+       Boolean_Criterion instance_00042 
+       {
+          type = k_two_valued;
+          spec = &quot;arm_assignment = 'A'&quot;;
+       };};
+   first_step = (Guideline_Step instance_00062);
+   name = &quot;Arm A of EST 2190&quot;;
+};
+
+
+
+
+Guideline_Step instance_00062 
+{
+   transitions = SEQUENCE 2 {
+       Transition instance_00066 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00064);};
+          name = &quot;Estrogen receptor positive&quot;;
+       };(Guideline_Step instance_00063);};
+   name = &quot;Bone Marrow and/or PSC Harvest - 1&quot;;
+   subguideline = (Guideline_Object instance_00158);
+};
+
+
+Guideline_Step instance_00063 
+{
+   transitions = SEQUENCE 1 {(Guideline_Step instance_00070);};
+   action = (Action_Spec instance_00248);
+   name = &quot;Radiotherapy&quot;;
+};
+
+
+Guideline_Step instance_00064 
+{
+   transitions = SEQUENCE 1 {(Guideline_Step instance_00070);};
+   action = (Action_Spec instance_00067);
+   name = &quot;Tamoxifen&quot;;
+};
+
+
+
+
+Action_Spec instance_00067 
+{
+   name = &quot;Tamoxifen-1&quot;;
+};
+
+
+Guideline_Step instance_00070 
+{
+   name = &quot;Observation and Follow-up&quot;;
+};
+Guideline_Object instance_00106 
+{
+   steps = SEQUENCE 14 {(Guideline_Step instance_00111);(Guideline_Step instance_00112);(Guideline_Step instance_00115);(Guideline_Step instance_00116);(Guideline_Step instance_00117);(Guideline_Step instance_00119);(Guideline_Step instance_00122);(Guideline_Step instance_00123);(Guideline_Step instance_00125);(Guideline_Step instance_00126);};
+   eligibility_criteria = SEQUENCE 1 {
+       Boolean_Criterion instance_00157 
+       {
+          type = k_two_valued;
+          spec = &quot;arm_assignment = 'B'&quot;;
+       };};
+   first_step = (Guideline_Step instance_00107);
+   name = &quot;Arm B Guideline&quot;;
+};
+
+
+Guideline_Step instance_00107 
+{
+   transitions = SEQUENCE 2 {
+       Transition instance_00128 
+       {
+          selection_method = all_of;
+          links = SEQUENCE 1 {(Guideline_Step instance_00111);};
+          name = &quot;= 6 cycles&quot;;
+       };
+       Transition instance_00129 
+       {
+          links = SEQUENCE 1 {(Guideline_Step instance_00107);};
+          name = &quot;<6 cycles"; };}; action="(Action_Spec" instance_00144); name="CAF" ; }; Guideline_Step instance_00111 { transitions="SEQUENCE" 1 {(Guideline_Step instance_00112);}; action="(Action_Spec" instance_00130); name="Bone Marrow and/or PSC Harvest" ; }; Guideline_Step instance_00112 { transitions="SEQUENCE" 1 { Transition instance_00114 { selection_method="one_of;" links="SEQUENCE" 3 {(Guideline_Step instance_00115);(Guideline_Step instance_00116);(Guideline_Step instance_00117);}; name="register" ; };}; name="High-Dose Chemotherapy Guideline Step" ; subguideline="(Guideline_Object" instance_00181); }; Guideline_Step instance_00115 { transitions="SEQUENCE" 1 { Transition instance_00118 { selection_method="one_of;" links="SEQUENCE" 2 {(Guideline_Step instance_00119);(Guideline_Step instance_00126);}; name="one of" ; };}; name="Bone Marrow Infusion Only" ; }; Guideline_Step instance_00116 { transitions="SEQUENCE" 1 {}; action="(Action_Spec" instance_00165); name="Peripheral Blood Stem Cell Infusion Only" ; }; Guideline_Step instance_00117 { transitions="SEQUENCE" 1 {}; name="Bone Marrow and PSC Infusion" ; }; Guideline_Step instance_00119 { transitions="SEQUENCE" 2 { Transition instance_00121 { links="SEQUENCE" 1 {(Guideline_Step instance_00123);}; name="ER+" ; };(Guideline_Step instance_00122);}; action="(Action_Spec" instance_00249); name="GM-CSF" ; }; Guideline_Step instance_00122 { transitions="SEQUENCE" 1 { Transition instance_00124 { links="SEQUENCE" 1 {(Guideline_Step instance_00125);}; name="go" ; };}; action="(Action_Spec" instance_00248); name="Radiotherapy" ; }; Guideline_Step instance_00123 { transitions="SEQUENCE" 1 {(Transition instance_00124);}; action="(Action_Spec" instance_00067); name="Tamoxifen" ; }; Guideline_Step instance_00125 { name="Observation and Follow-up" ; }; Guideline_Step instance_00126 { transitions="SEQUENCE" 2 {(Guideline_Step instance_00122);}; action="(Action_Spec" instance_00251); name="G-CSF" ; }; Action_Spec instance_00130 { guideline="(Guideline_Object" instance_00158); name="Harvest Bone Marrow and/or PSC" ; }; Action_Spec instance_00144 { guideline="(Guideline_Object" instance_00145); description="CAF chemotherapy" ; attribute_values="SEQUENCE" 1 { Attribute_Value instance_00179 { attribute="cycle_duration" ; type="integer" ; value="28" ; };}; name="CAF" ; action_type="Therapy" ; }; Guideline_Object instance_00145 { steps="SEQUENCE" 11 {(Guideline_Step instance_00146);(Guideline_Step instance_00147);(Guideline_Step instance_00148);(Guideline_Step instance_00151);(Guideline_Step instance_00152);(Guideline_Step instance_00155);}; first_step="(Guideline_Step" instance_00203); name="CAF" ; }; Guideline_Step instance_00146 { transitions="SEQUENCE" 1 { Transition instance_00153 { selection_method="all_of;" links="SEQUENCE" 1 {(Guideline_Step instance_00146);}; name="&lt; 14 days" ; };}; action="(Action_Spec" instance_00154); name="Cyclophosphamide" ; }; Guideline_Step instance_00147 { transitions="SEQUENCE" 1 { Transition instance_00149 { links="SEQUENCE" 1 {(Guideline_Step instance_00151);}; name="Day 8" ; };}; action="(Action_Spec" instance_00170); name="Doxorubicin" ; }; Guideline_Step instance_00148 { transitions="SEQUENCE" 1 { Transition instance_00150 { links="SEQUENCE" 1 {(Guideline_Step instance_00152);}; name="Day 8" ; };}; action="(Action_Spec" instance_00175); name="Flurouracil" ; }; Guideline_Step instance_00151 { transitions="SEQUENCE" 1 { Transition instance_00156 { links="SEQUENCE" 1 {(Guideline_Step instance_00155);}; name="&lt; 14 days" ; };}; name="Doxorubicin" ; }; Guideline_Step instance_00152 { transitions="SEQUENCE" 1 {}; name="Flurouracil" ; }; Action_Spec instance_00154 { attribute_values="SEQUENCE" 4 { Attribute_Value instance_00166 { attribute="drug_standard_dose" ; cardinality="single;" type="integer" ; value="100" ; }; Attribute_Value instance_00167 { attribute="drug_unit" ; type="string" ; value="mg/m2" ; }; Attribute_Value instance_00168 { attribute="drug_route" ; type="string" ; value="PO" ; }; Attribute_Value instance_00169 { attribute="drug_frequence" ; type="string" ; value="qd" ; };}; name="Cyclophosphamide" ; action_type="Therapy" ; }; Guideline_Step instance_00155 { name="Wait" ; }; Guideline_Object instance_00158 { steps="SEQUENCE" 6 {(Guideline_Step instance_00159);(Guideline_Step instance_00161);(Guideline_Step instance_00163);(Guideline_Step instance_00253);}; name="Bone Marrow and/or PSC Harvest" ; }; Guideline_Step instance_00159 { action="(Action_Spec" instance_00240); name="Bone Marrow Harvest-1" ; }; Guideline_Step instance_00161 { action="(Action_Spec" instance_00241); name="PSC Harvest -2" ; }; Guideline_Step instance_00163 { action="(Action_Spec" instance_00241); name="PSC Harvest -1" ; }; Action_Spec instance_00165 { "Peripheral Blood Stem Cell Infusion Only" }; Action_Spec instance_00170 { attribute_values="SEQUENCE" 3 { Attribute_Value instance_00171 { attribute="drug_standard_dose" ; type="integer" ; value="30" ; }; Attribute_Value instance_00172 { attribute="drug_unit" ; type="string" ; value="mg/m2" ; }; Attribute_Value instance_00173 { attribute="drug_route" ; type="string" ; value="IV" ; };}; name="Doxorubicin" ; }; Action_Spec instance_00175 { attribute_values="SEQUENCE" 3 { Attribute_Value instance_00176 { attribute="drug_standard_dose" ; type="integer" ; value="500" ; }; Attribute_Value instance_00177 { attribute="drug_unit" ; type="string" ; value="mg/m2" ; }; Attribute_Value instance_00178 { attribute="drug_route" ; type="string" ; value="IV" ; };}; name="Flurouracil" ; action_type="Therapy" ; }; Guideline_Object instance_00181 { steps="SEQUENCE" 2 {(Guideline_Step instance_00182);(Guideline_Step instance_00183);}; name="High-Dose Chemotherapy Guideline" ; }; Guideline_Step instance_00182 { action="(Action_Spec" instance_00184); name="High-Dose Cyclophosphamide" ; }; Guideline_Step instance_00183 { action="(Action_Spec" instance_00190); name="High-Dose ThioTEPA" ; }; Action_Spec instance_00184 { attribute_values="SEQUENCE" 4 { Attribute_Value instance_00186 { attribute="drug_standard_dose" ; type="integer" ; value="6000" ; }; Attribute_Value instance_00187 { attribute="drug_unit" ; type="string" ; value="mg/m2" ; }; Attribute_Value instance_00188 { attribute="drug_route" ; type="string" ; value="IV" ; }; Attribute_Value instance_00189 { attribute="drug_duration" ; type="integer" ; value="4 " ; };}; name="High-Dose Cyclophosphamide" ; action_type="Therapy" ; }; Action_Spec instance_00190 { attribute_values="SEQUENCE" 3 { Attribute_Value instance_00191 { attribute="drug_standard_dose" ; type="integer" ; value="800" ; }; Attribute_Value instance_00192 { attribute="drug_unit" ; type="string" ; value="mg/m2" ; }; Attribute_Value instance_00193 { attribute="drug_route" ; type="string" ; value="IV" ; };}; name="High-Dose ThioTEPA" ; action_type="Therapy" ; }; Guideline_Step instance_00203 { name="Start" ; }; Guideline_Step instance_00206 { transitions="SEQUENCE" 4 { Transition instance_00211 { links="SEQUENCE" 1 {(Guideline_Step instance_00206);}; name="Prior CAF and &lt; 5 cycles" ; }; Transition instance_00208 { links="SEQUENCE" 1 {(Guideline_Step instance_00206);}; name="No prior CAF and &lt; 6 cycles" ; }; Transition instance_00209 { links="SEQUENCE" 2 { Transition instance_00020 { links="SEQUENCE" 1 {(Guideline_Step instance_00021);}; condition="Boolean_Criterion" instance_00104 { type="k_two_valued;" spec="arm_assignment = 'A'" ; }; name="randomized to arm A" ; }; Transition instance_00023 { selection_method="all_of;" links="SEQUENCE" 1 {(Guideline_Step instance_00022);}; condition="Boolean_Criterion" instance_00103 { type="k_two_valued;" spec="arm_assignment =' B'" ; }; name="randomized to arm B" ; };}; name="Prior CAF and = 5 cycles" ; }; Transition instance_00210 { links="SEQUENCE" 2 {}; name="No prior CAF and = 6 cycles" ; };}; action="(Action_Spec" instance_00212); name="CAF" ; }; Action_Spec instance_00212 { description="CAF chemotherapy" ; guideline="(Guideline_Object" instance_00216); attribute_values="SEQUENCE" 1 { Attribute_Value instance_00213 { attribute="duration" ; cardinality="single;" value="28" ; type="day" ; };}; action_type="Therapy" ; name="CAF-1" ; }; Guideline_Object instance_00216 { steps="SEQUENCE" 11 {(Guideline_Step instance_00218);(Guideline_Step instance_00219);(Guideline_Step instance_00220);(Guideline_Step instance_00222);(Guideline_Step instance_00224);(Guideline_Step instance_00227);}; first_step="(Guideline_Step" instance_00203); name="CAF decomposition" ; }; Guideline_Step instance_00218 { transitions="SEQUENCE" 1 { Transition instance_00221 { links="SEQUENCE" 1 {(Guideline_Step instance_00218);}; name="&lt; 14 days" ; };}; action="(Action_Spec" instance_00228); name="Cyclophosphamide" ; }; Guideline_Step instance_00219 { transitions="SEQUENCE" 1 { Transition instance_00223 { links="SEQUENCE" 1 {(Guideline_Step instance_00222);}; name="Day 8" ; };}; action="(Action_Spec" instance_00232); name="Doxorubicin" ; }; Guideline_Step instance_00220 { transitions="SEQUENCE" 1 { Transition instance_00225 { links="SEQUENCE" 1 {(Guideline_Step instance_00224);}; name="Day 8" ; };}; action="(Action_Spec" instance_00235); name="Flurouracil" ; }; Guideline_Step instance_00222 { transitions="SEQUENCE" 1 { Transition instance_00226 { links="SEQUENCE" 1 {(Guideline_Step instance_00227);}; name="&lt; 14 days" ; };}; action="(Action_Spec" instance_00232); name="Doxorubicin" ; }; Guideline_Step instance_00224 { transitions="SEQUENCE" 1 {}; action="(Action_Spec" instance_00235); name="Flurouracil" ; }; Guideline_Step instance_00227 { action="(Action_Spec" instance_00247); name="Wait" ; }; Action_Spec instance_00228 { attribute_values="SEQUENCE" 3 { Attribute_Value instance_00229 { attribute="drug_standard_dose" ; cardinality="single;" value="100" ; type="integer" ; }; Attribute_Value instance_00230 { attribute="drug_standard_dose_unit" ; value="mg/m2" ; type="string" ; }; Attribute_Value instance_00231 { attribute="drug_route" ; value="IV" ; type="string" ; };}; action_type="Therapy" ; name="Cyclophosphamide-1" ; }; Action_Spec instance_00232 { attribute_values="SEQUENCE" 2 { Attribute_Value instance_00233 { attribute="drug_standard_dose" ; value="30" ; type="integer" ; }; Attribute_Value instance_00234 { attribute="drug_route" ; value="IV" ; type="string" ; };}; action_type="Therapy" ; name="Doxorubicin-1" ; }; Action_Spec instance_00235 { attribute_values="SEQUENCE" 2 { Attribute_Value instance_00236 { attribute="drug_dose" ; value="500" ; type="integer" ; }; Attribute_Value instance_00237 { attribute="drug_route" ; value="IV" ; type="integer" ; };}; action_type="Therapy" ; name="Flurouracil-1" ; }; Action_Spec instance_00240 { name="Bone marrow harvest-action" ; }; Action_Spec instance_00241 { name="PSC Harvest action" ; }; Action_Spec instance_00247 { name="Wait-1" ; }; Action_Spec instance_00248 { name="Radiotherapy-1" ; }; Action_Spec instance_00249 { name="GM-CSF-1" ; }; Action_Spec instance_00251 { name="G-CSF-1" ; }; Guideline_Step instance_00253 { action="(Action_Spec" instance_00240); name="Bone Marrow Harvest-2" ; }; </pre>
+</pre>
+
+<hr>
+
+<pre><a href="index.html">Return to Stanford Intermed Guideline page </a>
+</pre>
+
+<address>
+  This file was last updated on 7/2/96 by Samson Tu <a HREF="mailto:tul@smi.stanford.edu">tu@smi.stanford.edu</a>
+</address>
+</body>
+</html>

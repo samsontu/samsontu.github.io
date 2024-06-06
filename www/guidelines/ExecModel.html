@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>Execution Model of a Procedure</title>
+</head>
+
+<body>
+
+<p align="center">10/16/1996 Samson Tu&nbsp; <br>
+Revised 03/05/97: general revision, also to include execution of subguidelines </p>
+
+<h1 align="center">Execution Model of an EON Guideline</h1>
+
+<p>The heart of the GLIF2 model defines the following guideline steps (whose attributes
+are shown in indented lists):&nbsp; <br>
+<br>
+ActionStep&nbsp; 
+
+<ul>
+  <p>name&nbsp; <br>
+  next_step&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  pointer to next step&nbsp; <br>
+  action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  pointer to description of action&nbsp; <br>
+  subguideline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pointer to
+  possible subguideline&nbsp; </p>
+</ul>
+
+<p>ConditionStep&nbsp; 
+
+<ul>
+  <p>condition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  some boolean condition&nbsp; <br>
+  destination&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; next
+  step if &quot;condition&quot; is true&nbsp; <br>
+  otherwise&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  nextstep if &quot;condition&quot; is false&nbsp; </p>
+</ul>
+
+<p>BranchStep&nbsp; 
+
+<ul>
+  <p>branches&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  one or more possible next steps&nbsp; <br>
+  order_constraint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parallel or
+  any_order&nbsp; <br>
+  selection_method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all_of one_of some_of&nbsp; </p>
+</ul>
+
+<p>SynchronizationStep&nbsp; 
+
+<ul>
+  <p>next_step&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  pointer to next step&nbsp; <br>
+  continuation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  wait_for_all or proceed after one&nbsp; </p>
+</ul>
+
+<p align="left">To give an operational semantics for procedures used to model protocols
+and guidelines, I describe an execution model that indicate how a guideline algorithm made
+up of these steps should be interpreted. For now I will define an execution model for a
+guideline that has no subguidelines.&nbsp; <br>
+<br>
+I will describe the model in terms of operations on a multigraph that has different types
+of nodes and links. Transform the steps of a guideline into a graph as follows: ActionStep
+and SynchronizationStep are designated <i>state nodes</i> of the graph. We graphically
+depict condition steps as one or two solid directed arcs, depending on whether the step
+has the &quot;otherwise&quot; attribute. Attach the condition of the step to the
+&quot;destination&quot; arc and its negation to the &quot;otherwise&quot; arc. If a branch
+step is has &quot;all_of&quot; as the selection_method, the branches are represented as
+solid directed arcs. If the selection_method is not &quot;all_of,&quot; then the branches
+are dotted directed arcs. I made this distinction to separate cases where we know an
+action should be carried out from those cases where an action *may* be carried out.&nbsp; <br>
+<br>
+The &quot;next_step&quot; relations of ActionStep and SynchronizationStep are represented
+as unconditional directed arcs. They are equivalent to conditional steps where the
+condition attribute always evaluate to truth.&nbsp; <br>
+<br>
+Figure 1 depicts a guideline where the ActionStep A1 is followed by a BranchStep b that
+allows A2 or A3 to be performed. If the conditions associated with the directed arcs are
+true, A2 and A3 merge into SynchronizationStep S. The &quot;otherwise&quot; condition of a
+ConditionStep links A3 with A4.&nbsp; <br>
+<a HREF="actionstates.jpg"><img SRC="guidelinegraph.gif" BORDER="0" HEIGHT="157"
+WIDTH="387"></a> Figure 1 A graph depicting a guideline. <br>
+If there is a directed path from A to B such that the path does not contain any other
+state node, we say A is a <i>predecessor </i>of B. Because the graph may contain cycles,
+the predecessor relation is not an ordering.&nbsp; <br>
+<br>
+ActionSteps and SynchronizationSteps take place over time. I model their states with state
+machines. The states of an ActionStep correspond to the states of the underlying action or
+of the subguideline. They include <i>active, completed, aborted, </i>and <i>suspended.</i>
+The possible transitions among these states are depicted in Figure 2.&nbsp;<i> Completed</i>
+and <i>aborted </i>are both terminal states.&nbsp; <br>
+<img SRC="actionstates.gif" HEIGHT="260" WIDTH="406"> Figure 2. States of ActionStep <br>
+The states of a SynchronizationStep include <i>start</i>, <i>go-ahead, completed</i> and <i>wait</i>.
+Figure 3 depict the state-transition diagram of a SynchronizationStep. Start is the
+initial state.&nbsp; Both &quot;go-ahead&quot; and &quot;completed&quot; can be terminal
+states.&nbsp; <br>
+<img SRC="synchorstates.gif" HEIGHT="184" WIDTH="405"> Figure 3 State-transition diagram
+for a SynchronizationStep&nbsp; <br>
+The execution model is defined in terms of (1) the state-transition rules of the state
+nodes, (2) the activation rules of the state nodes, and (3) an execution algorithm.&nbsp; </p>
+
+<h2>State-Transition Rules of the State Nodes</h2>
+
+<p>For ActionSteps, transitions among its states depend on the state of the
+domain-specific action represented by the ActionStep. Sometimes the guideline may contain
+rules that specify how transitions should be made (e.g., if WBC is low, abort the
+administration of this drug).&nbsp; <br>
+<br>
+For SynchronizationStep,&nbsp; if the continuation is wait-for-all, then transition to the
+wait state. If the continuation is proceed-after-one, then make the transition to
+go-ahead. If On-going is false, then make transition from wait to completed.&nbsp; </p>
+
+<h2>Activation Rules of the State Nodes&nbsp;</h2>
+
+<p>We keep track of where the patient is in the procedure by marking the state nodes of
+the procedure. A marking of the nodes in the procedure is a function M mapping nodes of
+the procedure to 0 (inactive), 1 (active), 2 (possible). A node of a procedure is <i>relevant
+</i>if its marking is greater than 0. For an ActionStep or a SynchronizationStep (that is
+not a start node) to become relevant, (1) the predecessor of the node must be active; (2)
+the intervention associated with active predecessor of the node must be in a terminal
+state, and (3) all conditions, if there is any, on the directed arcs from the active
+predecessor must be true. When a state node becomes relevant, its marking is either
+&quot;1&quot; (active), if the path from the predecessor contains no dotted arc, or
+&quot;2&quot; (possible), if the path from predecessor contains a dotted arc (i.e., the
+step is optional). A SynchronizationStep will never follow a BranchStep directly.
+Therefore its marking is always &quot;1.&quot;&nbsp; <br>
+<br>
+For an ActionStep, the marking changes from &quot;2&quot; to either &quot;1&quot; or
+&quot;0&quot; through a query. If the marking is &quot;1&quot;, it becomes &quot;0&quot;
+(i.e., irrelevant) if (1) its associated action is in a terminal state, and (2) one of its
+successors become relevant.&nbsp; <br>
+<br>
+For a SynchronizationStep <i>s</i>, define <i>predecessor branches</i> as the set of
+BranchSteps from which there is at least one path that ends in <i>s</i> and that has no
+other BranchStep on the path. For SynchronizationStep s, define a predicate On-going(s) to
+be true if there is a relevant state node on a path between s and one of its predecessor
+branches.&nbsp; <br>
+<br>
+If the continuation of step s is &quot;wait_for_all,&quot; make the transition to
+&quot;completed&quot; when On-going(s) becomes false. The marking of the step changes to
+&quot;0&quot; when it makes the transition to &quot;completed&quot; and when one of its
+successors become relevant.&nbsp; <br>
+<br>
+If the continuation of step s is &quot;proceed_after_one,&quot; the step becomes
+irrelevant when On-going(s) becomes false.&nbsp; </p>
+
+<h2>Execution Algorithm</h2>
+
+<p>The algorithm for executing a guideline G is as follows:&nbsp; <br>
+<br>
+AS: a set of ActionSteps or Guidelines&nbsp; <br>
+p(G): the procedure associated with G&nbsp; <br>
+select(AS): returns a member of AS&nbsp; <br>
+elementary(S) is true if S has no subguideline&nbsp; <br>
+DO(S): application-specific function to carry out a step&nbsp; <br>
+delete(AS, S): delete S from AS&nbsp; <br>
+ActionSteps(steps): returns the set of Actions Steps in steps (which may include
+SynchronizationSteps)&nbsp; <br>
+<br>
+AS := {G};&nbsp; <br>
+while not_empty(AS) do&nbsp; <br>
+&nbsp;&nbsp;&nbsp; S := select(AS);&nbsp; <br>
+&nbsp;&nbsp;&nbsp; if elementary(S), then&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DO(S);&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AS := delete(AS, S)&nbsp; <br>
+&nbsp;&nbsp;&nbsp; else&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; evaluate the state-transition rules of S <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if state(p(S)) != suspended) then&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new_steps :=
+Execute(p(S));&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if empty(new_steps)
+then AS:= delete(AS, S);&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else AS := AS union
+ActionSteps(new_steps);&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endif&nbsp; <br>
+end&nbsp; <br>
+<br>
+{state nodes} Execute(procedure p)&nbsp; <br>
+State nodes are either ActionSteps or SynchronizationSteps&nbsp; 
+
+<ol>
+  <li>If the procedure has not been activated before (i.e., M(node) = 0 for all state nodes in
+    the procedure), make the start node relevant. If the procedure has been activated before,
+    go to 2.&nbsp;</li>
+  <li>Evaluate the state-transition rules of relevant nodes, if any. Make queries about
+    &quot;possible&quot; nodes.</li>
+  <li>For each node that is a successor of an active node, check to see if the node can be
+    made relevant. If yes, then add the node to the list (L) of nodes to make relevant.&nbsp;</li>
+  <li>If L is empty, then exit.&nbsp;</li>
+  <li>Determine which previously relevant nodes are irrelevant now. Mark them as inactive (M =
+    0).&nbsp;</li>
+  <li>Mark nodes in L as relevant</li>
+  <li>Return L.&nbsp;</li>
+</ol>
+</body>
+</html>

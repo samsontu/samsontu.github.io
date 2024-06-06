@@ -1,0 +1,81 @@
+Instance	description	recommendation_text	uses_concepts	Level_of_evidence	
+Patients with HF may have symptoms that interfere with their daily activities and, therefore, impact on their quality of life. A diuretic should be used for preload reduction in patients with HF and current or previous signs or symptoms of volume overload (e.g., orthopnea, PND, DOE, or edema)		Patients with HF may have symptoms that interfere with their daily activities and, therefore, impact on their quality of life. A diuretic should be used for preload reduction in patients with HF and current or previous signs or symptoms of volume overload (e.g., orthopnea, PND, DOE, or edema)	"Volume overload%%%Heart Failure Stage B%%%othopnea%%%edema%%%DOE%%%Impact on quality of life%%%diuretic%%%PND%%%interference with daily activities"	
+Beta blockers and ACEIs should be used in all patients with a
+recent or remote history of MI regardless of EF or presence of HF
+(see Table 3). (Level of Evidence: A)		"Beta blockers and ACEIs should be used in all patients with a
+recent or remote history of MI regardless of EF or presence of HF
+(see Table 3). (Level of Evidence: A)"	"Heart Failure Stage B%%%Left Ventricular Ejection fraction%%%Heart failure%%%Myocardial Infarct%%%ACE Inhibitor%%%Beta blocker"	A
+Beta blockers are indicated in all patients without a history of MI
+who have a reduced LVEF with no HF symptoms (see Table 3 and
+text). (Level of Evidence: C)		"Beta blockers are indicated in all patients without a history of MI
+who have a reduced LVEF with no HF symptoms (see Table 3 and
+text). (Level of Evidence: C)"	"Heart Failure Stage B%%%Left Ventricular Ejection fraction%%%Myocardial Infarct%%%Beta blocker%%%HF signs and symptoms"	C
+Angiotensin converting enzyme inhibitors should be used in
+patients with a reduced EF and no symptoms of HF, even if they
+have not experienced MI. (Level of Evidence: A)		"Angiotensin converting enzyme inhibitors should be used in
+patients with a reduced EF and no symptoms of HF, even if they
+have not experienced MI. (Level of Evidence: A)"	"Heart Failure Stage B%%%Left Ventricular Ejection fraction%%%Myocardial Infarct%%%ACE Inhibitor%%%HF signs and symptoms"	A
+An ARB should be administered to post-MI patients without HF
+who are intolerant of ACEIs and have a low LVEF. (Level of
+Evidence: B)		"An ARB should be administered to post-MI patients without HF
+who are intolerant of ACEIs and have a low LVEF. (Level of
+Evidence: B)"	"Heart Failure Stage B%%%ARB%%%Left Ventricular Ejection fraction%%%ACE Inhibitor%%%Myocardial Infarct"	B
+Patients who have not developed HF symptoms should be treated
+according to contemporary guidelines after an acute MI. (Level
+of Evidence: C)		"Patients who have not developed HF symptoms should be treated
+according to contemporary guidelines after an acute MI. (Level
+of Evidence: C)"	"Heart Failure Stage B%%%Myocardial Infarct%%%HF signs and symptoms"	C
+Coronary revascularization should be recommended in appropriate
+patients without symptoms of HF in accordance with contemporary
+guidelines (see ACC/AHA/ACP-ASIM Guidelines for
+the Management of Patients With Chronic Stable Angina [712]).
+(Level of Evidence: A)		"Coronary revascularization should be recommended in appropriate
+patients without symptoms of HF in accordance with contemporary
+guidelines (see ACC/AHA/ACP-ASIM Guidelines for
+the Management of Patients With Chronic Stable Angina [712]).
+(Level of Evidence: A)"	"Heart Failure Stage B%%%HF signs and symptoms"	A
+Valve replacement or repair should be recommended for patients
+with hemodynamically significant valvular stenosis or regurgitation
+and no symptoms of HF in accordance with contemporary
+guidelines. (Level of Evidence: B)		"Valve replacement or repair should be recommended for patients
+with hemodynamically significant valvular stenosis or regurgitation
+and no symptoms of HF in accordance with contemporary
+guidelines. (Level of Evidence: B)"	"Heart Failure Stage B%%%valvular stenosis%%%valvular regurgitation"	B
+Angiotensin converting enzyme inhibitors or ARBs can be beneficial
+in patients with hypertension and LVH and no symptoms of
+HF. (Level of Evidence: B)		"Angiotensin converting enzyme inhibitors or ARBs can be beneficial
+in patients with hypertension and LVH and no symptoms of
+HF. (Level of Evidence: B)"	"ACE Inhibitor%%%ARB%%%HF signs and symptoms%%%Heart Failure Stage B%%%LVH%%%hypertension"	B
+Angiotensin II receptor blockers can be beneficial in patients
+with low EF and no symptoms of HF who are intolerant of ACEIs.
+(Level of Evidence: C)		"Angiotensin II receptor blockers can be beneficial in patients
+with low EF and no symptoms of HF who are intolerant of ACEIs.
+(Level of Evidence: C)"	"ACE Inhibitor%%%ARB%%%HF signs and symptoms%%%Heart Failure Stage B%%%Left Ventricular Ejection fraction"	C
+Placement of an ICD might be considered in patients without HF
+who have nonischemic cardiomyopathy and an LVEF less than or
+equal to 30% who are in NYHA functional class I with chronic
+optimal medical therapy and have a reasonable expectation of
+survival with good functional status for more than 1 year. (Level
+of Evidence: C)		"Placement of an ICD might be considered in patients without HF
+who have nonischemic cardiomyopathy and an LVEF less than or
+equal to 30% who are in NYHA functional class I with chronic
+optimal medical therapy and have a reasonable expectation of
+survival with good functional status for more than 1 year. (Level
+of Evidence: C)"	"Heart Failure Stage B%%%Left Ventricular Ejection fraction%%%NYHA class I%%%ICD%%%nonischemic cardiomyopathy"	C
+Digoxin should not be used in patients with low EF, sinus rhythm,
+and no history of HF symptoms, because in this population, the
+risk of harm is not balanced by any known benefit. (Level of
+Evidence: C)		"Digoxin should not be used in patients with low EF, sinus rhythm,
+and no history of HF symptoms, because in this population, the
+risk of harm is not balanced by any known benefit. (Level of
+Evidence: C)"	"Left Ventricular Ejection fraction%%%Heart Failure Stage B%%%HF signs and symptoms%%%digoxin%%%sinus rhythm"	C
+Use of nutritional supplements to treat structural heart disease
+or to prevent the development of symptoms of HF is not recommended.
+(Level of Evidence: C)		"Use of nutritional supplements to treat structural heart disease
+or to prevent the development of symptoms of HF is not recommended.
+(Level of Evidence: C)"	"nutritional supplements%%%structural heart disease%%%HF signs and symptoms%%%Heart Failure Stage B"	C
+Calcium channel blockers with negative inotropic effects may be
+harmful in asymptomatic patients with low LVEF and no symptoms
+of HF after MI (see text in Stage C). (Level of Evidence: C)		"Calcium channel blockers with negative inotropic effects may be
+harmful in asymptomatic patients with low LVEF and no symptoms
+of HF after MI (see text in Stage C). (Level of Evidence: C)"	"HF signs and symptoms%%%Heart Failure Stage B%%%Left Ventricular Ejection fraction%%%Myocardial Infarct%%%calcium channel blockers with negative inotropic effects"	C

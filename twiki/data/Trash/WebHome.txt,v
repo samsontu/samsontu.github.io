@@ -1,0 +1,205 @@
+head	1.8;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2007.01.16.04.11.55;	author TWikiContributor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2006.04.01.05.55.44;	author TWikiContributor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2006.02.01.12.01.26;	author TWikiContributor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.06.28.06.55.18;	author PeterThoeny;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.04.14.06.47.50;	author PeterThoeny;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.04.07.10.53.51;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.11.24.11.41.48;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.08.08.05.48.56;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.8
+log
+@buildrelease
+@
+text
+@%META:TOPICINFO{author="TWikiContributor" date="1163619832" format="1.1" version="8"}%
+%MAKETEXT{"This is the Trash. Here you can undelete topics; deleted attachments are in TrashAttachment." args="<b><nop>%WEB%</b>"}%
+
+%RED%
+%MAKETEXT{"Security Note:"}%
+%ENDCOLOR%
+%MAKETEXT{"By default, viewing the Trash web is restricted to [_1]. If you would like to allow all users to view the Trash web, remove the =ALLOWWEBVIEW= restriction in WebPreferences." args="%MAINWEB%.TWikiAdminGroup"}%
+
+%SEARCH{".*" web="%INCLUDINGWEB%" type="regex" nototal="on" nosearch="on" order="modified" limit="15"}%
+[[WebChanges][%MAKETEXT{"more..."}%]]
+
+---++ <nop>%WEB% Web Utilities
+<form action='%SCRIPTURLPATH{"search"}%/%WEB%/'>
+   * <input type="text" name="search" size="22" />&nbsp;<input type="submit" class="twikiSubmit" value="Search" /> - [[WebSearchAdvanced][advanced search]]
+   * WebTopicList - all topics in alphabetical order
+   * WebChanges - recent topic changes in this web
+   * WebNotify - subscribe to an e-mail alert sent when topics change
+   * WebRss, WebAtom - RSS and ATOM news feeds of topic changes
+   * WebStatistics - listing popular topics and top contributors
+   * WebPreferences - preferences of this web
+</form>
+@
+
+
+1.7
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1025247318" format="1.1" version="7"}%
+d9 1
+a9 1
+%SEARCH{".*" web="%INCLUDINGWEB%" regex="on" nototal="on" nosearch="on" order="modified" limit="15"}%
+@
+
+
+1.6
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1025247318" format="1.1" version="6"}%
+d14 7
+a20 7
+	* <input type="text" name="search" size="22" />&nbsp;<input type="submit" class="twikiSubmit" value="Search" /> - [[WebSearchAdvanced][advanced search]]
+	* WebTopicList - all topics in alphabetical order
+	* WebChanges - recent topic changes in this web
+	* WebNotify - subscribe to an e-mail alert sent when topics change
+	* WebRss, WebAtom - RSS and ATOM news feeds of topic changes
+	* WebStatistics - listing popular topics and top contributors
+	* WebPreferences - preferences of this web
+@
+
+
+1.5
+log
+@none
+@
+text
+@d1 21
+a21 12
+%META:TOPICINFO{author="PeterThoeny" date="1025247318" format="1.0" version="1.5"}%
+This is the <b>%WIKITOOLNAME%.%WEB%</b> web. Here you can undelete topics.
+
+---++ Site Tools of the %WEB% Web
+
+%INCLUDE{"%TWIKIWEB%.WebSiteTools"}%
+	* Place to TrashAttachments
+
+*Notes:*
+%INCLUDE{"%TWIKIWEB%.YouAreHere"}%
+
+%INCLUDE{"%TWIKIWEB%.SiteMap"}%
+@
+
+
+1.4
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1018766870" format="1.0" version="1.4"}%
+d7 1
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1018176831" format="1.0" version="1.3"}%
+d4 3
+a6 9
+---++ Maintenance of the %WEB% web
+<form action="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/SearchResult">
+	* <input type="text" name="search" size="32" /> <input type="submit" value="Search" /> &nbsp;&nbsp; (More options in WebSearch)
+	* WebChanges: Find out recent modifications to the %WIKITOOLNAME%.%WEB% web.
+	* WebIndex: Display all %WIKITOOLNAME%.%WEB% topics in alphabetical order. See also the faster WebTopicList 
+	* %NOTIFYTOPIC%: Subscribe to be automatically notified when something changes in the %WIKITOOLNAME%.%WEB% web.
+	* %STATISTICSTOPIC%: View access statistics of the %WIKITOOLNAME%.%WEB% web.
+	* %WEBPREFSTOPIC%: Preferences of the %WIKITOOLNAME%.%WEB% web.
+</form>
+d9 1
+a9 2
+	* You are currently in the %WIKITOOLNAME%.%WEB% web. The color code for this web is a (SPECIFY COLOR) background, so you know where you are.
+	* If you are not familiar with the %WIKITOOLNAME% collaboration tool, please visit %TWIKIWEB%.WelcomeGuest in the %WIKITOOLNAME%.%TWIKIWEB% web first.
+d11 1
+a11 1
+%INCLUDE{"%MAINWEB%.TWikiSiteDirectory"}%
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1006602108" format="1.0" version="1.2"}%
+d18 1
+a18 1
+%INCLUDE{"%TWIKIWEB%.TWikiWebsTable"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="997249868" format="1.0beta2" version="1.1"}%
+d8 1
+a8 1
+	* WebIndex: Display all %WIKITOOLNAME%.%WEB% topics in alphabetical order.
+@

@@ -1,0 +1,7 @@
+* Protege is subject to the Mozilla Public License Version 1.1.
+
+* You may obtain a copy of the license from http://www.mozilla.org/MPL/.
+
+* Copyright (c) 2007 Stanford Medical Informatics, Stanford University School of Medicine.
+
+* Current information about Protege may be obtained from http://protege.stanford.edu.

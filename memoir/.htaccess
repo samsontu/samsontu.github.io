@@ -1,0 +1,5 @@
+AuthUserFile /afs/ir.stanford.edu/users/s/w/swt/WWW/.pass7
+    AuthName ByPassword
+    AuthType Basic
+
+    require valid-user

@@ -1,0 +1,3468 @@
+; Fri Feb 05 17:27:15 PST 2010
+; 
+;+ (version "3.4.2")
+;+ (build "Build 562")
+
+([ATHENA_DM_Class0] of  Management_Guideline
+
+	(authors "Mary Goldstein")
+	(clinical_algorithm [ATHENA_DM_Instance_32528])
+	(eligibility_criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "ATHENA Diabetes Mellitus Guideline")
+	(subguidelines
+		[ATHENA_GlycemicControl_Instance_0]
+		[ATHENA_DM_Foot_Instance_1]
+		[ATHENA_DM_Eye_Instance_0]
+		[NCEPATPIII_Instance_3]
+		[ATHENA_CKD_Instance_4])
+	(title "ATHENA Diabetes Mellitus Guideline")
+	(version "1.0"))
+
+([ATHENA_DM_Instance_1] of  Management_Diagram
+)
+
+([ATHENA_DM_Instance_10325] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_10466] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_10507] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_DM_Instance_10509] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_10611] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_10752] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_10793] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_DM_Instance_10795] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_11076] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_11217] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_11258] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_DM_Instance_11260] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_20000] of  Action_Choice
+)
+
+([ATHENA_DM_Instance_20001] of  Scenario
+
+	(new_encounter FALSE))
+
+([ATHENA_DM_Instance_20002] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_Instance_20001])
+	(%3ATO [ATHENA_DM_Instance_20000]))
+
+([ATHENA_DM_Instance_21494] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_21635] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_21676] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_DM_Instance_21678] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_DM_Instance_30000] of  Scenario
+
+	(new_encounter FALSE))
+
+([ATHENA_DM_Instance_30001] of  Action_Choice
+)
+
+([ATHENA_DM_Instance_30002] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_Instance_30000])
+	(%3ATO [ATHENA_DM_Instance_30001]))
+
+([ATHENA_DM_Instance_32528] of  Management_Diagram
+
+	(steps [ATHENA_DM_Instance_32529]))
+
+([ATHENA_DM_Instance_32529] of  Scenario
+
+	(consultation_template [ATHENA_DM_Instance_32530])
+	(new_encounter FALSE))
+
+([ATHENA_DM_Instance_32530] of  Consultation_Guideline
+)
+
+([ATHENA_DM_Instance_40000] of  Action_Choice
+)
+
+([ATHENA_DM_Instance_40001] of  Scenario
+
+	(new_encounter FALSE))
+
+([ATHENA_DM_Instance_40002] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_Instance_40001])
+	(%3ATO [ATHENA_DM_Instance_40000]))
+
+([ATHENA_DM_Instance_50000] of  Scenario
+
+	(new_encounter FALSE))
+
+([ATHENA_DM_Instance_50001] of  Action_Choice
+)
+
+([ATHENA_DM_Instance_50002] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_Instance_50000])
+	(%3ATO [ATHENA_DM_Instance_50001]))
+
+([KB_208374_Class0] of  Medication
+
+	(daily_dose 2300.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(patient_id "1224627562747"))
+
+([KB_208374_Class1] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_208374_Class10] of  Note_Entry
+
+	(domain_term "DM-Type2")
+	(patient_id "1224627562747")
+	(valid_time [KB_208374_Class9])
+	(value "Diabetes Type 2"))
+
+([KB_208374_Class11] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_208374_Class112] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_208374_Class113] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_208374_Class112])
+	(time_unit year))
+
+([KB_208374_Class114] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454396)
+	(year_CE 2007))
+
+([KB_208374_Class118] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_208374_Class12] of  Numeric_Entry
+
+	(domain_term "Average_Pain_in_Last_Week")
+	(lower_limit 0.0)
+	(patient_id "1224627562747")
+	(upper_limit 0.0)
+	(valid_time [KB_208374_Class11])
+	(value 6.0))
+
+([KB_208374_Class125] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_208374_Class128] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_208374_Class13] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_208374_Class14] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224627562747")
+	(upper_limit 0.0)
+	(valid_time [KB_208374_Class13])
+	(value 9.4))
+
+([KB_208374_Class15] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_208374_Class152] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_208374_Class16] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224627562747")
+	(upper_limit 0.0)
+	(valid_time [KB_208374_Class15])
+	(value 8.0))
+
+([KB_208374_Class163] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_208374_Class164] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_208374_Class167] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_208374_Class17] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_208374_Class18] of  Numeric_Entry
+
+	(domain_term "LDL_Cholesterol")
+	(lower_limit 0.0)
+	(patient_id "1224627562747")
+	(upper_limit 0.0)
+	(valid_time [KB_208374_Class17])
+	(value 130.0))
+
+([KB_208374_Class19] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_208374_Class2] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224627562747")
+	(valid_time [KB_208374_Class1])
+	(value "Diabetes_Mellitus"))
+
+([KB_208374_Class20] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224627562747")
+	(upper_limit 0.0)
+	(valid_time [KB_208374_Class19])
+	(value 59.0))
+
+([KB_208374_Class21] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224627562747")
+	(value "R1"))
+
+([KB_208374_Class22] of  Note_Entry
+
+	(domain_term "Sex")
+	(patient_id "1224627562747")
+	(value "Male"))
+
+([KB_208374_Class23] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_208374_Class25] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_208374_Class26] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_208374_Class27] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_208374_Class28] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_208374_Class29] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_208374_Class3] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_208374_Class31] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_208374_Class32] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_208374_Class38] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_208374_Class4] of  Note_Entry
+
+	(domain_term "Ingrown toenail")
+	(patient_id "1224627562747")
+	(valid_time [KB_208374_Class3])
+	(value "Yes"))
+
+([KB_208374_Class41] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_208374_Class48] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_208374_Class5] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_208374_Class52] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_208374_Class58] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_208374_Class59] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_208374_Class58])
+	(time_unit year))
+
+([KB_208374_Class6] of  Note_Entry
+
+	(domain_term "Dorsalis pedis pulses")
+	(patient_id "1224627562747")
+	(valid_time [KB_208374_Class5])
+	(value "Yes"))
+
+([KB_208374_Class60] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454396)
+	(year_CE 2007))
+
+([KB_208374_Class68] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med \"1224627562747\")\n             (exists ?med_class\n                     (and (equal-or-subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 \"1224627562747\")\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem \"1224627562747\")\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([KB_208374_Class7] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_208374_Class70] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_208374_Class75] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_208374_Class76] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224627562747\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224627562747\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224627562747\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224627562747\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([KB_208374_Class8] of  Note_Entry
+
+	(domain_term "change in ocular function")
+	(patient_id "1224627562747")
+	(valid_time [KB_208374_Class7])
+	(value "Yes"))
+
+([KB_208374_Class82] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224627562747\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224627562747\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224627562747\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224627562747\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([KB_208374_Class83] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_208374_Class85] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_208374_Class86] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_208374_Class87] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 9)
+	(system_time 2454726)
+	(year_CE 2008))
+
+([KB_208374_Class88] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_208374_Class89] of  Definite_Time_Point
+
+	(day 30)
+	(month_name 9)
+	(system_time 2454740)
+	(year_CE 2008))
+
+([KB_208374_Class9] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_226346_Class0] of  Medication
+
+	(daily_dose 2300.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(patient_id "1224205496141"))
+
+([KB_226346_Class1] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_226346_Class10] of  Numeric_Entry
+
+	(domain_term "Average_Pain_in_Last_Week")
+	(lower_limit 0.0)
+	(patient_id "1224205496141")
+	(upper_limit 0.0)
+	(valid_time [KB_226346_Class9])
+	(value 6.0))
+
+([KB_226346_Class103] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class104] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_226346_Class103])
+	(time_unit year))
+
+([KB_226346_Class105] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454391)
+	(year_CE 2007))
+
+([KB_226346_Class109] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_226346_Class11] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_226346_Class12] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224205496141")
+	(upper_limit 0.0)
+	(valid_time [KB_226346_Class11])
+	(value 9.4))
+
+([KB_226346_Class13] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_226346_Class14] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224205496141")
+	(upper_limit 0.0)
+	(valid_time [KB_226346_Class13])
+	(value 8.0))
+
+([KB_226346_Class143] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_226346_Class15] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class154] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_226346_Class155] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_226346_Class158] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_226346_Class16] of  Numeric_Entry
+
+	(domain_term "LDL_Cholesterol")
+	(lower_limit 0.0)
+	(patient_id "1224205496141")
+	(upper_limit 0.0)
+	(valid_time [KB_226346_Class15])
+	(value 130.0))
+
+([KB_226346_Class17] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_226346_Class18] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224205496141")
+	(upper_limit 0.0)
+	(valid_time [KB_226346_Class17])
+	(value 59.0))
+
+([KB_226346_Class19] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224205496141")
+	(value "R1"))
+
+([KB_226346_Class2] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224205496141")
+	(valid_time [KB_226346_Class1])
+	(value "Diabetes_Mellitus"))
+
+([KB_226346_Class20] of  Note_Entry
+
+	(domain_term "Sex")
+	(patient_id "1224205496141")
+	(value "Male"))
+
+([KB_226346_Class21] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_226346_Class23] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_226346_Class24] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_226346_Class25] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_226346_Class26] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class27] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_226346_Class29] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_226346_Class3] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class30] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_226346_Class4] of  Note_Entry
+
+	(domain_term "Ingrown toenail")
+	(patient_id "1224205496141")
+	(valid_time [KB_226346_Class3])
+	(value "Yes"))
+
+([KB_226346_Class45] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_226346_Class49] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_226346_Class5] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class55] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class56] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_226346_Class55])
+	(time_unit year))
+
+([KB_226346_Class57] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454391)
+	(year_CE 2007))
+
+([KB_226346_Class6] of  Note_Entry
+
+	(domain_term "Dorsalis pedis pulses")
+	(patient_id "1224205496141")
+	(valid_time [KB_226346_Class5])
+	(value "Yes"))
+
+([KB_226346_Class65] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med \"1224205496141\")\n             (exists ?med_class\n                     (and (subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 \"1224205496141\")\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem \"1224205496141\")\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([KB_226346_Class7] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class71] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224205496141\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224205496141\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224205496141\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224205496141\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([KB_226346_Class73] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224205496141\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224205496141\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224205496141\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224205496141\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([KB_226346_Class74] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_226346_Class76] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_226346_Class77] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class78] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 9)
+	(system_time 2454721)
+	(year_CE 2008))
+
+([KB_226346_Class79] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_226346_Class8] of  Note_Entry
+
+	(domain_term "change in ocular function")
+	(patient_id "1224205496141")
+	(valid_time [KB_226346_Class7])
+	(value "Yes"))
+
+([KB_226346_Class80] of  Definite_Time_Point
+
+	(day 25)
+	(month_name 9)
+	(system_time 2454735)
+	(year_CE 2008))
+
+([KB_226346_Class9] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_374736_Class1000] of  Numeric_Entry
+
+	(domain_term "Fraction_Missed_Appointments")
+	(lower_limit 0.0)
+	(patient_id "1224200693204")
+	(upper_limit 0.0)
+	(valid_time [KB_374736_Class999])
+	(value 0.4))
+
+([KB_374736_Class1001] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_374736_Class1002] of  Numeric_Entry
+
+	(domain_term "Num_Appointments")
+	(lower_limit 0.0)
+	(patient_id "1224200693204")
+	(upper_limit 0.0)
+	(valid_time [KB_374736_Class1001])
+	(value 23.0))
+
+([KB_374736_Class1003] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_374736_Class1004] of  Numeric_Entry
+
+	(domain_term "ZipCode")
+	(lower_limit 0.0)
+	(patient_id "1224200693204")
+	(upper_limit 0.0)
+	(valid_time [KB_374736_Class1003])
+	(value 94012.0))
+
+([KB_374736_Class1005] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_374736_Class1006] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224200693204")
+	(upper_limit 0.0)
+	(valid_time [KB_374736_Class1005])
+	(value 46.0))
+
+([KB_374736_Class1007] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224200693204")
+	(value "Q1"))
+
+([KB_374736_Class1008] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_374736_Class1010] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_374736_Class1011] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_374736_Class1012] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_374736_Class1013] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_374736_Class1014] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class1015] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_374736_Class1016] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_374736_Class1018] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_374736_Class1019] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_374736_Class1034] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_374736_Class1038] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_374736_Class1044] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class1045] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_374736_Class1044])
+	(time_unit year))
+
+([KB_374736_Class1046] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454391)
+	(year_CE 2007))
+
+([KB_374736_Class1056] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_374736_Class1064] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_374736_Class1066] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_374736_Class1067] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class1068] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 9)
+	(system_time 2454721)
+	(year_CE 2008))
+
+([KB_374736_Class1069] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class1070] of  Definite_Time_Point
+
+	(day 25)
+	(month_name 9)
+	(system_time 2454735)
+	(year_CE 2008))
+
+([KB_374736_Class1093] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class1094] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_374736_Class1093])
+	(time_unit year))
+
+([KB_374736_Class1095] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454391)
+	(year_CE 2007))
+
+([KB_374736_Class1103] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class1104] of  Definite_Time_Interval
+
+	(how_many "3")
+	(label "past 3 years")
+	(polarity Before)
+	(time_point [KB_374736_Class1103])
+	(time_unit year))
+
+([KB_374736_Class1105] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2453661)
+	(year_CE 2005))
+
+([KB_374736_Class1107] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class1108] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "in past month")
+	(polarity Before)
+	(time_point [KB_374736_Class1107])
+	(time_unit month))
+
+([KB_374736_Class1109] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 9)
+	(system_time 2454726)
+	(year_CE 2008))
+
+([KB_374736_Class1112] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_374736_Class1136] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_374736_Class1147] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_374736_Class1148] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_374736_Class1151] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_374736_Class990] of  Medication
+
+	(daily_dose 30.0)
+	(drug_name "Insulin")
+	(frequency 0)
+	(patient_id "1224200693204"))
+
+([KB_374736_Class991] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_374736_Class992] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224200693204")
+	(valid_time [KB_374736_Class991])
+	(value "Diabetes_Mellitus"))
+
+([KB_374736_Class993] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_374736_Class994] of  Numeric_Entry
+
+	(domain_term "BMI")
+	(lower_limit 0.0)
+	(patient_id "1224200693204")
+	(upper_limit 0.0)
+	(valid_time [KB_374736_Class993])
+	(value 29.0))
+
+([KB_374736_Class995] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_374736_Class996] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224200693204")
+	(upper_limit 0.0)
+	(valid_time [KB_374736_Class995])
+	(value 9.0))
+
+([KB_374736_Class997] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_374736_Class998] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224200693204")
+	(upper_limit 0.0)
+	(valid_time [KB_374736_Class997])
+	(value 8.0))
+
+([KB_374736_Class999] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_418946_Class344] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_418946_Class345] of  Note_Entry
+
+	(domain_term "Foot deformities")
+	(patient_id "1224099431855")
+	(valid_time [KB_418946_Class344])
+	(value "001"))
+
+([KB_418946_Class346] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_418946_Class347] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224099431855")
+	(valid_time [KB_418946_Class346])
+	(value "Diabetes_Mellitus"))
+
+([KB_418946_Class348] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_418946_Class349] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224099431855")
+	(upper_limit 0.0)
+	(valid_time [KB_418946_Class348])
+	(value 35.0))
+
+([KB_418946_Class350] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224099431855")
+	(value "A1"))
+
+([KB_418946_Class351] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_418946_Class363] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_418946_Class365] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_418946_Class366] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_498092_Class387] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_498092_Class388] of  Note_Entry
+
+	(domain_term "Foot deformities")
+	(patient_id "1224099505871")
+	(valid_time [KB_498092_Class387])
+	(value "001"))
+
+([KB_498092_Class389] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_498092_Class390] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224099505871")
+	(valid_time [KB_498092_Class389])
+	(value "Diabetes_Mellitus"))
+
+([KB_498092_Class391] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_498092_Class392] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224099505871")
+	(upper_limit 0.0)
+	(valid_time [KB_498092_Class391])
+	(value 35.0))
+
+([KB_498092_Class393] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224099505871")
+	(value "A1"))
+
+([KB_498092_Class394] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_498092_Class396] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_498092_Class398] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_498092_Class399] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_498092_Class414] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_498092_Class426] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_498092_Class428] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_498092_Class429] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 10)
+	(system_time 2454755)
+	(year_CE 2008))
+
+([KB_498092_Class430] of  Definite_Time_Point
+
+	(day 10)
+	(month_name 9)
+	(system_time 2454720)
+	(year_CE 2008))
+
+([KB_498092_Class431] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 10)
+	(system_time 2454755)
+	(year_CE 2008))
+
+([KB_498092_Class432] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 9)
+	(system_time 2454734)
+	(year_CE 2008))
+
+([KB_498092_Class454] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 10)
+	(system_time 2454755)
+	(year_CE 2008))
+
+([KB_498092_Class455] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_498092_Class454])
+	(time_unit year))
+
+([KB_498092_Class456] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454390)
+	(year_CE 2007))
+
+([KB_498092_Class464] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 10)
+	(system_time 2454755)
+	(year_CE 2008))
+
+([KB_498092_Class465] of  Definite_Time_Interval
+
+	(how_many "3")
+	(label "past 3 years")
+	(polarity Before)
+	(time_point [KB_498092_Class464])
+	(time_unit year))
+
+([KB_498092_Class466] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2453660)
+	(year_CE 2005))
+
+([KB_498092_Class468] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 10)
+	(system_time 2454755)
+	(year_CE 2008))
+
+([KB_498092_Class469] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "in past month")
+	(polarity Before)
+	(time_point [KB_498092_Class468])
+	(time_unit month))
+
+([KB_498092_Class470] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 9)
+	(system_time 2454725)
+	(year_CE 2008))
+
+([KB_498092_Class473] of  Definite_Time_Point
+
+	(day 15)
+	(month_name 10)
+	(system_time 2454755)
+	(year_CE 2008))
+
+([KB_498092_Class474] of  Definite_Time_Interval
+
+	(how_many "15")
+	(label "< 15 years")
+	(polarity Before)
+	(time_point [KB_498092_Class473])
+	(time_unit year))
+
+([KB_498092_Class475] of  Definite_Time_Point
+
+	(day 19)
+	(month_name 10)
+	(system_time 2449280)
+	(year_CE 1993))
+
+([KB_498092_Class477] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_498092_Class500] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_498092_Class511] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_498092_Class512] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_498092_Class515] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_532532_Class0] of  Medication
+
+	(daily_dose 2300.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(patient_id "1224715840660"))
+
+([KB_532532_Class1] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_532532_Class10] of  Note_Entry
+
+	(domain_term "DM-Type2")
+	(patient_id "1224715840660")
+	(valid_time [KB_532532_Class9])
+	(value "Diabetes Type 2"))
+
+([KB_532532_Class11] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_532532_Class112] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454762)
+	(year_CE 2008))
+
+([KB_532532_Class113] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_532532_Class112])
+	(time_unit year))
+
+([KB_532532_Class114] of  Definite_Time_Point
+
+	(day 23)
+	(month_name 10)
+	(system_time 2454397)
+	(year_CE 2007))
+
+([KB_532532_Class118] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_532532_Class12] of  Numeric_Entry
+
+	(domain_term "Average_Pain_in_Last_Week")
+	(lower_limit 0.0)
+	(patient_id "1224715840660")
+	(upper_limit 0.0)
+	(valid_time [KB_532532_Class11])
+	(value 6.0))
+
+([KB_532532_Class125] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_532532_Class128] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_532532_Class13] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_532532_Class14] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224715840660")
+	(upper_limit 0.0)
+	(valid_time [KB_532532_Class13])
+	(value 9.4))
+
+([KB_532532_Class15] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_532532_Class152] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_532532_Class16] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224715840660")
+	(upper_limit 0.0)
+	(valid_time [KB_532532_Class15])
+	(value 8.0))
+
+([KB_532532_Class163] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_532532_Class164] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_532532_Class167] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_532532_Class17] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_532532_Class18] of  Numeric_Entry
+
+	(domain_term "LDL_Cholesterol")
+	(lower_limit 0.0)
+	(patient_id "1224715840660")
+	(upper_limit 0.0)
+	(valid_time [KB_532532_Class17])
+	(value 130.0))
+
+([KB_532532_Class19] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_532532_Class2] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224715840660")
+	(valid_time [KB_532532_Class1])
+	(value "Diabetes_Mellitus"))
+
+([KB_532532_Class20] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224715840660")
+	(upper_limit 0.0)
+	(valid_time [KB_532532_Class19])
+	(value 59.0))
+
+([KB_532532_Class21] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224715840660")
+	(value "R1"))
+
+([KB_532532_Class22] of  Note_Entry
+
+	(domain_term "Sex")
+	(patient_id "1224715840660")
+	(value "Male"))
+
+([KB_532532_Class23] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_532532_Class25] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_532532_Class26] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_532532_Class27] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_532532_Class28] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_532532_Class29] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_532532_Class3] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_532532_Class31] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_532532_Class32] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_532532_Class38] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_532532_Class4] of  Note_Entry
+
+	(domain_term "Ingrown toenail")
+	(patient_id "1224715840660")
+	(valid_time [KB_532532_Class3])
+	(value "Yes"))
+
+([KB_532532_Class41] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_532532_Class48] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_532532_Class5] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_532532_Class52] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_532532_Class58] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454762)
+	(year_CE 2008))
+
+([KB_532532_Class59] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_532532_Class58])
+	(time_unit year))
+
+([KB_532532_Class6] of  Note_Entry
+
+	(domain_term "Dorsalis pedis pulses")
+	(patient_id "1224715840660")
+	(valid_time [KB_532532_Class5])
+	(value "Yes"))
+
+([KB_532532_Class60] of  Definite_Time_Point
+
+	(day 23)
+	(month_name 10)
+	(system_time 2454397)
+	(year_CE 2007))
+
+([KB_532532_Class68] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med \"1224715840660\")\n             (exists ?med_class\n                     (and (equal-or-subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 \"1224715840660\")\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem \"1224715840660\")\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([KB_532532_Class7] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_532532_Class70] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_532532_Class75] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_532532_Class76] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224715840660\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224715840660\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224715840660\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224715840660\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([KB_532532_Class8] of  Note_Entry
+
+	(domain_term "change in ocular function")
+	(patient_id "1224715840660")
+	(valid_time [KB_532532_Class7])
+	(value "Yes"))
+
+([KB_532532_Class82] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224715840660\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224715840660\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224715840660\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224715840660\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([KB_532532_Class83] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_532532_Class85] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_532532_Class86] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454762)
+	(year_CE 2008))
+
+([KB_532532_Class87] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 9)
+	(system_time 2454727)
+	(year_CE 2008))
+
+([KB_532532_Class88] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454762)
+	(year_CE 2008))
+
+([KB_532532_Class89] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 10)
+	(system_time 2454741)
+	(year_CE 2008))
+
+([KB_532532_Class9] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_624098_Class163] of  Medication
+
+	(daily_dose 2300.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(patient_id "1224283610513"))
+
+([KB_624098_Class164] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_624098_Class165] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224283610513")
+	(valid_time [KB_624098_Class164])
+	(value "Diabetes_Mellitus"))
+
+([KB_624098_Class166] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_624098_Class167] of  Note_Entry
+
+	(domain_term "Ingrown toenail")
+	(patient_id "1224283610513")
+	(valid_time [KB_624098_Class166])
+	(value "Yes"))
+
+([KB_624098_Class168] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_624098_Class169] of  Note_Entry
+
+	(domain_term "Dorsalis pedis pulses")
+	(patient_id "1224283610513")
+	(valid_time [KB_624098_Class168])
+	(value "Yes"))
+
+([KB_624098_Class170] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_624098_Class171] of  Note_Entry
+
+	(domain_term "change in ocular function")
+	(patient_id "1224283610513")
+	(valid_time [KB_624098_Class170])
+	(value "Yes"))
+
+([KB_624098_Class172] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_624098_Class173] of  Note_Entry
+
+	(domain_term "DM-Type2")
+	(patient_id "1224283610513")
+	(valid_time [KB_624098_Class172])
+	(value "Diabetes Type 2"))
+
+([KB_624098_Class174] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_624098_Class175] of  Numeric_Entry
+
+	(domain_term "Average_Pain_in_Last_Week")
+	(lower_limit 0.0)
+	(patient_id "1224283610513")
+	(upper_limit 0.0)
+	(valid_time [KB_624098_Class174])
+	(value 6.0))
+
+([KB_624098_Class176] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_624098_Class177] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224283610513")
+	(upper_limit 0.0)
+	(valid_time [KB_624098_Class176])
+	(value 9.4))
+
+([KB_624098_Class178] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_624098_Class179] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224283610513")
+	(upper_limit 0.0)
+	(valid_time [KB_624098_Class178])
+	(value 8.0))
+
+([KB_624098_Class180] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_624098_Class181] of  Numeric_Entry
+
+	(domain_term "LDL_Cholesterol")
+	(lower_limit 0.0)
+	(patient_id "1224283610513")
+	(upper_limit 0.0)
+	(valid_time [KB_624098_Class180])
+	(value 130.0))
+
+([KB_624098_Class182] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_624098_Class183] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224283610513")
+	(upper_limit 0.0)
+	(valid_time [KB_624098_Class182])
+	(value 59.0))
+
+([KB_624098_Class184] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224283610513")
+	(value "R1"))
+
+([KB_624098_Class185] of  Note_Entry
+
+	(domain_term "Sex")
+	(patient_id "1224283610513")
+	(value "Male"))
+
+([KB_624098_Class186] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_624098_Class188] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_624098_Class189] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_624098_Class190] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_624098_Class191] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_624098_Class192] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_624098_Class194] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_624098_Class195] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_624098_Class201] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_624098_Class204] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_624098_Class211] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_624098_Class215] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_624098_Class221] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_624098_Class222] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_624098_Class221])
+	(time_unit year))
+
+([KB_624098_Class223] of  Definite_Time_Point
+
+	(day 18)
+	(month_name 10)
+	(system_time 2454392)
+	(year_CE 2007))
+
+([KB_624098_Class231] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med \"1224283610513\")\n             (exists ?med_class\n                     (and (subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 \"1224283610513\")\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem \"1224283610513\")\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([KB_624098_Class233] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_624098_Class238] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_624098_Class239] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224283610513\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224283610513\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224283610513\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224283610513\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([KB_624098_Class245] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224283610513\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224283610513\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224283610513\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224283610513\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([KB_624098_Class246] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_624098_Class248] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_624098_Class249] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_624098_Class250] of  Definite_Time_Point
+
+	(day 12)
+	(month_name 9)
+	(system_time 2454722)
+	(year_CE 2008))
+
+([KB_624098_Class251] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_624098_Class252] of  Definite_Time_Point
+
+	(day 26)
+	(month_name 9)
+	(system_time 2454736)
+	(year_CE 2008))
+
+([KB_624098_Class275] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_624098_Class276] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_624098_Class275])
+	(time_unit year))
+
+([KB_624098_Class277] of  Definite_Time_Point
+
+	(day 18)
+	(month_name 10)
+	(system_time 2454392)
+	(year_CE 2007))
+
+([KB_624098_Class281] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_624098_Class288] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_624098_Class291] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_624098_Class315] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_624098_Class326] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_624098_Class327] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_624098_Class330] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_630940_Class184] of  Medication
+
+	(daily_dose 2300.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(patient_id "1224200928298"))
+
+([KB_630940_Class185] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_630940_Class186] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224200928298")
+	(valid_time [KB_630940_Class185])
+	(value "Diabetes_Mellitus"))
+
+([KB_630940_Class187] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_630940_Class188] of  Numeric_Entry
+
+	(domain_term "Average_Pain_in_Last_Week")
+	(lower_limit 0.0)
+	(patient_id "1224200928298")
+	(upper_limit 0.0)
+	(valid_time [KB_630940_Class187])
+	(value 23.0))
+
+([KB_630940_Class189] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_630940_Class190] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224200928298")
+	(upper_limit 0.0)
+	(valid_time [KB_630940_Class189])
+	(value 10.0))
+
+([KB_630940_Class191] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_630940_Class192] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224200928298")
+	(upper_limit 0.0)
+	(valid_time [KB_630940_Class191])
+	(value 8.0))
+
+([KB_630940_Class193] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_630940_Class194] of  Numeric_Entry
+
+	(domain_term "ZipCode")
+	(lower_limit 0.0)
+	(patient_id "1224200928298")
+	(upper_limit 0.0)
+	(valid_time [KB_630940_Class193])
+	(value 94012.0))
+
+([KB_630940_Class195] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_630940_Class196] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224200928298")
+	(upper_limit 0.0)
+	(valid_time [KB_630940_Class195])
+	(value 59.0))
+
+([KB_630940_Class197] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224200928298")
+	(value "R1"))
+
+([KB_630940_Class198] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_630940_Class200] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_630940_Class201] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_630940_Class202] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_630940_Class203] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_630940_Class204] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_630940_Class206] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_630940_Class207] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_630940_Class222] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_630940_Class226] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_630940_Class232] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_630940_Class233] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_630940_Class232])
+	(time_unit year))
+
+([KB_630940_Class234] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454391)
+	(year_CE 2007))
+
+([KB_630940_Class242] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med \"1224200928298\")\n             (exists ?med_class\n                     (and (subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 \"1224200928298\")\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem \"1224200928298\")\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([KB_630940_Class248] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224200928298\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224200928298\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224200928298\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224200928298\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([KB_630940_Class250] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224200928298\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224200928298\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224200928298\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224200928298\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([KB_630940_Class251] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_630940_Class253] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_630940_Class254] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_630940_Class255] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 9)
+	(system_time 2454721)
+	(year_CE 2008))
+
+([KB_630940_Class256] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_630940_Class257] of  Definite_Time_Point
+
+	(day 25)
+	(month_name 9)
+	(system_time 2454735)
+	(year_CE 2008))
+
+([KB_630940_Class280] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_630940_Class281] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_630940_Class280])
+	(time_unit year))
+
+([KB_630940_Class282] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454391)
+	(year_CE 2007))
+
+([KB_630940_Class290] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_630940_Class291] of  Definite_Time_Interval
+
+	(how_many "3")
+	(label "past 3 years")
+	(polarity Before)
+	(time_point [KB_630940_Class290])
+	(time_unit year))
+
+([KB_630940_Class292] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2453661)
+	(year_CE 2005))
+
+([KB_630940_Class294] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_630940_Class295] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "in past month")
+	(polarity Before)
+	(time_point [KB_630940_Class294])
+	(time_unit month))
+
+([KB_630940_Class296] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 9)
+	(system_time 2454726)
+	(year_CE 2008))
+
+([KB_630940_Class299] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_630940_Class300] of  Definite_Time_Interval
+
+	(how_many "15")
+	(label "< 15 years")
+	(polarity Before)
+	(time_point [KB_630940_Class299])
+	(time_unit year))
+
+([KB_630940_Class301] of  Definite_Time_Point
+
+	(day 20)
+	(month_name 10)
+	(system_time 2449281)
+	(year_CE 1993))
+
+([KB_630940_Class303] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_630940_Class327] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_630940_Class338] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_630940_Class339] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_630940_Class342] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_785400_Class0] of  Medication
+
+	(daily_dose 2300.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(patient_id "1224622472166"))
+
+([KB_785400_Class1] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_785400_Class10] of  Note_Entry
+
+	(domain_term "DM-Type2")
+	(patient_id "1224622472166")
+	(valid_time [KB_785400_Class9])
+	(value "Diabetes Type 2"))
+
+([KB_785400_Class11] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_785400_Class112] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_785400_Class113] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_785400_Class112])
+	(time_unit year))
+
+([KB_785400_Class114] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454396)
+	(year_CE 2007))
+
+([KB_785400_Class118] of  N_ary_Criterion
+
+	(criteria
+		[NCEPATPIII_Instance_90073]
+		[NCEPATPIII_Instance_80020])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_785400_Class12] of  Numeric_Entry
+
+	(domain_term "Average_Pain_in_Last_Week")
+	(lower_limit 0.0)
+	(patient_id "1224622472166")
+	(upper_limit 0.0)
+	(valid_time [KB_785400_Class11])
+	(value 6.0))
+
+([KB_785400_Class125] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_785400_Class128] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_785400_Class13] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_785400_Class14] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224622472166")
+	(upper_limit 0.0)
+	(valid_time [KB_785400_Class13])
+	(value 9.4))
+
+([KB_785400_Class15] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_785400_Class152] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_50000]
+		[ATHENA_CKD_Instance_60051]
+		[ATHENA_CKD_Instance_60052]
+		[ATHENA_CKD_Instance_120221])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_785400_Class16] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224622472166")
+	(upper_limit 0.0)
+	(valid_time [KB_785400_Class15])
+	(value 8.0))
+
+([KB_785400_Class163] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_785400_Class164] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_785400_Class167] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
+	(%3APAL-RANGE "(defrange ?ab :FRAME Numeric_Entry)\n(defrange ?n1 :FRAME Numeric_Entry)\n(defrange ?n2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?ab (and (= (domain_term ?ab) \"Microalbumin/Creatinine Ratio\")\n                 (>   (value ?ab) 30)\n                 (exists ?n1 (and (= (domain_term ?n1) \"Microalbumin/Creatinine Ratio\")\n                                  (<(+  (system_time (valid_time ?ab)) 90)(system_time (valid_time ?n1)))\n                                  (not  (exists ?n2 (and (= (domain_term ?n2) \"Microalbumin/Creatinine Ratio\")\n                                                         (> (system_time (valid_time ?n2))\n(system_time (valid_time ?n1)))))))))\n)\n       "))
+
+([KB_785400_Class17] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_785400_Class18] of  Numeric_Entry
+
+	(domain_term "LDL_Cholesterol")
+	(lower_limit 0.0)
+	(patient_id "1224622472166")
+	(upper_limit 0.0)
+	(valid_time [KB_785400_Class17])
+	(value 130.0))
+
+([KB_785400_Class19] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_785400_Class2] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224622472166")
+	(valid_time [KB_785400_Class1])
+	(value "Diabetes_Mellitus"))
+
+([KB_785400_Class20] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224622472166")
+	(upper_limit 0.0)
+	(valid_time [KB_785400_Class19])
+	(value 59.0))
+
+([KB_785400_Class21] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224622472166")
+	(value "R1"))
+
+([KB_785400_Class22] of  Note_Entry
+
+	(domain_term "Sex")
+	(patient_id "1224622472166")
+	(value "Male"))
+
+([KB_785400_Class23] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_785400_Class25] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_785400_Class26] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_785400_Class27] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_785400_Class28] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_785400_Class29] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_785400_Class3] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_785400_Class31] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_785400_Class32] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_785400_Class38] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_785400_Class4] of  Note_Entry
+
+	(domain_term "Ingrown toenail")
+	(patient_id "1224622472166")
+	(valid_time [KB_785400_Class3])
+	(value "Yes"))
+
+([KB_785400_Class41] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_785400_Class48] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_785400_Class5] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_785400_Class52] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_785400_Class58] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_785400_Class59] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_785400_Class58])
+	(time_unit year))
+
+([KB_785400_Class6] of  Note_Entry
+
+	(domain_term "Dorsalis pedis pulses")
+	(patient_id "1224622472166")
+	(valid_time [KB_785400_Class5])
+	(value "Yes"))
+
+([KB_785400_Class60] of  Definite_Time_Point
+
+	(day 22)
+	(month_name 10)
+	(system_time 2454396)
+	(year_CE 2007))
+
+([KB_785400_Class68] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med \"1224622472166\")\n             (exists ?med_class\n                     (and (equal-or-subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 \"1224622472166\")\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem \"1224622472166\")\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([KB_785400_Class7] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_785400_Class70] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_785400_Class75] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_785400_Class76] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224622472166\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224622472166\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224622472166\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224622472166\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([KB_785400_Class8] of  Note_Entry
+
+	(domain_term "change in ocular function")
+	(patient_id "1224622472166")
+	(valid_time [KB_785400_Class7])
+	(value "Yes"))
+
+([KB_785400_Class82] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224622472166\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224622472166\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224622472166\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224622472166\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([KB_785400_Class83] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_785400_Class85] of  Qualitative_Constant
+
+	(value "minor lesion"))
+
+([KB_785400_Class86] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_785400_Class87] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 9)
+	(system_time 2454726)
+	(year_CE 2008))
+
+([KB_785400_Class88] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 10)
+	(system_time 2454761)
+	(year_CE 2008))
+
+([KB_785400_Class89] of  Definite_Time_Point
+
+	(day 30)
+	(month_name 9)
+	(system_time 2454740)
+	(year_CE 2008))
+
+([KB_785400_Class9] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_927639_Class100] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
+
+([KB_927639_Class101] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
+	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
+
+([KB_927639_Class32] of  Medication
+
+	(daily_dose 2300.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(patient_id "1224781995452"))
+
+([KB_927639_Class33] of  Definite_Time_Point
+
+	(day 21)
+	(month_name 2)
+	(system_time 2454518)
+	(year_CE 2008))
+
+([KB_927639_Class34] of  Note_Entry
+
+	(domain_term "Diabetes_Mellitus")
+	(patient_id "1224781995452")
+	(valid_time [KB_927639_Class33])
+	(value "Diabetes_Mellitus"))
+
+([KB_927639_Class35] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_927639_Class36] of  Note_Entry
+
+	(domain_term "Ingrown toenail")
+	(patient_id "1224781995452")
+	(valid_time [KB_927639_Class35])
+	(value "Yes"))
+
+([KB_927639_Class37] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_927639_Class38] of  Note_Entry
+
+	(domain_term "Dorsalis pedis pulses")
+	(patient_id "1224781995452")
+	(valid_time [KB_927639_Class37])
+	(value "Yes"))
+
+([KB_927639_Class39] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_927639_Class40] of  Note_Entry
+
+	(domain_term "change in ocular function")
+	(patient_id "1224781995452")
+	(valid_time [KB_927639_Class39])
+	(value "Yes"))
+
+([KB_927639_Class41] of  Definite_Time_Point
+
+	(day 17)
+	(month_name 10)
+	(system_time 2454757)
+	(year_CE 2008))
+
+([KB_927639_Class42] of  Note_Entry
+
+	(domain_term "DM-Type2")
+	(patient_id "1224781995452")
+	(valid_time [KB_927639_Class41])
+	(value "Diabetes Type 2"))
+
+([KB_927639_Class43] of  Definite_Time_Point
+
+	(day 23)
+	(month_name 10)
+	(system_time 2454763)
+	(year_CE 2008))
+
+([KB_927639_Class44] of  Note_Entry
+
+	(domain_term "hammer toes")
+	(patient_id "1224781995452")
+	(valid_time [KB_927639_Class43])
+	(value "0.0"))
+
+([KB_927639_Class45] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_927639_Class46] of  Numeric_Entry
+
+	(domain_term "Average_Pain_in_Last_Week")
+	(lower_limit 0.0)
+	(patient_id "1224781995452")
+	(upper_limit 0.0)
+	(valid_time [KB_927639_Class45])
+	(value 6.0))
+
+([KB_927639_Class47] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_927639_Class48] of  Numeric_Entry
+
+	(domain_term "HbA1C")
+	(lower_limit 0.0)
+	(patient_id "1224781995452")
+	(upper_limit 0.0)
+	(valid_time [KB_927639_Class47])
+	(value 9.4))
+
+([KB_927639_Class49] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_927639_Class50] of  Numeric_Entry
+
+	(domain_term "target_HBA1c")
+	(lower_limit 0.0)
+	(patient_id "1224781995452")
+	(upper_limit 0.0)
+	(valid_time [KB_927639_Class49])
+	(value 8.0))
+
+([KB_927639_Class51] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_927639_Class52] of  Numeric_Entry
+
+	(domain_term "LDL_Cholesterol")
+	(lower_limit 0.0)
+	(patient_id "1224781995452")
+	(upper_limit 0.0)
+	(valid_time [KB_927639_Class51])
+	(value 130.0))
+
+([KB_927639_Class53] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))
+
+([KB_927639_Class54] of  Numeric_Entry
+
+	(domain_term "Age")
+	(lower_limit 0.0)
+	(patient_id "1224781995452")
+	(upper_limit 0.0)
+	(valid_time [KB_927639_Class53])
+	(value 59.0))
+
+([KB_927639_Class55] of  Note_Entry
+
+	(domain_term "SSN")
+	(patient_id "1224781995452")
+	(value "R1"))
+
+([KB_927639_Class56] of  Note_Entry
+
+	(domain_term "Sex")
+	(patient_id "1224781995452")
+	(value "Male"))
+
+([KB_927639_Class57] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40003])
+	(label "Eligibility criteria")
+	(operator AND))
+
+([KB_927639_Class61] of  Numeric_Constant
+
+	(value 8.0))
+
+([KB_927639_Class66] of  Definite_Time_Point
+
+	(day 23)
+	(month_name 10)
+	(system_time 2454763)
+	(year_CE 2008))
+
+([KB_927639_Class67] of  Definite_Time_Interval
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(time_point [KB_927639_Class66])
+	(time_unit year))
+
+([KB_927639_Class68] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 10)
+	(system_time 2454398)
+	(year_CE 2007))
+
+([KB_927639_Class76] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "presence of contraindicated drug that has no complicating factor")
+	(%3APAL-RANGE "(defrange ?current_med :FRAME Medication)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?problem1 :FRAME Note_Entry)\n(defrange ?med_class :FRAME Drug_Usage)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?derived_complication :FRAME Diagnostic_Term_Metaclass)")
+	(%3APAL-STATEMENT "(exists ?current_med \n        (and (or (not (own-slot-not-null mood ?current_med ))\n                 (mood ?current_med Authorized)) \n             (patient_id ?current_med \"1224781995452\")\n             (exists ?med_class\n                     (and (equal-or-subclass-of (coerce-to-class (drug_name ?current_med)) (Drug_Class_Name ?med_class ))\n                          (not (exists ?complication \n                                       (and  (Complication_Factor ?med_class ?complication)\n                                             (exists ?problem1 \n                                                     (and (patient_id ?problem1 \"1224781995452\")\n                                                          (is-class (domain_term ?problem1) )\n                                                          (equal-or-subclass-of  (coerce-to-class (domain_term ?problem1))\n                                                                                 ?complication))))))\n                          (not (exists ?derived_complication\n                                       (and (Complication_Factor ?med_class ?derived_complication)\n                                            (is-derivable ?derived_complication))))\n             \n                          (or (exists ?contraindication \n                                      (and  (Absolute_Contraindications ?med_class ?contraindication)\n                                            (exists ?problem \n                                                    (and (patient_id ?problem \"1224781995452\")\n                                                         (is-class (domain_term ?problem) )\n                                                         (equal-or-subclass-of  (coerce-to-class (domain_term ?problem))\n                                                                                ?contraindication)))))\n                              (exists ?derived_contraindication\n                                      (and (Absolute_Contraindications ?med_class ?derived_contraindication)\n                                           (is-derivable ?derived_contraindication))))\n                     ))))"))
+
+([KB_927639_Class78] of  Qualitative_Constant
+
+	(value "Female"))
+
+([KB_927639_Class83] of  Qualitative_Constant
+
+	(value "Male"))
+
+([KB_927639_Class84] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exist drugs not at max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(exists  ?med\n         (and \n              (patient_id ?med \"1224781995452\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224781995452\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224781995452\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224781995452\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n))"))
+
+([KB_927639_Class85] of  Medication
+
+	(daily_dose 0.0)
+	(drug_name "Insulin")
+	(frequency 0)
+	(mood Recommend_Add)
+	(patient_id "1224781995452"))
+
+([KB_927639_Class87] of  Medication
+
+	(daily_dose 0.0)
+	(drug_name "SULFONYLUREAS")
+	(frequency 0)
+	(mood Recommend_Add)
+	(patient_id "1224781995452"))
+
+([KB_927639_Class89] of  Medication
+
+	(daily_dose 0.0)
+	(drug_name "DIPEPTIDYL_PEPTIDASE-4_INHIBITOR")
+	(frequency 0)
+	(mood Recommend_Add)
+	(patient_id "1224781995452"))
+
+([KB_927639_Class90] of  Medication
+
+	(daily_dose 0.0)
+	(drug_name "THIAZOLIDINEDIONES")
+	(frequency 0)
+	(mood Recommend_Add)
+	(patient_id "1224781995452"))
+
+([KB_927639_Class91] of  PAL-QUERY
+
+	(%3APAL-NAME "query for drugs not a max dose")
+	(%3APAL-RANGE "(defrange ?drug_usage :FRAME Drug_Usage)\n(defrange ?med :FRAME Medication)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?problem :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass Absolute_Contraindications)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass Absolute_Contraindications)\n(defrange ?complication :FRAME Medical_Conditions_Metaclass Complication_Factor)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?bad_partner_med :FRAME Medication )\n(defrange ?drug_class :FRAME Medications_Metaclass Drug_Partners_To_Avoid)")
+	(%3APAL-STATEMENT "(findall  ?med\n         (and \n              (patient_id ?med \"1224781995452\")\n              (or (not (own-slot-not-null mood ?med ))\n                  (mood ?med Authorized)) \n              (exists ?guidelineDrug\n                      (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                           (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                      (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                      (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n                      			      )\n              (not (exists ?drug_usage \n                           (and (subclass-of (coerce-to-class (drug_name ?med))\n                                             (Drug_Class_Name ?drug_usage))\n                                (or (exists ?contraindication \n                                            (and (Absolute_Contraindications ?drug_usage ?contraindication)\n                                                 (exists ?condition \n                                                         (and (patient_id ?condition \"1224781995452\")(is-class (domain_term ?condition))\n                                                              (equal-or-subclass-of (coerce-to-class (domain_term ?condition))\n                                                                                    ?contraindication)))))\n                                    (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"1224781995452\")\n                                                                  (or (not (own-slot-not-null mood ?bad_partner_med ))\n                                                                      (mood ?bad_partner_med Authorized)) \n                                                                  (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                                           (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))\n                                                                                                                 ?drug_class)))))                             	                   \n                                    (exists ?complication (and (Complication_Factor ?drug_usage ?complication)\n                                                               (exists ?problem\n                                                                       (and (patient_id ?problem \"1224781995452\")\n                                                                            (is-class (domain_term ?problem))                                                                                                     \n                                                                            (equal-or-subclass-of (coerce-to-class (domain_term ?problem))        ?complication)))))\n                                    (exists  ?derived_contraindication \n                                             (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                  (is-derivable ?derived_contraindication))))))))\n)"))
+
+([KB_927639_Class93] of  Medication
+
+	(daily_dose 0.0)
+	(drug_name "METFORMIN")
+	(frequency 0)
+	(mood Recommend_Increase)
+	(patient_id "1224781995452"))
+
+([KB_927639_Class94] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_927639_Class95] of  Definite_Time_Point
+
+	(day 11)
+	(month_name 7)
+	(system_time 2454659)
+	(year_CE 2008))
+
+([KB_927639_Class96] of  Definite_Time_Point
+
+	(day 24)
+	(month_name 7)
+	(system_time 2454672)
+	(year_CE 2008))
+
+([KB_927639_Class97] of  Definite_Time_Point
+
+	(day 16)
+	(month_name 10)
+	(system_time 2454756)
+	(year_CE 2008))
+
+([KB_927639_Class98] of  Definite_Time_Point
+
+	(day 1)
+	(month_name 1)
+	(system_time 2440588)
+	(year_CE 1970))

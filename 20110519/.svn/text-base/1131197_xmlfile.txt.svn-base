@@ -1,0 +1,237 @@
+<patientdata>
+<patient name="1131197">
+<meds>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">81</field2>
+	<start>Wed Jan 29 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Drug">atorvastatin</field1>
+	<field2 label="Daily Dose">80</field2>
+	<start>Fri Jul 07 00:00:00 PST 1939</start>
+</item>
+<item>
+	<field1 label="Drug">hydrochlorothiazide</field1>
+	<field2 label="Daily Dose">25</field2>
+	<start>Wed Jan 29 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.04</field2>
+	<start>Sat Oct 05 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Drug">lisinopril</field1>
+	<field2 label="Daily Dose">5</field2>
+	<start>Sun Oct 06 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Drug">nitrate</field1>
+	<field2 label="Daily Dose">60</field2>
+	<start>Sat Nov 25 00:00:00 PST 1939</start>
+</item>
+<item>
+	<field1 label="Drug">simvastatin</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Wed Jan 29 00:00:00 PST 1941</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Bronchospastic_Disease</field1>
+	<start>Wed Aug 14 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Dx">Coronary_Artery_Disease</field1>
+	<start>Sun Feb 02 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Dx">Depression</field1>
+	<start>Wed Oct 09 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Dx">DM-Type2</field1>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Sun Feb 02 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Sun Feb 02 00:00:00 PST 1941</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">41</field2>
+	<start>Sat Aug 16 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">69</field2>
+	<start>Mon Jul 14 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">52</field2>
+	<start>Sat Aug 16 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">105</field2>
+	<start>Sat Aug 16 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">298.723</field2>
+	<start>Mon Jul 14 00:00:00 PST 1941</start>
+</item>
+</clinicalSigns>
+<adr>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">3.4</field2>
+	<start>Sun Nov 03 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">84</field2>
+	<start>Sun Nov 03 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">30</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">15</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">9.1</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">101</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">126</field2>
+	<start>Sun Oct 06 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">0.9</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">Glycosylated_Hemoglobin</field1>
+	<field2 label="Value">6.3</field2>
+	<start>Sat Oct 05 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">HbA1C</field1>
+	<field2 label="Value">6.3</field2>
+	<start>Sat Oct 05 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">39.5</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">60</field2>
+	<start>Sun Oct 06 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">13.3</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">49</field2>
+	<start>Sun Oct 06 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">Phosphorus</field1>
+	<field2 label="Value">3.6</field2>
+	<start>Fri May 26 00:00:00 PST 1939</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">218</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">3.5</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">14</field2>
+	<start>Sun Nov 03 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">30</field2>
+	<start>Sun Nov 03 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">137</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">target_HBA1c</field1>
+	<field2 label="Value">7.0</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.5</field2>
+	<start>Sun Nov 03 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">126</field2>
+	<start>Sun Oct 06 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">69</field2>
+	<start>Sun Oct 06 00:00:00 PST 1940</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">8.9</field2>
+	<start>Tue Jan 28 00:00:00 PST 1941</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">41</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">Black_Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Female</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

@@ -1,0 +1,277 @@
+<html><head><TITLE>Intermed Guideline Model </TITLE>
+</head>
+<body>
+<center><h1> Intermed Guideline Model </h1></center>
+<pre>
+    
+/*-----------------------------------------------------------------31/Jul/96-*
+/*
+/* InterMed Guideline Representation Specification
+/*
+/* GLIF-2, Version 3
+/*
+/*--------------------------------------------------------------------------*/
+
+/****************************************************************************/
+/* FORWARDS */
+
+interface Guideline;
+interface Guideline_Step;
+interface Patient_Data;
+interface Action_Spec;
+interface Criterion;
+interface Supplemental_Material;
+
+/****************************************************************************/
+/* TYPES */
+
+typedef sequence &ltGuideline_Step&gt t_step_list;
+typedef sequence &ltPatient_Data&gt t_data_list;
+typedef sequence &ltCriterion&gt t_criterion_list;
+typedef sequence &ltSupplemental_Material&gt t_supplement_list;
+typedef sequence &ltstring&gt t_string_list;
+
+
+/****************************************************************************/
+/* CLASSES */
+
+/*------------------------
+* Top-level classes
+*------------------------*/
+
+interface Guideline_Model
+{
+};
+
+/*------------------------
+* Guideline
+*------------------------*/
+
+interface Guideline:Guideline_Model
+{
+   attribute string name;
+   attribute t_string_list authors;
+
+   /* a formal characterization of the guideline */
+   /* -- format has yet to be decided */
+   /* -- perhaps a combination of {Evaluation, Management, Treatment} with */
+   /*    a specific problem, e.g., Evaluation of Breast Mass */
+   attribute string intention;
+
+   /* an unordered list of criteria that all must be true of a patient */
+   /* before applying this guideline */
+   attribute Criterion eligibility_criteria;
+
+   /* an unordered list of all Step objects used to represent the guideline */
+   attribute t_step_list steps;
+
+   /* the first Step object in the guideline */
+   /* -- if the eligibility criteria are true, start here */
+   attribute Guideline_Step first_step;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Guideline_Step: an abstract class.
+*------------------------*/
+
+interface Guideline_Step:Guideline_Model
+{
+   attribute string name;
+   attribute t_supplement_list didactics;
+};
+
+/*------------------------
+* Action_Step
+*------------------------*/
+
+interface Action_Step:Guideline_Step
+{
+   /* specification of the action, if any, to be performed in this step */
+   attribute Action_Spec action;
+
+   /* optional specification of the action at a finer level of granularity */
+   attribute Guideline subguideline;
+
+   /* next step in the guideline after action */
+   attribute Guideline_Step next_step;
+};
+
+/*------------------------
+* Conditional_Step
+*------------------------*/
+
+interface Conditional_Step:Guideline_Step
+{
+   /* the criteria that must be true in order to go to destination */
+   attribute Criterion condition;
+
+   /* step to take if condition is true */
+   attribute Guideline_Step destination;
+
+   /* step to take if condition is not true */
+   attribute Guideline_Step otherwise;
+
+};
+
+/*------------------------
+* Branch_Step
+*------------------------*/
+
+enum t_ordering {any_order, parallel};
+enum t_selection {all_of, some_of, one_of};
+
+interface Branch_Step
+{
+   /* an unordered list of possible subsequent steps */
+   attribute t_step_list branches;
+
+   /* which of the steps must be performed */
+   attribute t_selection selection_method;
+
+   /* true if the steps must be performed in parallel */
+   attribute t_ordering order_constraint;
+};
+
+
+/*------------------------
+* Synchronization_Step
+*------------------------*/
+
+enum t_continue {wait_for_all, proceed_after_one, loop};
+
+interface Synchronization_Step:Guideline_Step
+{
+   /* specification of the next step */
+   attribute Guideline_Step next_step;
+
+   /* This attribute has three possible values enumerating rules about   */
+   /* when to proceed to the next step:                                  */
+   /*   "wait_for_all" -- all of the preceeding steps must be completed  */
+   /*   "proceed_after_one" -- continue when any of the preceeding steps */
+   /*                          has completed                             */
+   /*   "loop" -- used for looping: thus, repeat the action whenever     */
+   /*             one of the preceeding steps has completed.             */
+   attribute t_continue continuation;
+};
+
+/*------------------------
+* Action Specification
+*------------------------*/
+
+interface Action_Spec:Guideline_Model
+{
+   attribute string name;
+
+   /* the goal that is supposed to be achieved by performing this action */
+   /*   - specification format has not yet been determined */
+   attribute string intention;
+
+   /* the patient data for which the action is to be performed. */
+   /* if this data is already available (and meets temporal_constraint), */
+   /* the action does not need to be performed */
+   attribute t_data_list patient_data;
+
+   /* the action specification */
+   /*   - specification format has not yet been determined */
+   attribute string description;
+
+   attribute t_supplement_list didactics;
+};
+
+/*------------------------
+* Patient Data
+*------------------------*/
+
+interface Patient_Data:Guideline_Model
+{
+   /* formal identification of patient data item */
+   /*   - patient data model has not yet been determined */
+   attribute string name;
+
+   /* what is the data type of the data item */
+   attribute string type;
+
+   /* the possible values for this data item */
+   attribute t_string_list possible_values;
+
+   /* how recent the data item has to be in order to be useful */
+   attribute string temporal_constraint;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Classes for logical Criteria
+*------------------------*/
+
+enum t_logic_type {k_two_valued, k_three_valued};
+
+interface Criterion:Guideline_Model
+{
+   /* the logic is typed by the number of possible values it can evaluate to */
+   attribute t_logic_type type;
+
+   attribute t_supplement_list didactics;
+};
+
+
+interface Boolean_Criterion:Criterion
+{
+   /* formal specification of criterion logic */
+   /*   - specification language has not yet been determined */
+   attribute string spec;
+};
+
+
+interface K_Of_N_Criteria: Criterion
+{
+   /* the K criteria that must be true */
+   attribute short number_to_select;
+
+   /* the set of N criteria  */
+   attribute t_criterion_list criteria;
+};
+
+
+/*------------------------
+* Classes for Supporting Materials
+*------------------------*/
+
+interface Supplemental_Material:Guideline_Model
+{
+   /* the purpose of the material */
+   attribute string label;
+
+   /* extensible MIME standard for type of material */
+   attribute string MIME_type;
+};
+
+
+interface Local_Material:Supplemental_Material
+{
+   /* the material */
+   attribute string material;
+};
+
+
+interface WWW_Material:Supplemental_Material
+{
+   /* URL of supplemental material */
+   attribute string URL;
+};
+
+</pre>
+<hr>
+<ADDRESS>
+Last updated on 8/01/96 by 
+<a href="mailto:gennari@smi.stanford.edu/people/gennari"> John Gennari </a>
+</ADDRESS>
+</BODY>
+</HTML>
+
+
+

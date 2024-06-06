@@ -1,0 +1,164 @@
+(defclass Root
+	(is-a USER)
+	(role abstract))
+
+(defclass Guideline_Model
+	(is-a Root)
+	(role abstract))
+
+(defclass Action_Spec
+	(is-a Guideline_Model)
+	(role concrete)
+	(slot name
+		(type STRING))
+	(slot description
+		(type STRING))
+	(multislot patient_data
+;+		(allowed-classes Patient_Data)
+		(type INSTANCE))
+	(slot pre_condition
+;+		(allowed-classes Boolean_Criterion)
+		(type INSTANCE))
+	(slot intention
+		(type STRING)))
+
+(defclass Guideline_Object
+	(is-a Guideline_Model)
+	(role concrete)
+	(slot name
+		(type STRING))
+	(multislot authors
+;+		(allowed-classes Person)
+		(type INSTANCE))
+	(multislot eligibility_criteria
+;+		(allowed-classes Boolean_Criterion K_Of_N_Criteria)
+		(type INSTANCE))
+	(slot intention
+		(type STRING))
+	(multislot steps
+;+		(allowed-classes Action_Step Synchronization_Step Conditional_Step)
+		(type INSTANCE))
+	(slot first_step
+;+		(allowed-classes Guideline_Step)
+		(type INSTANCE)))
+
+(defclass Guideline_Step
+	(is-a Guideline_Model)
+	(role abstract)
+	(slot name
+		(type STRING)))
+
+(defclass Conditional_Step
+	(is-a Guideline_Step)
+	(role concrete)
+	(slot condition
+;+		(allowed-classes Boolean_Criterion)
+		(type INSTANCE))
+	(slot destination
+;+		(comment "this should be the next step")
+;+		(allowed-classes Conditional_Step Action_Step Synchronization_Step Branch_Step)
+		(type INSTANCE))
+	(slot else
+;+		(allowed-classes Action_Step Branch_Step Conditional_Step Synchronization_Step)
+		(type INSTANCE)))
+
+(defclass Action_Step
+	(is-a Guideline_Step)
+	(role concrete)
+	(slot action
+;+		(allowed-classes Action_Spec)
+		(type INSTANCE))
+	(slot subguideline
+;+		(allowed-classes Guideline_Object)
+		(type INSTANCE))
+	(slot next_step
+;+		(allowed-classes Conditional_Step Action_Step Synchronization_Step Branch_Step)
+		(type INSTANCE)))
+
+(defclass Synchronization_Step
+	(is-a Guideline_Step)
+	(role concrete)
+	(slot continuation
+		(allowed-values wait_for_all proceed_after_one loop)
+		(type SYMBOL))
+	(slot next_step
+;+		(allowed-classes Action_Step Conditional_Step Synchronization_Step Branch_Step)
+		(type INSTANCE)))
+
+(defclass Branch_Step
+	(is-a Guideline_Step)
+	(role concrete)
+	(slot order_constraint
+		(allowed-values parallel any_order)
+		(type SYMBOL))
+	(slot selection_method
+		(allowed-values one_of some_of all_of)
+		(type SYMBOL))
+	(multislot next_steps
+;+		(allowed-classes Action_Step Synchronization_Step Conditional_Step)
+		(type INSTANCE)))
+
+(defclass Patient_Data
+	(is-a Guideline_Model)
+	(role concrete)
+	(slot name
+		(type STRING))
+	(slot type
+		(allowed-values "pertinent" "required")
+		(type STRING))
+	(multislot possible_values
+		(type STRING))
+	(slot temporal_constraint
+		(type STRING)))
+
+(defclass Criterion
+	(is-a Guideline_Model)
+	(role abstract)
+	(slot type
+		(allowed-values k_two_valued k_three_valued)
+		(type SYMBOL)))
+
+(defclass K_Of_N_Criteria
+	(is-a Criterion)
+	(role concrete)
+	(slot number_to_select
+		(type INTEGER))
+	(multislot criteria
+;+		(allowed-classes Criterion)
+		(type INSTANCE)))
+
+(defclass Boolean_Criterion
+	(is-a Criterion)
+	(role concrete)
+	(slot spec
+		(type STRING)))
+
+(defclass Supplemental_Material
+	(is-a Guideline_Model)
+	(role concrete)
+	(slot label
+		(type STRING))
+	(slot url
+		(type SYMBOL))
+	(slot material
+		(type STRING))
+	(slot MIME_type
+		(type STRING)))
+
+(defclass WWW_Material
+	(is-a Supplemental_Material)
+	(role concrete))
+
+(defclass Guidelines
+	(is-a Guideline_Model)
+	(role concrete)
+	(multislot guidelines
+;+		(allowed-classes Guideline_Object)
+		(type INSTANCE)))
+
+(defclass Person
+	(is-a Guideline_Model)
+	(role concrete)
+	(slot name
+		(type STRING)))
+

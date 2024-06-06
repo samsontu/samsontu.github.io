@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>GLINDA: GuideLine INteraction Detection Architecture: Interaction Ontology</title>
+    <link type="text/css" rel="stylesheet" href="glinda.css"/>
+  </head>
+
+<body class="twoColElsLt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3><a href="index.html">Description</a></h3>
+    <h3><a href="people.html">People</a></h3>
+    <h3><a href="presentations.html">Documentations</a><h3>
+    <h3>Results</h3>
+    <blockquote>
+      <p><a href="workflow.html">Workflow</a></p>
+      <p><a href="guidelineinteractionontology.html">Guideline Interaction Ontology</a></p>
+    </blockquote>
+    </p>
+    <h3><a href="relatedlinks.html">Related Links</a></h3>
+    <h3><a href="contact.html">Contact</a></h3>
+  <!-- end #sidebar1 --></div>
+  <div id="mainContent">
+    <h1 class="MainHeading"><img src="images/glinda.jpg" alt="GLINDA image" width="129" height="119" /></h1>
+    <a name="Top"></a>
+    <h2>Guideline Interaction Ontology </h2>
+    <p>As part of the GLINDA project, we developed an ontology of cross-guideline interactions among recommendations of guidelines. The purpose of the ontology is to guide the development of computerized methods for detecting and managing interactions among recommendations that can be generated from all guidelines that are applicable to a patient who have multiple diseases. The ontology includes the following taxonomy:</p>
+    <p><strong>Advisory Interaction</strong></p>
+    <ul>
+      <li><a href="guidelineinteractionontology.html#InconistentPatientCharacterizations">Inconistent	Patient Characterizations</a></li>
+      <li><a href="guidelineinteractionontology.html#InconsistentGoals">Inconsistent Goals</a></li>
+      <li><a href="guidelineinteractionontology.html#Multi-ActivityInteraction">Multi-Activity Interaction</a></li>
+      <ul>
+      <li><a href="guidelineinteractionontology.html#CumulativeNumberConstraint">Cumulative Number Constraint</a></li>
+      <li><a href="guidelineinteractionontology.html#Drug-DrugInteraction">Drug-Drug Interaction</a></li>
+      <li><a href="guidelineinteractionontology.html#TimingInteraction">Timing Interaction</a></li>
+      </ul>
+      <li><a href="guidelineinteractionontology.html#Single-ActivityInteraction">Single-Activity Interaction</a>
+        <ul>
+          <li><a href="guidelineinteractionontology.html#DoseModificationLevelDifference">Dose Modification Level Difference</a></li>
+          <li><a href="guidelineinteractionontology.html#DoseModificationRateDifference">Dose Modification Rate Difference</a></li>
+          <li><a href="guidelineinteractionontology.html#SupportAcrossGuidelines">Support Across Guidelines</a>
+            <ul>
+              <li><a href="guidelineinteractionontology.html#CollateralEffect">Collateral Effect</a></li>
+              <li><a href="guidelineinteractionontology.html#ConsistentNegativeSupport">Consistent Negative Support</a></li>
+              <li><a href="guidelineinteractionontology.html#ConsistentPositiveSupport">Consistent Positive Support</a></li>
+              <li><a href="guidelineinteractionontology.html#ContradictorySupport">Contradictory Support</a></li>
+              <li><a href="guidelineinteractionontology.html#Contraindicated">Contraindicated</a></li>
+              <li><a href="guidelineinteractionontology.html#MixedSupport">Mixed Support</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a name="InconsistentPatientCharacterizations"></a>
+    <h3>Inconsistent Patient Characterizations</h3>
+    <dl>
+      <dt><strong>Definition</strong></dt>
+      <dd>An inconsistent patient characterizations occurs when two guidelines define a  patient characteristics differently. </dd>
+      <dt><strong>Example</strong></dt>
+      <dd>In the JNC 7 guideline for the management of hypertention, for the purpose of setting the target blood pressure or selecting a medication to prescribe, a  patient is considered to have chronic kidney disease (CKD) if a recent eGFR is less than 60. In the VA CKD guideline, on the other hand, a patient is considered to have CKD if there are two eGFR results that are less 60 and that are 3 months apart.</dd>
+      <dt>&nbsp;</dt>
+      <dd>&nbsp;</dd>
+      <div align="right"><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+        <a name="InconsistentGoals"></a></div>
+<h3>Inconsistent Goals</h3>
+      <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>When two guidelines prescribe for the same patient different targets for the same clinical parameters (e.g., blood pressure), the two guidelines have inconsistent goals.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dd>&nbsp;</dd>
+      </dl>
+      <div align="right"><a name="Multi-ActivityInteraction"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Multi-Activity Interaction</h3>
+      <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>Multi-activity interaction occurs when two or more interventions recommended by two guidelines interact with each other.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>
+          <ul>
+            <li><a href="guidelineinteractionontology.html#CumulativeNumberConstraint">Cumulative Number Constraint</a></li>
+            <li><a href="guidelineinteractionontology.html#Drug-DrugInteraction">Drug-Drug Interaction</a></li>
+            <li><a href="guidelineinteractionontology.html#TimingInteraction">Timing Interaction</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dt>&nbsp;</dt>
+    </dl>
+    <div align="right"><a name="CumulativeNumberConstraint"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+    </div>
+<h3>Cumulative Number Constraint</h3>
+      <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>Cumulative Number Constraint interaction occurs when the cumulative number of recommended interventions from all applicable guidelines violates some constraint indicated by one of the guidelines.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>The Institute for Clinical System Improvement Prevention of Falls (Acute Care) guideline suggests that elderly patients on four or more drugs are at greater risk of falls. [<a href="http://www.icsi.org/falls__acute_care___prevention_of__protocol_/falls__acute_care___prevention_of__protocol__24255.html">1</a>] </dd>
+  
+    </dl>
+      <div align="right"><a name="Drug-DrugInteraction"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+<h3>Drug-Drug Interaction</h3>
+      <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A drug–drug interaction occurs when two drugs recommended by two different guidelines have physiological effects that are not present when each drug is given alone.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="TimingInteraction"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+<h3>Timing Interactions</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A timing interaction occurs when the timings of two interventions should be adjusted because the presence of both.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>Two laboratory tests recommended by two guidelines may be consolidated on the same visit.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      <a name="Single-ActivityInteraction"></a><h3>Single-Activity Interaction</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A single-activity interaction occurs when, for the same intervention, two guidelines have different recommendations.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>
+          <ul>
+            <li><a href="guidelineinteractionontology.html#DoseModificationLevelDifference">Dose Modification Level Difference</a></li>
+            <li><a href="guidelineinteractionontology.html#DoseModificationRateDifference">Dose Modification Rate difference</a></li>
+            <li><a href="guidelineinteractionontology.html#SupportAcrossGuidelines">Support Across Guidelines</a></li>
+          </ul>
+        </dd>
+    </dl>
+    
+    <div align="right"><a name="DoseModificationLevelDifference"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+    </div>
+    <h3>Dose Modification Level Difference</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A dose-modification-level difference occurs when two guidelines recommend different dose levels for the same drug.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="DoseModificationRateDifference"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Dose Modification Rate Difference</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A dose-modification-rate difference occurs when two guidelines recommend different titration speed.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="SupportAcrossGuidelines"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Support Across Guidelines</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A  support-across-guidelines interaction occurs when two guidelines have different levels of support for the same recommendation.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>
+          <ul>
+            <li><a href="guidelineinteractionontology.html#CollateralEffect">Collateral Effect</a></li>
+            <li><a href="guidelineinteractionontology.html#ConsistentNegativeSupport">Consistent Negative Support</a></li>
+            <li><a href="guidelineinteractionontology.html#ConsistentPositiveSupport">Consistent Positive Support</a></li>
+            <li><a href="guidelineinteractionontology.html#ContradictorySupport">Contradictory Support</a></li>
+            <li><a href="guidelineinteractionontology.html#Contraindicated">Contraindicated</a></li>
+            <li><a href="guidelineinteractionontology.html#MixedSupport">Mixed Support</a></li>
+          </ul>
+        </dd>
+    </dl>
+      <div align="right"><a name="CollateralEffect"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Collateral Effect</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A collateral effect interaction occurs when a drug recommended in one guideline has physiological effects relevant to the management of a second disease.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>According to the ACCF/AHA Practice Guideline for Heart Failure, the use of calcium channel blockers with negative inotropic effects is not recommended in asymptomatic patients with ejection fraction less than 40% after myocardial infarction [<a href="http://circ.ahajournals.org/content/119/14/e391.full#sec-35">2</a>]. In the discussion on the use of calcium channel blocker in the JNC 7 guideline for the management of hypertension, this precaution for patients with ejection fraction less than 40% is not mentioned.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="ConsistentNegativeSupport"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Consistent Negative Support</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A consistent negative support interaction occurs when two guidelines both suggest that a particular intervention is not appropriate for the patient.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="ConsistentPositiveSupport"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Consistent Positive Support</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A consistent positive support interaction occurs when two guidelines both recommend that a intervention be given.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="ContradictorySupport"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Contradictory Support</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A contradictory support interaction occurs when one guideline recommends one intervention while another guideline opposes its use.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="Contraindicated"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Contraindicated</h3>
+    <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A contraindicated interaction is a special case of the contradictory support interaction when one guideline strongly contraindicates one intervention that is recommended by another guideline. </dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        <dt>&nbsp;</dt>
+        <dd>&nbsp;</dd>
+        <dd>&nbsp;</dd>
+    </dl>
+      <div align="right"><a name="MixedSupport"></a><a href="guidelineinteractionontology.html#Top">Back to the top</a>
+      </div>
+      <h3>Mixed Support</h3>
+      <dl>
+        <dt><strong>Definition</strong></dt>
+        <dd>A mixed-support interaction occurs when each of the two guidelines has evidence both for and against the use of an intervention for the patient.</dd>
+        <dt><strong>Example</strong></dt>
+        <dd>To be completed.</dd>
+        
+        <dt>
+          <div align="right"><a href="guidelineinteractionontology.html#Top">Back to the top</a></div>
+        </dt>
+        <dd>&nbsp;</dd>
+    </dl>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

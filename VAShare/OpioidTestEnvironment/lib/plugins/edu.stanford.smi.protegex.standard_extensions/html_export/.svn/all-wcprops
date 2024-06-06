@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/eon/!svn/ver/54/branches/eonpm/lib/edu.stanford.smi.protegex.standard_extensions/html_export
+END
+HTMLExportConfigurations.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/eon/!svn/ver/54/branches/eonpm/lib/edu.stanford.smi.protegex.standard_extensions/html_export/HTMLExportConfigurations.xml
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eon/!svn/ver/54/branches/eonpm/lib/edu.stanford.smi.protegex.standard_extensions/html_export/footer.html
+END
+htmlexport.properties
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eon/!svn/ver/54/branches/eonpm/lib/edu.stanford.smi.protegex.standard_extensions/html_export/htmlexport.properties
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eon/!svn/ver/54/branches/eonpm/lib/edu.stanford.smi.protegex.standard_extensions/html_export/header.html
+END
+htmlexport.css
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eon/!svn/ver/54/branches/eonpm/lib/edu.stanford.smi.protegex.standard_extensions/html_export/htmlexport.css
+END

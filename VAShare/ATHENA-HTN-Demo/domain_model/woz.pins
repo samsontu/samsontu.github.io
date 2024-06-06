@@ -1,0 +1,391 @@
+; Tue Oct 17 16:37:37 PDT 2000
+;
+;+ (version "1.5 beta")
+;+ (build "Build 561")
+
+([woz_00003] of AgentModel
+	(agentName "PatientDataAgent")
+	(description "displays patient data")
+	(services [woz_00004]))
+
+([woz_00004] of Service
+	(can_do_this [woz_00005])
+	(label "displayPatientDataService")
+	(parameterNames
+		patientId
+		patientDataType
+		goalDiastolic
+		goalSystolic))
+
+([woz_00005] of ActionObject
+	(action display)
+	(label "displayPatientDataActObj")
+	(object patientData))
+
+([woz_INSTANCE_00001] of AgentModel
+	(agentName "ProtocolInfoAgent")
+	(description "Displays html text")
+	(host "my computer")
+	(services [woz_INSTANCE_00002]))
+
+([woz_INSTANCE_00002] of Service
+	(can_do_this [woz_INSTANCE_00003])
+	(label "displayProtocolTextService")
+	(parameterNames
+		protocolTextTag
+		protocolTextTitle))
+
+([woz_INSTANCE_00003] of ActionObject
+	(action display)
+	(label "displayProtocolTextActObj")
+	(object protocolText))
+
+([woz_INSTANCE_00004] of QualifierStructure
+	(do_this [woz_INSTANCE_00009])
+	(label "goalStatus_qualifier")
+	(metaParameterNames claimQualifier))
+
+([woz_INSTANCE_00005] of Argument
+	(backings [woz_INSTANCE_00012])
+	(can_explain_this [woz_INSTANCE_00006])
+	(claim [woz_INSTANCE_00007])
+	(data [woz_INSTANCE_00014])
+	(label "goalStatus_argument")
+	(name "goalStatus")
+	(qualifier [woz_INSTANCE_00004])
+	(rebuttals [woz_INSTANCE_00016])
+	(warrants [woz_INSTANCE_00019]))
+
+([woz_INSTANCE_00006] of ActionObject
+	(action explain)
+	(label "explain_goalStatus")
+	(object protocolGoalStatus))
+
+([woz_INSTANCE_00007] of ClaimStructure
+	(do_this [woz_INSTANCE_00008])
+	(label "goalStatusClaim")
+	(metaParameterNames protocolGoalStatus))
+
+([woz_INSTANCE_00008] of ActionObject
+	(action get)
+	(label "get_goalStatus")
+	(object protocolGoalStatus))
+
+([woz_INSTANCE_00009] of ActionObject
+	(action get)
+	(label "get_qualifier_goalStatus")
+	(object claimQualifier))
+
+([woz_INSTANCE_00010] of ActionObject
+	(action get)
+	(label "get_qualifier")
+	(object claimQualifier))
+
+([woz_INSTANCE_00011] of AgentModel
+	(agentName "ProtocolKnowledgeAgent")
+	(description "Displays protocol knowledge")
+	(host "my computer")
+	(services [woz_INSTANCE_00018]))
+
+([woz_INSTANCE_00012] of BackingStructure
+	(do_this [woz_INSTANCE_00013])
+	(label "goalstatus_backing")
+	(metaParameterNames
+		protocolTextTag
+		protocolTextTitle))
+
+([woz_INSTANCE_00013] of ActionObject
+	(action get)
+	(label "get_text_goalStatus")
+	(object protocolText))
+
+([woz_INSTANCE_00014] of DataStructure
+	(do_this [woz_INSTANCE_00015])
+	(label "goalStatus_data")
+	(metaParameterNames
+		patientData
+		patientId))
+
+([woz_INSTANCE_00015] of ActionObject
+	(action get)
+	(label "get_patientData_goalStatus")
+	(object patientData))
+
+([woz_INSTANCE_00016] of RebuttalStructure
+	(do_this [woz_INSTANCE_00017])
+	(label "goalStatus_rebuttal")
+	(metaParameterNames missingValue))
+
+([woz_INSTANCE_00017] of ActionObject
+	(action get)
+	(label "get_missingValue_goalStatus")
+	(object missingValue))
+
+([woz_INSTANCE_00018] of Service
+	(can_do_this [woz_INSTANCE_00021])
+	(label "displayProtocolKnowledgeService")
+	(parameterNames protocolInstanceId))
+
+([woz_INSTANCE_00019] of WarrantStructure
+	(do_this [woz_INSTANCE_00020])
+	(label "goalStatus_warrant")
+	(metaParameterNames
+		protocolId
+		protocolInstanceId
+		protocolKnowledge))
+
+([woz_INSTANCE_00020] of ActionObject
+	(action get)
+	(label "get_protocolKnowledge_goalStatus")
+	(object protocolKnowledge))
+
+([woz_INSTANCE_00021] of ActionObject
+	(action display)
+	(label "diplayProtocolKnowledgeActObj")
+	(object protocolKnowledge))
+
+([woz_INSTANCE_00022] of Argument
+	(backings [woz_INSTANCE_00029])
+	(can_explain_this [woz_INSTANCE_00023])
+	(claim [woz_INSTANCE_00024])
+	(data [woz_INSTANCE_00031])
+	(label "mgmtChoice_argument")
+	(name "mgmtChoice")
+	(qualifier [woz_INSTANCE_00027])
+	(rebuttals [woz_INSTANCE_00033])
+	(warrants [woz_INSTANCE_00035]))
+
+([woz_INSTANCE_00023] of ActionObject
+	(action explain)
+	(label "explainChoice_actObj")
+	(object protocolMgmtChoice))
+
+([woz_INSTANCE_00024] of ClaimStructure
+	(do_this [woz_INSTANCE_00025])
+	(label "mgmtChoice_claim")
+	(metaParameterNames protocolMgmtChoice))
+
+([woz_INSTANCE_00025] of ActionObject
+	(action get)
+	(label "get_Choice")
+	(object protocolMgmtChoice))
+
+([woz_INSTANCE_00026] of Argument
+	(backings [woz_INSTANCE_00042])
+	(can_explain_this [woz_INSTANCE_00037])
+	(claim [woz_INSTANCE_00038])
+	(data [woz_INSTANCE_00044])
+	(label "mgmtAction_argument")
+	(name "mgmtAction")
+	(qualifier [woz_INSTANCE_00040])
+	(rebuttals [woz_INSTANCE_00047])
+	(warrants [woz_INSTANCE_00049]))
+
+([woz_INSTANCE_00027] of QualifierStructure
+	(do_this [woz_INSTANCE_00028])
+	(label "choice_qualifier")
+	(metaParameterNames claimQualifier))
+
+([woz_INSTANCE_00028] of ActionObject
+	(action get)
+	(label "choice_qualifier_actobj")
+	(object claimQualifier))
+
+([woz_INSTANCE_00029] of BackingStructure
+	(do_this [woz_INSTANCE_00030])
+	(label "choice_backings")
+	(metaParameterNames
+		protocolTextTag
+		protocolTextTitle))
+
+([woz_INSTANCE_00030] of ActionObject
+	(action get)
+	(label "backings_actobj")
+	(object protocolText))
+
+([woz_INSTANCE_00031] of DataStructure
+	(do_this [woz_INSTANCE_00032])
+	(label "choice_data")
+	(metaParameterNames
+		patientId
+		patientData))
+
+([woz_INSTANCE_00032] of ActionObject
+	(action get)
+	(label "choice_data_actObj")
+	(object patientData))
+
+([woz_INSTANCE_00033] of RebuttalStructure
+	(do_this [woz_INSTANCE_00034])
+	(label "choice_rebuttals")
+	(metaParameterNames missingValue))
+
+([woz_INSTANCE_00034] of ActionObject
+	(action get)
+	(label "choice_rebuttal_actobj")
+	(object missingValue))
+
+([woz_INSTANCE_00035] of WarrantStructure
+	(do_this [woz_INSTANCE_00036])
+	(label "choice_warrant")
+	(metaParameterNames
+		protocolInstanceId
+		protocolId
+		protocolKnowledge))
+
+([woz_INSTANCE_00036] of ActionObject
+	(action get)
+	(label "choice_warrant_actObj")
+	(object protocolKnowledge))
+
+([woz_INSTANCE_00037] of ActionObject
+	(action explain)
+	(label "explainAction_actobj")
+	(object protocolMgmtAction))
+
+([woz_INSTANCE_00038] of ClaimStructure
+	(do_this [woz_INSTANCE_00039])
+	(label "mgmtAction_claim")
+	(metaParameterNames protocolMgmtAction))
+
+([woz_INSTANCE_00039] of ActionObject
+	(action get)
+	(label "get_action")
+	(object protocolMgmtAction))
+
+([woz_INSTANCE_00040] of QualifierStructure
+	(do_this [woz_INSTANCE_00041])
+	(label "action_qualifier")
+	(metaParameterNames claimQualifier))
+
+([woz_INSTANCE_00041] of ActionObject
+	(action get)
+	(label "get_actionqualifier")
+	(object claimQualifier))
+
+([woz_INSTANCE_00042] of BackingStructure
+	(do_this [woz_INSTANCE_00043])
+	(label "action_backings")
+	(metaParameterNames
+		protocolTextTag
+		protocolTextTitle))
+
+([woz_INSTANCE_00043] of ActionObject
+	(action get)
+	(label "get_backings_actobj")
+	(object protocolText))
+
+([woz_INSTANCE_00044] of DataStructure
+	(do_this [woz_INSTANCE_00045])
+	(label "action_data")
+	(metaParameterNames
+		patientId
+		patientData
+		goalSystolic
+		goalDiastolic
+		patientDataType))
+
+([woz_INSTANCE_00045] of ActionObject
+	(action get)
+	(label "get_patientdata_actobj")
+	(object patientData))
+
+([woz_INSTANCE_00046] of DataStructure)
+
+([woz_INSTANCE_00047] of RebuttalStructure
+	(do_this [woz_INSTANCE_00048])
+	(label "action_rebuttals")
+	(metaParameterNames missingValue))
+
+([woz_INSTANCE_00048] of ActionObject
+	(action get)
+	(label "get_rebuttals_actobj")
+	(object missingValue))
+
+([woz_INSTANCE_00049] of WarrantStructure
+	(do_this [woz_INSTANCE_00050])
+	(label "action_warrants")
+	(metaParameterNames
+		protocolKnowledge
+		protocolInstanceId
+		protocolId))
+
+([woz_INSTANCE_00050] of ActionObject
+	(action get)
+	(label "get_knowledge_actobj")
+	(object protocolKnowledge))
+
+([woz_INSTANCE_00051] of Argument
+	(backings [woz_INSTANCE_00059])
+	(can_explain_this [woz_INSTANCE_00052])
+	(claim [woz_INSTANCE_00053])
+	(data [woz_INSTANCE_00063])
+	(label "goal_argument")
+	(name "goal")
+	(qualifier [woz_INSTANCE_00056])
+	(warrants [woz_INSTANCE_00061]))
+
+([woz_INSTANCE_00052] of ActionObject
+	(action explain)
+	(label "explain_goal")
+	(object protocolGoal))
+
+([woz_INSTANCE_00053] of ClaimStructure
+	(do_this [woz_INSTANCE_00055])
+	(label "goalClaim")
+	(metaParameterNames protocolGoal))
+
+([woz_INSTANCE_00054] of ActionObject)
+
+([woz_INSTANCE_00055] of ActionObject
+	(action get)
+	(label "get_goalClaim")
+	(object protocolGoal))
+
+([woz_INSTANCE_00056] of QualifierStructure
+	(do_this [woz_INSTANCE_00057])
+	(label "goal_qualifier")
+	(metaParameterNames claimQualifier))
+
+([woz_INSTANCE_00057] of ActionObject
+	(action get)
+	(label "get_goalQualifier")
+	(object claimQualifier))
+
+([woz_INSTANCE_00058] of BackingStructure)
+
+([woz_INSTANCE_00059] of BackingStructure
+	(do_this [woz_INSTANCE_00060])
+	(label "goal_backing")
+	(metaParameterNames
+		protocolTextTag
+		protocolTextTitle))
+
+([woz_INSTANCE_00060] of ActionObject
+	(action get)
+	(label "get_text_goalBacking")
+	(object protocolText))
+
+([woz_INSTANCE_00061] of WarrantStructure
+	(do_this [woz_INSTANCE_00062])
+	(label "goal_warrant")
+	(metaParameterNames
+		protocolInstanceId
+		protocolKnowledge))
+
+([woz_INSTANCE_00062] of ActionObject
+	(action get)
+	(label "get_protocolKnowledge_goal")
+	(object protocolKnowledge))
+
+([woz_INSTANCE_00063] of DataStructure
+	(do_this [woz_INSTANCE_00064])
+	(label "goal_data")
+	(metaParameterNames
+		protocolId
+		patientData))
+
+([woz_INSTANCE_00064] of ActionObject
+	(action get)
+	(label "get_patientData_goal")
+	(object patientData))

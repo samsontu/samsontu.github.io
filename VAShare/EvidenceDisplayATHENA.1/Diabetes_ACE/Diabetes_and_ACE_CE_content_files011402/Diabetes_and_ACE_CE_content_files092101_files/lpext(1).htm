@@ -1,0 +1,454 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0209)http://www.clinicalevidenceonline.org/lpBinCE/lpext.dll?f=templates&fn=hitlist-frame.htm&2.0&GLOBAL=G_&t=hitlist-frame.htm&ht=hitlist.htm&tf=doc&tt=document-frame.htm&G_MAIN_FRAMESET=main-h.htm&G_DOC_FRAME=doc -->
+<HTML><HEAD><TITLE>NextPage LivePublish</TITLE>
+<META content="NextPage - LivePublish" name=Author>
+<META http-equiv=Content-Type content="text/html; charset=iso8859-1"><LINK 
+href="lpext(1)_files/lpext.css" type=text/css rel=stylesheet><LINK 
+href="lpext(1)_files/bmj.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript>var _js_ = 1.0</SCRIPT>
+
+<SCRIPT language=JavaScript1.1>_js_ = 1.1</SCRIPT>
+
+<SCRIPT language=JavaScript1.2>_js_ = 1.2</SCRIPT>
+
+<SCRIPT type=text/javascript>
+	function getScriptName()
+{
+	var path = location.pathname;
+	path = path.substring(0, path.indexOf('.') + 4);
+	return path;
+}
+
+function getCookie(cookie_name) 
+{
+	var cookie = document.cookie;
+	var script_cookie_name = getScriptName() + "/" + cookie_name;
+	script_cookie_name = script_cookie_name.substring(1);
+	var index = cookie.indexOf(script_cookie_name + "=");
+	if (-1 == index) 
+	{
+		return "";
+	}
+
+	index = cookie.indexOf("=", index);
+	if (-1 == index)
+	{
+		return "";
+	}
+
+	var endstr = cookie.indexOf(";", index);
+	if (-1 == endstr) 
+	{
+		endstr = cookie.length;
+	}
+
+	var cookie_value = unescape(cookie.substring(index + 1, endstr));
+	if (cookie_value == null || cookie_value == "null" || cookie_value == "" || cookie_value.indexOf("undefined") >= 0 || cookie_value.lastIndexOf("=") == cookie_value.length - 1) 
+	{
+		cookie_value = "";
+	}
+	
+	return cookie_value;
+}
+
+
+function doClearQuery(redirect_template)
+{
+	parent.window.location = location.pathname + '?f=hitlist&t=' + redirect_template + '&c=redirect&q=';
+}
+
+
+function getFrameWindow(frame_name)
+{
+	var frame_window = null;
+
+	if(frame_name == "_self")
+	{
+		return window;
+	}
+	if (frame_name != null && frame_name.length > 0)
+	{
+		frame_window = parent.frames[frame_name]
+	}
+	else
+	{
+		frame_window = window;
+	}
+
+	return frame_window;
+}
+
+function isOfficeDocument(docPathName)
+{
+	var bRet = false;
+	var szExtension;
+	if(docPathName.length > 4)
+	{
+		szExtension = docPathName.substring(docPathName.length - 3);
+
+		if(szExtension == "doc" || szExtension == "xls" || szExtension == "ppt")
+		{
+			bRet = true;
+		}
+	}
+	return bRet;
+}
+
+function doPrevNextHit(document_frame_name, prev)
+{
+	var hit_hash = "#LPHit";
+	var hit_window = getFrameWindow(document_frame_name);
+	if (hit_window == null)
+	{
+		return false;
+	}
+
+	if(isOfficeDocument(hit_window.location.pathname))
+	{
+		if (prev)
+		{
+			return doPrevHitDoc(document_frame_name);
+		}
+		else
+		{
+			return doNextHitDoc(document_frame_name);
+		}
+	}
+	
+	// if we don't have the hitcount form then we may be an XML document.
+	if(hit_window.document.forms.length == 0)
+	{
+		return false;
+	}
+	var hit_string = hit_window.location.hash;
+	if(hit_string.length == 0)
+	{
+		hit_string = hit_hash + "1";
+	}
+	var prefix = hit_string.substring(0, hit_hash.length);
+	if (prefix == hit_hash)
+	{
+		var hit_count = parseInt(hit_window.document.LPHitCountForm.LPHitCount.value);
+		var hit = parseInt(hit_string.substring(hit_hash.length));
+
+		if ((!prev || hit > 1) && (prev || hit < hit_count))
+		{
+			if (prev)
+			{
+				hit--;
+			}
+			else
+			{
+				hit++;
+			}
+
+			hit_window.location.hash = hit_hash.substring(1) + hit;
+			
+			return true;
+		}
+		else
+		{
+			if (prev)
+			{
+				return doPrevHitDoc(document_frame_name);
+			}
+			else
+			{
+				return doNextHitDoc(document_frame_name);
+			}
+		}
+	}
+	// didn't have the hash...assume we were on a page that did not have any hits.
+	else
+	{
+		if (prev)
+		{
+			return doPrevHitDoc(document_frame_name);
+		}
+		else
+		{
+			return doNextHitDoc(document_frame_name);
+		}
+	}
+
+	return false;
+}
+
+
+function doPrevHit(document_frame_name)
+{
+	doPrevNextHit(document_frame_name, true);
+}
+
+
+function doNextHit(document_frame_name)
+{
+	doPrevNextHit(document_frame_name, false);
+}
+
+
+function doPrevDoc(document_frame_name, template)
+{
+	var doc_window = getFrameWindow(document_frame_name);
+	if (doc_window != null)
+	{
+		doc_window.location = getScriptName() + '?f=Prevdoc&t=' + template + '&';
+	}
+}
+
+
+function doNextDoc(document_frame_name, template)
+{
+	var doc_window = getFrameWindow(document_frame_name);
+	if (doc_window != null)
+	{
+		doc_window.location = getScriptName() + '?f=Nextdoc&t=' + template + '&';
+	}
+}
+
+
+function doPrevHitDoc(document_frame_name)
+{
+	var doc_window = getFrameWindow(document_frame_name);
+	if (doc_window != null)
+	{
+		doc_window.location = getScriptName() + '?f=hitlist&c=prev&an=LPHit1#LPHit1';
+	}
+}
+
+
+function doNextHitDoc(document_frame_name)
+{
+	var doc_window = getFrameWindow(document_frame_name);
+	if (doc_window != null)
+	{
+		doc_window.location = getScriptName() + '?f=hitlist&c=next&an=LPHit1#LPHit1';
+	}
+}
+
+
+function doSynchronizeContents(contents_frame_name, contents_frame_url)
+{
+  //alert('called from docnav');
+//  var tDoc = this.window.parent.doc.location.href;
+//  //alert(tDoc);
+//  var docidIndex = tDoc.indexOf("/BMJSPLITCE");
+//  //alert(docidIndex);
+//  if( docidIndex != 0)
+//  {
+//     	tDoc = tDoc.substring(docidIndex,tDoc.length);
+     	//alert(tDoc);
+     
+//     	docidIndex = tDoc.indexOf("?");
+//     	if(docidIndex != 0 )
+//     	{
+//      		tDoc = tDoc.substring(0,docidIndex);
+//      		//alert(tDoc);
+//     	}
+//
+//	     	current_document = tDoc;
+//     		current_document = escape(current_document);
+//   		//alert(current_document);
+//}
+
+	//var current_document = escape(document.parent.doc.location.href);
+	var current_document = escape(getCookie("doc"));
+	
+
+	// whack any leading slash character
+	var index = current_document.indexOf("/");
+	if (index == 0)
+	{
+	 	current_document = current_document.substring(1);
+	}
+	
+	var contents_window = getFrameWindow(contents_frame_name);
+  
+	if (contents_window != null)
+	{
+		if (contents_window.document.JTOC == null)
+		{
+			contents_window.location = contents_frame_url + '&cp=' + current_document + '&c=100&sync=2';
+		}
+		else
+		{
+			if(contents_window.document.JTOC != null)
+			{
+				contents_window.document.JTOC.syncTOC(current_document);
+			}
+			else if(contents_frame_url != null)
+			{
+				contents_window.location = contents_frame_url;
+			}
+		}
+	}
+}
+
+
+function doReference(template)
+{
+	var ref_window = window.open(template, "Reference", "width=500,height=100,resizable=yes,scrollbars=yes,toolbar=no,location=no,directories=no,status=no,menubar=no"); 
+	if (_js_ >= 1.1)
+	{
+		ref_window.focus();
+	}
+}
+
+
+function viewSearchForm(search_form_params, toc_template, no_toc_template, options)
+{
+	// search_form_params looks like this:
+	// frame-type:search-form-id
+
+	if (search_form_params != "#NoForm")
+	{
+		var delim_offset = search_form_params.indexOf(":");
+		if (delim_offset != -1)
+		{
+			var frame_type = search_form_params.substring(0, delim_offset);
+			var search_form_id = search_form_params.substring(delim_offset+1);
+			var component;
+
+			switch (frame_type)
+			{
+				case "contents":
+					component = "?f=templates&fn=" + toc_template;
+					break;
+
+				case "no-contents":
+					component = "?f=templates&fn=" + no_toc_template;
+					break;
+
+				default:
+					component = "?f=searchforms";
+					break;
+			}
+		
+			parent.window.location = getScriptName() + component + "&id=" + search_form_id + "&" + options;
+		}
+	}
+}
+
+
+//this is specifically a gloabl var
+var thesSearch = '';
+function SetThesSearch(checkswitch)
+{
+  thesSearch = checkswitch.value;
+  //alert(thesSearch);
+}
+
+function CreateQuery()
+{
+  //alert("query");
+  if (thesSearch != "")
+  {
+    //add the query
+    var thesStr = document.search.q.value;
+
+    //now add the connection string
+    var dbName = 'BMJSubAdmin';
+    var connectionStr = 'Provider=sqloledb;Data Source=io;Initial Catalog=BMJSubAdmin;User Id=thes;Password=viewer;';
+    var thesId = '37';
+    thesStr = '###' + thesSearch + "#" + dbName + '#' + connectionStr + '#' + thesId + ';;' + thesStr;
+    document.search.q.value = thesStr;
+  }
+  else
+  {
+  }  
+  
+  //alert(document.search.q.value);
+  return true;
+}
+
+
+function printTopic()
+{
+  var printUrl = '/pdf/' + this.window.parent.doc.purl;
+  //test
+  //printUrl = '/pdf/test.pdf';
+  //alert(printUrl);
+  if(printUrl == null)
+  {
+    printUrl = "";
+    printUrl = this.window.parent.doc.location.href;
+    //alert(printUrl);
+  }
+
+  printwin = window.open(printUrl,'printwin');
+  printwin.focus();
+  //printwin.print();
+
+}
+
+function GetoutMonth()
+{
+	var today = new Date();
+	var outmonth = today.getMonth();
+	var strMonth = "";
+	if(outmonth == 0)
+		strMonth = "January";
+	if(outmonth == 1)
+		strMonth = "February";
+	if(outmonth == 2)
+		strMonth = "March";
+	if(outmonth == 3)
+		strMonth = "April";
+	if(outmonth == 4)
+		strMonth = "May";
+	if(outmonth == 5)
+		strMonth = "June";
+	if(outmonth == 6)
+		strMonth = "July";
+	if(outmonth == 7)
+		strMonth = "August";
+	if(outmonth == 8)
+		strMonth = "September";
+	if(outmonth == 9)
+		strMonth = "October";
+	if(outmonth == 10)
+		strMonth = "November";
+	if(outmonth == 11)
+		strMonth = "December";
+	return strMonth; 
+
+}
+
+function GetOutYear()
+{
+	var today = new Date();
+	outyear = today.getFullYear();
+	return outyear; 
+
+}
+
+var loaded = true;
+//automatically synchronise the toc
+//doSynchronizeContents('toc', '<!-- #TEMPLATES:search-login.htm -->&ADV_QUERY=false');
+
+//check if someone is browsing the toc they should have our top navigation bar
+//if (parent.docnav.AbbeyTop != true)
+//  parent.docnav.location.href='<!-- #TEMPLATES:top.htm -->&GLOBAL=G_&G_DOCUMENT_TEMPLATE=document-frame.htm';
+  
+	</SCRIPT>
+
+<SCRIPT type=text/javascript>
+		function HitList_OnClick(_this)
+		{
+			return true;
+		}
+		function HitList_OnMouseOver(_this)
+		{
+			return true;
+		}
+		function HitList_OnMouseOut(_this)
+		{
+			return true;
+		}
+	</SCRIPT>
+
+<META content="MSHTML 5.50.4807.2300" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff>
+<H3>Search Results</H3>
+<P>There is currently no active search. After performing a search, the resulting 
+list of documents will be displayed here.</P></BODY></HTML>

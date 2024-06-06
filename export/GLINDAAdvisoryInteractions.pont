@@ -1,0 +1,1008 @@
+; Mon Oct 05 15:04:05 PDT 2015
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot label
+;+		(comment "Short descriptive string that names the concept represented by the instance")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot messages
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot relative_contraindications
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot replacing_activity_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Add_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot evaluated_intervention
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Activity_Evaluation)
+		(create-accessor read-write))
+	(single-slot drug1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot goal
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot evaluated_goal
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write))
+	(single-slot add_drug_recommendation
+		(type INSTANCE)
+;+		(allowed-classes AddDelete_Evaluation)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot replaced_activity_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Delete_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot replace_activity
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot DrugBank_drug2_ID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot assumption
+		(type STRING)
+		(create-accessor read-write))
+	(multislot compelling_indications
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot goal_parameter
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot truth_value
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action_class
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot value
+;+		(comment "Value of a measurement or an observation")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot prior_use
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot references
+;+		(comment "The set of supporting materials that document or amply this part of guideline.")
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot DrugBank_drug2_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot action
+		(type INSTANCE)
+;+		(allowed-classes Action)
+		(create-accessor read-write))
+	(single-slot type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot inconsistent_patient_characterization
+		(type INSTANCE)
+;+		(allowed-classes Conclusion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot inconsistent_goals
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write))
+	(multislot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+		(create-accessor read-write))
+	(single-slot contraindication-evaluations
+		(type INSTANCE)
+;+		(allowed-classes Add_Evaluation)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot text
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot indication-evaluations
+		(type INSTANCE)
+;+		(allowed-classes AddDelete_Evaluation)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot maximum_number_intervention
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot change_attribute
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot attribute_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot activity
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot relative_indications
+		(type STRING)
+		(create-accessor read-write))
+	(multislot advisory
+		(type INSTANCE)
+;+		(allowed-classes Advisory)
+		(create-accessor read-write))
+	(single-slot evaluated_action
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drug_partner_to_avoid
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot DrugBank_drug1_ID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot subject_classification
+		(type INSTANCE)
+;+		(allowed-classes Conclusion)
+		(create-accessor read-write))
+	(single-slot support
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot level
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot achieved
+		(type INSTANCE)
+;+		(allowed-classes Goal_State)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot clinical_algorithm_node
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot case_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parameter
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot change_direction
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot supporting_data
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot activity_to_delete
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot assumption_for_guideline
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot delete
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot evaluations
+		(type INSTANCE)
+;+		(allowed-classes Evaluation)
+		(create-accessor read-write))
+	(multislot contraindications
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot rationale
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot number_of_med_orders
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot add
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reason_for_goal
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot side_effects
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot guideline_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot interaction
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot scenario_choice
+		(type INSTANCE)
+;+		(allowed-classes Scenario_Choice)
+		(create-accessor read-write))
+	(single-slot operator
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot child
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot add_intervention_violations
+		(type INSTANCE)
+;+		(allowed-classes Add_Evaluation)
+		(create-accessor read-write))
+	(multislot current_med
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot scenario_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drug_partner
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot DrugBank_drug1_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot preference
+		(type INSTANCE)
+;+		(allowed-classes Preference)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot activity_to_add
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot all_med
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Maximum_Number_Intervention_Metaclass
+	(is-a %3ASTANDARD-CLASS)
+	(role concrete)
+	(single-slot maximum_number_intervention
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot rationale
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot references
+;+		(comment "The set of supporting materials that document or amply this part of guideline.")
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-ENGINE
+	(is-a %3ASYSTEM-CLASS)
+	(role concrete)
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFINITION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFGLOBAL
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFTEMPLATE
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFFACTS
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMESSAGE-HANDLER
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMETHOD
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3ARULE
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-RULE
+	(is-a %3AJESS-DEFINITION %3ARULE)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AFUNCTION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-FUNCTION
+	(is-a %3AFUNCTION %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Advisory_Component
+	(is-a USER)
+	(role concrete)
+	(single-slot case_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Action
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot text
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action_class
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot support
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Advisory
+	(is-a Advisory_Component)
+	(role concrete)
+	(multislot scenario_choice
+		(type INSTANCE)
+;+		(allowed-classes Scenario_Choice)
+		(create-accessor read-write))
+	(multislot assumption
+		(type STRING)
+		(create-accessor read-write))
+	(multislot subject_classification
+		(type INSTANCE)
+;+		(allowed-classes Conclusion)
+		(create-accessor read-write))
+	(multislot evaluated_goal
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write))
+	(multislot evaluated_intervention
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Activity_Evaluation)
+		(create-accessor read-write))
+	(single-slot clinical_algorithm_node
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Advisories
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot number_of_med_orders
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot advisory
+		(type INSTANCE)
+;+		(allowed-classes Advisory)
+		(create-accessor read-write))
+	(multislot current_med
+		(type STRING)
+		(create-accessor read-write))
+	(multislot all_med
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Scenario_Choice
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot scenario_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot preference
+		(type INSTANCE)
+;+		(allowed-classes Preference)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot support
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Support
+	(is-a Advisory_Component)
+	(role concrete))
+
+(defclass Guideline_Activity_Evaluation
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot activity
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot evaluations
+		(type INSTANCE)
+;+		(allowed-classes Evaluation)
+		(create-accessor read-write)))
+
+(defclass Guideline_Goal
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot goal_parameter
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot achieved
+		(type INSTANCE)
+;+		(allowed-classes Goal_State)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot reason_for_goal
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot goal
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot supporting_data
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Conclusion
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot value
+;+		(comment "Value of a measurement or an observation")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot support
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parameter
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Criterion_Evaluation
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot truth_value
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Simple_Criterion_Evaluation
+	(is-a Criterion_Evaluation)
+	(role concrete)
+	(single-slot supporting_data
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Complex_Criterion_Evaluation
+	(is-a Criterion_Evaluation)
+	(role concrete)
+	(single-slot operator
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot child
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Evaluation
+	(is-a Advisory_Component)
+	(role concrete))
+
+(defclass AddDelete_Evaluation
+	(is-a Evaluation)
+	(role concrete)
+	(multislot messages
+		(type STRING)
+		(create-accessor read-write))
+	(multislot drug_partner_to_avoid
+		(type STRING)
+		(create-accessor read-write))
+	(multislot relative_contraindications
+		(type STRING)
+		(create-accessor read-write))
+	(multislot compelling_indications
+		(type STRING)
+		(create-accessor read-write))
+	(multislot side_effects
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot guideline_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drug_partner
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot activity
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot contraindications
+		(type STRING)
+		(create-accessor read-write))
+	(multislot relative_indications
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot preference
+		(type INSTANCE)
+;+		(allowed-classes Preference)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Delete_Evaluation
+	(is-a AddDelete_Evaluation)
+	(role concrete))
+
+(defclass Add_Evaluation
+	(is-a AddDelete_Evaluation)
+	(role concrete)
+	(single-slot prior_use
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Change_Attribute_Evaluation
+	(is-a Evaluation)
+	(role concrete)
+	(multislot messages
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot preference
+		(type INSTANCE)
+;+		(allowed-classes Preference)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot attribute_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot change_direction
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot level
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass BeingReplaced_Evaluation
+	(is-a Evaluation)
+	(role concrete)
+	(single-slot replaced_activity_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Delete_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot replacing_activity_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Add_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot activity_to_add
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Replacing_Evaluation
+	(is-a Evaluation)
+	(role concrete)
+	(single-slot activity_to_delete
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot replaced_activity_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Delete_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot replacing_activity_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Add_Evaluation)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Advisory_Interaction
+	(is-a USER)
+	(role concrete)
+	(single-slot case_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Multi-Activity_Interaction "Definition\nMulti-activity interaction occurs when two or more interventions, either recommended by guidelines or existing in the HER, interact with each other.\nExample\nCumulative Number Constraint\nDrug-Drug Interaction\nTiming Interaction"
+	(is-a Advisory_Interaction)
+	(role abstract))
+
+(defclass Cumulative_Number_Constraint "Definition\nCumulative Number Constraint interaction occurs when the cumulative number of recommended interventions from all applicable guidelines violates some constraint indicated by one of the guidelines.\nExample\nThe Institute for Clinical System Improvement Prevention of Falls (Acute Care) guideline suggests that elderly patients on four or more drugs are at greater risk of falls."
+	(is-a Multi-Activity_Interaction)
+	(role concrete))
+
+(defclass Maximum_Number_Drug_Constraint "An example of cumulative number constraint where the constraint is a maximum number of recommended interventions."
+	(is-a Cumulative_Number_Constraint)
+	(role concrete)
+	(multislot add_intervention_violations
+		(type INSTANCE)
+;+		(allowed-classes Add_Evaluation)
+		(create-accessor read-write)))
+
+(defclass Timing_Interaction "Definition\nA timing interaction occurs when the timings of two interventions should be adjusted because the presence of both.\nExample\nTwo laboratory tests recommended by two guidelines may be consolidated on the same visit."
+	(is-a Multi-Activity_Interaction)
+	(role concrete))
+
+(defclass Drugs_to_Coalesce "Definition: A \"drugs to coalesce\" interaction occurs when two guidelines recommend similar drugs such that the two drug recommendations should be reconciled and coalesce into one.\nExample: The ATHENA hypertension guideline recommends adding cardioselective beta-blocker (with atenolol or metoprolol as formulary-preferred drug) while the ATHENA heart failure guideline recommends beta-blocker with carvedilol as the preferred formulary drug."
+	(is-a Multi-Activity_Interaction)
+	(role concrete)
+	(multislot evaluations
+		(type INSTANCE)
+;+		(allowed-classes Evaluation)
+		(create-accessor read-write)))
+
+(defclass Drug-Drug_Interaction "Definition\nA drug–drug interaction occurs when two drugs have physiological effects that are not present when each drug is given alone."
+	(is-a Multi-Activity_Interaction)
+	(role abstract))
+
+(defclass Recommended_Drug-Existing_Drug_Interaction "An recommended_drug–existing_drug interaction occurs when a new drug recommended a guidelines and an existing drug have physiological effects that are not present when each drug is given alone."
+	(is-a Drug-Drug_Interaction)
+	(role concrete)
+	(single-slot interaction
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot add_drug_recommendation
+		(type INSTANCE)
+;+		(allowed-classes AddDelete_Evaluation)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Existing_Drug-Drug_Interaction "An existing_drug–existing_drug interaction occurs when two currently prescribed drugs have physiological effects that are not present when each drug is given alone."
+	(is-a Drug-Drug_Interaction)
+	(role concrete)
+	(single-slot interaction
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Two_Recommended_Drugs_Interaction "Definition\nA 'two-recommended drugs' interaction occurs when two drugs recommended by two different guidelines have physiological effects that are not present when each drug is given alone."
+	(is-a Drug-Drug_Interaction)
+	(role concrete))
+
+(defclass Single_Activity_Interaction "A single-activity interaction occurs when, for the same intervention, two guidelines have different recommendations."
+	(is-a Advisory_Interaction)
+	(role concrete))
+
+(defclass Support_Across_Guidelines "A support-across-guidelines interaction occurs when two guidelines have different levels of support for the same recommendation."
+	(is-a Single_Activity_Interaction)
+	(role abstract))
+
+(defclass Consistent_Negative_Support "Definition\nA consistent negative support interaction occurs when two guidelines both suggest that a particular intervention is not appropriate for the patient."
+	(is-a Support_Across_Guidelines)
+	(role concrete)
+	(multislot evaluations
+		(type INSTANCE)
+;+		(allowed-classes Evaluation)
+		(create-accessor read-write)))
+
+(defclass Consistent_Positive_Support "Definition\nA consistent positive support interaction occurs when two guidelines both recommend that a intervention be given."
+	(is-a Support_Across_Guidelines)
+	(role concrete)
+	(multislot evaluations
+		(type INSTANCE)
+;+		(allowed-classes Evaluation)
+		(create-accessor read-write)))
+
+(defclass Contradictory_Support "An intervention is indicated (preferred) in guideline G1 advisory but has (relative or strong) contraindications in guideline G2"
+	(is-a Support_Across_Guidelines)
+	(role concrete)
+	(single-slot indication-evaluations
+		(type INSTANCE)
+;+		(allowed-classes AddDelete_Evaluation)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot contraindication-evaluations
+		(type INSTANCE)
+;+		(allowed-classes Add_Evaluation)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Mixed_Support "Definition\nA mixed-support interaction occurs when each of the two guidelines has evidence both for and against the use of an intervention for the patient."
+	(is-a Support_Across_Guidelines)
+	(role concrete)
+	(multislot evaluations
+		(type INSTANCE)
+;+		(allowed-classes Evaluation)
+		(create-accessor read-write)))
+
+(defclass Inconsistent_Preference "Inconsistent preference occrurs when the preference for one intervenion needs modification given the conclusions reached in a second guideline."
+	(is-a Support_Across_Guidelines)
+	(role concrete)
+	(multislot evaluations
+		(type INSTANCE)
+;+		(allowed-classes Evaluation)
+		(create-accessor read-write)))
+
+(defclass Collateral_Effect "Definition\nA collateral effect interaction occurs when a drug recommended in one guideline has physiological effects relevant to the management of a second disease.\nExample\nAccording to the ACCF/AHA Practice Guideline for Heart Failure, the use of calcium channel blockers with negative inotropic effects is not recommended in asymptomatic patients with ejection fraction less than 40% after myocardial infarction [2]. In the discussion on the use of calcium channel blocker in the JNC 7 guideline for the management of hypertension, this precaution for patients with ejection fraction less than 40% is not mentioned."
+	(is-a Inconsistent_Preference)
+	(role concrete))
+
+(defclass Contraindicated "Definition\nA contraindicated interaction is a special case of the contradictory support interaction when one guideline rules out one intervention that is nto ruled out by another guideline."
+	(is-a Inconsistent_Preference Contradictory_Support)
+	(role concrete))
+
+(defclass Dose_Modification_Level_Difference "Definition\nA dose-modification-level difference occurs when two guidelines recommend different dose levels for the same drug."
+	(is-a Single_Activity_Interaction)
+	(role concrete))
+
+(defclass Dose_Modification_Rate_Difference "Definition\nA dose-modification-rate difference occurs when two guidelines recommend different titration speed."
+	(is-a Single_Activity_Interaction)
+	(role concrete))
+
+(defclass Inconsistent_Goal "Definition\nWhen two guidelines prescribe for the same patient different targets for the same clinical parameters (e.g., blood pressure), the two guidelines have inconsistent goals."
+	(is-a Advisory_Interaction)
+	(role concrete)
+	(multislot inconsistent_goals
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write)))
+
+(defclass Inconsistent_Patient_Characterizations "Definition\nAn inconsistent patient characterizations occurs when two guidelines define a patient characteristics differently.\nExample\nIn the JNC 7 guideline for the management of hypertention, for the purpose of setting the target blood pressure or selecting a medication to prescribe, a patient is considered to have chronic kidney disease (CKD) if a recent eGFR is less than 60. In the VA CKD guideline, on the other hand, a patient is considered to have CKD if there are two eGFR results that are less 60 and that are 3 months apart."
+	(is-a Advisory_Interaction)
+	(role concrete)
+	(single-slot inconsistent_patient_characterization
+		(type INSTANCE)
+;+		(allowed-classes Conclusion)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Value_Set
+	(is-a USER)
+	(role concrete)
+	(single-slot label
+;+		(comment "Short descriptive string that names the concept represented by the instance")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Goal_State
+	(is-a Value_Set)
+	(role concrete))
+
+(defclass Preference
+	(is-a Value_Set)
+	(role concrete))
+
+(defclass Truth_Value
+	(is-a Value_Set)
+	(role concrete))
+
+(defclass DD_Interaction
+	(is-a USER)
+	(role concrete)
+	(single-slot DrugBank_drug2_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot DrugBank_drug2_ID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot DrugBank_drug1_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot interaction
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot DrugBank_drug1_ID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))

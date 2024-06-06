@@ -1,0 +1,77 @@
+; Tue Feb 21 12:11:17 PST 2012
+; 
+;+ (version "3.4.5")
+;+ (build "Build 585")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract))
+
+(defclass Allergy+to+Sulfonylureas
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass new-onset+insulin-requiring+DM
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass BMI%3E25%3F%3F%3F
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Creatinine+%3E+1.4+and+Female
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Creatinine+%3E+1.5+and+Male
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass BMI%3E25
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass BMI%3E%3D29
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Age%3E80+yrs
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass CHF+requiring+pharmacologic+management
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Chronic+metabolic+acidosis
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass eGFR+%3C+30 "ADA 2009 guideline?"
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Age%3E%3D65+and+creatinine%3E%3D2
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Serum+creatinine+%3E%3D2
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Edema
+	(is-a Signs)
+	(role concrete))
+
+(defclass Weight+gain
+	(is-a Symptoms)
+	(role concrete))
+
+(defclass Hypersensitivity+to+Chlorpropamide
+	(is-a Symptoms)
+	(role concrete))
+
+(defclass B+12
+	(is-a Blood_Chemistry)
+	(role concrete))

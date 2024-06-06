@@ -1,0 +1,185 @@
+<patientdata>
+<patient name="1016715">
+<meds>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">0</field2>
+	<start>Fri Apr 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Drug">benazepril</field1>
+	<field2 label="Daily Dose">40</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Drug">carvedilol</field1>
+	<field2 label="Daily Dose">12.5</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Drug">glipizide</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">12</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">3</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Drug">simvastatin</field1>
+	<field2 label="Daily Dose">1</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Drug">simvastatin</field1>
+	<field2 label="Daily Dose">40</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Coronary_Artery_Disease</field1>
+	<start>Wed Feb 21 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Dx">DM-Type2</field1>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">88</field2>
+	<start>Thu Feb 08 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">77</field2>
+	<start>Thu Feb 08 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">70</field2>
+	<start>Thu Feb 08 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">140</field2>
+	<start>Thu Feb 08 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">275</field2>
+	<start>Thu Feb 08 00:00:00 PST 1962</start>
+</item>
+</clinicalSigns>
+<adr>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">4.3</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">102</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">17</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">9.6</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">103</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">0.8</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">41.6</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">14.1</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">179</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">4.2</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">40</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">95</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">140</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">target_HBA1c</field1>
+	<field2 label="Value">7.0</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.5</field2>
+	<start>Tue Feb 20 00:00:00 PST 1962</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">7.3</field2>
+	<start>Fri Feb 23 00:00:00 PST 1962</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">62</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">White_Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Male</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

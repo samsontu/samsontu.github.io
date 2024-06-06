@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8"?><patientdata>
+<patient name="Test Case1: DM Needs Screening">
+    <meds>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Hypertension</field1>
+            <field2 label="ICD9">401.1</field2>
+            <start>Fri Feb 24 14:48:52 PST 2006</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">0.0</field2>
+            <start>Thu Jul 24 14:04:08 PDT 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">57</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case2: DM needs screening">
+    <meds>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes-Mellitus-Type1</field1>
+            <field2 label="ICD9">250.31</field2>
+            <start>Sun Aug 13 15:59:28 PDT 2006</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case: DM Limbthreat">
+    <meds>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Systemic infection</field1>
+            <field2 label="ICD9">000</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes-Mellitus-Type2</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">59</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">B1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case:High risk foot">
+    <meds>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Foot deformities</field1>
+            <field2 label="ICD9">001</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">35</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">A1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case: DM Minor lesion 4 weeks ago">
+    <meds>
+        <item>
+            <field1 label="Drug">NJanoxen</field1>
+            <field2 label="Daily Dose"> 4</field2>
+            <start>Wed Jan 23 14:14:06 PST 2008</start>
+            <end>Mon Feb 11 14:14:06 PST 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">minor lesion</field1>
+            <field2 label="ICD9">yes</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Minor lesion diagnosed ~4weeks ago</field1>
+            <field2 label="ICD9">true</field2>
+            <start>Mon Jan 14 18:36:19 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Minor lesion diagnosed ~4weeks ago</field1>
+            <field2 label="ICD9">true</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Atrial_Tachycardia</field1>
+            <field2 label="ICD9">423.0</field2>
+            <start>Mon Dec 22 14:24:45 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Coronary_Artery_Disease</field1>
+            <field2 label="ICD9">414.01</field2>
+            <start>Mon Dec 22 14:24:51 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Heart_Block_2nd_Or_3rd_Degree</field1>
+            <field2 label="ICD9">411.12</field2>
+            <start>Mon Dec 22 14:24:58 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Hypertension</field1>
+            <field2 label="ICD9">401.9</field2>
+            <start>Mon Dec 22 14:12:06 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">PVD</field1>
+            <field2 label="ICD9">443.81</field2>
+            <start>Mon Dec 22 14:12:12 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Angina</field1>
+            <field2 label="ICD9">413.0</field2>
+            <start>Mon Dec 22 14:12:19 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Hypertension_Complicated_by_Heart_Failure</field1>
+            <field2 label="ICD9">402.91</field2>
+            <start>Mon Dec 22 14:12:23 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Rheumatic_Disease_Complicated_by_Heart_Failure</field1>
+            <field2 label="ICD9">398.91</field2>
+            <start>Mon Dec 22 14:12:37 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Heart_Failure</field1>
+            <field2 label="ICD9">428.1</field2>
+            <start>Mon Dec 22 14:12:44 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Cardiomegaly</field1>
+            <field2 label="ICD9">49.3</field2>
+            <start>Mon Dec 22 14:12:48 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Cardiomyopathy</field1>
+            <field2 label="ICD9">412.4</field2>
+            <start>Mon Dec 22 14:11:01 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Myocardial_Infarction</field1>
+            <field2 label="ICD9">423.12</field2>
+            <start>Mon Dec 22 14:11:06 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Pacemaker</field1>
+            <field2 label="ICD9">V45.01</field2>
+            <start>Mon Dec 22 14:11:14 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Cardiovascular disease, unspecified</field1>
+            <field2 label="ICD9">49.2</field2>
+            <start>Mon Dec 22 14:11:24 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+        <item>
+            <field1 label="Sign">Overall_ADL</field1>
+            <field2 label="Value"> 6</field2>
+            <start>Sun Feb 03 23:52:40 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Sign">Average_Pain_in_Last_Week</field1>
+            <field2 label="Value"> 8</field2>
+            <start>Sun Feb 03 23:52:48 PST 2008</start>
+        </item>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">Amphetamines UDS</field1>
+            <field2 label="Value">Neg</field2>
+            <start>Sat Jan 05 00:49:00 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">Febijuana UDS</field1>
+            <field2 label="Value">Neg</field2>
+            <start>Fri Jan 04 13:49:26 PST 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">85</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">C1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case: DM wound not healed 4weeks (Feb 28 2008)">
+    <meds>
+        <item>
+            <field1 label="Drug">Acetaminophen</field1>
+            <field2 label="Daily Dose"> 500.00</field2>
+            <start>Sun Feb 24 14:48:26 PST 2008</start>
+            <end>Mon Feb 11 14:48:26 PST 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">minor lesion</field1>
+            <field2 label="ICD9">0.0</field2>
+            <start>Thu Feb 28 14:48:52 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Syndrome</field1>
+            <field2 label="ICD9">Kidney Disease (Creatnine)</field2>
+            <start>Sat May 31 01:59:14 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+        <item>
+            <field1 label="Sign">Overall_ADL</field1>
+            <field2 label="Value"> 5</field2>
+            <start>Thu Jul 03 21:12:52 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Sign">Average_Pain_in_Last_Week</field1>
+            <field2 label="Value"> 7</field2>
+            <start>Thu Jul 03 21:13:00 PDT 2008</start>
+        </item>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">Creatinine</field1>
+            <field2 label="Value">2.7</field2>
+            <start>Mon Jan 21 23:00:00 PST 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">43</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">D1</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">ZipCode</field1>
+            <field2 label="Value">94706</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case: DM circulatory symptoms">
+    <meds>
+        <item>
+            <field1 label="Drug">Codeine</field1>
+            <field2 label="Daily Dose">30</field2>
+            <start>Sun Feb 24 02:39:23 PST 2008</start>
+            <end>Sun Feb 10 02:39:23 PST 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">Felodipine</field1>
+            <field2 label="Daily Dose">0.0</field2>
+            <start>Sun Feb 24 02:39:48 PST 2008</start>
+            <end>Sun Feb 10 02:39:48 PST 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">Cyanocobalamin</field1>
+            <field2 label="Daily Dose">0.0</field2>
+            <start>Sun Feb 24 02:40:01 PST 2008</start>
+            <end>Sun Feb 10 02:40:01 PST 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">Gabapentin</field1>
+            <field2 label="Daily Dose">0.0</field2>
+            <start>Sun Feb 24 02:40:25 PST 2008</start>
+            <end>Sun Feb 10 02:40:25 PST 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">SODIUM CHLORIDE SOLN,SPRAY,NASAL</field1>
+            <field2 label="Daily Dose">0.0</field2>
+            <start>Fri Jan 25 01:12:39 PST 2008</start>
+            <end>Thu May 22 02:12:39 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">HERED SENSORY NEUROPATHY</field1>
+            <field2 label="ICD9">356.2</field2>
+            <start>Tue Jan 22 00:02:04 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">circulatory symptoms that limit patients lifestyle</field1>
+            <field2 label="ICD9"> 0004</field2>
+            <start>Sun Jan 13 00:03:24 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Peripheral Neuropathy</field1>
+            <field2 label="ICD9"> 355.9</field2>
+            <start>Wed Feb 13 00:04:38 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">HYPERLIPIDEMIA NEC/NOS</field1>
+            <field2 label="ICD9">232.4</field2>
+            <start>Sun Jan 13 00:06:40 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">HYPERPLASIA OF PROSTATE</field1>
+            <field2 label="ICD9">600.</field2>
+            <start>Sun Jan 13 00:07:26 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">HEADACHE</field1>
+            <field2 label="ICD9">784.0</field2>
+            <start>Sun Jan 13 00:07:35 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">MONONEURITIS NOS</field1>
+            <field2 label="ICD9">355.9</field2>
+            <start>Sun Jan 13 00:08:34 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">POSTHERPES TRIGEM NEURAL</field1>
+            <field2 label="ICD9">053.12</field2>
+            <start>Sun Jan 13 00:09:01 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">BENIGN HYPERTENSION</field1>
+            <field2 label="ICD9">401.1</field2>
+            <start>Sun Jan 13 00:09:28 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+        <item>
+            <field1 label="Sign">Overall_ADL</field1>
+            <field2 label="Value">4</field2>
+            <start>Sat Aug 30 00:38:30 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Sign">Average_Pain_in_Last_Week</field1>
+            <field2 label="Value"> 7</field2>
+            <start>Sat Aug 30 00:38:38 PDT 2008</start>
+        </item>
+    </clinicalSigns>
+    <adr>
+        <item>
+            <field1 label="ADR">Acetaminophen</field1>
+            <start>Sat Jan 05 01:09:33 PST 2008</start>
+        </item>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">CREATININE</field1>
+            <field2 label="Value">1.6</field2>
+            <start>Sat Dec 31 02:31:02 PST 2005</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">93</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">D1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Chris">
+    <meds>
+        <item>
+            <field1 label="Drug">Docusate</field1>
+            <field2 label="Daily Dose"> 120</field2>
+            <start>Tue Jan 29 01:12:41 PST 2008</start>
+            <end>Thu May 29 02:12:41 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">Hydrocodone</field1>
+            <field2 label="Daily Dose"> 30</field2>
+            <start>Tue Jan 29 01:13:42 PST 2008</start>
+            <end>Thu May 29 02:13:42 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">Codeine</field1>
+            <field2 label="Daily Dose"> 180</field2>
+            <start>Fri Feb 29 02:25:34 PST 2008</start>
+            <end>Tue Aug 12 02:25:34 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">ASPIRIN</field1>
+            <field2 label="Daily Dose"> 81</field2>
+            <start>Tue Jan 29 01:21:42 PST 2008</start>
+            <end>Thu May 29 02:21:42 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Lumbago</field1>
+            <field2 label="ICD9">724.2</field2>
+            <start>Tue Jan 29 01:23:44 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">POLYCYSTIC KIDNEY NOS TYPE</field1>
+            <field2 label="ICD9">753.12</field2>
+            <start>Tue Jan 29 01:11:57 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Obstructive_Pulmonary_Disease</field1>
+            <field2 label="ICD9">491.0</field2>
+            <start>Sun Jun 01 22:52:42 PDT 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+        <item>
+            <field1 label="Sign">Pain</field1>
+            <field2 label="Value"> 6</field2>
+            <start>Fri Feb 29 02:18:02 PST 2008</start>
+        </item>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">CREATININE</field1>
+            <field2 label="Value">1.6</field2>
+            <start>Sun Jan 27 01:18:51 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALBUMIN</field1>
+            <field2 label="Value">3.8</field2>
+            <start>Sat Jan 12 02:19:23 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">AST</field1>
+            <field2 label="Value">22</field2>
+            <start>Tue Jan 29 01:19:52 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALT</field1>
+            <field2 label="Value">21</field2>
+            <start>Tue Jan 29 01:20:39 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">Alkaline_phosphatase</field1>
+            <field2 label="Value">33</field2>
+            <start>Tue Jan 29 01:21:01 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">Total_Bilirubin</field1>
+            <field2 label="Value">1.1</field2>
+            <start>Tue Jan 29 01:21:42 PST 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">74</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">H1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Jean">
+    <meds>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">31</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">G1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Cesar">
+    <meds>
+        <item>
+            <field1 label="Drug">IBUPROFEN</field1>
+            <field2 label="Daily Dose"> 800MG</field2>
+            <start>Fri May 13 11:20:21 PDT 2005</start>
+            <end>Tue Jul 01 11:20:21 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">DIPLOPIA</field1>
+            <field2 label="ICD9">368.2</field2>
+            <start>Sun Jun 01 11:18:44 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Displacement of lumbar intervertebral disc without myelopathy</field1>
+            <field2 label="ICD9">722.23</field2>
+            <start>Sun Jun 01 11:19:46 PDT 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">Albumen</field1>
+            <field2 label="Value">4.1     g/dL       3.0 - 5.5</field2>
+            <start>Sun Jul 03 11:23:32 PDT 2005</start>
+        </item>
+        <item>
+            <field1 label="Lab">AST/GOT</field1>
+            <field2 label="Value">20     IU/L       0 - 41</field2>
+            <start>Sun Jul 03 00:00:00 PDT 2005</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALT/GPT</field1>
+            <field2 label="Value">23     IU/L       0 - 45</field2>
+            <start>Sun Jul 03 00:00:00 PDT 2005</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALK PHOSPHATASE</field1>
+            <field2 label="Value">72     IU/L       30 - 125</field2>
+            <start>Sun Jun 01 11:12:45 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALK PHOSPHATASE</field1>
+            <field2 label="Value">72     IU/L       30 - 125</field2>
+            <start>Sun Jun 01 11:12:45 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALK PHOSPHATASE</field1>
+            <field2 label="Value">72     IU/L       30 - 125</field2>
+            <start>Sun Jun 01 11:12:45 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALK PHOSPHATASE</field1>
+            <field2 label="Value">72     IU/L       30 - 125</field2>
+            <start>Sun Jun 01 11:12:45 PDT 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">30</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">H1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Bruce">
+    <meds>
+        <item>
+            <field1 label="Drug">DIAZEPAM</field1>
+            <field2 label="Daily Dose"> 5MG</field2>
+            <start>Tue Feb 26 14:12:37 PST 2008</start>
+            <end>Thu Sep 25 14:12:37 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">CYCLOBENZJanINE</field1>
+            <field2 label="Daily Dose">23MG</field2>
+            <start>Tue Nov 01 14:28:06 PST 2005</start>
+            <end>Tue Jul 01 14:28:06 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Palpitations</field1>
+            <field2 label="ICD9">785.1</field2>
+            <start>Sun Jun 01 14:23:11 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">PMS</field1>
+            <field2 label="ICD9">612.4</field2>
+            <start>Sun Jun 01 14:23:40 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Panic Attacks</field1>
+            <field2 label="ICD9">300.01</field2>
+            <start>Sun Jun 01 14:24:05 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Allergic rhinitis</field1>
+            <field2 label="ICD9">477.9</field2>
+            <start>Sun Jun 01 14:24:09 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Low Back Pain</field1>
+            <field2 label="ICD9">724.2</field2>
+            <start>Sun Jun 01 14:24:53 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">MASS,BENIGN</field1>
+            <field2 label="ICD9">221.</field2>
+            <start>Sun Jun 01 14:12:25 PDT 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+        <item>
+            <field1 label="ADR">NASALIDE</field1>
+            <start>Sun Jun 01 14:09:23 PDT 2008</start>
+        </item>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">Albumen</field1>
+            <field2 label="Value">4.1     g/dL       3.0 - 5.5</field2>
+            <start>Tue Jun 14 14:09:51 PDT 2005</start>
+        </item>
+        <item>
+            <field1 label="Lab">AST/GOT</field1>
+            <field2 label="Value">24     IU/L       0 - 41</field2>
+            <start>Tue Jun 14 14:30:36 PDT 2005</start>
+        </item>
+        <item>
+            <field1 label="Lab">ALT/GPT</field1>
+            <field2 label="Value">23     IU/L       0 - 45</field2>
+            <start>Tue Jun 14 14:31:20 PDT 2005</start>
+        </item>
+        <item>
+            <field1 label="Lab">Total_Bilirubin</field1>
+            <field2 label="Value">0.9     mg/dl      0.2 - 1.3</field2>
+            <start>Tue Jun 14 14:31:50 PDT 2005</start>
+        </item>
+        <item>
+            <field1 label="Lab">Creatinine</field1>
+            <field2 label="Value">0.9     mg/dl      0.4 - 1.3</field2>
+            <start>Tue Jun 14 14:33:25 PDT 2005</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">39</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Pain Score</field1>
+            <field2 label="Value">1</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">I1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Bartoldo">
+    <meds>
+        <item>
+            <field1 label="Drug">METHYLPHENIDATE</field1>
+            <field2 label="Daily Dose"> 30</field2>
+            <start>Sun Jan 13 00:24:11 PST 2008</start>
+            <end>Wed Jul 02 01:24:11 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">IBUPROFEN</field1>
+            <field2 label="Daily Dose"> 2600</field2>
+            <start>Sat Feb 02 01:12:07 PST 2008</start>
+            <end>Wed Jul 02 01:12:07 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">DOCUSATE</field1>
+            <field2 label="Daily Dose"> 500</field2>
+            <start>Sat Feb 02 01:11:14 PST 2008</start>
+            <end>Wed Jul 02 01:11:14 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">TRAZODONE</field1>
+            <field2 label="Daily Dose"> 400</field2>
+            <start>Mon Jun 02 01:28:02 PDT 2008</start>
+            <end>Wed Jul 02 01:28:02 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">VENLAFAXINE XR CAP,SA</field1>
+            <field2 label="Daily Dose"> 300</field2>
+            <start>Sat Feb 02 01:28:38 PST 2008</start>
+            <end>Wed Jul 02 01:28:38 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">ZIPRASIDONE CAP</field1>
+            <field2 label="Daily Dose"> 20</field2>
+            <start>Sat Feb 02 01:33:38 PST 2008</start>
+            <end>Wed Jul 02 01:33:38 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">ARIPIPRAZOLE TAB</field1>
+            <field2 label="Daily Dose">25</field2>
+            <start>Mon Jun 02 01:35:13 PDT 2008</start>
+            <end>Wed Jul 02 01:35:13 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">borderline personality disorder</field1>
+            <field2 label="ICD9">799.9</field2>
+            <start>Mon Jun 02 01:14:38 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Neck Stiffness from whiplash of recent MVA</field1>
+            <field2 label="ICD9">799.9</field2>
+            <start>Mon Jun 02 01:25:23 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">DDD SPINE UNSPEC</field1>
+            <field2 label="ICD9">722.6</field2>
+            <start>Mon Jun 02 01:25:55 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Cocaine abuse, in remission</field1>
+            <field2 label="ICD9">305.63</field2>
+            <start>Tue Jan 27 01:26:21 PST 2004</start>
+        </item>
+        <item>
+            <field1 label="Dx">Gastroesophageal Reflux Disorder</field1>
+            <field2 label="ICD9">530.81</field2>
+            <start>Mon Jun 02 01:21:11 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">EATING DISORDER, UNSPEC</field1>
+            <field2 label="ICD9">307.50</field2>
+            <start>Mon Jun 02 01:21:40 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">PROLONG POSTTRAUM STRESS</field1>
+            <field2 label="ICD9">309.81</field2>
+            <start>Mon Jun 02 01:20:18 PDT 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+        <item>
+            <field1 label="ADR">CARBAMAZEPINE</field1>
+            <start>Mon Jun 02 01:22:44 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="ADR">BUPROPION</field1>
+            <start>Mon Jun 02 01:23:39 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="ADR">DESIPRAMINE</field1>
+            <start>Mon Jun 02 01:23:55 PDT 2008</start>
+        </item>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Sex</field1>
+            <field2 label="Value">Female</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">41</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">J1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Douglas">
+    <meds>
+        <item>
+            <field1 label="Drug">Oxycodone CR</field1>
+            <field2 label="Daily Dose"> 23</field2>
+            <start>Wed Feb 13 00:07:46 PST 2008</start>
+            <end>Sat Jul 26 00:07:46 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Anxiety</field1>
+            <field2 label="ICD9">300</field2>
+            <start>Thu Jun 26 00:07:25 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+        <item>
+            <field1 label="ADR">Morphine ER</field1>
+            <start>Thu Jun 26 00:08:23 PDT 2008</start>
+        </item>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">53</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">K1</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">ZipCode</field1>
+            <field2 label="Value">94131</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Joe-Lives-Too-Far-Jones  (Zipcode Criteria, in TM)">
+    <meds>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">50</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">L1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case: Hammer Toe">
+    <meds>
+        <item>
+            <field1 label="Drug">Morphine ER</field1>
+            <field2 label="Daily Dose">23</field2>
+            <start>Thu Jul 24 19:46:13 PDT 2008</start>
+            <end>Sat Aug 23 19:46:13 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">hammer toes</field1>
+            <field2 label="ICD9">true</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Systemic infection</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Hemorrhagic callus with or without cellulitis</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Acute ischemia or rest pain</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Ingrown toenail</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Puncture wound</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Atrial_Tachycardia</field1>
+            <field2 label="ICD9">423.0</field2>
+            <start>Mon Dec 22 14:24:45 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">70</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">M1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case: Hammer Toe">
+    <meds>
+        <item>
+            <field1 label="Drug">Morphine ER</field1>
+            <field2 label="Daily Dose">23</field2>
+            <start>Thu Jul 24 19:46:13 PDT 2008</start>
+            <end>Sat Aug 23 19:46:13 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Sex</field1>
+            <field2 label="ICD9">Female </field2>
+            <start>Tue Jul 15 13:44:04 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">hammer toes</field1>
+            <field2 label="ICD9">true</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Systemic infection</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Hemorrhagic callus with or without cellulitis</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Acute ischemia or rest pain</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Ingrown toenail</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Puncture wound</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Atrial_Tachycardia</field1>
+            <field2 label="ICD9">423.0</field2>
+            <start>Mon Dec 22 14:24:45 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">HbA1C</field1>
+            <field2 label="Value">6.7</field2>
+            <start>Fri Jul 11 18:51:04 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">Creatinine</field1>
+            <field2 label="Value">1.1</field2>
+            <start>Fri Jul 11 18:51:04 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">target_HBA1c</field1>
+            <field2 label="Value">8</field2>
+            <start>Fri Jul 11 18:54:08 PDT 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">70</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">M22</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Test Case: Loss of sensation">
+    <meds>
+        <item>
+            <field1 label="Drug">PIOGLITAZONE</field1>
+            <field2 label="Daily Dose">30</field2>
+            <start>Thu Jul 24 19:46:13 PDT 2008</start>
+            <end>Sat Sep 27 19:46:13 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">METFORMIN</field1>
+            <field2 label="Daily Dose">1000</field2>
+            <start>Thu Jul 24 19:46:13 PDT 2008</start>
+            <end>Sat Sep 27 19:46:13 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">GLIMEPIRIDE</field1>
+            <field2 label="Daily Dose">3</field2>
+            <start>Thu Jul 24 19:46:13 PDT 2008</start>
+            <end>Sat Sep 27 19:46:13 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Sex</field1>
+            <field2 label="ICD9">Male </field2>
+            <start>Tue Jul 15 13:44:04 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Sex</field1>
+            <field2 label="ICD9">Male </field2>
+            <start>Tue Jul 15 13:44:04 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">hammer toes</field1>
+            <field2 label="ICD9">true</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Lack of sensation to Semmes-Weinstein 5.07 monofilament yes/no</field1>
+            <field2 label="ICD9">yes</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Hemorrhagic callus with or without cellulitis</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Acute ischemia or rest pain</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Ingrown toenail</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Puncture wound</field1>
+            <field2 label="ICD9">no</field2>
+            <start>Mon Jul 14 18:36:19 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Atrial_Tachycardia</field1>
+            <field2 label="ICD9">423.0</field2>
+            <start>Mon Dec 22 14:24:45 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">HbA1C</field1>
+            <field2 label="Value">8.2</field2>
+            <start>Wed Jul 11 18:51:04 PDT 2007</start>
+        </item>
+        <item>
+            <field1 label="Lab">target_HBA1c</field1>
+            <field2 label="Value">8</field2>
+            <start>Fri Jul 11 18:54:08 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">Creatinine</field1>
+            <field2 label="Value">1.2</field2>
+            <start>Wed Jul 11 18:51:04 PDT 2007</start>
+        </item>
+        <item>
+            <field1 label="Lab">Cholesterol</field1>
+            <field2 label="Value">200</field2>
+            <start>Wed Jul 11 18:51:04 PDT 2007</start>
+        </item>
+        <item>
+            <field1 label="Lab">LDL_Cholesterol</field1>
+            <field2 label="Value">105</field2>
+            <start>Wed Jul 11 18:51:04 PDT 2007</start>
+        </item>
+        <item>
+            <field1 label="Lab">HDL_Cholesterol</field1>
+            <field2 label="Value">35</field2>
+            <start>Wed Jul 11 18:51:04 PDT 2007</start>
+        </item>
+        <item>
+            <field1 label="Lab">UrineProtein_Qualitative</field1>
+            <field2 label="Value">negative</field2>
+            <start>Wed Jul 11 18:51:04 PDT 2007</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">82</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">M24</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Julian on 2 hypoglycemic agents">
+    <meds>
+        <item>
+            <field1 label="Drug">METFORMIN</field1>
+            <field2 label="Daily Dose">2300</field2>
+            <start>Thu Jul 24 21:19:47 PDT 2008</start>
+            <end>Sat Aug 23 21:19:47 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">SULFONYLUREAS</field1>
+            <field2 label="Daily Dose">300</field2>
+            <start>Thu Jul 24 21:20:30 PDT 2008</start>
+            <end>Sat Aug 23 21:20:30 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+        <item>
+            <field1 label="ADR">SULFONYLUREAS</field1>
+            <start>Thu Jul 31 19:21:29 PDT 2008</start>
+        </item>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">HbA1C</field1>
+            <field2 label="Value">10</field2>
+            <start>Fri Jul 11 18:51:04 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">target_HBA1c</field1>
+            <field2 label="Value">8</field2>
+            <start>Fri Jul 11 18:54:08 PDT 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">ZipCode</field1>
+            <field2 label="Value">94012</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">75</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">N1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Michael on insulin">
+    <meds>
+        <item>
+            <field1 label="Drug">Insulin</field1>
+            <field2 label="Daily Dose">30</field2>
+            <start>Thu Jul 24 20:28:18 PDT 2008</start>
+            <end>Sat Aug 23 20:28:18 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">HbA1C</field1>
+            <field2 label="Value">9</field2>
+            <start>Fri Jul 11 15:31:55 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">target_HBA1c</field1>
+            <field2 label="Value">8</field2>
+            <start>Fri Jul 11 18:53:49 PDT 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Fraction_Missed_Appointments</field1>
+            <field2 label="Value">0.4</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Num_Appointments</field1>
+            <field2 label="Value">23</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">ZipCode</field1>
+            <field2 label="Value">94012</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">46</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">Q1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Joe-DM no drugs">
+    <meds>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Sex</field1>
+            <field2 label="ICD9">Male </field2>
+            <start>Tue Jul 15 13:44:04 PDT 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+        <item>
+            <field1 label="Sign">BMI</field1>
+            <field2 label="Value">28</field2>
+            <start>Fri Jul 11 21:05:18 PDT 2008</start>
+        </item>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">target_HBA1c</field1>
+            <field2 label="Value">8</field2>
+            <start>Sun Jun 01 11:12:45 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">HbA1C</field1>
+            <field2 label="Value">9</field2>
+            <start>Fri Jul 11 18:52:13 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">Creatinine</field1>
+            <field2 label="Value">2</field2>
+            <start>Tue Jul 15 13:41:46 PDT 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">62</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">P1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Randolph  on one medication">
+    <meds>
+        <item>
+            <field1 label="Drug">METFORMIN</field1>
+            <field2 label="Daily Dose">2300</field2>
+            <start>Thu Jul 24 21:19:47 PDT 2008</start>
+            <end>Sat Aug 23 21:19:47 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+        <item>
+            <field1 label="Sign">Average_Pain_in_Last_Week</field1>
+            <field2 label="Value">23</field2>
+            <start>Thu Jul 24 21:19:54 PDT 2008</start>
+        </item>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">HbA1C</field1>
+            <field2 label="Value">10</field2>
+            <start>Fri Jul 11 18:52:54 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">target_HBA1c</field1>
+            <field2 label="Value">8</field2>
+            <start>Fri Jul 11 18:53:18 PDT 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">ZipCode</field1>
+            <field2 label="Value">94012</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">59</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">R1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Samson Test Patient">
+    <meds>
+        <item>
+            <field1 label="Drug">Oxycodone_Long_Acting</field1>
+            <field2 label="Daily Dose">230</field2>
+            <start>Thu Jul 24 21:09:46 PDT 2008</start>
+            <end>Sat Aug 23 21:09:46 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+        <item>
+            <field1 label="Dx">Hypertension</field1>
+            <field2 label="ICD9">0.0</field2>
+            <start>Fri Jul 25 13:12:53 PDT 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+        <item>
+            <field1 label="Sign">Average_Pain_in_Last_Week</field1>
+            <field2 label="Value">23</field2>
+            <start>Thu Jul 24 21:09:40 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Sign">Overall_ADL</field1>
+            <field2 label="Value"> 1</field2>
+            <start>Sat Aug 09 14:11:23 PDT 2008</start>
+        </item>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">ZipCode</field1>
+            <field2 label="Value">94012</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">55</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">S1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Julio on 1 hypoglycemic agent and insulin">
+    <meds>
+        <item>
+            <field1 label="Drug">METFORMIN</field1>
+            <field2 label="Daily Dose">2300</field2>
+            <start>Thu Jul 24 21:19:47 PDT 2008</start>
+            <end>Sat Aug 23 21:19:47 PDT 2008</end>
+        </item>
+        <item>
+            <field1 label="Drug">Insulin</field1>
+            <field2 label="Daily Dose">30</field2>
+            <start>Thu Jul 24 21:20:30 PDT 2008</start>
+            <end>Sat Aug 23 21:20:30 PDT 2008</end>
+        </item>
+    </meds>
+    <dx>
+        <item>
+            <field1 label="Dx">Diabetes_Mellitus</field1>
+            <field2 label="ICD9">Diabetes_Mellitus</field2>
+            <start>Thu Feb 21 00:23:47 PST 2008</start>
+        </item>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+        <item>
+            <field1 label="Lab">Last_UDS_Taken</field1>
+            <field2 label="Value">no</field2>
+            <start>Thu Jul 24 20:07:21 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">HbA1C</field1>
+            <field2 label="Value">9</field2>
+            <start>Tue Jul 15 15:39:51 PDT 2008</start>
+        </item>
+        <item>
+            <field1 label="Lab">target_HBA1c</field1>
+            <field2 label="Value">7</field2>
+            <start>Tue Jul 15 15:40:12 PDT 2008</start>
+        </item>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">ZipCode</field1>
+            <field2 label="Value">94012</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">75</field2>
+        </item>
+        <item>
+            <field1 label="Field Name">SSN</field1>
+            <field2 label="Value">N1</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+</patientdata>

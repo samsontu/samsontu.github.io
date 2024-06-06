@@ -1,0 +1,54 @@
+MiniATHENA                    2013/10/01
+
+Installation 
+
+		The installation instruction is designed for Windows 
+		1. Unzip MiniATHENA.zip to your local file system
+		2. Edit the batch\miniHTN.bat and batch\miniHF.bat files to give correct file system path of
+		   your installation and to specify the location of JDK or JRE
+
+Running ATHENA
+       1. Double click (or run from a command line) MiniATHENA\batch\miniHTN.bat or MiniATHENA\batch\miniHF.bat
+          If the system complains that certain drive is not available, 
+          just click "Continue".
+       2. The CDS output should be in the out/ directory
+
+
+Tips
+       1. Monitor the (black) Java console window for any exception being
+          thrown. You may have to restart the demo occasionally.
+       2. The schemas for input and output are in the schema/ directory. The current 
+		  XML CDS output is incomplete (missing the "action" branch of the CDS output
+
+
+Disclaimer
+
+The clinical information from this system is advisory only and is
+intended to supplement the knowledge of health care professionals
+regarding the management of hypertension. It is not intended to
+replace sound clinical judgement or individualized patient care in
+delivery of healthcare services.
+
+Although the ATHENA-HTN information is derived from research
+literature and is subject to review, we cannot guarantee its
+comprehensiveness or currency. Please note that medical information is
+dynamic due to ongoing research and clinical experience and is subject
+to interpretation. There is also the possibility of errors in the
+programming.
+
+The user of this software assumes sole responsibility for any
+decisions made or actions taken based the information contained in
+this software, including but not limited to therapeutic suggestions.
+
+ATHENA-HTN, the Department of Veterans Affairs and Stanford University
+shall have no liability to any person, or entity with regard to
+claims, loss, or damage caused, or alleged to be caused, directly or
+indirectly by the use of this software or the information contained
+within.
+
+ATHENA-HTN is the property of Stanford’s Office Technology Licensing
+(OTL) and Department of Veterans Affairs.
+
+By running ATHENA-HTN, you agree to use ATHENA-HTN only as a reference
+resource for research. You agree to abstain from using ATHENA-HTN to
+generate knowledge for treatment.

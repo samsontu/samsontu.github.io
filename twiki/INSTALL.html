@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us"> 
+ <head>
+	<title> TWikiInstallationGuide &lt; TWiki &lt; TWiki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" /> <meta name="robots" content="noindex" /> <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://twiki.org/cgi-bin/view/TWiki/WebRss" />
+	<link rel="icon" href="http://twiki.org/p/pub/TWiki/WebPreferences/favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="http://twiki.org/p/pub/TWiki/WebPreferences/favicon.ico" type="image/x-icon" />
+	<meta name="description" content="TWikiInstallationGuide" />
+		  
+	
+<script type="text/javascript" src="http://twiki.org/p/pub/TWiki/TWikiJavascripts/twiki.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	function launchWindow(inWeb, inTopic) {
+		return launchTheWindow("http://twiki.org/cgi-bin/view/", inWeb, inTopic, "plain");
+	}
+//]]>
+</script>
+
+
+	
+<style type="text/css" media="all">
+	.twikiNewLink {
+		color:%NEWTOPICFONTCOLOR%;
+		background-color:%NEWTOPICBGCOLOR%;
+	}
+	/* to hide Twisty elements: */
+	.twistyHidden { display:none; }
+	.twistyMakeVisible { display:none; }
+</style>
+
+</head>
+ <body bgcolor="#ffffff">
+<a name="PageTop"></a>
+<p />
+<p /><h1><a name="TWiki_Installation_Guide"></a><a name="_TWiki_Installation_Guide"></a>  TWiki Installation Guide </h1>
+<p />
+<strong>The following is installation instructions for the TWiki 4.1 production release on an Apache web server on Linux.</strong> Visit <a href="http://twiki.org/cgi-bin/view/TWiki.InstallingTWiki" title="'TWiki.InstallingTWiki' on TWiki.org" class="interwikiLink">TWiki:TWiki.InstallingTWiki</a> for the latest updates to this guide and supplemental information for installing or upgrading TWiki, including notes on installing TWiki on different platforms, environments and web hosting sites.
+<p />
+If you are upgrading from a previous version of TWiki, you probably want to read <a href="http://twiki.org/cgi-bin/view/TWiki/TWikiUpgradeGuide" class="twikiLink">TWikiUpgradeGuide</a> instead (both this document and the TWikiUpgradeGuide are also available in the root of the distribution as HTML files)
+<p />
+<div class="twikiToc"> <ul>
+<li> <a href="#Preparing_to_install_TWiki"> Preparing to install TWiki</a>
+</li> <li> <a href="#Basic_Installation"> Basic Installation</a>
+</li> <li> <a href="#Important_Server_Security_Settin"> Important Server Security Settings</a>
+</li> <li> <a href="#Next_Steps"> Next Steps</a>
+</li> <li> <a href="#Enable_Authentication_of_Users"> Enable Authentication of Users</a>
+</li> <li> <a href="#Set_TWiki_Preferences"> Set TWiki Preferences</a>
+</li> <li> <a href="#Enable_Email_Notification"> Enable Email Notification</a>
+</li> <li> <a href="#Enable_WebStatistics"> Enable WebStatistics</a>
+</li> <li> <a href="#Automate_removal_of_expired_sess"> Automate removal of expired sessions and lease files</a>
+</li> <li> <a href="#Enable_Localisation"> Enable Localisation</a>
+</li> <li> <a href="#Tailor_New_Users_Home_Topic"> Tailor New Users Home Topic</a>
+</li> <li> <a href="#Install_Plugins"> Install Plugins</a>
+</li> <li> <a href="#Customize_your_TWiki"> Customize your TWiki!</a>
+</li> <li> <a href="#Troubleshooting"> Troubleshooting</a>
+</li> <li> <a href="#Appendixes"> Appendixes</a>
+</li> <li> <a href="#TWiki_System_Requirements"> TWiki System Requirements</a> <ul>
+<li> <a href="#Server_Requirements"> Server Requirements</a>
+</li> <li> <a href="#Required_CPAN_Modules"> Required CPAN Modules</a>
+</li> <li> <a href="#Optional_CPAN_Modules"> Optional CPAN Modules</a>
+</li> <li> <a href="#Client_Requirements"> Client Requirements</a>
+</li> <li> <a href="#Important_note_about_TWiki_Plugi"> Important note about TWiki Plugins</a>
+</li></ul> 
+</li> <li> <a href="#Notes_on_Installing_TWiki_on_Non"> Notes on Installing TWiki on Non-Root Account</a>
+</li> <li> <a href="#Installing_Manually_Without_Conf"> Installing Manually Without Configure</a>
+</li></ul> 
+</div>
+<p />
+<h2><a name="Preparing_to_install_TWiki"></a> Preparing to install TWiki </h2>
+<p />
+Before attempting to install TWiki, you are encouraged to review the <a href="http://twiki.org/cgi-bin/view/TWiki.AdminSkillsAssumptions" title="'TWiki.AdminSkillsAssumptions' on TWiki.org" class="interwikiLink">TWiki:TWiki.AdminSkillsAssumptions</a>. This guide assumes the person installing TWiki has, at a minimum, basic knowledge of server administration and cgi script management on the system on which TWiki is to be installed. While it is possible to install TWiki with FTP access alone (for example, on a hosted site), it is tricky and may require additional support from your hosting service (for example, in setting file ownership).
+<p />
+To help setup a correct Apache configuration, you can use the automatic <a href="http://twiki.org/cgi-bin/view/TWiki.ApacheConfigGenerator" title="'TWiki.ApacheConfigGenerator' on TWiki.org" class="interwikiLink">TWiki:TWiki.ApacheConfigGenerator</a> which generates the contents for an Apache config file for TWiki based on your inputs.
+<p />
+While this installation guide specifically describes installation on an Apache web server on Linux, TWiki should be fine with any web server and OS that meet the system requirements (see below). For additional notes on installing TWiki on other systems, see <a href="http://twiki.org/cgi-bin/view/TWiki.InstallingTWiki#OtherPlatforms" title="'TWiki.InstallingTWiki#OtherPlatforms' on TWiki.org" class="interwikiLink">TWiki:TWiki.InstallingTWiki#OtherPlatforms</a>.
+<p />
+If you are installing TWiki without Unix/Linux root (administrator) privileges (for example, on a hosted domain), see "Notes on Installing TWiki on Non-Root Account" below for supplemental instructions to the basic steps presented below.
+<p />
+If you are upgrading from an earlier major version of TWiki such a Cairo (TWiki 3) you will need the information found in <a href="http://twiki.org/cgi-bin/view/TWiki.TWikiUpgradeGuide" title="'TWiki.TWikiUpgradeGuide' on TWiki.org" class="interwikiLink">TWiki:TWiki.TWikiUpgradeGuide</a> which includes a description of both an automated and a manual procedure. The manual procedure is probably the safest to follow but takes more time. The upgrade guide describes essential steps needed to avoid problems with locked topics. 
+<p />
+Upgrading from a recent TWiki4 release is much simpler. Upgraders from earlier TWiki4 versions can with advantage follow the steps described in <a href="http://twiki.org/cgi-bin/view/TWiki.UpgradingTWiki04x00PatchReleases" title="'TWiki.UpgradingTWiki04x00PatchReleases' on TWiki.org" class="interwikiLink">TWiki:TWiki.UpgradingTWiki04x00PatchReleases</a> to ensure a safe upgrade without accidently overwriting customizations.
+<p />
+If you need help, ask a question in the <a href="http://twiki.org/cgi-bin/view/Support" title="'Support' on TWiki.org" class="interwikiLink">TWiki:Support</a> web or on <a href="http://twiki.org/cgi-bin/view/Codev.TWikiIRC" title="'Codev.TWikiIRC' on TWiki.org" class="interwikiLink">TWiki:Codev.TWikiIRC</a> (irc.freenode.net, channel #twiki) 
+<p />
+<a name="StandardInstallation"></a>
+<h2><a name="Basic_Installation"></a> Basic Installation </h2>
+<p /> <ol>
+<li> <strong>Download</strong> the TWiki distribution from <a href="http://TWiki.org/download.html" target="_top">http://TWiki.org/download.html</a>.
+</li> <li> <strong>Make a directory</strong> for the installation and <strong>unpack the distribution</strong> in it. In the rest of this document we assume this directory is called <code>twiki</code>.
+</li> <li> <strong>Make sure</strong> the user that runs CGI scripts on your system can read and write all files in the distribution. <br />     Detailed instructions on file permissions are beyond the scope of this guide, and the best and safest set of file and directory permissions depend on the actual server environment. For Unix/Linux see <a href="http://twiki.org/cgi-bin/view/TWiki.SettingFileAccessRightsLinuxUnix" title="'TWiki.SettingFileAccessRightsLinuxUnix' on TWiki.org" class="interwikiLink">TWiki:TWiki.SettingFileAccessRightsLinuxUnix</a> which contains scripts to setup the right file and directory access rights.<br />     The general rules for access rights are: <ul>
+<li> During installation and configuration, the CGI user needs to be able to read and write <em>everything</em> in the distribution.
+</li> <li> Once installation and configuration is complete, the CGI user needs write access to everything under the <code>data</code> and <code>pub</code> directories and to <code>twiki/lib/LocalSite.cfg</code>. <em>Everything else</em> should be read-only.
+</li> <li> Everybody else should be denied access to everything, always.
+</li></ul> 
+</li> <li> <strong>Make sure</strong> Perl 5 and the Perl CGI library are installed on your system.<br />     The default location of Perl is <code>/usr/bin/perl</code>. <strong>If it's somewhere else</strong>, change the path to Perl in the first line of each script in the <code>twiki/bin</code> directory.<br />     <img src="http://twiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" alt="HELP" title="HELP" width="16" height="16" border="0" /> Some systems require a special extension on perl scripts (e.g. <code>.cgi</code> or <code>.pl</code>). If necessary, rename all files in <code>twiki/bin</code>  (i.e. rename <code>view</code> to <code>view.pl</code> etc). If you do this, make sure you set the <code>ScriptSuffix</code> option in <code>configure</code> (Step 6).
+</li> <li> <strong>Create the file</strong> <code>twiki/bin/LocalLib.cfg</code>.<br />     There is a template for this file in <code>twiki/bin/LocalLib.cfg.txt</code>.<br />     The file <code>twiki/bin/LocalLib.cfg.txt</code> must contain a setting for <code>$twikiLibPath</code>, which must point to the absolute file path of your <code>twiki/lib</code> e.g. <code>/home/httpd/twiki/lib</code>.<br />     <img src="http://twiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" alt="HELP" title="HELP" width="16" height="16" border="0" /> If you need to install additional <a href="http://cpan.perl.org/" target="_top">CPAN</a> modules, but can't update the main Perl installation files on the server, you can set <code>$CPANBASE</code> to point to your personal <a href="http://cpan.perl.org/" target="_top">CPAN</a> install. Don't forget that the webserver user has to be able to read those files as well.
+</li> <li> <strong>Configure the webserver</strong> so you can execute the <code>bin/configure</code> script from your browser. But limit the access to either localhost, an IP address or a specific user using basic Apache authentication. You should never leave the <code>configure</code> script open to the public. See <a href="http://twiki.org/cgi-bin/view/TWiki.ApacheConfigGenerator" title="'TWiki.ApacheConfigGenerator' on TWiki.org" class="interwikiLink">TWiki:TWiki.ApacheConfigGenerator</a> which contains a tool that can generate a safe and working config file for TWiki on Apache. <ul>
+<li> If you are unsure about how to do this on your system, see <a href="http://twiki.org/cgi-bin/view/TWiki.InstallingTWiki#OtherPlatforms" title="'TWiki.InstallingTWiki#OtherPlatforms' on TWiki.org" class="interwikiLink">TWiki:TWiki.InstallingTWiki#OtherPlatforms</a> for links to information about various server setups. There is an example Apache <code>httpd.conf</code> file in <code>twiki_httpd_conf.txt</code> at the root of the package. This file also contains advice on securing your installation. There's also a script called <code>tools/rewriteshebang.pl</code> to help you in fixing up the shebang lines in your CGI scripts.
+</li></ul> 
+</li> <li> <strong>Run the <code>configure</code> script</strong> from your browser (i.e. enter <code>http://yourdomain/twiki/bin/configure</code> into your browser address bar) and resolve any errors or warnings it tells you about.<br />     <img src="http://twiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> When you run <code>configure</code> for the first time, you can only edit the section <code>General Path Settings</code>. Save these settings, and then return to <code>configure</code> to continue configuration.<br />     When you return to configure you now need to setup <em>Mail and Proxies</em>. Especially the <code>{WebMasterEmail}</code>, and <code>{SMTP}{MAILHOST}</code> must be defined to enable TWiki to send registration emails. Many ISPs have introduced authentication when sending emails to fight spam so you may also have to set <code>{SMTP}{Username}</code> and <code>{SMTP}{Password}</code>. 
+</li></ol> 
+<p />
+You now have a basic, unauthenticated installation running. At this point you can just point your Web browser at <code>http://yourdomain.com/twiki/bin/view</code> and start TWiki-ing away!
+<p />
+<h2><a name="Important_Server_Security_Settin"></a> Important Server Security Settings </h2>
+Before you continue any further there are some basic and very important security settings you have to make sure are set correctly.
+<p /> <ul>
+<li> You should protect the configure script from general access. The configure script the tool is designed for use by administrators only and should be restricted to invocation by them only, by using the basic Apache authentication. Because of this there has not been put much effort into hardening the script. The configure script cannot save any settings once the password has been saved the first time, but the script could still be vulnerable to specially crafted field values and the script reveals many details about the webserver that you should not display in public.
+</li> <li> You absolutely must turn off any kind of PHP, Perl, Python, Server Side Includes etc in the <code>pub</code> directory. TWiki has some builtin protection which renames files with dangerous filenames by appending .txt to the filename. But this is a secondary security measure. The essential action that you must take is to turn off any possible execution of any of the attached files.<br /> Most Linux distributions have a default Apache installation which has PHP and server side include (SSI) enabled. The <code>twiki_httpd_conf.txt</code> file provided in the root of the twiki directory is an example of an Apache config file which you would normally include from httpd.conf. In many distributions this happens automatically if the file is copied to a specific directory (Example RedHat/Fedora/Centos: /etc/httpd/conf.d) and has suffix <code>.conf</code>. This example file shows how to protect the <code>pub</code> directory from executing both PHP scripts and server side includes.<br />     If you do not have access to the apache config files you can normally control control access by placing a file called <code>.htaccess</code> in the directory you want to protect. The <code>pub-htaccess.txt</code> file provided in the root of the twiki directory is an example of an Apache <code>.htaccess</code> file which protects against execusion of PHP and SSI scripts.
+</li> <li> Make sure that you deny access to all other twiki directories than the <code>bin</code> and <code>pub</code> directories. When you have access to the Apache config files the <code>twiki_httpd_conf.txt</code> file mentioned above also contains protection of these directories.<br />     For those that do not have access to the Apache config files a sample <code>subdir-htaccess.txt</code> file can be copied as <code>.htaccess</code> to the data, lib, locale, templates and tools directories.
+</li></ul> 
+<p />
+The TWIki:TWiki.ApacheConfigGenerator will help you address all 3 security elements.
+<p />
+<h2><a name="Next_Steps"></a> Next Steps </h2>
+<p />
+Once you have TWiki installed and running, you might consider the following optional steps for setting up and customizing your TWiki site. Many of the references below refer to topics within your TWiki installation. For example, <code>TWiki.TWikiSkins</code> refers to the <code>TWikiSkins</code> topic in your TWiki web. If not available locally, you can find these topics in the on-line reference copy of <a href="http://twiki.org/cgi-bin/view/TWiki04x01.WebHome" title="'TWiki04x01.WebHome' on TWiki.org" class="interwikiLink">TWiki Release 4.1</a>.
+<p />
+<a name="AuthenticationOfUsers"></a>
+<h2><a name="Enable_Authentication_of_Users"></a> Enable Authentication of Users </h2>
+<p />
+This step provides for site access control and user activity tracking on your TWiki site. <strong><em>This is particularly important for sites that are publicly accessible on the web.</em></strong> This guide describes only the most common of several possible authentication setups for TWiki and is suitable for public web sites. For information about other setups, see <code>TWiki.TWikiUserAuthentication</code>, and <a href="http://twiki.org/cgi-bin/view/TWiki.TWikiUserAuthenticationSupplement" title="'TWiki.TWikiUserAuthenticationSupplement' on TWiki.org" class="interwikiLink">TWiki:TWiki.TWikiUserAuthenticationSupplement</a>.
+<p />
+These are the steps for enabling "Template Login" which asks for a username and password in a web page, and processes them using the Apache 'htpasswd' password manager. Users can log in and log out.
+<p /> <ol>
+<li> Under the <code>Security Settings</code> pane of <code>configure</code> : <ol>
+<li> Select <code>TWiki::Client::TemplateLogin</code> for <code>{LoginManager}</code>.
+</li> <li> Select <code>TWiki::Users::HtPasswdUser</code> for <code>{PasswordManager}</code>.
+</li> <li> Save your <code>configure</code> settings.
+</li> <li> Register yourself using the <code>TWiki.TWikiRegistration</code> topic.<br />     <img src="http://twiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" alt="HELP" title="HELP" width="16" height="16" border="0" /> Check that the password manager recognizes the new user. Check that a new line with the username and encrypted password is added to the <code>data/.htpasswd</code> file. If not, you probably got a path wrong, or the permissions may not allow the webserver user to write to that file.
+</li></ol> 
+</li> <li> Edit a topic (by clicking on the <code>Edit</code> link at beginning or end of topic) to check if authentication works.
+</li> <li> Edit the <code>Main/TWikiAdminGroup</code> topic to include users with system administrator status. Additional instructions are provided in that topic.<br />   <img src="http://twiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> This is a very important step, as users in this group can access all topics, independent of TWiki access controls.
+</li> <li> Clear admin notes: Some pages are meant to be customized after choice of authentication - check and update these topics (remove notice): <code>Main.TWikiAdminGroup</code>, <code>TWiki.ChangePassword</code>, <code>TWiki.ResetPassword</code>, and <code>TWiki.ChangeEmailAddress</code>.
+</li></ol> 
+<p />
+You are strongly encouraged to read <code>TWiki.TWikiUserAuthentication</code>, <a href="http://twiki.org/cgi-bin/view/TWiki.TWikiUserAuthenticationSupplement" title="'TWiki.TWikiUserAuthenticationSupplement' on TWiki.org" class="interwikiLink">TWiki:TWiki.TWikiUserAuthenticationSupplement</a>, and <a href="http://twiki.org/cgi-bin/view/TWiki.SecuringTWikiSite" title="'TWiki.SecuringTWikiSite' on TWiki.org" class="interwikiLink">TWiki:TWiki.SecuringTWikiSite</a> for further information about managing users and security of your TWiki site. 
+<p />
+<a name="SetPreferences"></a>
+<h2><a name="Set_TWiki_Preferences"></a> Set TWiki Preferences </h2>
+<p />
+Preferences for customizing many aspects of TWiki are set simply by editing a special topic with TWiki.
+<p /> <ul>
+<li> Edit <code>TWiki.TWikiPreferences</code>. Read through it and set any additional settings you think you might need. (You can click the 'Edit' button near the top to edit the settings in place).
+</li> <li> <img src="http://twiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" alt="TIP" title="TIP" width="16" height="16" border="0" /> Alternately, you can copy any settings or variables that you want to customize from <code>TWiki.TWikiPreferences</code> and paste them into <code>Main.TWikiPreferences</code>. This will protect your local customizations from being overwritten in later upgrades. See notes at top of <code>TWiki.TWikiPreferences</code> for more information.
+</li></ul> 
+<p />
+<h2><a name="Enable_Email_Notification"></a> Enable Email Notification </h2>
+<p />
+Each TWiki web has an automatic email notification service that sends you an email with links to all of the topics modified since the last alert. To enable this service: <ol>
+<li> Confirm the Mail and Proxies settings in the Configure interface.
+</li> <li> Setup a cron job (or equivalent) to call the <code>bin/mailnotify</code> script as described in the <code>TWiki.MailerContrib</code> topic.
+</li></ol> 
+<p />
+<h2><a name="Enable_WebStatistics"></a> Enable WebStatistics </h2>
+<p />
+You can generate a listing manually, or on an automated schedule, of visits to individual pages, on a per web basis. For information on setting up this feature, see the <code>TWiki.TWikiSiteTools</code> topic.
+<p />
+<h2><a name="Automate_removal_of_expired_sess"></a> Automate removal of expired sessions and lease files </h2>
+<p />
+Per default TWiki cleans out expired session and lease files each time any topic is viewed. This however cost performance. It is an advantage to define a negative value in <code>configure</code> for {Sessions}{ExpireAfter} and install let cron run the <code>tools/tick_twiki.pl</code> script. Read The topic <a href="http://twiki.org/cgi-bin/view/TWiki/TWikiScripts#tick_twiki_pl" class="twikiAnchorLink">TWikiScripts#tick_twiki_pl</a> for details how to do this.
+<p />
+<h2><a name="Enable_Localisation"></a> Enable Localisation </h2>
+<p />
+TWiki now supports displaying of national (non-ascii) characters and presentation of basic interface elements in different languages. To enable these features, see the <code>Localisation</code> section of <code>configure</code>. For more information about these features, see <a href="http://twiki.org/cgi-bin/view/TWiki.InternationalizationSupplement" title="'TWiki.InternationalizationSupplement' on TWiki.org">TWiki:TWiki.InternationalizationSupplement</a>.
+<p />
+<h2><a name="Tailor_New_Users_Home_Topic"></a> Tailor New Users Home Topic </h2>
+<p />
+When a new users registers on your TWiki a home topic is created for him based on the <code>TWiki/NewUserTemplate</code> template topic. This can be tailored. It contains additional resources you can use to: <ul>
+<li> Localise the user topic.
+</li> <li> Add a default ALLOWTOPICCHANGE so only the user can edit his own home topic. We do not encourage this for Intranet sites as it sends a wrong signal to new users, but it can be necessary on a public TWiki to avoid that the user topics get spammed.
+</li></ul> 
+<p />
+<h2><a name="Install_Plugins"></a> Install Plugins </h2>
+<a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki.org" class="interwikiLink">TWiki:Plugins</a> is an extensive library of Plugins for TWiki, that enhance functionality in a huge number of ways. A few plugins are pre-installed in the TWiki distribution. For more information on these, see <code>TWiki.InstalledPlugins</code>.
+<p />
+You activate installed plugin in the <em>Plugins</em> section of <code>configure</code>. In this section you also find a <em>Find More Extensions</em> button which opens an application which can install additional plugins from the TWiki.org website. If you are behind a firewall or your server has no access to the Internet it is also possible to install plugins manually. Manual installation instructions for the plugins can be found in the plugin topics on TWiki.org. Additional documenation on TWiki plugins can be found at <a href="http://twiki.org/cgi-bin/view/TWiki.TWikiPluginsSupplement" title="'TWiki.TWikiPluginsSupplement' on TWiki.org" class="interwikiLink">TWiki:TWiki.TWikiPluginsSupplement</a>.
+<p />
+Some plugins require that you define their settings in <code>configure</code>. You fill find these under the <em>Extensions</em> section of configure.
+<h2><a name="Customize_your_TWiki"></a><a name="Customize_your_TWiki_"></a> Customize your TWiki! </h2>
+<p />
+The real power of TWiki lies in it's flexibility to be customized to meet your needs. A good place to start for exploring what's possible is <a href="http://twiki.org/cgi-bin/view/TWiki/TWikiAdminCookBook" title="'TWiki/TWikiAdminCookBook' on TWiki.org">TWiki:TWiki.TWikiAdminCookBook</a> which offers tips and tricks for customizing your TWiki site. Many of these are appropriate to implement immediately after installing TWiki and before adding content so now's a good time to look at these. If you would like to customize the look of your TWiki, see <a href="http://twiki.org/cgi-bin/view/TWiki.TWikiSkinsSupplement" title="'TWiki.TWikiSkinsSupplement' on TWiki.org">TWiki:TWiki.TWikiSkinsSupplement</a>.
+<p />
+<h2><a name="Troubleshooting"></a> Troubleshooting </h2>
+<p />
+The first step is to re-run the <code>configure</code> script and make sure you have resolved all errors, and are satisfied that you understand any warnings.
+<p />
+Failing that, please check <b><a href="http://twiki.org/cgi-bin/view/TWiki.InstallingTWiki" title="'TWiki.InstallingTWiki' on TWiki.org">TWiki:TWiki.InstallingTWiki</a></b> on TWiki.org, the supplemental documentation that help you <b>install TWiki on different platforms, environments and web hosting sites</b>. For example: <ul>
+<li> For Unix or Linux, check <a href="http://twiki.org/cgi-bin/view/Codev/TWikiOnUnix" title="'Codev/TWikiOnUnix' on TWiki.org">TWiki:Codev.TWikiOnUnix</a> and <a href="http://twiki.org/cgi-bin/view/Codev/TWikiOnLinux" title="'Codev/TWikiOnLinux' on TWiki.org">TWiki:Codev.TWikiOnLinux</a>.
+</li> <li> For Windows, check the <a href="http://twiki.org/cgi-bin/view/Codev/WindowsInstallCookbook" title="'Codev/WindowsInstallCookbook' on TWiki.org">TWiki:Codev.WindowsInstallCookbook</a>. 
+</li> <li> For MacOS X, check <a href="http://twiki.org/cgi-bin/view/Codev.TWikiOnMacOSX" title="'Codev.TWikiOnMacOSX' on TWiki.org" class="interwikiLink">TWiki:Codev.TWikiOnMacOSX</a>.
+</li></ul> 
+<p />
+It is also advisable to review <a href="http://twiki.org/cgi-bin/view/Codev.KnownIssuesOfTWiki04x01" title="'Codev.KnownIssuesOfTWiki04x01' on TWiki.org" class="interwikiLink">TWiki:Codev.KnownIssuesOfTWiki04x01</a>.
+<p />
+If you need help, ask a question in the <a href="http://twiki.org/cgi-bin/view/Support" title="'Support' on TWiki.org" class="interwikiLink">TWiki:Support</a> web or on <a href="http://twiki.org/cgi-bin/view/Codev/TWikiIRC" title="'Codev/TWikiIRC' on TWiki.org" class="interwikiLink">TWiki:Codev/TWikiIRC</a> (irc.freenode.net, channel #twiki)
+<p />
+<h2><a name="Appendixes"></a> Appendixes </h2>
+<p />
+<p />
+<a name="SystemRequirements"></a>
+<h2><a name="TWiki_System_Requirements"></a> TWiki System Requirements </h2>
+<p />
+Low client and server base requirements are core features that keep TWiki widely deployable, particularly across a range of browser platforms and versions. 
+<p />
+<h3><a name="Server_Requirements"></a> Server Requirements </h3>
+<p />
+TWiki is written in Perl 5, uses a number of shell commands, and requires <a href="http://www.gnu.org/software/rcs/rcs.html" rel="nofollow" target="_top">RCS (Revision Control System)</a>, a GNU Free Software package. TWiki is developed in a basic Linux/Apache environment. It also works with Microsoft Windows, and should have no problem on any other platform that meets the requirements.
+<p />
+<p />
+<table style="border-width:1px;" cellspacing="0" cellpadding="0" class="twikiTable" border="1"><tr class="twikiTableEven"><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" class="twikiFirstCol" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=0;table=1;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Resource</a> </th><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=1;table=1;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Required Server Environment</a> </th></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Perl </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> 5.8.4 or higher is recommended </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> RCS </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> 5.7 or higher (including GNU <code>diff</code>) <br /> Optional, TWiki includes a pure perl implementation of RCS that can be used instead (although it's slower) </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> GNU <code>diff</code> </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> GNU <code>diff</code> 2.7 or higher is required when not using the all-Perl <span class="twikiNewLink">RcsLite<a href="http://twiki.org/cgi-bin/edit/TWiki/RcsLite?topicparent=TWiki.TWikiInstallationGuide" rel="nofollow" title="Create this topic">?</a></span> .  <br /> Install on PATH if not included with RCS (check version with <code>diff -v</code>)  <br /> Must be the version used by RCS, to avoid problems with binary attachments - RCS may have hard-coded path to <code>diff</code> </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Other external programs </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> <code>fgrep, egrep</code> </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Cron/scheduler </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &#8226; Unix: <code>cron</code> <br />&#8226; Windows: <code>cron</code> equivalents <!-- SMELL: Macintosh version? --> </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol twikiLast"> Web server </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiLast"> Apache is well supported; for information on other servers, see <a href="http://twiki.org/cgi-bin/view/TWiki.InstallingTWiki#OtherWebServers" title="'TWiki.InstallingTWiki#OtherWebServers' on TWiki.org">TWiki:TWiki.InstallingTWiki#OtherWebServers</a>. </td></tr>
+</table>
+<p />
+<h3><a name="Required_CPAN_Modules"></a> Required CPAN Modules </h3>
+<p />
+The following Perl <a href="http://cpan.perl.org/" rel="nofollow" target="_top">CPAN</a> modules are used by TWiki:
+<p />
+<table style="border-width:1px;" cellspacing="0" cellpadding="0" class="twikiTable" border="1"><tr class="twikiTableEven"><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" class="twikiFirstCol" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=0;table=2;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Module</a> </th><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=1;table=2;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Preferred version</a> </th></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Algorithm::Diff (included) </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &nbsp; </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> CGI::Carp </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &gt;=1.26 </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Config </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &gt;=0 </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Cwd </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &gt;=3.05 </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Data::Dumper </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &gt;=2.121 </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Error (included) </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &nbsp; </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> File::Copy </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &gt;=2.06 </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> File::Find </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &gt;=1.05 </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> File::Spec </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &gt;=3.05 </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <span class="twikiNewLink">FileHandle<a href="http://twiki.org/cgi-bin/edit/TWiki/FileHandle?topicparent=TWiki.TWikiInstallationGuide" rel="nofollow" title="Create this topic">?</a></span>  </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &gt;=2.01 </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> IO::File </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &gt;=1.10 </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Text::Diff (included) </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &nbsp; </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol twikiLast"> Time::Local </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiLast"> &gt;=1.11 </td></tr>
+</table>
+<p />
+<h3><a name="Optional_CPAN_Modules"></a> Optional CPAN Modules </h3>
+<p />
+The following Perl modules may be used by TWiki:
+<p />
+<table style="border-width:1px;" cellspacing="0" cellpadding="0" class="twikiTable" border="1"><tr class="twikiTableEven"><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" class="twikiFirstCol" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=0;table=3;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Module</a> </th><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=1;table=3;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Preferred version</a> </th><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=2;table=3;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Description</a> </th></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Archive::Tar </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> May be required by the Extensions Installer in configure if command line tar or unzip is not available </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> CGI::Cookie </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &gt;=1.24 </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> Used for session support </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> CGI::Session </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &gt;=3.95 </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> Highly recommended! Used for session support </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Digest::base </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &nbsp; </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Digest::SHA1 </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &nbsp; </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Jcode </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> Used for I18N support with perl 5.6 </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Locale::Maketext::Lexicon </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &gt;=0 </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> Used for I18N support </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Net::SMTP </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &gt;=2.29 </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> Used for sending mail </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Unicode::Map </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> Used for I18N support with perl 5.6 </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Unicode::Map8 </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> Used for I18N support with perl 5.6 </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Unicode::MapUTF8 </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> Used for I18N support with perl 5.6 </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> Unicode::String </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> &nbsp; </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> Used for I18N support with perl 5.6 </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol twikiLast"> URI </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiLast"> &nbsp; </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiLast"> Used for configure </td></tr>
+</table>
+<p />
+Most of them will probably already be available in your installation. You can check version numbers with the <code>configure</code> script, or if you're still trying to get to that point, check from the command line like this:
+<p />
+<pre>
+perl -e 'use FileHandle; print $FileHandle::VERSION."\n"'
+</pre>
+<p />
+<a name="ClientRequirements"></a>
+<h3><a name="Client_Requirements"></a> Client Requirements </h3>
+<p />
+The TWiki standard installation has relatively low browser requirements:
+<p /> <ul>
+<li> HTML 3.2 compliant
+</li> <li> Cookies, if persistent sessions are required
+</li></ul> 
+<p />
+CSS and Javascript are used in most skins, although there is a low-fat skin (Classic skin) available that minimises these requirements. Some skins will require more recent releases of browsers. The default skin (Pattern) is tested on IE 6, Safari, and Mozilla 5.0 based browsers (such as Firefox).
+<p />
+You can easily select a balance of browser capability versus look and feel. Try the installed skins at <code>TWiki/TWikiSkinBrowser</code> and more at <a href="http://twiki.org/cgi-bin/view/Plugins.SkinPackage" title="'Plugins.SkinPackage' on TWiki.org" class="interwikiLink">TWiki:Plugins.SkinPackage</a>.
+<p />
+<h3><a name="Important_note_about_TWiki_Plugi"></a> Important note about TWiki Plugins </h3>
+<p /> <ul>
+<li> Plugins can require just about anything -  browser-specific functions, stylesheets (CSS), Java applets, cookies, specific Perl modules,... - check the individual Plugin specs. <ul>
+<li> <strong><em><img src="http://twiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" alt="TIP" title="TIP" width="16" height="16" border="0" /> Note:</em></strong> Plugins included in the TWiki distribution do not add requirements, except for the <a href="http://twiki.org/cgi-bin/view/TWiki/CommentPlugin" class="twikiLink">CommentPlugin</a> which requires Perl 5.6.1.
+</li></ul> 
+</li></ul> 
+<p />
+<a name="NonRootInstallNotes"></a>
+<h2><a name="Notes_on_Installing_TWiki_on_Non"></a> Notes on Installing TWiki on Non-Root Account </h2>
+<p />
+The following supplemental notes to the <a href="#StandardInstallation" class="twikiAnchorLink">Basic Installation</a> instructions apply to installing TWiki on a system where you don't have Unix/Linux root (administrator) privileges, for example, on a hosted Web account or an intranet server administered by someone else.
+<p />
+Referring to the <a href="#StandardInstallation" class="twikiAnchorLink">Basic Installation</a> steps presented above:
+<p /> <ul>
+<li> <strong>Step 2:</strong> If you cannot unpack the TWiki distribution directly in your installation directory, you can unpack the distribution on your local PC and then manually create the directory structure on your host server and upload the files as follows: <ul>
+<li> Using the table below, create a directory structure on your host server
+</li> <li> Upload the TWiki files by FTP (transfer as text except for the image files in <code>pub</code> directory.)
+</li> <li> <strong><em>Note:</em></strong> Don't worry if you are not able to put the twiki/lib directory at the same level as the <code>twiki/bin</code> directory (e.g. because CGI bin directories can't be under your home directory and you don't have root access). You can create this directory elsewhere and configure the <code>twiki/bin/setlib.cfg</code> file (done in Step 2).
+</li></ul> 
+</li></ul> 
+<p />
+<blockquote>
+<p />
+<table style="border-width:1px;" cellspacing="0" cellpadding="0" class="twikiTable" border="1"><tr class="twikiTableEven"><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" class="twikiFirstCol" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=0;table=4;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">TWiki dir:</a> </th><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=1;table=4;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">What it is:</a> </th><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=2;table=4;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Where to copy:</a> </th><th bgcolor="#6b7f93" align="center" valign="top" style="text-align:center;vertical-align:top;" maxcols="0"> <a rel="nofollow" href="http://localhost/./view/TWiki.TWikiInstallationGuide?keywords=TWiki.TWikiInstallationGuide&amp;amp;keywords=skin&amp;amp;keywords=plain&amp;amp;skin=plain&amp;amp;sortcol=3;table=4;up=0#sorted_table" style="color:#ffffff" title="Sort by this column">Example:</a> </th></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <code>twiki</code> </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> start-up pages </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> root TWiki dir </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> <code>/home/smith/twiki/</code> </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <code>twiki/bin</code> </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> CGI bin </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> CGI-enabled dir </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> <code>/home/smith/twiki/bin</code> </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <code>twiki/lib</code> </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> library files </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> same level as <code>twiki/bin</code> </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> <code>/home/smith/twiki/lib</code> </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <code>twiki/locale</code> </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> language files </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> dir secure from public access </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> <code>/home/smith/twiki/locale</code> </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <code>twiki/pub</code> </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> public files </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> htdoc enabled dir </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> <code>/home/smith/twiki/pub</code> </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <code>twiki/data</code> </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> topic data </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> dir secure from public access </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;"> <code>/home/smith/twiki/data</code> </td></tr>
+<tr class="twikiTableOdd"><td bgcolor="#ffffff" valign="top" style="vertical-align:top;" class="twikiFirstCol"> <code>twiki/templates</code> </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> web templates </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> dir secure from public access </td><td bgcolor="#ffffff" valign="top" style="vertical-align:top;"> <code>/home/smith/twiki/templates</code> </td></tr>
+<tr class="twikiTableEven"><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiFirstCol twikiLast"> <code>twiki/tools</code> </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiLast"> TWiki utlilities </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiLast"> dir secure from public access </td><td bgcolor="#edf4f9" valign="top" style="vertical-align:top;" class="twikiLast"> <code>/home/smith/twiki/tools</code> </td></tr>
+</table>
+<p />
+</blockquote>
+<p /> <ul>
+<li> <strong>Step 3:</strong> Files in the pub directory must be readable as a url. This means that directory permissions should be set to <code>755</code> (or <code>775</code> ) and file permissions should be set to <code>644</code> (or <code>664</code>). If you can run a <code>chmod</code> command, you can accomplish this in two quick steps by running these commands from the root direct: <ul>
+<li> <code>chmod -R 755 pub</code>
+</li> <li> <code>chmod 644 `find pub -type f -print`</code>
+</li> <li> In addition, you should create a <code>.htaccess</code> file in the pub directory, using the template included in the root level of the distribution entitled <code>pub-htaccess.txt</code>.
+</li> <li> Note: This setup does not provide for absolute security for TWiki attachments. For more information, see <a href="http://twiki.org/cgi-bin/view/Codev.SecuringYourTWiki" title="'Codev.SecuringYourTWiki' on TWiki.org" class="interwikiLink">TWiki:Codev.SecuringYourTWiki</a>.
+</li></ul> 
+</li></ul> 
+<p /> <ul>
+<li> <strong>Step 6:</strong> In order to run the configure script, create a file called <code>.htaccess</code> in the bin directory that includes the following single line: <code>SetHandler cgi-script</code> . This informs the server to treat all the perl scripts in the bin directory as scripts.
+</li></ul> 
+<p />
+For additional information about installing TWiki on a hosted accounts, see <a href="http://twiki.org/cgi-bin/view/TWiki.InstallingTWiki#WebHostingSites" title="'TWiki.InstallingTWiki#WebHostingSites' on TWiki.org" class="interwikiLink">TWiki:TWiki.InstallingTWiki#WebHostingSites</a>
+<p />
+<h2><a name="Installing_Manually_Without_Conf"></a> Installing Manually Without Configure </h2>
+<p />
+It is highly recommended to use run configure from the browser when setting up TWiki. Configure does a lot of the hard work for you.
+<p />
+But there may be instances where you do not want to use configure or where configure simply won't run because of a missing dependency.
+<p />
+The manual steps you have to take are:
+<p /> <ul>
+<li> Copy the file <code>lib/TWiki.spec</code> to <code>lib/LocalSite.cfg</code>
+</li> <li> Remove the comment # in front of <code>$TWiki::cfg{DefaultUrlHost}</code>, <code>$TWiki::cfg{ScriptUrlPath}</code>, <code>$TWiki::cfg{PubUrlPath}</code>, <code>$TWiki::cfg{PubDir}</code>, <code>$TWiki::cfg{TemplateDir}</code>, <code>$TWiki::cfg{DataDir}</code>, <code>$TWiki::cfg{LocalesDir}</code>, and <code>$TWiki::cfg{OS}</code> and make sure these settings have the correct values.
+</li> <li> Make sure to define at least these settings: <code>$TWiki::cfg{LoginManager}</code>, <code>$TWiki::cfg{WebMasterEmail}</code>, <code>$TWiki::cfg{SMTP}{MAILHOST}</code>, <code>$TWiki::cfg{SMTP}{SENDERHOST}</code>. 
+</li></ul> 
+<p />
+<p />
+<p />
+<strong><em>Related Topics:</em></strong> <a href="http://twiki.org/cgi-bin/view/TWiki/AdminDocumentationCategory" class="twikiLink">AdminDocumentationCategory</a>, <a href="http://twiki.org/cgi-bin/view/TWiki.InstallingTWiki" title="'TWiki.InstallingTWiki' on TWiki.org" class="interwikiLink">TWiki:TWiki.InstallingTWiki</a><a name="TopicEnd"></a>
+<p />
+<p />
+<p />
+<p />
+<p />
+</body></html>
+<p />

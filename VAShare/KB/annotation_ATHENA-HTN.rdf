@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY kb 'http://protege.stanford.edu/kb#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<kb:AnnotationStatus rdf:about="&kb;Active"
+	 kb:description="Active"
+	 rdfs:label="Active"/>
+<kb:ChangeStatus rdf:about="&kb;Approved"
+	 kb:description="Approved"
+	 rdfs:label="Approved"/>
+<kb:AnnotationStatus rdf:about="&kb;Inactive"
+	 kb:description="Inactive"
+	 rdfs:label="Inactive"/>
+<kb:ChangeStatus rdf:about="&kb;Proposed"
+	 kb:description="Proposed"
+	 rdfs:label="Proposed"/>
+<kb:ChangeStatus rdf:about="&kb;Rejected"
+	 kb:description="Rejected"
+	 rdfs:label="Rejected"/>
+<kb:Status rdf:about="&kb;Under_review"
+	 kb:description="Under review"
+	 rdfs:label="Under review"/>
+<kb:Comment rdf:about="&kb;annotation_ATHENA-HTN_Class0"
+	 kb:author="vhapalmartins"
+	 kb:subject="can't move the htn classes under the library classes">
+	<kb:body xml:space='preserve'><![CDATA[<html>
+  <head>
+    <style type="text/css">
+      <!--
+        body { font-family: arial; font-size: 12pt }
+        p { margin-bottom: 2; margin-right: 2; margin-left: 2; font-family: arial; margin-top: 2 }
+      -->
+    </style>
+    
+  </head>
+  <body>
+    example move 'heart block' under 'diseases of the heart'<br><br>Also not sure about moving 'unspecified AV Block' under 'Heart Block' , if there are more implications</body>
+</html>]]></kb:body>
+	<rdfs:label>vhapalmartins (02/09/10 01:13): can't move the htn classes under the library classes</rdfs:label>
+	<kb:created rdf:resource="&kb;annotation_ATHENA-HTN_Class1"/>
+	<kb:annotates rdf:resource="&kb;annotation_ATHENA-HTN_Class2"/>
+</kb:Comment>
+<kb:Timestamp rdf:about="&kb;annotation_ATHENA-HTN_Class1"
+	 kb:date="02/09/2010 13:13:20 PST"
+	 kb:sequence="0"
+	 rdfs:label="02/09/2010 13:13:20 PST"/>
+<kb:Ontology_Class rdf:about="&kb;annotation_ATHENA-HTN_Class2"
+	 kb:currentName="Heart_Block_2nd_Or_3rd_Degree"
+	 rdfs:label="Heart_Block_2nd_Or_3rd_Degree">
+	<kb:associatedAnnotations rdf:resource="&kb;annotation_ATHENA-HTN_Class0"/>
+</kb:Ontology_Class>
+</rdf:RDF>

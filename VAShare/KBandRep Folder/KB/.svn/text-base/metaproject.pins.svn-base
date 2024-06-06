@@ -1,0 +1,134 @@
+; Mon Sep 22 16:59:51 PDT 2008
+; 
+;+ (version "3.4")
+;+ (build "Build 504")
+
+([metaproject_Class0] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(location "E:/opioidDSSServer_B1/Tomcat/webapps/axis/config/domain_model/annotation_OpioidGuideline.pprj")
+	(name "annotation_OpioidGuideline.pprj"))
+
+([metaproject_Instance_0] of  Group
+
+	(member
+		[metaproject_Instance_50000]
+		[metaproject_Instance_50001]
+		[metaproject_Instance_50002]
+		[metaproject_Instance_50003]
+		[metaproject_Instance_10002])
+	(name "World"))
+
+([metaproject_Instance_10000] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/Diabetes_Grant/domain_model/ATHENA_DM.pprj")
+	(name "ATHENA_DM")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_10001] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(location "E:/Diabetes_Grant/domain_model/annotation_library.pprj")
+	(name "annotation_library"))
+
+([metaproject_Instance_10002] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Guest")
+	(password "guest"))
+
+([metaproject_Instance_10008] of  GroupOperation
+
+	(allowedGroup [metaproject_Instance_0])
+	(allowedOperation
+		[nci_metaproject_Instance_60009]
+		[nci_metaproject_Instance_60010]))
+
+([metaproject_Instance_20001] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/Diabetes_Grant/domain_model/ATHENA_Lipid.pprj")
+	(name "ATHENA_Lipid")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_20004] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Class0])
+	(location "E:\\opioidDSSServer_B1\\Tomcat\\webapps\\axis\\config\\domain_model\\OpioidGuideline.pprj")
+	(name "OpioidGuidelineB1"))
+
+([metaproject_Instance_20005] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/Diabetes_Grant/domain_model/ATHENA_CKD.pprj")
+	(name "ATHENA_CKD")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_20006] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/Diabetes_Grant/domain_model/ATHENA_GlycemicControl.pprj")
+	(name "ATHENA_GlycemicControl")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_20007] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/Diabetes_Grant/domain_model/ATHENA_DM_Foot.pprj")
+	(name "ATHENA_DM_Foot")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_40000] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/Diabetes_Grant/domain_model/library.pprj")
+	(name "library")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_50000] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Dan Wang")
+	(password "Dan"))
+
+([metaproject_Instance_50001] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Susana Martins")
+	(password "Susana"))
+
+([metaproject_Instance_50002] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Martha Michel")
+	(password "Martha"))
+
+([metaproject_Instance_50003] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Samson Tu")
+	(password "Samson"))
+
+([metaproject_Instance_50004] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/Diabetes_Grant/domain_model/ATHENA_DM_Eye.pprj")
+	(name "ATHENA_DM_Eye")
+	(owner [metaproject_Instance_50003]))
+
+([nci_metaproject_Instance_60009] of  Operation
+
+	(name "Read"))
+
+([nci_metaproject_Instance_60010] of  Operation
+
+	(name "Write"))

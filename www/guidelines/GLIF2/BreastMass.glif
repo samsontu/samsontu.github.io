@@ -1,0 +1,511 @@
+
+Guidelines instance_00001 
+{
+   guidelines = SEQUENCE 1 {(Guideline_Object instance_00002);};
+};
+
+
+Guideline_Object instance_00002 
+{
+   eligibility_criteria = SEQUENCE 1 {
+       Boolean_Criterion instance_00004 
+       {
+          spec = "patient.sex = female";
+       };};
+   steps = SEQUENCE 25 {(Action_Step instance_00005);(Branch_Step instance_00006);(Action_Step instance_00009);(Action_Step instance_00010);(Conditional_Step instance_00011);(Conditional_Step instance_00007);(Conditional_Step instance_00022);(Conditional_Step instance_00023);(Conditional_Step instance_00024);(Action_Step instance_00025);(Action_Step instance_00053);(Branch_Step instance_00056);(Action_Step instance_00057);(Action_Step instance_00058);(Action_Step instance_00059);(Branch_Step instance_00064);(Conditional_Step instance_00065);(Conditional_Step instance_00066);(Conditional_Step instance_00067);(Branch_Step instance_00068);(Conditional_Step instance_00069);(Conditional_Step instance_00070);(Conditional_Step instance_00071);(Action_Step instance_00072);(Conditional_Step instance_00073);};
+   authors = SEQUENCE 1 {
+       Person instance_00003 
+       {
+          name = "Max Borten, M.D., J.D.";
+       };};
+   first_step = (Action_Step instance_00009);
+   intention = "Diagnose and assess breast mass";
+   name = "Breast Mass Workup";
+};
+
+
+
+
+
+
+Action_Step instance_00005 
+{
+   next_step = (Branch_Step instance_00006);
+   name = "Physical Exam";
+   subguideline = (Guideline_Object instance_00036);
+};
+
+
+Branch_Step instance_00006 
+{
+   selection_method = all_of;
+   order_constraint = any_order;
+   name = "assess mass";
+   next_steps = SEQUENCE 4 {(Conditional_Step instance_00007);(Conditional_Step instance_00011);(Conditional_Step instance_00022);(Conditional_Step instance_00023);};
+};
+
+
+Conditional_Step instance_00007 
+{
+   destination = (Action_Step instance_00057);
+   condition = 
+       Boolean_Criterion instance_00021 
+       {
+          type = k_two_valued;
+          spec = "patient has solid mass";
+       };
+   name = "solid mass";
+};
+
+
+Action_Step instance_00009 
+{
+   next_step = (Action_Step instance_00005);
+   name = "Patient history";
+   subguideline = (Guideline_Object instance_00012);
+};
+
+
+Action_Step instance_00010 
+{
+   name = "(else) Reassure patient";
+};
+
+
+Conditional_Step instance_00011 
+{
+   destination = (Conditional_Step instance_00024);
+   name = "no mass found";
+};
+
+
+Guideline_Object instance_00012 
+{
+   steps = SEQUENCE 6 {(Branch_Step instance_00013);(Action_Step instance_00014);(Action_Step instance_00015);(Action_Step instance_00016);(Action_Step instance_00030);(Action_Step instance_00033);};
+   first_step = (Branch_Step instance_00013);
+   name = "Elicit patient history";
+};
+
+
+Branch_Step instance_00013 
+{
+   selection_method = all_of;
+   order_constraint = any_order;
+   name = "Inquire about all risk factors";
+   next_steps = SEQUENCE 5 {(Action_Step instance_00014);(Action_Step instance_00015);(Action_Step instance_00016);(Action_Step instance_00030);(Action_Step instance_00033);};
+};
+
+
+Action_Step instance_00014 
+{
+   action = (Action_Spec instance_00017);
+   name = "Fibrocystic disease";
+};
+
+
+Action_Step instance_00015 
+{
+   action = (Action_Spec instance_00019);
+   name = "Nulliparity";
+};
+
+
+Action_Step instance_00016 
+{
+   action = (Action_Spec instance_00028);
+   name = "Late first pregnancy";
+};
+
+
+Action_Spec instance_00017 
+{
+   name = "history of fibrocystic disease";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00018 
+       {
+          name = "history of fibrocystic disease";
+          possible_values = SEQUENCE 1 {"TRUE; FALSE";};
+       };};
+};
+
+
+
+
+Action_Spec instance_00019 
+{
+   name = "history of nulliparity";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00020 
+       {
+          name = "history of nulliparity";
+          possible_values = SEQUENCE 1 {"TRUE; FALSE";};
+       };};
+};
+
+
+
+
+
+
+Conditional_Step instance_00022 
+{
+   destination = (Action_Step instance_00059);
+   name = "cystic mass";
+};
+
+
+Conditional_Step instance_00023 
+{
+   destination = (Action_Step instance_00053);
+   name = "indeterminate mass";
+};
+
+
+Conditional_Step instance_00024 
+{
+   destination = (Action_Step instance_00025);
+   else = (Action_Step instance_00010);
+   name = "Patient age > 30";
+};
+
+
+Action_Step instance_00025 
+{
+   next_step = (Action_Step instance_00010);
+   action = (Action_Spec instance_00026);
+   name = "Mammogram";
+};
+
+
+Action_Spec instance_00026 
+{
+   name = "do mammogram";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00027 
+       {
+          name = "mammogram results";
+       };};
+};
+
+
+
+
+Action_Spec instance_00028 
+{
+   name = "inquire about late first pregnancy";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00029 
+       {
+          name = "history of late first pregnancy";
+          possible_values = SEQUENCE 1 {"TRUE; FALSE";};
+       };};
+};
+
+
+
+
+Action_Step instance_00030 
+{
+   action = (Action_Spec instance_00031);
+   name = "Nipple discharge";
+};
+
+
+Action_Spec instance_00031 
+{
+   name = "inquire about nipple discharge";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00032 
+       {
+          name = "history of nipple discharge";
+       };};
+};
+
+
+
+
+Action_Step instance_00033 
+{
+   action = (Action_Spec instance_00034);
+   name = "Breast pain";
+};
+
+
+Action_Spec instance_00034 
+{
+   name = "inquire about breast pain";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00035 
+       {
+          name = "history of breast pain";
+       };};
+};
+
+
+
+
+Guideline_Object instance_00036 
+{
+   steps = SEQUENCE 6 {(Branch_Step instance_00037);(Action_Step instance_00038);(Action_Step instance_00041);(Action_Step instance_00044);(Action_Step instance_00047);(Action_Step instance_00050);};
+   first_step = (Branch_Step instance_00037);
+   name = "Physical history";
+};
+
+
+Branch_Step instance_00037 
+{
+   selection_method = all_of;
+   order_constraint = any_order;
+   name = "check for all of";
+   next_steps = SEQUENCE 5 {(Action_Step instance_00038);(Action_Step instance_00041);(Action_Step instance_00044);(Action_Step instance_00047);(Action_Step instance_00050);};
+};
+
+
+Action_Step instance_00038 
+{
+   action = (Action_Spec instance_00039);
+   name = "Asymmetry";
+};
+
+
+Action_Spec instance_00039 
+{
+   name = "check for asymmetry";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00040 
+       {
+          name = "breast asymmetry";
+       };};
+};
+
+
+
+
+Action_Step instance_00041 
+{
+   action = (Action_Spec instance_00042);
+   name = "Retraction";
+};
+
+
+Action_Spec instance_00042 
+{
+   name = "check for retraction";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00043 
+       {
+          name = "retraction";
+       };};
+};
+
+
+
+
+Action_Step instance_00044 
+{
+   action = (Action_Spec instance_00045);
+   name = "Fixation";
+};
+
+
+Action_Spec instance_00045 
+{
+   name = "Check for fixation";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00046 
+       {
+          name = "fixation";
+       };};
+};
+
+
+
+
+Action_Step instance_00047 
+{
+   action = (Action_Spec instance_00048);
+   name = "Edema";
+};
+
+
+Action_Spec instance_00048 
+{
+   name = "check for edema";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00049 
+       {
+          name = "Edema";
+       };};
+};
+
+
+
+
+Action_Step instance_00050 
+{
+   action = (Action_Spec instance_00051);
+   name = "Nipple deviation";
+};
+
+
+Action_Spec instance_00051 
+{
+   name = "check for nipple deviation";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00052 
+       {
+          name = "nipple deviation";
+       };};
+};
+
+
+
+
+Action_Step instance_00053 
+{
+   next_step = (Branch_Step instance_00056);
+   action = (Action_Spec instance_00054);
+   name = "ultrasound";
+};
+
+
+Action_Spec instance_00054 
+{
+   name = "do ultrasound";
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00055 
+       {
+          name = "ultrasound results";
+       };};
+};
+
+
+
+
+Branch_Step instance_00056 
+{
+   selection_method = all_of;
+   name = "assess ultrasound";
+   next_steps = SEQUENCE 2 {(Conditional_Step instance_00022);(Conditional_Step instance_00007);};
+};
+
+
+Action_Step instance_00057 
+{
+   next_step = (Action_Step instance_00058);
+   action = (Action_Spec instance_00026);
+   name = "Mammogram";
+};
+
+
+Action_Step instance_00058 
+{
+   name = "Excisional biopsy";
+};
+
+
+Action_Step instance_00059 
+{
+   next_step = (Branch_Step instance_00064);
+   action = (Action_Spec instance_00060);
+   name = "aspirate cyst";
+};
+
+
+Action_Spec instance_00060 
+{
+   name = "aspirate cyst";
+   patient_data = SEQUENCE 3 {
+       Patient_Data instance_00061 
+       {
+          name = "clear fluid";
+       };
+       Patient_Data instance_00062 
+       {
+          name = "bloody fluid";
+       };
+       Patient_Data instance_00063 
+       {
+          name = "no fluid";
+       };};
+};
+
+
+
+
+
+
+
+
+Branch_Step instance_00064 
+{
+   selection_method = all_of;
+   name = "assess aspirate";
+   next_steps = SEQUENCE 3 {(Conditional_Step instance_00066);(Conditional_Step instance_00065);(Conditional_Step instance_00067);};
+};
+
+
+Conditional_Step instance_00065 
+{
+   destination = (Branch_Step instance_00068);
+   name = "bloody fluid";
+};
+
+
+Conditional_Step instance_00066 
+{
+   destination = (Action_Step instance_00057);
+   name = "no fluid";
+};
+
+
+Conditional_Step instance_00067 
+{
+   destination = (Conditional_Step instance_00071);
+   name = "clear fluid";
+};
+
+
+Branch_Step instance_00068 
+{
+   selection_method = all_of;
+   name = "assess cytology";
+   next_steps = SEQUENCE 2 {(Conditional_Step instance_00069);(Conditional_Step instance_00070);};
+};
+
+
+Conditional_Step instance_00069 
+{
+   destination = (Action_Step instance_00057);
+   name = "positive";
+};
+
+
+Conditional_Step instance_00070 
+{
+   destination = (Action_Step instance_00072);
+   name = "negative";
+};
+
+
+Conditional_Step instance_00071 
+{
+   destination = (Action_Step instance_00057);
+   else = (Action_Step instance_00072);
+   name = "residual nodule present";
+};
+
+
+Action_Step instance_00072 
+{
+   next_step = (Conditional_Step instance_00073);
+   name = "six week reevaluation";
+};
+
+
+Conditional_Step instance_00073 
+{
+   destination = (Action_Step instance_00059);
+   name = "cyst reaccumulated";
+};
+

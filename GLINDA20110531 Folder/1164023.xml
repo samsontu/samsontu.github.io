@@ -1,0 +1,257 @@
+<patientdata>
+<patient name="1164023">
+<meds>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">81</field2>
+	<start>Sat Mar 23 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Drug">atorvastatin</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Tue Dec 10 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Drug">carvedilol</field1>
+	<field2 label="Daily Dose">10</field2>
+	<start>Wed Apr 01 00:00:00 PST 1992</start>
+</item>
+<item>
+	<field1 label="Drug">digoxin</field1>
+	<field2 label="Daily Dose">0.125</field2>
+	<start>Mon Apr 20 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Drug">furosemide</field1>
+	<field2 label="Daily Dose">10</field2>
+	<start>Tue Dec 10 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.04</field2>
+	<start>Fri Oct 12 00:00:00 PDT 1990</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.04</field2>
+	<start>Fri Oct 12 00:00:00 PDT 1990</start>
+</item>
+<item>
+	<field1 label="Drug">lisinopril</field1>
+	<field2 label="Daily Dose">5</field2>
+	<start>Wed Apr 01 00:00:00 PST 1992</start>
+</item>
+<item>
+	<field1 label="Drug">spironolactone</field1>
+	<field2 label="Daily Dose">25</field2>
+	<start>Wed Apr 01 00:00:00 PST 1992</start>
+</item>
+<item>
+	<field1 label="Drug">torsemide</field1>
+	<field2 label="Daily Dose">10</field2>
+	<start>Fri Feb 21 00:00:00 PST 1992</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Atrial_Fibrillation</field1>
+	<start>Fri May 15 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Dx">cardiac arrest</field1>
+	<start>Fri Mar 22 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Dx">Cardiomegaly</field1>
+	<start>Fri Mar 29 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Dx">Coronary_Artery_Disease</field1>
+	<start>Thu Feb 20 00:00:00 PST 1992</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Sun Jan 20 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Dx">Myocardial_Infarction</field1>
+	<start>Fri Mar 22 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Dx">Pacemaker</field1>
+	<start>Tue Mar 26 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Dx">Sinoatrial node dysfunction</field1>
+	<start>Mon Dec 09 00:00:00 PST 1991</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">91</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">71</field2>
+	<start>Fri Mar 22 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">87</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">130</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">174</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+</clinicalSigns>
+<adr>
+<item>
+	<field1 label="ADR">lovastatin</field1>
+	<start>Sat Oct 06 00:00:00 PDT 1990</start>
+</item>
+<item>
+	<field1 label="ADR">lovastatin</field1>
+	<start>Sat Oct 06 00:00:00 PDT 1990</start>
+</item>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">3.4</field2>
+	<start>Mon Dec 09 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">84</field2>
+	<start>Mon Dec 09 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">5892</field2>
+	<start>Thu Feb 20 00:00:00 PST 1992</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">50</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">9.2</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">102</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">107</field2>
+	<start>Sat Mar 23 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">1.8</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">eGFR</field1>
+	<field2 label="Value">38</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">27.9</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">38</field2>
+	<start>Sat Mar 23 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">9.2</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">66</field2>
+	<start>Sat Mar 23 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">117</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">4.6</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">25</field2>
+	<start>Mon Dec 09 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">33</field2>
+	<start>Mon Dec 09 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">138</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">2.0</field2>
+	<start>Mon Dec 09 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">107</field2>
+	<start>Sat Mar 23 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">27</field2>
+	<start>Sat Mar 23 00:00:00 PST 1991</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">5.4</field2>
+	<start>Sat Apr 18 00:00:00 PDT 1992</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">92</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">White_Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Male</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

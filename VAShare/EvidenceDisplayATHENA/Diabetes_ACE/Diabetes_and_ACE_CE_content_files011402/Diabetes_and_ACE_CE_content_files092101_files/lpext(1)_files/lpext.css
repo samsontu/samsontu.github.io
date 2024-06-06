@@ -1,0 +1,84 @@
+BODY {
+	BACKGROUND: #ffffff; COLOR: #000000; FONT-FAMILY: Verdana
+}
+TD {
+	FONT-FAMILY: Verdana
+}
+H1 {
+	COLOR: #0000cc
+}
+H2 {
+	COLOR: #0000cc
+}
+H3 {
+	COLOR: #0000cc
+}
+H4 {
+	COLOR: #0000cc
+}
+H5 {
+	COLOR: #0000cc
+}
+H6 {
+	COLOR: #0000cc
+}
+.sidebar {
+	BACKGROUND: #ffcc00
+}
+.heading {
+	FONT-SIZE: 8pt; BACKGROUND: #000000; COLOR: #ffcc00; FONT-FAMILY: Verdana
+}
+.toolbar {
+	BACKGROUND: #0000cc
+}
+A:active {
+	FONT-WEIGHT: bold
+}
+A.button {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff
+}
+A.hbutton {
+	FONT-WEIGHT: bold; COLOR: #ffcc00
+}
+.label {
+	FONT-WEIGHT: bold; COLOR: #0000cc; FONT-FAMILY: Verdana, sans-serif
+}
+INPUT.control {
+	FONT-SIZE: 10pt; BACKGROUND: #ffffff; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif
+}
+INPUT.button {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana
+}
+.hitrange {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Verdana
+}
+.HITLIST-HEADERROW {
+	FONT-FAMILY: Verdana
+    BACKGROUND:#EBECF5
+}
+.HITLIST-ODDROW {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana
+    BACKGROUND:#EBECF5
+}
+.HITLIST-EVENROW {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana
+    BACKGROUND:#EBECF5
+}
+.CONTENTS-SELECT {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; BACKGROUND: #0000cc; COLOR: #ffcc00; FONT-FAMILY: Verdana
+}
+.CONTENTS-PARENT-LABEL {
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana
+}
+.CONTENTS-PARENT-ANCHOR {
+	FONT-SIZE: 10pt; COLOR: #0000cc; FONT-FAMILY: Verdana
+}
+.CONTENTS-CHILD-LABEL {
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana
+}
+.CONTENTS-CHILD-ANCHOR {
+	FONT-SIZE: 10pt; COLOR: #0000cc; FONT-FAMILY: Verdana
+}
+.ABHit {
+	COLOR: royalblue
+}

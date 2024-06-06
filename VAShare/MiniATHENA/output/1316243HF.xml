@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Advisories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<advisory>
+<subject_classification>
+<parameter>ATHENA Heart Failure Guideline</parameter>
+<value>true</value>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</subject_classification>
+<evaluated_goal>
+<reason_for_goal>CHD Risk Equivalent</reason_for_goal>
+<goal>LDL&lt; 100 mg/dL</goal>
+<achieved>achieved</achieved>
+<supporting_data>LDL_Cholesterol(49.0:02/08/1979)</supporting_data>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</evaluated_goal>
+<evaluated_goal>
+<reason_for_goal>presence of diabetes mellitus</reason_for_goal>
+<goal>SBP &lt; 140 and DBP &lt; 80</goal>
+<achieved>achieved</achieved>
+<supporting_data>Treatment_Diastolic_BP(75) &amp;&amp; Treatment_Systolic_BP(132)</supporting_data>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</evaluated_goal>
+<scenario_choice>
+<name>Stage C HF</name>
+<scenario_id>ATHENA_HF_Class10004</scenario_id>
+<description/>
+<preference>preferred</preference>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</scenario_choice>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Exercise</name>
+<message>Exercise training is beneficial as an adjunctive approach to improve clinical status in ambulatory patients with current or prior symptoms of HF and reduced LVEF. (Level of Evidence: B)</message>
+<message_type>Class I</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>atrial fibrillation and HF</name>
+<message>It is reasonable to treat patients with atrial fibrillation and HF with a strategy to maintain sinus rhythm or with a strategy to control ventricular rate alone. (Level of Evidence: A)</message>
+<rule_in_criteria>HF and atrial fibrillation</rule_in_criteria>
+<message_type>Class II a</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Maximal exercise testing</name>
+<message>Maximal exercise testing with or without measurement of respiratory gas exchange is reasonable to facilitate prescription of an appropriate exercise program for patients presenting with HF. (Level of Evidence: C)</message>
+<message_type>Class II a</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Fluid management if using diuretics</name>
+<message>Continue to manage diuretics and salt restriction for optimal volume control.  (Level of Evidence: C)</message>
+<rule_in_criteria>presence of diuretics</rule_in_criteria>
+<message_type>Class I</message_type>
+</action>
+<action xsi:type="Referral">
+<action_class>Referral</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Refer to cardiology - ICD</name>
+<when_lower_bound>0</when_lower_bound>
+<when_upper_bound>0</when_upper_bound>
+<who_to>cardiologist</who_to>
+</action>
+<evaluated_intervention>
+<activity>Hydralazine_and_nitrates</activity>
+<evaluations>
+<add>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>hydralazine and nitrates</name>
+<activity>Hydralazine_and_nitrates</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>rec add hydralazine and nitrates- dose suggsetions</name>
+<message>Recommend starting with hydralazine 25mg tid and nitrates 10mg tid. Would not go much above hydralazine 50mg tid and nitrates 40mg tid. Titrate after a month. Beta blockers can avoid the tachycardia caused by hydralazine and nitrates.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>rec add hyralazine_nitrates Astronaut II</name>
+<message>The combination of hydralazine and isosorbide dinitrate is recommended to reduce morbidity and mortality for patients self-described as African Americans with NYHA class III–IV HFrEF receiving optimal therapy with ACE inhibitors and beta blockers, unless contraindicated (423, 424). (Level of Evidence: A)</message>
+<message_type>Class I</message_type>
+</action>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</add>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>ACE_Inhibitors</activity>
+<evaluations>
+<add>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>Ace_Inhibitor</name>
+<activity>ACE_Inhibitors</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>rec add ace: dose adjustent based on kidney functio</name>
+<message>Refer to specific ACE Inhibitor dose adjustments based on kidney function.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>monitoring renal function and K for ACEI</name>
+<message>Renal function and
+serum potassium should be assessed within 1 to 2 weeks of
+initiation of therapy and periodically thereafter, especially in
+patients with preexisting hypotension, hyponatremia, diabetes
+mellitus, or azotemia or in those taking potassium
+supplements.</message>
+<message_type>Recommendation</message_type>
+</action>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Absence of NSAID HF collateral message Astronaut</name>
+<message>Nonsteroidal anti-inflammatory drugs(except aspirin) can cause sodium retention and peripheral vasoconstriction and can attenuate the efficacy and enhance the toxicity of diuretics and ACEIs</message>
+<rule_in_criteria>Absence of NSAID</rule_in_criteria>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</add>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>carvedilol</activity>
+<evaluations>
+<add>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>Beta blocker Stage C with MI</name>
+<activity>carvedilol</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>rec add BB based on 2013 ACCF/AHA guidelines</name>
+<message>Refer to 2013 ACCF/AHA Guideline (reproduced below) for specific BB starting dose and maximum dose.  In this application, we do not know what particular dosage can be tolerated by the patient.
+bisoprolol starting dose 1.25 mg once; max dose 10 mg once
+carvedilol starting dose 3.125 mg twice; max dose 50 mg twice
+carvedilol CR starting dose 10 mg once; max dose 80 mg once
+metoprolol succinate ER starting dose 12.5 - 25 mg once; 200 mg once</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</add>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>Beta_Blocker Stage C Heart Failure</activity>
+<evaluations>
+<add>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>Beta blocker for stage C heart failure</name>
+<activity>Beta_Blocker Stage C Heart Failure</activity>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</add>
+</evaluations>
+</evaluated_intervention>
+<evaluated_intervention>
+<activity>aldosterone antagonist</activity>
+<evaluations>
+<add>
+<prior_use>false</prior_use>
+<preference>neutral</preference>
+<name>Aldosterone Antagonist</name>
+<activity>aldosterone antagonist</activity>
+<action xsi:type="Message">
+<action_class>Message</action_class>
+<fine_grain_priority>0</fine_grain_priority>
+<name>Aldosterone antagonist warning</name>
+<message>Addition of an aldosterone antagonist is recommended in selected patients with moderately severe to severe symptoms of HF and reduced LVEF who CAN BE CAREFULLY MONITORED for PRESERVED RENAL FUNCTION and NORMAL POTASSIUM concentration. Creatinine should be 2.5 mg per dL or less in men or 2.0 mg per dL or less in women and potassium should be less than 5.0 mEq per liter. Under circumstances where monitoring for hyperkalemia or renal dysfunction is not anticipated to be feasible, the risks may outweigh the benefits of aldosterone anatgonists.</message>
+<message_type>Recommendation</message_type>
+</action>
+<guideline_id>ATHENA Heart Failure Guideline</guideline_id>
+</add>
+</evaluations>
+</evaluated_intervention>
+</advisory>
+<case_id>1316243</case_id>
+</Advisories>

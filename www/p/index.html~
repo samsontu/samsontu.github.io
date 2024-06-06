@@ -1,0 +1,131 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; U) [Netscape]">
+   <title>Stanford InterMed Site</title>
+</head>
+<body>
+
+<center>
+<h1>
+Stanford University School of Medicine<br>
+<font color="#0000FF">Private </font>InterMed Collaboratory Site</h1></center>
+
+<p><br>
+<p>
+<hr>
+<h3>
+Material for next InterMed meeting: 3/15/2000</h3>
+<b><font size=+1><a href="http://smi-web.stanford.edu/projects/intermed-web/p/domain_problem.pdf">Domain
+Ontology Problem to be Addressed in GLIF</a></font></b> <b><font size=+1>(3/13/00)</font></b>
+<p><b><font size=+1><a href="http://smi-web.stanford.edu/projects/intermed-web/p/ModelingTasks.pdf">Modeling
+Tasks</a> (3/13/00)</font></b>
+<p><b><font size=+1><a href="http://smi-web.stanford.edu/projects/intermed-web/p/TopGLIF.pdf">Top
+Level GLIF</a> (3/13/00)</font></b>
+<p><b><font size=+1><a href="http://smi-web.stanford.edu/projects/intermed-web/p/SupplementalMaterial.pdf">Supplemental
+Material </a>(3/13/00)</font></b>
+<p><b><font size=+1><a href="http://smi-web.stanford.edu/projects/intermed-web/p/Guideline.pdf">Guideline
+</a>(3/13/00)</font></b>
+<br>
+<hr>
+<h3>
+<a href="http://smi-web.stanford.edu/projects/intermed-web/p/glifdoc/ProposedRevisionsGLIFTable.pdf">Proposed
+Revisions to GLIF2.0</a>(10/26/99)</h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/glifdoc/guidelineclassification.pdf">Guideline
+Specification</a> (Nachman, 12/18/99)</h3>
+
+<h3>
+<a href="http://smi-web.stanford.edu/projects/intermed-web/guidelines/GLIF3/GLIFTogetherPage.html">GLIF
+Together Files</a> (2/17/00)</h3>
+
+<h3>
+<a href="http://smi-web.stanford.edu/projects/intermed-web/p/glifdoc/GLIFSchema010300.pdf">XML
+Schema for GLIF</a> (12/15/99)</h3>
+
+<h3>
+<a href="http://smi-web.stanford.edu/projects/intermed-web/p/glifdoc/GuidelineInstances010300.pdf">XML
+Instances for the GLIF Schema</a> (12/15/99)</h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/Requirements.pdf" target="_self">Summary
+of Requirements Breakout</a> (3/7/00)</h3>
+<b><font size=+1><a href="file:////Unix/projects/smi/web/projects/intermed-web/p/GLIFTasks3.pdf" target="_self">Requirement
+Task Schedule</a></font></b> <b><font size=+1>(3/7/00)</font></b>
+<br>
+<hr>
+<h3>
+AMIA Submitions</h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/GLIF3AMIA_Final.pdf" target="_self">GLIF3</a></h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/macro_amia_Final.pdf" target="_self">Macros</a></h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/Guideline%20Classification%20AMIA%202000.pdf" target="_self">Classification</a></h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/Ontology_Scamc_308.pdf" target="_self">Domain
+Ontology</a></h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/GuidelineRepresentationTutorial_Final.pdf" target="_self">Modeling
+and Representation Tutorial</a></h3>
+
+<hr>
+<h3>
+<a href="http://smi-web.stanford.edu/projects/intermed-web/guidelines/index.html">Old
+Stanford Guidelines Page</a></h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/Guideline_Eval.html">Old
+Evaluation of InterMed Guideline Representation</a></h3>
+
+<h3>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/shared-SCAMC.gif">The
+Shared Picture</a> (as used for the SCAMC '95 demo session)</h3>
+
+<h3>
+Presentations</h3>
+
+<ul>
+<li>
+<a href="file:////Unix/projects/smi/web/projects/intermed-web/p/imed/">HPCC
+Contrators' Meeting, National Library of Medicine, Bethesda, MD</a> (large)</li>
+
+<ul>
+<li>
+Speakers were:</li>
+
+<br>Edward H. Shortliffe (slides 1-14)
+<br>James Cimino (slides 15-30)
+<br>Robert A. Greenes (slides 31-43)
+<br>Paul D. Clayton (slides 44-50)</ul>
+</ul>
+
+<h3>
+Related Organizations</h3>
+
+<blockquote>&nbsp;<a href="http://www.cerc.wvu.edu/nlm/nlm.html">The ARTEMIS
+Project</a> at the Concurrent Engineering Research Center (CERC) of West
+Virginia University.</blockquote>
+
+<h3>
+<a href="http://smi-web.stanford.edu/hypermail/intermed/archives.html">InterMed
+Hypermail Archives</a></h3>
+
+<h3>
+<a href="http://smi-web.stanford.edu/stats/intermed/intermedstats.html">InterMed
+Web Access Statistics</a></h3>
+
+<hr>
+<address>
+Last updated on March 7, 2000 by <a href="mailto:peleg@smi.stanford.edu/people/peleg">Mor
+Peleg</a></address>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+
+Guidelines instance_00001 
+{
+   guidelines = SEQUENCE 1 {(Guideline_Object instance_00081);};
+};
+
+
+Guideline_Object instance_00081 
+{
+   name = "influenza glif2version";
+   steps = SEQUENCE 26 {(Branch_Step instance_00082);(Conditional_Step instance_00083);(Conditional_Step instance_00084);(Conditional_Step instance_00085);(Conditional_Step instance_00086);(Synchronization_Step instance_00087);(Action_Step instance_00088);(Action_Step instance_00089);(Action_Step instance_00090);(Action_Step instance_00091);(Conditional_Step instance_00092);(Conditional_Step instance_00093);(Conditional_Step instance_00094);(Conditional_Step instance_00095);(Conditional_Step instance_00096);(Action_Step instance_00097);(Action_Step instance_00098);(Branch_Step instance_00099);(Synchronization_Step instance_00101);(Conditional_Step instance_00114);(Conditional_Step instance_00115);(Conditional_Step instance_00116);(Synchronization_Step instance_00120);(Conditional_Step instance_00121);(Conditional_Step instance_00123);(Action_Step instance_00125);};
+};
+
+
+Branch_Step instance_00082 
+{
+   name = "determine vaccine eligibility";
+   next_steps = SEQUENCE 7 {(Conditional_Step instance_00083);(Conditional_Step instance_00084);(Conditional_Step instance_00085);(Conditional_Step instance_00086);(Conditional_Step instance_00114);(Conditional_Step instance_00115);(Conditional_Step instance_00116);};
+   order_constraint = any_order;
+   selection_method = all_of;
+};
+
+
+Conditional_Step instance_00083 
+{
+   condition = 
+       Boolean_Criterion instance_00100 
+       {
+          spec = "have chronic pulmonary or chronic cardiovascular disease";
+          type = k_two_valued;
+       };
+   destination = (Synchronization_Step instance_00087);
+   name = "chronic cardiopulmonary dx";
+};
+
+
+Conditional_Step instance_00084 
+{
+   condition = 
+       Boolean_Criterion instance_00104 
+       {
+          spec = "nursing home residents or chronic care facility residents (any age)";
+          type = k_two_valued;
+       };
+   destination = (Synchronization_Step instance_00087);
+   name = "chronic care";
+};
+
+
+Conditional_Step instance_00085 
+{
+   condition = 
+       Boolean_Criterion instance_00105 
+       {
+          spec = "chronic metabolic disease or renal dysfunction or hemoglobinopathies or immunosuppression";
+       };
+   destination = (Synchronization_Step instance_00087);
+   name = "chronic disease";
+};
+
+
+Conditional_Step instance_00086 
+{
+   condition = 
+       Boolean_Criterion instance_00106 
+       {
+          spec = "age 6 months through 18 years and treatment = aspirin";
+       };
+   destination = (Synchronization_Step instance_00087);
+   name = "kids with aspirin rx";
+};
+
+
+Synchronization_Step instance_00087 
+{
+   continuation = proceed_after_one;
+   name = "primary vaccine receipient";
+   next_step = (Conditional_Step instance_00123);
+};
+
+
+Action_Step instance_00088 
+{
+   action = (Action_Spec instance_00109);
+   name = "Split virus only .25mL IM";
+   next_step = (Synchronization_Step instance_00101);
+};
+
+
+Action_Step instance_00089 
+{
+   name = "Split virus only .50mL IM";
+   next_step = (Synchronization_Step instance_00101);
+};
+
+
+Action_Step instance_00090 
+{
+   action = (Action_Spec instance_00113);
+   name = "Split virus only .50 mL IM";
+};
+
+
+Action_Step instance_00091 
+{
+   action = (Action_Spec instance_00112);
+   name = "Whole or split virus .50 ml IM";
+};
+
+
+Conditional_Step instance_00092 
+{
+   condition = 
+       Boolean_Criterion instance_00103 
+       {
+          spec = "age  >= 6 months and  <= 35 months";
+       };
+   destination = (Action_Step instance_00088);
+   name = "age  between 6 and 35 months";
+};
+
+
+Conditional_Step instance_00093 
+{
+   condition = 
+       Boolean_Criterion instance_00102 
+       {
+          spec = "age >= 3 and <= 8 years";
+       };
+   destination = (Action_Step instance_00089);
+   name = "age 3 to 8 years";
+};
+
+
+Conditional_Step instance_00094 
+{
+   condition = 
+       Boolean_Criterion instance_00107 
+       {
+          spec = "age >=9 and <= 12 years";
+       };
+   destination = (Action_Step instance_00090);
+   name = "age 9 to 12 years";
+};
+
+
+Conditional_Step instance_00095 
+{
+   condition = 
+       Boolean_Criterion instance_00108 
+       {
+          spec = "age >12 years";
+       };
+   destination = (Action_Step instance_00091);
+   name = "age >12 years";
+};
+
+
+Conditional_Step instance_00096 
+{
+   destination = (Action_Step instance_00097);
+   else = (Action_Step instance_00098);
+   name = "first dose for children under 9";
+};
+
+
+Action_Step instance_00097 
+{
+   name = "two shots 1 month apart";
+};
+
+
+Action_Step instance_00098 
+{
+   name = "(else)  one shot";
+};
+
+
+Branch_Step instance_00099 
+{
+   name = "pick dose for age";
+   next_steps = SEQUENCE 4 {(Conditional_Step instance_00092);(Conditional_Step instance_00093);(Conditional_Step instance_00094);(Conditional_Step instance_00095);};
+   order_constraint = any_order;
+   selection_method = all_of;
+};
+
+
+
+
+Synchronization_Step instance_00101 
+{
+   name = "determine 1 or 2 doses";
+   next_step = (Conditional_Step instance_00096);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Action_Spec instance_00109 
+{
+   name = "Give Split virus only .25mL IM";
+};
+
+
+Action_Spec instance_00112 
+{
+   name = "Give: Whole or split virus .50 ml IM";
+};
+
+
+Action_Spec instance_00113 
+{
+   name = "Give: Split virus only .50 mL IM";
+};
+
+
+Conditional_Step instance_00114 
+{
+   condition = 
+       Boolean_Criterion instance_00117 
+       {
+          spec = "health care workers treating high risk persons";
+       };
+   destination = (Synchronization_Step instance_00120);
+   name = "health care workers treating high risk persons";
+};
+
+
+Conditional_Step instance_00115 
+{
+   condition = 
+       Boolean_Criterion instance_00118 
+       {
+          spec = "providers of essential community services during epidemics";
+       };
+   destination = (Synchronization_Step instance_00120);
+   name = "providers of essential community services";
+};
+
+
+Conditional_Step instance_00116 
+{
+   condition = 
+       Boolean_Criterion instance_00119 
+       {
+          spec = "those wishing to reduce chance of disease";
+       };
+   destination = (Synchronization_Step instance_00120);
+   name = "those wishing to reduce chance of disease";
+};
+
+
+
+
+
+
+
+
+Synchronization_Step instance_00120 
+{
+   name = "optional vaccine receipient";
+   next_step = (Action_Step instance_00125);
+};
+
+
+Conditional_Step instance_00121 
+{
+   condition = 
+       Boolean_Criterion instance_00122 
+       {
+          spec = "risks > benefits  ";
+       };
+   destination = (Branch_Step instance_00099);
+   name = "risks outweight benefits";
+};
+
+
+
+
+Conditional_Step instance_00123 
+{
+   condition = 
+       Boolean_Criterion instance_00124 
+       {
+          spec = "if no contraindications";
+       };
+   destination = (Branch_Step instance_00099);
+   name = "check for no contraindications";
+};
+
+
+
+
+Action_Step instance_00125 
+{
+   action = (Action_Spec instance_00126);
+   name = "consider risk/benefit analysis";
+   next_step = (Conditional_Step instance_00121);
+};
+
+
+Action_Spec instance_00126 
+{
+   name = "compare  risk  benefits for these lesser indications";
+};
+

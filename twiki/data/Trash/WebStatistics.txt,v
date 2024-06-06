@@ -1,0 +1,141 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2006.04.01.05.55.45;	author TWikiContributor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2006.02.01.12.01.26;	author TWikiContributor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2004.07.16.07.34.23;	author PeterThoeny;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.03.22.07.41.45;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.01.19.08.51.05;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.08.08.05.52.58;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.6
+log
+@buildrelease
+@
+text
+@%META:TOPICINFO{author="TWikiContributor" date="1089963263" format="1.1" version="6"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Statistics for <nop>%WEB% Web
+
+| *Month:* | *Topic <br /> views:* | *Topic <br /> saves:* | *File <br /> uploads:* | *Most popular <br /> topic views:* | *Top contributors for <br /> topic save and uploads:* |
+| <!--statDate--> | <!--statViews--> | <!--statSaves--> | <!--statUploads--> | <!--statTopViews--> | <!--statTopContributors--> |
+
+__Notes:__
+   * Do not edit this topic, it is updated automatically. (You can also <a href="%SCRIPTURLPATH{"statistics"}%/%WEB%">force</a> an update)
+   * %TWIKIWEB%.TWikiDocumentation tells you how to enable the automatic updates of the statistics.
+   * Suggestion: You could archive this topic once a year and delete the previous year's statistics from the table.
+
+@
+
+
+1.5
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1089963263" format="1.1" version="5"}%
+d9 3
+a11 3
+	* Do not edit this topic, it is updated automatically. (You can also <a href="%SCRIPTURLPATH{"statistics"}%/%WEB%">force</a> an update)
+	* %TWIKIWEB%.TWikiDocumentation tells you how to enable the automatic updates of the statistics.
+	* Suggestion: You could archive this topic once a year and delete the previous year's statistics from the table.
+@
+
+
+1.4
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1089963263" format="1.0" version="1.4"}%
+d9 1
+a9 1
+	* Do not edit this topic, it is updated automatically. (You can also <a href="%SCRIPTURLPATH%/statistics%SCRIPTSUFFIX%/%WEB%">force</a> an update)
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1048318905" format="1.0" version="1.3"}%
+d3 10
+a12 9
+---++ Statistics for <nop>%WEB% Web
+
+| *Month:* | *Topic <br> views:* | *Topic <br> saves:* | *File <br> uploads:* | *Most popular <br> topic views:* | *Top contributors for <br> topic save and uploads:* |
+| <!--statDate--> | <!--statViews--> | <!--statSaves--> | <!--statUploads--> | <!--statTopViews--> | <!--statTopContributors--> |
+
+__Notes:__
+	* Do not edit this topic, it is updated automatically. (You can also <a href="%SCRIPTURLPATH%/statistics%SCRIPTSUFFIX%/%WEB%">force</a> an update)
+	* %TWIKIWEB%.TWikiDocumentation tells you how to enable the automatic updates of the statistics.
+	* Suggestion: You could archive this topic once a year and delete the previous year's statistics from the table.
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1042966265" format="1.0" version="1.2"}%
+d3 1
+a3 1
+---++ Statistics for %WEB% Web
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="997249978" format="1.0beta2" version="1.1"}%
+d3 1
+a3 1
+---++ Statistics for %WIKITOOLNAME%.%WEB% Web
+@

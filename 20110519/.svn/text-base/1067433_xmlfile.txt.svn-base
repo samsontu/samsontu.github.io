@@ -1,0 +1,261 @@
+<patientdata>
+<patient name="1067433">
+<meds>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">81</field2>
+	<start>Wed Jan 24 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Drug">digoxin</field1>
+	<field2 label="Daily Dose">0.125</field2>
+	<start>Wed Jan 24 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Drug">furosemide</field1>
+	<field2 label="Daily Dose">10</field2>
+	<start>Fri Jan 12 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Drug">losartan</field1>
+	<field2 label="Daily Dose">25</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Drug">simvastatin</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Wed Jan 24 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Drug">spironolactone</field1>
+	<field2 label="Daily Dose">50</field2>
+	<start>Mon Oct 17 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Drug">valsartan</field1>
+	<field2 label="Daily Dose">80</field2>
+	<start>Mon Oct 17 00:00:00 PDT 1988</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Atrial_Fibrillation</field1>
+	<start>Thu Jan 25 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Dx">Coronary_Artery_Disease</field1>
+	<start>Wed Jan 10 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Dx">Depression</field1>
+	<start>Thu Aug 24 00:00:00 PDT 1989</start>
+</item>
+<item>
+	<field1 label="Dx">Disorders Lipid Metabolism</field1>
+	<start>Tue Dec 26 00:00:00 PST 1989</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Thu Jan 25 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Thu Aug 24 00:00:00 PDT 1989</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">74</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">60</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">54</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">126</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">104.719</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+</clinicalSigns>
+<adr>
+<item>
+	<field1 label="ADR">propranolol</field1>
+	<start>Wed Jul 13 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="ADR">aspirin</field1>
+	<start>Wed Jul 13 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="ADR">captopril</field1>
+	<start>Wed Jul 13 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="ADR">propranolol</field1>
+	<start>Wed Jul 13 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="ADR">aspirin</field1>
+	<start>Wed Jul 13 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="ADR">captopril</field1>
+	<start>Wed Jul 13 00:00:00 PDT 1988</start>
+</item>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">3.7</field2>
+	<start>Thu Jan 18 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">91</field2>
+	<start>Thu Jan 18 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">B 12</field1>
+	<field2 label="Value">412</field2>
+	<start>Tue Jan 09 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">4030</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">28</field2>
+	<start>Sun Jan 21 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">9.5</field2>
+	<start>Sun Jan 21 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">104</field2>
+	<start>Sun Jan 21 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">118</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">1.0</field2>
+	<start>Sun Jan 21 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">eGFR</field1>
+	<field2 label="Value">28</field2>
+	<start>Tue Dec 26 00:00:00 PST 1989</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">45.3</field2>
+	<start>Sat Jan 20 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">36</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">15.7</field2>
+	<start>Sat Jan 20 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">60</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Phosphorus</field1>
+	<field2 label="Value">4.3</field2>
+	<start>Tue Jan 09 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">161</field2>
+	<start>Sat Jan 20 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">3.8</field2>
+	<start>Sun Jan 21 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">30</field2>
+	<start>Thu Jan 18 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">44</field2>
+	<start>Thu Jan 18 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">134</field2>
+	<start>Sun Jan 21 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.5</field2>
+	<start>Thu Jan 18 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">118</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">81</field2>
+	<start>Mon Jan 08 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">Uric_Acid</field1>
+	<field2 label="Value">4.0</field2>
+	<start>Tue Jan 09 00:00:00 PST 1990</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">6.9</field2>
+	<start>Sat Jan 20 00:00:00 PST 1990</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">90</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Female</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><patientdata>
+<patient name="John Doe">
+    <meds>
+    </meds>
+    <dx>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Bob">
+    <meds>
+        <item>
+            <field1 label="Drug">tacrolimus</field1>
+            <field2 label="Daily Dose"> 5</field2>
+            <start>Thu Jun 17 16:14:49 PDT 2010</start>
+            <end>Sat Jul 17 16:14:49 PDT 2010</end>
+        </item>
+    </meds>
+    <dx>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">68</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="sue">
+    <meds>
+    </meds>
+    <dx>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+        <item>
+            <field1 label="ADR">cyclosporine</field1>
+            <start>Thu Jun 17 16:17:01 PDT 2010</start>
+        </item>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">5</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="Richard">
+    <meds>
+        <item>
+            <field1 label="Drug">nitrate</field1>
+            <field2 label="Daily Dose"> 3</field2>
+            <start>Thu Jun 17 16:18:49 PDT 2010</start>
+            <end>Sat Jul 17 16:18:49 PDT 2010</end>
+        </item>
+    </meds>
+    <dx>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">66</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+<patient name="random">
+    <meds>
+        <item>
+            <field1 label="Drug">digitalis</field1>
+            <field2 label="Daily Dose"> 4 mg</field2>
+            <start>Thu Jun 17 16:24:12 PDT 2010</start>
+            <end>Sat Jul 17 16:24:12 PDT 2010</end>
+        </item>
+    </meds>
+    <dx>
+    </dx>
+    <clinicalSigns>
+    </clinicalSigns>
+    <adr>
+    </adr>
+    <labs>
+    </labs>
+    <demographics>
+        <item>
+            <field1 label="Field Name">Age</field1>
+            <field2 label="Value">45</field2>
+        </item>
+    </demographics>
+    <cpt>
+    </cpt>
+</patient>
+</patientdata>

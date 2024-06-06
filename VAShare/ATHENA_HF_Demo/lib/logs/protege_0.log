@@ -1,0 +1,59 @@
+2013.09.10 16:54:52.790 PDT INFO: *** SYSTEM START ***
+2013.09.10 16:54:52.806 PDT SEVERE: Unable to load project from: file:/eonpm/kb/ATHENA_HTN.pprj -- Project.getProjectInstancesReader()
+2013.09.10 16:58:08.100 PDT INFO: *** SYSTEM START ***
+2013.09.10 16:58:08.114 PDT SEVERE: Unable to load project from: file:/Users/tu/workspace/eonpm/src/edu/stanford/smi/eon/clients/ATHENA_Standalone.java/kb/ATHENA_HTN.pprj -- Project.getProjectInstancesReader()
+2013.09.10 16:59:34.287 PDT INFO: *** SYSTEM START ***
+2013.09.10 16:59:34.301 PDT SEVERE: Unable to load project from: file:/Users/tu/workspace/eonpm/kb/ATHENA_HTN.pprj -- Project.getProjectInstancesReader()
+2013.09.10 17:00:41.123 PDT INFO: *** SYSTEM START ***
+2013.09.24 12:14:48.548 PDT INFO: *** SYSTEM START ***
+2013.09.24 13:28:22.139 PDT INFO: *** SYSTEM START ***
+2013.09.30 22:23:33.002 PDT INFO: *** SYSTEM START ***
+2013.09.30 22:24:13.482 PDT INFO: *** SYSTEM START ***
+2013.10.08 16:55:07.647 PDT INFO: *** SYSTEM START ***
+2013.10.08 17:06:41.148 PDT INFO: *** SYSTEM START ***
+2013.10.08 17:24:53.109 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:30:22.489 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:30:22.503 PDT SEVERE: Unable to load project from: file:/Users/tu/workspace/eonpm/kb/ATHENA_HF.pprj -- Project.getProjectInstancesReader()
+2013.11.01 15:31:13.701 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:35:13.791 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:36:10.319 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:41:09.933 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:48:42.328 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:49:58.058 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:50:35.135 PDT INFO: *** SYSTEM START ***
+2013.11.01 15:54:34.362 PDT INFO: *** SYSTEM START ***
+2013.11.01 16:18:18.427 PDT INFO: *** SYSTEM START ***
+2013.11.01 16:22:09.150 PDT INFO: *** SYSTEM START ***
+2013.11.01 16:23:09.216 PDT INFO: *** SYSTEM START ***
+2013.11.01 16:23:48.604 PDT INFO: *** SYSTEM START ***
+2013.11.01 16:25:24.424 PDT INFO: *** SYSTEM START ***
+2013.11.01 16:26:51.889 PDT INFO: *** SYSTEM START ***
+2013.11.01 16:27:32.523 PDT INFO: *** SYSTEM START ***
+2013.11.04 08:28:56.878 PST INFO: *** SYSTEM START ***
+2013.11.04 08:29:07.564 PST INFO: *** SYSTEM START ***
+2013.11.04 08:34:05.198 PST INFO: *** SYSTEM START ***
+2013.11.07 10:10:02.449 PST INFO: *** SYSTEM START ***
+2013.11.07 10:20:05.281 PST INFO: *** SYSTEM START ***
+2013.11.07 10:23:18.324 PST INFO: *** SYSTEM START ***
+2013.11.07 10:24:12.552 PST INFO: *** SYSTEM START ***
+2013.11.07 10:27:31.148 PST INFO: *** SYSTEM START ***
+2013.11.07 10:30:01.811 PST INFO: *** SYSTEM START ***
+2013.11.07 10:37:46.144 PST INFO: *** SYSTEM START ***
+2013.11.07 10:40:21.962 PST INFO: *** SYSTEM START ***
+2013.11.07 10:41:20.661 PST INFO: *** SYSTEM START ***
+2013.11.07 10:43:11.406 PST INFO: *** SYSTEM START ***
+2013.11.07 10:46:49.297 PST INFO: *** SYSTEM START ***
+2014.01.13 17:09:53.467 PST INFO: *** SYSTEM START ***
+2014.01.14 09:02:56.367 PST INFO: *** SYSTEM START ***
+2014.01.14 09:05:52.503 PST INFO: *** SYSTEM START ***
+2014.03.17 15:09:28.351 PDT INFO: *** SYSTEM START ***
+2014.03.17 15:12:26.053 PDT INFO: *** SYSTEM START ***
+2014.03.21 10:30:54.726 PDT INFO: *** SYSTEM START ***
+2014.03.21 10:30:54.922 PDT WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2014.03.21 10:30:58.285 PDT WARNING: Unable to load class: edu.stanford.smi.protegex.widget.graph.GraphPoint -- PropertyMapUtil.getJavaClassObject()
+2014.03.21 10:30:58.289 PDT WARNING: Unable to load class: edu.stanford.smi.protegex.widget.graph.GraphPoint -- PropertyMapUtil.getJavaClassObject()
+2014.03.21 10:30:59.863 PDT WARNING: Unable to load class: edu.stanford.smi.protegex.widget.graph.GraphPoint -- PropertyMapUtil.getJavaClassObject()
+2014.03.21 10:30:59.865 PDT WARNING: Unable to load class: edu.stanford.smi.protegex.widget.graph.GraphPoint -- PropertyMapUtil.getJavaClassObject()
+2014.03.21 10:30:59.866 PDT WARNING: Unable to load class: edu.stanford.smi.protegex.widget.graph.GraphPoint -- PropertyMapUtil.getJavaClassObject()
+2014.03.21 10:30:59.870 PDT WARNING: Unable to load class: edu.stanford.smi.protegex.widget.graph.GraphPoint -- PropertyMapUtil.getJavaClassObject()
+2014.03.21 10:31:01.270 PDT INFO: Load time for file:\C:\ATHENA_HF_Demo\kbs\ATHENA_HF.pprj = 5 sec (project) + 0 sec (ui) -- ProjectManager$3.run()

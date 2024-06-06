@@ -1,0 +1,6470 @@
+; Thu Jul 24 19:58:12 PDT 2008
+; 
+;+ (version "3.4")
+;+ (build "Build 504")
+
+([ANNOTATED_INSTANCE_WIDGET] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([ANNOTATION_TEXT_WIDGET] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena-all_ProjectKB_00046] of  Integer
+
+	(integer_value 514)
+	(name "ClsesTab.left_right"))
+
+([athena-all_ProjectKB_00047] of  Integer
+
+	(integer_value 697)
+	(name "ClsesTab.left.top_bottom"))
+
+([athena-all_ProjectKB_00048] of  Integer
+
+	(integer_value 250)
+	(name "SlotsTab.left_right"))
+
+([athena-all_ProjectKB_00049] of  Integer
+
+	(integer_value 400)
+	(name "SlotTab.left.top_bottom"))
+
+([athena-all_ProjectKB_00050] of  Integer
+
+	(integer_value 346)
+	(name "FormsTab.left_right"))
+
+([athena-all_ProjectKB_00051] of  Integer
+
+	(integer_value 269)
+	(name "InstancesTab.left_right"))
+
+([athena-all_ProjectKB_00052] of  Integer
+
+	(integer_value 299)
+	(name "InstancesTab.right.left_right"))
+
+([athena-all_ProjectKB_00056] of  Map
+
+	(entries [athena_hypertension_ProjectKB_Class3641])
+	(referenced_maps [athena_hypertension_ProjectKB_Class3638]))
+
+([athena_hypertension_ProjectKB_00000] of  Widget
+
+	(height 670)
+	(is_hidden FALSE)
+	(name "ATHENA_Management_Guideline")
+	(property_list [athena_hypertension_ProjectKB_00001])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 830)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00001] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01695]
+		[athena_hypertension_ProjectKB_01697]
+		[athena_hypertension_ProjectKB_01705]
+		[athena_hypertension_ProjectKB_01707]
+		[athena_hypertension_ProjectKB_01915]
+		[athena_hypertension_ProjectKB_01923]
+		[athena_hypertension_ProjectKB_01928]
+		[athena_hypertension_ProjectKB_01936]
+		[athena_hypertension_ProjectKB_01944]
+		[athena_hypertension_ProjectKB_01946]
+		[athena_hypertension_ProjectKB_01951]
+		[athena_hypertension_ProjectKB_01959]
+		[athena_hypertension_ProjectKB_01961]
+		[athena_hypertension_ProjectKB_Class3592]
+		[athena_hypertension_ProjectKB_Class3596]
+		[athena_hypertension_ProjectKB_Class3600]
+		[athena_hypertension_ProjectKB_Class3602]))
+
+([athena_hypertension_ProjectKB_00002] of  Property_List
+
+	(name ":DEFAULT:VISIBIITY:CHECKER"))
+
+([athena_hypertension_ProjectKB_00003] of  Property_List
+
+	(name "Scenario")
+	(properties
+		[athena_hypertension_ProjectKB_00298]
+		[athena_hypertension_ProjectKB_00299]
+		[athena_hypertension_ProjectKB_00300]
+		[athena_hypertension_ProjectKB_00301]
+		[athena_hypertension_ProjectKB_00302]
+		[athena_hypertension_ProjectKB_00303]
+		[athena_hypertension_ProjectKB_00304]
+		[athena_hypertension_ProjectKB_00305]
+		[athena_hypertension_ProjectKB_00306]))
+
+([athena_hypertension_ProjectKB_00004] of  Property_List
+
+	(name "Case_Step")
+	(properties
+		[athena_hypertension_ProjectKB_00280]
+		[athena_hypertension_ProjectKB_00281]
+		[athena_hypertension_ProjectKB_00282]
+		[athena_hypertension_ProjectKB_00283]
+		[athena_hypertension_ProjectKB_00284]
+		[athena_hypertension_ProjectKB_00285]
+		[athena_hypertension_ProjectKB_00286]
+		[athena_hypertension_ProjectKB_00287]
+		[athena_hypertension_ProjectKB_00288]))
+
+([athena_hypertension_ProjectKB_00005] of  Property_List
+
+	(name "Subguideline_Step"))
+
+([athena_hypertension_ProjectKB_00006] of  Property_List
+
+	(name "Choice_Step")
+	(properties
+		[athena_hypertension_ProjectKB_00271]
+		[athena_hypertension_ProjectKB_00272]
+		[athena_hypertension_ProjectKB_00273]
+		[athena_hypertension_ProjectKB_00274]
+		[athena_hypertension_ProjectKB_00275]
+		[athena_hypertension_ProjectKB_00276]
+		[athena_hypertension_ProjectKB_00277]
+		[athena_hypertension_ProjectKB_00278]
+		[athena_hypertension_ProjectKB_00279]))
+
+([athena_hypertension_ProjectKB_00007] of  Property_List
+
+	(name "Synchronization_Step"))
+
+([athena_hypertension_ProjectKB_00008] of  Property_List
+
+	(name "Action_Step"))
+
+([athena_hypertension_ProjectKB_00009] of  Property_List
+
+	(name "Action_Choice")
+	(properties
+		[athena_hypertension_ProjectKB_00289]
+		[athena_hypertension_ProjectKB_00290]
+		[athena_hypertension_ProjectKB_00291]
+		[athena_hypertension_ProjectKB_00292]
+		[athena_hypertension_ProjectKB_00293]
+		[athena_hypertension_ProjectKB_00294]
+		[athena_hypertension_ProjectKB_00295]
+		[athena_hypertension_ProjectKB_00296]
+		[athena_hypertension_ProjectKB_00297]))
+
+([athena_hypertension_ProjectKB_00010] of  Property_List
+
+	(name "Evaluate_Choice_Step"))
+
+([athena_hypertension_ProjectKB_00011] of  Property_List
+
+	(name "Branch_Step"))
+
+([athena_hypertension_ProjectKB_00012] of  Property_List
+
+	(name "Followed_By")
+	(properties
+		[athena_hypertension_ProjectKB_00307]
+		[athena_hypertension_ProjectKB_00308]
+		[athena_hypertension_ProjectKB_00309]
+		[athena_hypertension_ProjectKB_00310]
+		[athena_hypertension_ProjectKB_00311]
+		[athena_hypertension_ProjectKB_00312]
+		[athena_hypertension_ProjectKB_00313]
+		[athena_hypertension_ProjectKB_00314]
+		[athena_hypertension_ProjectKB_00315]
+		[athena_hypertension_ProjectKB_00316]
+		[athena_hypertension_ProjectKB_00317]))
+
+([athena_hypertension_ProjectKB_00013] of  Property_List
+
+	(name "Case_Selection")
+	(properties
+		[athena_hypertension_ProjectKB_00318]
+		[athena_hypertension_ProjectKB_00319]
+		[athena_hypertension_ProjectKB_00320]
+		[athena_hypertension_ProjectKB_00321]
+		[athena_hypertension_ProjectKB_00322]
+		[athena_hypertension_ProjectKB_00323]
+		[athena_hypertension_ProjectKB_00324]
+		[athena_hypertension_ProjectKB_00325]
+		[athena_hypertension_ProjectKB_00326]
+		[athena_hypertension_ProjectKB_00327]
+		[athena_hypertension_ProjectKB_00328]))
+
+([athena_hypertension_ProjectKB_00014] of  Property_List
+
+	(name "Selection")
+	(properties
+		[athena_hypertension_ProjectKB_00329]
+		[athena_hypertension_ProjectKB_00330]
+		[athena_hypertension_ProjectKB_00331]
+		[athena_hypertension_ProjectKB_00332]
+		[athena_hypertension_ProjectKB_00333]
+		[athena_hypertension_ProjectKB_00334]
+		[athena_hypertension_ProjectKB_00335]
+		[athena_hypertension_ProjectKB_00336]
+		[athena_hypertension_ProjectKB_00337]
+		[athena_hypertension_ProjectKB_00338]
+		[athena_hypertension_ProjectKB_00339]))
+
+([athena_hypertension_ProjectKB_00015] of  String
+
+	(name "KATool.TOP_LEVEL_INSTANCE")
+	(string_value "ATHENAINSTANCE_90980"))
+
+([athena_hypertension_ProjectKB_00271] of  Integer
+
+	(integer_value -52)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00272] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00273] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00274] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00275] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00276] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00277] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00278] of  String
+
+	(name ":NODE:STYLE")
+	(string_value "Ellipse"))
+
+([athena_hypertension_ProjectKB_00279] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":FILLED:NODE"))
+
+([athena_hypertension_ProjectKB_00280] of  Integer
+
+	(integer_value -256)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00281] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00282] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00283] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00284] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00285] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00286] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00287] of  String
+
+	(name ":NODE:STYLE")
+	(string_value "Diamond"))
+
+([athena_hypertension_ProjectKB_00288] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":FILLED:NODE"))
+
+([athena_hypertension_ProjectKB_00289] of  Integer
+
+	(integer_value -16711936)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00290] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00291] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00292] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00293] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00294] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00295] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00296] of  String
+
+	(name ":NODE:STYLE")
+	(string_value "Ellipse"))
+
+([athena_hypertension_ProjectKB_00297] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":FILLED:NODE"))
+
+([athena_hypertension_ProjectKB_00298] of  Integer
+
+	(integer_value -13108)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00299] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00300] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00301] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00302] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00303] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00304] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00305] of  String
+
+	(name ":NODE:STYLE")
+	(string_value "Rectangle"))
+
+([athena_hypertension_ProjectKB_00306] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":FILLED:NODE"))
+
+([athena_hypertension_ProjectKB_00307] of  Integer
+
+	(integer_value -13434829)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00308] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00309] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00310] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00311] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00312] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00313] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00314] of  String
+
+	(name ":WIRE:TYPE")
+	(string_value "Solid Line"))
+
+([athena_hypertension_ProjectKB_00315] of  String
+
+	(name ":STARTING:ARROW")
+	(string_value "No Endpoint"))
+
+([athena_hypertension_ProjectKB_00316] of  String
+
+	(name ":ENDING:ARROW")
+	(string_value "Arrowhead Endpoint"))
+
+([athena_hypertension_ProjectKB_00317] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":ANCHOR:TEXT:AT:UPPER:LEFT:CORNER"))
+
+([athena_hypertension_ProjectKB_00318] of  Integer
+
+	(integer_value -65536)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00319] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00320] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00321] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00322] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00323] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00324] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00325] of  String
+
+	(name ":WIRE:TYPE")
+	(string_value "Solid Line"))
+
+([athena_hypertension_ProjectKB_00326] of  String
+
+	(name ":STARTING:ARROW")
+	(string_value "No Endpoint"))
+
+([athena_hypertension_ProjectKB_00327] of  String
+
+	(name ":ENDING:ARROW")
+	(string_value "Arrowhead Endpoint"))
+
+([athena_hypertension_ProjectKB_00328] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":ANCHOR:TEXT:AT:UPPER:LEFT:CORNER"))
+
+([athena_hypertension_ProjectKB_00329] of  Integer
+
+	(integer_value -16724941)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00330] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00331] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00332] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00333] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00334] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00335] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00336] of  String
+
+	(name ":WIRE:TYPE")
+	(string_value "Solid Line"))
+
+([athena_hypertension_ProjectKB_00337] of  String
+
+	(name ":STARTING:ARROW")
+	(string_value "No Endpoint"))
+
+([athena_hypertension_ProjectKB_00338] of  String
+
+	(name ":ENDING:ARROW")
+	(string_value "Arrowhead Endpoint"))
+
+([athena_hypertension_ProjectKB_00339] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":ANCHOR:TEXT:AT:UPPER:LEFT:CORNER"))
+
+([athena_hypertension_ProjectKB_00340] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:CLASS:BASED:HIDER:BUTTON"))
+
+([athena_hypertension_ProjectKB_00341] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:REUSABLE:FORM:BUTTON"))
+
+([athena_hypertension_ProjectKB_00342] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:LEGEND:BUTTON"))
+
+([athena_hypertension_ProjectKB_00343] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:THUMBNAIL:BUTTON"))
+
+([athena_hypertension_ProjectKB_00344] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:WIREBUILDER:BUTTON"))
+
+([athena_hypertension_ProjectKB_00345] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:FLOWCHART:BUTTON"))
+
+([athena_hypertension_ProjectKB_00346] of  String
+
+	(name "CLASS:BASED:HIDER:BUTTON:TOOLTIP")
+	(string_value "Alter Visibility by Class"))
+
+([athena_hypertension_ProjectKB_00347] of  String
+
+	(name "REUSABLE:FORM:BUTTON:TOOLTIP")
+	(string_value "View form for object selected in diagram"))
+
+([athena_hypertension_ProjectKB_00348] of  String
+
+	(name "LEGEND:BUTTON:TOOLTIP")
+	(string_value "View Legend"))
+
+([athena_hypertension_ProjectKB_00349] of  String
+
+	(name "THUMBNAIL:BUTTON:TOOLTIP")
+	(string_value "View thumbnail map"))
+
+([athena_hypertension_ProjectKB_00350] of  String
+
+	(name "WIRE:BUILDER:BUTTON:TOOLTIP")
+	(string_value "View wire builder"))
+
+([athena_hypertension_ProjectKB_00351] of  Integer
+
+	(integer_value 600)
+	(name ":LOWER:BOUND:ON:DIAGRAM:WIDTH"))
+
+([athena_hypertension_ProjectKB_00352] of  Integer
+
+	(integer_value 600)
+	(name ":LOWER:BOUND:ON:DIAGRAM:HEIGHT"))
+
+([athena_hypertension_ProjectKB_00353] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":IS:PALETTE:DISPLAYED"))
+
+([athena_hypertension_ProjectKB_00354] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([athena_hypertension_ProjectKB_00355] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00356] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00357] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00358] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00359] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Delete:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00360] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Prototype:Button"))
+
+([athena_hypertension_ProjectKB_00361] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([athena_hypertension_ProjectKB_00362] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([athena_hypertension_ProjectKB_00363] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([athena_hypertension_ProjectKB_00364] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([athena_hypertension_ProjectKB_00365] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([athena_hypertension_ProjectKB_00366] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([athena_hypertension_ProjectKB_00367] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([athena_hypertension_ProjectKB_00368] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([athena_hypertension_ProjectKB_00371] of  Widget
+
+	(height 665)
+	(is_hidden FALSE)
+	(name "On_Screen_Message")
+	(property_list [athena_hypertension_ProjectKB_00372])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 866)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00372] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00373]
+		[athena_hypertension_ProjectKB_00375]
+		[athena_hypertension_ProjectKB_00377]
+		[athena_hypertension_ProjectKB_00385]
+		[athena_hypertension_ProjectKB_00390]
+		[athena_hypertension_ProjectKB_00394]
+		[athena_hypertension_ProjectKB_00804]))
+
+([athena_hypertension_ProjectKB_00373] of  Widget
+
+	(height 140)
+	(is_hidden FALSE)
+	(name "message")
+	(property_list [athena_hypertension_ProjectKB_00374])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 110))
+
+([athena_hypertension_ProjectKB_00374] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00375] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "description")
+	(property_list [athena_hypertension_ProjectKB_00376])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00376] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00377] of  Widget
+
+	(height 130)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_00378])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 60))
+
+([athena_hypertension_ProjectKB_00378] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00379]
+		[athena_hypertension_ProjectKB_00380]
+		[athena_hypertension_ProjectKB_00381]
+		[athena_hypertension_ProjectKB_00382]
+		[athena_hypertension_ProjectKB_00383]
+		[athena_hypertension_ProjectKB_00384]))
+
+([athena_hypertension_ProjectKB_00379] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_00380] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00381] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00382] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00383] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00384] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_00385] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "message_type")
+	(property_list [athena_hypertension_ProjectKB_00386])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00386] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00387]
+		[athena_hypertension_ProjectKB_00388]
+		[athena_hypertension_ProjectKB_00389]))
+
+([athena_hypertension_ProjectKB_00387] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([athena_hypertension_ProjectKB_00388] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00389] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00390] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_00391])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_00391] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00394] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_00395] of  Widget
+
+	(height 665)
+	(is_hidden FALSE)
+	(name "Conditional_On_Screen_Message")
+	(property_list [athena_hypertension_ProjectKB_00396])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 866)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00396] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00399]
+		[athena_hypertension_ProjectKB_00401]
+		[athena_hypertension_ProjectKB_00403]
+		[athena_hypertension_ProjectKB_00411]
+		[athena_hypertension_ProjectKB_00419]
+		[athena_hypertension_ProjectKB_00421]
+		[athena_hypertension_ProjectKB_00426]
+		[athena_hypertension_ProjectKB_00503]))
+
+([athena_hypertension_ProjectKB_00399] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "description")
+	(property_list [athena_hypertension_ProjectKB_00400])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00400] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00401] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_00402])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_00402] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00403] of  Widget
+
+	(height 90)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_00404])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 120))
+
+([athena_hypertension_ProjectKB_00404] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00405]
+		[athena_hypertension_ProjectKB_00406]
+		[athena_hypertension_ProjectKB_00407]
+		[athena_hypertension_ProjectKB_00408]
+		[athena_hypertension_ProjectKB_00409]
+		[athena_hypertension_ProjectKB_00410]))
+
+([athena_hypertension_ProjectKB_00405] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_00406] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00407] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00408] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00409] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00410] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_00411] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rule_in_condition")
+	(property_list [athena_hypertension_ProjectKB_00412])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 250)
+	(y 60))
+
+([athena_hypertension_ProjectKB_00412] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00413]
+		[athena_hypertension_ProjectKB_00414]
+		[athena_hypertension_ProjectKB_00415]
+		[athena_hypertension_ProjectKB_00416]
+		[athena_hypertension_ProjectKB_00417]
+		[athena_hypertension_ProjectKB_00418]))
+
+([athena_hypertension_ProjectKB_00413] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([athena_hypertension_ProjectKB_00414] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00415] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00416] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00417] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00418] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_00419] of  Widget
+
+	(height 140)
+	(is_hidden FALSE)
+	(name "message")
+	(property_list [athena_hypertension_ProjectKB_00420])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_00420] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00421] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "message_type")
+	(property_list [athena_hypertension_ProjectKB_00422])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00422] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00423]
+		[athena_hypertension_ProjectKB_00424]
+		[athena_hypertension_ProjectKB_00425]))
+
+([athena_hypertension_ProjectKB_00423] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([athena_hypertension_ProjectKB_00424] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00425] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00426] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_00451] of  Widget
+
+	(height 760)
+	(is_hidden FALSE)
+	(name "Management_Diagram")
+	(property_list [athena_hypertension_ProjectKB_00452])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 830)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00452] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00453]
+		[athena_hypertension_ProjectKB_00455]
+		[athena_hypertension_ProjectKB_00457]
+		[athena_hypertension_ProjectKB_00465]
+		[athena_hypertension_ProjectKB_00473]
+		[athena_hypertension_ProjectKB_00481]
+		[athena_hypertension_ProjectKB_00483]
+		[athena_hypertension_ProjectKB_00485]
+		[athena_hypertension_ProjectKB_00493]
+		[athena_hypertension_ProjectKB_00509]))
+
+([athena_hypertension_ProjectKB_00453] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "main_panel_height")
+	(property_list [athena_hypertension_ProjectKB_00454])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00454] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00455] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "main_panel_width")
+	(property_list [athena_hypertension_ProjectKB_00456])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00456] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00457] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "layout_information")
+	(property_list [athena_hypertension_ProjectKB_00458])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00458] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00465] of  Widget
+
+	(height 640)
+	(is_hidden FALSE)
+	(label "Steps")
+	(name "steps")
+	(property_list [athena_hypertension_ProjectKB_00466])
+	(widget_class_name "edu.stanford.smi.protegex.widget.diagram.DiagramWidget")
+	(width 688)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_00466] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00002]
+		[athena_hypertension_ProjectKB_00003]
+		[athena_hypertension_ProjectKB_00004]
+		[athena_hypertension_ProjectKB_00005]
+		[athena_hypertension_ProjectKB_00006]
+		[athena_hypertension_ProjectKB_00007]
+		[athena_hypertension_ProjectKB_00008]
+		[athena_hypertension_ProjectKB_00009]
+		[athena_hypertension_ProjectKB_00010]
+		[athena_hypertension_ProjectKB_00011]
+		[athena_hypertension_ProjectKB_00012]
+		[athena_hypertension_ProjectKB_00013]
+		[athena_hypertension_ProjectKB_00014]
+		[athena_hypertension_ProjectKB_00340]
+		[athena_hypertension_ProjectKB_00341]
+		[athena_hypertension_ProjectKB_00342]
+		[athena_hypertension_ProjectKB_00343]
+		[athena_hypertension_ProjectKB_00344]
+		[athena_hypertension_ProjectKB_00345]
+		[athena_hypertension_ProjectKB_00346]
+		[athena_hypertension_ProjectKB_00347]
+		[athena_hypertension_ProjectKB_00348]
+		[athena_hypertension_ProjectKB_00349]
+		[athena_hypertension_ProjectKB_00350]
+		[athena_hypertension_ProjectKB_00351]
+		[athena_hypertension_ProjectKB_00352]
+		[athena_hypertension_ProjectKB_00353]
+		[athena_hypertension_ProjectKB_00354]
+		[athena_hypertension_ProjectKB_00355]
+		[athena_hypertension_ProjectKB_00356]
+		[athena_hypertension_ProjectKB_00357]
+		[athena_hypertension_ProjectKB_00358]
+		[athena_hypertension_ProjectKB_00359]
+		[athena_hypertension_ProjectKB_00360]
+		[athena_hypertension_ProjectKB_00361]
+		[athena_hypertension_ProjectKB_00362]
+		[athena_hypertension_ProjectKB_00363]
+		[athena_hypertension_ProjectKB_00364]
+		[athena_hypertension_ProjectKB_00365]
+		[athena_hypertension_ProjectKB_00366]
+		[athena_hypertension_ProjectKB_00367]
+		[athena_hypertension_ProjectKB_00368]))
+
+([athena_hypertension_ProjectKB_00472] of  Widget
+
+	(height 844)
+	(is_hidden FALSE)
+	(name "Guideline_Drug")
+	(property_list [athena_hypertension_ProjectKB_00572])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 907)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00473] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "connectors")
+	(property_list [athena_hypertension_ProjectKB_00474])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00474] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00481] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "last_divider_location")
+	(property_list [athena_hypertension_ProjectKB_00482])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00482] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00483] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_00484])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00484] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00485] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "first_step")
+	(property_list [athena_hypertension_ProjectKB_00486])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_00486] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00487]
+		[athena_hypertension_ProjectKB_00488]
+		[athena_hypertension_ProjectKB_00489]
+		[athena_hypertension_ProjectKB_00490]
+		[athena_hypertension_ProjectKB_00491]
+		[athena_hypertension_ProjectKB_00492]))
+
+([athena_hypertension_ProjectKB_00487] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([athena_hypertension_ProjectKB_00488] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00489] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00490] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00491] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00492] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_00493] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "completion_criteria")
+	(property_list [athena_hypertension_ProjectKB_00494])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00494] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00495]
+		[athena_hypertension_ProjectKB_00496]
+		[athena_hypertension_ProjectKB_00497]
+		[athena_hypertension_ProjectKB_00498]
+		[athena_hypertension_ProjectKB_00499]
+		[athena_hypertension_ProjectKB_00500]))
+
+([athena_hypertension_ProjectKB_00495] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([athena_hypertension_ProjectKB_00496] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00497] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00498] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00499] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00500] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_00503] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "message_priority")
+	(property_list [athena_hypertension_ProjectKB_00704])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 125)
+	(x 0)
+	(y 260))
+
+([athena_hypertension_ProjectKB_00509] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[athena_hypertension_ProjectKB_00510]
+		[athena_hypertension_ProjectKB_00511]))
+
+([athena_hypertension_ProjectKB_00510] of  String
+
+	(name "horizontal_stretcher"))
+
+([athena_hypertension_ProjectKB_00511] of  String
+
+	(name "vertical_stretcher")
+	(string_value "steps"))
+
+([athena_hypertension_ProjectKB_00572] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00573]
+		[athena_hypertension_ProjectKB_00575]
+		[athena_hypertension_ProjectKB_00583]
+		[athena_hypertension_ProjectKB_00591]
+		[athena_hypertension_ProjectKB_00596]
+		[athena_hypertension_ProjectKB_00604]
+		[athena_hypertension_ProjectKB_00812]
+		[athena_hypertension_ProjectKB_00814]
+		[athena_hypertension_ProjectKB_00819]
+		[athena_hypertension_ProjectKB_00827]
+		[athena_hypertension_ProjectKB_00835]
+		[athena_hypertension_ProjectKB_00840]
+		[athena_hypertension_ProjectKB_01148]
+		[athena_hypertension_ProjectKB_01442]))
+
+([athena_hypertension_ProjectKB_00573] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_00574])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00574] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00575] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "collateral_actions")
+	(property_list [athena_hypertension_ProjectKB_00576])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00576] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00577]
+		[athena_hypertension_ProjectKB_00578]
+		[athena_hypertension_ProjectKB_00579]
+		[athena_hypertension_ProjectKB_00580]
+		[athena_hypertension_ProjectKB_00581]
+		[athena_hypertension_ProjectKB_00582]))
+
+([athena_hypertension_ProjectKB_00577] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_00578] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00579] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00580] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00581] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00582] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_00583] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "prescribable_items")
+	(property_list [athena_hypertension_ProjectKB_00584])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 300))
+
+([athena_hypertension_ProjectKB_00584] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00585]
+		[athena_hypertension_ProjectKB_00586]
+		[athena_hypertension_ProjectKB_00587]
+		[athena_hypertension_ProjectKB_00588]
+		[athena_hypertension_ProjectKB_00589]
+		[athena_hypertension_ProjectKB_00590]))
+
+([athena_hypertension_ProjectKB_00585] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_00586] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00587] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00588] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00589] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00590] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_00591] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "max_recommended_dose_level")
+	(property_list [athena_hypertension_ProjectKB_00592])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 240))
+
+([athena_hypertension_ProjectKB_00592] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00593]
+		[athena_hypertension_ProjectKB_00594]
+		[athena_hypertension_ProjectKB_00595]))
+
+([athena_hypertension_ProjectKB_00593] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([athena_hypertension_ProjectKB_00594] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00595] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00596] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rule_out")
+	(property_list [athena_hypertension_ProjectKB_00597])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 360))
+
+([athena_hypertension_ProjectKB_00597] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00598]
+		[athena_hypertension_ProjectKB_00599]
+		[athena_hypertension_ProjectKB_00600]
+		[athena_hypertension_ProjectKB_00601]
+		[athena_hypertension_ProjectKB_00602]
+		[athena_hypertension_ProjectKB_00603]))
+
+([athena_hypertension_ProjectKB_00598] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([athena_hypertension_ProjectKB_00599] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00600] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00601] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00602] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00603] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_00604] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "drug_usage")
+	(property_list [athena_hypertension_ProjectKB_00605])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00605] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00609] of  Integer
+
+	(integer_value 580)
+	(name "PAL_TAB_DIVIDER_LOCATION"))
+
+([athena_hypertension_ProjectKB_00610] of  Integer
+
+	(integer_value 506)
+	(name "CONSTRAINT_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([athena_hypertension_ProjectKB_00611] of  Integer
+
+	(integer_value 506)
+	(name "CONSTRAINT_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([athena_hypertension_ProjectKB_00620] of  Widget
+
+	(height 781)
+	(is_hidden FALSE)
+	(name "Consultation_Guideline")
+	(property_list [athena_hypertension_ProjectKB_00621])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 845)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00621] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00845]
+		[athena_hypertension_ProjectKB_00847]
+		[athena_hypertension_ProjectKB_00849]
+		[athena_hypertension_ProjectKB_00857]
+		[athena_hypertension_ProjectKB_00865]
+		[athena_hypertension_ProjectKB_00873]
+		[athena_hypertension_ProjectKB_00875]
+		[athena_hypertension_ProjectKB_00877]
+		[athena_hypertension_ProjectKB_00879]
+		[athena_hypertension_ProjectKB_00887]
+		[athena_hypertension_ProjectKB_00895]))
+
+([athena_hypertension_ProjectKB_00704] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00804] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "message_priority")
+	(property_list [athena_hypertension_ProjectKB_00805])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 125)
+	(x 0)
+	(y 250))
+
+([athena_hypertension_ProjectKB_00805] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00812] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "duration_constraint")
+	(property_list [athena_hypertension_ProjectKB_00813])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00813] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00814] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "generic_drug")
+	(property_list [athena_hypertension_ProjectKB_00815])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_00815] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00816]
+		[athena_hypertension_ProjectKB_00817]
+		[athena_hypertension_ProjectKB_00818]))
+
+([athena_hypertension_ProjectKB_00816] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([athena_hypertension_ProjectKB_00817] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00818] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00819] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Dose Level Ranges")
+	(name "dose_level_ranges")
+	(property_list [athena_hypertension_ProjectKB_00820])
+	(widget_class_name "edu.stanford.smi.protegex.widget.instancetable.InstanceTableWidget")
+	(width 250)
+	(x 250)
+	(y 120))
+
+([athena_hypertension_ProjectKB_00820] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01382]
+		[athena_hypertension_ProjectKB_01383]
+		[athena_hypertension_ProjectKB_01384]
+		[athena_hypertension_ProjectKB_01386]
+		[athena_hypertension_ProjectKB_01387]
+		[athena_hypertension_ProjectKB_01388]
+		[athena_hypertension_ProjectKB_01390]
+		[athena_hypertension_ProjectKB_01391]
+		[athena_hypertension_ProjectKB_01392]
+		[athena_hypertension_ProjectKB_01394]
+		[athena_hypertension_ProjectKB_01398]
+		[athena_hypertension_ProjectKB_01399]
+		[athena_hypertension_ProjectKB_01400]
+		[athena_hypertension_ProjectKB_01401]
+		[athena_hypertension_ProjectKB_01402]
+		[athena_hypertension_ProjectKB_01403]
+		[athena_hypertension_ProjectKB_01404]
+		[athena_hypertension_ProjectKB_01405]
+		[athena_hypertension_ProjectKB_01406]
+		[athena_hypertension_ProjectKB_01407]
+		[athena_hypertension_ProjectKB_01408]
+		[athena_hypertension_ProjectKB_01409]
+		[athena_hypertension_ProjectKB_01410]
+		[athena_hypertension_ProjectKB_01411]
+		[athena_hypertension_ProjectKB_01412]
+		[athena_hypertension_ProjectKB_01413]
+		[athena_hypertension_ProjectKB_01414]
+		[athena_hypertension_ProjectKB_01415]
+		[athena_hypertension_ProjectKB_01416]
+		[athena_hypertension_ProjectKB_01417]
+		[athena_hypertension_ProjectKB_01418]
+		[athena_hypertension_ProjectKB_01419]
+		[athena_hypertension_ProjectKB_01420]
+		[athena_hypertension_ProjectKB_01435]
+		[athena_hypertension_ProjectKB_01439]
+		[athena_hypertension_ProjectKB_01440]
+		[athena_hypertension_ProjectKB_01441]))
+
+([athena_hypertension_ProjectKB_00827] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_00828])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 420))
+
+([athena_hypertension_ProjectKB_00828] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00829]
+		[athena_hypertension_ProjectKB_00830]
+		[athena_hypertension_ProjectKB_00831]
+		[athena_hypertension_ProjectKB_00832]
+		[athena_hypertension_ProjectKB_00833]
+		[athena_hypertension_ProjectKB_00834]))
+
+([athena_hypertension_ProjectKB_00829] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_00830] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00831] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00832] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00833] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00834] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_00835] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "dose_strength_unit")
+	(property_list [athena_hypertension_ProjectKB_00836])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([athena_hypertension_ProjectKB_00836] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00837]
+		[athena_hypertension_ProjectKB_00838]
+		[athena_hypertension_ProjectKB_00839]))
+
+([athena_hypertension_ProjectKB_00837] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([athena_hypertension_ProjectKB_00838] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00839] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00840] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rule_in")
+	(property_list [athena_hypertension_ProjectKB_00841])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 300))
+
+([athena_hypertension_ProjectKB_00841] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00842]
+		[athena_hypertension_ProjectKB_00843]
+		[athena_hypertension_ProjectKB_00844]
+		[athena_hypertension_ProjectKB_01046]
+		[athena_hypertension_ProjectKB_01146]
+		[athena_hypertension_ProjectKB_01147]))
+
+([athena_hypertension_ProjectKB_00842] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([athena_hypertension_ProjectKB_00843] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00844] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00845] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "main_panel_height")
+	(property_list [athena_hypertension_ProjectKB_00846])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00846] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00847] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "main_panel_width")
+	(property_list [athena_hypertension_ProjectKB_00848])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00848] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00849] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "layout_information")
+	(property_list [athena_hypertension_ProjectKB_00850])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00850] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00857] of  Widget
+
+	(height 640)
+	(is_hidden FALSE)
+	(label "Steps")
+	(name "steps")
+	(property_list [athena_hypertension_ProjectKB_00858])
+	(widget_class_name "edu.stanford.smi.protegex.widget.diagram.DiagramWidget")
+	(width 688)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_00858] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00898]
+		[athena_hypertension_ProjectKB_00899]
+		[athena_hypertension_ProjectKB_00900]
+		[athena_hypertension_ProjectKB_00901]
+		[athena_hypertension_ProjectKB_00902]
+		[athena_hypertension_ProjectKB_00943]
+		[athena_hypertension_ProjectKB_00944]
+		[athena_hypertension_ProjectKB_00945]
+		[athena_hypertension_ProjectKB_00946]
+		[athena_hypertension_ProjectKB_00947]
+		[athena_hypertension_ProjectKB_00948]
+		[athena_hypertension_ProjectKB_00949]
+		[athena_hypertension_ProjectKB_00950]
+		[athena_hypertension_ProjectKB_00951]
+		[athena_hypertension_ProjectKB_00952]
+		[athena_hypertension_ProjectKB_00953]
+		[athena_hypertension_ProjectKB_00954]
+		[athena_hypertension_ProjectKB_00955]
+		[athena_hypertension_ProjectKB_00956]
+		[athena_hypertension_ProjectKB_00957]
+		[athena_hypertension_ProjectKB_00958]
+		[athena_hypertension_ProjectKB_00959]
+		[athena_hypertension_ProjectKB_00960]
+		[athena_hypertension_ProjectKB_00961]
+		[athena_hypertension_ProjectKB_00962]
+		[athena_hypertension_ProjectKB_00963]
+		[athena_hypertension_ProjectKB_00964]
+		[athena_hypertension_ProjectKB_00965]
+		[athena_hypertension_ProjectKB_00966]
+		[athena_hypertension_ProjectKB_00967]
+		[athena_hypertension_ProjectKB_00968]
+		[athena_hypertension_ProjectKB_00969]
+		[athena_hypertension_ProjectKB_00970]
+		[athena_hypertension_ProjectKB_00971]))
+
+([athena_hypertension_ProjectKB_00865] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "connectors")
+	(property_list [athena_hypertension_ProjectKB_00866])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00866] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00873] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "last_divider_location")
+	(property_list [athena_hypertension_ProjectKB_00874])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00874] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00875] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_00876])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00876] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00877] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "primary")
+	(property_list [athena_hypertension_ProjectKB_00878])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00878] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_00879] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_00880])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_00880] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00881]
+		[athena_hypertension_ProjectKB_00882]
+		[athena_hypertension_ProjectKB_00883]
+		[athena_hypertension_ProjectKB_00884]
+		[athena_hypertension_ProjectKB_00885]
+		[athena_hypertension_ProjectKB_00886]))
+
+([athena_hypertension_ProjectKB_00881] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_00882] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00883] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00884] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00885] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00886] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_00887] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "first_step")
+	(property_list [athena_hypertension_ProjectKB_00888])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_00888] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00889]
+		[athena_hypertension_ProjectKB_00890]
+		[athena_hypertension_ProjectKB_00891]
+		[athena_hypertension_ProjectKB_00892]
+		[athena_hypertension_ProjectKB_00893]
+		[athena_hypertension_ProjectKB_00894]))
+
+([athena_hypertension_ProjectKB_00889] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([athena_hypertension_ProjectKB_00890] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_00891] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_00892] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_00893] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_00894] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_00895] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[athena_hypertension_ProjectKB_00896]
+		[athena_hypertension_ProjectKB_00897]))
+
+([athena_hypertension_ProjectKB_00896] of  String
+
+	(name "horizontal_stretcher"))
+
+([athena_hypertension_ProjectKB_00897] of  String
+
+	(name "vertical_stretcher")
+	(string_value "steps"))
+
+([athena_hypertension_ProjectKB_00898] of  Property_List
+
+	(name ":DEFAULT:VISIBIITY:CHECKER"))
+
+([athena_hypertension_ProjectKB_00899] of  Property_List
+
+	(name "Consultation_Branch_Step")
+	(properties
+		[athena_hypertension_ProjectKB_00903]
+		[athena_hypertension_ProjectKB_00904]
+		[athena_hypertension_ProjectKB_00905]
+		[athena_hypertension_ProjectKB_00906]
+		[athena_hypertension_ProjectKB_00907]
+		[athena_hypertension_ProjectKB_00908]
+		[athena_hypertension_ProjectKB_00909]
+		[athena_hypertension_ProjectKB_00910]
+		[athena_hypertension_ProjectKB_00911]))
+
+([athena_hypertension_ProjectKB_00900] of  Property_List
+
+	(name "Consultation_Action_Step")
+	(properties
+		[athena_hypertension_ProjectKB_00912]
+		[athena_hypertension_ProjectKB_00913]
+		[athena_hypertension_ProjectKB_00914]
+		[athena_hypertension_ProjectKB_00915]
+		[athena_hypertension_ProjectKB_00916]
+		[athena_hypertension_ProjectKB_00917]
+		[athena_hypertension_ProjectKB_00918]
+		[athena_hypertension_ProjectKB_00919]
+		[athena_hypertension_ProjectKB_00920]))
+
+([athena_hypertension_ProjectKB_00901] of  Property_List
+
+	(name "Consultation_Selection")
+	(properties
+		[athena_hypertension_ProjectKB_00932]
+		[athena_hypertension_ProjectKB_00933]
+		[athena_hypertension_ProjectKB_00934]
+		[athena_hypertension_ProjectKB_00935]
+		[athena_hypertension_ProjectKB_00936]
+		[athena_hypertension_ProjectKB_00937]
+		[athena_hypertension_ProjectKB_00938]
+		[athena_hypertension_ProjectKB_00939]
+		[athena_hypertension_ProjectKB_00940]
+		[athena_hypertension_ProjectKB_00941]
+		[athena_hypertension_ProjectKB_00942]))
+
+([athena_hypertension_ProjectKB_00902] of  Property_List
+
+	(name "Followed_By")
+	(properties
+		[athena_hypertension_ProjectKB_00921]
+		[athena_hypertension_ProjectKB_00922]
+		[athena_hypertension_ProjectKB_00923]
+		[athena_hypertension_ProjectKB_00924]
+		[athena_hypertension_ProjectKB_00925]
+		[athena_hypertension_ProjectKB_00926]
+		[athena_hypertension_ProjectKB_00927]
+		[athena_hypertension_ProjectKB_00928]
+		[athena_hypertension_ProjectKB_00929]
+		[athena_hypertension_ProjectKB_00930]
+		[athena_hypertension_ProjectKB_00931]))
+
+([athena_hypertension_ProjectKB_00903] of  Integer
+
+	(integer_value -13108)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00904] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00905] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00906] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00907] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00908] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00909] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00910] of  String
+
+	(name ":NODE:STYLE")
+	(string_value "Diamond"))
+
+([athena_hypertension_ProjectKB_00911] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":FILLED:NODE"))
+
+([athena_hypertension_ProjectKB_00912] of  Integer
+
+	(integer_value -16711936)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00913] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00914] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00915] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00916] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00917] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00918] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00919] of  String
+
+	(name ":NODE:STYLE")
+	(string_value "Rounded Rectangle"))
+
+([athena_hypertension_ProjectKB_00920] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":FILLED:NODE"))
+
+([athena_hypertension_ProjectKB_00921] of  Integer
+
+	(integer_value -13434829)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00922] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00923] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00924] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00925] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00926] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00927] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00928] of  String
+
+	(name ":WIRE:TYPE")
+	(string_value "Solid Line"))
+
+([athena_hypertension_ProjectKB_00929] of  String
+
+	(name ":STARTING:ARROW")
+	(string_value "No Endpoint"))
+
+([athena_hypertension_ProjectKB_00930] of  String
+
+	(name ":ENDING:ARROW")
+	(string_value "Arrowhead Endpoint"))
+
+([athena_hypertension_ProjectKB_00931] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":ANCHOR:TEXT:AT:UPPER:LEFT:CORNER"))
+
+([athena_hypertension_ProjectKB_00932] of  Integer
+
+	(integer_value -65536)
+	(name ":COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00933] of  Integer
+
+	(integer_value -16777216)
+	(name ":TEXT:COLOR:RGB:DESCRIPTOR"))
+
+([athena_hypertension_ProjectKB_00934] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":DISPLAY:TEXT"))
+
+([athena_hypertension_ProjectKB_00935] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:BOLD"))
+
+([athena_hypertension_ProjectKB_00936] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":MAKE:TEXT:ITALIC"))
+
+([athena_hypertension_ProjectKB_00937] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":VERTICALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00938] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HORIZONTALLY:CENTER:TEXT"))
+
+([athena_hypertension_ProjectKB_00939] of  String
+
+	(name ":WIRE:TYPE")
+	(string_value "Solid Line"))
+
+([athena_hypertension_ProjectKB_00940] of  String
+
+	(name ":STARTING:ARROW")
+	(string_value "Square Endpoint"))
+
+([athena_hypertension_ProjectKB_00941] of  String
+
+	(name ":ENDING:ARROW")
+	(string_value "Arrowhead Endpoint"))
+
+([athena_hypertension_ProjectKB_00942] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":ANCHOR:TEXT:AT:UPPER:LEFT:CORNER"))
+
+([athena_hypertension_ProjectKB_00943] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:CLASS:BASED:HIDER:BUTTON"))
+
+([athena_hypertension_ProjectKB_00944] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:REUSABLE:FORM:BUTTON"))
+
+([athena_hypertension_ProjectKB_00945] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:LEGEND:BUTTON"))
+
+([athena_hypertension_ProjectKB_00946] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:THUMBNAIL:BUTTON"))
+
+([athena_hypertension_ProjectKB_00947] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:WIREBUILDER:BUTTON"))
+
+([athena_hypertension_ProjectKB_00948] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DISPLAY:FLOWCHART:BUTTON"))
+
+([athena_hypertension_ProjectKB_00949] of  String
+
+	(name "CLASS:BASED:HIDER:BUTTON:TOOLTIP")
+	(string_value "Alter Visibility by Class"))
+
+([athena_hypertension_ProjectKB_00950] of  String
+
+	(name "REUSABLE:FORM:BUTTON:TOOLTIP")
+	(string_value "View form for object selected in diagram"))
+
+([athena_hypertension_ProjectKB_00951] of  String
+
+	(name "LEGEND:BUTTON:TOOLTIP")
+	(string_value "View Legend"))
+
+([athena_hypertension_ProjectKB_00952] of  String
+
+	(name "THUMBNAIL:BUTTON:TOOLTIP")
+	(string_value "View thumbnail map"))
+
+([athena_hypertension_ProjectKB_00953] of  String
+
+	(name "WIRE:BUILDER:BUTTON:TOOLTIP")
+	(string_value "View wire builder"))
+
+([athena_hypertension_ProjectKB_00954] of  Integer
+
+	(integer_value 600)
+	(name ":LOWER:BOUND:ON:DIAGRAM:WIDTH"))
+
+([athena_hypertension_ProjectKB_00955] of  Integer
+
+	(integer_value 600)
+	(name ":LOWER:BOUND:ON:DIAGRAM:HEIGHT"))
+
+([athena_hypertension_ProjectKB_00956] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":IS:PALETTE:DISPLAYED"))
+
+([athena_hypertension_ProjectKB_00957] of  Integer
+
+	(integer_value 0)
+	(name ":Prototype:Depth"))
+
+([athena_hypertension_ProjectKB_00958] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00959] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00960] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00961] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00962] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Delete:Instance:Button"))
+
+([athena_hypertension_ProjectKB_00963] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Prototype:Button"))
+
+([athena_hypertension_ProjectKB_00964] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([athena_hypertension_ProjectKB_00965] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([athena_hypertension_ProjectKB_00966] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([athena_hypertension_ProjectKB_00967] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([athena_hypertension_ProjectKB_00968] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([athena_hypertension_ProjectKB_00969] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([athena_hypertension_ProjectKB_00970] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([athena_hypertension_ProjectKB_00971] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([athena_hypertension_ProjectKB_00972] of  Integer
+
+	(integer_value 377)
+	(name "ClsesAndInstancesTab.left_right"))
+
+([athena_hypertension_ProjectKB_00973] of  Integer
+
+	(integer_value 553)
+	(name "ClsesAndInstancesTab.left, top_bottom"))
+
+([athena_hypertension_ProjectKB_00974] of  Integer
+
+	(integer_value 255)
+	(name "ClsesAndInstancesTab.right.left_right"))
+
+([athena_hypertension_ProjectKB_01046] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01146] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01147] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_01148] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "starting_dose")
+	(property_list [athena_hypertension_ProjectKB_01149])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 125)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_01149] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01175] of  Widget
+
+	(height 577)
+	(is_hidden FALSE)
+	(name "Boolean_Data")
+	(property_list [athena_hypertension_ProjectKB_01176])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 738)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01176] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01480]
+		[athena_hypertension_ProjectKB_01482]
+		[athena_hypertension_ProjectKB_01487]
+		[athena_hypertension_ProjectKB_01489]
+		[athena_hypertension_ProjectKB_01491]
+		[athena_hypertension_ProjectKB_01499]
+		[athena_hypertension_ProjectKB_01501]
+		[athena_hypertension_ProjectKB_01503]))
+
+([athena_hypertension_ProjectKB_01243] of  Widget
+
+	(height 577)
+	(is_hidden FALSE)
+	(name "Consultation_Branch_Step")
+	(property_list [athena_hypertension_ProjectKB_01244])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 738)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01244] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01971]
+		[athena_hypertension_ProjectKB_01973]
+		[athena_hypertension_ProjectKB_01975]
+		[athena_hypertension_ProjectKB_01983]
+		[athena_hypertension_ProjectKB_01985]
+		[athena_hypertension_ProjectKB_01993]))
+
+([athena_hypertension_ProjectKB_01302] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-ENGINE")
+	(property_list [athena_hypertension_ProjectKB_01912])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_01382] of  String
+
+	(name ":COLUMN:NAME:DESCRIPTORupper_limit")
+	(string_value "upper_limit"))
+
+([athena_hypertension_ProjectKB_01383] of  Integer
+
+	(integer_value -16777216)
+	(name ":COLOR:RGB:DESCRIPTORupper_limit"))
+
+([athena_hypertension_ProjectKB_01384] of  Integer
+
+	(integer_value 20)
+	(name ":PREFERRED:SIZE:DESCRIPTORupper_limit"))
+
+([athena_hypertension_ProjectKB_01386] of  String
+
+	(name ":COLUMN:NAME:DESCRIPTORabstract_value")
+	(string_value "abstract_value"))
+
+([athena_hypertension_ProjectKB_01387] of  Integer
+
+	(integer_value -16777216)
+	(name ":COLOR:RGB:DESCRIPTORabstract_value"))
+
+([athena_hypertension_ProjectKB_01388] of  Integer
+
+	(integer_value 20)
+	(name ":PREFERRED:SIZE:DESCRIPTORabstract_value"))
+
+([athena_hypertension_ProjectKB_01390] of  String
+
+	(name ":COLUMN:NAME:DESCRIPTORlower_limit")
+	(string_value "lower_limit"))
+
+([athena_hypertension_ProjectKB_01391] of  Integer
+
+	(integer_value -16777216)
+	(name ":COLOR:RGB:DESCRIPTORlower_limit"))
+
+([athena_hypertension_ProjectKB_01392] of  Integer
+
+	(integer_value 20)
+	(name ":PREFERRED:SIZE:DESCRIPTORlower_limit"))
+
+([athena_hypertension_ProjectKB_01394] of  Integer
+
+	(integer_value 3)
+	(name ":Number:Of:Visible:Slots"))
+
+([athena_hypertension_ProjectKB_01398] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Automatically:Select:Insertions"))
+
+([athena_hypertension_ProjectKB_01399] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Create:Form:For:New:Instances"))
+
+([athena_hypertension_ProjectKB_01400] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HighLight:Selected:Row"))
+
+([athena_hypertension_ProjectKB_01401] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Edit:In:Place"))
+
+([athena_hypertension_ProjectKB_01402] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Use:Dialog:To:Select:Instances"))
+
+([athena_hypertension_ProjectKB_01403] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Use:Dialog:To:Select:Classes"))
+
+([athena_hypertension_ProjectKB_01404] of  String
+
+	(name ":Dialog:Title:For:Selecting:Instances")
+	(string_value "Select an instance"))
+
+([athena_hypertension_ProjectKB_01405] of  String
+
+	(name ":Dialog:Title:For:Selecting:Classes")
+	(string_value "Select a class"))
+
+([athena_hypertension_ProjectKB_01406] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([athena_hypertension_ProjectKB_01407] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([athena_hypertension_ProjectKB_01408] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([athena_hypertension_ProjectKB_01409] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([athena_hypertension_ProjectKB_01410] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([athena_hypertension_ProjectKB_01411] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Delete:Instance:Button"))
+
+([athena_hypertension_ProjectKB_01412] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Prototype:Button"))
+
+([athena_hypertension_ProjectKB_01413] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([athena_hypertension_ProjectKB_01414] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([athena_hypertension_ProjectKB_01415] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([athena_hypertension_ProjectKB_01416] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([athena_hypertension_ProjectKB_01417] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([athena_hypertension_ProjectKB_01418] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([athena_hypertension_ProjectKB_01419] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([athena_hypertension_ProjectKB_01420] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([athena_hypertension_ProjectKB_01435] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[athena_hypertension_ProjectKB_01436]
+		[athena_hypertension_ProjectKB_01437]
+		[athena_hypertension_ProjectKB_01438]))
+
+([athena_hypertension_ProjectKB_01436] of  String
+
+	(name "upper_limit")
+	(string_value "upper_limit"))
+
+([athena_hypertension_ProjectKB_01437] of  String
+
+	(name "abstract_value")
+	(string_value "abstract_value"))
+
+([athena_hypertension_ProjectKB_01438] of  String
+
+	(name "lower_limit")
+	(string_value "lower_limit"))
+
+([athena_hypertension_ProjectKB_01439] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "abstract_value"))
+
+([athena_hypertension_ProjectKB_01440] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "lower_limit"))
+
+([athena_hypertension_ProjectKB_01441] of  String
+
+	(name ":Visible:Slot:Index2")
+	(string_value "upper_limit"))
+
+([athena_hypertension_ProjectKB_01442] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_01480] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "description")
+	(property_list [athena_hypertension_ProjectKB_01481])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01481] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01482] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "domain_term")
+	(property_list [athena_hypertension_ProjectKB_01483])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01483] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01484]
+		[athena_hypertension_ProjectKB_01485]
+		[athena_hypertension_ProjectKB_01486]))
+
+([athena_hypertension_ProjectKB_01484] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([athena_hypertension_ProjectKB_01485] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01486] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01487] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "defered")
+	(property_list [athena_hypertension_ProjectKB_01488])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 125)
+	(x 0)
+	(y 250))
+
+([athena_hypertension_ProjectKB_01488] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01489] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "sensitive")
+	(property_list [athena_hypertension_ProjectKB_01490])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 125)
+	(x 130)
+	(y 250))
+
+([athena_hypertension_ProjectKB_01490] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01491] of  Widget
+
+	(height 110)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_01492])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 60))
+
+([athena_hypertension_ProjectKB_01492] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01493]
+		[athena_hypertension_ProjectKB_01494]
+		[athena_hypertension_ProjectKB_01495]
+		[athena_hypertension_ProjectKB_01496]
+		[athena_hypertension_ProjectKB_01497]
+		[athena_hypertension_ProjectKB_01498]))
+
+([athena_hypertension_ProjectKB_01493] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01494] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01495] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01496] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01497] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01498] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01499] of  Widget
+
+	(height 140)
+	(is_hidden FALSE)
+	(name "prompt")
+	(property_list [athena_hypertension_ProjectKB_01500])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_01500] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01501] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_01502])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_01502] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01503] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_01659] of  Widget
+
+	(height 664)
+	(is_hidden FALSE)
+	(name "Supporting_Material")
+	(property_list [athena_hypertension_ProjectKB_01660])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 865)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01660] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01712]
+		[athena_hypertension_ProjectKB_01717]
+		[athena_hypertension_ProjectKB_01719]
+		[athena_hypertension_ProjectKB_01721]
+		[athena_hypertension_ProjectKB_01723]
+		[athena_hypertension_ProjectKB_01728]))
+
+([athena_hypertension_ProjectKB_01695] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_01696])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01696] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01697] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "goal")
+	(property_list [athena_hypertension_ProjectKB_01698])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 180))
+
+([athena_hypertension_ProjectKB_01698] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01699]
+		[athena_hypertension_ProjectKB_01700]
+		[athena_hypertension_ProjectKB_01701]
+		[athena_hypertension_ProjectKB_01702]
+		[athena_hypertension_ProjectKB_01703]
+		[athena_hypertension_ProjectKB_01704]
+		[athena_hypertension_ProjectKB_Class69]
+		[athena_hypertension_ProjectKB_Class70]))
+
+([athena_hypertension_ProjectKB_01699] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01700] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01701] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01702] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01703] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01704] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01705] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "version")
+	(property_list [athena_hypertension_ProjectKB_01706])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([athena_hypertension_ProjectKB_01706] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01707] of  Widget
+
+	(height 70)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_01708])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 500)
+	(x 0)
+	(y 600))
+
+([athena_hypertension_ProjectKB_01708] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01709]
+		[athena_hypertension_ProjectKB_01710]
+		[athena_hypertension_ProjectKB_01711]
+		[athena_hypertension_ProjectKB_01813]
+		[athena_hypertension_ProjectKB_01913]
+		[athena_hypertension_ProjectKB_01914]
+		[athena_hypertension_ProjectKB_Class71]
+		[athena_hypertension_ProjectKB_Class72]))
+
+([athena_hypertension_ProjectKB_01709] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01710] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01711] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01712] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name "URL")
+	(property_list [athena_hypertension_ProjectKB_01713])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 250)
+	(x 260)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01713] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01714]
+		[athena_hypertension_ProjectKB_01715]
+		[athena_hypertension_ProjectKB_01716]))
+
+([athena_hypertension_ProjectKB_01714] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Edit the selected strings"))
+
+([athena_hypertension_ProjectKB_01715] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new string"))
+
+([athena_hypertension_ProjectKB_01716] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01717] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "role")
+	(property_list [athena_hypertension_ProjectKB_01718])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 125)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_01718] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01719] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_01720])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_01720] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01721] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "abstract")
+	(property_list [athena_hypertension_ProjectKB_01722])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01722] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01723] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "keywords")
+	(property_list [athena_hypertension_ProjectKB_01724])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([athena_hypertension_ProjectKB_01724] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01725]
+		[athena_hypertension_ProjectKB_01726]
+		[athena_hypertension_ProjectKB_01727]))
+
+([athena_hypertension_ProjectKB_01725] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Edit the selected strings"))
+
+([athena_hypertension_ProjectKB_01726] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new string"))
+
+([athena_hypertension_ProjectKB_01727] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01728] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_01813] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01912] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_02014]
+		[athena_hypertension_ProjectKB_02216]))
+
+([athena_hypertension_ProjectKB_01913] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01914] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01915] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "clinical_algorithm")
+	(property_list [athena_hypertension_ProjectKB_01916])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 240))
+
+([athena_hypertension_ProjectKB_01916] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01917]
+		[athena_hypertension_ProjectKB_01918]
+		[athena_hypertension_ProjectKB_01919]
+		[athena_hypertension_ProjectKB_01920]
+		[athena_hypertension_ProjectKB_01921]
+		[athena_hypertension_ProjectKB_01922]
+		[athena_hypertension_ProjectKB_Class73]))
+
+([athena_hypertension_ProjectKB_01917] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([athena_hypertension_ProjectKB_01918] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01919] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01920] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01921] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01922] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_01923] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "patient_characterization")
+	(property_list [athena_hypertension_ProjectKB_01924])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 250)
+	(y 300))
+
+([athena_hypertension_ProjectKB_01924] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01925]
+		[athena_hypertension_ProjectKB_01926]
+		[athena_hypertension_ProjectKB_01927]))
+
+([athena_hypertension_ProjectKB_01925] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_01926] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01927] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01928] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "drug_classes")
+	(property_list [athena_hypertension_ProjectKB_01929])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 420))
+
+([athena_hypertension_ProjectKB_01929] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01930]
+		[athena_hypertension_ProjectKB_01931]
+		[athena_hypertension_ProjectKB_01932]
+		[athena_hypertension_ProjectKB_01933]
+		[athena_hypertension_ProjectKB_01934]
+		[athena_hypertension_ProjectKB_01935]
+		[athena_hypertension_ProjectKB_Class74]
+		[athena_hypertension_ProjectKB_Class75]))
+
+([athena_hypertension_ProjectKB_01930] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01931] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01932] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01933] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01934] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01935] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01936] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "guideline_drugs")
+	(property_list [athena_hypertension_ProjectKB_01937])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 420))
+
+([athena_hypertension_ProjectKB_01937] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01938]
+		[athena_hypertension_ProjectKB_01939]
+		[athena_hypertension_ProjectKB_01940]
+		[athena_hypertension_ProjectKB_01941]
+		[athena_hypertension_ProjectKB_01942]
+		[athena_hypertension_ProjectKB_01943]
+		[athena_hypertension_ProjectKB_Class76]
+		[athena_hypertension_ProjectKB_Class77]))
+
+([athena_hypertension_ProjectKB_01938] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01939] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01940] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01941] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01942] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01943] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01944] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "primary")
+	(property_list [athena_hypertension_ProjectKB_01945])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01945] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01946] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "authors")
+	(property_list [athena_hypertension_ProjectKB_01947])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 250)
+	(x 0)
+	(y 300))
+
+([athena_hypertension_ProjectKB_01947] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01948]
+		[athena_hypertension_ProjectKB_01949]
+		[athena_hypertension_ProjectKB_01950]))
+
+([athena_hypertension_ProjectKB_01948] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Edit the selected strings"))
+
+([athena_hypertension_ProjectKB_01949] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new string"))
+
+([athena_hypertension_ProjectKB_01950] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01951] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "eligibility_criteria")
+	(property_list [athena_hypertension_ProjectKB_01952])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01952] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01953]
+		[athena_hypertension_ProjectKB_01954]
+		[athena_hypertension_ProjectKB_01955]
+		[athena_hypertension_ProjectKB_01956]
+		[athena_hypertension_ProjectKB_01957]
+		[athena_hypertension_ProjectKB_01958]
+		[athena_hypertension_ProjectKB_Class78]
+		[athena_hypertension_ProjectKB_Class79]))
+
+([athena_hypertension_ProjectKB_01953] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01954] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01955] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01956] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01957] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01958] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01959] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Disclaimer")
+	(name "title")
+	(property_list [athena_hypertension_ProjectKB_01960])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_01960] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01961] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_01971] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "selection_method")
+	(property_list [athena_hypertension_ProjectKB_01972])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 125)
+	(x 125)
+	(y 60))
+
+([athena_hypertension_ProjectKB_01972] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01973] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "order_constraint")
+	(property_list [athena_hypertension_ProjectKB_01974])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 125)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_01974] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01975] of  Widget
+
+	(height 140)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_01976])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_01976] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01977]
+		[athena_hypertension_ProjectKB_01978]
+		[athena_hypertension_ProjectKB_01979]
+		[athena_hypertension_ProjectKB_01980]
+		[athena_hypertension_ProjectKB_01981]
+		[athena_hypertension_ProjectKB_01982]))
+
+([athena_hypertension_ProjectKB_01977] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01978] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01979] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01980] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01981] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01982] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01983] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_01984])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01984] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_01985] of  Widget
+
+	(height 570)
+	(is_hidden FALSE)
+	(name "branches")
+	(property_list [athena_hypertension_ProjectKB_01986])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 260)
+	(y 0))
+
+([athena_hypertension_ProjectKB_01986] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_01987]
+		[athena_hypertension_ProjectKB_01988]
+		[athena_hypertension_ProjectKB_01989]
+		[athena_hypertension_ProjectKB_01990]
+		[athena_hypertension_ProjectKB_01991]
+		[athena_hypertension_ProjectKB_01992]))
+
+([athena_hypertension_ProjectKB_01987] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_01988] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_01989] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_01990] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_01991] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_01992] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_01993] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_02014] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name ":STARTUP-EXPRESSION")
+	(property_list [athena_hypertension_ProjectKB_02114])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_02109] of  Widget
+
+	(height 789)
+	(is_hidden FALSE)
+	(name "Parameterized_String")
+	(property_list [athena_hypertension_ProjectKB_02110])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 931)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_02110] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_02725]
+		[athena_hypertension_ProjectKB_02832]
+		[athena_hypertension_ProjectKB_02834]
+		[athena_hypertension_ProjectKB_03036]))
+
+([athena_hypertension_ProjectKB_02114] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02216] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name ":STARTUP-FILE")
+	(property_list [athena_hypertension_ProjectKB_02316])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_02316] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02317] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-RULE")
+	(property_list [athena_hypertension_ProjectKB_02630])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_02630] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_02631]
+		[athena_hypertension_ProjectKB_02633]
+		[athena_hypertension_ProjectKB_02635]
+		[athena_hypertension_ProjectKB_02637]))
+
+([athena_hypertension_ProjectKB_02631] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [athena_hypertension_ProjectKB_02632])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_02632] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02633] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [athena_hypertension_ProjectKB_02634])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_02634] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02635] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [athena_hypertension_ProjectKB_02636])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_02636] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02637] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [athena_hypertension_ProjectKB_02638])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([athena_hypertension_ProjectKB_02638] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02639] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-FUNCTION")
+	(property_list [athena_hypertension_ProjectKB_03253])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_02725] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "variables")
+	(property_list [athena_hypertension_ProjectKB_02825])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_02825] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_02826]
+		[athena_hypertension_ProjectKB_02827]
+		[athena_hypertension_ProjectKB_02828]
+		[athena_hypertension_ProjectKB_02829]
+		[athena_hypertension_ProjectKB_02830]
+		[athena_hypertension_ProjectKB_02831]))
+
+([athena_hypertension_ProjectKB_02826] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_02827] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_02828] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_02829] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_02830] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_02831] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_02832] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [athena_hypertension_ProjectKB_02833])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([athena_hypertension_ProjectKB_02833] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02834] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_02936])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_02848] of  Integer
+
+	(integer_value 471)
+	(name "QUERY_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([athena_hypertension_ProjectKB_02936] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_02946] of  Widget
+
+	(height 789)
+	(is_hidden FALSE)
+	(name "PAL-QUERY")
+	(property_list [athena_hypertension_ProjectKB_05851])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 1019)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_02966] of  Integer
+
+	(integer_value 653)
+	(name "QUERY_TAB_DIVIDER_LOCATION"))
+
+([athena_hypertension_ProjectKB_02967] of  Integer
+
+	(integer_value 471)
+	(name "QUERY_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([athena_hypertension_ProjectKB_03036] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_03253] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_03353]
+		[athena_hypertension_ProjectKB_03355]
+		[athena_hypertension_ProjectKB_03357]
+		[athena_hypertension_ProjectKB_03359]))
+
+([athena_hypertension_ProjectKB_03353] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [athena_hypertension_ProjectKB_03354])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03354] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03355] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [athena_hypertension_ProjectKB_03356])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_03356] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03357] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [athena_hypertension_ProjectKB_03358])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03358] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03359] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [athena_hypertension_ProjectKB_03360])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([athena_hypertension_ProjectKB_03360] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03361] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFGLOBAL")
+	(property_list [athena_hypertension_ProjectKB_03369])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_03369] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_03370]
+		[athena_hypertension_ProjectKB_03372]
+		[athena_hypertension_ProjectKB_03374]))
+
+([athena_hypertension_ProjectKB_03370] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [athena_hypertension_ProjectKB_03371])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_03371] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03372] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [athena_hypertension_ProjectKB_03373])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03373] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03374] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [athena_hypertension_ProjectKB_03375])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([athena_hypertension_ProjectKB_03375] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03376] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFTEMPLATE")
+	(property_list [athena_hypertension_ProjectKB_03389])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_03389] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_03390]
+		[athena_hypertension_ProjectKB_03392]
+		[athena_hypertension_ProjectKB_03394]
+		[athena_hypertension_ProjectKB_03396]))
+
+([athena_hypertension_ProjectKB_03390] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [athena_hypertension_ProjectKB_03391])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03391] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03392] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [athena_hypertension_ProjectKB_03393])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_03393] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03394] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [athena_hypertension_ProjectKB_03395])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03395] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03396] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [athena_hypertension_ProjectKB_03397])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([athena_hypertension_ProjectKB_03397] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03398] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFFACTS")
+	(property_list [athena_hypertension_ProjectKB_03611])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_03611] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_03612]
+		[athena_hypertension_ProjectKB_03614]
+		[athena_hypertension_ProjectKB_03616]
+		[athena_hypertension_ProjectKB_03618]))
+
+([athena_hypertension_ProjectKB_03612] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [athena_hypertension_ProjectKB_03613])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03613] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03614] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [athena_hypertension_ProjectKB_03615])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_03615] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03616] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [athena_hypertension_ProjectKB_03617])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03617] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03618] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [athena_hypertension_ProjectKB_03619])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([athena_hypertension_ProjectKB_03619] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03620] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFMESSAGE-HANDLER")
+	(property_list [athena_hypertension_ProjectKB_03633])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_03633] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_03634]
+		[athena_hypertension_ProjectKB_03636]
+		[athena_hypertension_ProjectKB_03638]
+		[athena_hypertension_ProjectKB_03640]))
+
+([athena_hypertension_ProjectKB_03634] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [athena_hypertension_ProjectKB_03635])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03635] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03636] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [athena_hypertension_ProjectKB_03637])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_03637] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03638] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [athena_hypertension_ProjectKB_03639])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03639] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03640] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [athena_hypertension_ProjectKB_03742])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([athena_hypertension_ProjectKB_03742] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03842] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFMETHOD")
+	(property_list [athena_hypertension_ProjectKB_03855])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([athena_hypertension_ProjectKB_03855] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_03856]
+		[athena_hypertension_ProjectKB_03858]
+		[athena_hypertension_ProjectKB_03860]
+		[athena_hypertension_ProjectKB_03862]))
+
+([athena_hypertension_ProjectKB_03856] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [athena_hypertension_ProjectKB_03857])
+	(widget_class_name "JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03857] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03858] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [athena_hypertension_ProjectKB_03859])
+	(widget_class_name "JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_03859] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03860] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [athena_hypertension_ProjectKB_03861])
+	(widget_class_name "JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_03861] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_03862] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [athena_hypertension_ProjectKB_03863])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([athena_hypertension_ProjectKB_03863] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_04703] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_05851] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_05951]
+		[athena_hypertension_ProjectKB_05952]
+		[athena_hypertension_ProjectKB_05953]
+		[athena_hypertension_ProjectKB_05954]
+		[athena_hypertension_ProjectKB_05955]))
+
+([athena_hypertension_ProjectKB_05951] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_05952] of  Widget
+
+	(height 170)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 280)
+	(y 0))
+
+([athena_hypertension_ProjectKB_05953] of  Widget
+
+	(height 110)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 270)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_05954] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 530)
+	(x 0)
+	(y 170))
+
+([athena_hypertension_ProjectKB_05955] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_08327] of  Widget
+
+	(height 789)
+	(is_hidden FALSE)
+	(name "Set_Expression")
+	(property_list [athena_hypertension_ProjectKB_08328])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 1019)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_08328] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_08345]
+		[athena_hypertension_ProjectKB_08347]
+		[athena_hypertension_ProjectKB_08350]))
+
+([athena_hypertension_ProjectKB_08345] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_08346])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_08346] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_08347] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[athena_hypertension_ProjectKB_08352]
+		[athena_hypertension_ProjectKB_08353]))
+
+([athena_hypertension_ProjectKB_08350] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "set_elements")
+	(property_list [athena_hypertension_ProjectKB_08351])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_08351] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_08352] of  String
+
+	(name "horizontal_stretcher"))
+
+([athena_hypertension_ProjectKB_08353] of  String
+
+	(name "vertical_stretcher"))
+
+([athena_hypertension_ProjectKB_11934] of  Widget
+
+	(height 720)
+	(is_hidden FALSE)
+	(name "Drug_Usage")
+	(property_list [athena_hypertension_ProjectKB_11935])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 669)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_11935] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_11936]
+		[athena_hypertension_ProjectKB_11938]
+		[athena_hypertension_ProjectKB_11943]
+		[athena_hypertension_ProjectKB_11951]
+		[athena_hypertension_ProjectKB_11953]
+		[athena_hypertension_ProjectKB_12258]
+		[athena_hypertension_ProjectKB_12466]
+		[athena_hypertension_ProjectKB_13074]
+		[athena_hypertension_ProjectKB_13079]
+		[athena_hypertension_ProjectKB_13084]
+		[athena_hypertension_ProjectKB_13089]
+		[athena_hypertension_ProjectKB_13094]
+		[athena_hypertension_ProjectKB_13099]
+		[athena_hypertension_ProjectKB_13107]
+		[athena_hypertension_ProjectKB_13112]
+		[athena_hypertension_ProjectKB_13117]))
+
+([athena_hypertension_ProjectKB_11936] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [athena_hypertension_ProjectKB_11937])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_11937] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_11938] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Drug_Partners")
+	(property_list [athena_hypertension_ProjectKB_11939])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 0)
+	(y 360))
+
+([athena_hypertension_ProjectKB_11939] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_11940]
+		[athena_hypertension_ProjectKB_11941]
+		[athena_hypertension_ProjectKB_11942]))
+
+([athena_hypertension_ProjectKB_11940] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_11941] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_11942] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_11943] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "components")
+	(property_list [athena_hypertension_ProjectKB_11944])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_11944] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_11951] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "duration_constraint")
+	(property_list [athena_hypertension_ProjectKB_11952])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([athena_hypertension_ProjectKB_11952] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_11953] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Side_Effects")
+	(property_list [athena_hypertension_ProjectKB_12055])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 0)
+	(y 480))
+
+([athena_hypertension_ProjectKB_12055] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_12156]
+		[athena_hypertension_ProjectKB_12256]
+		[athena_hypertension_ProjectKB_12257]))
+
+([athena_hypertension_ProjectKB_12156] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_12256] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_12257] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_12258] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "formulary_preferred_drug_in_class")
+	(property_list [athena_hypertension_ProjectKB_12259])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 600))
+
+([athena_hypertension_ProjectKB_12259] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_12260]
+		[athena_hypertension_ProjectKB_12261]
+		[athena_hypertension_ProjectKB_12262]
+		[athena_hypertension_ProjectKB_12263]
+		[athena_hypertension_ProjectKB_12365]
+		[athena_hypertension_ProjectKB_12465]))
+
+([athena_hypertension_ProjectKB_12260] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_12261] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_12262] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_12263] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_12365] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_12465] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_12466] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "collateral_actions")
+	(property_list [athena_hypertension_ProjectKB_12467])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([athena_hypertension_ProjectKB_12467] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_12468]
+		[athena_hypertension_ProjectKB_12770]
+		[athena_hypertension_ProjectKB_12870]
+		[athena_hypertension_ProjectKB_12972]
+		[athena_hypertension_ProjectKB_13072]
+		[athena_hypertension_ProjectKB_13073]))
+
+([athena_hypertension_ProjectKB_12468] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_12770] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_12870] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_12972] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13072] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13073] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_13074] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Relative_Contraindications")
+	(property_list [athena_hypertension_ProjectKB_13075])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 250)
+	(y 240))
+
+([athena_hypertension_ProjectKB_13075] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13076]
+		[athena_hypertension_ProjectKB_13077]
+		[athena_hypertension_ProjectKB_13078]))
+
+([athena_hypertension_ProjectKB_13076] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_13077] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13078] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13079] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Absolute_Contraindications")
+	(property_list [athena_hypertension_ProjectKB_13080])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 250)
+	(y 120))
+
+([athena_hypertension_ProjectKB_13080] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13081]
+		[athena_hypertension_ProjectKB_13082]
+		[athena_hypertension_ProjectKB_13083]))
+
+([athena_hypertension_ProjectKB_13081] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_13082] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13083] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13084] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Relative_Indications")
+	(property_list [athena_hypertension_ProjectKB_13085])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 0)
+	(y 240))
+
+([athena_hypertension_ProjectKB_13085] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13086]
+		[athena_hypertension_ProjectKB_13087]
+		[athena_hypertension_ProjectKB_13088]))
+
+([athena_hypertension_ProjectKB_13086] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_13087] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13088] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13089] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Drug_Class_Name")
+	(property_list [athena_hypertension_ProjectKB_13090])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([athena_hypertension_ProjectKB_13090] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13091]
+		[athena_hypertension_ProjectKB_13092]
+		[athena_hypertension_ProjectKB_13093]))
+
+([athena_hypertension_ProjectKB_13091] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([athena_hypertension_ProjectKB_13092] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13093] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13094] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Drug_Partners_To_Avoid")
+	(property_list [athena_hypertension_ProjectKB_13095])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 250)
+	(y 360))
+
+([athena_hypertension_ProjectKB_13095] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13096]
+		[athena_hypertension_ProjectKB_13097]
+		[athena_hypertension_ProjectKB_13098]))
+
+([athena_hypertension_ProjectKB_13096] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_13097] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13098] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13099] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [athena_hypertension_ProjectKB_13100])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 600))
+
+([athena_hypertension_ProjectKB_13100] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13101]
+		[athena_hypertension_ProjectKB_13102]
+		[athena_hypertension_ProjectKB_13103]
+		[athena_hypertension_ProjectKB_13104]
+		[athena_hypertension_ProjectKB_13105]
+		[athena_hypertension_ProjectKB_13106]))
+
+([athena_hypertension_ProjectKB_13101] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([athena_hypertension_ProjectKB_13102] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([athena_hypertension_ProjectKB_13103] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([athena_hypertension_ProjectKB_13104] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13105] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13106] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([athena_hypertension_ProjectKB_13107] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Compelling_Indications")
+	(property_list [athena_hypertension_ProjectKB_13108])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([athena_hypertension_ProjectKB_13108] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13109]
+		[athena_hypertension_ProjectKB_13110]
+		[athena_hypertension_ProjectKB_13111]))
+
+([athena_hypertension_ProjectKB_13109] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_13110] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13111] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13112] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Complication_Factor")
+	(property_list [athena_hypertension_ProjectKB_13113])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 250)
+	(x 250)
+	(y 480))
+
+([athena_hypertension_ProjectKB_13113] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_13114]
+		[athena_hypertension_ProjectKB_13115]
+		[athena_hypertension_ProjectKB_13116]))
+
+([athena_hypertension_ProjectKB_13114] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Classes"))
+
+([athena_hypertension_ProjectKB_13115] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([athena_hypertension_ProjectKB_13116] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([athena_hypertension_ProjectKB_13117] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_14882] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_17244] of  Property_List
+
+	(name "layout properties"))
+
+([athena_hypertension_ProjectKB_Class3528] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3529])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([athena_hypertension_ProjectKB_Class3529] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3530] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3531])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([athena_hypertension_ProjectKB_Class3531] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3532] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3533])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([athena_hypertension_ProjectKB_Class3533] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3534] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3535])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([athena_hypertension_ProjectKB_Class3535] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3536] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3537])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
+
+([athena_hypertension_ProjectKB_Class3537] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3538] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3539])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([athena_hypertension_ProjectKB_Class3539] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3540] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3541])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([athena_hypertension_ProjectKB_Class3541] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3542] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3543])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([athena_hypertension_ProjectKB_Class3543] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3544] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3545])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([athena_hypertension_ProjectKB_Class3545] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3546] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3547])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([athena_hypertension_ProjectKB_Class3547] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3548] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3549])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([athena_hypertension_ProjectKB_Class3549] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3550] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3551])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([athena_hypertension_ProjectKB_Class3551] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3552] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3553])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([athena_hypertension_ProjectKB_Class3553] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3554] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3555])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([athena_hypertension_ProjectKB_Class3555] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3556] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3557])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([athena_hypertension_ProjectKB_Class3557] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3558] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3559])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([athena_hypertension_ProjectKB_Class3559] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3560] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3561])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([athena_hypertension_ProjectKB_Class3561] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3562] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3563])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([athena_hypertension_ProjectKB_Class3563] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3564] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3565])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([athena_hypertension_ProjectKB_Class3565] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3566] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3567])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([athena_hypertension_ProjectKB_Class3567] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3568] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3569])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([athena_hypertension_ProjectKB_Class3569] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3570] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3571])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([athena_hypertension_ProjectKB_Class3571] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3572] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3573])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([athena_hypertension_ProjectKB_Class3573] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3574] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3575])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([athena_hypertension_ProjectKB_Class3575] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3576] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3577])
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([athena_hypertension_ProjectKB_Class3577] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3578] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3579])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([athena_hypertension_ProjectKB_Class3579] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3580] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3581])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
+
+([athena_hypertension_ProjectKB_Class3581] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3582] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3583])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([athena_hypertension_ProjectKB_Class3583] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3584] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3585])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
+
+([athena_hypertension_ProjectKB_Class3585] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3586] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3587])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([athena_hypertension_ProjectKB_Class3587] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3588] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3589])
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+
+([athena_hypertension_ProjectKB_Class3589] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3590] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [athena_hypertension_ProjectKB_Class3591])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([athena_hypertension_ProjectKB_Class3591] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3592] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [athena_hypertension_ProjectKB_Class3593])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 850))
+
+([athena_hypertension_ProjectKB_Class3593] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_Class3594]
+		[athena_hypertension_ProjectKB_Class3595]))
+
+([athena_hypertension_ProjectKB_Class3594] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class3595] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class3596] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "goals")
+	(property_list [athena_hypertension_ProjectKB_Class3597])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 730))
+
+([athena_hypertension_ProjectKB_Class3597] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_Class3598]
+		[athena_hypertension_ProjectKB_Class3599]))
+
+([athena_hypertension_ProjectKB_Class3598] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class3599] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class3600] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "assume_if_no_goal_value")
+	(property_list [athena_hypertension_ProjectKB_Class3601])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 670))
+
+([athena_hypertension_ProjectKB_Class3601] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class3602] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(name "subguidelines")
+	(property_list [athena_hypertension_ProjectKB_Class3603])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 200)
+	(y 670))
+
+([athena_hypertension_ProjectKB_Class3603] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_Class3604]
+		[athena_hypertension_ProjectKB_Class3605]))
+
+([athena_hypertension_ProjectKB_Class3604] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class3605] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class3624] of  String
+
+	(name "Medication")
+	(string_value "drug_name"))
+
+([athena_hypertension_ProjectKB_Class3625] of  String
+
+	(name "Management_Diagram")
+	(string_value "label"))
+
+([athena_hypertension_ProjectKB_Class3626] of  String
+
+	(name "PAL-QUERY")
+	(string_value "%3APAL-NAME"))
+
+([athena_hypertension_ProjectKB_Class3627] of  String
+
+	(name "Lab_Dictionary_Translation")
+	(string_value "Target_Class_in_KB"))
+
+([athena_hypertension_ProjectKB_Class3628] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([athena_hypertension_ProjectKB_Class3629] of  String
+
+	(name "Adverse_Reaction")
+	(string_value "domain_term"))
+
+([athena_hypertension_ProjectKB_Class3630] of  String
+
+	(name "Numeric_Entry")
+	(string_value "domain_term"))
+
+([athena_hypertension_ProjectKB_Class3631] of  String
+
+	(name "Drug_Indication_Relation")
+	(string_value "label"))
+
+([athena_hypertension_ProjectKB_Class3632] of  String
+
+	(name "Literal_Strng_Translation")
+	(string_value "Target_String_in_KB"))
+
+([athena_hypertension_ProjectKB_Class3633] of  String
+
+	(name "Range_Mapping_Entry")
+	(string_value "label"))
+
+([athena_hypertension_ProjectKB_Class3634] of  String
+
+	(name "Note_Entry")
+	(string_value "domain_term"))
+
+([athena_hypertension_ProjectKB_Class3635] of  String
+
+	(name "Patient_History_Translation")
+	(string_value "Target_Class_in_KB"))
+
+([athena_hypertension_ProjectKB_Class3636] of  String
+
+	(name "Condition")
+	(string_value "domain_term"))
+
+([athena_hypertension_ProjectKB_Class3637] of  String
+
+	(name "Supporting_Material")
+	(string_value "label"))
+
+([athena_hypertension_ProjectKB_Class3638] of  Map
+
+	(entries
+		[athena_hypertension_ProjectKB_Class3639]
+		[athena_hypertension_ProjectKB_Class3640]))
+
+([athena_hypertension_ProjectKB_Class3639] of  Map_Entry
+
+	(key "athena_hypertension_510167")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "349 246 213 137")
+	(value_class "java.awt.Rectangle"))
+
+([athena_hypertension_ProjectKB_Class3640] of  Map_Entry
+
+	(key "athena_hypertension_360316")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "85 14 160 90")
+	(value_class "java.awt.Rectangle"))
+
+([athena_hypertension_ProjectKB_Class3641] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "athena_hypertension_ProjectKB_Class3638")
+	(value_class "java.util.Map"))
+
+([athena_hypertension_ProjectKB_Class69] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class70] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class71] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class72] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class73] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class74] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class75] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class76] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class77] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class78] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class79] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class80] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([athena_hypertension_ProjectKB_Class81] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([athena_hypertension_ProjectKB_Class82] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class83] of  Property_List
+)
+
+([athena_hypertension_ProjectKB_Class84] of  Property_List
+)
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_Class3624]
+		[athena_hypertension_ProjectKB_Class3625]
+		[athena_hypertension_ProjectKB_Class3626]
+		[athena_hypertension_ProjectKB_Class3627]
+		[athena_hypertension_ProjectKB_Class3628]
+		[athena_hypertension_ProjectKB_Class3629]
+		[athena_hypertension_ProjectKB_Class3630]
+		[athena_hypertension_ProjectKB_Class3631]
+		[athena_hypertension_ProjectKB_Class3632]
+		[athena_hypertension_ProjectKB_Class3633]
+		[athena_hypertension_ProjectKB_Class3634]
+		[athena_hypertension_ProjectKB_Class3635]
+		[athena_hypertension_ProjectKB_Class3636]
+		[athena_hypertension_ProjectKB_Class3637]))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden TRUE)
+	(label "Classes")
+	(property_list [ProjectKB_1633_00011])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([CREATION_TIMESTAMP_WIDGET] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([CREATOR_WIDGET] of  Widget
+
+	(name ":CREATOR"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(label "Forms")
+	(property_list [ProjectKB_1633_00041])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([HTN_TAB] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label " HTN Advisory")
+	(name "HTNAdvisory")
+	(property_list [HTN_TAB_PROPERTIES])
+	(widget_class_name "edu.stanford.smi.Athena.UI.HTNProtegeTab")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([HTN_TAB_PROPERTIES] of  Property_List
+
+	(name "htn tab properties"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [INSTANCE_ANNOTATION_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCE_ANNOTATION_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[ANNOTATED_INSTANCE_WIDGET]
+		[CREATOR_WIDGET]
+		[CREATION_TIMESTAMP_WIDGET]
+		[ANNOTATION_TEXT_WIDGET]
+		[athena_hypertension_ProjectKB_14882]))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden TRUE)
+	(label "Instances")
+	(property_list [ProjectKB_1633_00044])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_532582_Class3513] of  Map
+
+	(entries
+		[KB_532582_Class3515]
+		[KB_532582_Class3517]
+		[KB_532582_Class3519]
+		[KB_532582_Class3521]
+		[KB_532582_Class3522]
+		[KB_532582_Class3523]
+		[KB_532582_Class3525]
+		[KB_532582_Class3526]
+		[KB_532582_Class3527])
+	(referenced_maps
+		[KB_532582_Class3520]
+		[KB_532582_Class3516]
+		[KB_532582_Class3524]
+		[KB_532582_Class3514]
+		[KB_532582_Class3518]))
+
+([KB_532582_Class3514] of  Map
+)
+
+([KB_532582_Class3515] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_532582_Class3514")
+	(value_class "java.util.Map"))
+
+([KB_532582_Class3516] of  Map
+)
+
+([KB_532582_Class3517] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_532582_Class3516")
+	(value_class "java.util.Map"))
+
+([KB_532582_Class3518] of  Map
+)
+
+([KB_532582_Class3519] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_532582_Class3518")
+	(value_class "java.util.Map"))
+
+([KB_532582_Class3520] of  Map
+)
+
+([KB_532582_Class3521] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_532582_Class3520")
+	(value_class "java.util.Map"))
+
+([KB_532582_Class3522] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_532582_Class3523] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_532582_Class3524] of  Map
+)
+
+([KB_532582_Class3525] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_532582_Class3524")
+	(value_class "java.util.Map"))
+
+([KB_532582_Class3526] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([KB_532582_Class3527] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([LAYOUT_PROPERTIES] of  Property_List
+
+	(name "layout properties")
+	(properties [VERTICAL_STRETCHER]))
+
+([PAL_DESCRIPTION_WIDGET] of  Widget
+
+	(height 110)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 270)
+	(x 0)
+	(y 60))
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 863)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [PAL_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 888)
+	(x 0)
+	(y 0))
+
+([PAL_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([PAL_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[PAL_NAME_WIDGET]
+		[PAL_RANGE_WIDGET]
+		[PAL_DESCRIPTION_WIDGET]
+		[PAL_STATEMENT_WIDGET]
+		[athena_hypertension_ProjectKB_17244]))
+
+([PAL_RANGE_WIDGET] of  Widget
+
+	(height 170)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 280)
+	(y 0))
+
+([PAL_STATEMENT_WIDGET] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 530)
+	(x 0)
+	(y 170))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[athena_hypertension_ProjectKB_03398]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[athena_hypertension_ProjectKB_11934]
+		[athena_hypertension_ProjectKB_00000]
+		[athena_hypertension_ProjectKB_00472]
+		[athena_hypertension_ProjectKB_01175]
+		[athena_hypertension_ProjectKB_03376]
+		[athena_hypertension_ProjectKB_00451]
+		[athena_hypertension_ProjectKB_03842]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[athena_hypertension_ProjectKB_02946]
+		[athena_hypertension_ProjectKB_08327]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[athena_hypertension_ProjectKB_01243]
+		[athena_hypertension_ProjectKB_03620]
+		[athena_hypertension_ProjectKB_02639]
+		[STANDARD_FACET_FORM_WIDGET]
+		[athena_hypertension_ProjectKB_00620]
+		[PAL_FORM_WIDGET]
+		[athena_hypertension_ProjectKB_00371]
+		[athena_hypertension_ProjectKB_00395]
+		[athena_hypertension_ProjectKB_02109]
+		[athena_hypertension_ProjectKB_02317]
+		[athena_hypertension_ProjectKB_01302]
+		[athena_hypertension_ProjectKB_03361]
+		[athena_hypertension_ProjectKB_01659])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(included_projects
+		"library.pprj"
+		"eon2.pprj")
+	(java_packages
+		"edu.stanford.smi.eon.Dharma"
+		"edu.stanford.smi.eon.time"
+		"edu.stanford.smi.eon.criterion"
+		"edu.stanford.smi.eon.athenaextensions"
+		"edu.stanford.smi.eon.datahandler")
+	(next_frame_number 0)
+	(options [ProjectKB_1633_00012])
+	(property_map [athena-all_ProjectKB_00056])
+	(sources [SOURCES])
+	(tabs
+		[HTN_TAB]
+		[ProjectKB_1633_00005]
+		[ProjectKB_1633_00007]
+		[CLSES_TAB]
+		[INSTANCES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[ProjectKB_1633_00003]
+		[ProjectKB_1633_00009]))
+
+([ProjectKB_1633_00000] of  String
+
+	(name "classes_file_name")
+	(string_value "athena_all.pont"))
+
+([ProjectKB_1633_00001] of  String
+
+	(name "instances_file_name")
+	(string_value "athena_all.pins"))
+
+([ProjectKB_1633_00002] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([ProjectKB_1633_00003] of  Widget
+
+	(is_hidden TRUE)
+	(label "PAL Queries")
+	(property_list [ProjectKB_1633_00004])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([ProjectKB_1633_00004] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_02966]
+		[athena_hypertension_ProjectKB_02967]
+		[athena_hypertension_ProjectKB_02848]))
+
+([ProjectKB_1633_00005] of  Widget
+
+	(is_hidden FALSE)
+	(label "Knowledge Acquisition")
+	(property_list [ProjectKB_1633_00006])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([ProjectKB_1633_00006] of  Property_List
+
+	(properties [athena_hypertension_ProjectKB_00015]))
+
+([ProjectKB_1633_00007] of  Widget
+
+	(is_hidden FALSE)
+	(label "Classes & Instances")
+	(property_list [ProjectKB_1633_00008])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([ProjectKB_1633_00008] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00972]
+		[athena_hypertension_ProjectKB_00973]
+		[athena_hypertension_ProjectKB_00974]))
+
+([ProjectKB_1633_00009] of  Widget
+
+	(is_hidden TRUE)
+	(label "PAL Constraints")
+	(property_list [ProjectKB_1633_00010])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([ProjectKB_1633_00010] of  Property_List
+
+	(properties
+		[athena_hypertension_ProjectKB_00609]
+		[athena_hypertension_ProjectKB_00610]
+		[athena_hypertension_ProjectKB_00611]))
+
+([ProjectKB_1633_00011] of  Property_List
+
+	(properties
+		[athena-all_ProjectKB_00046]
+		[athena-all_ProjectKB_00047]))
+
+([ProjectKB_1633_00012] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon TRUE)
+	(display_hidden_classes FALSE)
+	(display_multi_parent_class_icon TRUE)
+	(is_readonly FALSE)
+	(update_modification_slots FALSE))
+
+([ProjectKB_1633_00013] of  Property_List
+
+	(properties
+		[ProjectKB_1633_00014]
+		[ProjectKB_1633_00015]
+		[ProjectKB_1633_00016]
+		[ProjectKB_1633_00017]
+		[ProjectKB_1633_00018]
+		[ProjectKB_1633_00019]
+		[athena_hypertension_ProjectKB_Class80]
+		[athena_hypertension_ProjectKB_Class81]))
+
+([ProjectKB_1633_00014] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([ProjectKB_1633_00015] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([ProjectKB_1633_00016] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([ProjectKB_1633_00017] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([ProjectKB_1633_00018] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([ProjectKB_1633_00019] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([ProjectKB_1633_00020] of  Property_List
+
+	(properties
+		[ProjectKB_1633_00021]
+		[ProjectKB_1633_00022]
+		[ProjectKB_1633_00023]
+		[ProjectKB_1633_00024]
+		[ProjectKB_1633_00025]
+		[ProjectKB_1633_00026]
+		[ProjectKB_1633_00027]
+		[ProjectKB_1633_00028]))
+
+([ProjectKB_1633_00021] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots"))
+
+([ProjectKB_1633_00022] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots at class"))
+
+([ProjectKB_1633_00023] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create slot and attach to class"))
+
+([ProjectKB_1633_00024] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove overrides from selected slots"))
+
+([ProjectKB_1633_00025] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([ProjectKB_1633_00026] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([ProjectKB_1633_00027] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([ProjectKB_1633_00028] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([ProjectKB_1633_00029] of  Property_List
+
+	(properties
+		[athena-all_ProjectKB_00048]
+		[athena-all_ProjectKB_00049]))
+
+([ProjectKB_1633_00030] of  Property_List
+
+	(properties
+		[ProjectKB_1633_00031]
+		[ProjectKB_1633_00032]
+		[ProjectKB_1633_00033]
+		[ProjectKB_1633_00034]))
+
+([ProjectKB_1633_00031] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View the selected value"))
+
+([ProjectKB_1633_00032] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new value"))
+
+([ProjectKB_1633_00033] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([ProjectKB_1633_00034] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([ProjectKB_1633_00035] of  Property_List
+
+	(properties
+		[ProjectKB_1633_00036]
+		[ProjectKB_1633_00037]
+		[ProjectKB_1633_00038]
+		[ProjectKB_1633_00039]))
+
+([ProjectKB_1633_00036] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View the selected value"))
+
+([ProjectKB_1633_00037] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new value"))
+
+([ProjectKB_1633_00038] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([ProjectKB_1633_00039] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([ProjectKB_1633_00041] of  Property_List
+
+	(properties [athena-all_ProjectKB_00050]))
+
+([ProjectKB_1633_00044] of  Property_List
+
+	(properties
+		[athena-all_ProjectKB_00051]
+		[athena-all_ProjectKB_00052]))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden TRUE)
+	(label "Slots")
+	(property_list [ProjectKB_1633_00029])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[ProjectKB_1633_00000]
+		[ProjectKB_1633_00001]
+		[ProjectKB_1633_00002]))
+
+([STANDARD_CLASS_CONSTRAINTS_WIDGET] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [ProjectKB_1633_00013])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_CLASS_DIRECT_INSTANCES_WIDGET] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([STANDARD_CLASS_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_CLASS_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [athena_hypertension_ProjectKB_Class82])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [STANDARD_CLASS_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_CLASS_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [athena_hypertension_ProjectKB_Class83])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_CLASS_ROLE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [athena_hypertension_ProjectKB_Class84])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [ProjectKB_1633_00020])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([STANDARD_CLASS_WIDGETS] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[STANDARD_CLASS_CONSTRAINTS_WIDGET]
+		[STANDARD_CLASS_DIRECT_INSTANCES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET]
+		[STANDARD_CLASS_DOCUMENTATION_WIDGET]
+		[STANDARD_CLASS_NAME_WIDGET]
+		[STANDARD_CLASS_ROLE_WIDGET]
+		[STANDARD_CLASS_DIRECT_TYPE_WIDGET]
+		[STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET]
+		[LAYOUT_PROPERTIES]))
+
+([STANDARD_FACET_ASSOCIATED_SLOT_WIDGET] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_FACET_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [STANDARD_FACET_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_FACET_WIDGETS] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[STANDARD_FACET_NAME_WIDGET]
+		[STANDARD_FACET_DOCUMENTATION_WIDGET]
+		[STANDARD_FACET_ASSOCIATED_SLOT_WIDGET]))
+
+([STANDARD_SLOT_ASSOCIATED_FACET_WIDGET] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([STANDARD_SLOT_CONSTRAINTS_WIDGET] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([STANDARD_SLOT_DEFAULT_VALUE_WIDGET] of  Widget
+
+	(height 150)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [ProjectKB_1633_00035])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 120))
+
+([STANDARD_SLOT_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_SLOT_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [STANDARD_SLOT_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_INVERSE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 210))
+
+([STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 175))
+
+([STANDARD_SLOT_MAXIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 210))
+
+([STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([STANDARD_SLOT_MINIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 210))
+
+([STANDARD_SLOT_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_SLOT_SUBSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([STANDARD_SLOT_SUPERSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([STANDARD_SLOT_TYPE_WIDGET] of  Widget
+
+	(height 150)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_SLOT_VALUES_WIDGET] of  Widget
+
+	(height 120)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [ProjectKB_1633_00030])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_SLOT_WIDGETS] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_CONSTRAINTS_WIDGET]
+		[STANDARD_SLOT_DIRECT_TYPE_WIDGET]
+		[STANDARD_SLOT_VALUES_WIDGET]
+		[STANDARD_SLOT_SUPERSLOTS_WIDGET]
+		[STANDARD_SLOT_SUBSLOTS_WIDGET]
+		[STANDARD_SLOT_DEFAULT_VALUE_WIDGET]
+		[STANDARD_SLOT_DOCUMENTATION_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_MINIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_ASSOCIATED_FACET_WIDGET]
+		[STANDARD_SLOT_NAME_WIDGET]
+		[STANDARD_SLOT_INVERSE_WIDGET]
+		[STANDARD_SLOT_TYPE_WIDGET]
+		[athena_hypertension_ProjectKB_04703]))
+
+([VERTICAL_STRETCHER] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))

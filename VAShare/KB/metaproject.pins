@@ -1,0 +1,155 @@
+; Fri Jan 15 17:41:33 PST 2010
+; 
+;+ (version "3.4.2")
+;+ (build "Build 562")
+
+([metaproject_Class0] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Class20000])
+	(location "E:/KB/annotation_ATHENA_HF.pprj")
+	(name "annotation_ATHENA_HF.pprj"))
+
+([metaproject_Class10000] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Class0])
+	(location "E:/KB/ATHENA_HF.pprj")
+	(name "ATHENA_HF"))
+
+([metaproject_Class20000] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(description "Annotation on annotation")
+	(location "E:/KB/annotation_annotation_ATHENA_HF.pprj")
+	(name "annotation_annotation_ATHENA_HF.pprj"))
+
+([metaproject_Instance_0] of  Group
+
+	(member
+		[metaproject_Instance_50000]
+		[metaproject_Instance_50001]
+		[metaproject_Instance_50002]
+		[metaproject_Instance_50003]
+		[metaproject_Instance_10002])
+	(name "World"))
+
+([metaproject_Instance_10000] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/KB/ATHENA_DM.pprj")
+	(name "ATHENA_DM")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_10001] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(location "E:/KB/annotation_library.pprj")
+	(name "annotation_library"))
+
+([metaproject_Instance_10002] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Guest")
+	(password "e4f6f6b00b2d732f5b7f969ddf091800")
+	(salt "0e9e8cd7c0657275"))
+
+([metaproject_Instance_10008] of  GroupOperation
+
+	(allowedGroup [metaproject_Instance_0])
+	(allowedOperation
+		[nci_metaproject_Instance_60009]
+		[nci_metaproject_Instance_60010]))
+
+([metaproject_Instance_20001] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/KB/ATHENA_Lipid.pprj")
+	(name "ATHENA_Lipid")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_20004] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(location "E:/KB/OpioidGuideline.pprj")
+	(name "OpioidGuidelineB1"))
+
+([metaproject_Instance_20005] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/KB/ATHENA_CKD.pprj")
+	(name "ATHENA_CKD")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_20006] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/KB/ATHENA_GlycemicControl.pprj")
+	(name "ATHENA_GlycemicControl")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_20007] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/KB/ATHENA_DM_Foot.pprj")
+	(name "ATHENA_DM_Foot")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_40000] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/KB/library.pprj")
+	(name "library")
+	(owner [metaproject_Instance_50003]))
+
+([metaproject_Instance_50000] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Dan Wang")
+	(password "36e4322f0079219776da84d86c842eb0")
+	(salt "0ad7fbd1cd2a98e2"))
+
+([metaproject_Instance_50001] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Susana Martins")
+	(password "3480e6109067ef8493d423ddab3bfc21")
+	(salt "54c0a51beffd5422"))
+
+([metaproject_Instance_50002] of  User
+
+	(group [metaproject_Instance_0])
+	(name "Martha Michel")
+	(password "2824640a803c1b4d736a246cbcf5056e")
+	(salt "9172f3c0bd18c1b5"))
+
+([metaproject_Instance_50003] of  User
+
+	(group [metaproject_Instance_0])
+	(lastAccess "1263605887632")
+	(lastLogin "1263605790571")
+	(name "Samson Tu")
+	(password "e51218bc8b434e6a3bfafbb9075280da")
+	(salt "6f4ea8089f1595a0"))
+
+([metaproject_Instance_50004] of  Project
+
+	(allowedGroupOperation [metaproject_Instance_10008])
+	(annotationProject [metaproject_Instance_10001])
+	(location "E:/KB/ATHENA_DM_Eye.pprj")
+	(name "ATHENA_DM_Eye")
+	(owner [metaproject_Instance_50003]))
+
+([nci_metaproject_Instance_60009] of  Operation
+
+	(name "Read"))
+
+([nci_metaproject_Instance_60010] of  Operation
+
+	(name "Write"))

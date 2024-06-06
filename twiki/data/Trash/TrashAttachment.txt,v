@@ -1,0 +1,71 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2006.02.01.12.01.26;	author TWikiContributor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2004.08.17.17.15.41;	author ArthurClemens;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.06.28.06.55.49;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.3
+log
+@buildrelease
+@
+text
+@%META:TOPICINFO{author="TWikiContributor" date="1092762941" format="1.0" version="3"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ %MAKETEXT{"Placeholder for trashed attachments"}%
+
+
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="ArthurClemens" date="1092762941" format="1.0" version="1.2"}%
+d3 1
+a3 1
+---+ Placeholder for trashed attachments
+a4 1
+-- Main.PeterThoeny - 28 Jun 2002
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1025247349" format="1.0" version="1.1"}%
+d3 4
+a6 3
+---+ Placeholder for trashed attachments
+
+-- Main.PeterThoeny - 28 Jun 2002
+@

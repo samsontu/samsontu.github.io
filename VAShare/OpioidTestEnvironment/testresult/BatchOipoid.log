@@ -1,0 +1,30 @@
+
+C:\Users\tu\OpioidTestEnvironment\batch>Setlocal
+
+C:\Users\tu\OpioidTestEnvironment\batch>set MAXIMUM_MEMORY=-Xmx1256M 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set OPTIONS=-Xmx1256M 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set EONHOME=C:\Users\tu\OpioidTestEnvironment 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set LIB=C:\Users\tu\OpioidTestEnvironment\lib 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set TestEnvironmentINI=C:\Users\tu\OpioidTestEnvironment\ini\BatchOpioid.ini 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set JRE=C:\Users\tu\OpioidTestEnvironment\jre7 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set PCADIR=C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set PATH=C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\tu\OpioidTestEnvironment\jre7\bin 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set PROTEGEJARS=C:\Users\tu\OpioidTestEnvironment\lib\protege.jar;C:\Users\tu\OpioidTestEnvironment\lib\looks.jar;C:\Users\tu\OpioidTestEnvironment\lib\unicode_panel.jar 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set GUIDELINEJARS=C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\eonpm.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\AthenaPerformanceMetrics.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\bmir-site.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\eonpal.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\antlr.jar;C:\Users\tu\OpioidTestEnvironment\lib\jcchart.jar;C:\Users\tu\OpioidTestEnvironment\lib\jctable.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\log4j.jar 
+
+C:\Users\tu\OpioidTestEnvironment\batch>set CLASSPATH="C:\Users\tu\OpioidTestEnvironment\lib\protege.jar;C:\Users\tu\OpioidTestEnvironment\lib\looks.jar;C:\Users\tu\OpioidTestEnvironment\lib\unicode_panel.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\eonpm.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\AthenaPerformanceMetrics.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\bmir-site.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\eonpal.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\antlr.jar;C:\Users\tu\OpioidTestEnvironment\lib\jcchart.jar;C:\Users\tu\OpioidTestEnvironment\lib\jctable.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\log4j.jar;" 
+
+C:\Users\tu\OpioidTestEnvironment\batch>C:\Users\tu\OpioidTestEnvironment\jre7\bin\java -Xmx1256M  -Dprotege.dir="C:\Users\tu\OpioidTestEnvironment\lib"   -DEON_HOME="C:\Users\tu\OpioidTestEnvironment" -cp "C:\Users\tu\OpioidTestEnvironment\lib\protege.jar;C:\Users\tu\OpioidTestEnvironment\lib\looks.jar;C:\Users\tu\OpioidTestEnvironment\lib\unicode_panel.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\eonpm.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\AthenaPerformanceMetrics.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\bmir-site.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\eonpal.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\antlr.jar;C:\Users\tu\OpioidTestEnvironment\lib\jcchart.jar;C:\Users\tu\OpioidTestEnvironment\lib\jctable.jar;C:\Users\tu\OpioidTestEnvironment\lib\plugins\edu.stanford.smi.eon.pca\log4j.jar;"  gov.va.test.opioidtesttool.pca.RegressionBatchClient "C:\Users\tu\OpioidTestEnvironment\ini\BatchOpioid.ini"  
+Initializing RegressionBatchClient
+Initfile: C:\Users\tu\OpioidTestEnvironment\ini\BatchOpioid.ini
+Reading in XML patient data
+2015-06-29 23:11:31,047 INFO  RegressionBatchClient - Loading project C:\Users\tu\OpioidTestEnvironment\kbs\OpioidGuideline.pprj 

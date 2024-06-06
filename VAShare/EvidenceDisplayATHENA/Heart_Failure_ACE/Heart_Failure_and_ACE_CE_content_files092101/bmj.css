@@ -1,0 +1,129 @@
+A {
+	COLOR: #020a88; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+TD {
+	FONT-FAMILY: arial; FONT-SIZE: 10pt
+}
+LI {
+	FONT-FAMILY: arial; FONT-SIZE: 10pt
+}
+A:active {
+	COLOR: #020a88; FONT-FAMILY: arial
+}
+A:visited {
+	COLOR: #020a88; FONT-FAMILY: arial
+}
+A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #666666; FONT-FAMILY: arial
+}
+#localheadtopic {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt; LETTER-SPACING: 0pt; TEXT-ALIGN: right
+}
+#localhead {
+	COLOR: #020a88; FONT-FAMILY: arial; FONT-SIZE: 14pt; FONT-WEIGHT: bold; LETTER-SPACING: 0pt; TEXT-ALIGN: right
+}
+#localfoot {
+	COLOR: black; FONT-FAMILY: arial; FONT-SIZE: 10pt
+}
+#question-title {
+	BACKGROUND-COLOR: #404040; COLOR: #ffffff; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+#question {
+	BACKGROUND-COLOR: #d3d3d3; COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; PADDING-TOP: 1px
+}
+#question-text {
+	BACKGROUND-COLOR: #d3d3d3; COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 8pt; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+#question-intro {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 8pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 5px
+}
+#blue-title {
+	COLOR: #020a87; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 20px; PADDING-TOP: 1px
+}
+#intervention {
+	BACKGROUND-COLOR: #020a87; COLOR: #ffffff; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 1px; TEXT-ALIGN: center; TEXT-TRANSFORM: uppercase
+}
+#intervention-text {
+	BACKGROUND-COLOR: #d6d9ec; COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 8pt; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+#coveredfuturetitle {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 8pt; FONT-WEIGHT: bold
+}
+#coveredfuture {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#key-message {
+	BACKGROUND-COLOR: #404040; COLOR: #ffffff; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; TEXT-ALIGN: center; TEXT-TRANSFORM: capitalize
+}
+#key-message-heading {
+	BACKGROUND-COLOR: #ffffff; COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt; PADDING-LEFT: 10px; PADDING-RIGHT: 5px; TEXT-ALIGN: left
+}
+#key-message-data {
+	BACKGROUND-COLOR: #ffffff; COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt; PADDING-LEFT: 10px; PADDING-RIGHT: 5px; TEXT-ALIGN: left
+}
+#option-title {
+	BACKGROUND-COLOR: #020a87; COLOR: #ffffff; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+#option {
+	BACKGROUND-COLOR: #d6d9ec; COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; PADDING-TOP: 1px; COLOR2: #020a87
+}
+#option-intro {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 8pt; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 5px
+}
+#reference {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#text-box {
+	BACKGROUND-COLOR: white; BORDER-BOTTOM: #b2b2b2 1px solid; BORDER-LEFT: #b2b2b2 1px solid; BORDER-RIGHT: #b2b2b2 1px solid; BORDER-TOP: #b2b2b2 1px solid; MARGIN-TOP: 1pt
+}
+#title {
+	COLOR: #020a88; FONT-FAMILY: arial; FONT-SIZE: 14pt; FONT-WEIGHT: bold; LETTER-SPACING: 0pt
+}
+#sub-title {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold
+}
+#title-author {
+	COLOR: #020a87; FONT-FAMILY: arial; FONT-SIZE: 10pt; FONT-STYLE: italic
+}
+#menu {
+	COLOR: #020a88; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#menu:active {
+	COLOR: #020a88; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#menu:visited {
+	COLOR: #020a88; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#menu:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #666666; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+P {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt
+}
+BODY {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt
+}
+#top-menu {
+	COLOR: #666666; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#top-menu:active {
+	COLOR: #666666; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#top-menu:visited {
+	COLOR: #666666; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+#top-menu:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #020a88; FONT-FAMILY: arial; FONT-SIZE: 8pt
+}
+UL LI {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 10pt; LINE-HEIGHT: normal; LIST-STYLE: square url(images/bullet.gif); MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+HR {
+	COLOR: #020a87
+}
+SPAN.newitem {
+	COLOR: white; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-TRANSFORM: uppercase
+}
+.borderless_td {
+	BORDER-BOTTOM: #b2b2b2 0px solid; BORDER-LEFT: #b2b2b2 0px solid; BORDER-RIGHT: #b2b2b2 0px solid; BORDER-TOP: #b2b2b2 0px solid
+}

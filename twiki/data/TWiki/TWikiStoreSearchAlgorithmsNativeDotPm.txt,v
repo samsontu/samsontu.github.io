@@ -1,0 +1,37 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2007.03.03.14.51.50;	author TWikiContributor;	state Exp;
+branches;
+next	;
+
+
+desc
+@buildrelease
+@
+
+
+1.1
+log
+@buildrelease
+@
+text
+@---+ Package =TWiki::Store::SearchAlgorithms::Native=
+
+Native implementation of the RCS cache search. Requires tools/native_search
+to be built and installed.
+
+---++ search($searchString, $topics, $options, $sDir) -> \%seen
+Search .txt files in $dir for $string. See RcsFile::searchInWebContent
+for details.
+
+Rude and crude, this makes no attempt to handle UTF-8.
+
+
+%TOC%
+@

@@ -1,0 +1,235 @@
+<html><body>
+<h2>Case: Test Case: DM and circulatory symptoms</h2>
+93.0 year old 
+<p><b>Lab & Note Entry Values:</b> <table>
+<b><tr><td width="200">Lab</td><td width="200">Value</td><td width="200">Date</td></tr></b>
+<tr><td width="200">Overall_ADL</td><td width="200">4.0</td><td width="200">2008-8-30</td></tr>
+<tr><td width="200">Age</td><td width="200">93</td><td width="200">1970-1-1</td></tr>
+<tr><td width="200">CREATININE</td><td width="200">1.6</td><td width="200">2005-12-31</td></tr>
+<tr><td width="200">Average_Pain_in_Last_Week</td><td width="200">7.0</td><td width="200">2008-8-30</td></tr>
+</table>
+<p><b>Medications:</b> 
+<p><b>Qualitative Data:</b> <table>
+<tr><td width="200"><b>Data Class</b></td><td width="200"><b>First/Last Dates Reported</b></td><td width="200"></td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-13</td>
+<td width="200">BENIGN HYPERTENSION</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-13</td>
+<td width="200">HYPERPLASIA OF PROSTATE</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-13</td>
+<td width="200">circulatory symptoms that limit patients lifestyle</td></tr>
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200">SSN</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-13</td>
+<td width="200">POSTHERPES TRIGEM NEURAL</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-22</td>
+<td width="200">HERED SENSORY NEUROPATHY</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-02-13</td>
+<td width="200">Peripheral Neuropathy</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-02-21</td>
+<td width="200">Diabetes_Mellitus</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-13</td>
+<td width="200">MONONEURITIS NOS</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-13</td>
+<td width="200">HEADACHE</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-01-13</td>
+<td width="200">HYPERLIPIDEMIA NEC/NOS</td></tr>
+</table><p>
+<h2 align="center">ATHENA Cardiovascular Guidelines</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Cardiovascular Guidelines: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>()</i>]
+</ul>
+<h2 align="center">ATHENA CKD Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA CKD Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Age(93.0/1970-1-1) && null)</i>]
+</ul>
+<b>Scenario choice:</b> DM and no Cr & urine assessment within a year, no CKD
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Need screening?</b><br>
+<ul>
+<li><b>Order Cr & microalbumin/Cr ratio <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of Cr AND microalbumin/creatinine within a year</i> evaluate to <b> true</b> because <i>null</i>)])
+Absence of serum creatinine and microalbumin/creatinine ratio within a year; please order both now.
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Eye Care</h2>
+<b>Patient classification:</b> <ul>
+</ul>
+<b>Scenario choice:</b> Eye exam over a year ago or no data
+<p><b>Action Choices</b>
+<ul>
+<li><b>Referral for eye exam over a year or no data</b><br>
+<ul>
+<li><b>Refer for eye exam within 3m <font color=FF0000>preferred</font></b>(strict rule-in condition<i> DM type 2 newly diagnosed or insulin or ocular risk or diabetes type 1 >= 3 years</i> evaluate to <b> true</b> because <i>null</i>)])
+Referral should be scheduled for 3 months from today (max)
+</ul>
+</ul>
+<h2 align="center">ATHENA Diabetes Mellitus: Foot Care</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Diabetes Mellitus: Foot Care: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> Not wound-followup DM patients
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Initial assessments</b><br>
+<ul>
+<li><b>Perform and document foot risk assessment (B) and visual inspection of feet <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+Perform and document visual inspection of patient's feet.
+<li><b>Assess if limb threatening condition present <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+</ul>
+<li><b>Evaluate </b><br>
+<ul>
+<li><b>circulatory symptoms that limit patient's  lifestyle <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Presence of circulatory symptoms that limit patient's lifestyle</i> evaluate to <b> true</i>)])
+null
+</ul>
+<li><b>General Rec</b><br>
+<ul>
+<li><b>General recs <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Confirm follow-up by foot care specialist if indicated and compliance by patient.
+All patients and their families should receive self-management education for preventive foot care and selection of footwear. Instruction should include recommendations for daily foot inspection and preventive foot care, skin care, and use of emollients, nail care, and treatment for callus. Document.
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Glycemic Control</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA DM: Glycemic Control: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> No target  or no HbA1C
+<p><b>Action Choices</b>
+<ul>
+<li><b>Lack target or lack HbA1C</b><br>
+<ul>
+<li><b>Determine goal <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence Target HBA1c</i> evaluate to <b> true</i>)])
+
+<li><b>Order HbA1C <font color=FF0000>preferred</font></b>(strict rule-in condition<i> No HbA1C ever or in past year</i> evaluate to <b> true</b> because <i>null</i>)])
+null
+</ul>
+</ul>
+<h2 align="center">ATHENA Lipid Management Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Lipid Management Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null && Age(93.0/1970-1-1))</i>]
+<li>CHD or CHD-Equivalent: [because <i> CHD Risk Equivalent </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> No drug, high CHD risk
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> unknown(LDL_Cholesterol(no value))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Primary_Recommendation</b>
+<ul>
+<li><b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>()
+<li><b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Management Choice</b><br>
+<ul>
+<li><b>Order lipid study <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of LDL data in last year</i> evaluate to <b> true</i>)])
+null
+<li><b>TLC initiation <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Criteria for initiation for TLC</i> evaluate to <b> true</b> because <i>null</i>)])
+<b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>
+<li><b>Presence of CHD, Initiate statin therapy <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Presence of CHD or CHD Equivalent</i> evaluate to <b> true</i>)])
+<b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Statin Metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+<li>Statin Not metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">ATHENA Heart Failure Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Heart Failure Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Not Stage D HF (refractory end stage HF)null)</i>]
+</ul>
+<b>Scenario choice:</b> Stage A HF
+<p>
+<b>Goal:</b> SBP < 140 and DBP < 80(presence of diabetes mellitus)
+<p><b>Reached goal?</b> unknown(Treatment_Diastolic_BP(no value) && Treatment_Systolic_BP(no value))
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> unknown(LDL_Cholesterol(no value))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Class I</b>
+<ul>
+<li>Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)()
+<li>Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)()
+<li>For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)()
+</ul>
+<li><b>Class III</b>
+<ul>
+<li>Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Stage A messages</b><br>
+<ul>
+<li><b>behavior control <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)
+<li><b>Periodic evaluation <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)
+<li><b>Blood sugar control <font color=FF0000>preferred</font></b>(rule in criterion<i> diabetes_mellitus</i> evaluate to <b> true</i>)])
+For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)
+<li><b>not use nutritional supplements <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)
+</ul>
+<li><b> </b><br>
+<ul>
+<li><b>stage A drug choices <font color=FF0000>preferred</font></b>(strict rule-in condition<i> DM or HTN or atherosclerotic vascular disease</i> evaluate to <b> true</b> because <i>null</i>)])
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Ace_Inhibitor
+<ul>
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>Refer to specific ACE Inhibitor dose adjustments based on kidney function.
+<li>Need to find content
+<li>preference: preferred
+</ul>
+<li>ARB
+<ul>
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">VA/JNC-VII Hypertension Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>VA/JNC-VII Hypertension Guideline: false[because <i> Eligibility criteria </i> evaluate to <b>false</b><i>(It is not the case that null)</i>]
+</ul>
+No scenario chosen.
+</body></html>

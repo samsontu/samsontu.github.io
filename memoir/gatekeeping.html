@@ -1,0 +1,68 @@
+<html>
+<body>
+<p>
+May 1, 1999 <br>
+Updated October 16, 1999<br>
+
+   "Gatekeeping" System at Amnesty-Volunteer.Org <br>      
+       Samson Tu, swt@stanford.edu<br>
+<p>
+ A. Introduction
+<p>
+At the July 1998 International CCWG meeting, one of the issues that received a lot of attention was how we can empower volunteer actvists by making members-only information available to them. This is a complex subject that involve definition of goals to accomplish, identification of classes of members and activists who may have different information needs, classification of AI documents, method for verifying member status, and management of passwords or certificates. The amnesty-volunteer.org project seeks to address part of this problem by providing a low-security password-protected area on the web where information about AI's organization and about techniques for effective campaign work, group development, casework, and other training materials can be collected and shared by the worlwide community of Amnesty volunteers and staff. To make possible the participation of Amnesty members from around the world, we developed a de-centralized and distributed user and password management system that we call the "gatekeeper" system. This memo describes system as it was designed and implemented. We offer it as a possible model for the international movement to consider, even though it has limitations that we discuss at the end of this memo.
+<p>
+B. Problem Definition
+<p>
+In many ways Internet is ideally way for a world-wide movement like Amnesty International to distribute information. A central site can produce or collect information for access by public and activists around the world. A central site can avoid duplication of efforts that are costly and unnecessary. However, when it comes to distributing internal information, the anonymity of the net becomes a problem. If we limit access to those people known to administrators of the central site, the number who can use the site is limited. Each structure within the Amnesty movement has only a partial knowledge about the staff and volunteers involved in Amnesty's work. The central problem that the gatekeeper system is how we can give access rights to people whose credentials central administrators cannot verify or can verify only at great cost.
+<p>
+C. Design Principles
+<p>
+At the amnesty-volunteer.org project, we recognize that maintenace of member and activist information is already done by sections in Amnesty International. Thus, verification of user credentials and assignment of access rights are best done by individuals from each section, not by administrators of a central site. We call these individuals "gatekeepers" of the site. What we need to do is to create mechanisms that allow "gatekeepers" to carry out their user management tasks. Specifically, applications for username and password should go directly to gatekeepers of relevant sections. We must create tools through which gatekeepers independently can grant, change, or delete access rights to members of their sections. The goal is to create a *centralized* archive that has *distributed* mechanism for user management and that allows *user-initiated* access to the archive.
+<p>
+Internal AI information can be classified by their security requirements and their relevance to members of different sections. We decided that, because most users are not yet ready to use encryption on a routine basis, we do not encrypt transmission of passwords. Recognizing that we have little defense against determined attack or even spoofing, amnesty-volunteer.org only hosts internal information whose circulation is limited to "members only" but is not "limited circulation" or "confidential" (according to IS's document security classification).
+<p>
+We leave the determination of user policy to gatekeepers of individual sections. We also have to be sensitive to the concerns of people whose materials we host. For example, Weekly Mailing documents, in principle, are open to all members of the the AI movement, but, recalling the IS's concern when the Italian Section wanted to put Weekly Mailing documents on their internal website, we separate out the Weekly Mailing archive and adopted the security mechanism that AI-Italy developed and that was approved by the IS previously.
+<p>
+Amnesty-volunteer.org can also hold internal documents that are relevant only to members of a section. The management of section-specific information should be left entirely to gatekeepers of specific sections.
+<p>
+Another principle we adhere to is that we do not want to duplicate work already done elsewhere. The Italian section already has an internal area on their website, and they are already managing their members' access to that area. We are happy that AI-Italy simply copy materials stored at amnesty-volunteer.org, and that we don't need to manage AI-Italy users. If a section has adequate security at their own internal website and who are willing to collaborate with amnesty-volunteer.org, we prefer that they replicate resources and amnesty-volunteer and free us from the need to manage their users.
+<p>
+D. Implementation
+<p>
+We use the htaccess mechanism to partition documnets into directories that can require separate access rights. We partition users into groups that have different access rights. An individual may belong to multiple groups.
+<p>
+We created a set of cgi scripts and web-based forms that allow new people to apply for usernames and passwords. The application information are sent by email directly to gatekeepers of relevant section. The information collected on the application form are designed to help gatekeepers verfiy the applicant's AI credentials and assign him/her to appropriate user groups. Currently we have a single application form. In principle we should have different application forms for applicants from different countries.
+<p>
+Gatekeepers have access to a set of administration web pages through which he/she can add or delete users or change the user information (such as a user's email address or group assignment.) Cgi scripts that manages addition of users or changes in user information  automatically generate email messages that are sent to (1) the affected users (2) gatekeepers of relevant sections, and (3) administrator of the site.
+<p>
+Only site administrators can create gatekeepers. As of October 16, 1999, we have gatekeepers from 12 different sections and 234 registered users. We use a mailing list "gatekeepers@amnesty-volunteer.org" to communicate among gatekeepers of the project.
+<p>
+Occasionally we receive applications from people not belonging to participating sections. When the person claims to be an Amnesty member in a country that does not have an Amnesty section, we refer the application to the IS; otherwise we refuse such applicants.
+<p>
+E. Evaluation
+<p>
+It is hard to evaluate the success or failure of the gatekeeper system independently of the site itself. Some sections are recruit members more actively. Others have only a few participants. My personal belief is that the basic premise--create mechanism through which people with right knowledge can manage user access rights--is sound. Knowledge about AI activists or AI members does not reside at a central location; thereofre we need a decentralized mechanism to manage access to centralized internal information sources.
+<p>
+Every so often We are plagued by technical difficulties where some gatekeepers have difficulty performing tasks. After moving the site to amnesty.oil.ca, gatekeepers lost the ability to create amnesty-volunteer.org email aliases automatically. With our current system of email member-only Weekly Mailing documents only to those members who have amnesty-volunteer email aliases, that means the central administrator has to intervene to enable such access.
+<p>
+One problem that plague us is that notions of security level and members/activists are unclear in Amnesty. Weekly Mailing documents are supposed to be for "members only," according to a 1997 IS document on document security (DOC 21/01/97). Additionally, it's not clear this classification system applies to Weekly Mailing documents distributed in prior years. One gatekeeper expressed doubts about whether all IS researchers are following a consistent security policy when they put out documents for distribution through Weekly Mailings. The notion of "member" is also problematic. Anyone, including staff of foreign embassies, can sign up as a member of a section. Do we want such members to have access rights to AI "member-only" documents? On the other hand, we impair our own effectiveness if we are too secretive.
+<p>
+Another issue with de-centralized management users and passwords is that we really don't know how the gatekeepers and their sections decide on access policy, and, conversely, gatekeepers receive no guidance from originators of documents. What is missing is a mechanism through which the intention of originators can be clearly encoded and communicated. Some where between totally centralized control and totally decentralized user management, we need to strike a balance where we have clear guidelines for classifying documents and resources and for defining appropriate users of these documents and resources.
+<p>
+F. RECOMMENDATION FOR THE FUTURE
+<p>
+The IS is creating a web-based resource at www.web.amnesty.org. Presumably it is a vehicle for providing members access to internal documents. One can ask two questions: (1) is amnesty-volunteer's "gatekeeper" model appropriate for the IS intranet, and (2) if so, can the two site be managed using a single "gatekeeping" system?
+<p>
+Without clear understanding of the goals that IS wants to achieve and the constraints that it has, it's difficult to determine the appropriate access management model for the secure IS website. Perhaps it's enough to replicate the internal resources to each and every section, so that IS only has to manage users who don't belong to sections. In this model, both resources and access management are decentralized. Perhaps it's OK that IS only grant access to those people (e.g., campaign coordinators) that it knows. However, I believe that if the IS want the resource to be widely used, especially by volunteers, and not limited to a small number of users whose identity a centralized manager can verify, the IS has to develop a distributed user management system like amnesty-volunteer's "gatekeeper" system (supplemented with resource replication to those sections who want to manage both resources and users).
+<p>
+If IS and interested sections want to establish a "gatekeeper" system, they probably shouldn't use the one operated by the amnesty-volunteer project. In the first place, it's doubtful that the www.web.amnesty.org server could read the password file we use to manage amnesty-volunteer.org. If if it could, the security level at amnesty-volunteer.org is too low to have anything other than 
+<p>
+the IS has to develop a mechanism for user and password or certificate management. 
+<p>
+The goal of the amnesty-volunteer.org project is to create a comprehensive archive of resources and examples that can inspire and aid activists in their Amnesty work. A number of sections are already 
+<p>
+/END
+<p>
+</body>
+</html>
+ 

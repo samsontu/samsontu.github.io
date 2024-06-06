@@ -1,0 +1,233 @@
+; Mon Feb 22 13:32:49 PST 2010
+; 
+;+ (version "3.4.3")
+;+ (build "Build 572")
+
+([ATHENA_HF_Class0] of  Management_Guideline
+
+	(clinical_algorithm [ATHENA_HF_Class1])
+	(label "ATHENA Heart Failure Guideline"))
+
+([ATHENA_HF_Class1] of  Management_Diagram
+
+	(label "Athena Heart Failure clinical algorithm")
+	(steps
+		[ATHENA_HF_Class2]
+		[ATHENA_HF_Class10003]
+		[ATHENA_HF_Class10004]
+		[ATHENA_HF_Class10005]
+		[ATHENA_HF_Class30006]
+		[ATHENA_HF_Class30009]
+		[ATHENA_HF_Class30017])
+	(transitions
+		[ATHENA_HF_Class30015]
+		[ATHENA_HF_Class30016]
+		[ATHENA_HF_Class20000]))
+
+([ATHENA_HF_Class10000] of  Drug_Usage
+
+	(Absolute_Contraindications Pregnancy)
+	(Drug_Class_Name ACE_Inhibitors)
+	(label "Ace_Inhibitor"))
+
+([ATHENA_HF_Class10001] of  Guideline_Drug
+
+	(dose_level_ranges [ATHENA_HF_Class10002])
+	(dose_strength_unit mg_per_mL)
+	(generic_drug ACE_Inhibitors)
+	(label "Captopril")
+	(max_recommended_dose_level Low_Dose%28high%2Flow%29)
+	(starting_dose 18.75))
+
+([ATHENA_HF_Class10002] of  Range_Mapping_Entry
+
+	(abstract_value Low_Dose%28high%2Flow%29)
+	(label "Captopril_Increase_Dose")
+	(lower_limit 18.75)
+	(upper_limit 150.0))
+
+([ATHENA_HF_Class10003] of  Scenario
+
+	(label "Stage B HF")
+	(new_encounter TRUE)
+	(precondition [ATHENA_HF_Class10007]))
+
+([ATHENA_HF_Class10004] of  Scenario
+
+	(label "Stage C HF")
+	(new_encounter FALSE))
+
+([ATHENA_HF_Class10005] of  Scenario
+
+	(label "Stage D HF")
+	(new_encounter FALSE))
+
+([ATHENA_HF_Class10006] of  N_ary_Criterion
+
+	(label "High risk for developing heart failure")
+	(operator AND))
+
+([ATHENA_HF_Class10007] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HF_Class20005]
+		[ATHENA_HF_Class20006]
+		[ATHENA_HF_Class20004])
+	(label "Structural Heart Disease")
+	(operator AND))
+
+([ATHENA_HF_Class10008] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HF_Class10006]
+		[ATHENA_HF_Class10007])
+	(label "Criteria for Stage A HF")
+	(operator AND))
+
+([ATHENA_HF_Class2] of  Scenario
+
+	(label "Stage A HF")
+	(new_encounter TRUE)
+	(precondition [ATHENA_HF_Class10008]))
+
+([ATHENA_HF_Class20000] of  Followed_By
+
+	(%3AFROM [ATHENA_HF_Class2])
+	(%3ATO [ATHENA_HF_Class30017]))
+
+([ATHENA_HF_Class20001] of  N_ary_Criterion
+
+	(criteria [ATHENA_HF_Class40005])
+	(label "Not_on_ACEI_BB_ARB")
+	(operator OR))
+
+([ATHENA_HF_Class20002] of  Criterion
+
+	(label "Not_on_ACEI"))
+
+([ATHENA_HF_Class20003] of  Numeric_Constant
+
+	(value 40.0))
+
+([ATHENA_HF_Class20004] of  Numeric_Term_Criterion
+
+	(entry_type Numeric_Entry)
+	(label "EF < 40")
+	(numeric_domain_term Ejection_Fraction)
+	(operator %3C)
+	(value 40.0))
+
+([ATHENA_HF_Class20005] of  Presence_Criterion
+
+	(domain_term Prior_Myocardial_Infarction)
+	(entry_type Note_Entry)
+	(label "Myocardial_Infarction")
+	(presence TRUE))
+
+([ATHENA_HF_Class20006] of  Presence_Criterion
+
+	(domain_term Severe_LVH)
+	(entry_type Note_Entry)
+	(label "Severe_LVH")
+	(presence TRUE))
+
+([ATHENA_HF_Class20008] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HF_Class20004]
+		[ATHENA_HF_Class20005]
+		[ATHENA_HF_Class20006])
+	(label "Not Structural Heart Disease")
+	(operator NOT))
+
+([ATHENA_HF_Class20009] of  N_ary_Criterion
+)
+
+([ATHENA_HF_Class30003] of  Criterion
+
+	(label "Not_on_ARB"))
+
+([ATHENA_HF_Class30004] of  Presence_Criterion
+
+	(domain_term Heart_Failure)
+	(entry_type Note_Entry)
+	(label "Heart_Failure")
+	(presence TRUE))
+
+([ATHENA_HF_Class30005] of  Presence_Criterion
+
+	(domain_term Heart_Failure)
+	(entry_type Note_Entry)
+	(label "Absence_Heart_Failure")
+	(presence FALSE))
+
+([ATHENA_HF_Class30006] of  Action_Choice
+
+	(actions [ATHENA_HF_Class40006])
+	(label "Drug Therapy Advised ?")
+	(strict_rule_in_condition [ATHENA_HF_Class20001]))
+
+([ATHENA_HF_Class30009] of  Choice_Step
+
+	(branches [ATHENA_HF_Class30017])
+	(label "AceI or ARBs or Beta Blocker advised?"))
+
+([ATHENA_HF_Class30015] of  Followed_By
+
+	(%3AFROM [ATHENA_HF_Class30009])
+	(%3ATO [ATHENA_HF_Class30006]))
+
+([ATHENA_HF_Class30016] of  Followed_By
+
+	(%3AFROM [ATHENA_HF_Class10003])
+	(%3ATO [ATHENA_HF_Class30009]))
+
+([ATHENA_HF_Class30017] of  Action_Choice
+)
+
+([ATHENA_HF_Class30018] of  Drug_Usage
+)
+
+([ATHENA_HF_Class40004] of  Criterion
+
+	(label "Not_on_BB"))
+
+([ATHENA_HF_Class40005] of  Presence_Criterion
+
+	(domain_term ACE_Inhibitors)
+	(entry_type Medication)
+	(label "Not_on_ACEI")
+	(mood Authorized)
+	(presence FALSE))
+
+([ATHENA_HF_Class40006] of  Start_Activity
+
+	(activity [ATHENA_HF_Class10000])
+	(label "Prescribe_Ace"))
+
+([Ejection_Fraction] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Ejection Fraction"))
+
+([Heart+Failure+Stage] of  Medical_Conditions_Metaclass
+)
+
+([Prior_Myocardial_Infarction] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Prior Myocardial Infarction"))
+
+([Severe_LVH] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Severe LVH"))
+
+([Stage+A+Heart+Failure] of  Medical_Conditions_Metaclass
+)
+
+([Stage+B+Heart+Failure] of  Medical_Conditions_Metaclass
+)
+
+([Stage+C+Heart+Failure] of  Medical_Conditions_Metaclass
+)
+
+([Stage+D+Heart+Failure] of  Medical_Conditions_Metaclass
+)

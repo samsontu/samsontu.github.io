@@ -1,0 +1,240 @@
+<patientdata>
+<patient name="10018">
+<meds>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">0</field2>
+	<start>Sat Jul 04 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Drug">atorvastatin</field1>
+	<field2 label="Daily Dose">80</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Drug">clonidine</field1>
+	<field2 label="Daily Dose">0</field2>
+	<start>Wed May 06 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Drug">furosemide</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Thu Jul 07 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Drug">hydralazine</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Thu May 07 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Drug">hydrochlorothiazide</field1>
+	<field2 label="Daily Dose">12.5</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Drug">nitrate</field1>
+	<field2 label="Daily Dose">30</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Drug">valsartan</field1>
+	<field2 label="Daily Dose">160</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Coronary_Artery_Disease</field1>
+	<start>Thu Jul 07 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Dx">Disorders Lipid Metabolism</field1>
+	<start>Tue Aug 09 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Dx">Hyperlipidemia</field1>
+	<start>Tue Aug 09 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Dx">onychomycosis</field1>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Dx">Osteoporosis</field1>
+	<start>Thu Mar 24 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Dx">Transient cerebral ischemia</field1>
+	<start>Sat May 14 00:00:00 PDT 1994</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">55</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">60</field2>
+	<start>Thu Nov 25 00:00:00 PST 1993</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">67</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">155</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">114</field2>
+	<start>Tue Jan 03 00:00:00 PST 1995</start>
+</item>
+</clinicalSigns>
+<adr>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">3.7</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">86</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">914</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">49</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">9.7</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">111</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">128</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">1.8</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">eGFR</field1>
+	<field2 label="Value">28</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">27.8</field2>
+	<start>Fri Dec 30 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">41</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">9.0</field2>
+	<start>Fri Dec 30 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">61</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Phosphorus</field1>
+	<field2 label="Value">2.4</field2>
+	<start>Tue Jun 30 00:00:00 PDT 1992</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">165</field2>
+	<start>Fri Dec 30 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">5.1</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">12</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">22</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">142</field2>
+	<start>Thu Dec 22 00:00:00 PST 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.5</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">128</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">135</field2>
+	<start>Tue Oct 18 00:00:00 PDT 1994</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">4.8</field2>
+	<start>Fri Dec 30 00:00:00 PST 1994</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">95</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">White_Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Female</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

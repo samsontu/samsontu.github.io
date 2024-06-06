@@ -1,0 +1,20 @@
+preference: preferred
+preference: neutral
+preference: ruled out
+
+
+
+
+
+
+
+No comment
+Compelling indications:  [RED]?
+Relative indications: 
+Relative contraindications: 
+Contraindications: 
+Already being used
+inital dose recommendation
+parameterized message: 
+
+Digoxin StageC Class IIA 4

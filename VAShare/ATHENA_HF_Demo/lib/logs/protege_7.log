@@ -1,0 +1,5 @@
+2014.03.21 11:05:44.226 PDT INFO: *** SYSTEM START *** -- SystemUtilities.logSystemInfo()
+2014.03.21 11:05:44.229 PDT CONFIG: Protege 3.4.5 Build 585, JVM 1.6.0_45-b06, memory=518M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2014.03.21 11:05:44.355 PDT CONFIG: Loaded plugin edu.stanford.smi.eon.pca -- PluginUtilities.logClassLoaderInformation()
+2014.03.21 11:05:44.360 PDT CONFIG: Loaded plugin edu.stanford.smi.protegex.standard_extensions - Graph Widget, Table Widget -- PluginUtilities.logClassLoaderInformation()
+2014.03.21 11:05:51.358 PDT INFO: Load time for file:\C:\ATHENA_HF_Demo\kbs\ATHENA_HF.pprj = 4 sec (project) + 1 sec (ui) -- ProjectManager$3.run()

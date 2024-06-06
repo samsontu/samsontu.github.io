@@ -1,0 +1,393 @@
+<patientdata>
+<patient name="1069810">
+<meds>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">0</field2>
+	<start>Wed Dec 04 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">325</field2>
+	<start>Wed Dec 04 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">benazepril</field1>
+	<field2 label="Daily Dose">40</field2>
+	<start>Tue Sep 29 00:00:00 PDT 1987</start>
+</item>
+<item>
+	<field1 label="Drug">candesartan</field1>
+	<field2 label="Daily Dose">16</field2>
+	<start>Wed Dec 09 00:00:00 PST 1987</start>
+</item>
+<item>
+	<field1 label="Drug">enalapril</field1>
+	<field2 label="Daily Dose">40</field2>
+	<start>Wed Dec 04 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">furosemide</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Mon May 09 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Drug">furosemide</field1>
+	<field2 label="Daily Dose">40</field2>
+	<start>Mon May 09 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Drug">glipizide</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Mon May 09 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Drug">glyburide</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Mon Nov 03 00:00:00 PST 1986</start>
+</item>
+<item>
+	<field1 label="Drug">hydralazine</field1>
+	<field2 label="Daily Dose">100</field2>
+	<start>Mon May 09 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Drug">hydralazine</field1>
+	<field2 label="Daily Dose">50</field2>
+	<start>Mon May 09 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">6</field2>
+	<start>Mon Dec 16 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0</field2>
+	<start>Mon Dec 16 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">6</field2>
+	<start>Mon Dec 16 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.04</field2>
+	<start>Mon Dec 16 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">irbesartan</field1>
+	<field2 label="Daily Dose">150</field2>
+	<start>Wed Dec 04 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">losartan</field1>
+	<field2 label="Daily Dose">25</field2>
+	<start>Tue Nov 19 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Drug">metformin</field1>
+	<field2 label="Daily Dose">1700</field2>
+	<start>Mon Apr 21 00:00:00 PST 1986</start>
+</item>
+<item>
+	<field1 label="Drug">pravastatin</field1>
+	<field2 label="Daily Dose">20</field2>
+	<start>Mon May 09 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Drug">sitagliptin</field1>
+	<field2 label="Daily Dose">50</field2>
+	<start>Mon Jul 06 00:00:00 PDT 1987</start>
+</item>
+<item>
+	<field1 label="Drug">triamterene</field1>
+	<field2 label="Daily Dose">37.5</field2>
+	<start>Wed Dec 04 00:00:00 PST 1985</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Diabetes with renal manifestations</field1>
+	<start>Tue May 24 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">Disorders Lipid Metabolism</field1>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">DM-Type2</field1>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">edema</field1>
+	<start>Sat May 07 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">Gout</field1>
+	<start>Tue Apr 05 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Sat May 07 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">Hyperlipidemia</field1>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">Pacemaker</field1>
+	<start>Sun Apr 17 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Dx">Retinopathy</field1>
+	<start>Thu Dec 17 00:00:00 PST 1987</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">52</field2>
+	<start>Tue Jun 21 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">63</field2>
+	<start>Sun Mar 27 00:00:00 PST 1988</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">60</field2>
+	<start>Tue Jun 21 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">182</field2>
+	<start>Tue Jun 21 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">129.851</field2>
+	<start>Tue Jun 21 00:00:00 PDT 1988</start>
+</item>
+</clinicalSigns>
+<adr>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">3.2</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">80</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">B 12</field1>
+	<field2 label="Value">608</field2>
+	<start>Mon Oct 13 00:00:00 PDT 1986</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">2888</field2>
+	<start>Sat May 07 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">58</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">8.9</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">104</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">174</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">2.9</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">eGFR</field1>
+	<field2 label="Value">38</field2>
+	<start>Fri Apr 24 00:00:00 PDT 1987</start>
+</item>
+<item>
+	<field1 label="Lab">Glucose</field1>
+	<field2 label="Value">142</field2>
+	<start>Sun Jan 04 00:00:00 PST 1987</start>
+</item>
+<item>
+	<field1 label="Lab">Glycosylated_Hemoglobin</field1>
+	<field2 label="Value">5.3</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">HbA1C</field1>
+	<field2 label="Value">5.3</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">25.5</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">54</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Hepatitis_B_Surface_Antigen</field1>
+	<field2 label="Value">Negative</field2>
+	<start>Tue Dec 17 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Lab">Hepatitis_C_Status</field1>
+	<field2 label="Value">Negative</field2>
+	<start>Tue Dec 17 00:00:00 PST 1985</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">8.5</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">94</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Phosphorus</field1>
+	<field2 label="Value">5.1</field2>
+	<start>Sun Jan 03 00:00:00 PST 1988</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">226</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">5</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">17</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">27</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">139</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">target_HBA1c</field1>
+	<field2 label="Value">7.0</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.5</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">174</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">187</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+<item>
+	<field1 label="Lab">Uric_Acid</field1>
+	<field2 label="Value">5.4</field2>
+	<start>Sun Jan 03 00:00:00 PST 1988</start>
+</item>
+<item>
+	<field1 label="Lab">UrineAlbumin_24H</field1>
+	<field2 label="Value">612</field2>
+	<start>Sun Jan 04 00:00:00 PST 1987</start>
+</item>
+<item>
+	<field1 label="Lab">UrineAlbumin_SPOT</field1>
+	<field2 label="Value">612</field2>
+	<start>Sun Jan 04 00:00:00 PST 1987</start>
+</item>
+<item>
+	<field1 label="Lab">UrineProtein_12h</field1>
+	<field2 label="Value">164</field2>
+	<start>Fri Nov 14 00:00:00 PST 1986</start>
+</item>
+<item>
+	<field1 label="Lab">UrineProtein_24h</field1>
+	<field2 label="Value">164</field2>
+	<start>Fri Nov 14 00:00:00 PST 1986</start>
+</item>
+<item>
+	<field1 label="Lab">UrineProtein_Qualitative</field1>
+	<field2 label="Value">164</field2>
+	<start>Fri Nov 14 00:00:00 PST 1986</start>
+</item>
+<item>
+	<field1 label="Lab">UrineProtein_Spot</field1>
+	<field2 label="Value">164</field2>
+	<start>Fri Nov 14 00:00:00 PST 1986</start>
+</item>
+<item>
+	<field1 label="Lab">Urine_Alb/creat_Ratio_24h</field1>
+	<field2 label="Value">1523</field2>
+	<start>Sun Jan 04 00:00:00 PST 1987</start>
+</item>
+<item>
+	<field1 label="Lab">Urine_ALB/CREAT_RATIO_spot</field1>
+	<field2 label="Value">1523</field2>
+	<start>Sun Jan 04 00:00:00 PST 1987</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">5.3</field2>
+	<start>Sat Jun 18 00:00:00 PDT 1988</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">88</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">Asian_or_Pacific-Islander_Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Male</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

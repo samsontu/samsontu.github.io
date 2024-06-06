@@ -1,0 +1,3726 @@
+; Fri Feb 05 15:49:42 PST 2010
+; 
+;+ (version "3.4.3")
+;+ (build "Build 572")
+
+([ATHENA_GlycemicControl_ProjectKB_Class13606] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13607])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13607] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13608] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class23609])
+	(widget_class_name "gov.va.test.opioidtesttool.TestingEnvironment"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13609] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13610])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13610] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13611] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13612] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13613])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13613] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13614] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13615])
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13615] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13616] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13617])
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13617] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13618] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13619])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13619] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13687] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Class3683]
+		[ATHENA_GlycemicControl_ProjectKB_Class3684]))
+
+([ATHENA_GlycemicControl_ProjectKB_Class13688] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13689] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13690] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13691] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class13818] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class23608] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33609])
+	(widget_class_name "org.protege.owl.mm.ssm.ui.MappingMasterTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class23609] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class23985] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_GlycemicControl_ProjectKB_Class23986] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33609] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33610] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33611])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33611] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33612] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33613])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33613] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33614] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33615])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33615] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33616] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33617])
+	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33617] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33618] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33619])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33619] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33620] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33621])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33621] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33622] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class33623])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33623] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class33672] of  String
+
+	(name "Definite_Time_Point")
+	(string_value "year_CE{%2F}month_name{%2F}day"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33673] of  String
+
+	(name "PAL-QUERY")
+	(string_value "%3APAL-NAME"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33674] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33675] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.Boolean"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33676] of  Map
+
+	(entries
+		[ATHENA_GlycemicControl_ProjectKB_Class33677]
+		[ATHENA_GlycemicControl_ProjectKB_Class33678]
+		[ATHENA_GlycemicControl_ProjectKB_Class33679]
+		[ATHENA_GlycemicControl_ProjectKB_Class33680]
+		[ATHENA_GlycemicControl_ProjectKB_Class33681]
+		[ATHENA_GlycemicControl_ProjectKB_Class33682]
+		[ATHENA_GlycemicControl_ProjectKB_Class33683]
+		[ATHENA_GlycemicControl_ProjectKB_Class33684]
+		[ATHENA_GlycemicControl_ProjectKB_Class33685]
+		[ATHENA_GlycemicControl_ProjectKB_Class33686]
+		[ATHENA_GlycemicControl_ProjectKB_Class33687]
+		[ATHENA_GlycemicControl_ProjectKB_Class33688]
+		[ATHENA_GlycemicControl_ProjectKB_Class33689]
+		[ATHENA_GlycemicControl_ProjectKB_Class33690]
+		[ATHENA_GlycemicControl_ProjectKB_Class33691]
+		[ATHENA_GlycemicControl_ProjectKB_Class33692]
+		[ATHENA_GlycemicControl_ProjectKB_Class33693]
+		[ATHENA_GlycemicControl_ProjectKB_Class33694]
+		[ATHENA_GlycemicControl_ProjectKB_Class33695]
+		[ATHENA_GlycemicControl_ProjectKB_Class33696]
+		[ATHENA_GlycemicControl_ProjectKB_Class33697]
+		[ATHENA_GlycemicControl_ProjectKB_Class33698]
+		[ATHENA_GlycemicControl_ProjectKB_Class33699]))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33677] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class7")
+	(key_class "java.lang.String")
+	(value "240 20 90 71")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33678] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_10030")
+	(key_class "java.lang.String")
+	(value "140 560 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33679] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class90036")
+	(key_class "java.lang.String")
+	(value "0 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33680] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class2")
+	(key_class "java.lang.String")
+	(value "380 0 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33681] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_10018")
+	(key_class "java.lang.String")
+	(value "100 660 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33682] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class42")
+	(key_class "java.lang.String")
+	(value "0 560 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33683] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class120002")
+	(key_class "java.lang.String")
+	(value "135 478 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33684] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class3")
+	(key_class "java.lang.String")
+	(value "500 500 87 66")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33685] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class39")
+	(key_class "java.lang.String")
+	(value "0 440 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33686] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class8")
+	(key_class "java.lang.String")
+	(value "500 180 117 61")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33687] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_130784")
+	(key_class "java.lang.String")
+	(value "500 380 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33688] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_70010")
+	(key_class "java.lang.String")
+	(value "160 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33689] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class4")
+	(key_class "java.lang.String")
+	(value "500 20 101 73")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33690] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class9")
+	(key_class "java.lang.String")
+	(value "420 540 71 88")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33691] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class21")
+	(key_class "java.lang.String")
+	(value "500 260 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33692] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class1")
+	(key_class "java.lang.String")
+	(value "160 0 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33693] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class22")
+	(key_class "java.lang.String")
+	(value "200 320 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33694] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_50008")
+	(key_class "java.lang.String")
+	(value "240 140 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33695] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class5")
+	(key_class "java.lang.String")
+	(value "80 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33696] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_130311")
+	(key_class "java.lang.String")
+	(value "340 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33697] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_130309")
+	(key_class "java.lang.String")
+	(value "360 216 74 64")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33698] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class100006")
+	(key_class "java.lang.String")
+	(value "60 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33699] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class0")
+	(key_class "java.lang.String")
+	(value "48 27 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33700] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_GlycemicControl_ProjectKB_Class33676")
+	(value_class "java.util.Map"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33701] of  Map
+
+	(entries
+		[ATHENA_GlycemicControl_ProjectKB_Class33702]
+		[ATHENA_GlycemicControl_ProjectKB_Class33703]
+		[ATHENA_GlycemicControl_ProjectKB_Class33704]
+		[ATHENA_GlycemicControl_ProjectKB_Class33705]
+		[ATHENA_GlycemicControl_ProjectKB_Class33706]))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33702] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80004")
+	(key_class "java.lang.String")
+	(value "200 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33703] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class70209")
+	(key_class "java.lang.String")
+	(value "79 85 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33704] of  Map_Entry
+
+	(key "KB_707783_Class4")
+	(key_class "java.lang.String")
+	(value "180 100 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33705] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80015")
+	(key_class "java.lang.String")
+	(value "340 100 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33706] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80014")
+	(key_class "java.lang.String")
+	(value "-71 18 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33707] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class60011.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_GlycemicControl_ProjectKB_Class33701")
+	(value_class "java.util.Map"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33708] of  Map
+
+	(entries
+		[ATHENA_GlycemicControl_ProjectKB_Class33709]
+		[ATHENA_GlycemicControl_ProjectKB_Class33710]))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33709] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80004")
+	(key_class "java.lang.String")
+	(value "220 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33710] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80003")
+	(key_class "java.lang.String")
+	(value "20 20 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33711] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class80002.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_GlycemicControl_ProjectKB_Class33708")
+	(value_class "java.util.Map"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33712] of  Map
+
+	(entries [ATHENA_GlycemicControl_ProjectKB_Class33713]))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33713] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_20005")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33714] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Instance_20004.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_GlycemicControl_ProjectKB_Class33712")
+	(value_class "java.util.Map"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33715] of  Map_Entry
+
+	(key "chaoProject")
+	(key_class "java.lang.String")
+	(value "annotation_library.pprj")
+	(value_class "java.lang.String"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33716] of  Map
+
+	(entries
+		[ATHENA_GlycemicControl_ProjectKB_Class33717]
+		[ATHENA_GlycemicControl_ProjectKB_Class33718]))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33717] of  Map_Entry
+
+	(key "KB_707783_Class4")
+	(key_class "java.lang.String")
+	(value "70 68 109 62")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33718] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Instance_120108")
+	(key_class "java.lang.String")
+	(value "116 184 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class33719] of  Map_Entry
+
+	(key "InstanceGraphWidget.KB_707783_Class3.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_GlycemicControl_ProjectKB_Class33716")
+	(value_class "java.util.Map"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3559] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3560])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3560] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3561] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3562])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3562] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3563] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3564])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3564] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3565] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3566])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3566] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3567] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3568])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3568] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3569] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3570])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3570] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3571] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3572])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3572] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3573] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3574])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3574] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3575] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3576])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3576] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3577] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3578])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3578] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3593] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3594])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3594] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3602] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3603])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3603] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3604] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3605])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3605] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3606] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3607])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3607] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3608] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class3609])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3609] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Class3610] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13611])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3611] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3683] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Class3684] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":PAL-STATEMENT"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13490] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13491])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13491] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13585] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13586]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13587]
+		[ATHENA_GlycemicControl_ProjectKB_Class3611]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13586] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13587] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13588] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13589] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13590] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13591]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13592]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13591] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13592] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13593] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13594] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13595] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13596] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13597] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13598] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13599] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13600] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13601] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13602] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13603] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13604] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13605] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13623] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13624] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13625] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13633] of  String
+
+	(name "tooltip_text"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13634] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Insert:At:Current:Selection"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13635] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Select:New:Insertions"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13636] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Create:Form:For:New:Instances"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13637] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Subwidget:Selection:Enabled"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13638] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Summary:Panel"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13639] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Number:Of:Subordinates"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13640] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Subordinate:Browser:Keys"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13641] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Use:Separators:Between:Subwidgets"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13642] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Comtain:In:Vertical:Direction"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13643] of  Integer
+
+	(integer_value 10)
+	(name ":Size:Of:Space:Between:Subwidgets"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13644] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13645] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13646] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13647] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13648] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13649] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Delete:Instance:Button"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13650] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Prototype:Button"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13651] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Move:Instance:Buttons"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13652] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13653] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13654] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13655] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13656] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13657] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13658] of  String
+
+	(name ":Move:Instance:Buttons:Tooltip")
+	(string_value "Move the selected instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13659] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_13660] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23493] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23494] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23495] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23496] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Complication_Factor")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_23497])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 600))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23497] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23640] of  Widget
+
+	(is_hidden FALSE)
+	(name "PAL-QUERY")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_23651])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23651] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23652]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23654]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23656]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23658]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23660]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23652] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_23653])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23653] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23654] of  Widget
+
+	(height 190)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_23655])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 280)
+	(y 0))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23655] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23656] of  Widget
+
+	(height 130)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_23657])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 280)
+	(x 0)
+	(y 60))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23657] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23658] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_23659])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 530)
+	(x 0)
+	(y 190))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23659] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23660] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23661]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23662]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23661] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23662] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":PAL-STATEMENT"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23663] of  Integer
+
+	(integer_value 541)
+	(name "PAL_TAB_DIVIDER_LOCATION"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23664] of  Integer
+
+	(integer_value 358)
+	(name "CONSTRAINT_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23665] of  Integer
+
+	(integer_value 358)
+	(name "CONSTRAINT_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_23704] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_33654] of  Integer
+
+	(integer_value 456)
+	(name "QUERY_TAB_DIVIDER_LOCATION"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_33655] of  Integer
+
+	(integer_value 470)
+	(name "QUERY_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_33656] of  Integer
+
+	(integer_value 470)
+	(name "QUERY_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3490] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3491])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3491] of  Property_List
+
+	(properties [ATHENA_GlycemicControl_ProjectKB_Instance_3513]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3492] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3493])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3493] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3496] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3497])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3497] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3500] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3501])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3501] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_33654]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_33655]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_33656]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3502] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3503])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3503] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3506] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3507])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3507] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3508] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3509])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3509] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3510] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3511])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3511] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23663]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23664]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23665]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3513] of  String
+
+	(name "KnowledgeTreeTab.TOP_LEVEL_INSTANCE")
+	(string_value "ATHENA_GlycemicControl_Instance_70000"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3530] of  Widget
+
+	(is_hidden FALSE)
+	(name "Numeric_Term_Criterion")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3533])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3533] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3534]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3535]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3537]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3539]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3541]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3543]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3545]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3547]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3549]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3551]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3553]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3555]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3534] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3535] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3536])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3536] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3537] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3538])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3538] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3539] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "default_value")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3540])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 0)
+	(y 180))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3540] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3541] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3542])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3542] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3543] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "numeric_domain_term")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3544])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3544] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3545] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "unit")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3546])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 100)
+	(x 300)
+	(y 120))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3546] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3547] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "aggregation_operator")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3548])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 120))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3548] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3549] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "operator")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3550])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 200)
+	(y 60))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3550] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3551] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3552])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 300)
+	(y 60))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3552] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3553] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "assume_if_no_value")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3554])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 100)
+	(y 180))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3554] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3555] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "valid_window")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3556])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 100)
+	(y 120))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3556] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3557]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3558]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23704]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3557] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3558] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3582] of  Widget
+
+	(is_hidden FALSE)
+	(name "Versioned_Metaclass")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3585])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3585] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3586]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3590]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3591]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3592]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3594]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3596]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3598]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3600]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3601]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3605]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3608]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3586] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3587])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3587] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3588]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3589]
+		[ATHENA_GlycemicControl_ProjectKB_Class23985]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3588] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3589] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3590] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3591] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3592] of  Widget
+
+	(height 120)
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3593])
+	(widget_class_name "edu.stanford.smi.protege.widget.SuperclassWidget")
+	(width 200)
+	(x 0)
+	(y 270))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3593] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3594] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3595])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3595] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3596] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3597])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3597] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3598] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3599])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3599] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3600] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3601] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3602])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3602] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3603]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3604]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3603] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3604] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3605] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3606]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3607]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3606] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3607] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3608] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "versions")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3609])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 200)
+	(y 270))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3609] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3610]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3611]
+		[ATHENA_GlycemicControl_ProjectKB_Class23986]))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3610] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3611] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3612] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3613] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3614] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3615] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3616] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3617] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3618] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3619] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3620] of  Property_List
+)
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3621] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3622] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3644] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3645] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3646] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3647] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_3648] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_44471] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_44472] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_GlycemicControl_ProjectKB_Instance_98] of  String
+
+	(name "SearchTab_Query"))
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Class33672]
+		[ATHENA_GlycemicControl_ProjectKB_Class33673]
+		[ATHENA_GlycemicControl_ProjectKB_Class33674]))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [KB_408328_Instance_33])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_376176_Class3584] of  Map
+
+	(entries
+		[KB_376176_Class3586]
+		[KB_376176_Class3588]
+		[KB_376176_Class3590]
+		[KB_376176_Class3592]
+		[KB_376176_Class3593]
+		[KB_376176_Class3594]
+		[KB_376176_Class3595]
+		[KB_376176_Class3596]
+		[KB_376176_Class3597]
+		[KB_376176_Class3598]
+		[KB_376176_Class3600]
+		[KB_376176_Class3601])
+	(referenced_maps
+		[KB_376176_Class3585]
+		[KB_376176_Class3587]
+		[KB_376176_Class3589]
+		[KB_376176_Class3599]
+		[KB_376176_Class3591]))
+
+([KB_376176_Class3585] of  Map
+)
+
+([KB_376176_Class3586] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_376176_Class3585")
+	(value_class "java.util.Map"))
+
+([KB_376176_Class3587] of  Map
+)
+
+([KB_376176_Class3588] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_376176_Class3587")
+	(value_class "java.util.Map"))
+
+([KB_376176_Class3589] of  Map
+)
+
+([KB_376176_Class3590] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_376176_Class3589")
+	(value_class "java.util.Map"))
+
+([KB_376176_Class3591] of  Map
+)
+
+([KB_376176_Class3592] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_376176_Class3591")
+	(value_class "java.util.Map"))
+
+([KB_376176_Class3593] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.Boolean"))
+
+([KB_376176_Class3594] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_376176_Class3595] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_376176_Class3596] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_376176_Class3597] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_376176_Class3599] of  Map
+)
+
+([KB_376176_Class3600] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_376176_Class3599")
+	(value_class "java.util.Map"))
+
+([KB_376176_Class3601] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_408328_Instance_0] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_408328_Instance_1]
+		[KB_408328_Instance_2]
+		[KB_408328_Instance_3]
+		[KB_408328_Instance_4]
+		[KB_408328_Instance_5]
+		[KB_408328_Instance_6]
+		[KB_408328_Instance_7]
+		[KB_408328_Instance_8]
+		[KB_408328_Instance_9]
+		[KB_408328_Instance_10]))
+
+([KB_408328_Instance_1] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13585])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_408328_Instance_10] of  Property_List
+
+	(name "layout properties")
+	(properties [KB_408328_Instance_11]))
+
+([KB_408328_Instance_11] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))
+
+([KB_408328_Instance_12] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[KB_408328_Instance_13]
+		[KB_408328_Instance_14]
+		[KB_408328_Instance_15]
+		[KB_408328_Instance_16]
+		[KB_408328_Instance_17]
+		[KB_408328_Instance_18]
+		[KB_408328_Instance_19]
+		[KB_408328_Instance_20]
+		[KB_408328_Instance_21]
+		[KB_408328_Instance_22]
+		[KB_408328_Instance_23]
+		[KB_408328_Instance_24]
+		[KB_408328_Instance_25]
+		[KB_408328_Instance_26]
+		[KB_408328_Instance_27]
+		[KB_408328_Instance_28]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13594]))
+
+([KB_408328_Instance_13] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13602])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_408328_Instance_14] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13603])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_408328_Instance_15] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([KB_408328_Instance_16] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_408328_Instance_17] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13595])
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([KB_408328_Instance_18] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13596])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_408328_Instance_19] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([KB_408328_Instance_2] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_408328_Instance_20] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([KB_408328_Instance_21] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13597])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([KB_408328_Instance_22] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13598])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_408328_Instance_23] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13599])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([KB_408328_Instance_24] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13600])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([KB_408328_Instance_25] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([KB_408328_Instance_26] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13601])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_408328_Instance_27] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13604])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([KB_408328_Instance_28] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13605])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_408328_Instance_29] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[KB_408328_Instance_30]
+		[KB_408328_Instance_31]
+		[KB_408328_Instance_32]))
+
+([KB_408328_Instance_3] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_408328_Instance_30] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_408328_Instance_31] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_408328_Instance_32] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_408328_Instance_33] of  Property_List
+
+	(properties
+		[KB_408328_Instance_34]
+		[KB_408328_Instance_35]
+		[KB_408328_Instance_36]
+		[KB_408328_Instance_37]
+		[ATHENA_GlycemicControl_ProjectKB_Class13818]))
+
+([KB_408328_Instance_34] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([KB_408328_Instance_35] of  Widget
+
+	(name ":CREATOR"))
+
+([KB_408328_Instance_36] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([KB_408328_Instance_37] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_408328_Instance_38] of  Property_List
+
+	(properties
+		[KB_408328_Instance_39]
+		[KB_408328_Instance_40]
+		[KB_408328_Instance_41]
+		[KB_408328_Instance_42]
+		[ATHENA_GlycemicControl_ProjectKB_Class13687]))
+
+([KB_408328_Instance_39] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13688])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([KB_408328_Instance_4] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_408328_Instance_40] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13690])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 280)
+	(y 0))
+
+([KB_408328_Instance_41] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13689])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 280)
+	(x 0)
+	(y 60))
+
+([KB_408328_Instance_42] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Class13691])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 530)
+	(x 0)
+	(y 180))
+
+([KB_408328_Instance_5] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13588])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_408328_Instance_6] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13589])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_408328_Instance_7] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13593])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_408328_Instance_8] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_408328_Instance_9] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13590])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([KB_535012_Instance_3105] of  Widget
+
+	(height 797)
+	(is_hidden FALSE)
+	(name "Conditional_Expression")
+	(property_list [KB_535012_Instance_3106])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 1038)
+	(x 0)
+	(y 0))
+
+([KB_535012_Instance_3106] of  Property_List
+
+	(properties
+		[KB_535012_Instance_3107]
+		[KB_535012_Instance_3117]
+		[KB_535012_Instance_3119]
+		[KB_535012_Instance_3121]))
+
+([KB_535012_Instance_3107] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "precondition")
+	(property_list [KB_535012_Instance_3108])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([KB_535012_Instance_3108] of  Property_List
+
+	(properties
+		[KB_535012_Instance_3109]
+		[KB_535012_Instance_3110]
+		[KB_535012_Instance_3111]
+		[KB_535012_Instance_3112]
+		[KB_535012_Instance_3113]
+		[KB_535012_Instance_3114]
+		[KB_535012_Instance_3115]
+		[KB_535012_Instance_3116]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3644]))
+
+([KB_535012_Instance_3109] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_535012_Instance_3110] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_535012_Instance_3111] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_535012_Instance_3112] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_535012_Instance_3113] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_535012_Instance_3114] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_535012_Instance_3115] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_535012_Instance_3116] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_535012_Instance_3117] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [KB_535012_Instance_3118])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([KB_535012_Instance_3118] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3645]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3646]))
+
+([KB_535012_Instance_3119] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_535012_Instance_3120])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_535012_Instance_3120] of  Property_List
+)
+
+([KB_535012_Instance_3121] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3647]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3648]))
+
+([KB_715902_Instance_0] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([KB_715902_Instance_1] of  Map
+
+	(entries
+		[ATHENA_GlycemicControl_ProjectKB_Class33675]
+		[ATHENA_GlycemicControl_ProjectKB_Class33700]
+		[ATHENA_GlycemicControl_ProjectKB_Class33707]
+		[ATHENA_GlycemicControl_ProjectKB_Class33711]
+		[ATHENA_GlycemicControl_ProjectKB_Class33714]
+		[ATHENA_GlycemicControl_ProjectKB_Class33715]
+		[ATHENA_GlycemicControl_ProjectKB_Class33719])
+	(referenced_maps
+		[ATHENA_GlycemicControl_ProjectKB_Class33716]
+		[ATHENA_GlycemicControl_ProjectKB_Class33708]
+		[ATHENA_GlycemicControl_ProjectKB_Class33676]
+		[ATHENA_GlycemicControl_ProjectKB_Class33701]
+		[ATHENA_GlycemicControl_ProjectKB_Class33712]))
+
+([KB_715902_Instance_3] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon FALSE)
+	(display_hidden_classes TRUE)
+	(display_multi_parent_class_icon FALSE)
+	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([KB_715902_Instance_95] of  Property_List
+
+	(properties [ATHENA_GlycemicControl_ProjectKB_Instance_98]))
+
+([KB_715902_Instance_96] of  String
+
+	(name "classes_file_name")
+	(string_value "ATHENA_GlycemicControl.pont"))
+
+([KB_715902_Instance_97] of  String
+
+	(name "instances_file_name")
+	(string_value "ATHENA_GlycemicControl.pins"))
+
+([KB_920666_Instance_2772] of  Widget
+
+	(is_hidden FALSE)
+	(name "Medications_Metaclass")
+	(property_list [KB_920666_Instance_2773])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_920666_Instance_2773] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_920666_Instance_2774]
+		[KB_920666_Instance_2776]
+		[KB_920666_Instance_2778]
+		[KB_920666_Instance_2780]
+		[KB_920666_Instance_2782]
+		[KB_920666_Instance_2783]
+		[KB_920666_Instance_2784]
+		[KB_920666_Instance_2785]
+		[KB_920666_Instance_2787]
+		[KB_920666_Instance_2788]
+		[KB_920666_Instance_2789]
+		[KB_920666_Instance_2791]
+		[KB_920666_Instance_2793]))
+
+([KB_920666_Instance_2774] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [KB_920666_Instance_2775])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_2775] of  Property_List
+)
+
+([KB_920666_Instance_2776] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [KB_920666_Instance_2777])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_920666_Instance_2777] of  Property_List
+)
+
+([KB_920666_Instance_2778] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [KB_920666_Instance_2779])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_920666_Instance_2779] of  Property_List
+)
+
+([KB_920666_Instance_2780] of  Widget
+
+	(height 0)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_920666_Instance_2781])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_2781] of  Property_List
+)
+
+([KB_920666_Instance_2782] of  Widget
+
+	(height 120)
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_13623])
+	(widget_class_name "edu.stanford.smi.protege.widget.SuperclassWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([KB_920666_Instance_2783] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_920666_Instance_2784] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_920666_Instance_2785] of  Widget
+
+	(height 0)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_920666_Instance_2786])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_2786] of  Property_List
+)
+
+([KB_920666_Instance_2787] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13624]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13625]))
+
+([KB_920666_Instance_2788] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-TYPE"))
+
+([KB_920666_Instance_2789] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "code")
+	(property_list [KB_920666_Instance_2790])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_920666_Instance_2790] of  Property_List
+)
+
+([KB_920666_Instance_2791] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "coding_system")
+	(property_list [KB_920666_Instance_2792])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_920666_Instance_2792] of  Property_List
+)
+
+([KB_920666_Instance_2793] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "PrettyName")
+	(property_list [KB_920666_Instance_2794])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KB_920666_Instance_2794] of  Property_List
+)
+
+([KB_920666_Instance_2981] of  Widget
+
+	(is_hidden FALSE)
+	(name "Derived_Parameter_Metaclass")
+	(property_list [KB_920666_Instance_2982])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_920666_Instance_2982] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_920666_Instance_2983]
+		[KB_920666_Instance_2985]
+		[KB_920666_Instance_2987]
+		[KB_920666_Instance_2989]
+		[KB_920666_Instance_2991]
+		[KB_920666_Instance_2992]
+		[KB_920666_Instance_2993]
+		[KB_920666_Instance_2994]
+		[KB_920666_Instance_2996]
+		[KB_920666_Instance_2997]
+		[KB_920666_Instance_2998]
+		[KB_920666_Instance_3000]
+		[KB_920666_Instance_3002]
+		[KB_920666_Instance_3004]))
+
+([KB_920666_Instance_2983] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [KB_920666_Instance_2984])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_2984] of  Property_List
+)
+
+([KB_920666_Instance_2985] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [KB_920666_Instance_2986])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_920666_Instance_2986] of  Property_List
+)
+
+([KB_920666_Instance_2987] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [KB_920666_Instance_2988])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_920666_Instance_2988] of  Property_List
+)
+
+([KB_920666_Instance_2989] of  Widget
+
+	(height 0)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_920666_Instance_2990])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_2990] of  Property_List
+)
+
+([KB_920666_Instance_2991] of  Widget
+
+	(height 120)
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3620])
+	(widget_class_name "edu.stanford.smi.protege.widget.SuperclassWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([KB_920666_Instance_2992] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_920666_Instance_2993] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_920666_Instance_2994] of  Widget
+
+	(height 0)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_920666_Instance_2995])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_2995] of  Property_List
+)
+
+([KB_920666_Instance_2996] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3621]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3622]))
+
+([KB_920666_Instance_2997] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-TYPE"))
+
+([KB_920666_Instance_2998] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "code")
+	(property_list [KB_920666_Instance_2999])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_920666_Instance_2999] of  Property_List
+)
+
+([KB_920666_Instance_3000] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "coding_system")
+	(property_list [KB_920666_Instance_3001])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_920666_Instance_3001] of  Property_List
+)
+
+([KB_920666_Instance_3002] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "PrettyName")
+	(property_list [KB_920666_Instance_3003])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KB_920666_Instance_3003] of  Property_List
+)
+
+([KB_920666_Instance_3004] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "definition")
+	(property_list [KB_920666_Instance_3005])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([KB_920666_Instance_3005] of  Property_List
+
+	(properties
+		[KB_920666_Instance_3006]
+		[KB_920666_Instance_3007]
+		[KB_920666_Instance_3008]))
+
+([KB_920666_Instance_3006] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_920666_Instance_3007] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_920666_Instance_3008] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_920666_Instance_3079] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "EPR_Entity_Class")
+	(property_list [KB_920666_Instance_3080])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_3080] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_920666_Instance_3081]
+		[KB_920666_Instance_3082]
+		[KB_920666_Instance_3083]
+		[KB_920666_Instance_3084]
+		[KB_920666_Instance_3095]
+		[KB_920666_Instance_3096]
+		[KB_920666_Instance_3097]
+		[KB_920666_Instance_3098]
+		[KB_920666_Instance_3110]
+		[KB_920666_Instance_3111]
+		[KB_920666_Instance_3121]))
+
+([KB_920666_Instance_3081] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3612])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_3082] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Role")
+	(name ":ROLE")
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_920666_Instance_3083] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3613])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_920666_Instance_3084] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_920666_Instance_3085])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_920666_Instance_3085] of  Property_List
+
+	(properties
+		[KB_920666_Instance_3086]
+		[KB_920666_Instance_3087]
+		[KB_920666_Instance_3088]
+		[KB_920666_Instance_3089]
+		[KB_920666_Instance_3090]
+		[KB_920666_Instance_3091]
+		[KB_920666_Instance_3092]
+		[KB_920666_Instance_3093]
+		[KB_920666_Instance_3094]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3614]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3615]))
+
+([KB_920666_Instance_3086] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View"))
+
+([KB_920666_Instance_3087] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_920666_Instance_3088] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_920666_Instance_3089] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_920666_Instance_3090] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_920666_Instance_3091] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_920666_Instance_3092] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_920666_Instance_3093] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_920666_Instance_3094] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_920666_Instance_3095] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_920666_Instance_3096] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_920666_Instance_3097] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-INSTANCES"))
+
+([KB_920666_Instance_3098] of  Widget
+
+	(height 130)
+	(is_hidden FALSE)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_920666_Instance_3099])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([KB_920666_Instance_3099] of  Property_List
+
+	(properties
+		[KB_920666_Instance_3100]
+		[KB_920666_Instance_3101]
+		[KB_920666_Instance_3102]
+		[KB_920666_Instance_3103]
+		[KB_920666_Instance_3104]
+		[KB_920666_Instance_3105]
+		[KB_920666_Instance_3106]
+		[KB_920666_Instance_3107]
+		[KB_920666_Instance_3108]
+		[KB_920666_Instance_3109]))
+
+([KB_920666_Instance_3100] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View"))
+
+([KB_920666_Instance_3101] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_920666_Instance_3102] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove overrides from selected slots"))
+
+([KB_920666_Instance_3103] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_920666_Instance_3104] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_920666_Instance_3105] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots"))
+
+([KB_920666_Instance_3106] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots at class"))
+
+([KB_920666_Instance_3107] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create slot and attach to class"))
+
+([KB_920666_Instance_3108] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([KB_920666_Instance_3109] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([KB_920666_Instance_3110] of  Property_List
+
+	(name "layout properties"))
+
+([KB_920666_Instance_3111] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "key_slot")
+	(property_list [KB_920666_Instance_3112])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 10)
+	(y 250))
+
+([KB_920666_Instance_3112] of  Property_List
+
+	(properties
+		[KB_920666_Instance_3113]
+		[KB_920666_Instance_3114]
+		[KB_920666_Instance_3115]
+		[KB_920666_Instance_3116]
+		[KB_920666_Instance_3117]
+		[KB_920666_Instance_3118]
+		[KB_920666_Instance_3119]
+		[KB_920666_Instance_3120]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3616]))
+
+([KB_920666_Instance_3113] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_920666_Instance_3114] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_920666_Instance_3115] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_920666_Instance_3116] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_920666_Instance_3117] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_920666_Instance_3118] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_920666_Instance_3119] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_920666_Instance_3120] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_920666_Instance_3121] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-TYPE"))
+
+([KB_920666_Instance_3446] of  Widget
+
+	(is_hidden FALSE)
+	(name "Diagnostic_Term_Metaclass")
+	(property_list [KB_920666_Instance_3447])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_920666_Instance_3447] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_920666_Instance_3448]
+		[KB_920666_Instance_3450]
+		[KB_920666_Instance_3452]
+		[KB_920666_Instance_3454]
+		[KB_920666_Instance_3456]
+		[KB_920666_Instance_3457]
+		[KB_920666_Instance_3458]
+		[KB_920666_Instance_3459]
+		[KB_920666_Instance_3461]
+		[KB_920666_Instance_3462]
+		[KB_920666_Instance_3463]
+		[KB_920666_Instance_3465]
+		[KB_920666_Instance_3467]
+		[KB_920666_Instance_3469]))
+
+([KB_920666_Instance_3448] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [KB_920666_Instance_3449])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_3449] of  Property_List
+)
+
+([KB_920666_Instance_3450] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [KB_920666_Instance_3451])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_920666_Instance_3451] of  Property_List
+)
+
+([KB_920666_Instance_3452] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [KB_920666_Instance_3453])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_920666_Instance_3453] of  Property_List
+)
+
+([KB_920666_Instance_3454] of  Widget
+
+	(height 0)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_920666_Instance_3455])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_3455] of  Property_List
+)
+
+([KB_920666_Instance_3456] of  Widget
+
+	(height 120)
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [ATHENA_GlycemicControl_ProjectKB_Instance_3617])
+	(widget_class_name "edu.stanford.smi.protege.widget.SuperclassWidget")
+	(width 200)
+	(x 0)
+	(y 250))
+
+([KB_920666_Instance_3457] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_920666_Instance_3458] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_920666_Instance_3459] of  Widget
+
+	(height 0)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_920666_Instance_3460])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_3460] of  Property_List
+)
+
+([KB_920666_Instance_3461] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3618]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3619]))
+
+([KB_920666_Instance_3462] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-TYPE"))
+
+([KB_920666_Instance_3463] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "code")
+	(property_list [KB_920666_Instance_3464])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 190))
+
+([KB_920666_Instance_3464] of  Property_List
+)
+
+([KB_920666_Instance_3465] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "coding_system")
+	(property_list [KB_920666_Instance_3466])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 130))
+
+([KB_920666_Instance_3466] of  Property_List
+)
+
+([KB_920666_Instance_3467] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "PrettyName")
+	(property_list [KB_920666_Instance_3468])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 130))
+
+([KB_920666_Instance_3468] of  Property_List
+)
+
+([KB_920666_Instance_3469] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "DiagnosticCriteria")
+	(property_list [KB_920666_Instance_3470])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 190))
+
+([KB_920666_Instance_3470] of  Property_List
+
+	(properties
+		[KB_920666_Instance_3471]
+		[KB_920666_Instance_3472]
+		[KB_920666_Instance_3473]))
+
+([KB_920666_Instance_3471] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_920666_Instance_3472] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_920666_Instance_3473] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_920666_Instance_829] of  Widget
+
+	(is_hidden FALSE)
+	(name "Guideline_View")
+	(property_list [KB_920666_Instance_830])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_920666_Instance_830] of  Property_List
+
+	(properties
+		[KB_920666_Instance_831]
+		[KB_920666_Instance_834]
+		[KB_920666_Instance_838]
+		[KB_920666_Instance_842]))
+
+([KB_920666_Instance_831] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_920666_Instance_832]
+		[KB_920666_Instance_833]))
+
+([KB_920666_Instance_832] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_920666_Instance_833] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([KB_920666_Instance_834] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "guideline_drugs")
+	(property_list [KB_920666_Instance_835])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 240)
+	(x 210)
+	(y 380))
+
+([KB_920666_Instance_835] of  Property_List
+
+	(properties
+		[KB_920666_Instance_836]
+		[KB_920666_Instance_837]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_44471]))
+
+([KB_920666_Instance_836] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_920666_Instance_837] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_920666_Instance_838] of  Widget
+
+	(height 380)
+	(is_hidden FALSE)
+	(label "Guideline")
+	(name "guideline")
+	(property_list [KB_920666_Instance_839])
+	(widget_class_name "edu.stanford.smi.protegex.widget.contains.ContainsWidget")
+	(width 440)
+	(x 0)
+	(y 0))
+
+([KB_920666_Instance_839] of  Property_List
+
+	(properties
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13633]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13634]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13635]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13636]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13637]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13638]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13639]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13640]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13641]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13642]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13643]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13644]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13645]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13646]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13647]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13648]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13649]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13650]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13651]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13652]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13653]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13654]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13655]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13656]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13657]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13658]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13659]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13660]))
+
+([KB_920666_Instance_842] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "drug_usages")
+	(property_list [KB_920666_Instance_843])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 210)
+	(x 0)
+	(y 380))
+
+([KB_920666_Instance_843] of  Property_List
+
+	(properties
+		[KB_920666_Instance_844]
+		[KB_920666_Instance_845]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_44472]))
+
+([KB_920666_Instance_844] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_920666_Instance_845] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_999191_Instance_1877] of  Widget
+
+	(height 840)
+	(is_hidden FALSE)
+	(name "Drug_Usage")
+	(property_list [KB_999191_Instance_1878])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 1034)
+	(x 0)
+	(y -305))
+
+([KB_999191_Instance_1878] of  Property_List
+
+	(properties
+		[KB_999191_Instance_1879]
+		[KB_999191_Instance_1881]
+		[KB_999191_Instance_1885]
+		[KB_999191_Instance_1887]
+		[KB_999191_Instance_1889]
+		[KB_999191_Instance_1893]
+		[KB_999191_Instance_1895]
+		[KB_999191_Instance_1896]
+		[KB_999191_Instance_1898]
+		[KB_999191_Instance_1900]
+		[KB_999191_Instance_1904]
+		[KB_999191_Instance_1910]
+		[KB_999191_Instance_1912]
+		[KB_999191_Instance_1914]
+		[KB_999191_Instance_1916]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23496]))
+
+([KB_999191_Instance_1879] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "duration_constraint")
+	(property_list [KB_999191_Instance_1880])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_999191_Instance_1880] of  Property_List
+)
+
+([KB_999191_Instance_1881] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "formulary_preferred_drug_in_class")
+	(property_list [KB_999191_Instance_1882])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KB_999191_Instance_1882] of  Property_List
+
+	(properties
+		[KB_999191_Instance_1883]
+		[KB_999191_Instance_1884]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23493]))
+
+([KB_999191_Instance_1883] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_999191_Instance_1884] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_999191_Instance_1885] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "components")
+	(property_list [KB_999191_Instance_1886])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_999191_Instance_1886] of  Property_List
+)
+
+([KB_999191_Instance_1887] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_999191_Instance_1888])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_999191_Instance_1888] of  Property_List
+)
+
+([KB_999191_Instance_1889] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "collateral_actions")
+	(property_list [KB_999191_Instance_1890])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 210)
+	(y 120))
+
+([KB_999191_Instance_1890] of  Property_List
+
+	(properties
+		[KB_999191_Instance_1891]
+		[KB_999191_Instance_1892]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23494]))
+
+([KB_999191_Instance_1891] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_999191_Instance_1892] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_999191_Instance_1893] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Drug_Class_Name")
+	(property_list [KB_999191_Instance_1894])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_999191_Instance_1894] of  Property_List
+)
+
+([KB_999191_Instance_1895] of  Property_List
+
+	(name "layout properties"))
+
+([KB_999191_Instance_1896] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Relative_Indications")
+	(property_list [KB_999191_Instance_1897])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 360))
+
+([KB_999191_Instance_1897] of  Property_List
+)
+
+([KB_999191_Instance_1898] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Compelling_Indications")
+	(property_list [KB_999191_Instance_1899])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 240))
+
+([KB_999191_Instance_1899] of  Property_List
+)
+
+([KB_999191_Instance_1900] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_999191_Instance_1901])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 210)
+	(y 600))
+
+([KB_999191_Instance_1901] of  Property_List
+
+	(properties
+		[KB_999191_Instance_1902]
+		[KB_999191_Instance_1903]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23495]))
+
+([KB_999191_Instance_1902] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_999191_Instance_1903] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_999191_Instance_1904] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Side_Effects")
+	(property_list [KB_999191_Instance_1905])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 0))
+
+([KB_999191_Instance_1905] of  Property_List
+)
+
+([KB_999191_Instance_1910] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Absolute_Contraindications")
+	(property_list [KB_999191_Instance_1911])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([KB_999191_Instance_1911] of  Property_List
+)
+
+([KB_999191_Instance_1912] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Drug_Partners_To_Avoid")
+	(property_list [KB_999191_Instance_1913])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 480))
+
+([KB_999191_Instance_1913] of  Property_List
+)
+
+([KB_999191_Instance_1914] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Drug_Partners")
+	(property_list [KB_999191_Instance_1915])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 480))
+
+([KB_999191_Instance_1915] of  Property_List
+)
+
+([KB_999191_Instance_1916] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Relative_Contraindications")
+	(property_list [KB_999191_Instance_1917])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 360))
+
+([KB_999191_Instance_1917] of  Property_List
+)
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [KB_408328_Instance_38])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[STANDARD_CLASS_FORM_WIDGET]
+		[KB_999191_Instance_1877]
+		[KB_920666_Instance_3446]
+		[KB_535012_Instance_3105]
+		[KB_920666_Instance_3079]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_23640]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3582]
+		[KB_920666_Instance_829]
+		[STANDARD_FACET_FORM_WIDGET]
+		[PAL_FORM_WIDGET]
+		[KB_920666_Instance_2772]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3530]
+		[KB_920666_Instance_2981])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(included_projects
+		"eon2.pprj"
+		"library.pprj"
+		"library.pprj")
+	(java_packages
+		"edu.stanford.smi.eon.Dharma"
+		"edu.stanford.smi.eon.time"
+		"edu.stanford.smi.eon.criterion"
+		"edu.stanford.smi.eon.athenaextensions"
+		"edu.stanford.smi.eon.datahandler")
+	(journaling_enabled FALSE)
+	(next_frame_number 0)
+	(options [KB_715902_Instance_3])
+	(property_map [KB_715902_Instance_1])
+	(sources [SOURCES])
+	(tabs
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3490]
+		[CLSES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[INSTANCES_TAB]
+		[QUERIES_TAB]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3510]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3500]
+		[ATHENA_GlycemicControl_ProjectKB_Class3567]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3508]
+		[ATHENA_GlycemicControl_ProjectKB_Class33620]
+		[ATHENA_GlycemicControl_ProjectKB_Class3561]
+		[ATHENA_GlycemicControl_ProjectKB_Class3571]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3496]
+		[ATHENA_GlycemicControl_ProjectKB_Class13609]
+		[ATHENA_GlycemicControl_ProjectKB_Class13614]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3502]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3492]
+		[ATHENA_GlycemicControl_ProjectKB_Class33614]
+		[ATHENA_GlycemicControl_ProjectKB_Class13612]
+		[ATHENA_GlycemicControl_ProjectKB_Class33616]
+		[ATHENA_GlycemicControl_ProjectKB_Class3604]
+		[ATHENA_GlycemicControl_ProjectKB_Class3606]
+		[ATHENA_GlycemicControl_ProjectKB_Class13616]
+		[ATHENA_GlycemicControl_ProjectKB_Class3563]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_3506]
+		[ATHENA_GlycemicControl_ProjectKB_Instance_13490]
+		[ATHENA_GlycemicControl_ProjectKB_Class3608]
+		[ATHENA_GlycemicControl_ProjectKB_Class3610]
+		[ATHENA_GlycemicControl_ProjectKB_Class3602]
+		[ATHENA_GlycemicControl_ProjectKB_Class33622]
+		[ATHENA_GlycemicControl_ProjectKB_Class3577]
+		[ATHENA_GlycemicControl_ProjectKB_Class33612]
+		[ATHENA_GlycemicControl_ProjectKB_Class33618]
+		[ATHENA_GlycemicControl_ProjectKB_Class3593]
+		[ATHENA_GlycemicControl_ProjectKB_Class33610]
+		[ATHENA_GlycemicControl_ProjectKB_Class23608]
+		[ATHENA_GlycemicControl_ProjectKB_Class3575]
+		[ATHENA_GlycemicControl_ProjectKB_Class3573]
+		[ATHENA_GlycemicControl_ProjectKB_Class3559]
+		[ATHENA_GlycemicControl_ProjectKB_Class3569]
+		[ATHENA_GlycemicControl_ProjectKB_Class13618]
+		[ATHENA_GlycemicControl_ProjectKB_Class3565]
+		[ATHENA_GlycemicControl_ProjectKB_Class13606]))
+
+([QUERIES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [KB_715902_Instance_95])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_715902_Instance_0]
+		[KB_715902_Instance_96]
+		[KB_715902_Instance_97]))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [KB_408328_Instance_0])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [KB_408328_Instance_29])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [KB_408328_Instance_12])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))

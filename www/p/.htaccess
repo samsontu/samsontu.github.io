@@ -1,0 +1,8 @@
+AuthUserFile /projects/smi/web/projects/intermed-web/p/.pd
+AuthName InterMed
+AuthType Basic
+
+<Limit GET>
+require valid-user
+</Limit>
+

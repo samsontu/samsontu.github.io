@@ -1,0 +1,247 @@
+<html><body><h2>Case: 1305831563816</h2>
+<patient name=1069810>
+88.0 year old Asian_or_Pacific-Islander_Non-Hispanic Male
+<p><b>Lab & Note Entry Values:</b> <table>
+<b><tr><td width="200">Lab</td><td width="200">Value</td><td width="200">Date</td></tr></b>
+<tr><td width="200">Age</td><td width="200">88</td><td width="200">1970-1-1</td></tr>
+<tr><td width="200">UrineProtein_12h</td><td width="200">164</td><td width="200">1986-11-14</td></tr>
+<tr><td width="200">Calcium</td><td width="200">9</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">UrineProtein_24h</td><td width="200">164</td><td width="200">1986-11-14</td></tr>
+<tr><td width="200">Alkaline_phosphatase</td><td width="200">80</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Glucose</td><td width="200">142</td><td width="200">1987-1-4</td></tr>
+<tr><td width="200">Phosphorus</td><td width="200">5</td><td width="200">1988-1-3</td></tr>
+<tr><td width="200">LDL_Cholesterol</td><td width="200">94</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Chloride</td><td width="200">104.0</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">HDL_Cholesterol</td><td width="200">54</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Diastolic_BP</td><td width="200">52</td><td width="200">1988-6-21</td></tr>
+<tr><td width="200">BNP</td><td width="200">2,888</td><td width="200">1988-5-7</td></tr>
+<tr><td width="200">B 12</td><td width="200">608.0</td><td width="200">1986-10-13</td></tr>
+<tr><td width="200">Weight</td><td width="200">130</td><td width="200">1988-6-21</td></tr>
+<tr><td width="200">Uric_Acid</td><td width="200">5</td><td width="200">1988-1-3</td></tr>
+<tr><td width="200">HbA1C</td><td width="200">5</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Triglycerides</td><td width="200">187</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Urine_ALB/CREAT_RATIO_spot</td><td width="200">1,523</td><td width="200">1987-1-4</td></tr>
+<tr><td width="200">Urine_Alb/creat_Ratio_24h</td><td width="200">1,523</td><td width="200">1987-1-4</td></tr>
+<tr><td width="200">Total_Cholesterol</td><td width="200">174</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">SGOT</td><td width="200">17</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Systolic_BP</td><td width="200">182</td><td width="200">1988-6-21</td></tr>
+<tr><td width="200">Total_Bilirubin</td><td width="200">0</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Height</td><td width="200">63</td><td width="200">1988-3-27</td></tr>
+<tr><td width="200">Potassium</td><td width="200">5</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Cholesterol</td><td width="200">174</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">BUN</td><td width="200">58</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">HCT</td><td width="200">26</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">HGB</td><td width="200">8</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Sodium</td><td width="200">139</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Albumen</td><td width="200">3</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Creatinine</td><td width="200">2.9</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">UrineAlbumin_24H</td><td width="200">612</td><td width="200">1987-1-4</td></tr>
+<tr><td width="200">Glycosylated_Hemoglobin</td><td width="200">5</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">UrineProtein_Qualitative</td><td width="200">164.0</td><td width="200">1986-11-14</td></tr>
+<tr><td width="200">UrineProtein_Spot</td><td width="200">164</td><td width="200">1986-11-14</td></tr>
+<tr><td width="200">UrineAlbumin_SPOT</td><td width="200">612</td><td width="200">1987-1-4</td></tr>
+<tr><td width="200">Pulse</td><td width="200">60</td><td width="200">1988-6-21</td></tr>
+<tr><td width="200">PLT</td><td width="200">226</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">WBC</td><td width="200">5</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">eGFR</td><td width="200">38</td><td width="200">1987-4-24</td></tr>
+<tr><td width="200">target_HBA1c</td><td width="200">7.0</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">SGPT</td><td width="200">27</td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Disorders Lipid Metabolism</td><td width="200"></td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Diabetes with renal manifestations</td><td width="200"></td><td width="200">1988-5-24</td></tr>
+<tr><td width="200">DM-Type2</td><td width="200"></td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Hyperlipidemia</td><td width="200"></td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Heart_Failure</td><td width="200"></td><td width="200">1988-5-7</td></tr>
+<tr><td width="200">Gout</td><td width="200"></td><td width="200">1988-4-5</td></tr>
+<tr><td width="200">edema</td><td width="200"></td><td width="200">1988-5-7</td></tr>
+<tr><td width="200">Hypertension</td><td width="200"></td><td width="200">1988-6-18</td></tr>
+<tr><td width="200">Pacemaker</td><td width="200"></td><td width="200">1988-4-17</td></tr>
+<tr><td width="200">Retinopathy</td><td width="200"></td><td width="200">1987-12-17</td></tr>
+<tr><td width="200">Sex</td><td width="200">Male</td><td width="200"></td></tr>
+<tr><td width="200">Race</td><td width="200">Asian_or_Pacific-Islander_Non-Hispanic</td><td width="200"></td></tr>
+<tr><td width="200">Hepatitis_B_Surface_Antigen</td><td width="200">Negative</td><td width="200">1985-12-17</td></tr>
+<tr><td width="200">Hepatitis_C_Status</td><td width="200">Negative</td><td width="200">1985-12-17</td></tr>
+</table>
+<p><b>Medications:</b> aspirin(325.0) glyburide(20.0) losartan(25.0) candesartan(16.0) furosemide(40.0) enalapril(40.0) Insulin(0.04) pravastatin(20.0) triamterene(37.5) benazepril(40.0) metformin(1700.0) irbesartan(150.0) hydralazine(50.0) sitagliptin(50.0) glipizide(20.0) 
+<p><b>Problems:</b> <table>
+<tr><td width="200"><b>Problem Class</b></td><td width="200"><b>First/Last Dates Reported</b></td><td width="200"></td></tr>
+<tr><td width="200">Isolated_Systolic_Hypertension</td>
+<td width="200"></td>
+<td width="200"> Isolated Systolic Hypertension[Treatment_Systolic_BP(182/null) && Treatment_Diastolic_BP(52/null)]()</td></tr>
+<tr><td width="200">Laboratory_Test_Result_Syndrome</td>
+<td width="200"></td>
+<td width="200"> hyperglycemia[Glucose(142.0/1987-1-4)]()</td></tr>
+<tr><td width="200">Renal_insufficiency_w_creat>=2.1</td>
+<td width="200"></td>
+<td width="200"> Renal Insufficiency[Creatinine(2.9/1988-6-18)]()</td></tr>
+<tr><td width="200">Target_Organ_Damage_Clinical_Cardiovascular_Disease</td>
+<td width="200"></td>
+<td width="200"> TOD/CCD[presence of heart failure]()</td></tr>
+<tr><td width="200">Isolated_Systolic_Hypertension K >=3.5</td>
+<td width="200"></td>
+<td width="200"> Isolated Systolic Hypertension[presence of isolated systolic hypertension && Potassium(5.0/1988-6-18)]()</td></tr>
+<tr><td width="200">Dyslipidemia Lab criteria</td>
+<td width="200"></td>
+<td width="200"> Dyslipidemia Lab criteria[Triglycerides(187.0/1988-6-18)]()</td></tr>
+<tr><td width="200">Heart Failure and BP not controlled</td>
+<td width="200"></td>
+<td width="200"> Heart Failure[presence of heart failure && BP not adequately controlled based on most recent BPTreatment_Systolic_BP(182/null)]()</td></tr>
+<tr><td width="200">Presence of K sparing diuretics</td>
+<td width="200"></td>
+<td width="200"> K sparing diuretics[presence of K sparing diuretics]()</td></tr>
+<tr><td width="200">DM and BP not controlled</td>
+<td width="200"></td>
+<td width="200"> Diabetes[presence of DM && BP not adequately controlled based on most recent BPTreatment_Systolic_BP(182/null)]()</td></tr>
+<tr><td width="200">DM BP not controlled  >=1 drug</td>
+<td width="200"></td>
+<td width="200"> Diabetes[BP not adequately controlled based on most recent BPTreatment_Systolic_BP(182/null) && presence of diabetes mellitus && Antihypertensive_Agents]()</td></tr>
+<tr><td width="200">Major Cardiovascular Risk Factor</td>
+<td width="200"></td>
+<td width="200"> Major Cardiovascular Risk Factor[Age(88.0/1970-1-1) && Sex(Male)]()</td></tr>
+<tr><td width="200">Dyslipidemia Lab or ICD9</td>
+<td width="200"></td>
+<td width="200"> Dyslipidemia Lab or ICD9[presence of dyslipidemia lab criteria]()</td></tr>
+<tr><td width="200">CKD by eGFR</td>
+<td width="200"></td>
+<td width="200"> CKD by eGFR[eGFR(38.0/1987-4-24)]()</td></tr>
+<tr><td width="200">CKD by eGFR or ICD9 codes</td>
+<td width="200"></td>
+<td width="200"> CKD[eGFR(38.0/1987-4-24)]()</td></tr>
+<tr><td width="200">On meds & Presence of strong contraindication to HCTZ or using bad drug partner</td>
+<td width="200"></td>
+<td width="200"> Hypertension[taking furosemide && Antihypertensive_Agents]()</td></tr>
+<tr><td width="200">active prescription for furosemide</td>
+<td width="200"></td>
+<td width="200"> active prescription for furosemide[taking furosemide]()</td></tr>
+<tr><td width="200">Age > 65</td>
+<td width="200"></td>
+<td width="200"> age > 65 years[Age(88.0/1970-1-1)]()</td></tr>
+<tr><td width="200">on >= 1 med</td>
+<td width="200"></td>
+<td width="200"> Combination therapy for HTN[Antihypertensive_Agents]()</td></tr>
+<tr><td width="200">taking >= 2 anti hypertensive meds</td>
+<td width="200"></td>
+<td width="200"> Combination therapy for HTN[Antihypertensive_Agents]()</td></tr>
+<tr><td width="200">On 1 drug and there exists contraindicated drug or a compelling drug not given</td>
+<td width="200"></td>
+<td width="200"> On 1 drug and there exists contraindicated drug or a compelling drug not given[there exists a compellingly indicated drug that is not already given]()</td></tr>
+<tr><td width="200">Acitve prescription for ACE and ARB</td>
+<td width="200"></td>
+<td width="200"> Acitve prescription for ACE and ARB[ACE I being used && Presence of ARB]()</td></tr>
+<tr><td width="200">Absence of Stage D HF</td>
+<td width="200"></td>
+<td width="200"> Absence of Stage D HF[Not Stage D HF (refractory end stage HF)Stage D HF (refractory end stage HF)]()</td></tr>
+<tr><td width="200">Male and most recent creatinine>2.5</td>
+<td width="200"></td>
+<td width="200"> Male and most recent creatinine>2.5[Sex(Male) && Creatinine(2.9/1988-6-18)]()</td></tr>
+<tr><td width="200">Most recent K>=5</td>
+<td width="200"></td>
+<td width="200"> Most recent K>=5[Potassium(5.0/1988-6-18)]()</td></tr>
+<tr><td width="200">CCS-7.2</td>
+<td width="200">1988-05-07</td>
+<td width="200"> Heart_Failure()</td></tr>
+<tr><td width="200">Hypertension_Inclusive</td>
+<td width="200">1988-06-18</td>
+<td width="200"> Hypertension()</td></tr>
+<tr><td width="200">Pacemaker</td>
+<td width="200">1988-04-17</td>
+<td width="200"> Pacemaker()</td></tr>
+<tr><td width="200">CCS-6.7</td>
+<td width="200">1987-12-17</td>
+<td width="200"> Retinopathy()</td></tr>
+<tr><td width="200">Metabolic&Nutritional_Diseases</td>
+<td width="200">1988-06-18</td>
+<td width="200"> Disorders Lipid Metabolism()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1988-04-05</td>
+<td width="200"> Gout()</td></tr>
+<tr><td width="200">Endocrine_Diseases</td>
+<td width="200">1988-06-18</td>
+<td width="200"> DM-Type2()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1988-05-24</td>
+<td width="200"> Diabetes with renal manifestations()</td></tr>
+<tr><td width="200"> <b>Others</b></td>
+<td width="200">1985-12-17</td>
+<td width="200"> Hepatitis_C_Status()
+<tr> <td width="200"></td>
+<td width="200">1985-12-17</td>
+<td width="200"> Hepatitis_B_Surface_Antigen()
+<tr> <td width="200"></td>
+<td width="200">1988-06-18</td>
+<td width="200"> Hyperlipidemia()
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200"> Race()
+<tr> <td width="200"></td>
+<td width="200">1988-05-07</td>
+<td width="200"> edema()
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200"> Sex()
+</table><p>
+</patient>
+<h1 align="center">ATHENA Heart Failure Guideline</h1>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Heart Failure Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Not Stage D HF (refractory end stage HF)Stage D HF (refractory end stage HF))</i>]
+</ul>
+<b>Scenario choice:</b> Stage C HF
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> achieved(LDL_Cholesterol(94.0/1988-6-18))
+<p>
+<b>Goal:</b> SBP < 140 and DBP < 80(presence of diabetes mellitus)
+<p><b>Reached goal?</b> failed(Treatment_Systolic_BP(182/null))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Class II a</b>
+<ul>
+<li>Maximal exercise testing with or without measurement of respiratory gas exchange is reasonable to facilitate prescription of an appropriate exercise program for patients presenting with HF. (Level of Evidence: C)
+</ul>
+<li><b>Class I</b>
+<ul>
+<li>Exercise training is beneficial as an adjunctive approach to improve clinical status in ambulatory patients with current or prior symptoms of HF and reduced LVEF. (Level of Evidence: B)
+</ul>
+<li><b>Class III</b>
+<ul>
+<li>Use of nutritional supplements to treat structural heart disease or to prevent the development of symptoms of HF is NOT recommended.
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Stage C HF</b><br>
+<ul>
+</ul>
+<li><b> </b><br>
+<ul>
+<li><b>General Recommendations <font color=FF0000>preferred</font></b>(strict rule-in condition<i> HF ICD9 code OR( signs and structural abnormality)</i> evaluate to <b> true</b> because <i>Presence of HF</i>)])
+Exercise training is beneficial as an adjunctive approach to improve clinical status in ambulatory patients with current or prior symptoms of HF and reduced LVEF. (Level of Evidence: B)
+Maximal exercise testing with or without measurement of respiratory gas exchange is reasonable to facilitate prescription of an appropriate exercise program for patients presenting with HF. (Level of Evidence: C)
+
+<li><b>Referrals <font color=FF0000>preferred</font></b>(strict rule-in condition<i> true</i> evaluate to <b> true</i>)])
+Class I
+<li><b>Stage B HF action <font color=FF0000>preferred</font></b>(strict rule-in condition<i> true</i> evaluate to <b> true</i>)])
+
+Use of nutritional supplements to treat structural heart disease or to prevent the development of symptoms of HF is NOT recommended.
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>No comment
+</ul>
+<li>No comment
+</ul>
+<li>No comment
+</ul>
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>No comment
+</ul>
+<li>No comment
+</ul>
+<li>No comment
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</body></html>

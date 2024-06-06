@@ -1,0 +1,4 @@
+2014.03.21 11:06:35.398 PDT INFO: *** SYSTEM START *** -- SystemUtilities.logSystemInfo()
+2014.03.21 11:06:35.401 PDT CONFIG: Protege 3.4.5 Build 585, JVM 1.6.0_45-b06, memory=1273M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2014.03.21 11:06:35.534 PDT CONFIG: Loaded plugin edu.stanford.smi.eon.pca -- PluginUtilities.logClassLoaderInformation()
+2014.03.21 11:06:35.538 PDT CONFIG: Loaded plugin edu.stanford.smi.protegex.standard_extensions - Graph Widget, Table Widget -- PluginUtilities.logClassLoaderInformation()

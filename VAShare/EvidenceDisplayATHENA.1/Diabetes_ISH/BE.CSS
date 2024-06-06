@@ -1,0 +1,793 @@
+@meta { Title: "Best Evidence CSS"; }
+<HTML> 
+<!-- 
+The following line is required after the </title> tag 
+in each HTML file that uses the designated CSS:
+<LINK REL=STYLESHEET HREF="be.css" TYPE="text/css">
+last modified: GG, 1.19.99 pm; modified 2.1.2000
+to account for FM styles; mucked with 2.2.00
+to get DS styles lookin' right; some more 2.4.;
+2.7; DB modified for superscript 2.10; added "Normal"
+2.14
+this gives the colored rule: <HR SIZE=2 COLOR=#3399CC>
+-->
+
+<STYLE TYPE="text/css">
+.BODY
+  { 
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: left 
+  }
+.Normal
+  { 
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: left 
+  }
+sup
+  {
+    font-size: 8pt
+  }
+.BodyText
+  { 
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: left 
+  }
+.SearchHit
+  {
+    font-weight: bold;
+    color: "#ff00ff"
+  }
+.JumpfromContents
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.List
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-indent: 0.25 in
+  }
+.List2
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-indent: 0.50 in
+  }
+.List3
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-indent: 0.75 in
+  }
+.heading2
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: "#3399CC"
+  }
+.Heading 2,Heading2
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: "#3399CC"
+  }
+.header3
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #3399CC
+  }
+.Heading4
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.AbsTitl
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: "#3399CC"
+  }
+.ACPSource
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.Citation
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.BEsection
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3399CC
+  }
+.BESection
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3399CC
+  }
+.Abshd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.AbsTxt
+  {  
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 9 pt
+  }
+.Subscript
+{  
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 7 pt
+  }
+.Grant
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.Reprint
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.AbsNote
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.AbsFootn
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.CmHd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.CmTxt
+  {
+    font-size: 9 pt;
+    font-weight: normal;
+    font-family: sans-serif
+  }
+.CmFootn
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.CmAuth1
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.CmAuth
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.CmAuthAff
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.CmRefHd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.CmRef
+  {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 8 pt
+  }
+
+.EditTitl
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: "#3399CC"
+  }
+.EditHd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.EditTxt
+  {
+    font-size: 9 pt;
+    font-weight: normal;
+    font-family: sans-serif
+  }
+.EditTxtInd
+  {
+    font-size: 9 pt;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-indent: 0.25 in
+  }
+.EditTxtIndent
+  {
+    font-size: 9 pt;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-indent: 0.25 in
+  }
+.EditFootn
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.EditNote
+  {
+    font-size: 8 pt;
+    font-family: sans-serif
+  }
+.EditAuth1
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.EditAuth
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.EditAuthAff
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.EditRefHd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.EditRef
+  {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 8 pt
+  }
+.LettTitl
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: "#3399CC"
+  }
+.LettHd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.LettTxt
+  {
+    font-size: 9 pt;
+    font-weight: normal;
+    font-family: sans-serif
+  }
+.LettRefHd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.LettRef
+  {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 8 pt
+  }
+.LettAuth1
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.LettAuth
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.LettAuthAff
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+  
+.OANRef
+{  
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 8 pt
+  }
+
+
+
+
+<!--what follows below is the DS css-->
+
+
+
+BODY
+  { 
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: left
+  }
+.TocTitle
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #3399CC
+  }
+.TOC1
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: left;
+    color: #3399CC
+  }
+a
+  {
+    text-decoration: none;
+    font-weight:bold;
+    color: #0000ff
+  }
+.Jumpfromlist
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left
+  }
+.RelatedHead
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left
+  }
+.heading-2
+  {
+    font-size: 14 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #3399CC
+  }
+.heading3
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #3399CC
+  }
+
+.Author
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+  }
+.DSsource
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+  }
+.Section
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3399CC
+  }
+.GenHd
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3399CC
+  }
+.GenSubHd
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.GenTxt
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal
+  }
+.GenTxtIndent
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-indent: 0.25 in
+  }
+
+.Keypointshd
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3399CC
+  }
+.Keypointssub
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.Keypointssubsub
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.Keypointstxt
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal
+
+  }
+.Backgrndhd
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3399CC
+  }
+.Backgrndtxt
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal
+  }
+.Estimateshd
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3399CC
+  }
+.Estimatesub
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.Estimatesubsub
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-color: "#669999"
+  }
+.Estimatetxt
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal
+  }
+.EstimateTxtindent
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-indent: 0.25 in
+  }
+.Diagtsthd
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3399CC
+  }
+.Diagnossub
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.Diagnossubsub
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.Diagnostxt
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal
+  }
+.Diagnostxtindent
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-indent: 0.25 in
+  }
+.Diagstrathd
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3399CC
+  }
+.Diagstratsub
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.Diagstratsubsub
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #3399CC
+  }
+.DiagStrattxt
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal
+  }
+.Diagstratindent
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal;
+    text-indent: 0.25 in
+  }
+.ClinProbHd
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3399CC
+  }
+.ClinProbsub
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold
+  }
+.ClinProbsubsub
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.ClinProbtxt
+  {
+    font-size: 9 pt;
+    font-family: sans-serif;
+    font-style: normal
+  }
+.REFHD
+  {
+    font-size: 12 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #3399CC
+  }
+.Ref
+  {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 8 pt
+  }
+
+.FigTitl
+  {
+    font-size: 10 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: "#3399CC"
+  }
+.FigLeg
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-style: normal
+  }
+
+
+<!-- what follows below are all table styles -->
+.TablTitl
+  {
+    font-weight: bold;
+    font-size: 10 pt;
+    font-family: sans-serif
+  }
+.TablFootn
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: normal
+  }
+.ColHdL
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left
+  }
+.ColHdC
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center
+  }
+.ColHdC2
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center
+  }
+.ColHdC3
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center
+  }
+.ColHdC4
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center
+  }
+.ColHdC6
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center
+  }
+.ColHdC9
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center
+  }
+.CellTxtL
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: left
+  }
+.CellTextL
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: left
+  }
+.CellTextLb
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left
+  }
+.CellTxtLi
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: left;
+    text-indent: 0.25 in
+  }
+.CellTxtLii
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: left;
+    text-indent: 0.50 in
+  }
+.CellTextLi
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: left;
+    text-indent: 0.25 in
+  }
+.CellTextLii
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: left;
+    text-indent: 0.50 in
+  }
+.CellTxtC
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: center
+  }
+.CellTextC
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: center
+  }
+.CellTxtC2
+  {
+    font-size: 8 pt;
+    font-family: sans-serif;
+    text-align: center
+  }
+.Table Title Not NSR
+
+.Table Foot Last

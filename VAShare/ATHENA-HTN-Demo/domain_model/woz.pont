@@ -1,0 +1,455 @@
+; Tue Oct 17 16:37:37 PDT 2000
+;
+;+ (version "1.5 beta")
+;+ (build "Build 561")
+
+
+(defclass :CLIPS_TOP_LEVEL_SLOT_CLASS
+	(is-a USER)
+	(role concrete)
+	(multislot rebuttals
+		(type INSTANCE)
+;+		(allowed-classes RebuttalStructure)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot agentName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot warrants
+		(type INSTANCE)
+;+		(allowed-classes WarrantStructure)
+		(create-accessor read-write))
+	(single-slot qualifier
+		(type INSTANCE)
+;+		(allowed-classes QualifierStructure)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot parameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write))
+	(single-slot value
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action
+		(type SYMBOL)
+;+		(allowed-parents ActionTerms)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot can_do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot backings
+		(type INSTANCE)
+;+		(allowed-classes BackingStructure)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot term
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot claim
+		(type INSTANCE)
+;+		(allowed-classes ClaimStructure)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot metaParameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write))
+	(multislot services
+		(type INSTANCE)
+;+		(allowed-classes Service)
+		(create-accessor read-write))
+	(single-slot host
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot object
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot can_explain_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot data
+		(type INSTANCE)
+;+		(allowed-classes DataStructure)
+		(create-accessor read-write))
+	(single-slot :DIRECT-BROWSER-SLOT
+		(type INSTANCE)
+;+		(allowed-classes :SLOT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot concreteParameters
+		(type INSTANCE)
+;+		(allowed-classes Parameter)
+		(create-accessor read-write)))
+
+(defclass AgentModel
+	(is-a USER)
+	(role concrete)
+	(multislot services
+		(type INSTANCE)
+;+		(allowed-classes Service)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot agentName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot host
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass CommunicationModel
+	(is-a USER)
+	(role abstract))
+
+(defclass ActionTerms
+	(is-a CommunicationModel)
+	(role abstract))
+
+(defclass display
+	(is-a ActionTerms)
+	(role concrete))
+
+(defclass explain
+	(is-a ActionTerms)
+	(role concrete))
+
+(defclass get
+	(is-a ActionTerms)
+	(role concrete))
+
+(defclass set
+	(is-a ActionTerms)
+	(role concrete))
+
+(defclass Composites
+	(is-a CommunicationModel)
+	(role abstract)
+	(single-slot label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ActionObject
+	(is-a Composites)
+	(role concrete)
+	(single-slot object
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action
+		(type SYMBOL)
+;+		(allowed-parents ActionTerms)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Parameter
+	(is-a Composites)
+	(role concrete)
+	(single-slot value
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot term
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Service
+	(is-a Composites)
+	(role concrete)
+	(multislot parameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write))
+	(single-slot can_do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass DomainTerms
+	(is-a CommunicationModel)
+	(role abstract))
+
+(defclass claimQualifier
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass displayString
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass missingValue
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass patientData
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass patientId
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocol
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolCriterionId
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolCriterionScore
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolGoal
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolGoalStatus
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolId
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolInstanceId
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolKnowledge
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolMgmtAction
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolMgmtChoice
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolScore
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolText
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolTextTag
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass protocolTextTitle
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass goalSystolic
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass goalDiastolic
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass patientDataType
+	(is-a DomainTerms)
+	(role concrete))
+
+(defclass StatusTerms
+	(is-a CommunicationModel)
+	(role abstract))
+
+(defclass failure
+	(is-a StatusTerms)
+	(role concrete))
+
+(defclass success
+	(is-a StatusTerms)
+	(role concrete))
+
+(defclass StrategyModel
+	(is-a USER)
+	(role abstract)
+	(single-slot label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Argument
+	(is-a StrategyModel)
+	(role concrete)
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot qualifier
+		(type INSTANCE)
+;+		(allowed-classes QualifierStructure)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot rebuttals
+		(type INSTANCE)
+;+		(allowed-classes RebuttalStructure)
+		(create-accessor read-write))
+	(multislot warrants
+		(type INSTANCE)
+;+		(allowed-classes WarrantStructure)
+		(create-accessor read-write))
+	(multislot backings
+		(type INSTANCE)
+;+		(allowed-classes BackingStructure)
+		(create-accessor read-write))
+	(single-slot can_explain_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot claim
+		(type INSTANCE)
+;+		(allowed-classes ClaimStructure)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot data
+		(type INSTANCE)
+;+		(allowed-classes DataStructure)
+		(create-accessor read-write)))
+
+(defclass BackingStructure
+	(is-a StrategyModel)
+	(role concrete)
+	(single-slot do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot concreteParameters
+		(type INSTANCE)
+;+		(allowed-classes Parameter)
+		(create-accessor read-write))
+	(multislot metaParameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write)))
+
+(defclass ClaimStructure
+	(is-a StrategyModel)
+	(role concrete)
+	(single-slot do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot concreteParameters
+		(type INSTANCE)
+;+		(allowed-classes Parameter)
+		(create-accessor read-write))
+	(multislot metaParameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write)))
+
+(defclass DataStructure
+	(is-a StrategyModel)
+	(role concrete)
+	(single-slot do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot concreteParameters
+		(type INSTANCE)
+;+		(allowed-classes Parameter)
+		(create-accessor read-write))
+	(multislot metaParameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write)))
+
+(defclass QualifierStructure
+	(is-a StrategyModel)
+	(role concrete)
+	(single-slot do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot concreteParameters
+		(type INSTANCE)
+;+		(allowed-classes Parameter)
+		(create-accessor read-write))
+	(multislot metaParameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write)))
+
+(defclass RebuttalStructure
+	(is-a StrategyModel)
+	(role concrete)
+	(single-slot do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot concreteParameters
+		(type INSTANCE)
+;+		(allowed-classes Parameter)
+		(create-accessor read-write))
+	(multislot metaParameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write)))
+
+(defclass WarrantStructure
+	(is-a StrategyModel)
+	(role concrete)
+	(single-slot do_this
+		(type INSTANCE)
+;+		(allowed-classes ActionObject)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot concreteParameters
+		(type INSTANCE)
+;+		(allowed-classes Parameter)
+		(create-accessor read-write))
+	(multislot metaParameterNames
+		(type SYMBOL)
+;+		(allowed-parents DomainTerms)
+		(create-accessor read-write)))

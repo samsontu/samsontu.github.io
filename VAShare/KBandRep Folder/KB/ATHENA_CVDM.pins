@@ -1,0 +1,18 @@
+; Mon Jun 28 20:33:36 PDT 2010
+; 
+;+ (version "3.4.2")
+;+ (build "Build 562")
+
+([ATHENA_CVDM_Class0] of  Management_Guideline
+
+	(eligibility_criteria [criterion_INSTANCE_00001])
+	(label "ATHENA Cardiovascular/DM Guidelines")
+	(subguidelines
+		[ATHENAINSTANCE_90980]
+		[ATHENA_CKD_Instance_4]
+		[ATHENA_HF_Class0]
+		[ATHENA_DM_Foot_Instance_1]
+		[ATHENA_DM_Eye_Instance_0]
+		[ATHENA_GlycemicControl_Instance_0]
+		[NCEPATPIII_Instance_3]
+		[ATHENA_CVDM_Class0]))

@@ -1,0 +1,3197 @@
+; Thu Oct 21 10:01:27 PDT 2010
+; 
+;+ (version "3.4.5")
+;+ (build "Build 585")
+
+([1st+degree+Heart+Block] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "1st degree Heart Block"))
+
+([_REFERENCES_FACET] of  %3ASTANDARD-FACET
+
+	(%3AASSOCIATED-SLOT [_REFERENCES]))
+
+([ACARBOSE] of  Medications_Metaclass
+)
+
+([ACE_Inhibitors] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([acebutolol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([ACETOHEXAMIDE] of  Medications_Metaclass
+)
+
+([Acute+ischemia%2Frest+pain] of  Diagnostic_Term_Metaclass
+)
+
+([Acute+ocular+changes] of  Diagnostic_Term_Metaclass
+)
+
+([Adrenergic_inhibitors_central] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Adrenergic_inhibitors_peripheral] of  Medications_Metaclass
+)
+
+([Advanced+microvascular+disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Advanced microvascular disease"))
+
+([AGN] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Albumen] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([aldosterone+antagonist] of  Medications_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "aldosterone antagonist"))
+
+([Alkaline_phosphatase] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "Alkaline phosphatase"))
+
+([Allergies+and+ADR+reactions] of  Medical_Conditions_Metaclass
+)
+
+([ALPHA-GLUCOSIDASE_INHIBITORS] of  Medications_Metaclass
+)
+
+([Alpha_beta_blockers] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Alpha_blockers] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([alseroxylon] of  Medications_Metaclass
+)
+
+([amiloride] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([amiodarone] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([amlodipine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([amlodipine_besylate] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Angina] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([ANGIOEDEMA] of  Medical_Conditions_Metaclass
+)
+
+([angioedema] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Angioedema"))
+
+([angioedema+equivalent] of  Medical_Conditions_Metaclass
+)
+
+([ANGIONEUROTIC+EDEMA+OF+LARYNX] of  Medical_Conditions_Metaclass
+)
+
+([Angiotensin_II_receptor_blockers] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Anti-Hypertensive_Drugs_Inclusive] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([antiarrhythmic+drugs] of  Medications_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "antiarrhythmic drugs"))
+
+([Antihypertensive_Agents] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Anxiety] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Anxiety"))
+
+([Ascites] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Asian_or_Pacific-Islander] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Asian or Pacific Islander"))
+
+([at+risk+for+developing+HF] of  Medical_Conditions_Metaclass
+
+	(PrettyName "at risk for developing HF"))
+
+([atenolol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([ATHENA_CKD_Class97] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Class98]
+		[ATHENA_CKD_Class99])
+	(label "Non-black")
+	(operator AND))
+
+([ATHENA_CKD_Class98] of  General_Comparison_Criterion
+
+	(domain_term Race)
+	(entry_type Patient)
+	(label "Race neq black-non-Hispanic")
+	(operator neq)
+	(value [ATHENA_CKD_Instance_70021]))
+
+([ATHENA_CKD_Class99] of  General_Comparison_Criterion
+
+	(domain_term Race)
+	(entry_type Patient)
+	(label "race neq black hispanic")
+	(operator neq)
+	(value [ATHENA_CKD_Instance_70023]))
+
+([ATHENA_CKD_Instance_110163] of  N_ary_Criterion
+
+	(criteria [ATHENA_CKD_Instance_70019])
+	(label "Non-Black")
+	(operator NOT))
+
+([ATHENA_CKD_Instance_40001] of  Conditional_Expression
+
+	(label "eGFR: Black Female")
+	(precondition [ATHENA_CKD_Instance_40002])
+	(value [ATHENA_CKD_Instance_80037]))
+
+([ATHENA_CKD_Instance_40002] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_40003]
+		[ATHENA_CKD_Instance_70019])
+	(label "Female and African American")
+	(operator AND))
+
+([ATHENA_CKD_Instance_40003] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Sex)
+	(entry_type Note_Entry)
+	(label "Sex = Female")
+	(operator eq)
+	(value [ATHENA_CKD_Instance_70017]))
+
+([ATHENA_CKD_Instance_40005] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "eGFR < 60")
+	(numeric_domain_term eGFR)
+	(operator %3C)
+	(unit "ml/min/1.73m2")
+	(value 60.0))
+
+([ATHENA_CKD_Instance_70000] of  Conditional_Expressions
+
+	(conditional_expression_list
+		[ATHENA_CKD_Instance_70001]
+		[ATHENA_CKD_Instance_70002]
+		[ATHENA_CKD_Instance_70003]
+		[ATHENA_CKD_Instance_40001])
+	(label "eGFR formula"))
+
+([ATHENA_CKD_Instance_70001] of  Conditional_Expression
+
+	(label "eGFR: Non-African Female")
+	(precondition [ATHENA_CKD_Instance_70018])
+	(value [ATHENA_CKD_Instance_80036]))
+
+([ATHENA_CKD_Instance_70002] of  Conditional_Expression
+
+	(label "eGFR: Black Male")
+	(precondition [ATHENA_CKD_Instance_70024])
+	(value [ATHENA_CKD_Instance_80035]))
+
+([ATHENA_CKD_Instance_70003] of  Conditional_Expression
+
+	(label "eGFR: Non-Black Male")
+	(precondition [ATHENA_CKD_Instance_70004])
+	(value [ATHENA_CKD_Instance_70025]))
+
+([ATHENA_CKD_Instance_70004] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_70005]
+		[ATHENA_CKD_Class97])
+	(label "Non-Black Male")
+	(operator AND))
+
+([ATHENA_CKD_Instance_70005] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Sex)
+	(entry_type Note_Entry)
+	(label "Sex = Male")
+	(operator eq)
+	(value [ATHENA_CKD_Instance_70006]))
+
+([ATHENA_CKD_Instance_70006] of  Qualitative_Constant
+
+	(value "Male"))
+
+([ATHENA_CKD_Instance_70017] of  Qualitative_Constant
+
+	(value "Female"))
+
+([ATHENA_CKD_Instance_70018] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_40003]
+		[ATHENA_CKD_Instance_110163])
+	(label "Non-African American Female")
+	(operator AND))
+
+([ATHENA_CKD_Instance_70019] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_70020]
+		[ATHENA_CKD_Instance_70022])
+	(label "African American")
+	(operator OR))
+
+([ATHENA_CKD_Instance_70020] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Race)
+	(entry_type Note_Entry)
+	(label "Hispanic Black")
+	(operator eq)
+	(value [ATHENA_CKD_Instance_70023]))
+
+([ATHENA_CKD_Instance_70021] of  Qualitative_Constant
+
+	(value "Black_Non-Hispanic"))
+
+([ATHENA_CKD_Instance_70022] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term Race)
+	(entry_type Note_Entry)
+	(label "Non-Hispanic Black")
+	(operator eq)
+	(value [ATHENA_CKD_Instance_70021]))
+
+([ATHENA_CKD_Instance_70023] of  Qualitative_Constant
+
+	(value "Hispanic-Black"))
+
+([ATHENA_CKD_Instance_70024] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_70005]
+		[ATHENA_CKD_Instance_70019])
+	(label "Black Male")
+	(operator AND))
+
+([ATHENA_CKD_Instance_70025] of  N_ary_Expression
+
+	(label "eGFR: Non-Black Male")
+	(operator *)
+	(values
+		[ATHENA_CKD_Instance_70026]
+		[ATHENA_CKD_Instance_70027]
+		[ATHENA_CKD_Instance_80030]))
+
+([ATHENA_CKD_Instance_70026] of  Numeric_Constant
+
+	(value 186.3))
+
+([ATHENA_CKD_Instance_70027] of  Binary_Expression
+
+	(first_argument [ATHENA_CKD_Instance_70028])
+	(label "Creatinine^-1.154")
+	(operator %5E)
+	(second_argument [ATHENA_CKD_Instance_70029]))
+
+([ATHENA_CKD_Instance_70028] of  Numeric_Term_Query
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(numeric_domain_term "Creatinine"))
+
+([ATHENA_CKD_Instance_70029] of  Numeric_Constant
+
+	(value -1.154))
+
+([ATHENA_CKD_Instance_80030] of  Binary_Expression
+
+	(first_argument [ATHENA_CKD_Instance_80032])
+	(label "Age^-0.203")
+	(operator %5E)
+	(second_argument [ATHENA_CKD_Instance_80033]))
+
+([ATHENA_CKD_Instance_80032] of  Numeric_Term_Query
+
+	(aggregation_operator most_recent)
+	(entry_type Patient)
+	(numeric_domain_term "Age"))
+
+([ATHENA_CKD_Instance_80033] of  Numeric_Constant
+
+	(value -0.203))
+
+([ATHENA_CKD_Instance_80035] of  N_ary_Expression
+
+	(label "eGFR: Black Male")
+	(operator *)
+	(values
+		[ATHENA_CKD_Instance_70026]
+		[ATHENA_CKD_Instance_70027]
+		[ATHENA_CKD_Instance_80030]
+		[ATHENA_CKD_Instance_80039]))
+
+([ATHENA_CKD_Instance_80036] of  N_ary_Expression
+
+	(label "eGFR: Non-Black Female")
+	(operator *)
+	(values
+		[ATHENA_CKD_Instance_70026]
+		[ATHENA_CKD_Instance_70027]
+		[ATHENA_CKD_Instance_80030]
+		[ATHENA_CKD_Instance_80038]))
+
+([ATHENA_CKD_Instance_80037] of  N_ary_Expression
+
+	(label "eGFR: Black Female")
+	(operator *)
+	(values
+		[ATHENA_CKD_Instance_70026]
+		[ATHENA_CKD_Instance_70027]
+		[ATHENA_CKD_Instance_80030]
+		[ATHENA_CKD_Instance_80038]
+		[ATHENA_CKD_Instance_80039]))
+
+([ATHENA_CKD_Instance_80038] of  Numeric_Constant
+
+	(value 0.742))
+
+([ATHENA_CKD_Instance_80039] of  Numeric_Constant
+
+	(value 1.21))
+
+([ATHENA_DM_Eye_Instance_100003] of  Relative_Time_Interval_Definite
+
+	(how_many "1")
+	(label "1 month from today")
+	(polarity After)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit month))
+
+([ATHENA_DM_Eye_Instance_100006] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_30015]
+		[ATHENA_DM_Eye_Instance_30012]
+		[ATHENA_DM_Eye_Instance_30014]
+		[ATHENA_DM_Eye_Instance_70001]
+		[ATHENA_DM_Eye_Instance_80019])
+	(label "Risk factors for retinopathy progression")
+	(operator OR))
+
+([ATHENA_DM_Eye_Instance_100007] of  Relative_Time_Interval_Definite
+
+	(how_many "1")
+	(label "in past month")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit month))
+
+([ATHENA_DM_Eye_Instance_100018] of  Relative_Time_Interval_Definite
+
+	(how_many "0")
+	(label "immediately (today)")
+	(polarity After)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit day))
+
+([ATHENA_DM_Eye_Instance_100019] of  Presence_Criterion
+
+	(domain_term Diabetes-Mellitus-Type1)
+	(entry_type Note_Entry)
+	(period [ATHENA_DM_Eye_Instance_100021])
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_100020] of  Relative_Time_Interval_Definite
+)
+
+([ATHENA_DM_Eye_Instance_100021] of  Relative_Time_Interval_Definite
+)
+
+([ATHENA_DM_Eye_Instance_100022] of  Presence_Criterion
+
+	(domain_term Diabetes-Mellitus-Type1)
+	(entry_type Note_Entry)
+	(label "Diabetes type 1")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_100023] of  Presence_Criterion
+
+	(domain_term Diabetes-Mellitus-Type1)
+	(entry_type Note_Entry)
+	(label "Absence of diabetes type 1 for past 3 years")
+	(period [ATHENA_DM_Eye_Instance_80016])
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_100024] of  Relative_Time_Interval_Definite
+
+	(how_many "3")
+	(label "3 months from today")
+	(polarity After)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit month))
+
+([ATHENA_DM_Eye_Instance_20004] of  Presence_Criterion
+
+	(domain_term Acute+ocular+changes)
+	(entry_type Note_Entry)
+	(label "Acute ocular change")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30004] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_20004]
+		[ATHENA_DM_Eye_Instance_30005])
+	(label "acute vision change or change ocular function")
+	(operator OR))
+
+([ATHENA_DM_Eye_Instance_30005] of  Presence_Criterion
+
+	(domain_term change+in+ocular+function)
+	(entry_type Note_Entry)
+	(label "Change in ocular function")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30006] of  Relative_Time_Interval_Definite
+)
+
+([ATHENA_DM_Eye_Instance_30011] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_30012]
+		[ATHENA_DM_Eye_Instance_30014]
+		[ATHENA_DM_Eye_Instance_30015]
+		[ATHENA_DM_Eye_Instance_80019])
+	(label "DM type 2 newly diagnosed or insulin or ocular risk or diabetes type 1 >= 3 years")
+	(operator OR))
+
+([ATHENA_DM_Eye_Instance_30012] of  Presence_Criterion
+
+	(domain_term DM-Type2)
+	(entry_type Note_Entry)
+	(label "diabetes type 2 newly diagnosed (past month)")
+	(period [ATHENA_DM_Eye_Instance_100007])
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30013] of  Relative_Time_Interval_Definite
+
+	(how_many "6")
+	(label "diagnosed in past 6 months")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit month))
+
+([ATHENA_DM_Eye_Instance_30014] of  Presence_Criterion
+
+	(domain_term Insulin)
+	(entry_type Medication)
+	(label "active prescription insulin")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30015] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_30016]
+		[ATHENA_DM_Eye_Instance_30020]
+		[ATHENA_DM_Eye_Instance_30021]
+		[ATHENA_DM_Eye_Instance_30022]
+		[ATHENA_DM_Eye_Instance_30023]
+		[ATHENA_DM_Eye_Instance_30026]
+		[ATHENA_DM_Eye_Instance_40001])
+	(label "Ocular risk")
+	(operator OR))
+
+([ATHENA_DM_Eye_Instance_30016] of  Presence_Criterion
+
+	(domain_term Diabetes_Mellitus)
+	(entry_type Note_Entry)
+	(label "diabetes < 15 years")
+	(period [ATHENA_DM_Eye_Instance_80018])
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30017] of  Relative_Time_Interval_Definite
+
+	(how_many "15")
+	(label "Past 15 years")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit year))
+
+([ATHENA_DM_Eye_Instance_30018] of  Relative_Time_Interval_Definite
+)
+
+([ATHENA_DM_Eye_Instance_30019] of  Relative_Time_Interval_Definite
+
+	(how_many "1")
+	(label "In past year")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit year))
+
+([ATHENA_DM_Eye_Instance_30020] of  Presence_Criterion
+
+	(domain_term CCS-3.3.4)
+	(entry_type Note_Entry)
+	(label "Diabetic neuropathy")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30021] of  Presence_Criterion
+
+	(domain_term Proteinuria)
+	(entry_type Note_Entry)
+	(label "Proteinuria")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30022] of  Presence_Criterion
+
+	(domain_term lower+extremity+amputation+related+to+DM)
+	(entry_type Note_Entry)
+	(label "Lower extremity amputation related to DM")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30023] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_30024]
+		[ATHENA_DM_Eye_Instance_40000])
+	(label "DM type 2 and CV autonomic neuropathy")
+	(operator AND))
+
+([ATHENA_DM_Eye_Instance_30024] of  Presence_Criterion
+
+	(domain_term DM-Type2)
+	(entry_type Note_Entry)
+	(label "diabetes type 2")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30025] of  Presence_Criterion
+
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_30026] of  Presence_Criterion
+
+	(domain_term CCS-3.3.3)
+	(entry_type Note_Entry)
+	(label "Diabetes with ophthalmic manifestations")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_40000] of  Presence_Criterion
+
+	(domain_term CV+autonomic+neuropathy)
+	(entry_type Note_Entry)
+	(label "CV autonomic neuropathy")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_40001] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_40002]
+		[ATHENA_DM_Eye_Instance_40003])
+	(label "pregnancy and pre-existing diabetes")
+	(operator AND))
+
+([ATHENA_DM_Eye_Instance_40002] of  Presence_Criterion
+
+	(domain_term Pregnancy)
+	(entry_type Note_Entry)
+	(label "pregnancy")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_40003] of  Presence_Criterion
+
+	(domain_term Diabetes_Mellitus)
+	(entry_type Note_Entry)
+	(label "diabetes_mellitus")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_40005] of  Presence_Criterion
+
+	(domain_term dilated+eye+exam)
+	(entry_type Note_Entry)
+	(label "Presence eye exam in past year")
+	(period [ATHENA_DM_Eye_Instance_30019])
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_60003] of  Presence_Criterion
+
+	(domain_term dilated+eye+exam)
+	(entry_type Note_Entry)
+	(label "Absence of eye exam")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_70001] of  Presence_Criterion
+
+	(domain_term Retinopathy)
+	(entry_type Note_Entry)
+	(label "Retinopathy")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_80001] of  Presence_Criterion
+
+	(domain_term dilated+eye+exam)
+	(entry_type Note_Entry)
+	(label "Dilated eye exam")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_80007] of  Relative_Time_Interval_Definite
+
+	(how_many "2")
+	(label "Past 2 years")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit year))
+
+([ATHENA_DM_Eye_Instance_80010] of  Presence_Criterion
+
+	(label "Eye exam provider schedule present???")
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_80013] of  Presence_Criterion
+
+	(domain_term Acute+ocular+changes)
+	(entry_type Note_Entry)
+	(label "Absence acute ocular changes")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80014] of  Presence_Criterion
+
+	(domain_term change+in+ocular+function)
+	(entry_type Note_Entry)
+	(label "Absence change in ocular function")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80015] of  Presence_Criterion
+
+	(domain_term Diabetes-Mellitus-Type1)
+	(entry_type Note_Entry)
+	(label "Diabetes type 1 <= 3 years")
+	(period [ATHENA_DM_Eye_Instance_80016])
+	(presence TRUE))
+
+([ATHENA_DM_Eye_Instance_80016] of  Relative_Time_Interval_Definite
+
+	(how_many "3")
+	(label "past 3 years")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit year))
+
+([ATHENA_DM_Eye_Instance_80017] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_80021]
+		[ATHENA_DM_Eye_Instance_80022]
+		[ATHENA_DM_Eye_Instance_80023]
+		[ATHENA_DM_Eye_Instance_80024]
+		[ATHENA_DM_Eye_Instance_80025]
+		[ATHENA_DM_Eye_Instance_80026]
+		[ATHENA_DM_Eye_Instance_80027])
+	(label "absence of ocular risk")
+	(operator AND))
+
+([ATHENA_DM_Eye_Instance_80018] of  Relative_Time_Interval_Definite
+
+	(how_many "15")
+	(label "< 15 years")
+	(polarity Before)
+	(relative_time_point [time%3AINSTANCE_1])
+	(time_unit year))
+
+([ATHENA_DM_Eye_Instance_80019] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_100022]
+		[ATHENA_DM_Eye_Instance_100023])
+	(label "Diabtes type 1 for more than 3 years???")
+	(operator AND))
+
+([ATHENA_DM_Eye_Instance_80020] of  Presence_Criterion
+
+	(domain_term Diabetes_Mellitus)
+	(entry_type Note_Entry)
+	(label "Absence diabetes past 15 years")
+	(period [ATHENA_DM_Eye_Instance_80018])
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80021] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_80020]
+		[ATHENA_DM_Eye_Instance_40003])
+	(label "Diabetes >15 years")
+	(operator AND))
+
+([ATHENA_DM_Eye_Instance_80022] of  Presence_Criterion
+
+	(domain_term CCS-3.3.4)
+	(entry_type Note_Entry)
+	(label "Absence of diabetic neuropathy")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80023] of  Presence_Criterion
+
+	(domain_term Proteinuria)
+	(entry_type Note_Entry)
+	(label "Absence proteinuria")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80024] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_30023])
+	(label "NOT DM type 2 and CV autonomic neuropathy")
+	(operator NOT))
+
+([ATHENA_DM_Eye_Instance_80025] of  Presence_Criterion
+
+	(domain_term lower+extremity+amputation+related+to+DM)
+	(entry_type Note_Entry)
+	(label "Absence lower extremity ampuation due to DM")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80026] of  Presence_Criterion
+
+	(domain_term CCS-3.3.3)
+	(entry_type Note_Entry)
+	(label "Absence of diabetes with ophtalmic manifestations")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80027] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_40001])
+	(label "NOT pregnancy and pre-existing diabetes")
+	(operator NOT))
+
+([ATHENA_DM_Eye_Instance_80028] of  Presence_Criterion
+
+	(domain_term Insulin)
+	(entry_type Medication)
+	(label "Absence insulin")
+	(presence FALSE))
+
+([ATHENA_DM_Eye_Instance_80029] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_Eye_Instance_30012])
+	(label "Not DM type 2 newly diagnosed (past 6m)")
+	(operator NOT))
+
+([ATHENA_DM_Eye_Instance_90006] of  Presence_Criterion
+
+	(domain_term dilated+eye+exam)
+	(entry_type Note_Entry)
+	(label "Dilated eye exam in past 2 years")
+	(period [ATHENA_DM_Eye_Instance_80007])
+	(presence TRUE))
+
+([atherosclerotic_vascular_disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "atherosclerotic vascular disease"))
+
+([athlete%E2%80%99s+foot] of  Medical_Conditions_Metaclass
+)
+
+([Atrial_Fibrillation] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Atrial Fibrillation"))
+
+([Atrial_Tachycardia] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Atrial Tachycardia"))
+
+([Autism] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Autism"))
+
+([benazepril] of  Medications_Metaclass
+)
+
+([bendroflumethiazide] of  Medications_Metaclass
+)
+
+([bendroflumethiazide_SA] of  Medications_Metaclass
+)
+
+([benzthiazide] of  Medications_Metaclass
+)
+
+([bepridil] of  Medications_Metaclass
+)
+
+([Beta+Blocker+Stage+B+no+MI] of  Medications_Metaclass
+
+	(PrettyName "Beta Blocker Stage B no MI"))
+
+([Beta+blocker+stage+B+post+MI] of  Medications_Metaclass
+
+	(PrettyName "Beta blocker stage B post MI"))
+
+([Beta-Blockers] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Beta-Blockers-Cardioselective] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([beta-blockers-ISA] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Beta-Blockers-non-cardioselective] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Beta_Blocker+Stage+C+Heart+Failure] of  Medications_Metaclass
+
+	(PrettyName "Beta blocker for stage C heart failure"))
+
+([betaxolol] of  Medications_Metaclass
+)
+
+([Bicarbonate] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([BIGUANIDE] of  Medications_Metaclass
+)
+
+([bilateral+LE+amputation] of  Medical_Conditions_Metaclass
+)
+
+([Bipolar] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Bipolar Disorder"))
+
+([bisoprolol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Black_Non-Hispanic] of  Canonical_Terms_Metaclass
+)
+
+([Blood_Chemistry] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Blood_Glucose_Regulation_Agent] of  Medications_Metaclass
+)
+
+([Blood_Pressure] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "Blood Pressure"))
+
+([BMI] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([BMIGT25] of  Diagnostic_Term_Metaclass
+
+	(DiagnosticCriteria [library_Instance_10002])
+	(PrettyName "BMI>25"))
+
+([Breaks+in+the+skin] of  Canonical_Terms_Metaclass
+)
+
+([Bronchospastic_Disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Bronchospastic disease"))
+
+([bumetanide] of  Medications_Metaclass
+)
+
+([BUN] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([bunions] of  Diagnostic_Term_Metaclass
+)
+
+([Calcium] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([calcium+channel+blockers+with+negative+inotropic+effects] of  Medications_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "calcium channel blockers with negative inotropic effects"))
+
+([Calcium_channel_antagonists] of  Medications_Metaclass
+)
+
+([candesartan] of  Medications_Metaclass
+)
+
+([captopril] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([cardiac+arrest] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "cardiac arrest"))
+
+([cardiac+dyssynchrony] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "cardiac dyssynchrony"))
+
+([Cardiac+procedures] of  Canonical_Terms_Metaclass
+)
+
+([Cardiac_Resynchronization_Therapy] of  Canonical_Terms_Metaclass
+
+	(PrettyName "cardiac resynchronization therapy"))
+
+([Cardiomegaly] of  Medical_Conditions_Metaclass
+)
+
+([Cardiomyopathy] of  Medical_Conditions_Metaclass
+)
+
+([cardiotoxic+interventions] of  Canonical_Terms_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "cardiotoxic interventions"))
+
+([Cardiovascular_disease_unspecified] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Cardiovascular disease, unspecified"))
+
+([carteolol] of  Medications_Metaclass
+)
+
+([carvedilol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Cataracts] of  Medical_Conditions_Metaclass
+)
+
+([CCS-1] of  Medical_Conditions_Metaclass
+
+	(code "1")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Infectious and parasitic diseases"))
+
+([CCS-1.1] of  Medical_Conditions_Metaclass
+
+	(code "1.1")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Bacterial infection"))
+
+([CCS-1.1.2] of  Medical_Conditions_Metaclass
+
+	(code "1.1.2")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Septicemia (except in labor) [2.]"))
+
+([CCS-1.2] of  Medical_Conditions_Metaclass
+
+	(code "1.2")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Mycoses [4.]"))
+
+([CCS-10] of  Medical_Conditions_Metaclass
+
+	(code "10")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the genitourinary system"))
+
+([CCS-10.1] of  Medical_Conditions_Metaclass
+
+	(code "10.1")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the urinary system"))
+
+([CCS-10.1.3] of  Medical_Conditions_Metaclass
+
+	(code "10.1.3")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Chronic renal failure [158.]"))
+
+([CCS-11] of  Medical_Conditions_Metaclass
+
+	(code "11")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Complications of pregnancy; childbirth; and the puerperium"))
+
+([CCS-11.7] of  Medical_Conditions_Metaclass
+
+	(code "11.7")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Normal pregnancy and/or delivery [196.]"))
+
+([CCS-12] of  Medical_Conditions_Metaclass
+
+	(code "12")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the skin and subcutaneous tissue"))
+
+([CCS-12.3] of  Medical_Conditions_Metaclass
+
+	(code "12.3")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Chronic ulcer of skin [199.]"))
+
+([CCS-13] of  Medical_Conditions_Metaclass
+
+	(code "13")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the musculoskeletal system and connective tissue"))
+
+([CCS-13.6] of  Medical_Conditions_Metaclass
+
+	(code "13.6")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Acquired deformities"))
+
+([CCS-13.6.1] of  Medical_Conditions_Metaclass
+
+	(code "13.6.1")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Acquired foot deformities [208.]"))
+
+([CCS-3] of  Medical_Conditions_Metaclass
+
+	(code "3")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Endocrine; nutritional; and metabolic diseases and immunity disorders"))
+
+([CCS-3.3] of  Medical_Conditions_Metaclass
+
+	(code "3.3")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diabetes mellitus with complications [50.]"))
+
+([CCS-3.3.3] of  Medical_Conditions_Metaclass
+
+	(code "3.3.3")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diabetes with ophthalmic manifestations"))
+
+([CCS-3.3.4] of  Medical_Conditions_Metaclass
+
+	(code "3.3.4")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diabetes with neurological manifestations"))
+
+([CCS-3.3.5] of  Medical_Conditions_Metaclass
+
+	(code "3.3.5")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diabetes with circulatory manifestations"))
+
+([CCS-5] of  Medical_Conditions_Metaclass
+
+	(code "5")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Mental Illness"))
+
+([CCS-5.11] of  Medical_Conditions_Metaclass
+
+	(code "5.11")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Alcohol-related disorders"))
+
+([CCS-6] of  Medical_Conditions_Metaclass
+
+	(code "6")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the nervous system and sense organs"))
+
+([CCS-6.7] of  Medical_Conditions_Metaclass
+
+	(code "6.7")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Eye disorders"))
+
+([CCS-6.7.2] of  Medical_Conditions_Metaclass
+
+	(code "6.7.2")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Retinal detachments; defects; vascular occlusion; and retinopathy [87.]"))
+
+([CCS-7] of  Medical_Conditions_Metaclass
+
+	(code "7")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the circulatory system"))
+
+([CCS-7.2] of  Medical_Conditions_Metaclass
+
+	(code "7.2")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the heart"))
+
+([CCS-7.2.11] of  Medical_Conditions_Metaclass
+
+	(code "7.2.11")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Congestive heart failure; nonhypertensive [108.]"))
+
+([CCS-7.2.11.1] of  Medical_Conditions_Metaclass
+
+	(code "7.2.11.1")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Congestive heart failure"))
+
+([CCS-7.4] of  Medical_Conditions_Metaclass
+
+	(code "7.4")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of arteries; arterioles; and capillaries"))
+
+([CCS-7.4.4] of  Medical_Conditions_Metaclass
+
+	(code "7.4.4")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Other circulatory disease [117.]"))
+
+([CCS-9] of  Medical_Conditions_Metaclass
+
+	(code "9")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Diseases of the digestive system"))
+
+([CCS-9.8.2.1] of  Medical_Conditions_Metaclass
+
+	(code "9.8.2.1")
+	(coding_system "AHRQ HCUP CCS")
+	(PrettyName "Cirrhosis of liver without mention of alcohol"))
+
+([CCS_Instance_0] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "All slots have a domain")
+	(%3APAL-RANGE "(defrange ?s :FRAME :STANDARD-SLOT)\n(defrange ?c :FRAME :STANDARD-CLASS)")
+	(%3APAL-STATEMENT "(forall ?s\n        (exists ?c\n        (direct-template-slot-of ?s ?c))\n)"))
+
+([Cerebral_Vascular_Diseases] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Stroke in the past"))
+
+([change+in+ocular+function] of  Diagnostic_Term_Metaclass
+)
+
+([Changes+in+the+size+of+foot] of  Canonical_Terms_Metaclass
+)
+
+([Charcot%E2%80%99s+arthropathy] of  Diagnostic_Term_Metaclass
+)
+
+([chlorothiazide] of  Medications_Metaclass
+)
+
+([CHLORPROPAMIDE] of  Medications_Metaclass
+)
+
+([chlorthalidone] of  Medications_Metaclass
+)
+
+([Cholesterol] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([chronic+severe+hyperglycemia] of  Medical_Conditions_Metaclass
+)
+
+([chronic+severe+hypoglycemia] of  Diagnostic_Term_Metaclass
+)
+
+([circulatory+symptoms+that+limit+patient%27s+lifestyle] of  Medical_Conditions_Metaclass
+)
+
+([cirrhosis] of  Medical_Conditions_Metaclass
+)
+
+([claw+toe] of  Diagnostic_Term_Metaclass
+)
+
+([Clinical+reminders] of  Medical_Conditions_Metaclass
+)
+
+([clonidine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Cognitive_Impairment] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Cognitive Impairment"))
+
+([complications+of+transplant] of  Medical_Conditions_Metaclass
+)
+
+([comprehensive+eye+exam] of  Canonical_Terms_Metaclass
+)
+
+([contemporary+guidelines] of  Canonical_Terms_Metaclass
+
+	(PrettyName "contemporary guidelines"))
+
+([Coronary_Artery_Disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Coronary Artery Disease"))
+
+([Creatinine] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element)
+	(Precision 1)
+	(PrettyName "Creatinine"))
+
+([Creatinine_Clearance] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([cryptenamine] of  Medications_Metaclass
+)
+
+([CV+autonomic+neuropathy] of  Diagnostic_Term_Metaclass
+)
+
+([cyclosporine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([cyclothiazide] of  Medications_Metaclass
+)
+
+([cylcosporine] of  Medications_Metaclass
+)
+
+([DCL] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Defined+concept] of  Medical_Conditions_Metaclass
+)
+
+([Dementia] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Dementia"))
+
+([dependent+rubor+with+pallor+on+elevation] of  Diagnostic_Term_Metaclass
+)
+
+([Depression] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Depression"))
+
+([deserpidine] of  Medications_Metaclass
+)
+
+([Dharma2_00000] of  %3ASTANDARD-FACET
+)
+
+([Dharma2_00001] of  %3ASTANDARD-FACET
+)
+
+([Dharma_11861] of  %3ASTANDARD-FACET
+)
+
+([Dharma_11862] of  %3ASTANDARD-FACET
+)
+
+([Dharma_11863] of  %3ASTANDARD-FACET
+)
+
+([Dharma_11864] of  %3ASTANDARD-FACET
+
+	(%3AASSOCIATED-SLOT [PrettyName]))
+
+([Diabetes+with+renal+manifestations] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Diabetes with renal manifestations"))
+
+([Diabetes-Mellitus-Type1] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Diabetes Type 1"))
+
+([Diabetes_Mellitus] of  Medical_Conditions_Metaclass
+
+	(coding_system "ATHENA")
+	(data_source VISTA_data_element))
+
+([Diabetic+foot+exam+at+other+facility+in+past+year] of  Medical_Conditions_Metaclass
+)
+
+([Diabetic+foot+exam+in+this+facility+in+past+year+not+coded] of  Medical_Conditions_Metaclass
+)
+
+([diabetic+neuropathy] of  Medical_Conditions_Metaclass
+)
+
+([diarrhea] of  Medical_Conditions_Metaclass
+)
+
+([Diastolic_BP] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([digitalis] of  Medications_Metaclass
+
+	(PrettyName "digitalis"))
+
+([digoxin] of  Medications_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "digoxin"))
+
+([Dihydropyridines] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([dilated+eye+exam] of  Canonical_Terms_Metaclass
+)
+
+([diltiazem] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([diltiazem_SA] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([DIPEPTIDYL_PEPTIDASE-4_INHIBITOR] of  Medications_Metaclass
+)
+
+([Direct_vasodilators] of  Medications_Metaclass
+)
+
+([Diseases+of+the+respiratory+system] of  Medical_Conditions_Metaclass
+)
+
+([Diuretics] of  Medications_Metaclass
+)
+
+([DM-Type2] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Diabetes Type 2"))
+
+([DOE] of  Medical_Conditions_Metaclass
+
+	(PrettyName "DOE"))
+
+([Dorsalis+pedis+pulses] of  Diagnostic_Term_Metaclass
+)
+
+([doxazosin] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Drug+Induced+Mental+Disorder] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Drug Induced Mental Disorder"))
+
+([dry+skin] of  Canonical_Terms_Metaclass
+)
+
+([Duration+of+Diabetes] of  Canonical_Terms_Metaclass
+)
+
+([E950.0] of  Medical_Conditions_Metaclass
+)
+
+([E950.01] of  Medical_Conditions_Metaclass
+)
+
+([E950.02] of  Medical_Conditions_Metaclass
+)
+
+([E950.1] of  Medical_Conditions_Metaclass
+)
+
+([E950.11] of  Medical_Conditions_Metaclass
+)
+
+([E950.12] of  Medical_Conditions_Metaclass
+)
+
+([E950.2] of  Medical_Conditions_Metaclass
+)
+
+([E950.21] of  Medical_Conditions_Metaclass
+)
+
+([E950.22] of  Medical_Conditions_Metaclass
+)
+
+([E950.3] of  Medical_Conditions_Metaclass
+)
+
+([E950.31] of  Medical_Conditions_Metaclass
+)
+
+([E950.32] of  Medical_Conditions_Metaclass
+)
+
+([E950.4] of  Medical_Conditions_Metaclass
+)
+
+([E950.41] of  Medical_Conditions_Metaclass
+)
+
+([E950.42] of  Medical_Conditions_Metaclass
+)
+
+([E950.5] of  Medical_Conditions_Metaclass
+)
+
+([E950.51] of  Medical_Conditions_Metaclass
+)
+
+([E950.52] of  Medical_Conditions_Metaclass
+)
+
+([E950.6] of  Medical_Conditions_Metaclass
+)
+
+([E950.61] of  Medical_Conditions_Metaclass
+)
+
+([E950.62] of  Medical_Conditions_Metaclass
+)
+
+([E950.7] of  Medical_Conditions_Metaclass
+)
+
+([E950.71] of  Medical_Conditions_Metaclass
+)
+
+([E950.72] of  Medical_Conditions_Metaclass
+)
+
+([E950.8] of  Medical_Conditions_Metaclass
+)
+
+([E950.81] of  Medical_Conditions_Metaclass
+)
+
+([E950.82] of  Medical_Conditions_Metaclass
+)
+
+([E950.9] of  Medical_Conditions_Metaclass
+)
+
+([E950.91] of  Medical_Conditions_Metaclass
+)
+
+([E950.92] of  Medical_Conditions_Metaclass
+)
+
+([E951.0] of  Medical_Conditions_Metaclass
+)
+
+([E951.01] of  Medical_Conditions_Metaclass
+)
+
+([E951.02] of  Medical_Conditions_Metaclass
+)
+
+([E951.1] of  Medical_Conditions_Metaclass
+)
+
+([E951.11] of  Medical_Conditions_Metaclass
+)
+
+([E951.12] of  Medical_Conditions_Metaclass
+)
+
+([E951.8] of  Medical_Conditions_Metaclass
+)
+
+([E951.81] of  Medical_Conditions_Metaclass
+)
+
+([E951.82] of  Medical_Conditions_Metaclass
+)
+
+([E952.0] of  Medical_Conditions_Metaclass
+)
+
+([E952.01] of  Medical_Conditions_Metaclass
+)
+
+([E952.02] of  Medical_Conditions_Metaclass
+)
+
+([E952.1] of  Medical_Conditions_Metaclass
+)
+
+([E952.11] of  Medical_Conditions_Metaclass
+)
+
+([E952.12] of  Medical_Conditions_Metaclass
+)
+
+([E952.8] of  Medical_Conditions_Metaclass
+)
+
+([E952.81] of  Medical_Conditions_Metaclass
+)
+
+([E952.82] of  Medical_Conditions_Metaclass
+)
+
+([E952.9] of  Medical_Conditions_Metaclass
+)
+
+([E952.91] of  Medical_Conditions_Metaclass
+)
+
+([E952.92] of  Medical_Conditions_Metaclass
+)
+
+([E953.0] of  Medical_Conditions_Metaclass
+)
+
+([E953.01] of  Medical_Conditions_Metaclass
+)
+
+([E953.02] of  Medical_Conditions_Metaclass
+)
+
+([E953.1] of  Medical_Conditions_Metaclass
+)
+
+([E953.11] of  Medical_Conditions_Metaclass
+)
+
+([E953.12] of  Medical_Conditions_Metaclass
+)
+
+([E953.8] of  Medical_Conditions_Metaclass
+)
+
+([E953.81] of  Medical_Conditions_Metaclass
+)
+
+([E953.82] of  Medical_Conditions_Metaclass
+)
+
+([E953.9] of  Medical_Conditions_Metaclass
+)
+
+([E954] of  Medical_Conditions_Metaclass
+)
+
+([E954.1] of  Medical_Conditions_Metaclass
+)
+
+([E954.2] of  Medical_Conditions_Metaclass
+)
+
+([E955.0] of  Medical_Conditions_Metaclass
+)
+
+([E955.01] of  Medical_Conditions_Metaclass
+)
+
+([E955.02] of  Medical_Conditions_Metaclass
+)
+
+([E955.1] of  Medical_Conditions_Metaclass
+)
+
+([E955.11] of  Medical_Conditions_Metaclass
+)
+
+([E955.12] of  Medical_Conditions_Metaclass
+)
+
+([E955.2] of  Medical_Conditions_Metaclass
+)
+
+([E955.21] of  Medical_Conditions_Metaclass
+)
+
+([E955.22] of  Medical_Conditions_Metaclass
+)
+
+([E955.3] of  Medical_Conditions_Metaclass
+)
+
+([E955.31] of  Medical_Conditions_Metaclass
+)
+
+([E955.32] of  Medical_Conditions_Metaclass
+)
+
+([E955.4] of  Medical_Conditions_Metaclass
+)
+
+([E955.41] of  Medical_Conditions_Metaclass
+)
+
+([E955.42] of  Medical_Conditions_Metaclass
+)
+
+([E955.5] of  Medical_Conditions_Metaclass
+)
+
+([E955.51] of  Medical_Conditions_Metaclass
+)
+
+([E955.52] of  Medical_Conditions_Metaclass
+)
+
+([E955.6] of  Medical_Conditions_Metaclass
+)
+
+([E955.7] of  Medical_Conditions_Metaclass
+)
+
+([E955.9] of  Medical_Conditions_Metaclass
+)
+
+([E956] of  Medical_Conditions_Metaclass
+)
+
+([E956.1] of  Medical_Conditions_Metaclass
+)
+
+([E956.2] of  Medical_Conditions_Metaclass
+)
+
+([E957.0] of  Medical_Conditions_Metaclass
+)
+
+([E957.01] of  Medical_Conditions_Metaclass
+)
+
+([E957.02] of  Medical_Conditions_Metaclass
+)
+
+([E957.1] of  Medical_Conditions_Metaclass
+)
+
+([E957.11] of  Medical_Conditions_Metaclass
+)
+
+([E957.12] of  Medical_Conditions_Metaclass
+)
+
+([E957.2] of  Medical_Conditions_Metaclass
+)
+
+([E957.21] of  Medical_Conditions_Metaclass
+)
+
+([E957.22] of  Medical_Conditions_Metaclass
+)
+
+([E957.9] of  Medical_Conditions_Metaclass
+)
+
+([E957.91] of  Medical_Conditions_Metaclass
+)
+
+([E957.92] of  Medical_Conditions_Metaclass
+)
+
+([E958.0] of  Medical_Conditions_Metaclass
+)
+
+([E958.01] of  Medical_Conditions_Metaclass
+)
+
+([E958.02] of  Medical_Conditions_Metaclass
+)
+
+([E958.1] of  Medical_Conditions_Metaclass
+)
+
+([E958.11] of  Medical_Conditions_Metaclass
+)
+
+([E958.12] of  Medical_Conditions_Metaclass
+)
+
+([E958.2] of  Medical_Conditions_Metaclass
+)
+
+([E958.21] of  Medical_Conditions_Metaclass
+)
+
+([E958.22] of  Medical_Conditions_Metaclass
+)
+
+([E958.3] of  Medical_Conditions_Metaclass
+)
+
+([E958.31] of  Medical_Conditions_Metaclass
+)
+
+([E958.32] of  Medical_Conditions_Metaclass
+)
+
+([E958.4] of  Medical_Conditions_Metaclass
+)
+
+([E958.41] of  Medical_Conditions_Metaclass
+)
+
+([E958.42] of  Medical_Conditions_Metaclass
+)
+
+([E958.5] of  Medical_Conditions_Metaclass
+)
+
+([E958.51] of  Medical_Conditions_Metaclass
+)
+
+([E958.52] of  Medical_Conditions_Metaclass
+)
+
+([E958.6] of  Medical_Conditions_Metaclass
+)
+
+([E958.61] of  Medical_Conditions_Metaclass
+)
+
+([E958.62] of  Medical_Conditions_Metaclass
+)
+
+([E958.7] of  Medical_Conditions_Metaclass
+)
+
+([E958.71] of  Medical_Conditions_Metaclass
+)
+
+([E958.72] of  Medical_Conditions_Metaclass
+)
+
+([E958.8] of  Medical_Conditions_Metaclass
+)
+
+([E958.81] of  Medical_Conditions_Metaclass
+)
+
+([E958.82] of  Medical_Conditions_Metaclass
+)
+
+([E958.9] of  Medical_Conditions_Metaclass
+)
+
+([E959] of  Medical_Conditions_Metaclass
+)
+
+([Echocardiogram] of  Canonical_Terms_Metaclass
+)
+
+([edema] of  Medical_Conditions_Metaclass
+
+	(PrettyName "edema"))
+
+([EDEMA+OF+LARYNX] of  Medical_Conditions_Metaclass
+)
+
+([eGFR] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([EKG] of  Canonical_Terms_Metaclass
+)
+
+([enalapril] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Endocrine_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([eplerenone] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([eprosartan] of  Medications_Metaclass
+)
+
+([Erythema] of  Canonical_Terms_Metaclass
+)
+
+([Essential_Tremor] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([ethacrynic_acid] of  Medications_Metaclass
+)
+
+([Evaluation+for+foot+deformity] of  Diagnostic_Term_Metaclass
+)
+
+([Evaluation+for+LE+arterial+disease] of  Diagnostic_Term_Metaclass
+)
+
+([Evidence+of+LE+arterial+disease] of  Diagnostic_Term_Metaclass
+)
+
+([excessive+alcohol+consumption] of  Medical_Conditions_Metaclass
+
+	(PrettyName "excessive alcohol consumption"))
+
+([Extensive+callus] of  Canonical_Terms_Metaclass
+)
+
+([eye+care+provider] of  Canonical_Terms_Metaclass
+)
+
+([Eye+procedures] of  Canonical_Terms_Metaclass
+)
+
+([family+history+of+cardiomyopathy] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "family history of cardiomyopathy"))
+
+([felodipine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([felodipine_SA] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Female] of  Canonical_Terms_Metaclass
+)
+
+([FEV1] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([flosequinan] of  Medications_Metaclass
+)
+
+([fluid+retention] of  Medical_Conditions_Metaclass
+
+	(PrettyName "fluid retention"))
+
+([foot+care+specialist] of  Canonical_Terms_Metaclass
+)
+
+([Foot+deformities] of  Diagnostic_Term_Metaclass
+)
+
+([Foot+procedures] of  Canonical_Terms_Metaclass
+)
+
+([Foot+risk+assessment] of  Canonical_Terms_Metaclass
+)
+
+([foot+ulcer] of  Medical_Conditions_Metaclass
+)
+
+([Footwear+prescriptions] of  Medical_Conditions_Metaclass
+)
+
+([fosinopril] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([fosinopril+NA] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([furosemide] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([FVC] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([GLIMEPIRIDE] of  Medications_Metaclass
+)
+
+([GLIPIZIDE] of  Medications_Metaclass
+)
+
+([Glucose] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([GLYBURIDE] of  Medications_Metaclass
+)
+
+([glycemic+control] of  Medical_Conditions_Metaclass
+
+	(PrettyName "glycemic control"))
+
+([Glycosylated_Hemoglobin] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Gout] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Gout_Complicated] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Gout, complicated"))
+
+([guanabenz] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([guanadrel] of  Medications_Metaclass
+)
+
+([guanethidine] of  Medications_Metaclass
+)
+
+([guanfacine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([hammer+toes] of  Diagnostic_Term_Metaclass
+)
+
+([HbA1C] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "HbA1c"))
+
+([HCT] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([HDL_Cholesterol] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([headache] of  Medical_Conditions_Metaclass
+)
+
+([heart] of  Medical_Conditions_Metaclass
+)
+
+([Heart_Block_2nd_Or_3rd_Degree] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Heart Block"))
+
+([Heart_Failure] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Heart Failure"))
+
+([HeartFailureClass] of  Canonical_Terms_Metaclass
+)
+
+([Height] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Hematology] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Hematuria] of  Medical_Conditions_Metaclass
+)
+
+([hematuria] of  Medical_Conditions_Metaclass
+)
+
+([hemodynamically+destabilizing+ventricular+tachycardia] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "hemodynamically destabilizing ventricular tachycardia"))
+
+([Hemoglobin_A1C] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Hemorrhagic+Callus+With+or+Without+Cellulitis] of  Diagnostic_Term_Metaclass
+)
+
+([Hepatitis_B_Surface_Antigen] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Hepatitis_C_Status] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Hepatobiliary_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([HF+signs+and+symptoms] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "HF signs and symptoms"))
+
+([HGB] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([High_Risk_Psych_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([Hispanic-Black] of  Canonical_Terms_Metaclass
+)
+
+([Hispanic-White] of  Canonical_Terms_Metaclass
+)
+
+([History+of+foot+ulcer+or+non-traumatic+LEA] of  Diagnostic_Term_Metaclass
+)
+
+([history+of+rest+pain+or+claudication] of  Diagnostic_Term_Metaclass
+)
+
+([history+of+severe+hypoglycemic+reactions] of  Medical_Conditions_Metaclass
+)
+
+([HIV_Test] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Homeless] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Homeless"))
+
+([hormonal+therapy] of  Medications_Metaclass
+
+	(PrettyName "hormonal therapy"))
+
+([hydralazine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([hydrochlorothiazide] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([hydroflumethiazide] of  Medications_Metaclass
+)
+
+([Hypercalcemia] of  Medical_Conditions_Metaclass
+)
+
+([hyperglycemia] of  Medical_Conditions_Metaclass
+
+	(PrettyName "hyperglycemia"))
+
+([Hypertension] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Hypertension_Complicated_by_Heart_Failure] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Hypertension and CHF"))
+
+([Hypertension_Defined] of  Diagnostic_Term_Metaclass
+)
+
+([Hypertension_Inclusive] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Hypertension, inclusive"))
+
+([Hyperthyroidism] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([hypoglycemia] of  Medical_Conditions_Metaclass
+
+	(PrettyName "hypoglycemia"))
+
+([hypotension] of  Medical_Conditions_Metaclass
+
+	(PrettyName "hypotension"))
+
+([Idiopathic+Hypertrophic+Subaortic+Stenosis] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "IHSS"))
+
+([illicit+drug+use] of  Medical_Conditions_Metaclass
+
+	(PrettyName "illicit drug use"))
+
+([Immunological_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([Impact+on+quality+of+life] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Impact on quality of life"))
+
+([implantable+cardioverter-defibrillator] of  Canonical_Terms_Metaclass
+
+	(PrettyName "implantable cardioverter-defibrillator"))
+
+([improper+foot+hygiene] of  Medical_Conditions_Metaclass
+)
+
+([indapamide] of  Medications_Metaclass
+)
+
+([Ingrown+toenail] of  Diagnostic_Term_Metaclass
+)
+
+([Insulin] of  Medications_Metaclass
+)
+
+([interference+with+daily+activities] of  Medical_Conditions_Metaclass
+
+	(PrettyName "interference with daily activities"))
+
+([intestine] of  Medical_Conditions_Metaclass
+)
+
+([Intracranial+hemorrhage] of  Medical_Conditions_Metaclass
+)
+
+([irbesartan] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Ischemic+Heart+Disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([isradipine] of  Medications_Metaclass
+)
+
+([isradipine_SA] of  Medications_Metaclass
+)
+
+([kidney] of  Medical_Conditions_Metaclass
+)
+
+([labetalol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Lack+of+sensation+to+Semmes-Weinstein+5.07+monofilament+at+one+or+more+noncallused+plantar+sites] of  Diagnostic_Term_Metaclass
+
+	(PrettyName "Lack of sensation to Semmes-Weinstein 5.07 monofilament"))
+
+([Late+effects+of+CVA] of  Medical_Conditions_Metaclass
+)
+
+([LDL_Cholesterol] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Left+Ventricular+Ejection+fraction] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Left Ventricular Ejection fraction"))
+
+([library_Instance_0] of  Presence_Criterion
+
+	(domain_term dilated+eye+exam)
+	(entry_type Note_Entry)
+	(label "Absence of eye exam in past year")
+	(period [ATHENA_DM_Eye_Instance_30019])
+	(presence FALSE))
+
+([library_Instance_1] of  General_Comparison_Criterion
+
+	(domain_term BMI)
+	(entry_type Numeric_Entry)
+	(label "BMI>25")
+	(operator %3E))
+
+([library_Instance_10] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term UrineProtein_Qualitative)
+	(entry_type Note_Entry)
+	(label "proteinuria equals 3+")
+	(operator eq)
+	(value [library_Instance_16]))
+
+([library_Instance_10002] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "BMI > 25")
+	(numeric_domain_term BMI)
+	(operator %3E)
+	(value 25.0))
+
+([library_Instance_11] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term UrineProtein_Qualitative)
+	(entry_type Note_Entry)
+	(label "proteinuria equals 1+")
+	(operator eq)
+	(value [library_Instance_15]))
+
+([library_Instance_12] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term UrineProtein_Qualitative)
+	(entry_type Note_Entry)
+	(label "proteinuria equals 2+")
+	(operator eq)
+	(value [library_Instance_17]))
+
+([library_Instance_13] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term UrineProtein_Qualitative)
+	(entry_type Note_Entry)
+	(label "proteinuria equals trace")
+	(operator eq)
+	(value [library_Instance_9]))
+
+([library_Instance_14] of  Qualitative_Constant
+
+	(value "4+"))
+
+([library_Instance_15] of  Qualitative_Constant
+
+	(value "1+"))
+
+([library_Instance_16] of  Qualitative_Constant
+
+	(value "3+"))
+
+([library_Instance_17] of  Qualitative_Constant
+
+	(value "2+"))
+
+([library_Instance_2] of  N_ary_Expression
+
+	(label "Absence of dorsalis pedis and tibialis posterior pulses")
+	(operator %2B)
+	(values
+		[library_Instance_3]
+		[library_Instance_4]))
+
+([library_Instance_3] of  Presence_Criterion
+
+	(domain_term Dorsalis+pedis+pulses)
+	(entry_type Note_Entry)
+	(label "Absence of dorsalis pedis")
+	(presence FALSE))
+
+([library_Instance_4] of  Presence_Criterion
+
+	(domain_term Tibialis+posterior+pulses)
+	(entry_type Note_Entry)
+	(label "Absence of tibialis posterior pulse")
+	(presence FALSE))
+
+([library_Instance_7] of  N_ary_Criterion
+
+	(criteria
+		[library_Instance_11]
+		[library_Instance_12]
+		[library_Instance_10]
+		[library_Instance_8]
+		[library_Instance_13])
+	(label "Proteinuria equals trace or above")
+	(operator OR))
+
+([library_Instance_8] of  General_Comparison_Criterion
+
+	(aggregation_operator most_recent)
+	(domain_term UrineProtein_Qualitative)
+	(entry_type Note_Entry)
+	(label "proteinuria equals 4+")
+	(operator eq)
+	(value [library_Instance_14]))
+
+([library_Instance_9] of  Qualitative_Constant
+
+	(value "trace"))
+
+([Life+expectancy+%3C6m] of  Medical_Conditions_Metaclass
+)
+
+([Limb+threatening+condition] of  Diagnostic_Term_Metaclass
+)
+
+([LIP+SWELLING] of  Medical_Conditions_Metaclass
+)
+
+([lisinopril] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([liver] of  Medical_Conditions_Metaclass
+)
+
+([Liver_Disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Liver disease"))
+
+([Loop_diuretics] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([losartan] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([lower+extremity+amputation+related+to+DM] of  Canonical_Terms_Metaclass
+)
+
+([lung] of  Medical_Conditions_Metaclass
+)
+
+([LVH] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "LVH"))
+
+([Male] of  Canonical_Terms_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Medium_Risk_Psych_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([MEGLITINIDES] of  Medications_Metaclass
+)
+
+([Mental+retardation] of  Medical_Conditions_Metaclass
+)
+
+([Mentally+disabled] of  Medical_Conditions_Metaclass
+)
+
+([Metabolic%26Nutritional_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([Metabolic_Syndrome] of  Medical_Conditions_Metaclass
+)
+
+([metatarsal+head+deformities] of  Diagnostic_Term_Metaclass
+)
+
+([METFORMIN] of  Medications_Metaclass
+)
+
+([METFORMIN_ER] of  Medications_Metaclass
+)
+
+([methyclothiazide] of  Medications_Metaclass
+)
+
+([methyldopa] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([methyldopa_SA] of  Medications_Metaclass
+)
+
+([metolazone] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([metoprolol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Metoprolol_and_felodopine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Metoprolol_and_terazosin] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([metoprolol_SA] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([microalbuminuria] of  Medical_Conditions_Metaclass
+
+	(PrettyName "microalbuminuria"))
+
+([Microbiology_Tests] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([MIGLITOL] of  Medications_Metaclass
+)
+
+([Migraine] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([mild+microvasular+disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "mild microvasular disease"))
+
+([Mild+neuropathy] of  Medical_Conditions_Metaclass
+)
+
+([minor+calluses] of  Canonical_Terms_Metaclass
+)
+
+([minor+foot+problem] of  Medical_Conditions_Metaclass
+)
+
+([minor+lesion] of  Canonical_Terms_Metaclass
+)
+
+([Minor+wound+healed] of  Medical_Conditions_Metaclass
+)
+
+([minoxidil] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Moderate+microvascular+disease] of  Medical_Conditions_Metaclass
+)
+
+([moexipril] of  Medications_Metaclass
+)
+
+([Myocardial_Infarction] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Myocardial Infarction"))
+
+([nadolol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Nail+deformities] of  Canonical_Terms_Metaclass
+)
+
+([nail+or+callus+care] of  Medical_Conditions_Metaclass
+)
+
+([Narcolepsy] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([NATEGLINIDE] of  Medications_Metaclass
+)
+
+([Native_American] of  Canonical_Terms_Metaclass
+)
+
+([nausea] of  Medical_Conditions_Metaclass
+)
+
+([Nephritis_nephrosis_renal+sclerosis] of  Medical_Conditions_Metaclass
+)
+
+([nicardipine] of  Medications_Metaclass
+)
+
+([nicardipine_SA] of  Medications_Metaclass
+)
+
+([nifedipine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([nifedipine_SA] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([nimodipine] of  Medications_Metaclass
+)
+
+([nisoldipine] of  Medications_Metaclass
+)
+
+([nisoldipine_SA] of  Medications_Metaclass
+)
+
+([nitrate] of  Medications_Metaclass
+
+	(PrettyName "nitrate"))
+
+([No+longer+diabetic] of  Medical_Conditions_Metaclass
+)
+
+([Non-Black+Female] of  Canonical_Terms_Metaclass
+)
+
+([Non-Cardiac_Drugs] of  Medications_Metaclass
+)
+
+([Non-Dihydropyridines] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([nonischemic+cardiomyopathy] of  Medical_Conditions_Metaclass
+
+	(PrettyName "nonischemic cardiomyopathy"))
+
+([nonsteroidal+anti-inflammatory+drugs] of  Medications_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "nonsteroidal anti-inflammatory drugs"))
+
+([nutritional+supplements] of  Medications_Metaclass
+
+	(PrettyName "nutritional supplements"))
+
+([NYHA+class+I] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "NYHA class I"))
+
+([NYHA+functional+class+II] of  Medical_Conditions_Metaclass
+
+	(PrettyName "NYHA functional class II"))
+
+([NYHA+functional+class+III] of  Medical_Conditions_Metaclass
+
+	(PrettyName "NYHA functional class III"))
+
+([NYHA+functional+class+III+ambulatory+class+IV+symptoms] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "NYHA functional class III ambulatory class IV symptoms"))
+
+([NYHA+staging] of  Canonical_Terms_Metaclass
+)
+
+([Obstetric%26Gynecological_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([Obstructive_Pulmonary_Disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Obstructive Pulmonary Disease"))
+
+([Occulusion+of+cerebral+arteries] of  Medical_Conditions_Metaclass
+)
+
+([Off_Guideline] of  Canonical_Terms_Metaclass
+
+	(data_source VISTA_data_element))
+
+([onychomycosis] of  Medical_Conditions_Metaclass
+)
+
+([ophtalmologyst] of  Canonical_Terms_Metaclass
+)
+
+([ORAL+EDEMA] of  Medical_Conditions_Metaclass
+)
+
+([ORAL+SWELLING] of  Medical_Conditions_Metaclass
+)
+
+([Oral_Hypoglycemic_Agent] of  Medications_Metaclass
+)
+
+([organ] of  Medical_Conditions_Metaclass
+)
+
+([Osteoporosis] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([other+known+microvascular+disease+%28albuminuria+or+neuropathy%29] of  Medical_Conditions_Metaclass
+)
+
+([Other_Race] of  Canonical_Terms_Metaclass
+)
+
+([othopnea] of  Medical_Conditions_Metaclass
+
+	(PrettyName "othopnea"))
+
+([Pacemaker] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Has Pacemaker"))
+
+([pain] of  Medical_Conditions_Metaclass
+
+	(PrettyName "pain"))
+
+([painful+corns] of  Canonical_Terms_Metaclass
+)
+
+([Pallor+on+elevation] of  Canonical_Terms_Metaclass
+)
+
+([pancreas] of  Medical_Conditions_Metaclass
+)
+
+([Panic+Disorder] of  Medical_Conditions_Metaclass
+)
+
+([patient+history+data] of  Medical_Conditions_Metaclass
+)
+
+([patient%E2%80%99s+footwear] of  Canonical_Terms_Metaclass
+)
+
+([Pedal+pulses+dm] of  Medical_Conditions_Metaclass
+
+	(coding_system "Clinical reminder"))
+
+([penbutolol] of  Medications_Metaclass
+)
+
+([perindopril] of  Medications_Metaclass
+)
+
+([peripheral+neuropathy] of  Medical_Conditions_Metaclass
+
+	(PrettyName "peripheral neuropathy"))
+
+([peripheral+stem+cells] of  Medical_Conditions_Metaclass
+)
+
+([Personality_Disorder] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Personality Disorder"))
+
+([Phosphorus] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([pindolol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([PIOGLITAZONE] of  Medications_Metaclass
+)
+
+([Pitting+edema] of  Canonical_Terms_Metaclass
+)
+
+([PLT] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([PND] of  Medical_Conditions_Metaclass
+
+	(PrettyName "PND"))
+
+([podiatrist] of  Canonical_Terms_Metaclass
+)
+
+([polythiazide] of  Medications_Metaclass
+)
+
+([poor+recognition+of+hypoglycemia] of  Medical_Conditions_Metaclass
+)
+
+([Potassium] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Potassium-Sparing_Diuretics] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([PPG] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "Postprandial plasma glucose (PPG)"))
+
+([prazosin] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Pregnancy] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([primary+care+provider] of  Canonical_Terms_Metaclass
+)
+
+([Procedure_finding] of  Canonical_Terms_Metaclass
+)
+
+([propranolol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([propranolol_SA] of  Medications_Metaclass
+)
+
+([Prostatism_BPH] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "BPH"))
+
+([Proteinuria] of  Canonical_Terms_Metaclass
+)
+
+([Proteinuria+equals+trace+or+above] of  Diagnostic_Term_Metaclass
+
+	(data_source VISTA_data_element)
+	(DiagnosticCriteria [library_Instance_7])
+	(PrettyName "Proteinuria equals trace or above"))
+
+([Psychiatric_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([Psychosis] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Psychosis"))
+
+([psychosocial+problems+that+complicate+management] of  Medical_Conditions_Metaclass
+)
+
+([PTSD] of  Medical_Conditions_Metaclass
+
+	(PrettyName "PTSD"))
+
+([Pulmonary_Function_Studies] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Pulse] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Puncture+wound] of  Diagnostic_Term_Metaclass
+)
+
+([PVD] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([QRS] of  Ordinal-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "QRS"))
+
+([quinapril] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([quinethazone] of  Medications_Metaclass
+)
+
+([ramipril] of  Medications_Metaclass
+)
+
+([rash] of  Medical_Conditions_Metaclass
+
+	(PrettyName "rash"))
+
+([rauwolfia] of  Medications_Metaclass
+)
+
+([rauwolfia+serpentina] of  Medications_Metaclass
+)
+
+([Raynaud%27s+syndrome] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([recurrent+episodes+of+incapacitating+hyperglycemia] of  Medical_Conditions_Metaclass
+)
+
+([recurrent+episodes+of+incapacitating+hypoglycemia] of  Medical_Conditions_Metaclass
+)
+
+([Renal+Diagnosis] of  Medical_Conditions_Metaclass
+)
+
+([Renal+Dialysis] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Renal+disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([renal+function] of  Medical_Conditions_Metaclass
+
+	(PrettyName "renal function"))
+
+([Renal-Urinary_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([Renal_Insufficiency] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Renovascular_Disease] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([REPAGLINIDE] of  Medications_Metaclass
+)
+
+([rescinnamine] of  Medications_Metaclass
+)
+
+([reserpine] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([respiratory+gas+exchange] of  Ordinal-Valued_AtomicTest_Metaclass
+
+	(PrettyName "respiratory gas exchange"))
+
+([Respiratory_Diseases] of  Medical_Conditions_Metaclass
+)
+
+([Retinopathy] of  Medical_Conditions_Metaclass
+
+	(coding_system "ATHENA")
+	(data_source VISTA_data_element))
+
+([Rheumatic_Disease_Complicated_by_Heart_Failure] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Rheumatic Disease and CHF"))
+
+([risk+for+foot+ulcer] of  Medical_Conditions_Metaclass
+)
+
+([Risk+level+dm] of  Ordinal-Valued_AtomicTest_Metaclass
+
+	(code "Clinical reminder"))
+
+([ROSIGLITAZONE] of  Medications_Metaclass
+)
+
+([Schizophrenia] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Schizophrenia"))
+
+([Screening+no+longer+indicated] of  Medical_Conditions_Metaclass
+)
+
+([secondary+prevention+of+atherosclerotic+vascular+disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "secondary prevention of atherosclerotic vascular disease"))
+
+([Secondary_Hypertension] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Secondary hypertension"))
+
+([Sensory+exam+%28foot+dm%29] of  Medical_Conditions_Metaclass
+
+	(coding_system "Clinical reminder"))
+
+([SGOT] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([SGPT] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([SIADH] of  Medical_Conditions_Metaclass
+)
+
+([Signs] of  Canonical_Terms_Metaclass
+)
+
+([Silent+Ischemia] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Silent Ischemia"))
+
+([Sinoatrial+node+dysfunction] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Sinoatrial node dysfunction"))
+
+([sinus+rhythm] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "sinus rhythm"))
+
+([SITAGLIPTIN] of  Medications_Metaclass
+)
+
+([smoking] of  Medical_Conditions_Metaclass
+
+	(PrettyName "smoking"))
+
+([Socio-economic+history] of  Canonical_Terms_Metaclass
+)
+
+([Sodium] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([sotalol] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Spinal_Cord_Injury] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([spironolactone] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Stable+Angina] of  Medical_Conditions_Metaclass
+)
+
+([structural+heart+disease] of  Medical_Conditions_Metaclass
+
+	(PrettyName "structural heart disease"))
+
+([Substance_Abuse] of  Medical_Conditions_Metaclass
+)
+
+([Suicidality] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Suicidality"))
+
+([SULFONYLUREAS] of  Medications_Metaclass
+)
+
+([SULFONYLUREAS_1STGEN] of  Medications_Metaclass
+)
+
+([SULFONYLUREAS_2NDGEN] of  Medications_Metaclass
+)
+
+([supraventricular+tachyarrhythmias] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "supraventricular tachyarrhythmias"))
+
+([sustained+release+metoprolol+succinate] of  Medications_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "sustained release metoprolol succinate"))
+
+([sustained+release+metoprolol+tartrate] of  Medications_Metaclass
+)
+
+([SWELLING+OF+LIPS] of  Medical_Conditions_Metaclass
+)
+
+([Symptoms] of  Canonical_Terms_Metaclass
+)
+
+([Systemic+infection] of  Diagnostic_Term_Metaclass
+)
+
+([Systemic+or+Ascending+%28Worsening%29+Infection] of  Medical_Conditions_Metaclass
+)
+
+([Systolic_BP] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([tacrolimus] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([tamsulosin] of  Medications_Metaclass
+)
+
+([target_HBA1c] of  Canonical_Terms_Metaclass
+)
+
+([Target_parameters] of  Canonical_Terms_Metaclass
+)
+
+([telmisartan] of  Medications_Metaclass
+)
+
+([terazosin] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Thiazide_Diuretics] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([THIAZOLIDINEDIONES] of  Medications_Metaclass
+)
+
+([thyroid+disorders] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "thyroid disorders"))
+
+([Tibialis+posterior+pulses] of  Diagnostic_Term_Metaclass
+)
+
+([timolol] of  Medications_Metaclass
+)
+
+([Tinea+pedis] of  Diagnostic_Term_Metaclass
+)
+
+([Tobacco_Use] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([TOLAZAMIDE] of  Medications_Metaclass
+)
+
+([TOLBUTAMIDE] of  Medications_Metaclass
+)
+
+([torsemide] of  Medications_Metaclass
+)
+
+([Total_Bilirubin] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Total_Cholesterol] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([trandolapril] of  Medications_Metaclass
+)
+
+([Transient+cerebral+ischemia] of  Medical_Conditions_Metaclass
+)
+
+([Transplant+recipients] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
+([trauma] of  Medical_Conditions_Metaclass
+)
+
+([trauma+to+lower+extremity] of  Diagnostic_Term_Metaclass
+
+	(coding_system "ATHENA"))
+
+([Traumatic_Disorders] of  Medical_Conditions_Metaclass
+)
+
+([triamterene] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([trichlormethiazide] of  Medications_Metaclass
+)
+
+([Triglycerides] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([TROGLITAZONE] of  Medications_Metaclass
+)
+
+([uncomplicated+nail+trimming] of  Medical_Conditions_Metaclass
+)
+
+([uncontrolled+htn] of  Diagnostic_Term_Metaclass
+)
+
+([Unknown_Race] of  Canonical_Terms_Metaclass
+)
+
+([Unspecified+AV+Block] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "Unspecified AV Block"))
+
+([Uric_Acid] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Urinalysis] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Urine_Alb%2Fcreat_Ratio_24h] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Urine_ALB%2FCREAT_RATIO_spot] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([UrineAlbumin_24H] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([UrineAlbumin_SPOT] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([UrineProtein_12h] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([UrineProtein_24h] of  Interval-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([UrineProtein_Qualitative] of  Ordinal-Valued_AtomicTest_Metaclass
+
+	(data_source VISTA_data_element))
+
+([UrineProtein_Spot] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([V60.0] of  Medical_Conditions_Metaclass
+)
+
+([valsartan] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([valvular+regurgitation] of  Medical_Conditions_Metaclass
+
+	(PrettyName "valvular regurgitation"))
+
+([valvular+stenosis] of  Medical_Conditions_Metaclass
+
+	(PrettyName "valvular stenosis"))
+
+([vascular+specialist] of  Canonical_Terms_Metaclass
+)
+
+([ventricular+fibrillation] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element)
+	(PrettyName "ventricular fibrillation"))
+
+([ventricular+rate] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "ventricular rate"))
+
+([verapamil] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([verapamil_SA] of  Medications_Metaclass
+
+	(data_source VISTA_data_element))
+
+([Visual+inspection+%28foot+dm%29] of  Canonical_Terms_Metaclass
+
+	(coding_system "Clinical reminder"))
+
+([Visual_disturbance] of  Medical_Conditions_Metaclass
+)
+
+([Volume+overload] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Volume overload"))
+
+([vomiting] of  Medical_Conditions_Metaclass
+)
+
+([WBC] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Weight] of  Interval-Valued_AtomicTest_Metaclass
+)
+
+([Weight+loss] of  Canonical_Terms_Metaclass
+)
+
+([White_Non-Hispanic] of  Canonical_Terms_Metaclass
+)

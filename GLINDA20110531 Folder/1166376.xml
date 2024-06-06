@@ -1,0 +1,300 @@
+<patientdata>
+<patient name="1166376">
+<meds>
+<item>
+	<field1 label="Drug">amiodarone</field1>
+	<field2 label="Daily Dose">150</field2>
+	<start>Thu Mar 28 00:00:00 PST 1957</start>
+</item>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">81</field2>
+	<start>Mon Jul 06 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Drug">furosemide</field1>
+	<field2 label="Daily Dose">80</field2>
+	<start>Wed Apr 29 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.01</field2>
+	<start>Mon Mar 30 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0</field2>
+	<start>Mon Mar 30 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0</field2>
+	<start>Mon Mar 30 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Drug">Insulin</field1>
+	<field2 label="Daily Dose">0.04</field2>
+	<start>Mon Mar 30 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Drug">labetalol</field1>
+	<field2 label="Daily Dose">800</field2>
+	<start>Sun May 24 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Drug">lisinopril</field1>
+	<field2 label="Daily Dose">40</field2>
+	<start>Wed May 20 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Drug">lisinopril</field1>
+	<field2 label="Daily Dose">80</field2>
+	<start>Wed May 20 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Drug">timolol</field1>
+	<field2 label="Daily Dose">1</field2>
+	<start>Mon Sep 29 00:00:00 PST 1958</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Atrial_Tachycardia</field1>
+	<start>Sat Apr 18 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Dx">cardiac arrest</field1>
+	<start>Tue Jul 28 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Dx">CKD</field1>
+	<start>Tue Mar 31 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Dx">edema</field1>
+	<start>Fri Apr 17 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Fri Apr 10 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Thu May 07 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Dx">Intracranial hemorrhage</field1>
+	<start>Mon Jul 06 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Dx">Liver_Disease</field1>
+	<start>Fri Mar 20 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Dx">Myocardial_Infarction</field1>
+	<start>Fri Mar 20 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Dx">Renal disease</field1>
+	<start>Sat May 02 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Dx">Renal_Insufficiency</field1>
+	<start>Sat May 02 00:00:00 PDT 1959</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">62</field2>
+	<start>Tue Jul 28 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">63</field2>
+	<start>Tue Jul 28 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">94</field2>
+	<start>Tue Jul 28 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">105</field2>
+	<start>Tue Jul 28 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">137.3</field2>
+	<start>Tue Jul 28 00:00:00 PDT 1959</start>
+</item>
+</clinicalSigns>
+<adr>
+<item>
+	<field1 label="ADR">aspirin</field1>
+	<start>Sun Dec 07 00:00:00 PST 1958</start>
+</item>
+<item>
+	<field1 label="ADR">aspirin</field1>
+	<start>Sun Dec 07 00:00:00 PST 1958</start>
+</item>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">2750</field2>
+	<start>Sun May 17 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">77</field2>
+	<start>Sun May 17 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">B 12</field1>
+	<field2 label="Value">793</field2>
+	<start>Sat Mar 21 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">9492</field2>
+	<start>Fri Apr 10 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">7</field2>
+	<start>Fri May 22 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">8.7</field2>
+	<start>Fri May 22 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">97</field2>
+	<start>Fri May 22 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">111</field2>
+	<start>Wed Apr 08 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">0.4</field2>
+	<start>Fri May 22 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine_Clearance</field1>
+	<field2 label="Value">84</field2>
+	<start>Wed Aug 21 00:00:00 PDT 1957</start>
+</item>
+<item>
+	<field1 label="Lab">Glycosylated_Hemoglobin</field1>
+	<field2 label="Value">5.7</field2>
+	<start>Wed Mar 18 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">HbA1C</field1>
+	<field2 label="Value">5.7</field2>
+	<start>Wed Mar 18 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">42.7</field2>
+	<start>Mon May 18 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">30</field2>
+	<start>Wed Apr 08 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Hepatitis_B_Surface_Antigen</field1>
+	<field2 label="Value">Negative</field2>
+	<start>Sun Aug 18 00:00:00 PDT 1957</start>
+</item>
+<item>
+	<field1 label="Lab">Hepatitis_C_Status</field1>
+	<field2 label="Value">Negative</field2>
+	<start>Sun Aug 18 00:00:00 PDT 1957</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">14.6</field2>
+	<start>Mon May 18 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">63</field2>
+	<start>Wed Apr 08 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Phosphorus</field1>
+	<field2 label="Value">3.5</field2>
+	<start>Fri May 22 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">280</field2>
+	<start>Sun May 17 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">4.1</field2>
+	<start>Fri May 22 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">30</field2>
+	<start>Sun May 17 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">44</field2>
+	<start>Sun May 17 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">140</field2>
+	<start>Fri May 22 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.5</field2>
+	<start>Sun May 17 00:00:00 PDT 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">111</field2>
+	<start>Wed Apr 08 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">140</field2>
+	<start>Wed Apr 08 00:00:00 PST 1959</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">8.2</field2>
+	<start>Sun May 17 00:00:00 PDT 1959</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">59</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">White_Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Female</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

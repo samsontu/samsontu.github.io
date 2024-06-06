@@ -1,0 +1,992 @@
+<html>
+
+<head>
+<title> Breast Cancer Treatment Protocol in GLIF2</title>
+</head>
+
+<body>
+
+<h1 align="center">Breast Cancer Treatment Protocol in GLIF2</h1>
+
+<pre>
+// Stanford Intermed/EON representation
+
+// Version: 26 AUG 1996
+// Revised 25 NOV 1997
+
+//_____________________________________________________________________________
+
+Guidelines instance_00001 
+{
+   guidelines = SEQUENCE 1 {(Guideline instance_00002);};
+};
+
+
+Guideline instance_00002 
+{
+   title = &quot;A Phase II Study of Conventional Adjuvant Chemotherapy versus High Dose Chemotherapy and Autologous Bone Marrow Transplantation or Stem Cell Transplantation&quot;;
+   steps = SEQUENCE 34 {(Action_Step instance_00008);
+		(Action_Step instance_00013);
+		(Action_Step instance_00016);
+		(Condition_Step instance_00019);
+		(Condition_Step instance_00020);
+		(Action_Step instance_00022);
+		(Condition_Step instance_00024);
+		(Condition_Step instance_00025);
+		(Branch_Step instance_00026);
+		(Branch_Step instance_00027);
+		(Action_Step instance_00033);
+		(Branch_Step instance_00062);
+		(Action_Step instance_00063);
+		(Action_Step instance_00064);
+		(Synchronization_Step instance_00065);
+		(Action_Step instance_00066);
+		(Action_Step instance_00067);
+		(Synchronization_Step instance_00069);
+		(Condition_Step instance_00104);
+		(Condition_Step instance_00128);
+		(Condition_Step instance_00147);
+		(Condition_Step instance_00149);
+		(Action_Step instance_00151);
+		(Branch_Step instance_00152);
+		(Condition_Step instance_00169);
+		(Action_Step instance_00170);
+		(Condition_Step instance_00175);
+		(Condition_Step instance_00177);
+		(Condition_Step instance_00179);
+		(Condition_Step instance_00180);
+		(Action_Step instance_00183);
+		(Branch_Step instance_00185);
+		(Branch_Step instance_00186);
+		(Action_Step instance_00187);};
+   eligibility_criteria = SEQUENCE 7 {
+       Presence_Criterion instance_00051 
+       {
+          criterion_id = &quot;1&quot;;
+          class = patient_condition;
+          presence = true;
+          name = &quot;Epithelial_breast_cancer&quot;;
+       };
+       Simple_Criterion instance_00053 
+       {
+          criterion_id = &quot;2&quot;;
+          assume_if_no_value = no_assumption;
+          operator = =;
+          name = &quot;Number of involved lymph node &gt;= 10&quot;;
+          term = &quot;10&quot;;
+          valid_window = 
+              Definite_Duration instance_00054 
+              {
+                 time_unit = day;
+                 duration = &quot;14&quot;;
+              };
+          parameter = &quot;number_of_involved_lymph_node &quot;;
+          assume_if_prior_value = stable_satisfied;
+       };
+       Simple_Criterion instance_00120 
+       {
+          assume_if_no_value = assume_satisfied;
+          operator = =;
+          term = &quot;15&quot;;
+          name = &quot;age &gt;= 15&quot;;
+          assume_if_prior_value = stable_satisfied;
+          parameter = &quot;age&quot;;
+       };
+       Simple_Criterion instance_00121 
+       {
+          assume_if_no_value = no_assumption;
+          operator = =;
+          term = &quot;60&quot;;
+          name = &quot;age <= 60"; assume_if_prior_value="no_assumption;" parameter="age" ; }; Or_Criterion instance_00122 { children="SEQUENCE" 2 { Simple_Criterion instance_00123 { assume_if_no_value="no_assumption;" operator="=;" term="0" ; name="ECOG performace status = 0" ; assume_if_prior_value="no_assumption;" parameter="ECOG_performance_status" ; }; Simple_Criterion instance_00124 { assume_if_no_value="no_assumption;" operator="=;" term="1" ; name="ECOG performance status = 1" ; assume_if_prior_value="no_assumption;" parameter="ECOG_performance_status " ; };}; name="ECOG performance status = 0 or 1" ; }; Simple_Criterion instance_00125 { assume_if_no_value="no_assumption;" operator>=;
+          term = &quot;4000&quot;;
+          name = &quot;WBC &gt;= 4000&quot;;
+          valid_window = 
+              Definite_Duration instance_00146 
+              {
+                 time_unit = day;
+                 duration = &quot;14&quot;;
+              };
+          assume_if_prior_value = stable_satisfied;
+          parameter = &quot;WBC&quot;;
+       };
+       Simple_Criterion instance_00126 
+       {
+          assume_if_no_value = no_assumption;
+          operator = &gt;=;
+          term = &quot;100000&quot;;
+          name = &quot;platelets &gt;= 100000&quot;;
+          valid_window = (Definite_Duration instance_00054);
+          assume_if_prior_value = stable_satisfied;
+          parameter = &quot;Platelet_Count&quot;;
+       };};
+   authors = SEQUENCE 1 {
+       Physician instance_00006 
+       {
+          name = &quot;Martin S. Tallman M.D.&quot;;
+       };};
+   first_step = (Branch_Step instance_00152);
+   name = &quot;EST2190&quot;;
+   version = &quot;January 12, 1995&quot;;
+};
+
+
+Action_Step instance_00003 
+{
+   next_step = (Condition_Step instance_00041);
+   action = (Action_Spec instance_00004);
+   name = &quot;day 1 adriamycin&quot;;
+};
+
+
+Action_Spec instance_00004 
+{
+   description = 
+    &quot;drug_frequency = qd;
+     drug_name = Adriamycin;
+     standard_dose = 30;
+     drug_route = iv;
+     dose_unit = mg/m2;&quot;;
+   name = &quot;adriamycin prescription&quot;;
+};
+
+
+
+
+Action_Step instance_00008 
+{
+   next_step = (Action_Step instance_00013);
+   preference = required;
+   action = (Action_Spec instance_00009);
+   name = &quot;stratification&quot;;
+};
+
+
+Action_Spec instance_00009 
+{
+   name = &quot;Collect stratfication data&quot;;
+   patient_data = SEQUENCE 3 {
+       Patient_Data instance_00010 
+       {
+          type = required;
+          name = &quot;ER_Status&quot;;
+          possible_values = &quot;positive negative&quot;;
+       };
+       Patient_Data instance_00011 
+       {
+          type = required;
+          name = &quot;Age&quot;;
+       };
+       Patient_Data instance_00012 
+       {
+          type = required;
+          name = &quot;Menopausal_Status&quot;;
+          possible_values = &quot;Premenopausal Postmenopausal&quot;;
+       };};
+};
+
+
+
+
+
+
+
+
+Action_Step instance_00013 
+{
+   next_step = (Condition_Step instance_00147);
+   preference = required;
+   action = (Action_Spec instance_00014);
+   name = &quot;randomization&quot;;
+};
+
+
+Action_Spec instance_00014 
+{
+   intention = &quot;radomize patients 50:50 to one of two arms of treatment protocol&quot;;
+   name = &quot;assign randomization arm&quot;;
+   patient_data = SEQUENCE 1 {
+       Patient_Data instance_00015 
+       {
+          type = required;
+          name = &quot;arm&quot;;
+          possible_values = &quot;A B&quot;;
+       };};
+};
+
+
+
+
+Action_Step instance_00016 
+{
+   next_step = (Condition_Step instance_00020);
+   preference = required;
+   action = (Action_Spec instance_00131);
+   name = &quot;CAF step&quot;;
+   subguideline = (Guideline instance_00017);
+};
+
+
+Guideline instance_00017 
+{
+   steps = SEQUENCE 8 {(Action_Step instance_00003);
+		(Branch_Step instance_00034);
+		(Action_Step instance_00018);
+		(Action_Step instance_00035);
+		(Condition_Step instance_00041);
+		(Condition_Step instance_00042);
+		(Action_Step instance_00043);
+		(Action_Step instance_00044);};
+   first_step = (Branch_Step instance_00034);
+   name = &quot;CAF&quot;;
+};
+
+
+Action_Step instance_00018 
+{
+   preference = required;
+   action = (Action_Spec instance_00038);
+   name = &quot;cyclophosphamide x 14days&quot;;
+};
+
+
+Condition_Step instance_00019 
+{
+   destination = (Branch_Step instance_00027);
+   otherwise = (Action_Step instance_00016);
+   condition = 
+       Boolean_Criterion instance_00058 
+       {
+          boolean_condition = &quot;(NOT_EXISTS procedure_adm p1, procedure_adm p2 where p1.name = 'randomization' and p2.name = 'CAF' when p2 before p1) and (6 = SELECTsum(p1.name) from procedure q1, procedure q2 where q1.name = 'CAF' and q2.name = 'randomization' when q2 before q1) &quot;;
+          name = &quot;check no previous CAF and 6 post-randomization CAF&quot;;
+       };
+   name = &quot;no previous CAF and 6 post-randomization CAF&quot;;
+};
+
+
+Condition_Step instance_00020 
+{
+   destination = (Branch_Step instance_00026);
+   otherwise = (Condition_Step instance_00019);
+   condition = 
+       Boolean_Criterion instance_00057 
+       {
+          boolean_condition = &quot;(EXISTS procedure_adm p1, procedure_adm p2 where p1.name = 'randomization' and p2.name = 'CAF' when p2 before p1) and (5 = SELECTsum(p1.name) from procedure q1, procedure q2 where q1.name = 'CAF' and q2.name = 'randomization' when q2 before q1) &quot;;
+          name = &quot;check previous CAF and 5 post-randomization CAF&quot;;
+       };
+   name = &quot;previous CAF and 5 post-randomization CAF&quot;;
+};
+
+
+Action_Step instance_00022 
+{
+   next_step = (Synchronization_Step instance_00069);
+   preference = required;
+   subguideline = (Guideline instance_00070);
+   name = &quot;arm B&quot;;
+};
+
+
+Synchronization_Step instance_00023 
+{
+   continuation = repeatable;
+   next_steps = SEQUENCE 1 {(Action_Step instance_00033);};
+   name = &quot;complete therapy&quot;;
+};
+
+
+Condition_Step instance_00024 
+{
+   destination = (Branch_Step instance_00062);
+   name = &quot;randomized to A?&quot;;
+};
+
+
+Condition_Step instance_00025 
+{
+   destination = (Condition_Step instance_00149);
+   condition = 
+       Boolean_Criterion instance_00100 
+       {
+          boolean_condition = &quot;exists patient_condition where name = 'arm' and value = 'B'&quot;;
+          name = &quot;arm = B&quot;;
+       };
+   name = &quot;randomized to B?&quot;;
+};
+
+
+Branch_Step instance_00026 
+{
+   selection_method = all_of;
+   branches = SEQUENCE 2 {(Condition_Step instance_00024);
+		(Condition_Step instance_00025);};
+   order_constraint = parallel;
+   next_steps = (Condition_Step instance_00024);
+   name = &quot;branch 1&quot;;
+};
+
+
+Branch_Step instance_00027 
+{
+   selection_method = all_of;
+   branches = SEQUENCE 2 {(Condition_Step instance_00025);
+		(Condition_Step instance_00024);};
+   order_constraint = parallel;
+   next_steps = (Condition_Step instance_00025);
+   name = &quot;branch 2&quot;;
+};
+
+
+Action_Step instance_00033 
+{
+   name = &quot;observation and follow-up&quot;;
+};
+
+
+Branch_Step instance_00034 
+{
+   selection_method = all_of;
+   branches = SEQUENCE 3 {(Action_Step instance_00018);
+		(Action_Step instance_00003);
+		(Action_Step instance_00035);};
+   order_constraint = parallel;
+   name = &quot;day 1&quot;;
+   next_steps = (Action_Step instance_00018);
+};
+
+
+Action_Step instance_00035 
+{
+   next_step = (Condition_Step instance_00042);
+   preference = required;
+   action = (Action_Spec instance_00036);
+   name = &quot;day 1 flurouracil&quot;;
+};
+
+
+Action_Spec instance_00036 
+{ description =
+   &quot;drug_frequency = qd;
+    drug_name = flurouracil;
+    standard_dose = 500;
+    drug_route = iv;
+    dose_unit = mg/m2;&quot;;
+   name = &quot;flurouracil prescription&quot;;
+};
+
+
+Action_Spec instance_00038 
+{ description = 
+   &quot;drug_frequency = qd;
+    drug_duration = 14 days;
+    drug_administration = Rounded to the nearest 25 mg. Doses of CTX are administered as single daily dose if possible, and doses of 75 or 175 will be administered as alternating doses of 50 and 100mg or 150 and 200 mg, respectively.;
+    drug_name = cyclophosphamide;
+    standard_dose = 100;
+    drug_route = po;
+    dose_unit = mg/m2;&quot;;
+   name = &quot;cyclophosphamide prescription&quot;;
+};
+
+
+Condition_Step instance_00041 
+{
+   destination = (Action_Step instance_00043);
+   condition = 
+       Boolean_Criterion instance_00098 
+       {
+          current_time_variable = &quot;?current_time&quot;;
+          explicit_time_boolean_condition = &quot;datediff(?current_time, (select START_TIME from procedure where name = 'CAF'), day) = 8&quot;;
+          name = &quot;day 8 of CAF&quot;;
+       };
+   name = &quot;day 8&quot;;
+};
+
+
+Condition_Step instance_00042 
+{
+   destination = (Action_Step instance_00044);
+   condition = (Boolean_Criterion instance_00098);
+   name = &quot;day 8&quot;;
+};
+
+
+Action_Step instance_00043 
+{
+   preference = required;
+   action = (Action_Spec instance_00004);
+   name = &quot;day 8 adriamycin step&quot;;
+};
+
+
+Action_Step instance_00044 
+{
+   preference = required;
+   action = (Action_Spec instance_00036);
+   name = &quot;day 8 flurouracil&quot;;
+};
+
+
+Branch_Step instance_00062 
+{
+   selection_method = zero_or_more_of;
+   branches = SEQUENCE 2 {(Action_Step instance_00063);
+		(Action_Step instance_00064);};
+   order_constraint = parallel;
+   next_steps = (Action_Step instance_00063);
+   name = &quot;branch 3&quot;;
+};
+
+
+Action_Step instance_00063 
+{
+   next_step = (Synchronization_Step instance_00065);
+   preference = recommended;
+   action = (Action_Spec instance_00101);
+   name = &quot;ABM harvest&quot;;
+};
+
+
+Action_Step instance_00064 
+{
+   next_step = (Synchronization_Step instance_00065);
+   preference = recommended;
+   action = (Action_Spec instance_00102);
+   name = &quot;PBSC harvest&quot;;
+};
+
+
+Synchronization_Step instance_00065 
+{
+   continuation = wait_for_all;
+   next_steps = SEQUENCE 1 {(Synchronization_Step instance_00069);};
+   name = &quot;synchronize 1&quot;;
+};
+
+
+Action_Step instance_00066 
+{
+   next_step = (Action_Step instance_00033);
+   preference = required;
+   action = (Action_Spec instance_00127);
+   name = &quot;radiotherapy step&quot;;
+};
+
+
+Action_Step instance_00067 
+{
+   preference = required;
+   action = (Action_Spec instance_00103);
+   name = &quot;antiestrogen therapy&quot;;
+};
+
+
+Synchronization_Step instance_00068 
+{
+   continuation = wait_for_all;
+   name = &quot;synchronize 5&quot;;
+};
+
+
+Synchronization_Step instance_00069 
+{
+   continuation = repeatable;
+   next_steps = SEQUENCE 2 {(Condition_Step instance_00104);
+		(Branch_Step instance_00185);};
+   name = &quot;synchronize 2&quot;;
+};
+
+
+Guideline instance_00070 
+{
+   steps = SEQUENCE 20 {(Action_Step instance_00077);
+		(Action_Step instance_00078);
+		(Synchronization_Step instance_00080);
+		(Branch_Step instance_00081);
+		(Action_Step instance_00082);
+		(Action_Step instance_00087);
+		(Action_Step instance_00088);
+		(Synchronization_Step instance_00068);
+		(Action_Step instance_00129);
+		(Branch_Step instance_00133);
+		(Action_Step instance_00085);
+		(Branch_Step instance_00096);
+		(Condition_Step instance_00072);
+		(Condition_Step instance_00073);
+		(Action_Step instance_00075);
+		(Action_Step instance_00076);
+		(Action_Step instance_00137);
+		(Branch_Step instance_00141);
+		(Branch_Step instance_00142);
+		(Condition_Step instance_00143);};
+   eligibility_criteria = SEQUENCE 1 {
+       Simple_Criterion instance_00060 
+       {
+          assume_if_no_value = no_assumption;
+          operator = eq;
+          term = &quot;B&quot;;
+          name = &quot;randomized to Arm B&quot;;
+          assume_if_prior_value = value_is_immutable;
+          parameter = &quot;arm&quot;;
+       };};
+   first_step = (Branch_Step instance_00071);
+   name = &quot;arm B guideline&quot;;
+};
+
+
+Branch_Step instance_00071 
+{
+   selection_method = one_of;
+   branches = SEQUENCE 3 {(Condition_Step instance_00072);
+		(Condition_Step instance_00073);
+		(Condition_Step instance_00074);};
+   order_constraint = parallel;
+   next_steps = (Condition_Step instance_00074);
+   name = &quot;branch 4&quot;;
+};
+
+
+Condition_Step instance_00072 
+{
+   destination = (Action_Step instance_00088);
+   condition = 
+       Boolean_Criterion instance_00140 
+       {
+          boolean_condition = &quot;exists procedure where name = 'Bone_Marrow_Harvest'&quot;;
+          name = &quot;bone marrow previously harvested&quot;;
+       };
+   name = &quot;previous ABM harvest?&quot;;
+};
+
+
+Condition_Step instance_00073 
+{
+   destination = (Action_Step instance_00087);
+   condition = 
+       Boolean_Criterion instance_00110 
+       {
+          boolean_condition = &quot;exists procedure where name = 'PBSC_Harvest'&quot;;
+          name = &quot;PBSC previously harvested&quot;;
+       };
+   name = &quot;previousl PBSC harvest?&quot;;
+};
+
+
+Condition_Step instance_00074 
+{
+   destination = (Branch_Step instance_00081);
+   condition = 
+       Boolean_Criterion instance_00111 
+       {
+          boolean_condition = &quot;exists patient_condition where name = 'arm' and value = 'H'&quot;;
+          name = &quot;arm H (both BMH and PBSC)&quot;;
+       };
+   name = &quot;both BMH and PBSC?&quot;;
+};
+
+
+Action_Step instance_00075 
+{
+   next_step = (Synchronization_Step instance_00068);
+   preference = recommended;
+   action = (Action_Spec instance_00191);
+   name = &quot;rGM-CSF step&quot;;
+};
+
+
+Action_Step instance_00076 
+{
+   next_step = (Synchronization_Step instance_00068);
+   preference = recommended;
+   action = (Action_Spec instance_00192);
+   name = &quot;G-CSF&quot;;
+};
+
+
+Action_Step instance_00077 
+{
+   next_step = (Synchronization_Step instance_00080);
+   action = (Action_Spec instance_00101);
+   name = &quot;ABM havest step&quot;;
+};
+
+
+Action_Step instance_00078 
+{
+   next_step = (Synchronization_Step instance_00080);
+   preference = required;
+   action = (Action_Spec instance_00102);
+   name = &quot;PBSC harvest step&quot;;
+};
+
+
+Synchronization_Step instance_00080 
+{
+   continuation = wait_for_all;
+   next_steps = SEQUENCE 1 {(Condition_Step instance_00143);};
+   name = &quot;synchronize 3&quot;;
+};
+
+
+Branch_Step instance_00081 
+{
+   selection_method = one_or_more_of;
+   branches = SEQUENCE 2 {(Action_Step instance_00077);
+		(Action_Step instance_00078);};
+   order_constraint = parallel;
+   name = &quot;branch 5&quot;;
+   next_steps = (Action_Step instance_00077);
+};
+
+
+Action_Step instance_00082 
+{
+   next_step = (Branch_Step instance_00142);
+   subguideline = (Guideline instance_00115);
+   name = &quot;high-dose chemotherapy&quot;;
+};
+
+
+Action_Step instance_00085 
+{
+   next_step = (Synchronization_Step instance_00068);
+   preference = required;
+   action = (Action_Spec instance_00134);
+   name = &quot;leucovorin step&quot;;
+};
+
+
+Action_Step instance_00087 
+{
+   next_step = (Synchronization_Step instance_00068);
+   action = (Action_Spec instance_00107);
+   name = &quot;PBSC Infusion Step&quot;;
+};
+
+
+Action_Step instance_00088 
+{
+   next_step = (Synchronization_Step instance_00068);
+   action = (Action_Spec instance_00106);
+   name = &quot;ABM Infusion Step&quot;;
+};
+
+
+Branch_Step instance_00089 
+{
+   selection_method = all_of;
+   branches = SEQUENCE 3 {(Action_Step instance_00114);
+		(Action_Step instance_00113);
+		(Action_Step instance_00188);};
+   order_constraint = parallel;
+   next_steps = (Action_Step instance_00090);
+   name = &quot;branch 7&quot;;
+};
+
+
+Action_Step instance_00090 
+{
+   next_step = (Synchronization_Step instance_00092);
+   preference = required;
+   name = &quot;Radiotherapy Step&quot;;
+};
+
+
+Action_Step instance_00091 
+{
+   next_step = (Synchronization_Step instance_00092);
+   name = &quot;Tamoxifen Step&quot;;
+};
+
+
+Synchronization_Step instance_00092 
+{
+   continuation = repeatable;
+   name = &quot;Synchronize 6&quot;;
+};
+
+
+Branch_Step instance_00096 
+{
+   selection_method = one_of;
+   branches = SEQUENCE 2 {(Action_Step instance_00075);
+		(Action_Step instance_00076);};
+   order_constraint = any_order;
+   name = &quot;branch 9&quot;;
+};
+
+
+
+
+
+
+Action_Spec instance_00101 
+{
+   description = &quot;A minimum harvest of 10 to the 8th nucleated cells/kg of body weight is required. &quot;;
+   name = &quot;harvest bone marrow&quot;;
+};
+
+
+Action_Spec instance_00102 
+{
+   description = &quot;At least 7x10 to the 9th mononuclear cells/kg with at lest 5x10 to the 4th CFU-GM/kg should be harvested. Cytokine (but not chemotherapy) priming is permitted.&quot;;
+   name = &quot;harvest PBSC&quot;;
+};
+
+
+Action_Spec instance_00103 
+{description = &quot;
+
+   &quot;drug_frequency = qd;
+    drug_duration = 60 months;
+    drug_name = tamoxifen;
+    standard_dose = 20;
+    drug_route = po;
+    dose_unit = mg;&quot;;
+   name = &quot;tamoxifen prescription&quot;;
+};
+
+
+Condition_Step instance_00104 
+{
+   destination = (Branch_Step instance_00186);
+   otherwise = (Synchronization_Step instance_00023);
+   condition = 
+       Boolean_Criterion instance_00105 
+       {
+          boolean_condition = &quot;exists patient_condition where (name = 'ER_status' or PgR_status') and value = 'positive'&quot;;
+          name = &quot;ER+ or PgR+?&quot;;
+       };
+   name = &quot;ER+ or PgR+ patient&quot;;
+};
+
+
+
+
+Action_Spec instance_00106 
+{
+   description = &quot;At least 10 to the eighth nucleated bone marrow cells/kg as rapidly as possible 48-72 hours after completion of chemotherapy&quot;;
+   name = &quot;bone marrow infusion&quot;;
+};
+
+
+Action_Spec instance_00107 
+{
+   description = &quot;At least 10 to the ninth nucleated PBSC thawed and infused as rapidly as possible 48-72 hours after completion of chemotherapy&quot;;
+   name = &quot;peripheral blood stem cell infusion&quot;;
+};
+
+
+
+
+
+
+
+
+Action_Step instance_00113 
+{
+   preference = required;
+   action = (Action_Spec instance_00119);
+   name = &quot;high-dose thioTEPA step&quot;;
+};
+
+
+Action_Step instance_00114 
+{
+   next_step = (Synchronization_Step instance_00190);
+   preference = required;
+   action = (Action_Spec instance_00117);
+   name = &quot;high-dose cyclophosphamide&quot;;
+};
+
+
+Guideline instance_00115 
+{
+   steps = SEQUENCE 5 {(Action_Step instance_00114);
+		(Action_Step instance_00113);
+		(Branch_Step instance_00089);
+		(Action_Step instance_00188);
+		(Synchronization_Step instance_00190);};
+   name = &quot;high-dose chemotherapy in EST2190&quot;;
+};
+
+
+Action_Spec instance_00117 
+{
+description = 
+
+   &quot;drug_duration = 4 days;
+    drug_administration = continuous iv infusion over 96 hours, 1500 mg/sqm/day in 250-500 ml D5W, beginning on day -6;
+    drug_name = cyclophosphamide ;
+    standard_dose = 6000;
+    drug_route = iv;
+    dose_unit = mg/m2;&quot;
+   name = &quot;high-dose cyclophosphamide prescription&quot;;
+};
+
+Action_Spec instance_00119 
+{
+description = 
+
+   &quot;drug_frequency = qd;
+    drug_duration = 4 days;
+    drug_administration = continous iv infusion over 96 hours beginning on day -6 (200 mg/sqm/day in 500 ml D5W);
+   drug_name = thioTEPA;
+   standard_dose = 800;
+   drug_route = iv;
+   dose_unit = mg/m2;&quot;;
+   name = &quot;thioTEPA prescription&quot;;
+};
+
+Action_Spec instance_00127 
+{
+   description = &quot;5000 cGy in 25 daily fractions of 200 cGy, 5 days/week, over 5 weeks. Irradiation of remaining breast tissue (lumpectomy patients) or chest wall (mastectomy patients) plus regional lymphatics using megavoltage equipment with peak photon energies of nomore than 6 MV and electron boosts with energies of 6-9 MeV as appropriate (other text not included)&quot;;
+   name = &quot;radiotherapy&quot;;
+};
+
+
+Condition_Step instance_00128 
+{
+   destination = (Action_Step instance_00022);
+   otherwise = (Action_Step instance_00033);
+   condition = 
+       Boolean_Criterion instance_00109 
+       {
+          boolean_condition = &quot;(exists lab_result where parameter = 'Neutrophil_Count' and value &gt; 1200) and (exists lab_result where parameter = 'Platelet_Count' and value &gt; 100000) and (exists patient_condition where name = 'bone_marrow_normocellar' and value = 25 and unit = \&quot;%\&quot;) and (exists patient_condition where name = 'bone_marrow_tumor_free' and value = 'true')&quot;;
+          name = &quot;marrow harvest condition&quot;;
+       };
+   name = &quot;satisfy ABM harvest conditions?&quot;;
+};
+
+
+Action_Step instance_00129 
+{
+   next_step = (Synchronization_Step instance_00068);
+   preference = required;
+   action = (Action_Spec instance_00136);
+   name = &quot;tmp/smz step&quot;;
+};
+
+
+Action_Spec instance_00131 
+{
+   name = &quot;CAF&quot;;
+};
+
+
+Branch_Step instance_00133 
+{
+   selection_method = all_of;
+   branches = SEQUENCE 4 {(Action_Step instance_00082);
+		(Action_Step instance_00129);
+		(Action_Step instance_00085);
+		(Action_Step instance_00137);};
+   order_constraint = parallel;
+   name = &quot;branch 8&quot;;
+};
+
+
+Action_Spec instance_00134 
+{
+description = 
+
+   &quot;drug_frequency = qd;
+    drug_duration = 98 days;
+    drug_name = leucovorin;
+    standard_dose = 5;
+    drug_route = po;
+    dose_unit = mg;&quot;;
+   name = &quot;leucovorin prescription&quot;;
+};
+
+Action_Spec instance_00136 
+{
+  description =
+   &quot;drug_frequency = bid;
+    drug_name = tmp/smz ;
+    drug_duration =98 days;
+    standard_dose = 1;
+    drug_route = po;
+    dose_unit = ds_tablet;&quot;;
+   name = &quot;tmp/smz prescription&quot;;
+};
+
+
+Action_Step instance_00137 
+{
+   next_step = (Synchronization_Step instance_00068);
+   preference = required;
+   action = (Action_Spec instance_00138);
+   name = &quot;acyclovir step&quot;;
+};
+
+
+Action_Spec instance_00138 
+{
+  description = 
+   &quot;drug_frequency = q8h;
+    drug_duration = 20 days;
+    drug_name = acyclovir;
+    standard_dose = 250;
+    drug_route = iv;
+    dose_unit = mg/m2;&quot;;
+   name = &quot;acyclovir prescription&quot;;
+};
+
+
+Branch_Step instance_00141 
+{
+   selection_method = one_or_more_of;
+   branches = SEQUENCE 2 {(Condition_Step instance_00072);
+		(Condition_Step instance_00073);};
+   order_constraint = parallel;
+   name = &quot;branch 10&quot;;
+};
+
+
+Branch_Step instance_00142 
+{
+   selection_method = all_of;
+   branches = SEQUENCE 2 {(Branch_Step instance_00096);
+		(Branch_Step instance_00141);};
+   order_constraint = parallel;
+   name = &quot;branch 11&quot;;
+};
+
+
+Condition_Step instance_00143 
+{
+   destination = (Branch_Step instance_00133);
+   otherwise = (Action_Step instance_00033);
+   condition = 
+       Boolean_Criterion instance_00144 
+       {
+          boolean_condition = &quot;(exists patient_condition where name = 'ECOG_performance _status and (value = 0 or value = 1)) and (exist patient_condition where name = 'breast-cancer' and value = 'absent'))&quot;;
+          name = &quot;OK to start high-dose chemotherapy&quot;;
+       };
+   name = &quot;OK to start high-dose chemotherapy?&quot;;
+};
+
+
+
+
+Condition_Step instance_00147 
+{
+   destination = (Action_Step instance_00016);
+   condition = 
+       Boolean_Criterion instance_00148 
+       {
+          current_time_variable = &quot;?current_time&quot;;
+          explicit_time_boolean_condition = &quot;datediff(?current_time, select START_TIME from procedure where name = 'randomization', hours) <72"; name="within 72 hours of randomization" ; }; name="within 72 hours of randomization?" ; }; Condition_Step instance_00149 { destination="(Condition_Step" instance_00128); condition="Boolean_Criterion" instance_00150 { current_time_variable="?current_time" ; explicit_time_boolean_condition="datediff(?current_time, select last STOP_TIME from procedure where name = 'CAF', week) &gt; 4 and datediff(?current_time, select last STOP_TIME from procedure where name = 'CAF', week)  &lt; 8" ; name="within 4 and 8 weeks after last CAF" ; }; name="within 4 to 8 weeks?" ; }; Action_Step instance_00151 { next_step="(Action_Step" instance_00016); preference="required;" action="(Action_Spec" instance_00153); name="study parameter step" ; }; Branch_Step instance_00152 { selection_method="all_of;" branches="SEQUENCE" 3 {(Action_Step instance_00008); (Action_Step instance_00151); (Condition_Step instance_00169);}; order_constraint="any_order;" name="enrollment" ; }; Action_Spec instance_00153 { name="study parameter data collection" ; patient_data="SEQUENCE" 15 { Patient_Data instance_00154 { type="required;" name="hemogram" ; }; Patient_Data instance_00155 { type="required;" name="liver and kidney function tests" ; }; Patient_Data instance_00156 { type="required;" name="bone marrow aspirate and biopsy" ; }; Patient_Data instance_00157 { type="required;" name="chest x-ray" ; }; Patient_Data instance_00158 { type="required;" name="pulmonary function test" ; }; Patient_Data instance_00159 { type="required;" name="LVEF" ; }; Patient_Data instance_00160 { type="required;" name="EKG" ; }; Patient_Data instance_00161 { type="required;" name="bone scan" ; }; Patient_Data instance_00162 { type="required;" name="mammogram" ; }; Patient_Data instance_00163 { type="required;" name="Breast Chemotherapy Questionnaire" ; }; Patient_Data instance_00164 { type="required;" name="pelvic exam" ; }; Patient_Data instance_00165 { type="pertinent;" name="creatinine clearance" ; }; Patient_Data instance_00166 { type="pertinent;" name="liver scan" ; }; Patient_Data instance_00167 { type="pertinent;" name="brain scan" ; }; Patient_Data instance_00168 { type="pertinent;" name="pregnancy test" ; };}; }; Condition_Step instance_00169 { destination="(Action_Step" instance_00170); condition="(Boolean_Criterion" instance_00100); name="randomized to B?" ; }; Action_Step instance_00170 { next_step="(Action_Step" instance_00016); action="(Action_Spec" instance_00171); name="arm B study parameter step" ; }; Action_Spec instance_00171 { name="arm B study parameters" ; patient_data="SEQUENCE" 3 { Patient_Data instance_00172 { type="required;" name="dental consult" ; }; Patient_Data instance_00173 { type="required;" name="arterial blood gases" ; }; Patient_Data instance_00174 { type="required;" name="viral titers" ; };}; }; Condition_Step instance_00175 { destination="(Action_Step" instance_00066); otherwise="(Action_Step" instance_00183); condition="Boolean_Criterion" instance_00176 { current_time_variable="?current_time" ; explicit_time_boolean_condition="(or (exist lab_result where parameter = 'WBC' and value &gt; 2900)(exist lab_result where parameter = 'Platelet_Count' and value &gt; 100000)(datediff(?current_time, select last STOP_TIME from procedure where name = 'CAF', week) &lt;= 4))" ; name="arm A ready for XRT" ; }; name="A ready for radiotherapy" ; }; Condition_Step instance_00177 { destination="(Action_Step" instance_00066); otherwise="(Action_Step" instance_00183); condition="Boolean_Criterion" instance_00178 { explicit_time_boolean_condition="(or (exist lab_result where parameter = 'WBC' and value &gt; 2900)(exist lab_result where parameter = 'Platelet_Count' and value &gt; 100000)(datediff(?current_time, select last STOP_TIME from procedure where name = 'CAF', week) &lt;= 8))" ; name="arm B ready for XRT" ; }; name="B ready for XRT" ; }; Condition_Step instance_00179 { destination="(Action_Step" instance_00067); otherwise="(Action_Step" instance_00187); condition="Boolean_Criterion" instance_00181 { explicit_time_boolean_condition="(datediff(?current_time, select last START from procedure where name = 'CAF', week) &lt;= 4)" ; name="A ready for antiestrogen" ; }; name="A ready for antiestrogen step" ; }; Condition_Step instance_00180 { destination="(Action_Step" instance_00067); otherwise="(Action_Step" instance_00187); condition="Boolean_Criterion" instance_00182 { boolean_condition="(or (exist lab_result where parameter = 'WBC' and value &gt; 4000)(exist lab_result where parameter = 'Absolute_Neutrophil_Count' and value &gt; 2000)" ; name="B ready for estrogen step" ; }; name="B ready for estrogen step" ; }; Action_Step instance_00183 { next_step="(Branch_Step" instance_00185); action="(Action_Spec" instance_00184); name="wait step" ; }; Action_Spec instance_00184 { name="wait" ; }; Branch_Step instance_00185 { selection_method="all_of;" branches="SEQUENCE" 2 {(Condition_Step instance_00175); (Condition_Step instance_00177);}; order_constraint="parallel;" name="branch 12" ; }; Branch_Step instance_00186 { selection_method="all_of;" branches="SEQUENCE" 2 {(Condition_Step instance_00179); (Condition_Step instance_00180);}; order_constraint="parallel;" name="branch 12" ; }; Action_Step instance_00187 { next_step="(Branch_Step" instance_00186); name="wait1 step" ; }; Action_Step instance_00188 { next_step="(Synchronization_Step" instance_00190); preference="required;" action="(Action_Spec" instance_00189); name="bladder irrigation step" ; }; Action_Spec instance_00189 { description="500 ml NS/hour beginning with CTX and continuing 24 hours after CTX" ; name="bladder irrigation" ; }; Synchronization_Step instance_00190 { continuation="wait_for_all;" name="finish high-dose chemotherapy" ; }; Action_Spec instance_00191 { drug_name="GM-CSF" ; standard_dose="250 mcg/m2/day" ; name="GM-CSF prescription" ; }; Action_Spec instance_00192 { description="minimum_dose = 5 mcg/kg/day;
+    drug_name = G-CSF;
+    maximum_dose = 10 mcg/kg/day" ; name="G-CSF prescription" ; }; </pre>
+</pre>
+
+<hr>
+
+<pre><a href="index.html">Return to Stanford guideline page </a>
+</pre>
+
+<address>
+  Last updated on August 26, 1996 by Samson Tu -- <a HREF="mailto:tul@smi.stanford.edu">tu@smi.stanford.edu</a>
+</address>
+</body>
+</html>

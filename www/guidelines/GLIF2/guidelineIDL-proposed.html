@@ -1,0 +1,274 @@
+<html><head><TITLE>Intermed Guideline Model </TITLE>
+</head>
+<body>
+<center><h1> Intermed Guideline Model </h1></center>
+<pre>
+
+/*----------------------------------------------------------------09/Jul/96-*
+/*
+/* Modified Guideline Representation Proposal
+/*
+/*--------------------------------------------------------------------------*/
+
+/****************************************************************************/
+/* FORWARDS */
+
+interface Guideline;
+interface Guideline_Step;
+interface Action_Step;
+interface Conditional_Step;
+interface Group_Step;
+interface Patient_Data;
+interface Criterion;
+interface Supplemental_Material;
+
+/****************************************************************************/
+/* TYPES */
+
+enum t_group_seqences {k_any_order, k_parallel};
+enum t_group_selection {k_all_of, k_any_of, k_one_of};
+enum t_logic_type {k_two_valued, k_three_valued};
+
+typedef sequence &ltGuideline_Step&gt t_step_list;
+typedef sequence &ltPatient_Data&gt t_data_list;
+typedef sequence &ltCriterion&gt t_criterion_list;
+typedef sequence &ltSupplemental_Material&gt t_supplement_list;
+typedef sequence &ltstring&gt t_string_list;
+
+
+/****************************************************************************/
+/* CLASSES */
+
+/*------------------------
+* Top-level classes
+*------------------------*/
+
+interface Guideline_Model
+{
+};
+
+/*------------------------
+* Guideline
+*------------------------*/
+
+interface Guideline:Guideline_Model
+{
+   attribute string name;
+   attribute t_string_list authors;
+
+   /* a formal characterization of the guideline */
+   /* -- format has yet to be determined */
+   /* -- perhaps a combination of {Evaluation, Management, Treatment} with */
+   /*    a specific problem, e.g., Evaluation of Breast Mass */
+   attribute string intention;
+
+   /* an unordered list of criteria that all must be true of a patient */
+   /* before applying this guideline */
+   attribute Criterion eligibility_criteria;
+
+   /* an unordered list of all Step objects used to represent the guideline */
+   attribute t_step_list steps;
+
+   /* the first Step object in the guideline */
+   /* -- if the eligibility criteria are true, start here */
+   attribute Guideline_Step first_step;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Guideline Step
+*------------------------*/
+
+interface Guideline_Step:Guideline_Model
+{
+   attribute string name;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Action Step
+*------------------------*/
+
+interface Action_Step:Guideline_Step
+{
+   /* the goal that is supposed to be achieved by performing this action */
+   /*   - specification format has not yet been determined */
+   attribute string intention;
+
+   /* The patient data for which the action is to be performed (if any). */
+   /* If this data is already available (and meets temporal_constraint), */
+   /* the action does not need to be performed. */
+   attribute t_data_list data_obtained;
+
+   /* conditions that must exist in order to be able to perform the action */
+   attribute Criterion pre_condition;
+
+   /* the action specification */
+   /*   - specification format has not yet been determined */
+   attribute string action_spec;
+
+   /* optional specification of the action at a finer level of granularity */
+   attribute Guideline guideline;
+
+   /* next step in the guideline after action */
+   attribute Guideline_Step next_step;
+};
+
+
+/*------------------------
+* Conditional Step
+*------------------------*/
+
+interface Conditional_Step:Guideline_Step
+{
+   /* criteria that must be true in order to go to destination */
+   attribute Criterion condition;
+
+   /* step to take if condition is true */
+   attribute Guideline_Step destination;
+
+   /* step to take if condition is false */
+   attribute Guideline_Step otherwise;
+};
+
+
+/*------------------------
+* Groups
+*------------------------*/
+
+interface Group_Step:Guideline_Step
+{
+   /* An un-ordered collection of Guideline_Steps. */
+   /* Only the steps listed in group_members belong to the group, */
+   /* subsequent steps are outside the group. If one of the */
+   /* group members is itself a group, however, then all of its */
+   /* members also belong to this group. */
+   attribute t_step_list group_members;
+};
+
+
+interface Process_Group:Group_Step
+{
+   /* which members of the group must be performed */
+   attribute t_group_selection selection;
+
+   /* true if the members of the group must be performed in parallel */
+   attribute boolean parallel;
+};
+
+
+interface Loop_Group:Group_Step
+{
+   /* The steps listed in the (inherited) group_members attribute are */
+   /* to be performed repeatedly. */
+
+   /* the first step in the loop (must be one of group_members) */
+   attribute Guideline_Step first_step;
+
+   /* next step in the guideline after loop */
+   attribute Guideline_Step next_step;
+};
+
+
+interface Known_Iterations_Loop:Loop_Group
+{
+   /* the number of repetitions */
+   attribute long iterations;
+};
+
+
+/*------------------------
+* Patient Data
+*------------------------*/
+
+interface Patient_Data:Guideline_Model
+{
+   /* formal identification of patient data item */
+   /*   - patient data model has not yet been determined */
+   attribute string name;
+
+   /* what is the data type of the data item */
+   attribute string type;
+
+   /* the possible values for this data item */
+   attribute t_string_list possible_values;
+
+   /* how recent does the data item has to be in order to be useful */
+   attribute string temporal_constraint;
+
+   attribute t_supplement_list didactics;
+};
+
+
+/*------------------------
+* Classes for logical Criteria
+*------------------------*/
+
+interface Criterion:Guideline_Model
+{
+   /* the logic is typed by the number of possible values it can evaluate to */
+   attribute t_logic_type type;
+
+   attribute t_supplement_list didactics;
+};
+
+
+interface Boolean_Criterion:Criterion
+{
+   /* formal specification of criterion logic */
+   /*   - specification language has not yet been determined */
+   attribute string spec;
+};
+
+
+interface K_Of_N_Criteria: Criterion
+{
+   /* the K criteria that must be true */
+   attribute short number_to_select;
+
+   /* the set of N criteria */
+   attribute t_criterion_list criteria;
+};
+
+
+/*------------------------
+* Classes for Supporting Materials
+*------------------------*/
+
+interface Supplemental_Material:Guideline_Model
+{
+   /* the purpose of the material */
+   attribute string label;
+
+   /* extensible MIME standard for type of material */
+   attribute string MIME_type;
+};
+
+
+interface Local_Material:Supplemental_Material
+{
+   /* the material */
+   attribute string material;
+};
+
+
+interface WWW_Material:Supplemental_Material
+{
+   /* URL of supplemental material */
+   attribute string URL;
+};
+
+</pre>
+
+<hr>
+<ADDRESS>
+Last updated on 7/14/96 by Ed Pattison-Gordon 
+</ADDRESS>
+</BODY>
+</HTML>
+
+

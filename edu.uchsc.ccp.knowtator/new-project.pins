@@ -1,0 +1,17 @@
+; Sat Feb 25 00:02:21 PST 2012
+; 
+;+ (version "3.4.8")
+;+ (build "Build 629")
+
+([new-project_Instance_0] of  knowtator+configuration
+
+	(knowtator_active_filters [knowtator_Instance_0])
+	(knowtator_color_assignments [new-project_Instance_1])
+	(knowtator_root_clses SampleAnnotationType)
+	(knowtator_selected_filter [knowtator_Instance_0])
+	(knowtator_token_regex "\\W+"))
+
+([new-project_Instance_1] of  knowtator+color+assignment
+
+	(knowtator_color_class SampleAnnotationType)
+	(knowtator_display_color [knowtator_Instance_30016]))

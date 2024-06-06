@@ -1,0 +1,355 @@
+<html><body>
+<h2>Case: Test Case:DM with metformin 2300 and sulfonylurea 300</h2>
+75.0 year old 
+<p><b>Lab & Note Entry Values:</b> <table>
+<b><tr><td width="200">Lab</td><td width="200">Value</td><td width="200">Date</td></tr></b>
+<tr><td width="200">Age</td><td width="200">75</td><td width="200">1970-1-1</td></tr>
+<tr><td width="200">Creatinine</td><td width="200">1.8</td><td width="200">2008-10-23</td></tr>
+<tr><td width="200">HbA1C</td><td width="200">10</td><td width="200">2008-7-11</td></tr>
+<tr><td width="200">Microalbumin/Creatinine Ratio</td><td width="200">35</td><td width="200">2008-8-23</td></tr>
+<tr><td width="200"></td><td width="200">40</td><td width="200">2008-10-23</td></tr>
+<tr><td width="200">LDL_Cholesterol</td><td width="200">180</td><td width="200">2008-10-23</td></tr>
+<tr><td width="200">target_HBA1c</td><td width="200">8.0</td><td width="200">2008-7-11</td></tr>
+</table>
+<p><b>Medications:</b> METFORMIN(0.0) SULFONYLUREAS(0.0) 
+<p><b>Qualitative Data:</b> <table>
+<tr><td width="200"><b>Data Class</b></td><td width="200"><b>First/Last Dates Reported</b></td><td width="200"></td></tr>
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200">SSN</td></tr>
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200">Race</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-10-23</td>
+<td width="200">Lack of sensation to Semmes-Weinstein 5.07 monofilament at one or more noncallused plantar sites</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-10-23</td>
+<td width="200">Acute ocular changes</td></tr>
+<tr> <td width="200"></td>
+<td width="200">2008-10-17</td>
+<td width="200">DM-Type2</td></tr>
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200">Sex</td></tr>
+</table><p>
+<h2 align="center">ATHENA Cardiovascular Guidelines</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Cardiovascular Guidelines: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>()</i>]
+</ul>
+<h2 align="center">ATHENA CKD Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA CKD Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Age(75.0/1970-1-1) && null)</i>]
+</ul>
+<b>Scenario choice:</b> DM and no Cr & urine assessment within a year, no CKD
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Need screening?</b><br>
+<ul>
+<li><b>Order Cr & microalbumin/Cr ratio <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of Cr AND microalbumin/creatinine within a year</i> evaluate to <b> true</b> because <i>null</i>)])
+Absence of serum creatinine and microalbumin/creatinine ratio within a year; please order both now.
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Eye Care</h2>
+<b>Patient classification:</b> <ul>
+</ul>
+<b>Scenario choice:</b> Eye exam over a year ago or no data
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Referral for eye exam over a year or no data</b><br>
+<ul>
+<li><b>Urgent referral eye provider <font color=FF0000>preferred</font></b>(strict rule-in condition<i> acute vision change or change ocular function</i> evaluate to <b> true</b> because <i>null</i>)])
+null
+Patient has an acute vision change.  Please refer to an opthamologist immediately.
+In CPRS go here..., and do it now.
+</ul>
+</ul>
+<h2 align="center">ATHENA Diabetes Mellitus: Foot Care</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Diabetes Mellitus: Foot Care: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> Not wound-followup DM patients
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Initial assessments</b><br>
+<ul>
+<li><b>Perform and document foot risk assessment (B) and visual inspection of feet <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+Perform and document visual inspection of patient's feet.
+<li><b>Assess if limb threatening condition present <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+
+</ul>
+<li><b>Evaluate </b><br>
+<ul>
+<li><b>High risk for a foot problem (E) <font color=FF0000>preferred</font></b>(strict rule-in condition<i> High risk for a foot problem</i> evaluate to <b> true</b> because <i>null</i>)])
+null
+null
+</ul>
+<li><b>General Rec</b><br>
+<ul>
+<li><b>General recs <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Confirm follow-up by foot care specialist if indicated and compliance by patient.
+All patients and their families should receive self-management education for preventive foot care and selection of footwear. Instruction should include recommendations for daily foot inspection and preventive foot care, skin care, and use of emollients, nail care, and treatment for callus. Document.
+</ul>
+</ul>
+<h2 align="center">ATHENA DM: Glycemic Control</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA DM: Glycemic Control: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null)</i>]
+<li>Creatinine > 1.5 and Male: [because <i> Creatinine > 1.5 and Male </i> evaluate to <b>true</b><i>(Creatinine(1.8/2008-10-23) && Sex(Male compared to Male))</i>]
+</ul>
+<b>Scenario choice:</b> Combination therapy w/ oral agents
+<p>
+<b>Goal:</b> HBA1C <= target(presence of target HBA1C)
+<p><b>Reached goal?</b> failed(HbA1C(10.0/2008-7-11; target:8.0))
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>On meds</b><br>
+<ul>
+<li><b>Metformin check serum B12 <font color=FF0000>preferred</font></b>(rule in criterion<i> presence of biguanide</i> evaluate to <b> true</i>)])
+<li><b>Add ACE message <font color=FF0000>preferred</font></b>(rule in criterion<i> Absence of ACE Inhibitor</i> evaluate to <b> true</i>)])
+Many DM practitioners add ACE inhibitors to patient’s regimen regardless of kidney function.
+</ul>
+<li><b>DM - Oral Agent(s)</b><br>
+<ul>
+<li><b>Is patient high risk? If yes, refer <font color=FF0000>preferred</font></b>(strict rule-in condition<i> true</i> evaluate to <b> true</i>)])
+
+null
+<li><b>Substitute <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Presence of contraindication</i> evaluate to <b> true</i>)])
+
+<li><b>Intensify drug treatment <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Goal not satisfied</i> evaluate to <b> true</b> because <i>Goal not satisfiedHbA1C(10.0/2008-7-11; target:8.0)</i>)])
+</ul>
+<li><b>Intensify choices</b><br>
+<ul>
+</ul>
+</ul>
+<b>Considerations for substituting drug: </b><ul>
+<li> Substitution: replace 
+<ul>
+<li>METFORMIN(BIGUANIDE)
+<ul>
+<li>Compelling indications:  DM-Type2(DM-Type2) 
+<li>Contraindications:  Creatinine > 1.5 and Male(Creatinine > 1.5 and Male[Creatinine(1.8/2008-10-23) && Sex(Male compared to Male)]) 
+</ul>
+ with <li>DIPEPTIDYL_PEPTIDASE-4_INHIBITOR
+<ul>
+<li>preference: preferred
+<li>No comment
+</ul>
+<li>MEGLITINIDES
+<ul>
+<li>preference: preferred
+<li>No comment
+</ul>
+<li>Sulfonylureas 1st generation
+<ul>
+<li>•	Efficacy ( HbA1c) a = 1.0 - 2.0 %
+•	1st generation sulfonylureas are no longer commonly used.
+•	No difference in long term efficacy or failure rate has been demonstrated among the sulfonylureas.
+•	The preferred agents have shorter half-lives and inactive metabolites.
+•	1st generation sulfonylureas are 100% renally eliminated. Chlorpropamide and tolazamide have active metabolites.
+•	Glipizide, glyburide, and glimepiride are renally eliminated by 80 - 85%, 50%, and 60% respectively. All but glipizide have active metabolites.
+•	Inexpensive
+<li>preference: preferred
+</ul>
+<li>THIAZOLIDINEDIONES
+<ul>
+<li>Thiazolidinediones are less effective in lowering HbA1C, have a higher cost, and are non formulary.
+<li>Check liver enzymes every 2-3 months during first year of thiazolidinedione therapy to evaluate for potential hepatitis.
+<li>preference: preferred
+</ul>
+<li>GLIPIZIDE
+<ul>
+<li>Relative indications:  DM-Type2(DM-Type2) 
+<li>•	Efficacy ( HbA1c) a = 1.0 - 2.0 %
+•	1st generation sulfonylureas are no longer commonly used.
+•	No difference in long term efficacy or failure rate has been demonstrated among the sulfonylureas.
+•	The preferred agents have shorter half-lives and inactive metabolites.
+•	1st generation sulfonylureas are 100% renally eliminated. Chlorpropamide and tolazamide have active metabolites.
+•	Glipizide, glyburide, and glimepiride are renally eliminated by 80 - 85%, 50%, and 60% respectively. All but glipizide have active metabolites.
+•	Inexpensive
+<li>preference: preferred
+</ul>
+<li>GLYBURIDE
+<ul>
+<li>Bad drug partner:  SULFONYLUREAS(SULFONYLUREAS) 
+<li>•	Efficacy ( HbA1c) a = 1.0 - 2.0 %
+•	1st generation sulfonylureas are no longer commonly used.
+•	No difference in long term efficacy or failure rate has been demonstrated among the sulfonylureas.
+•	The preferred agents have shorter half-lives and inactive metabolites.
+•	1st generation sulfonylureas are 100% renally eliminated. Chlorpropamide and tolazamide have active metabolites.
+•	Glipizide, glyburide, and glimepiride are renally eliminated by 80 - 85%, 50%, and 60% respectively. All but glipizide have active metabolites.
+•	Inexpensive
+<li>preference: ruled out
+</ul>
+</ul>
+
+</ul>
+<h2 align="center">ATHENA Lipid Management Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Lipid Management Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(null && Age(75.0/1970-1-1))</i>]
+<li>CHD or CHD-Equivalent: [because <i> CHD Risk Equivalent </i> evaluate to <b>true</b><i>(null)</i>]
+</ul>
+<b>Scenario choice:</b> No drug, high CHD risk
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> failed(LDL_Cholesterol(180.0/2008-10-23))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Primary_Recommendation</b>
+<ul>
+<li><b><font color=red>Initiate lipid lowering drug therapy and therapeutic lifestyle changes</font>()
+<li><b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>()
+<li><b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Management Choice</b><br>
+<ul>
+<li><b>LDL>=130, Initiate Drug Therapy <font color=FF0000>preferred</font></b>(strict rule-in condition<i> (CHD or CHD equivalent) and LDL>=130</i> evaluate to <b> true</b> because <i>null && LDL_Cholesterol(180.0/2008-10-23)</i>)])
+<b><font color=red>Initiate lipid lowering drug therapy and therapeutic lifestyle changes</font>
+
+<li><b>Order lipid study <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Absence of LDL data in last year</i> evaluate to <b> true</i>)])
+null
+<li><b>TLC initiation <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Criteria for initiation for TLC</i> evaluate to <b> true</b> because <i>null</i>)])
+<b><font color=red>Start Therapeutic lifestyle changes to achieve LDL goal.  Check lipid profile in 3 months.</font>
+<li><b>Presence of CHD, Initiate statin therapy <font color=FF0000>preferred</font></b>(strict rule-in condition<i> Presence of CHD or CHD Equivalent</i> evaluate to <b> true</i>)])
+<b><font color=red>Initiate statin therapy and therapeutic lifestyle changes</font>
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Statin Metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+<li>Statin Not metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+<li>Bile_Acid_Sequestrant
+<ul>
+<li>Relative indications:  LDL_not_within_guideline_goal(LDL not within guideline goal[Not within guideline goalLDL_Cholesterol(180.0/2008-10-23)]) 
+<li>Warning:  This lipid lowering drug may increase TG levels.
+<li>preference: preferred
+</ul>
+<li>Nicotinic Acid
+<ul>
+<li>Relative indications:  LDL_not_within_guideline_goal(LDL not within guideline goal[Not within guideline goalLDL_Cholesterol(180.0/2008-10-23)]) 
+<li>Relative contraindications:  Diabetes_Mellitus(DM-Type2) 
+<li>Potential adverse effects of niacin include hepatotoxicity, hyperglycemia, hyperuricemia
+<li>preference: preferred
+</ul>
+<li>Fibric Acid
+<ul>
+<li>Recommend monitoring LFTs throughout therapy.
+<li>Potential adverse effects of fibreates include:  hepatitis, gallstones, myalgia, and myopathy and rhabdomyolysis.
+Risk of myopathy/rhabdomyolysis increases when combined with statins.
+<li>preference: preferred
+</ul>
+<li>Cholesterol Absorption Inhibitors
+<ul>
+<li>preference: preferred
+<li>No comment
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Statin Metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+<li>Statin Not metabolized by CYP3A4
+<ul>
+<li><font color=FF0000>Compelling indications:  CHD_Or_CHDEquivalent(CHD or CHD-Equivalent[null]) </font>
+<li>Liver function test recommended before initiating statin therapy and clinically indicated thereafter.  Possible Adverse reaction is increase in LFTs >3x upper limit and CPKs > 10x upper limit
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">ATHENA Heart Failure Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>ATHENA Heart Failure Guideline: true[because <i> Eligibility criteria </i> evaluate to <b>true</b><i>(Not Stage D HF (refractory end stage HF)null)</i>]
+</ul>
+<b>Scenario choice:</b> Stage A HF
+<p>
+<b>Goal:</b> SBP < 140 and DBP < 80(presence of diabetes mellitus)
+<p><b>Reached goal?</b> unknown(Treatment_Diastolic_BP(no value) && Treatment_Systolic_BP(no value))
+<p>
+<b>Goal:</b> LDL< 100 mg/dL(CHD Risk Equivalent)
+<p><b>Reached goal?</b> failed(LDL_Cholesterol(180.0/2008-10-23))
+<p><b>Messages by Types</b>
+<ul>
+<li><b>Class I</b>
+<ul>
+<li>In patients at high risk for developing HF, lipid disorders should
+be treated in accordance with contemporary guidelines. (Level of
+Evidence: A)()
+<li>Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)()
+<li>Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)()
+<li>For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)()
+</ul>
+<li><b>Class III</b>
+<ul>
+<li>Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)()
+</ul>
+</ul>
+<p><b>Action Choices</b>
+<ul>
+<li><b>Stage A messages</b><br>
+<ul>
+<li><b>Lipid disorder control <font color=FF0000>preferred</font></b>(rule in criterion<i> Lipid not under control</i> evaluate to <b> true</b> because <i>Lipid not under controlLDL_Cholesterol(180.0/2008-10-23)</i>)])
+In patients at high risk for developing HF, lipid disorders should
+be treated in accordance with contemporary guidelines. (Level of
+Evidence: A)
+<li><b>behavior control <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Patients at high risk for developing HF should be counseled to avoid behaviors that may increase the risk of HF (e.g., smoking, excessive alcohol consumption, and illicit drug use). (Level of
+Evidence: C)
+<li><b>Periodic evaluation <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Healthcare providers should perform periodic evaluation for signs
+and symptoms of HF in patients at high risk for developing HF.
+(Level of Evidence: C)
+<li><b>Blood sugar control <font color=FF0000>preferred</font></b>(rule in criterion<i> diabetes_mellitus</i> evaluate to <b> true</i>)])
+For patients with diabetes mellitus (who are all at high risk for developing HF), blood sugar should be controlled in accordance with contemporary guidelines. (Level of Evidence: C)
+<li><b>not use nutritional supplements <font color=FF0000>preferred</font></b>(rule in criterion<i> true</i> evaluate to <b> true</i>)])
+Routine use of nutritional supplements solely to prevent the development of structural heart disease should not be recommended for patients at high risk for developing HF. (Level of
+Evidence: C)
+</ul>
+<li><b> </b><br>
+<ul>
+<li><b>stage A drug choices <font color=FF0000>preferred</font></b>(strict rule-in condition<i> DM or HTN or atherosclerotic vascular disease</i> evaluate to <b> true</b> because <i>null</i>)])
+
+</ul>
+</ul>
+<b>Considerations for adding drug: </b><ul>
+<li>Ace_Inhibitor
+<ul>
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>Refer to specific ACE Inhibitor dose adjustments based on kidney function.
+<li>Need to find content
+<li>preference: preferred
+</ul>
+<li>ARB
+<ul>
+<li>Relative indications:  High Risk for HF and DM, HTN, or atherosclerotic vascular disease(High Risk for HF and DM, HTN, or atherosclerotic vascular disease[null]) 
+<li>preference: preferred
+</ul>
+</ul>
+<h2 align="center">VA/JNC-VII Hypertension Guideline</h2>
+<b>Patient classification:</b> <ul>
+<li>VA/JNC-VII Hypertension Guideline: false[because <i> Eligibility criteria </i> evaluate to <b>false</b><i>(It is not the case that null)</i>]
+</ul>
+No scenario chosen.
+</body></html>

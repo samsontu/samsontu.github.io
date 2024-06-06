@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+
+<TITLE>Comparison Protocol</TITLE>
+
+<!-- Date: Tuesday, October 8, 1996  11:01 AM -->
+<H1><CENTER>Comparison Protocol for Encoded Guidelines</CENTER><BR CLEAR=LEFT></H1>
+<H2><CENTER>Using Guideline Interchange Format<BR CLEAR=LEFT>
+(GLIF-2)</CENTER></H2>
+</HEAD>
+
+<BODY>
+
+<HR>
+<FONT SIZE=4>I.  For each encoding of the guideline, determine the following:</FONT><P>
+<P>
+<OL><LI>
+<H4>Name of guideline</H4>
+<LI><H4>Number of times each type of construct was used</H4><P>
+<UL>
+<LI>Interfaces:<P>
+<UL>       
+<LI>Guideline_Model
+<LI>Guideline_Step (abstract class)
+<LI> Action_Step
+<LI>Conditional_Step
+<LI>Branch_Step
+<LI>Synchronization_Step
+<LI>Action_Specification
+<LI>Patient_Data
+<LI>Criterion
+<LI>Boolean_Criterion
+<LI>K_Of_N_Criteria
+<LI>Supplemental_Material
+<LI>Local_Material
+<LI>WWW_Material
+</UL>
+</UL>
+<P>
+<UL>
+<LI> Enumerated Types:<P>
+<UL><LI>t_ordering
+<UL>
+<LI>any_order
+<LI>parallel
+</UL>
+
+<LI>t_selection
+<UL><LI>all_of
+<LI>some_of
+<LI>one_of
+</UL>
+<LI>t_continue
+<UL>
+<LI>wait_for_all
+<LI> proceed_after_one
+<LI> loop
+</UL>
+<LI>t_logic_type
+<UL>
+<LI>k_two_valued
+<LI> k_three_valued
+</UL>
+</UL>
+</UL>       
+<P>
+<LI><H4>List of patient data elements</H4>
+<BLOCKQUOTE><DL>
+<LI>name
+<LI>type
+<LI>possible values 
+<LI>temporal constraints
+</DL></BLOCKQUOTE>
+<LI><H4>Intention of guideline</H4>
+<LI><H4>Eligibility criteria of guideline</H4>
+<LI><H4>Subguidelines used</H4>
+<LI><H4>Level of detail covered</H4>
+<LI><H4>Additional detail (knowledge) added</H4>
+<LI><H4>Other comments about authoring patterns noted</H4>
+
+</OL>
+<HR>
+<FONT SIZE=4>II.  Compare the two encoded versions of the guideline.
+</FONT>
+<OL>
+<LI><B>Authoring institution of each encoding</B>
+<UL>
+<LI>Guideline encoding number "1" = (give name of authoring institution)<BR>
+<LI>Guideline encoding number "2" = (give name of authoring institution)<BR>
+</UL>
+<P>
+<LI><B>Compare number of times each type of construct was used</B><BR>
+<UL><LI>Which constructs are used by both?
+<LI>Which constructs are used by one but not the other?
+<LI>Which constructs are used by neither?
+<LI>How many action steps or conditional steps do the two encodings have in common?
+</UL>
+<P>
+<LI><B>Compare list of patient data elements</B><BR>
+<UL>
+<LI>Encoding number 1:
+<UL>
+<LI>How many data elements in encoding number 1?
+<LI>How many of those data elements are also shared by encoding number 2?
+<LI>What percent are shared?
+<LI>How many of those data elements are not shared by encoding number 2?
+<LI>What percent are not shared?
+</UL>
+<LI>Encoding number 2:
+<UL>
+<LI>How many data elements in encoding number 2?
+<LI>How many of those data elements are also shared by encoding number1?
+<LI>What percent are also shared?
+<LI>How many of those data elements are not shared by encoding number 1?
+<LI>What percent are not shared?
+</UL>
+</UL>
+<P>
+<LI><B>Compare intention of guideline</B><BR>
+<UL><LI>Which encodings specify an intention?<BR>
+<UL><LI>Both
+<LI>One only
+<LI>Neither</UL>
+<LI>If both specify an intention, how do they compare in meaning? <BR>
+<UL>
+<LI>Same
+<LI>Similar but not exactly the same
+<LI>Different</UL>
+</UL>
+<P>
+<LI><B>Compare eligibility criteria of guideline</B><BR>
+<UL>
+<LI>Which encodings specify eligibility criteria?
+<UL><LI>Both
+<LI>One only
+<LI>Neither
+</UL>
+<LI>How do the eligibility criteria in the 2 encodings compare?
+<UL>
+<LI>Same
+<LI>Similar
+<LI>Different
+</UL>
+</UL>
+<P>
+<LI><B>Compare number of subguidelines used</B><BR>
+<UL><LI>Which encodings use subguidelines?
+<UL><LI>Both
+<LI>One only
+<LI>Neither
+</UL>
+<LI>If both encodings use subguidelines, are any of the subguidelines the same?
+<UL><LI>Yes
+<LI>No
+</UL>
+</UL>
+<P>
+<LI><B>Compare level of detail covered</B><BR>
+<UL><LI>How do the encodings compare in terms of level of detail covered?
+<UL><LI>Same level of detail
+<LI>One has a little more detail than the other
+<LI>One has much more detail than the other</UL>
+</UL>
+<P>
+<LI><B>Compare additional detail (knowledge) added</B>
+<UL><LI>Which encodings added more knowledge not explicitly given in the guideline source text?
+<UL><LI>Both
+<LI>One only
+<LI>Neither
+</UL></UL>
+<P>
+<LI><B>Compare other comments about authoring patterns noted</B>
+<UL><LI>Summarize differences.</UL>
+<P>
+
+</OL>
+</BODY>
+</HTML>

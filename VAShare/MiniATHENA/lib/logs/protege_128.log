@@ -1,0 +1,6 @@
+2013.10.01 15:34:27.999 PDT INFO: *** SYSTEM START *** -- SystemUtilities.logSystemInfo()
+2013.10.01 15:34:28.014 PDT CONFIG: Protege 3.4.7 Build 620, JVM 1.6.0_45-b06, memory=1273M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2013.10.01 15:34:28.108 PDT CONFIG: Loaded plugin edu.stanford.smi.eon.pca -- PluginUtilities.logClassLoaderInformation()
+2013.10.01 15:34:28.123 PDT CONFIG: Loaded plugin edu.stanford.smi.protegex.instance_tree -- PluginUtilities.logClassLoaderInformation()
+2013.10.01 15:34:28.139 PDT CONFIG: Loaded plugin edu.stanford.smi.protegex.pal_tabs - PAL Tabs -- PluginUtilities.logClassLoaderInformation()
+2013.10.01 15:34:28.139 PDT CONFIG: Loaded plugin edu.stanford.smi.protegex.standard_extensions - Graph Widget, Table Widget -- PluginUtilities.logClassLoaderInformation()

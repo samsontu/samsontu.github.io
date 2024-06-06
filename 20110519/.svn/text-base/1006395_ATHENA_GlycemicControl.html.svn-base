@@ -1,0 +1,88 @@
+<html><body><h2>Case: 1305827640896</h2>
+<patient name=1006395>
+73.0 year old Other_Race Male
+<p><b>Lab & Note Entry Values:</b> <table>
+<b><tr><td width="200">Lab</td><td width="200">Value</td><td width="200">Date</td></tr></b>
+<tr><td width="200">Age</td><td width="200">73</td><td width="200">1970-1-1</td></tr>
+<tr><td width="200">Calcium</td><td width="200">9</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Alkaline_phosphatase</td><td width="200">98</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Glucose</td><td width="200">105</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Phosphorus</td><td width="200">4</td><td width="200">1972-3-20</td></tr>
+<tr><td width="200">LDL_Cholesterol</td><td width="200">70</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Chloride</td><td width="200">105.0</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">HDL_Cholesterol</td><td width="200">51</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Diastolic_BP</td><td width="200">70</td><td width="200">1973-3-3</td></tr>
+<tr><td width="200">BNP</td><td width="200">878.0</td><td width="200">1972-3-20</td></tr>
+<tr><td width="200">Weight</td><td width="200">315</td><td width="200">1973-3-3</td></tr>
+<tr><td width="200">HbA1C</td><td width="200">6</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Triglycerides</td><td width="200">98</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Total_Cholesterol</td><td width="200">141</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">SGOT</td><td width="200">16</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Systolic_BP</td><td width="200">100</td><td width="200">1973-3-3</td></tr>
+<tr><td width="200">Total_Bilirubin</td><td width="200">0</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Height</td><td width="200">72</td><td width="200">1973-3-3</td></tr>
+<tr><td width="200">Potassium</td><td width="200">4</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Cholesterol</td><td width="200">141</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">BUN</td><td width="200">17</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">HCT</td><td width="200">38</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">HGB</td><td width="200">13</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Sodium</td><td width="200">143</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Albumen</td><td width="200">4</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Creatinine</td><td width="200">0.9</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Glycosylated_Hemoglobin</td><td width="200">6</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Pulse</td><td width="200">84</td><td width="200">1973-3-3</td></tr>
+<tr><td width="200">PLT</td><td width="200">182</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">WBC</td><td width="200">7</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">SGPT</td><td width="200">26</td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">edema</td><td width="200"></td><td width="200">1972-8-20</td></tr>
+<tr><td width="200">Heart_Failure</td><td width="200"></td><td width="200">1972-11-13</td></tr>
+<tr><td width="200">Hyperlipidemia</td><td width="200"></td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Hypertension</td><td width="200"></td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Race</td><td width="200">Other_Race</td><td width="200"></td></tr>
+<tr><td width="200">Sex</td><td width="200">Male</td><td width="200"></td></tr>
+<tr><td width="200">Cardiomegaly</td><td width="200"></td><td width="200">1972-3-9</td></tr>
+<tr><td width="200">Atrial_Fibrillation</td><td width="200"></td><td width="200">1972-11-13</td></tr>
+<tr><td width="200">Disorders Lipid Metabolism</td><td width="200"></td><td width="200">1972-10-28</td></tr>
+<tr><td width="200">Coronary_Artery_Disease</td><td width="200"></td><td width="200">1972-10-28</td></tr>
+</table>
+<p><b>Medications:</b> quinapril(20.0) aspirin(81.0) simvastatin(40.0) atenolol(25.0) nitrate(15.0) hydrochlorothiazide(25.0) carvedilol(6.25) furosemide(160.0) amiodarone(200.0) 
+<p><b>Problems:</b> <table>
+<tr><td width="200"><b>Problem Class</b></td><td width="200"><b>First/Last Dates Reported</b></td><td width="200"></td></tr>
+<tr><td width="200">CCS-7.2</td>
+<td width="200">1972-11-13</td>
+<td width="200"> Heart_Failure()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1972-03-09</td>
+<td width="200"> Cardiomegaly()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1972-10-28</td>
+<td width="200"> Coronary_Artery_Disease()</td></tr>
+<tr> <td width="200"></td>
+<td width="200">1972-11-13</td>
+<td width="200"> Atrial_Fibrillation()</td></tr>
+<tr><td width="200">Hypertension_Inclusive</td>
+<td width="200">1972-10-28</td>
+<td width="200"> Hypertension()</td></tr>
+<tr><td width="200">Metabolic&Nutritional_Diseases</td>
+<td width="200">1972-10-28</td>
+<td width="200"> Disorders Lipid Metabolism()</td></tr>
+<tr><td width="200"> <b>Others</b></td>
+<td width="200">1972-08-20</td>
+<td width="200"> edema()
+<tr> <td width="200"></td>
+<td width="200">1972-10-28</td>
+<td width="200"> Hyperlipidemia()
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200"> Race()
+<tr> <td width="200"></td>
+<td width="200"></td>
+<td width="200"> Sex()
+</table><p>
+</patient>
+<h1 align="center">ATHENA DM: Glycemic Control</h1>
+<b>Patient classification:</b> <ul>
+<li>ATHENA DM: Glycemic Control: false[because <i> Eligibility criteria </i> evaluate to <b>false</b><i>(It is not the case that diabetes_mellitus)</i>]
+</ul>
+No scenario chosen.
+</body></html>
